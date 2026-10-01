@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
+<meta name="referrer" content="no-referrer">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html,body{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Daily Notes</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/* Layout: chat-app shell. Left = history of topics, right = one topic read like a conversation, composer pinned at the bottom. */
+:root{
+  --bg:#f9f8f4; --side:#f1efe8; --card:#fffefb; --fg:#2e2c28; --muted:#77736b; --faint:#a7a299;
+  --line:#e3dfd5; --bubble:#ece9e1; --accent:#a3624a; --accent-soft:#f2e5de; --hl:#f3ead4;
+  --good:#3d7650; --good-soft:#e1eee4; --bad:#a24d3c; --bad-soft:#f5e2dd;
+  --dot-movie:#7f90a5; --dot-anime:#7e9b7d; --dot-manga:#b48a6c; --dot-own:#9a8fb0;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", "Yu Gothic UI", "Hiragino Sans", Meiryo, serif;
+  --ui:system-ui, -apple-system, "Segoe UI", "Yu Gothic UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  --fs-xs:.75rem; --fs-s:.8125rem; --fs-m:.9375rem; --fs-l:1.0625rem; --fs-xl:1.25rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#262523; --side:#1d1c1a; --card:#2c2a27; --fg:#ebe8e1; --muted:#a29e95; --faint:#76726a;
+    --line:#393733; --bubble:#34322e; --accent:#d58c6f; --accent-soft:#3c2b24; --hl:#3a3323;
+    --good:#86c497; --good-soft:#233128; --bad:#e3907c; --bad-soft:#3a2521;
+    --dot-movie:#8ea0b6; --dot-anime:#8fae8d; --dot-manga:#c79c7d; --dot-own:#ab9fc4;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#262523; --side:#1d1c1a; --card:#2c2a27; --fg:#ebe8e1; --muted:#a29e95; --faint:#76726a;
+  --line:#393733; --bubble:#34322e; --accent:#d58c6f; --accent-soft:#3c2b24; --hl:#3a3323;
+  --good:#86c497; --good-soft:#233128; --bad:#e3907c; --bad-soft:#3a2521;
+  --dot-movie:#8ea0b6; --dot-anime:#8fae8d; --dot-manga:#c79c7d; --dot-own:#ab9fc4;
+  color-scheme:dark;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui);font-size:var(--fs-m);line-height:1.7;-webkit-font-smoothing:antialiased}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer;background:none;border:0;padding:0}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
+svg{display:block}
+
+.app{display:grid;grid-template-columns:268px minmax(0,1fr);height:100%}
+
+/* ---------- sidebar ---------- */
+.side{background:var(--side);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
+.side-top{display:flex;align-items:center;justify-content:space-between;padding:14px 14px 6px 18px}
+.brand{font-family:var(--serif);font-size:var(--fs-l);letter-spacing:.01em;color:var(--fg)}
+.side-actions{display:flex;flex-direction:column;gap:2px;padding:6px 8px}
+.nav-btn{display:flex;align-items:center;gap:10px;width:100%;padding:7px 10px;border-radius:8px;font-size:var(--fs-s);text-align:left;color:var(--fg)}
+.nav-btn:hover,.nav-btn[aria-current="true"]{background:var(--bubble)}
+.nav-btn .cnt{margin-left:auto;color:var(--faint);font-size:var(--fs-xs);font-variant-numeric:tabular-nums}
+.filters{display:flex;flex-wrap:wrap;gap:4px;padding:8px 14px 4px}
+.chip{font-size:var(--fs-xs);padding:2px 9px;border-radius:999px;color:var(--muted);border:1px solid transparent}
+.chip:hover{color:var(--fg)}
+.chip[aria-pressed="true"]{border-color:var(--line);background:var(--card);color:var(--fg)}
+.list{flex:1;overflow-y:auto;padding:4px 8px 12px;min-height:0}
+.grp{font-size:var(--fs-xs);color:var(--faint);padding:14px 10px 4px}
+.item{display:flex;align-items:center;gap:8px;width:100%;padding:6px 10px;border-radius:8px;font-size:var(--fs-s);text-align:left;color:var(--fg)}
+.item:hover{background:var(--bubble)}
+.item[aria-current="true"]{background:var(--bubble)}
+.item .t{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dot{width:6px;height:6px;border-radius:50%;flex:none;background:var(--faint)}
+.dot.movie{background:var(--dot-movie)}.dot.anime{background:var(--dot-anime)}.dot.manga{background:var(--dot-manga)}.dot.own{background:var(--dot-own)}
+.item .done{color:var(--faint);font-size:var(--fs-xs)}
+.side-foot{border-top:1px solid var(--line);padding:10px 14px 12px;display:flex;flex-direction:column;gap:6px;font-size:var(--fs-xs);color:var(--muted)}
+.side-foot .row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.empty-side{color:var(--faint);font-size:var(--fs-s);padding:12px 10px}
+
+/* ---------- main ---------- */
+.main{display:flex;flex-direction:column;min-width:0;min-height:0;position:relative}
+.topbar{display:flex;align-items:center;gap:8px;height:48px;padding:0 12px 0 16px;flex:none}
+.top-title{flex:1;min-width:0;font-size:var(--fs-s);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.icon-btn{width:32px;height:32px;display:grid;place-items:center;border-radius:8px;color:var(--muted)}
+.icon-btn:hover{background:var(--bubble);color:var(--fg)}
+.only-mobile{display:none}
+.scroll{flex:1;overflow-y:auto;min-height:0}
+.thread{max-width:740px;margin:0 auto;padding-block:8px 40px;padding-inline:24px;display:flex;flex-direction:column;gap:22px}
+
+/* user bubble */
+.u-row{display:flex;justify-content:flex-end}
+.u-bubble{background:var(--bubble);border-radius:16px;padding:10px 14px;max-width:min(520px,88%);font-size:var(--fs-m);overflow-wrap:anywhere}
+.u-bubble .src{display:block;font-size:var(--fs-xs);color:var(--muted);margin-top:2px}
+.u-bubble a{color:inherit;text-decoration:underline;text-decoration-color:var(--faint);text-underline-offset:3px}
+
+/* assistant answer */
+.a-block{display:flex;flex-direction:column;gap:22px;font-family:var(--serif);font-size:var(--fs-l);line-height:1.75}
+.a-block p{margin:0}
+.lead{margin:0}
+.meta-line{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);display:flex;gap:10px;flex-wrap:wrap}
+.blk{display:flex;flex-direction:column;gap:10px}
+.blk-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.blk h3{margin:0;font-family:var(--ui);font-size:var(--fs-m);font-weight:600;letter-spacing:.01em}
+.blk-h .sp{flex:1}
+.note{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);margin:0}
+
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:var(--card);font-family:var(--ui)}
+.seg button{font-size:var(--fs-xs);padding:2px 10px;border-radius:999px;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--bubble);color:var(--fg)}
+.txt-btn{font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted);display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:6px}
+.txt-btn:hover{color:var(--fg);background:var(--bubble)}
+
+.story{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.story li{display:flex;gap:8px;align-items:flex-start;padding:6px 8px;margin-inline:-8px;border-radius:8px;cursor:pointer}
+.story li:hover{background:color-mix(in srgb,var(--bubble) 60%,transparent)}
+.story li.speaking{background:var(--hl)}
+.story .s-body{flex:1;min-width:0}
+.story .s-text.ja{font-family:var(--ui);font-size:var(--fs-m);color:var(--fg)}
+.story .s-sub{display:block;font-family:var(--ui);font-size:var(--fs-s);color:var(--muted);margin-top:2px}
+.mw{font-family:var(--serif);font-size:1.06em;background:var(--hl);padding:0 3px;border-radius:3px}
+.say{flex:none;width:28px;height:28px;display:grid;place-items:center;border-radius:7px;color:var(--faint)}
+.say:hover{color:var(--fg);background:var(--bubble)}
+
+.words{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.words li{display:grid;grid-template-columns:28px minmax(0,1fr) 28px;gap:4px 10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
+.words .wtxt{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;min-width:0}
+.words .w{font-family:var(--serif);font-size:var(--fs-l);font-weight:600}
+.words .m{font-family:var(--ui);font-size:var(--fs-m)}
+.words .n{font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted);flex-basis:100%}
+.words.blur .m{filter:blur(5px);cursor:pointer;transition:filter .15s}
+.words.blur .m.show{filter:none}
+.star{width:28px;height:28px;display:grid;place-items:center;border-radius:7px;color:var(--faint)}
+.star:hover{background:var(--bubble);color:var(--fg)}
+.star[aria-pressed="true"]{color:var(--accent)}
+
+.gram{border-left:2px solid var(--line);padding:2px 0 2px 14px;display:flex;flex-direction:column;gap:6px}
+.gram .g-body{font-family:var(--ui);font-size:var(--fs-m)}
+.ex{margin:0}
+.ex .ja{display:block;font-family:var(--ui);font-size:var(--fs-s);color:var(--muted)}
+
+.quiz{display:flex;flex-direction:column;gap:16px;font-family:var(--ui);font-size:var(--fs-m)}
+.q-t{margin:0 0 6px}
+.choices{display:flex;flex-wrap:wrap;gap:6px}
+.choice{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:5px 12px;font-size:var(--fs-m);text-align:left}
+.choice:hover:not(:disabled){border-color:var(--faint)}
+.choice:disabled{cursor:default}
+.choice.right{border-color:var(--good);background:var(--good-soft);color:var(--good)}
+.choice.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad)}
+.q-why{margin:6px 0 0;font-size:var(--fs-s);color:var(--muted)}
+.score{font-family:var(--ui);font-size:var(--fs-s);color:var(--muted)}
+
+.talk-q{font-size:var(--fs-xl);margin:0}
+.talk-ja{font-family:var(--ui);font-size:var(--fs-s);color:var(--muted)}
+.pill{font-family:var(--ui);font-size:var(--fs-s);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 14px;align-self:flex-start}
+.pill:hover{border-color:var(--faint)}
+.src-foot{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);border-top:1px solid var(--line);padding-top:10px}
+.src-foot a{color:var(--muted)}
+
+/* chat */
+.chat{display:flex;flex-direction:column;gap:18px}
+.a-msg{font-family:var(--serif);font-size:var(--fs-l);line-height:1.75;display:flex;flex-direction:column;gap:8px}
+.a-msg p{margin:0}
+.a-msg ul{margin:0;padding-left:1.2em}
+.a-msg .tr{font-family:var(--ui);font-size:var(--fs-s);color:var(--muted)}
+.a-msg .fix{font-family:var(--ui);font-size:var(--fs-s);background:var(--accent-soft);border-radius:8px;padding:6px 10px}
+.a-msg .thinking{font-family:var(--ui);font-size:var(--fs-s);color:var(--faint)}
+.a-msg .err{font-family:var(--ui);font-size:var(--fs-s);color:var(--bad)}
+.a-tools{display:flex;gap:4px}
+.mode-tag{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint)}
+
+/* composer */
+.composer{flex:none;padding:0 24px calc(14px + env(safe-area-inset-bottom,0px))}
+.comp-box{max-width:740px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 12px 8px;box-shadow:0 1px 6px rgba(60,50,40,.05)}
+.comp-box textarea{width:100%;border:0;outline:0;background:transparent;resize:none;font-size:var(--fs-m);line-height:1.6;max-height:180px;padding:2px 4px}
+.comp-row{display:flex;align-items:center;gap:8px;margin-top:4px}
+.comp-note{flex:1;min-width:0;font-size:var(--fs-xs);color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.send{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:var(--fg);color:var(--bg)}
+.send:disabled{opacity:.35;cursor:default}
+
+/* other views */
+.view-h{font-family:var(--serif);font-size:1.5rem;font-weight:400;margin:24px 0 0;text-wrap:balance}
+.view-p{color:var(--muted);font-size:var(--fs-s);margin:0}
+.field{width:100%;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:10px 12px;font-size:var(--fs-m);line-height:1.6;outline:0}
+.field:focus{border-color:var(--faint)}
+.btn{background:var(--fg);color:var(--bg);border-radius:10px;padding:7px 16px;font-size:var(--fs-s)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.draft-bar{font-family:var(--ui);font-size:var(--fs-s);background:var(--accent-soft);border-radius:10px;padding:8px 12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.draft-bar span{flex:1;min-width:0}
+.empty-main{color:var(--muted);font-size:var(--fs-m);padding:40px 0;text-align:center}
+
+/* cover (Esc) */
+.cover{position:fixed;inset:0;background:var(--bg);z-index:50;display:flex;justify-content:center;padding:calc(48px + env(safe-area-inset-top,0px)) 24px 24px}
+.cover-in{width:100%;max-width:740px;display:flex;flex-direction:column;gap:12px}
+.cover-h{font-size:var(--fs-s);color:var(--muted);margin:0}
+.cover textarea{flex:1;width:100%;border:0;outline:0;background:transparent;resize:none;font-size:var(--fs-m);line-height:1.8}
+
+.scrim{display:none}
+@media (max-width: 820px){
+  .app{grid-template-columns:minmax(0,1fr)}
+  .side{position:fixed;inset:0 auto 0 0;width:min(300px,86vw);z-index:40;transform:translateX(-102%);transition:transform .2s ease;padding-top:env(safe-area-inset-top,0px)}
+  .side.open{transform:none}
+  .scrim{position:fixed;inset:0;background:rgba(0,0,0,.25);z-index:39}
+  .scrim.open{display:block}
+  .only-mobile{display:grid}
+  .thread{padding-inline:16px}
+  .composer{padding-inline:12px}
+  .topbar{padding-left:8px}
+}
+@media (prefers-reduced-motion: reduce){ .side{transition:none} }
+/* public copy (no Claude features): hide what needs Claude */
+html.static .ai-only{display:none!important}
+</style>
+<script src="lessons.js"></script>
+</head>
+<body>
+<div class="app">
+  <aside class="side" id="side" aria-label="ノート一覧">
+    <div class="side-top">
+      <span class="brand">notes</span>
+      <button class="icon-btn only-mobile" id="closeSide" aria-label="閉じる">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="side-actions">
+      <button class="nav-btn ai-only" id="newBtn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+        新しいノート
+      </button>
+      <button class="nav-btn" id="wordsBtn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg>
+        単語帳 <span class="cnt" id="wordCnt"></span>
+      </button>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="しぼりこみ">
+      <button class="chip" data-f="all" aria-pressed="true">すべて</button>
+      <button class="chip" data-f="anime" aria-pressed="false">アニメ</button>
+      <button class="chip" data-f="movie" aria-pressed="false">映画</button>
+      <button class="chip" data-f="manga" aria-pressed="false">漫画</button>
+      <button class="chip ai-only" data-f="own" aria-pressed="false">自分で追加</button>
+    </div>
+    <div class="list" id="list"><p class="empty-side">読み込み中…</p></div>
+    <div class="side-foot">
+      <div class="row">読み上げ
+        <span class="seg" id="rateSeg"><button data-r="0.8" aria-pressed="false">ゆっくり</button><button data-r="1" aria-pressed="false">ふつう</button></span>
+      </div>
+      <div>Esc でかくす</div>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim"></div>
+
+  <main class="main">
+    <header class="topbar">
+      <button class="icon-btn only-mobile" id="openSide" aria-label="一覧を開く">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+      </button>
+      <div class="top-title" id="topTitle"></div>
+      <button class="icon-btn" id="hideBtn" aria-label="かくす（Esc）" title="かくす（Esc）">
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12s3.5-6 9-6c2 0 3.7.8 5 1.8M21 12s-3.5 6-9 6c-2 0-3.7-.8-5-1.8"/><path d="M4 20 20 4"/></svg>
+      </button>
+    </header>
+    <div class="scroll" id="scroll">
+      <div class="thread" id="thread"><p class="empty-main">読み込み中…</p></div>
+    </div>
+    <form class="composer ai-only" id="composer" autocomplete="off">
+      <div class="comp-box">
+        <textarea id="msg" rows="1" placeholder="この話題について質問する…" aria-label="メッセージ"></textarea>
+        <div class="comp-row">
+          <span class="seg" id="modeSeg"><button type="button" data-mode="ask" aria-pressed="true">質問</button><button type="button" data-mode="talk" aria-pressed="false">英会話</button></span>
+          <span class="comp-note" id="compNote"></span>
+          <button type="submit" class="send" id="sendBtn" aria-label="送信">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </form>
+  </main>
+</div>
+
+<div class="cover" id="cover" hidden>
+  <div class="cover-in">
+    <p class="cover-h">メモ</p>
+    <textarea id="memo" placeholder="メモを入力" aria-label="メモ"></textarea>
+  </div>
+</div>
+
+<script>
+(() => {
+'use strict';
+
+/* ---------- helpers ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const mixHtml = s => esc(s).replace(/\{([^}]+)\}/g, '<span class="mw">$1</span>');
+const LS = {
+  get(k, d){ try{ const v = localStorage.getItem('dn_' + k); return v == null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem('dn_' + k, JSON.stringify(v)); }catch(e){} }
+};
+const use = n => (window.claude && typeof window.claude.use === 'function') ? window.claude.use(n).catch(() => null) : Promise.resolve(null);
+const jstNow = () => new Date(Date.now() + 9 * 3600e3);
+const jstToday = () => jstNow().toISOString().slice(0, 10);
+const jstStamp = () => jstNow().toISOString().slice(0, 16);
+const dayDiff = (a, b) => Math.round((Date.parse(a) - Date.parse(b)) / 864e5);
+const jpDate = d => { if(!d) return ''; const [y, m, dd] = d.slice(0, 10).split('-'); return `${+m}月${+dd}日`; };
+const CAT = {anime:'アニメ', movie:'映画', manga:'漫画', own:'自分で追加'};
+const LEVEL = {1:'やさしい', 2:'ふつう', 3:'ちょっとむずかしい'};
+
+const ICON = {
+  say:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a8.5 8.5 0 0 1 0 12"/></svg>',
+  star:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.8.9-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.9z"/></svg>',
+  starOn:'<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.8.9-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.9z"/></svg>',
+  play:'<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M7 5v14l12-7z"/></svg>',
+  stop:'<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>',
+  send:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>'
+};
+
+/* ---------- state ---------- */
+const S = {
+  lessons: [], byId: {}, cur: null, view: 'lesson', filter: 'all',
+  amount: LS.get('amount', 1), rate: LS.get('rate', 0.8), compMode: 'ask',
+  chats: {}, flips: {}, quiz: {},
+  state: {saved: [], done: {}}, stateRef: null,
+  db: null, sample: null, loaded: false, busy: false, ctl: null
+};
+
+/* ---------- speech ---------- */
+let voice = null;
+function pickVoice(){
+  if(!('speechSynthesis' in window)) return;
+  const vs = speechSynthesis.getVoices().filter(v => /^en(-|_)/i.test(v.lang));
+  const pref = [/natural/i, /google us english/i, /samantha/i, /aria|jenny|guy/i, /en-us/i];
+  for(const p of pref){ const v = vs.find(v => p.test(v.name) || p.test(v.lang)); if(v){ voice = v; return; } }
+  voice = vs[0] || null;
+}
+if('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
+let speakToken = 0, speakTimer = 0;
+function speak(text, onend){
+  if(!('speechSynthesis' in window) || !text) return;
+  speechSynthesis.cancel(); clearTimeout(speakTimer);
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = 'en-US'; u.rate = S.rate; if(voice) u.voice = voice;
+  if(onend){ u.onend = onend; u.onerror = onend; }
+  speakTimer = setTimeout(() => speechSynthesis.speak(u), 60);
+}
+function stopSpeak(){ speakToken++; clearTimeout(speakTimer); if('speechSynthesis' in window) speechSynthesis.cancel(); document.querySelectorAll('.story li.speaking').forEach(li => li.classList.remove('speaking')); const b = document.querySelector('[data-act="playall"]'); if(b){ b.dataset.on = ''; b.innerHTML = ICON.play + ' 通して読む'; } }
+function playAll(){
+  const L = S.byId[S.cur]; if(!L) return;
+  const btn = document.querySelector('[data-act="playall"]');
+  if(btn && btn.dataset.on === '1'){ stopSpeak(); return; }
+  stopSpeak(); const tok = ++speakToken;
+  if(btn){ btn.dataset.on = '1'; btn.innerHTML = ICON.stop + ' 止める'; }
+  const items = [...document.querySelectorAll('#story li')];
+  let i = 0;
+  const next = () => {
+    if(tok !== speakToken) return;
+    items.forEach(li => li.classList.remove('speaking'));
+    if(i >= L.lines.length){ if(btn){ btn.dataset.on = ''; btn.innerHTML = ICON.play + ' 通して読む'; } return; }
+    if(items[i]) items[i].classList.add('speaking');
+    speak(L.lines[i].en, () => { i++; setTimeout(next, 250); });
+  };
+  next();
+}
+
+/* ---------- sidebar ---------- */
+function groupOf(d){
+  const diff = dayDiff(jstToday(), (d || '').slice(0, 10));
+  if(isNaN(diff)) return 'それ以前';
+  if(diff <= 0) return '今日';
+  if(diff === 1) return '昨日';
+  if(diff < 7) return '7日以内';
+  if(diff < 30) return '30日以内';
+  const [y, m] = d.split('-'); return `${y}年${+m}月`;
+}
+function renderList(){
+  const box = $('#list');
+  if(!S.loaded){ return; }
+  const items = S.lessons.filter(L => S.filter === 'all' || (S.filter === 'own' ? L.own : (L.cat === S.filter && !L.own)));
+  if(!items.length){
+    box.innerHTML = `<p class="empty-side">${S.lessons.length ? 'この種類のノートはまだありません。' : 'まだノートがありません。毎朝、映画・アニメ・漫画の話題が届きます。「新しいノート」から自分で足すこともできます。'}</p>`;
+    return;
+  }
+  let html = '', g = '';
+  for(const L of items){
+    const gg = groupOf(L.added);
+    if(gg !== g){ html += `<div class="grp">${esc(gg)}</div>`; g = gg; }
+    const done = S.state.done[L.id];
+    html += `<button class="item" data-id="${esc(L.id)}" aria-current="${S.view === 'lesson' && S.cur === L.id}">
+      <span class="dot ${L.own ? 'own' : esc(L.cat)}" aria-hidden="true"></span><span class="t">${esc(L.title)}</span>${done ? `<span class="done" title="クイズ ${done.s}/${done.n}">✓</span>` : ''}</button>`;
+  }
+  box.innerHTML = html;
+}
+function renderWordCnt(){ $('#wordCnt').textContent = S.state.saved.length || ''; }
+function setNav(){
+  $('#wordsBtn').setAttribute('aria-current', S.view === 'words');
+  $('#newBtn').setAttribute('aria-current', S.view === 'new');
+}
+
+/* ---------- lesson view ---------- */
+function storyLine(L, i){
+  const ln = L.lines[i]; const fl = !!(S.flips[L.id] && S.flips[L.id][i]);
+  let base;
+  if(S.amount === 1) base = ln.mix ? 'mix' : 'ja';
+  else if(S.amount === 2) base = (i % 2 === 0) ? 'en' : 'ja';
+  else base = 'en';
+  let html;
+  if(S.amount === 3){
+    html = `<span class="s-text en">${esc(ln.en)}</span>` + (fl ? `<span class="s-sub">${esc(ln.ja)}</span>` : '');
+  }else{
+    const show = fl ? (base === 'en' ? 'ja' : 'en') : base;
+    if(show === 'en') html = `<span class="s-text en">${esc(ln.en)}</span>`;
+    else if(show === 'mix') html = `<span class="s-text ja">${mixHtml(ln.mix)}</span>`;
+    else html = `<span class="s-text ja">${esc(ln.ja)}</span>`;
+  }
+  return `<li data-i="${i}"><span class="s-body">${html}</span><button class="say" data-say-line="${i}" aria-label="英文を読み上げ">${ICON.say}</button></li>`;
+}
+function isSaved(w){ return S.state.saved.some(s => s.w === w); }
+function wordRow(wd, lessonId){
+  const on = isSaved(wd.w);
+  return `<li><button class="say" data-say="${esc(wd.w)}" aria-label="${esc(wd.w)} を読み上げ">${ICON.say}</button>
+    <div class="wtxt"><span class="w">${esc(wd.w)}</span><span class="m">${esc(wd.ja)}</span>${wd.note ? `<span class="n">${esc(wd.note)}</span>` : ''}</div>
+    <button class="star" data-star="${esc(wd.w)}" data-from="${esc(lessonId || wd.from || '')}" aria-pressed="${on}" aria-label="単語帳に入れる">${on ? ICON.starOn : ICON.star}</button></li>`;
+}
+function renderLesson(){
+  const L = S.byId[S.cur]; const th = $('#thread');
+  stopSpeak();
+  if(!L){ th.innerHTML = `<p class="empty-main">${S.loaded ? 'ノートを選んでください。' : '読み込み中…'}</p>`; $('#topTitle').textContent = ''; return; }
+  $('#topTitle').textContent = L.title;
+  const p = L.post || {};
+  const who = p.name ? `${esc(p.name)}${p.account ? `（@${esc(p.account)}）` : ''}` : '';
+  const userMsg = L.own
+    ? `${esc(L.ask || 'これを英語で読みたい')}${p.url ? `<span class="src"><a href="${esc(p.url)}" target="_blank" rel="noopener">元のポストを開く</a></span>` : ''}`
+    : `${who ? who + 'のポスト、' : ''}英語で読みたい${p.url ? `<span class="src"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.url.replace(/^https?:\/\//, ''))}</a></span>` : ''}`;
+  const qz = S.quiz[L.id] || (S.quiz[L.id] = {});
+  const quizHtml = (L.quiz || []).map((q, qi) => {
+    const ans = qz[qi];
+    const choices = (q.choices || []).map((c, ci) => {
+      let cls = 'choice';
+      if(ans != null){ if(ci === q.a) cls += ' right'; else if(ci === ans) cls += ' wrong'; }
+      return `<button class="${cls}" data-q="${qi}" data-c="${ci}" ${ans != null ? 'disabled' : ''}>${esc(c)}</button>`;
+    }).join('');
+    const why = ans != null ? `<p class="q-why">${ans === q.a ? '正解。' : 'ざんねん。'}${esc(q.why || '')}</p>` : '';
+    return `<div class="qq"><p class="q-t">${qi + 1}. ${esc(q.q)}</p><div class="choices">${choices}</div>${why}</div>`;
+  }).join('');
+  const g = L.grammar;
+  const draft = S.cur === '__draft' ? `<div class="draft-bar"><span>このノートはまだ保存していません。</span><button class="btn" data-act="save-draft">保存する</button><button class="btn ghost" data-act="drop-draft">捨てる</button></div>` : '';
+  th.innerHTML = `${draft}
+    <div class="u-row"><div class="u-bubble">${userMsg}</div></div>
+    <div class="a-block">
+      <p class="lead">${esc(L.summary)}</p>
+      <div class="meta-line"><span>${esc(L.own ? CAT.own : (CAT[L.cat] || ''))}</span><span>${esc(LEVEL[L.level] || '')}</span>${p.date ? `<span>${esc(jpDate(p.date))}のポスト</span>` : ''}</div>
+
+      <section class="blk" aria-label="読んでみよう">
+        <div class="blk-h"><h3>読んでみよう</h3><span class="sp"></span>
+          <span class="seg" id="amtSeg" role="group" aria-label="英語の量">
+            <button data-amt="1" aria-pressed="${S.amount === 1}">すこし</button><button data-amt="2" aria-pressed="${S.amount === 2}">半分</button><button data-amt="3" aria-pressed="${S.amount === 3}">ぜんぶ英語</button>
+          </span>
+          <button class="txt-btn" data-act="playall">${ICON.play} 通して読む</button>
+        </div>
+        <p class="note">${S.amount === 3 ? '文をタップすると日本語訳が出ます。' : '文をタップすると英語と日本語が入れかわります。'}</p>
+        <ol class="story" id="story">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
+      </section>
+
+      <section class="blk" aria-label="単語">
+        <div class="blk-h"><h3>単語</h3><span class="sp"></span><span class="note">☆で単語帳へ</span></div>
+        <ul class="words">${(L.words || []).map(w => wordRow(w, L.id)).join('')}</ul>
+      </section>
+
+      ${g ? `<section class="blk" aria-label="文法">
+        <div class="blk-h"><h3>文法：${esc(g.title)}</h3></div>
+        <div class="gram"><div class="g-body">${esc(g.body)}</div>
+          ${(g.ex || []).map(e => `<p class="ex"><span class="en">${esc(e.en)}</span><span class="ja">${esc(e.ja)}</span></p>`).join('')}
+        </div>
+      </section>` : ''}
+
+      ${quizHtml ? `<section class="blk" aria-label="クイズ">
+        <div class="blk-h"><h3>クイズ</h3><span class="sp"></span><span class="score" id="score"></span></div>
+        <div class="quiz">${quizHtml}</div>
+      </section>` : ''}
+
+      ${L.talk ? `<section class="blk" aria-label="英語で答えてみよう">
+        <div class="blk-h"><h3>英語で答えてみよう</h3></div>
+        <p class="talk-q">${esc(L.talk.q)} <button class="say" style="display:inline-grid;vertical-align:middle" data-say="${esc(L.talk.q)}" aria-label="読み上げ">${ICON.say}</button></p>
+        <p class="talk-ja">${esc(L.talk.ja)}${L.talk.hint ? `　ヒント：${esc(L.talk.hint)}` : ''}</p>
+        <button class="pill ai-only" data-act="talk">この質問で話してみる</button>
+      </section>` : ''}
+
+      ${p.url ? `<div class="src-foot">元のポスト：<a href="${esc(p.url)}" target="_blank" rel="noopener">${who || 'Xで開く'}</a>${p.date ? `　${esc(jpDate(p.date))}` : ''}${p.likes ? `　いいね ${Number(p.likes).toLocaleString('ja-JP')}（取得時）` : ''}</div>` : ''}
+    </div>
+    <div class="chat" id="chat"></div>`;
+  updateScore();
+  renderChat();
+}
+function rerenderStory(){
+  const L = S.byId[S.cur]; if(!L) return;
+  stopSpeak();
+  $('#story').innerHTML = L.lines.map((_, i) => storyLine(L, i)).join('');
+  document.querySelectorAll('#amtSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.amt === S.amount));
+  const note = $('#story').previousElementSibling; if(note) note.textContent = S.amount === 3 ? '文をタップすると日本語訳が出ます。' : '文をタップすると英語と日本語が入れかわります。';
+}
+function updateScore(){
+  const L = S.byId[S.cur]; const el = $('#score'); if(!L || !el) return;
+  const qz = S.quiz[L.id] || {}; const n = (L.quiz || []).length;
+  const answered = Object.keys(qz).length;
+  if(answered < n){ const d = S.state.done[L.id]; el.textContent = d ? `前回 ${d.s}/${d.n}` : ''; return; }
+  const s = (L.quiz || []).filter((q, i) => qz[i] === q.a).length;
+  el.textContent = `${s}/${n} 正解`;
+}
+function answer(qi, ci){
+  const L = S.byId[S.cur]; if(!L) return;
+  const qz = S.quiz[L.id] || (S.quiz[L.id] = {});
+  if(qz[qi] != null) return;
+  qz[qi] = ci;
+  const q = L.quiz[qi];
+  const wrap = document.querySelectorAll('.qq')[qi];
+  wrap.querySelectorAll('.choice').forEach((b, i) => { b.disabled = true; if(i === q.a) b.classList.add('right'); else if(i === ci) b.classList.add('wrong'); });
+  wrap.insertAdjacentHTML('beforeend', `<p class="q-why">${ci === q.a ? '正解。' : 'ざんねん。'}${esc(q.why || '')}</p>`);
+  const n = L.quiz.length;
+  if(Object.keys(qz).length === n && L.id !== '__draft'){
+    const s = L.quiz.filter((q, i) => qz[i] === q.a).length;
+    S.state.done[L.id] = {s, n, at: jstToday()};
+    saveState(); renderList();
+  }
+  updateScore();
+}
+
+/* ---------- saved words / progress ---------- */
+let writing = false, again = false;
+async function saveState(){
+  const snap = JSON.parse(JSON.stringify(S.state));
+  if(!S.stateRef){ LS.set('state', snap); return; }
+  if(writing){ again = true; return; }
+  writing = true;
+  try{ await S.stateRef.set(snap); }catch(e){ LS.set('state', snap); }
+  writing = false;
+  if(again){ again = false; saveState(); }
+}
+function toggleWord(w, from){
+  const i = S.state.saved.findIndex(s => s.w === w);
+  if(i >= 0) S.state.saved.splice(i, 1);
+  else {
+    const L = S.byId[from] || S.byId[S.cur];
+    const wd = L && (L.words || []).find(x => x.w === w);
+    S.state.saved.unshift({w, ja: wd ? wd.ja : '', note: wd && wd.note ? wd.note : '', from: L && L.id !== '__draft' ? L.id : ''});
+  }
+  saveState(); renderWordCnt(); refreshStars();
+  if(S.view === 'words') renderWords();
+}
+function refreshStars(){
+  document.querySelectorAll('[data-star]').forEach(b => { const on = isSaved(b.dataset.star); b.setAttribute('aria-pressed', on); b.innerHTML = on ? ICON.starOn : ICON.star; });
+}
+let blurMeanings = LS.get('blur', false);
+function renderWords(){
+  S.view = 'words'; setNav(); renderList(); stopSpeak();
+  $('#topTitle').textContent = '単語帳';
+  $('#composer').hidden = true;
+  const list = S.state.saved;
+  $('#thread').innerHTML = `<h2 class="view-h">単語帳</h2>
+    <p class="view-p">${list.length ? `${list.length}語。意味をかくして、思い出せるか試せます。` : '各ノートの単語の☆を押すと、ここに集まります。'}</p>
+    ${list.length ? `<div class="row"><button class="btn ghost" data-act="blur">${blurMeanings ? '意味を見せる' : '意味をかくす'}</button></div>
+    <ul class="words ${blurMeanings ? 'blur' : ''}" id="savedWords">${list.map(w => {
+      const L = S.byId[w.from];
+      return wordRow({w: w.w, ja: w.ja, note: [w.note, L ? `出てきたノート：${L.title}` : ''].filter(Boolean).join('　'), from: w.from}, w.from);
+    }).join('')}</ul>` : ''}`;
+  $('#scroll').scrollTop = 0;
+}
+
+/* ---------- new note ---------- */
+function renderNew(){
+  S.view = 'new'; setNav(); renderList(); stopSpeak();
+  $('#topTitle').textContent = '新しいノート';
+  $('#composer').hidden = true;
+  const can = !!S.sample;
+  $('#thread').innerHTML = `<h2 class="view-h">英語で読みたい文章を貼りつけてください</h2>
+    <p class="view-p">Xのポストやニュースの文を、中学英語のノートにします。日本語でも英語でも大丈夫です。</p>
+    <textarea class="field" id="srcText" rows="7" placeholder="ここに貼りつけ">${esc(LS.get('newDraft', ''))}</textarea>
+    <input class="field" id="srcUrl" placeholder="元のポストのURL（なくても大丈夫）">
+    <div class="row"><button class="btn" id="makeBtn" ${can ? '' : 'disabled'}>ノートにする</button><span class="note" id="makeNote">${can ? '作るのに30秒〜1分ほどかかります。' : 'この画面ではAIを使えないため、ノートを作れません。'}</span></div>`;
+  $('#scroll').scrollTop = 0;
+}
+const LESSON_SPEC = `次のJSONオブジェクトを1つだけ返してください（前後に文章を書かない）。
+{
+ "title": "サイドバーに出す日本語の短い題（25字以内）",
+ "summary": "日本語で1〜2文の要点（ですます調）",
+ "cat": "anime" | "movie" | "manga" | "other",
+ "level": 1 | 2 | 3,   // 1=中1レベル 2=中2 3=中3
+ "lines": [ {"en": "英文", "ja": "その日本語訳", "mix": "日本語の文に、中学で習う英単語を1〜2個 {波かっこ} で入れたもの"} ],   // 4〜6文
+ "words": [ {"w": "英単語や熟語", "ja": "意味", "note": "ひとこと説明（任意）"} ],   // 4〜5個
+ "grammar": {"title": "中学で習う文法の名前", "body": "日本語で2〜3文の説明", "ex": [{"en": "例文", "ja": "訳"}, {"en": "例文", "ja": "訳"}]},
+ "quiz": [ {"q": "問題（日本語）", "choices": ["選択肢1","選択肢2","選択肢3"], "a": 正解の番号(0から), "why": "日本語で1文の解説"} ],   // ちょうど3問
+ "talk": {"q": "この話題について相手に聞く、やさしい英語の質問", "ja": "その訳", "hint": "答え方の例（英語、___ で空欄可）"}
+}
+ルール:
+- 英文は中学で習う単語と文法だけを使い、1文はだいたい12語以内。固有名詞はそのままでよい。
+- 元の文章の内容を変えない。書いていないことを足さない（推測しない）。
+- 日本語は自然なですます調。
+- 元の文章の言いまわし（例：「続投」「見放題」）が英語でどうなるかを words の note で触れるとよい。
+- クイズは、内容1問・単語1問・文法の穴うめ1問。`;
+async function makeNote(){
+  const text = $('#srcText').value.trim(); const url = $('#srcUrl').value.trim();
+  const note = $('#makeNote'); const btn = $('#makeBtn');
+  if(!text){ note.textContent = '文章を貼りつけてください。'; return; }
+  if(!S.sample){ note.textContent = 'この画面ではAIを使えません。'; return; }
+  btn.disabled = true; note.textContent = '作っています…';
+  try{
+    const r = await S.sample.json(`あなたは日本の社会人に英語を教える先生です。生徒の英語力は中学レベルで、映画・アニメ・漫画が好きです。\n次の文章を、英語の読み物ノートにしてください。\n\n<文章>\n${text.slice(0, 6000)}\n</文章>\n\n${LESSON_SPEC}`, {modelTier: 'default'});
+    const L = normalizeLesson(r);
+    if(!L){ note.textContent = 'うまく作れませんでした。もう一度押してください。'; btn.disabled = false; return; }
+    L.id = '__draft'; L.own = true; L.added = jstStamp(); L.ask = text.length > 60 ? text.slice(0, 60) + '…' : text;
+    if(/^https?:\/\//.test(url)) L.post = {url, date: jstToday()};
+    S.byId.__draft = L; S.quiz.__draft = {}; S.flips.__draft = {}; S.chats.__draft = [];
+    LS.set('newDraft', '');
+    openLesson('__draft');
+  }catch(e){
+    note.textContent = errText(e); btn.disabled = false;
+  }
+}
+function normalizeLesson(r){
+  if(!r || typeof r !== 'object' || !Array.isArray(r.lines)) return null;
+  const lines = r.lines.filter(l => l && l.en && l.ja).map(l => ({en: String(l.en), ja: String(l.ja), mix: l.mix ? String(l.mix) : ''}));
+  if(!lines.length) return null;
+  const quiz = (Array.isArray(r.quiz) ? r.quiz : []).filter(q => q && q.q && Array.isArray(q.choices) && Number.isInteger(q.a) && q.a >= 0 && q.a < q.choices.length)
+    .map(q => ({q: String(q.q), choices: q.choices.map(String), a: q.a, why: q.why ? String(q.why) : ''}));
+  return {
+    title: String(r.title || '新しいノート').slice(0, 40), summary: String(r.summary || ''),
+    cat: ['anime', 'movie', 'manga'].includes(r.cat) ? r.cat : 'other', level: [1, 2, 3].includes(r.level) ? r.level : 2,
+    lines, words: (Array.isArray(r.words) ? r.words : []).filter(w => w && w.w).map(w => ({w: String(w.w), ja: String(w.ja || ''), note: w.note ? String(w.note) : ''})),
+    grammar: r.grammar && r.grammar.title ? {title: String(r.grammar.title), body: String(r.grammar.body || ''), ex: (r.grammar.ex || []).filter(e => e && e.en).map(e => ({en: String(e.en), ja: String(e.ja || '')}))} : null,
+    quiz, talk: r.talk && r.talk.q ? {q: String(r.talk.q), ja: String(r.talk.ja || ''), hint: String(r.talk.hint || '')} : null
+  };
+}
+async function saveDraft(){
+  const L = S.byId.__draft; if(!L) return;
+  if(!S.db){ alertBar('保存できませんでした（この画面では保存が使えません）。'); return; }
+  const id = 'own-' + Date.now().toString(36);
+  const doc = JSON.parse(JSON.stringify(L)); doc.id = id;
+  try{
+    await S.db.collection('lessons').doc(id).set(doc);
+    S.chats[id] = S.chats.__draft || []; S.quiz[id] = S.quiz.__draft || {}; S.flips[id] = S.flips.__draft || {};
+    delete S.byId.__draft; S.byId[id] = doc;
+    openLesson(id);
+  }catch(e){ alertBar('保存できませんでした。もう一度押してください。'); }
+}
+function alertBar(t){ const bar = document.querySelector('.draft-bar span'); if(bar) bar.textContent = t; }
+
+/* ---------- open / navigation ---------- */
+function openLesson(id){
+  S.view = 'lesson'; S.cur = id; if(id !== '__draft') LS.set('last', id);
+  setNav(); renderList();
+  $('#composer').hidden = false;
+  renderLesson(); setCompMode(S.compMode);
+  $('#scroll').scrollTop = 0; closeSide();
+}
+function openSide(){ $('#side').classList.add('open'); $('#scrim').classList.add('open'); }
+function closeSide(){ $('#side').classList.remove('open'); $('#scrim').classList.remove('open'); }
+
+/* ---------- chat with Claude ---------- */
+function lessonText(L){
+  return [`題：${L.title}`, `要点：${L.summary}`, '本文：', ...L.lines.map((l, i) => `${i + 1}. ${l.en} ／ ${l.ja}`),
+    '単語：' + (L.words || []).map(w => `${w.w}=${w.ja}`).join('、'),
+    L.grammar ? `文法：${L.grammar.title}（${L.grammar.body}）` : ''].filter(Boolean).join('\n');
+}
+function askRules(L){
+  return `あなたは、日本の社会人に英語を教えるやさしい家庭教師です。生徒の英語力は中学レベルで、映画・アニメ・漫画が好きです。そのニュースを英語で読んで勉強しています。
+いま生徒が読んでいる教材はこれです。
+<教材>
+${lessonText(L)}
+</教材>
+答え方のルール:
+- 日本語で、短くやさしく答える（だいたい3〜8行）。
+- 例文は中学で習う単語だけで作り、すぐ下に日本語訳をつける。
+- 文法の用語を使うときは、ひとことで意味を添える。
+- 作品や人について、教材に書いていないことは推測で言わない。分からないときは「教材には書いていません」と言う。
+- 書式は **太字** と、行頭の「- 」の箇条書きだけ。見出し・表・絵文字は使わない。`;
+}
+function talkRules(L, opener){
+  return `あなたは英会話の練習相手です。気さくな友だちとして英語で話します。
+相手は日本の社会人で、英語力は中学レベル。映画・アニメ・漫画が好きです。話題は次のニュースと、相手の好きな作品です。
+<教材>
+${lessonText(L)}
+</教材>
+${opener ? `あなたは最初に「${opener}」と聞きました。` : 'あなたから話しかけていません。相手の最初の発言に返事をしてください。'}
+返事の書き方（この順番で、各項目を1行ずつ）:
+1. 英語で1〜3文。中学で習う単語と文法だけを使い、最後に質問を1つして会話を続ける。
+2. 「訳：」で始めて、1の日本語訳。
+3. 相手の英語にまちがいや不自然なところがあれば「直すなら：」で始めて、自然な英文と短い日本語の説明。相手が日本語で書いたときは「英語では：」で始めて、その言い方の英文。どちらもなければこの行は書かない。
+絵文字・見出し・箇条書きは使わない。`;
+}
+function chatOf(id){ if(!S.chats[id]) S.chats[id] = id === '__draft' ? [] : LS.get('chat_' + id, []); return S.chats[id]; }
+function saveChat(id){ if(id !== '__draft') LS.set('chat_' + id, chatOf(id).slice(-40)); }
+function mdHtml(t){
+  const lines = esc(t).split('\n'); let out = '', inList = false;
+  for(const ln of lines){
+    const b = ln.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+    if(/^\s*[-・]\s+/.test(ln)){ if(!inList){ out += '<ul>'; inList = true; } out += '<li>' + b.replace(/^\s*[-・]\s+/, '') + '</li>'; }
+    else { if(inList){ out += '</ul>'; inList = false; } if(ln.trim()) out += '<p>' + b + '</p>'; }
+  }
+  if(inList) out += '</ul>';
+  return out;
+}
+function talkHtml(t){
+  const en = [];
+  const body = t.split('\n').filter(l => l.trim()).map(l => {
+    const s = l.trim().replace(/^\d\.\s*/, '');
+    if(/^訳[:：]/.test(s)) return `<p class="tr">${esc(s)}</p>`;
+    if(/^(直すなら|英語では)[:：]/.test(s)) return `<p class="fix">${esc(s)}</p>`;
+    en.push(s.replace(/\*\*/g, '')); return `<p>${esc(s).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')}</p>`;
+  }).join('');
+  return {html: body, en: en.join(' ')};
+}
+function msgHtml(m){
+  if(m.role === 'user') return `<div class="u-row"><div class="u-bubble">${esc(m.content).replace(/\n/g, '<br>')}</div></div>`;
+  if(m.mode === 'talk'){
+    const r = talkHtml(m.content);
+    return `<div class="a-msg">${r.html}${r.en ? `<div class="a-tools"><button class="say" data-say="${esc(r.en)}" aria-label="英文を読み上げ">${ICON.say}</button></div>` : ''}</div>`;
+  }
+  return `<div class="a-msg">${mdHtml(m.content)}</div>`;
+}
+function renderChat(){
+  const box = $('#chat'); if(!box) return;
+  box.innerHTML = chatOf(S.cur).map(msgHtml).join('');
+}
+function errText(e){
+  const c = e && e.code;
+  if(['not_granted', 'sampling_disabled', 'not_declared', 'capability_disabled', 'capability_removed'].includes(c)) return 'この画面ではAIを使えません。';
+  if(c === 'rate_limited') return '混みあっています。少し待ってからもう一度送ってください。';
+  if(c === 'session_expired') return 'ログインが切れました。ページを開きなおしてください。';
+  if(c === 'refused') return 'この内容には答えられませんでした。聞き方を変えてみてください。';
+  if(c === 'prompt_too_large') return '長すぎました。短くしてください。';
+  if(c === 'invalid_json') return 'うまく作れませんでした。もう一度押してください。';
+  return 'うまく届きませんでした。もう一度送ってください。';
+}
+function setCompMode(m){
+  S.compMode = m;
+  document.querySelectorAll('#modeSeg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.mode === m));
+  $('#msg').placeholder = m === 'talk' ? '英語で返事してみよう（日本語でも大丈夫）' : 'この話題について質問する…';
+  setCompNote();
+}
+function setCompNote(t){
+  const n = $('#compNote');
+  if(t != null){ n.textContent = t; return; }
+  n.textContent = S.sample ? (S.compMode === 'talk' ? 'まちがえても大丈夫。直し方を教えます' : '例：「〜」の意味は？') : (S.loaded ? 'この画面ではAIを使えません' : '');
+}
+function setBusy(b){
+  S.busy = b; const btn = $('#sendBtn');
+  btn.innerHTML = b ? ICON.stop : ICON.send; btn.setAttribute('aria-label', b ? '止める' : '送信');
+}
+async function send(){
+  if(S.busy){ if(S.ctl) S.ctl.abort(); return; }
+  const box = $('#msg'); const text = box.value.trim();
+  const L = S.byId[S.cur]; if(!text || !L) return;
+  if(!S.sample){ setCompNote('この画面ではAIを使えません'); return; }
+  const id = L.id === '__draft' ? '__draft' : S.cur; const mode = S.compMode;
+  const chat = chatOf(id);
+  chat.push({role: 'user', content: text, mode}); saveChat(id);
+  box.value = ''; autosize();
+  const cbox = $('#chat');
+  cbox.insertAdjacentHTML('beforeend', msgHtml(chat[chat.length - 1]));
+  cbox.insertAdjacentHTML('beforeend', '<div class="a-msg" id="pending"><p class="thinking">考えています…</p></div>');
+  const pend = $('#pending'); pend.removeAttribute('id');
+  scrollBottom();
+  const opener = chat.find(t => t.local && t.mode === 'talk');
+  const turns = chat.filter(t => t.mode === mode && !t.local).slice(-16).map(t => ({role: t.role, content: t.content}));
+  const input = [{role: 'user', content: mode === 'talk' ? talkRules(L, opener ? opener.q : '') : askRules(L)}, ...turns];
+  S.ctl = new AbortController(); setBusy(true);
+  const paint = t => { pend.innerHTML = mode === 'talk' ? talkHtml(t).html : mdHtml(t); };
+  try{
+    const r = await S.sample(input, {modelTier: 'quick', cache: false, signal: S.ctl.signal, onText: ({text}) => { paint(text); scrollBottom(true); }});
+    chat.push({role: 'assistant', content: r.text, mode}); saveChat(id);
+    pend.outerHTML = msgHtml(chat[chat.length - 1]);
+  }catch(e){
+    if(e && e.text && e.code !== 'refused'){
+      chat.push({role: 'assistant', content: e.text, mode}); saveChat(id);
+      pend.outerHTML = msgHtml(chat[chat.length - 1]);
+    } else if(e && e.code === 'cancelled'){
+      pend.remove();
+    } else {
+      pend.innerHTML = `<p class="err">${esc(errText(e))}</p>`;
+    }
+  }finally{
+    setBusy(false); S.ctl = null; if(S.cur === id || id === '__draft') scrollBottom(true);
+  }
+}
+function startTalk(){
+  const L = S.byId[S.cur]; if(!L || !L.talk) return;
+  const id = S.cur; const chat = chatOf(id);
+  const content = `${L.talk.q}\n訳：${L.talk.ja}`;
+  const last = chat[chat.length - 1];
+  if(!(last && last.local && last.q === L.talk.q)){
+    chat.push({role: 'assistant', content, mode: 'talk', local: true, q: L.talk.q}); saveChat(id);
+    $('#chat').insertAdjacentHTML('beforeend', msgHtml(chat[chat.length - 1]));
+  }
+  setCompMode('talk'); scrollBottom(true);
+  speak(L.talk.q);
+  $('#msg').focus();
+}
+function scrollBottom(smooth){ const sc = $('#scroll'); sc.scrollTo({top: sc.scrollHeight, behavior: smooth ? 'smooth' : 'auto'}); }
+function autosize(){ const t = $('#msg'); t.style.height = 'auto'; t.style.height = Math.min(t.scrollHeight, 180) + 'px'; }
+
+/* ---------- cover ---------- */
+function toggleCover(force){
+  const c = $('#cover'); const show = force != null ? force : c.hidden;
+  c.hidden = !show;
+  if(show){ stopSpeak(); $('#memo').focus(); }
+}
+$('#memo').value = LS.get('memo', '');
+$('#memo').addEventListener('input', e => LS.set('memo', e.target.value));
+
+/* ---------- events ---------- */
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape' && !e.isComposing){ e.preventDefault(); toggleCover(); }
+});
+$('#hideBtn').addEventListener('click', () => toggleCover(true));
+$('#openSide').addEventListener('click', openSide);
+$('#closeSide').addEventListener('click', closeSide);
+$('#scrim').addEventListener('click', closeSide);
+$('#newBtn').addEventListener('click', () => { renderNew(); closeSide(); });
+$('#wordsBtn').addEventListener('click', () => { renderWords(); closeSide(); });
+$('#filters').addEventListener('click', e => {
+  const b = e.target.closest('[data-f]'); if(!b) return;
+  S.filter = b.dataset.f;
+  document.querySelectorAll('#filters .chip').forEach(c => c.setAttribute('aria-pressed', c === b));
+  renderList();
+});
+$('#list').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if(b) openLesson(b.dataset.id); });
+$('#rateSeg').addEventListener('click', e => {
+  const b = e.target.closest('[data-r]'); if(!b) return;
+  S.rate = +b.dataset.r; LS.set('rate', S.rate); markRate(); speak('Hello. Nice to meet you.');
+});
+function markRate(){ document.querySelectorAll('#rateSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.r === S.rate)); }
+markRate();
+$('#modeSeg').addEventListener('click', e => { const b = e.target.closest('[data-mode]'); if(b){ setCompMode(b.dataset.mode); $('#msg').focus(); } });
+$('#composer').addEventListener('submit', e => { e.preventDefault(); send(); });
+$('#msg').addEventListener('input', autosize);
+$('#msg').addEventListener('keydown', e => { if(e.key === 'Enter' && !e.shiftKey && !e.isComposing && e.keyCode !== 229){ e.preventDefault(); send(); } });
+
+$('#thread').addEventListener('click', e => {
+  const t = e.target;
+  const sayLine = t.closest('[data-say-line]');
+  if(sayLine){ e.stopPropagation(); const L = S.byId[S.cur]; stopSpeak(); speak(L.lines[+sayLine.dataset.sayLine].en); return; }
+  const say = t.closest('[data-say]'); if(say){ stopSpeak(); speak(say.dataset.say); return; }
+  const star = t.closest('[data-star]'); if(star){ toggleWord(star.dataset.star, star.dataset.from); return; }
+  const amt = t.closest('[data-amt]'); if(amt){ S.amount = +amt.dataset.amt; LS.set('amount', S.amount); rerenderStory(); return; }
+  const li = t.closest('#story li');
+  if(li){ const L = S.byId[S.cur]; const i = +li.dataset.i; const f = S.flips[L.id] || (S.flips[L.id] = {}); f[i] = !f[i]; li.outerHTML = storyLine(L, i); return; }
+  const ch = t.closest('.choice'); if(ch && !ch.disabled){ answer(+ch.dataset.q, +ch.dataset.c); return; }
+  const m = t.closest('.words.blur .m'); if(m){ m.classList.toggle('show'); return; }
+  const act = t.closest('[data-act]'); if(!act) return;
+  const a = act.dataset.act;
+  if(a === 'playall') playAll();
+  else if(a === 'talk') startTalk();
+  else if(a === 'save-draft') saveDraft();
+  else if(a === 'drop-draft'){ delete S.byId.__draft; const first = S.lessons[0]; if(first) openLesson(first.id); else renderNew(); }
+  else if(a === 'blur'){ blurMeanings = !blurMeanings; LS.set('blur', blurMeanings); renderWords(); }
+});
+$('#thread').addEventListener('input', e => { if(e.target.id === 'srcText') LS.set('newDraft', e.target.value); });
+$('#thread').addEventListener('click', e => { if(e.target.id === 'makeBtn') makeNote(); });
+
+/* ---------- boot ---------- */
+S.state = LS.get('state', {saved: [], done: {}});
+renderWordCnt();
+setCompMode('ask');
+
+(async () => {
+  const [db, user, sample] = await Promise.all([use('db'), use('user'), use('sample')]);
+  S.sample = typeof sample === 'function' ? sample : null;
+  S.db = db;
+  setCompNote();
+  if(!db && Array.isArray(window.LESSONS)){
+    // public copy: lessons come from lessons.js, progress stays in this browser
+    document.documentElement.classList.add('static');
+    S.sample = null; S.loaded = true;
+    S.lessons = window.LESSONS.filter(L => L && Array.isArray(L.lines) && L.lines.length).slice().sort((a, b) => a.added < b.added ? 1 : -1);
+    S.lessons.forEach(L => { S.byId[L.id] = L; });
+    renderList();
+    const hash = decodeURIComponent((location.hash || '').slice(1));
+    const want = S.byId[hash] ? hash : (S.byId[LS.get('last', '')] ? LS.get('last', '') : (S.lessons[0] && S.lessons[0].id));
+    if(want) openLesson(want);
+    return;
+  }
+  if(!db){
+    S.loaded = true;
+    $('#list').innerHTML = '<p class="empty-side">ノートを読み込めませんでした。claude.ai にログインした状態で開いてください。</p>';
+    $('#thread').innerHTML = '<p class="empty-main">ノートを読み込めませんでした。</p>';
+    return;
+  }
+  const uid = user ? await user.id().catch(() => null) : null;
+  if(uid){
+    try{
+      S.stateRef = db.doc('data/users/' + uid + '/state');
+      S.stateRef.onSnapshot(s => {
+        if(s.exists){ const d = s.data() || {}; S.state = {saved: Array.isArray(d.saved) ? d.saved.slice() : [], done: Object.assign({}, d.done || {})}; }
+        else {
+          const local = LS.get('state', null);
+          if(local && (local.saved.length || Object.keys(local.done).length)) saveState();
+        }
+        renderWordCnt(); refreshStars(); renderList(); if(S.view === 'words') renderWords(); else updateScore();
+      }, () => { S.stateRef = null; });
+    }catch(e){ S.stateRef = null; }
+  }
+  db.collection('lessons').orderBy('added', 'desc').limit(500).onSnapshot(snap => {
+    S.lessons = snap.docs.map(d => Object.assign({}, d.data(), {id: d.id})).filter(L => Array.isArray(L.lines) && L.lines.length);
+    const draft = S.byId.__draft;
+    S.byId = {}; S.lessons.forEach(L => { S.byId[L.id] = L; });
+    if(draft) S.byId.__draft = draft;
+    const first = !S.loaded; S.loaded = true;
+    renderList(); setCompNote();
+    if(first){
+      const hash = decodeURIComponent((location.hash || '').slice(1));
+      const want = S.byId[hash] ? hash : (S.byId[LS.get('last', '')] ? LS.get('last', '') : (S.lessons[0] && S.lessons[0].id));
+      if(want) openLesson(want); else renderNew();
+    } else if(S.view === 'lesson' && !S.byId[S.cur]){
+      const f = S.lessons[0]; if(f) openLesson(f.id); else renderNew();
+    }
+  }, () => {
+    S.loaded = true;
+    $('#list').innerHTML = '<p class="empty-side">ノートを読み込めませんでした。ページを開きなおしてください。</p>';
+  });
+})();
+})();
+</script>
+</body>
+</html>
