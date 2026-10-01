@@ -10,17 +10,19 @@
 <title>Daily Notes</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
 <style>
-/* Layout: chat-app shell. Left = history of topics, right = one topic read like a conversation, composer pinned at the bottom. */
+/* Layout: chat-app shell. Left = history of topics (search, likes, word book), right = one topic read like a conversation, composer pinned at the bottom. */
 :root{
   --bg:#f9f8f4; --side:#f1efe8; --card:#fffefb; --fg:#2e2c28; --muted:#77736b; --faint:#a7a299;
   --line:#e3dfd5; --bubble:#ece9e1; --accent:#a3624a; --accent-soft:#f2e5de; --hl:#f3ead4;
   --good:#3d7650; --good-soft:#e1eee4; --bad:#a24d3c; --bad-soft:#f5e2dd;
   --dot-movie:#7f90a5; --dot-anime:#7e9b7d; --dot-manga:#b48a6c; --dot-own:#9a8fb0;
+  --shadow:rgba(46,38,30,.10);
   --serif:"Source Serif 4", Georgia, "Times New Roman", "Yu Gothic UI", "Hiragino Sans", Meiryo, serif;
   --ui:system-ui, -apple-system, "Segoe UI", "Yu Gothic UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   --fs-xs:.6875rem; --fs-s:.75rem; --fs-m:.84375rem; --fs-l:.9375rem; --fs-xl:1.0625rem;
+  --ease:cubic-bezier(.2,.7,.2,1); --quick:.14s;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -28,6 +30,7 @@
     --line:#393733; --bubble:#34322e; --accent:#d58c6f; --accent-soft:#3c2b24; --hl:#3a3323;
     --good:#86c497; --good-soft:#233128; --bad:#e3907c; --bad-soft:#3a2521;
     --dot-movie:#8ea0b6; --dot-anime:#8fae8d; --dot-manga:#c79c7d; --dot-own:#ab9fc4;
+    --shadow:rgba(0,0,0,.35);
     color-scheme:dark;
   }
 }
@@ -36,97 +39,139 @@
   --line:#393733; --bubble:#34322e; --accent:#d58c6f; --accent-soft:#3c2b24; --hl:#3a3323;
   --good:#86c497; --good-soft:#233128; --bad:#e3907c; --bad-soft:#3a2521;
   --dot-movie:#8ea0b6; --dot-anime:#8fae8d; --dot-manga:#c79c7d; --dot-own:#ab9fc4;
+  --shadow:rgba(0,0,0,.35);
   color-scheme:dark;
 }
 html,body{height:100%}
-body{background:var(--bg);color:var(--fg);font-family:var(--ui);font-size:var(--fs-m);line-height:1.65;-webkit-font-smoothing:antialiased}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui);font-size:var(--fs-m);line-height:1.65;-webkit-font-smoothing:antialiased;overflow:hidden}
 button,input,textarea{font:inherit;color:inherit}
-button{cursor:pointer;background:none;border:0;padding:0}
+button{cursor:pointer;background:none;border:0;padding:0;transition:background-color var(--quick),color var(--quick),border-color var(--quick)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:6px}
-svg{display:block}
+::selection{background:var(--hl)}
+svg{display:block;flex:none}
+.list,.scroll{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+kbd{font-family:var(--ui);font-size:.625rem;line-height:1;color:var(--faint);border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:2px 4px;background:var(--card)}
 
-.app{display:grid;grid-template-columns:268px minmax(0,1fr);height:100%}
+.app{display:grid;grid-template-columns:272px minmax(0,1fr);height:100%}
 
 /* ---------- sidebar ---------- */
 .side{background:var(--side);border-right:1px solid var(--line);display:flex;flex-direction:column;min-height:0}
-.side-top{display:flex;align-items:center;justify-content:space-between;padding:12px 14px 4px 18px}
-.brand{font-family:var(--serif);font-size:var(--fs-l);letter-spacing:.01em;color:var(--fg)}
-.side-actions{display:flex;flex-direction:column;gap:2px;padding:6px 8px}
-.nav-btn{display:flex;align-items:center;gap:10px;width:100%;padding:7px 10px;border-radius:8px;font-size:var(--fs-s);text-align:left;color:var(--fg)}
+.side-top{display:flex;align-items:center;justify-content:space-between;padding:12px 12px 6px 18px}
+.brand{font-family:var(--serif);font-size:var(--fs-l);letter-spacing:.01em}
+.search{position:relative;margin:2px 10px 6px}
+.search svg{position:absolute;left:9px;top:50%;transform:translateY(-50%);color:var(--faint);pointer-events:none}
+.search input{width:100%;border:1px solid var(--line);background:var(--card);border-radius:9px;padding:5px 30px 5px 28px;font-size:var(--fs-s);outline:0;transition:border-color var(--quick)}
+.search input:focus{border-color:var(--faint)}
+.search input::placeholder{color:var(--faint)}
+.search kbd{position:absolute;right:8px;top:50%;transform:translateY(-50%)}
+.search input:focus ~ kbd,.search input:not(:placeholder-shown) ~ kbd{display:none}
+.side-actions{display:flex;flex-direction:column;gap:1px;padding:2px 8px 4px}
+.nav-btn{display:flex;align-items:center;gap:10px;width:100%;padding:6px 10px;border-radius:8px;font-size:var(--fs-s);text-align:left;color:var(--fg)}
+.nav-btn svg{color:var(--muted)}
 .nav-btn:hover,.nav-btn[aria-current="true"]{background:var(--bubble)}
 .nav-btn .cnt{margin-left:auto;color:var(--faint);font-size:var(--fs-xs);font-variant-numeric:tabular-nums}
-.filters{display:flex;flex-wrap:wrap;gap:4px;padding:8px 14px 4px}
-.chip{font-size:var(--fs-xs);padding:2px 9px;border-radius:999px;color:var(--muted);border:1px solid transparent}
+.filters{display:flex;gap:3px;padding:6px 12px 4px;overflow-x:auto;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}
+.filters::-webkit-scrollbar{display:none}
+.filters.end{-webkit-mask-image:none;mask-image:none}
+.chip{flex:none;font-size:var(--fs-xs);padding:1px 9px;border-radius:999px;color:var(--muted);border:1px solid transparent}
 .chip:hover{color:var(--fg)}
 .chip[aria-pressed="true"]{border-color:var(--line);background:var(--card);color:var(--fg)}
-.list{flex:1;overflow-y:auto;padding:4px 8px 12px;min-height:0}
-.grp{font-size:var(--fs-xs);color:var(--faint);padding:14px 10px 4px}
-.item{display:flex;align-items:center;gap:8px;width:100%;padding:6px 10px;border-radius:8px;font-size:var(--fs-s);text-align:left;color:var(--fg)}
-.item:hover{background:var(--bubble)}
-.item[aria-current="true"]{background:var(--bubble)}
+.list{flex:1;overflow-y:auto;padding:2px 8px 14px;min-height:0}
+.grp{font-size:var(--fs-xs);color:var(--faint);padding:14px 10px 3px;display:flex;justify-content:space-between}
+.item{scroll-margin:30px 0 8px;display:flex;align-items:center;gap:8px;width:100%;padding:5px 10px;border-radius:8px;font-size:var(--fs-s);text-align:left;color:var(--fg)}
+.item:hover,.item[aria-current="true"]{background:var(--bubble)}
 .item .t{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item mark{background:var(--hl);color:inherit;border-radius:2px}
+.item .marks{display:flex;align-items:center;gap:4px;color:var(--faint);font-size:var(--fs-xs)}
+.item .marks .lk{color:var(--accent)}
 .dot{width:6px;height:6px;border-radius:50%;flex:none;background:var(--faint)}
 .dot.movie{background:var(--dot-movie)}.dot.anime{background:var(--dot-anime)}.dot.manga{background:var(--dot-manga)}.dot.own{background:var(--dot-own)}
-.item .done{color:var(--faint);font-size:var(--fs-xs)}
-.side-foot{border-top:1px solid var(--line);padding:10px 14px 12px;display:flex;flex-direction:column;gap:6px;font-size:var(--fs-xs);color:var(--muted)}
-.side-foot .row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.empty-side{color:var(--faint);font-size:var(--fs-s);padding:12px 10px}
+.side-foot{border-top:1px solid var(--line);padding:9px 14px 11px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:var(--fs-xs);color:var(--muted)}
+.side-foot .sp{flex:1}
+.foot-btn{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-size:var(--fs-xs);padding:2px 4px;border-radius:5px}
+.foot-btn:hover{color:var(--fg);background:var(--bubble)}
+.empty-side{color:var(--faint);font-size:var(--fs-s);padding:12px 10px;line-height:1.7}
 
 /* ---------- main ---------- */
 .main{display:flex;flex-direction:column;min-width:0;min-height:0;position:relative}
-.topbar{display:flex;align-items:center;gap:8px;height:48px;padding:0 12px 0 16px;flex:none}
+.topbar{display:flex;align-items:center;gap:4px;height:46px;padding:0 10px 0 18px;flex:none;position:relative}
+.topbar::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:calc(var(--p,0) * 100%);background:var(--accent);opacity:.55;transition:width .1s linear}
 .top-title{flex:1;min-width:0;font-size:var(--fs-s);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.icon-btn{width:32px;height:32px;display:grid;place-items:center;border-radius:8px;color:var(--muted)}
+.icon-btn{width:32px;height:32px;display:grid;place-items:center;border-radius:8px;color:var(--muted);position:relative}
 .icon-btn:hover{background:var(--bubble);color:var(--fg)}
 .only-mobile{display:none}
 .scroll{flex:1;overflow-y:auto;min-height:0}
-.thread{max-width:740px;margin:0 auto;padding-block:8px 40px;padding-inline:24px;display:flex;flex-direction:column;gap:22px}
+.thread{max-width:720px;margin:0 auto;padding-block:6px 48px;padding-inline:24px;display:flex;flex-direction:column;gap:22px}
+.thread.enter > *{animation:rise .34s var(--ease) both}
+.thread.enter > *:nth-child(2){animation-delay:.04s}
+.thread.enter > *:nth-child(3){animation-delay:.08s}
+.thread.enter > *:nth-child(n+4){animation-delay:.12s}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+/* heart (like) */
+.heart[aria-pressed="true"]{color:var(--accent)}
+.heart[aria-pressed="true"] svg path{fill:currentColor}
+.heart.pop svg{animation:pop .44s var(--ease)}
+.heart.pop::after{content:"";position:absolute;inset:5px;border-radius:50%;border:1.5px solid var(--accent);animation:ring .55s var(--ease) forwards;pointer-events:none}
+@keyframes pop{0%{transform:scale(1)}35%{transform:scale(1.3)}70%{transform:scale(.92)}100%{transform:scale(1)}}
+@keyframes ring{from{transform:scale(.55);opacity:.8}to{transform:scale(1.45);opacity:0}}
 
 /* user bubble */
 .u-row{display:flex;justify-content:flex-end}
-.u-bubble{background:var(--bubble);border-radius:16px;padding:10px 14px;max-width:min(520px,88%);font-size:var(--fs-m);overflow-wrap:anywhere}
-.u-bubble .src{display:block;font-size:var(--fs-xs);color:var(--muted);margin-top:2px}
+.u-bubble{background:var(--bubble);border-radius:16px;padding:9px 14px;max-width:min(520px,88%);overflow-wrap:anywhere}
+.u-bubble .src{display:block;font-size:var(--fs-xs);color:var(--muted);margin-top:1px}
 .u-bubble a{color:inherit;text-decoration:underline;text-decoration-color:var(--faint);text-underline-offset:3px}
 
 /* assistant answer */
-.a-block{display:flex;flex-direction:column;gap:20px;font-family:var(--serif);font-size:var(--fs-l);line-height:1.7}
+.a-block{display:flex;flex-direction:column;gap:22px;font-family:var(--serif);font-size:var(--fs-l);line-height:1.7}
 .a-block p{margin:0}
-.lead{margin:0}
-.meta-line{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);display:flex;gap:10px;flex-wrap:wrap}
-.blk{display:flex;flex-direction:column;gap:10px}
-.blk-h{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.lead{margin:0;text-wrap:pretty}
+.meta-line{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);display:flex;gap:4px 12px;flex-wrap:wrap;margin-top:-12px}
+.blk{display:flex;flex-direction:column;gap:9px}
+.blk-h{display:flex;align-items:center;gap:8px 10px;flex-wrap:wrap}
 .blk h3{margin:0;font-family:var(--ui);font-size:var(--fs-m);font-weight:600;letter-spacing:.01em}
 .blk-h .sp{flex:1}
 .note{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);margin:0}
 
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:var(--card);font-family:var(--ui)}
-.seg button{font-size:var(--fs-xs);padding:2px 10px;border-radius:999px;color:var(--muted)}
+.seg button{font-size:var(--fs-xs);padding:1px 10px;border-radius:999px;color:var(--muted)}
+.seg button:hover{color:var(--fg)}
 .seg button[aria-pressed="true"]{background:var(--bubble);color:var(--fg)}
 .txt-btn{font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted);display:inline-flex;align-items:center;gap:5px;padding:3px 8px;border-radius:6px}
 .txt-btn:hover{color:var(--fg);background:var(--bubble)}
+.txt-btn[data-on="1"]{color:var(--accent)}
 
-.story{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
-.story li{display:flex;gap:8px;align-items:flex-start;padding:6px 8px;margin-inline:-8px;border-radius:8px;cursor:pointer}
-.story li:hover{background:color-mix(in srgb,var(--bubble) 60%,transparent)}
-.story li.speaking{background:var(--hl)}
+.story{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px}
+.story li{display:flex;gap:8px;align-items:flex-start;padding:6px 8px;margin-inline:-8px;border-radius:8px;cursor:pointer;transition:background-color .2s}
+.story li:hover{background:color-mix(in srgb,var(--bubble) 55%,transparent)}
+.story li.speaking{background:color-mix(in srgb,var(--hl) 55%,transparent)}
 .story .s-body{flex:1;min-width:0}
-.story .s-text.ja{font-family:var(--ui);font-size:var(--fs-m);color:var(--fg)}
-.story .s-sub{display:block;font-family:var(--ui);font-size:var(--fs-s);color:var(--muted);margin-top:2px}
+.story .s-body.swap{animation:swap .22s var(--ease)}
+@keyframes swap{from{opacity:.15;transform:translateY(2px)}to{opacity:1;transform:none}}
+.story .s-text.ja{font-family:var(--ui);font-size:var(--fs-m)}
+.story .s-sub{display:block;font-family:var(--ui);font-size:var(--fs-s);color:var(--muted);margin-top:1px}
 .mw{font-family:var(--serif);font-size:1.06em;background:var(--hl);padding:0 3px;border-radius:3px}
+.tk{border-radius:3px;transition:background-color .12s,box-shadow .12s}
+.tk.kw{text-decoration:underline dotted;text-decoration-color:var(--faint);text-decoration-thickness:1px;text-underline-offset:4px;cursor:help}
+.tk.kw:hover,.tk.kw:focus-visible{color:var(--accent);text-decoration-color:var(--accent);outline:0}
+.tk.now{background:var(--hl);box-shadow:0 0 0 2px var(--hl)}
 .say{flex:none;width:28px;height:28px;display:grid;place-items:center;border-radius:7px;color:var(--faint)}
 .say:hover{color:var(--fg);background:var(--bubble)}
 
 .words{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
-.words li{display:grid;grid-template-columns:28px minmax(0,1fr) 28px;gap:4px 10px;align-items:center;padding:7px 0;border-bottom:1px solid var(--line)}
-.words .wtxt{display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 12px;min-width:0}
+.words li{display:grid;grid-template-columns:28px minmax(0,1fr) 28px;gap:4px 10px;align-items:center;padding:6px 0;border-bottom:1px solid var(--line)}
+.words .wtxt{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 12px;min-width:0}
 .words .w{font-family:var(--serif);font-size:var(--fs-l);font-weight:600}
 .words .m{font-family:var(--ui);font-size:var(--fs-m)}
-.words .n{font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted);flex-basis:100%}
+.words .n{font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted);flex-basis:100%;line-height:1.6}
+.words .n button{color:inherit;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;font-size:inherit}
+.words .n button:hover{color:var(--fg)}
 .words.blur .m{filter:blur(5px);cursor:pointer;transition:filter .15s}
 .words.blur .m.show{filter:none}
 .star{width:28px;height:28px;display:grid;place-items:center;border-radius:7px;color:var(--faint)}
 .star:hover{background:var(--bubble);color:var(--fg)}
 .star[aria-pressed="true"]{color:var(--accent)}
+.star[aria-pressed="true"] svg path{fill:currentColor}
 
 .gram{border-left:2px solid var(--line);padding:2px 0 2px 14px;display:flex;flex-direction:column;gap:6px}
 .gram .g-body{font-family:var(--ui);font-size:var(--fs-m)}
@@ -135,21 +180,41 @@ svg{display:block}
 
 .quiz{display:flex;flex-direction:column;gap:16px;font-family:var(--ui);font-size:var(--fs-m)}
 .q-t{margin:0 0 6px}
+.q-n{color:var(--faint);font-variant-numeric:tabular-nums;margin-right:4px}
 .choices{display:flex;flex-wrap:wrap;gap:6px}
-.choice{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:5px 12px;font-size:var(--fs-m);text-align:left}
+.choice{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:4px 12px;text-align:left;display:inline-flex;align-items:center;gap:6px}
 .choice:hover:not(:disabled){border-color:var(--faint)}
 .choice:disabled{cursor:default}
-.choice.right{border-color:var(--good);background:var(--good-soft);color:var(--good)}
-.choice.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad)}
+.choice.dim{opacity:.55}
+.choice.right{border-color:var(--good);background:var(--good-soft);color:var(--good);opacity:1}
+.choice.wrong{border-color:var(--bad);background:var(--bad-soft);color:var(--bad);opacity:1}
+.choice.right.picked{animation:nudge .32s var(--ease)}
+.choice.wrong{animation:shake .3s var(--ease)}
+@keyframes nudge{40%{transform:scale(1.04)}}
+@keyframes shake{25%{transform:translateX(-3px)}75%{transform:translateX(3px)}}
 .q-why{margin:6px 0 0;font-size:var(--fs-s);color:var(--muted)}
-.score{font-family:var(--ui);font-size:var(--fs-s);color:var(--muted)}
+.q-res{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:var(--fs-s);color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+.q-res b{color:var(--fg);font-weight:600}
+.dots{display:inline-flex;gap:4px}
+.dots i{width:7px;height:7px;border-radius:50%;background:var(--line)}
+.dots i.r{background:var(--good)}.dots i.w{background:var(--bad)}
 
-.talk-q{font-size:var(--fs-xl);margin:0}
+.talk-q{font-size:var(--fs-xl);margin:0;display:flex;align-items:center;gap:4px;flex-wrap:wrap}
 .talk-ja{font-family:var(--ui);font-size:var(--fs-s);color:var(--muted)}
-.pill{font-family:var(--ui);font-size:var(--fs-s);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:5px 14px;align-self:flex-start}
+.pill{font-family:var(--ui);font-size:var(--fs-s);border:1px solid var(--line);background:var(--card);border-radius:999px;padding:4px 14px;display:inline-flex;align-items:center;gap:6px;position:relative}
 .pill:hover{border-color:var(--faint)}
-.src-foot{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);border-top:1px solid var(--line);padding-top:10px}
+.pill.heart[aria-pressed="true"]{border-color:color-mix(in srgb,var(--accent) 45%,var(--line));background:var(--accent-soft)}
+
+.end-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:var(--ui);border-top:1px solid var(--line);padding-top:14px}
+.src-foot{flex:1;min-width:0;font-size:var(--fs-xs);color:var(--faint)}
 .src-foot a{color:var(--muted)}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-family:var(--ui)}
+.pager button{border:1px solid var(--line);border-radius:12px;padding:9px 12px;text-align:left;display:flex;flex-direction:column;gap:1px;min-width:0}
+.pager button:hover{background:var(--card);border-color:var(--faint)}
+.pager .lbl{font-size:var(--fs-xs);color:var(--faint);display:flex;align-items:center;gap:6px}
+.pager .ttl{font-size:var(--fs-s);display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.pager .next{grid-column:2;text-align:right;align-items:flex-end}
+.pager .next .lbl{flex-direction:row-reverse}
 
 /* chat */
 .chat{display:flex;flex-direction:column;gap:18px}
@@ -159,42 +224,80 @@ svg{display:block}
 .a-msg .tr{font-family:var(--ui);font-size:var(--fs-s);color:var(--muted)}
 .a-msg .fix{font-family:var(--ui);font-size:var(--fs-s);background:var(--accent-soft);border-radius:8px;padding:6px 10px}
 .a-msg .thinking{font-family:var(--ui);font-size:var(--fs-s);color:var(--faint)}
+.a-msg .thinking::after{content:"";display:inline-block;width:1.2em;text-align:left;animation:dots 1.2s steps(4) infinite}
+@keyframes dots{0%{content:""}25%{content:"."}50%{content:".."}75%{content:"..."}}
 .a-msg .err{font-family:var(--ui);font-size:var(--fs-s);color:var(--bad)}
 .a-tools{display:flex;gap:4px}
-.mode-tag{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint)}
 
 /* composer */
 .composer{flex:none;padding:0 24px calc(14px + env(safe-area-inset-bottom,0px))}
-.comp-box{max-width:740px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:10px 12px 8px;box-shadow:0 1px 6px rgba(60,50,40,.05)}
+.comp-box{max-width:720px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:9px 12px 7px;box-shadow:0 1px 6px var(--shadow);transition:border-color var(--quick)}
+.comp-box:focus-within{border-color:var(--faint)}
 .comp-box textarea{width:100%;border:0;outline:0;background:transparent;resize:none;font-size:var(--fs-m);line-height:1.6;max-height:180px;padding:2px 4px}
-.comp-row{display:flex;align-items:center;gap:8px;margin-top:4px}
+.comp-row{display:flex;align-items:center;gap:8px;margin-top:3px}
 .comp-note{flex:1;min-width:0;font-size:var(--fs-xs);color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.send{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:var(--fg);color:var(--bg)}
+.send{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--fg);color:var(--bg)}
 .send:disabled{opacity:.35;cursor:default}
 
 /* other views */
-.view-h{font-family:var(--serif);font-size:1.25rem;font-weight:400;margin:24px 0 0;text-wrap:balance}
+.view-head{display:flex;flex-direction:column;gap:4px;margin-top:22px}
+.view-h{font-family:var(--serif);font-size:1.25rem;font-weight:400;margin:0;text-wrap:balance;display:flex;align-items:baseline;gap:10px}
+.view-h .c{font-family:var(--ui);font-size:var(--fs-s);color:var(--faint);font-variant-numeric:tabular-nums}
 .view-p{color:var(--muted);font-size:var(--fs-s);margin:0}
 .field{width:100%;border:1px solid var(--line);background:var(--card);border-radius:12px;padding:10px 12px;font-size:var(--fs-m);line-height:1.6;outline:0}
 .field:focus{border-color:var(--faint)}
-.btn{background:var(--fg);color:var(--bg);border-radius:10px;padding:7px 16px;font-size:var(--fs-s)}
+.btn{background:var(--fg);color:var(--bg);border-radius:10px;padding:6px 16px;font-size:var(--fs-s)}
 .btn:disabled{opacity:.4;cursor:default}
 .btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.btn.ghost:hover{border-color:var(--faint)}
 .row{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
-.draft-bar{font-family:var(--ui);font-size:var(--fs-s);background:var(--accent-soft);border-radius:10px;padding:8px 12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.draft-bar{font-size:var(--fs-s);background:var(--accent-soft);border-radius:10px;padding:8px 12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .draft-bar span{flex:1;min-width:0}
-.empty-main{color:var(--muted);font-size:var(--fs-m);padding:40px 0;text-align:center}
+.empty-main{color:var(--muted);font-size:var(--fs-m);padding:56px 0;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.empty-main svg{color:var(--faint)}
+
+/* liked list */
+.likes{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.likes li{display:grid;grid-template-columns:minmax(0,1fr) 36px;align-items:start;border-bottom:1px solid var(--line)}
+.likes .open{display:flex;flex-direction:column;gap:3px;padding:12px 10px 12px 8px;margin-left:-8px;text-align:left;border-radius:10px;min-width:0}
+.likes .open:hover{background:color-mix(in srgb,var(--bubble) 60%,transparent)}
+.likes .k-meta{font-size:var(--fs-xs);color:var(--faint);display:flex;gap:10px;align-items:center}
+.likes .k-title{font-size:var(--fs-m);font-weight:600}
+.likes .k-en{font-family:var(--serif);font-size:var(--fs-l);color:var(--muted);font-style:italic;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden}
+.likes .k-words{display:flex;flex-wrap:wrap;gap:4px;margin-top:3px}
+.likes .k-words span{font-family:var(--serif);font-size:var(--fs-s);border:1px solid var(--line);border-radius:999px;padding:0 8px;color:var(--fg);background:var(--card)}
+.likes .heart{margin-top:10px}
+
+/* skeleton */
+.sk{display:flex;flex-direction:column;gap:12px;padding-top:24px}
+.sk i{display:block;height:10px;border-radius:6px;background:linear-gradient(90deg,var(--bubble) 30%,var(--line) 50%,var(--bubble) 70%);background-size:300% 100%;animation:shim 1.4s linear infinite}
+@keyframes shim{from{background-position:100% 0}to{background-position:0 0}}
+
+/* popover, toast, keys */
+.pop{position:fixed;z-index:30;width:max-content;max-width:min(300px,calc(100vw - 32px));background:var(--card);border:1px solid var(--line);border-radius:12px;box-shadow:0 10px 30px var(--shadow);padding:10px 10px 8px 12px;font-size:var(--fs-s);animation:rise .16s var(--ease)}
+.pop .p-w{display:flex;align-items:center;gap:6px}
+.pop .p-w b{font-family:var(--serif);font-size:var(--fs-l);font-weight:600;margin-right:auto;padding-right:8px}
+.pop .p-m{margin:2px 0 0}
+.pop .p-n{margin:3px 0 0;color:var(--muted);font-size:var(--fs-xs)}
+.toast{position:fixed;left:50%;bottom:calc(100px + env(safe-area-inset-bottom,0px));transform:translate(-50%,8px);opacity:0;background:var(--fg);color:var(--bg);font-size:var(--fs-s);padding:6px 14px;border-radius:999px;transition:opacity .2s,transform .2s var(--ease);pointer-events:none;z-index:60;white-space:nowrap}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.keys{position:fixed;inset:0;z-index:55;display:grid;place-items:center;background:color-mix(in srgb,var(--bg) 55%,transparent)}
+.keys-in{background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 14px 40px var(--shadow);padding:16px 20px;min-width:260px;animation:rise .18s var(--ease)}
+.keys-in h4{margin:0 0 8px;font-size:var(--fs-s);font-weight:600}
+.keys-in dl{display:grid;grid-template-columns:auto 1fr;gap:6px 14px;margin:0;font-size:var(--fs-s);align-items:center}
+.keys-in dt{display:flex;gap:3px}
+.keys-in dd{margin:0;color:var(--muted)}
 
 /* cover (Esc) */
-.cover{position:fixed;inset:0;background:var(--bg);z-index:50;display:flex;justify-content:center;padding:calc(48px + env(safe-area-inset-top,0px)) 24px 24px}
-.cover-in{width:100%;max-width:740px;display:flex;flex-direction:column;gap:12px}
+.cover{position:fixed;inset:0;background:var(--bg);z-index:70;display:flex;justify-content:center;padding:calc(46px + env(safe-area-inset-top,0px)) 24px 24px}
+.cover-in{width:100%;max-width:720px;display:flex;flex-direction:column;gap:10px}
 .cover-h{font-size:var(--fs-s);color:var(--muted);margin:0}
 .cover textarea{flex:1;width:100%;border:0;outline:0;background:transparent;resize:none;font-size:var(--fs-m);line-height:1.8}
 
 .scrim{display:none}
 @media (max-width: 820px){
   .app{grid-template-columns:minmax(0,1fr)}
-  .side{position:fixed;inset:0 auto 0 0;width:min(300px,86vw);z-index:40;transform:translateX(-102%);transition:transform .2s ease;padding-top:env(safe-area-inset-top,0px)}
+  .side{position:fixed;inset:0 auto 0 0;width:min(300px,86vw);z-index:40;transform:translateX(-102%);transition:transform .24s var(--ease);padding-top:env(safe-area-inset-top,0px);box-shadow:0 0 40px var(--shadow)}
   .side.open{transform:none}
   .scrim{position:fixed;inset:0;background:rgba(0,0,0,.25);z-index:39}
   .scrim.open{display:block}
@@ -202,8 +305,13 @@ svg{display:block}
   .thread{padding-inline:16px}
   .composer{padding-inline:12px}
   .topbar{padding-left:8px}
+  .search kbd,#keysBtn{display:none}
+  .pager{grid-template-columns:1fr}
+  .pager .next{grid-column:1}
 }
-@media (prefers-reduced-motion: reduce){ .side{transition:none} }
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
 /* public copy (no Claude features): hide what needs Claude */
 html.static .ai-only{display:none!important}
 </style>
@@ -211,17 +319,26 @@ html.static .ai-only{display:none!important}
 </head>
 <body>
 <div class="app">
-  <aside class="side" id="side" aria-label="ノート一覧">
+  <aside class="side" id="side" aria-label="話題の一覧">
     <div class="side-top">
       <span class="brand">notes</span>
       <button class="icon-btn only-mobile" id="closeSide" aria-label="閉じる">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
     </div>
+    <label class="search">
+      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      <input id="q" type="search" placeholder="さがす" aria-label="話題をさがす" autocomplete="off">
+      <kbd>/</kbd>
+    </label>
     <div class="side-actions">
       <button class="nav-btn ai-only" id="newBtn">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
         新しいノート
+      </button>
+      <button class="nav-btn" id="likesBtn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        いいね <span class="cnt" id="likeCnt"></span>
       </button>
       <button class="nav-btn" id="wordsBtn">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg>
@@ -237,28 +354,31 @@ html.static .ai-only{display:none!important}
       <button class="chip" data-f="manga" aria-pressed="false">漫画</button>
       <button class="chip ai-only" data-f="own" aria-pressed="false">自分で追加</button>
     </div>
-    <div class="list" id="list"><p class="empty-side">読み込み中…</p></div>
+    <div class="list" id="list"></div>
     <div class="side-foot">
-      <div class="row">読み上げ
-        <span class="seg" id="rateSeg"><button data-r="0.8" aria-pressed="false">ゆっくり</button><button data-r="1" aria-pressed="false">ふつう</button></span>
-      </div>
-      <div>Esc でかくす</div>
+      <span>読み上げ</span>
+      <span class="seg" id="rateSeg"><button data-r="0.8" aria-pressed="false">ゆっくり</button><button data-r="1" aria-pressed="false">ふつう</button></span>
+      <span class="sp"></span>
+      <button class="foot-btn" id="keysBtn" aria-label="ショートカット"><kbd>?</kbd></button>
     </div>
   </aside>
   <div class="scrim" id="scrim"></div>
 
   <main class="main">
-    <header class="topbar">
+    <header class="topbar" id="topbar">
       <button class="icon-btn only-mobile" id="openSide" aria-label="一覧を開く">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
       </button>
       <div class="top-title" id="topTitle"></div>
+      <button class="icon-btn heart" id="likeBtn" aria-pressed="false" aria-label="いいね（L）" title="いいね（L）" hidden>
+        <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+      </button>
       <button class="icon-btn" id="hideBtn" aria-label="かくす（Esc）" title="かくす（Esc）">
         <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12s3.5-6 9-6c2 0 3.7.8 5 1.8M21 12s-3.5 6-9 6c-2 0-3.7-.8-5-1.8"/><path d="M4 20 20 4"/></svg>
       </button>
     </header>
     <div class="scroll" id="scroll">
-      <div class="thread" id="thread"><p class="empty-main">読み込み中…</p></div>
+      <div class="thread" id="thread"><div class="sk" aria-label="読み込み中"><i style="width:46%"></i><i style="width:92%"></i><i style="width:84%"></i><i style="width:60%"></i></div></div>
     </div>
     <form class="composer ai-only" id="composer" autocomplete="off">
       <div class="comp-box">
@@ -275,6 +395,21 @@ html.static .ai-only{display:none!important}
   </main>
 </div>
 
+<div class="pop" id="pop" role="dialog" aria-label="単語の意味" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="keys" id="keys" hidden>
+  <div class="keys-in" role="dialog" aria-label="ショートカット">
+    <h4>ショートカット</h4>
+    <dl>
+      <dt><kbd>J</kbd><kbd>K</kbd></dt><dd>次の話題 ／ 前の話題</dd>
+      <dt><kbd>L</kbd></dt><dd>いいね</dd>
+      <dt><kbd>P</kbd></dt><dd>通して読む ／ 止める</dd>
+      <dt><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd></dt><dd>英語の量（すこし・半分・ぜんぶ）</dd>
+      <dt><kbd>/</kbd></dt><dd>さがす</dd>
+      <dt><kbd>Esc</kbd></dt><dd>メモ画面でかくす ／ もどす</dd>
+    </dl>
+  </div>
+</div>
 <div class="cover" id="cover" hidden>
   <div class="cover-in">
     <p class="cover-h">メモ</p>
@@ -288,6 +423,7 @@ html.static .ai-only{display:none!important}
 
 /* ---------- helpers ---------- */
 const $ = s => document.querySelector(s);
+const $$ = s => [...document.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const mixHtml = s => esc(s).replace(/\{([^}]+)\}/g, '<span class="mw">$1</span>');
 const LS = {
@@ -299,28 +435,40 @@ const jstNow = () => new Date(Date.now() + 9 * 3600e3);
 const jstToday = () => jstNow().toISOString().slice(0, 10);
 const jstStamp = () => jstNow().toISOString().slice(0, 16);
 const dayDiff = (a, b) => Math.round((Date.parse(a) - Date.parse(b)) / 864e5);
-const jpDate = d => { if(!d) return ''; const [y, m, dd] = d.slice(0, 10).split('-'); return `${+m}月${+dd}日`; };
+const jpDate = d => { if(!d) return ''; const [, m, dd] = d.slice(0, 10).split('-'); return `${+m}月${+dd}日`; };
+const typing = el => el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
 const CAT = {anime:'アニメ', movie:'映画', manga:'漫画', own:'自分で追加'};
 const LEVEL = {1:'やさしい', 2:'ふつう', 3:'ちょっとむずかしい'};
 const SERIES = {haikyu:'ハイキュー!!', medalist:'メダリスト'};
-
+const HEART = '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>';
 const ICON = {
   say:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a8.5 8.5 0 0 1 0 12"/></svg>',
   star:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.8.9-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.9z"/></svg>',
-  starOn:'<svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="m12 3.5 2.6 5.3 5.8.9-4.2 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.2-4.1 5.8-.9z"/></svg>',
-  play:'<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M7 5v14l12-7z"/></svg>',
-  stop:'<svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>',
-  send:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>'
+  heart:`<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round">${HEART}</svg>`,
+  heartS:`<svg viewBox="0 0 24 24" width="11" height="11" fill="currentColor" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round">${HEART}</svg>`,
+  heartL:`<svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">${HEART}</svg>`,
+  play:'<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M7 5v14l12-7z"/></svg>',
+  stop:'<svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>',
+  send:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></svg>',
+  left:'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>',
+  right:'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>',
+  ok:'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>',
+  ng:'<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M7 7l10 10M17 7 7 17"/></svg>'
 };
 
 /* ---------- state ---------- */
 const S = {
-  lessons: [], byId: {}, cur: null, view: 'lesson', filter: 'all',
+  lessons: [], byId: {}, cur: null, view: 'lesson', filter: 'all', query: '',
   amount: LS.get('amount', 1), rate: LS.get('rate', 0.8), compMode: 'ask',
   chats: {}, flips: {}, quiz: {},
-  state: {saved: [], done: {}}, stateRef: null,
-  db: null, sample: null, loaded: false, busy: false, ctl: null
+  state: {saved: [], done: {}, likes: {}}, stateRef: null,
+  db: null, sample: null, loaded: false, busy: false, ctl: null, seq: null
 };
+const normState = d => ({
+  saved: Array.isArray(d && d.saved) ? d.saved.slice() : [],
+  done: Object.assign({}, d && d.done || {}),
+  likes: Object.assign({}, d && d.likes || {})
+});
 
 /* ---------- speech ---------- */
 let voice = null;
@@ -333,34 +481,99 @@ function pickVoice(){
 }
 if('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
 let speakToken = 0, speakTimer = 0;
-function speak(text, onend){
+function speak(text, opt = {}){
   if(!('speechSynthesis' in window) || !text) return;
   speechSynthesis.cancel(); clearTimeout(speakTimer);
   const u = new SpeechSynthesisUtterance(text);
   u.lang = 'en-US'; u.rate = S.rate; if(voice) u.voice = voice;
-  if(onend){ u.onend = onend; u.onerror = onend; }
+  if(opt.onend){ u.onend = opt.onend; u.onerror = opt.onend; }
+  if(opt.onword) u.onboundary = e => { if(!e.name || e.name === 'word') opt.onword(e.charIndex); };
   speakTimer = setTimeout(() => speechSynthesis.speak(u), 60);
 }
-function stopSpeak(){ speakToken++; clearTimeout(speakTimer); if('speechSynthesis' in window) speechSynthesis.cancel(); document.querySelectorAll('.story li.speaking').forEach(li => li.classList.remove('speaking')); const b = document.querySelector('[data-act="playall"]'); if(b){ b.dataset.on = ''; b.innerHTML = ICON.play + ' 通して読む'; } }
+function clearSpeakMarks(){ $$('.story li.speaking').forEach(li => li.classList.remove('speaking')); $$('.tk.now').forEach(t => t.classList.remove('now')); }
+function stopSpeak(){
+  speakToken++; clearTimeout(speakTimer);
+  if('speechSynthesis' in window) speechSynthesis.cancel();
+  clearSpeakMarks();
+  const b = $('[data-act="playall"]'); if(b){ b.dataset.on = ''; b.innerHTML = ICON.play + ' 通して読む'; }
+}
+function markWord(li, ci){
+  if(!li) return;
+  li.querySelectorAll('.tk.now').forEach(t => t.classList.remove('now'));
+  const t = [...li.querySelectorAll('.tk')].find(t => +t.dataset.s <= ci && ci < +t.dataset.e);
+  if(t) t.classList.add('now');
+}
+function speakLine(i, onend){
+  const L = S.byId[S.cur]; if(!L || !L.lines[i]) return;
+  const li = $(`#story li[data-i="${i}"]`);
+  clearSpeakMarks(); if(li) li.classList.add('speaking');
+  speak(L.lines[i].en, {onword: ci => markWord(li, ci), onend: () => { if(li){ li.classList.remove('speaking'); li.querySelectorAll('.tk.now').forEach(t => t.classList.remove('now')); } if(onend) onend(); }});
+}
 function playAll(){
   const L = S.byId[S.cur]; if(!L) return;
-  const btn = document.querySelector('[data-act="playall"]');
+  const btn = $('[data-act="playall"]');
   if(btn && btn.dataset.on === '1'){ stopSpeak(); return; }
   stopSpeak(); const tok = ++speakToken;
   if(btn){ btn.dataset.on = '1'; btn.innerHTML = ICON.stop + ' 止める'; }
-  const items = [...document.querySelectorAll('#story li')];
   let i = 0;
   const next = () => {
     if(tok !== speakToken) return;
-    items.forEach(li => li.classList.remove('speaking'));
-    if(i >= L.lines.length){ if(btn){ btn.dataset.on = ''; btn.innerHTML = ICON.play + ' 通して読む'; } return; }
-    if(items[i]) items[i].classList.add('speaking');
-    speak(L.lines[i].en, () => { i++; setTimeout(next, 250); });
+    if(i >= L.lines.length){ stopSpeak(); return; }
+    const li = $(`#story li[data-i="${i}"]`); if(li) li.scrollIntoView({block: 'nearest', behavior: 'smooth'});
+    speakLine(i, () => { if(tok !== speakToken) return; i++; setTimeout(next, 260); });
   };
   next();
 }
 
-/* ---------- sidebar ---------- */
+/* ---------- English tokens & key words ---------- */
+function tokenize(s){
+  const out = []; const re = /[A-Za-z0-9][A-Za-z0-9'’-]*/g; let m, last = 0;
+  while((m = re.exec(s))){
+    if(m.index > last) out.push({t: s.slice(last, m.index)});
+    out.push({t: m[0], s: m.index, e: m.index + m[0].length, w: true});
+    last = re.lastIndex;
+  }
+  if(last < s.length) out.push({t: s.slice(last)});
+  return out;
+}
+const norm = x => String(x).toLowerCase().replace(/’/g, "'").replace(/[^a-z0-9' ]/g, ' ').replace(/\s+/g, ' ').trim();
+function forms(p){
+  const f = new Set([p, p + 's', p + 'es', p + 'ed', p + 'd', p + 'ing', p + "'s"]);
+  if(p.endsWith('e')) f.add(p.slice(0, -1) + 'ing');
+  if(p.endsWith('y')){ f.add(p.slice(0, -1) + 'ies'); f.add(p.slice(0, -1) + 'ied'); }
+  return f;
+}
+function markVocab(L, toks){
+  const marks = {};
+  const ws = toks.map((t, k) => t.w ? {k, v: norm(t.t)} : null).filter(Boolean);
+  (L.words || []).forEach((wd, wi) => {
+    const parts = norm(String(wd.w).replace(/~|\.\.\.|…/g, ' ')).split(' ').filter(Boolean);
+    const tryMatch = ps => {
+      if(!ps.length) return false;
+      for(let a = 0; a + ps.length <= ws.length; a++){
+        if(ps.every((p, b) => forms(p).has(ws[a + b].v))){
+          ps.forEach((_, b) => { if(marks[ws[a + b].k] == null) marks[ws[a + b].k] = wi; });
+          return true;
+        }
+      }
+      return false;
+    };
+    if(!tryMatch(parts) && parts[0] === 'be') tryMatch(parts.slice(1));
+  });
+  return marks;
+}
+function enHtml(L, i){
+  const toks = tokenize(L.lines[i].en); const marks = markVocab(L, toks);
+  return toks.map((t, k) => {
+    if(!t.w) return esc(t.t);
+    const wi = marks[k];
+    return wi != null
+      ? `<span class="tk kw" data-s="${t.s}" data-e="${t.e}" data-wi="${wi}" role="button" tabindex="0">${esc(t.t)}</span>`
+      : `<span class="tk" data-s="${t.s}" data-e="${t.e}">${esc(t.t)}</span>`;
+  }).join('');
+}
+
+/* ---------- list / sidebar ---------- */
 function groupOf(d){
   const diff = dayDiff(jstToday(), (d || '').slice(0, 10));
   if(isNaN(diff)) return 'それ以前';
@@ -370,30 +583,52 @@ function groupOf(d){
   if(diff < 30) return '30日以内';
   const [y, m] = d.split('-'); return `${y}年${+m}月`;
 }
+function haystack(L){
+  if(!L._hay) L._hay = [L.title, L.summary, ...(L.lines || []).map(l => l.en + ' ' + l.ja), ...(L.words || []).map(w => w.w + ' ' + w.ja), SERIES[L.series] || ''].join(' ').toLowerCase();
+  return L._hay;
+}
+function visible(){
+  const f = S.filter, q = S.query.trim().toLowerCase();
+  return S.lessons.filter(L => (f === 'all' || (f.startsWith('s:') ? L.series === f.slice(2) : f === 'own' ? L.own : (L.cat === f && !L.own)))
+    && (!q || q.split(/\s+/).every(w => haystack(L).includes(w))));
+}
+function hilite(text){
+  const q = S.query.trim(); if(!q) return esc(text);
+  let h = esc(text);
+  q.split(/\s+/).filter(Boolean).forEach(w => { const r = new RegExp(esc(w).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi'); h = h.replace(r, m => `<mark>${m}</mark>`); });
+  return h;
+}
 function renderList(){
   const box = $('#list');
-  if(!S.loaded){ return; }
-  const f = S.filter;
-  const items = S.lessons.filter(L => f === 'all' || (f.startsWith('s:') ? L.series === f.slice(2) : f === 'own' ? L.own : (L.cat === f && !L.own)));
+  if(!S.loaded) return;
+  const items = visible();
   if(!items.length){
-    box.innerHTML = `<p class="empty-side">${S.lessons.length ? 'この種類のノートはまだありません。' : 'まだノートがありません。毎朝、映画・アニメ・漫画の話題が届きます。「新しいノート」から自分で足すこともできます。'}</p>`;
+    box.innerHTML = `<p class="empty-side">${S.query ? `「${esc(S.query)}」に合う話題はありません。` : S.lessons.length ? 'この種類の話題はまだありません。' : 'まだ話題がありません。毎朝、映画・アニメ・漫画の話題が届きます。'}</p>`;
     return;
   }
-  let html = '', g = '';
+  let html = S.query ? `<div class="grp"><span>${items.length}件</span></div>` : '', g = '';
   for(const L of items){
     const gg = groupOf(L.added);
-    if(gg !== g){ html += `<div class="grp">${esc(gg)}</div>`; g = gg; }
-    const done = S.state.done[L.id];
+    if(gg !== g && !S.query){ html += `<div class="grp"><span>${esc(gg)}</span></div>`; g = gg; }
+    const done = S.state.done[L.id], liked = S.state.likes[L.id];
     html += `<button class="item" data-id="${esc(L.id)}" aria-current="${S.view === 'lesson' && S.cur === L.id}">
-      <span class="dot ${L.own ? 'own' : esc(L.cat)}" aria-hidden="true"></span><span class="t">${esc(L.title)}</span>${done ? `<span class="done" title="クイズ ${done.s}/${done.n}">✓</span>` : ''}</button>`;
+      <span class="dot ${L.own ? 'own' : esc(L.cat)}" aria-hidden="true"></span><span class="t">${hilite(L.title)}</span><span class="marks">${liked ? `<span class="lk" title="いいね">${ICON.heartS}</span>` : ''}${done ? `<span title="クイズ ${done.s}/${done.n}">✓</span>` : ''}</span></button>`;
   }
   box.innerHTML = html;
 }
-function renderWordCnt(){ $('#wordCnt').textContent = S.state.saved.length || ''; }
+const likedIds = () => Object.entries(S.state.likes).filter(([id]) => S.byId[id]).sort((a, b) => a[1] < b[1] ? 1 : -1).map(([id]) => id);
+const seqList = () => S.seq === 'likes' ? likedIds().map(id => S.byId[id]) : visible();
+function renderCounts(){
+  $('#wordCnt').textContent = S.state.saved.length || '';
+  $('#likeCnt').textContent = Object.keys(S.state.likes).filter(id => S.byId[id]).length || '';
+}
 function setNav(){
   $('#wordsBtn').setAttribute('aria-current', S.view === 'words');
+  $('#likesBtn').setAttribute('aria-current', S.view === 'likes');
   $('#newBtn').setAttribute('aria-current', S.view === 'new');
+  $('#likeBtn').hidden = !(S.view === 'lesson' && S.byId[S.cur] && S.cur !== '__draft');
 }
+function enterAnim(){ const th = $('#thread'); th.classList.remove('enter'); void th.offsetWidth; th.classList.add('enter'); }
 
 /* ---------- lesson view ---------- */
 function storyLine(L, i){
@@ -404,50 +639,80 @@ function storyLine(L, i){
   else base = 'en';
   let html;
   if(S.amount === 3){
-    html = `<span class="s-text en">${esc(ln.en)}</span>` + (fl ? `<span class="s-sub">${esc(ln.ja)}</span>` : '');
+    html = `<span class="s-text en">${enHtml(L, i)}</span>` + (fl ? `<span class="s-sub">${esc(ln.ja)}</span>` : '');
   }else{
     const show = fl ? (base === 'en' ? 'ja' : 'en') : base;
-    if(show === 'en') html = `<span class="s-text en">${esc(ln.en)}</span>`;
+    if(show === 'en') html = `<span class="s-text en">${enHtml(L, i)}</span>`;
     else if(show === 'mix') html = `<span class="s-text ja">${mixHtml(ln.mix)}</span>`;
     else html = `<span class="s-text ja">${esc(ln.ja)}</span>`;
   }
   return `<li data-i="${i}"><span class="s-body">${html}</span><button class="say" data-say-line="${i}" aria-label="英文を読み上げ">${ICON.say}</button></li>`;
 }
-function isSaved(w){ return S.state.saved.some(s => s.w === w); }
-function wordRow(wd, lessonId){
+const isSaved = w => S.state.saved.some(s => s.w === w);
+const isLiked = id => !!S.state.likes[id];
+function wordRow(wd, lessonId, opts = {}){
   const on = isSaved(wd.w);
+  const from = opts.from && S.byId[opts.from] ? `<span class="n">${wd.note ? esc(wd.note) + '　' : ''}<button data-open="${esc(opts.from)}">${esc(S.byId[opts.from].title)}</button></span>` : (wd.note ? `<span class="n">${esc(wd.note)}</span>` : '');
   return `<li><button class="say" data-say="${esc(wd.w)}" aria-label="${esc(wd.w)} を読み上げ">${ICON.say}</button>
-    <div class="wtxt"><span class="w">${esc(wd.w)}</span><span class="m">${esc(wd.ja)}</span>${wd.note ? `<span class="n">${esc(wd.note)}</span>` : ''}</div>
-    <button class="star" data-star="${esc(wd.w)}" data-from="${esc(lessonId || wd.from || '')}" aria-pressed="${on}" aria-label="単語帳に入れる">${on ? ICON.starOn : ICON.star}</button></li>`;
+    <div class="wtxt"><span class="w">${esc(wd.w)}</span><span class="m">${esc(wd.ja)}</span>${from}</div>
+    <button class="star" data-star="${esc(wd.w)}" data-from="${esc(lessonId || '')}" aria-pressed="${on}" aria-label="単語帳に入れる">${ICON.star}</button></li>`;
+}
+function quizHtml(L){
+  const qz = S.quiz[L.id] || (S.quiz[L.id] = {});
+  const qs = (L.quiz || []).map((q, qi) => {
+    const ans = qz[qi];
+    const choices = (q.choices || []).map((c, ci) => {
+      let cls = 'choice', mark = '';
+      if(ans != null){
+        if(ci === q.a){ cls += ' right'; mark = ICON.ok; }
+        else if(ci === ans){ cls += ' wrong'; mark = ICON.ng; }
+        else cls += ' dim';
+      }
+      return `<button class="${cls}" data-q="${qi}" data-c="${ci}" ${ans != null ? 'disabled' : ''}>${mark}${esc(c)}</button>`;
+    }).join('');
+    const why = ans != null ? `<p class="q-why">${ans === q.a ? '正解。' : 'ざんねん。'}${esc(q.why || '')}</p>` : '';
+    return `<div class="qq" data-qq="${qi}"><p class="q-t"><span class="q-n">${qi + 1}</span>${esc(q.q)}</p><div class="choices">${choices}</div>${why}</div>`;
+  }).join('');
+  return qs + resultHtml(L);
+}
+function resultHtml(L){
+  const qz = S.quiz[L.id] || {}; const n = (L.quiz || []).length;
+  if(!n || Object.keys(qz).length < n) return '';
+  const s = L.quiz.filter((q, i) => qz[i] === q.a).length;
+  const msg = s === n ? 'ぜんぶ正解です。' : s === 0 ? 'もう一度読んでから、ためしてみましょう。' : 'あと少しです。';
+  return `<div class="q-res" id="qres"><span class="dots">${L.quiz.map((q, i) => `<i class="${qz[i] === q.a ? 'r' : 'w'}"></i>`).join('')}</span><span><b>${n}問中${s}問</b>正解。${msg}</span><button class="txt-btn" data-act="retry">もう一度</button></div>`;
+}
+function scoreText(L){
+  const qz = S.quiz[L.id] || {}; const n = (L.quiz || []).length;
+  const d = S.state.done[L.id];
+  if(Object.keys(qz).length === 0 && d) return `前回 ${d.s}/${d.n}`;
+  return `${Object.keys(qz).length}/${n}`;
 }
 function renderLesson(){
   const L = S.byId[S.cur]; const th = $('#thread');
-  stopSpeak();
-  if(!L){ th.innerHTML = `<p class="empty-main">${S.loaded ? 'ノートを選んでください。' : '読み込み中…'}</p>`; $('#topTitle').textContent = ''; return; }
-  $('#topTitle').textContent = L.title;
+  stopSpeak(); closePop();
+  if(!L){ th.innerHTML = S.loaded ? emptyMain('話題を選んでください。') : $('#thread').innerHTML; $('#topTitle').textContent = ''; setNav(); return; }
+  const list = seqList(); const idx = list.findIndex(x => x.id === L.id);
+  $('#topTitle').textContent = (S.seq === 'likes' && idx >= 0 ? `いいね ${idx + 1}/${list.length}　` : '') + L.title;
+  setNav(); syncLikeBtn();
   const p = L.post || {};
   const who = p.name ? `${esc(p.name)}${p.account ? `（@${esc(p.account)}）` : ''}` : '';
   const userMsg = L.own
     ? `${esc(L.ask || 'これを英語で読みたい')}${p.url ? `<span class="src"><a href="${esc(p.url)}" target="_blank" rel="noopener">元のポストを開く</a></span>` : ''}`
     : `${who ? who + 'のポスト、' : ''}英語で読みたい${p.url ? `<span class="src"><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.url.replace(/^https?:\/\//, ''))}</a></span>` : ''}`;
-  const qz = S.quiz[L.id] || (S.quiz[L.id] = {});
-  const quizHtml = (L.quiz || []).map((q, qi) => {
-    const ans = qz[qi];
-    const choices = (q.choices || []).map((c, ci) => {
-      let cls = 'choice';
-      if(ans != null){ if(ci === q.a) cls += ' right'; else if(ci === ans) cls += ' wrong'; }
-      return `<button class="${cls}" data-q="${qi}" data-c="${ci}" ${ans != null ? 'disabled' : ''}>${esc(c)}</button>`;
-    }).join('');
-    const why = ans != null ? `<p class="q-why">${ans === q.a ? '正解。' : 'ざんねん。'}${esc(q.why || '')}</p>` : '';
-    return `<div class="qq"><p class="q-t">${qi + 1}. ${esc(q.q)}</p><div class="choices">${choices}</div>${why}</div>`;
-  }).join('');
   const g = L.grammar;
+  const nWords = L.lines.reduce((a, l) => a + tokenize(l.en).filter(t => t.w).length, 0);
   const draft = S.cur === '__draft' ? `<div class="draft-bar"><span>このノートはまだ保存していません。</span><button class="btn" data-act="save-draft">保存する</button><button class="btn ghost" data-act="drop-draft">捨てる</button></div>` : '';
+  const prev = idx > 0 ? list[idx - 1] : null, next = idx >= 0 && idx < list.length - 1 ? list[idx + 1] : null;
+  const pager = (prev || next) ? `<nav class="pager" aria-label="ほかの話題">
+      ${prev ? `<button class="prev" data-open="${esc(prev.id)}"><span class="lbl">${ICON.left}${S.seq === 'likes' ? 'いいねの前' : '前の話題'}<kbd>K</kbd></span><span class="ttl">${esc(prev.title)}</span></button>` : ''}
+      ${next ? `<button class="next" data-open="${esc(next.id)}"><span class="lbl">${ICON.right}${S.seq === 'likes' ? 'いいねの次' : '次の話題'}<kbd>J</kbd></span><span class="ttl">${esc(next.title)}</span></button>` : ''}
+    </nav>` : '';
   th.innerHTML = `${draft}
     <div class="u-row"><div class="u-bubble">${userMsg}</div></div>
     <div class="a-block">
       <p class="lead">${esc(L.summary)}</p>
-      <div class="meta-line">${L.series && SERIES[L.series] ? `<span>${SERIES[L.series]}</span>` : ''}<span>${esc(L.own ? CAT.own : (CAT[L.cat] || ''))}</span><span>${esc(LEVEL[L.level] || '')}</span>${p.date ? `<span>${esc(jpDate(p.date))}のポスト</span>` : ''}</div>
+      <div class="meta-line">${L.series && SERIES[L.series] ? `<span>${SERIES[L.series]}</span>` : ''}<span>${esc(L.own ? CAT.own : (CAT[L.cat] || ''))}</span><span>${esc(LEVEL[L.level] || '')}</span><span>英文 ${nWords}語</span>${p.date ? `<span>${esc(jpDate(p.date))}のポスト</span>` : ''}</div>
 
       <section class="blk" aria-label="読んでみよう">
         <div class="blk-h"><h3>読んでみよう</h3><span class="sp"></span>
@@ -456,7 +721,7 @@ function renderLesson(){
           </span>
           <button class="txt-btn" data-act="playall">${ICON.play} 通して読む</button>
         </div>
-        <p class="note">${S.amount === 3 ? '文をタップすると日本語訳が出ます。' : '文をタップすると英語と日本語が入れかわります。'}</p>
+        <p class="note" id="storyNote">${storyNote()}</p>
         <ol class="story" id="story">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
       </section>
 
@@ -472,38 +737,36 @@ function renderLesson(){
         </div>
       </section>` : ''}
 
-      ${quizHtml ? `<section class="blk" aria-label="クイズ">
-        <div class="blk-h"><h3>クイズ</h3><span class="sp"></span><span class="score" id="score"></span></div>
-        <div class="quiz">${quizHtml}</div>
+      ${(L.quiz || []).length ? `<section class="blk" aria-label="クイズ">
+        <div class="blk-h"><h3>クイズ</h3><span class="sp"></span><span class="note" id="score">${scoreText(L)}</span></div>
+        <div class="quiz" id="quiz">${quizHtml(L)}</div>
       </section>` : ''}
 
       ${L.talk ? `<section class="blk" aria-label="英語で答えてみよう">
         <div class="blk-h"><h3>英語で答えてみよう</h3></div>
-        <p class="talk-q">${esc(L.talk.q)} <button class="say" style="display:inline-grid;vertical-align:middle" data-say="${esc(L.talk.q)}" aria-label="読み上げ">${ICON.say}</button></p>
+        <p class="talk-q">${esc(L.talk.q)}<button class="say" data-say="${esc(L.talk.q)}" aria-label="読み上げ">${ICON.say}</button></p>
         <p class="talk-ja">${esc(L.talk.ja)}${L.talk.hint ? `　ヒント：${esc(L.talk.hint)}` : ''}</p>
-        <button class="pill ai-only" data-act="talk">この質問で話してみる</button>
+        <div class="row"><button class="pill ai-only" data-act="talk">この質問で話してみる</button></div>
       </section>` : ''}
 
-      ${p.url ? `<div class="src-foot">元のポスト：<a href="${esc(p.url)}" target="_blank" rel="noopener">${who || 'Xで開く'}</a>${p.date ? `　${esc(jpDate(p.date))}` : ''}${p.likes ? `　いいね ${Number(p.likes).toLocaleString('ja-JP')}（取得時）` : ''}</div>` : ''}
+      <div class="end-row">
+        <div class="src-foot">${p.url ? `元のポスト：<a href="${esc(p.url)}" target="_blank" rel="noopener">${who || 'Xで開く'}</a>${p.date ? `　${esc(jpDate(p.date))}` : ''}${p.likes ? `　いいね ${Number(p.likes).toLocaleString('ja-JP')}（取得時）` : ''}` : ''}</div>
+        ${S.cur !== '__draft' ? `<button class="pill heart" data-like="${esc(L.id)}" aria-pressed="${isLiked(L.id)}">${ICON.heart}<span>${isLiked(L.id) ? 'いいね済み' : 'いいねして見返す'}</span></button>` : ''}
+      </div>
+      ${pager}
     </div>
     <div class="chat" id="chat"></div>`;
-  updateScore();
   renderChat();
+  enterAnim();
 }
+const storyNote = () => S.amount === 3 ? '文をタップすると日本語訳が出ます。点線の単語をタップすると意味が見られます。' : '文をタップすると英語と日本語が入れかわります。';
 function rerenderStory(){
   const L = S.byId[S.cur]; if(!L) return;
-  stopSpeak();
+  stopSpeak(); closePop();
   $('#story').innerHTML = L.lines.map((_, i) => storyLine(L, i)).join('');
-  document.querySelectorAll('#amtSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.amt === S.amount));
-  const note = $('#story').previousElementSibling; if(note) note.textContent = S.amount === 3 ? '文をタップすると日本語訳が出ます。' : '文をタップすると英語と日本語が入れかわります。';
-}
-function updateScore(){
-  const L = S.byId[S.cur]; const el = $('#score'); if(!L || !el) return;
-  const qz = S.quiz[L.id] || {}; const n = (L.quiz || []).length;
-  const answered = Object.keys(qz).length;
-  if(answered < n){ const d = S.state.done[L.id]; el.textContent = d ? `前回 ${d.s}/${d.n}` : ''; return; }
-  const s = (L.quiz || []).filter((q, i) => qz[i] === q.a).length;
-  el.textContent = `${s}/${n} 正解`;
+  $$('#story .s-body').forEach(b => b.classList.add('swap'));
+  $$('#amtSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.amt === S.amount));
+  $('#storyNote').textContent = storyNote();
 }
 function answer(qi, ci){
   const L = S.byId[S.cur]; if(!L) return;
@@ -511,17 +774,69 @@ function answer(qi, ci){
   if(qz[qi] != null) return;
   qz[qi] = ci;
   const q = L.quiz[qi];
-  const wrap = document.querySelectorAll('.qq')[qi];
-  wrap.querySelectorAll('.choice').forEach((b, i) => { b.disabled = true; if(i === q.a) b.classList.add('right'); else if(i === ci) b.classList.add('wrong'); });
+  const wrap = $(`.qq[data-qq="${qi}"]`);
+  wrap.querySelectorAll('.choice').forEach((b, i) => {
+    b.disabled = true;
+    if(i === q.a){ b.classList.add('right'); b.insertAdjacentHTML('afterbegin', ICON.ok); if(i === ci) b.classList.add('picked'); }
+    else if(i === ci){ b.classList.add('wrong'); b.insertAdjacentHTML('afterbegin', ICON.ng); }
+    else b.classList.add('dim');
+  });
   wrap.insertAdjacentHTML('beforeend', `<p class="q-why">${ci === q.a ? '正解。' : 'ざんねん。'}${esc(q.why || '')}</p>`);
   const n = L.quiz.length;
-  if(Object.keys(qz).length === n && L.id !== '__draft'){
-    const s = L.quiz.filter((q, i) => qz[i] === q.a).length;
-    S.state.done[L.id] = {s, n, at: jstToday()};
-    saveState(); renderList();
+  if(Object.keys(qz).length === n){
+    $('#quiz').insertAdjacentHTML('beforeend', resultHtml(L));
+    if(L.id !== '__draft'){
+      const s = L.quiz.filter((q, i) => qz[i] === q.a).length;
+      S.state.done[L.id] = {s, n, at: jstToday()};
+      saveState(); renderList();
+    }
   }
-  updateScore();
+  $('#score').textContent = scoreText(L);
 }
+function retryQuiz(){
+  const L = S.byId[S.cur]; if(!L) return;
+  S.quiz[L.id] = {};
+  $('#quiz').innerHTML = quizHtml(L); $('#score').textContent = scoreText(L);
+  $('#quiz').scrollIntoView({block: 'nearest', behavior: 'smooth'});
+}
+
+/* ---------- likes ---------- */
+function syncLikeBtn(pop){
+  const id = S.cur, on = isLiked(id);
+  const b = $('#likeBtn'); b.setAttribute('aria-pressed', on); b.setAttribute('aria-label', on ? 'いいねを外す（L）' : 'いいね（L）');
+  $$(`[data-like="${CSS.escape(id || '')}"]`).forEach(x => { x.setAttribute('aria-pressed', on); const t = x.querySelector('span'); if(t) t.textContent = on ? 'いいね済み' : 'いいねして見返す'; });
+  if(pop && on){ [b, ...$$(`[data-like="${CSS.escape(id)}"]`)].forEach(x => { x.classList.remove('pop'); void x.offsetWidth; x.classList.add('pop'); setTimeout(() => x.classList.remove('pop'), 600); }); }
+}
+function toggleLike(id){
+  if(!id || id === '__draft' || !S.byId[id]) return;
+  const on = !isLiked(id);
+  if(on) S.state.likes[id] = jstStamp(); else delete S.state.likes[id];
+  saveState(); renderCounts(); renderList();
+  if(S.cur === id) syncLikeBtn(true);
+  if(S.view === 'likes') renderLikes(true);
+  toast(on ? 'いいねしました。「いいね」から見返せます' : 'いいねを外しました');
+}
+function renderLikes(keep){
+  S.view = 'likes'; setNav(); renderList(); stopSpeak(); closePop();
+  $('#topTitle').textContent = 'いいね';
+  $('#composer').hidden = true;
+  const ids = likedIds();
+  const head = `<div class="view-head"><h2 class="view-h">いいね<span class="c">${ids.length ? ids.length + '件' : ''}</span></h2>
+    <p class="view-p">${ids.length ? 'いいねした話題を、新しい順に並べています。' : ''}</p></div>`;
+  $('#thread').innerHTML = head + (ids.length ? `<ul class="likes">${ids.map(id => {
+    const L = S.byId[id];
+    const d = S.state.done[id];
+    const meta = [L.series && SERIES[L.series], CAT[L.cat], L.post && L.post.date ? jpDate(L.post.date) : '', d ? `クイズ ${d.s}/${d.n}` : ''].filter(Boolean).map(esc).join('<span aria-hidden="true">·</span>');
+    return `<li><button class="open" data-open="${esc(id)}" data-seq="likes">
+      <span class="k-meta">${meta}</span>
+      <span class="k-title">${esc(L.title)}</span>
+      <span class="k-en">${esc(L.lines[0] && L.lines[0].en)}</span>
+      <span class="k-words">${(L.words || []).slice(0, 5).map(w => `<span>${esc(w.w)}</span>`).join('')}</span>
+    </button><button class="icon-btn heart" data-like="${esc(id)}" aria-pressed="true" aria-label="いいねを外す">${ICON.heart}</button></li>`;
+  }).join('')}</ul>` : emptyMain('まだいいねした話題はありません。<br>話題の右上の ♡ か、いちばん下の「いいねして見返す」で集まります。', ICON.heartL));
+  if(!keep){ $('#scroll').scrollTop = 0; enterAnim(); }
+}
+const emptyMain = (msg, icon = '') => `<div class="empty-main">${icon}<p style="margin:0">${msg}</p></div>`;
 
 /* ---------- saved words / progress ---------- */
 let writing = false, again = false;
@@ -542,40 +857,39 @@ function toggleWord(w, from){
     const wd = L && (L.words || []).find(x => x.w === w);
     S.state.saved.unshift({w, ja: wd ? wd.ja : '', note: wd && wd.note ? wd.note : '', from: L && L.id !== '__draft' ? L.id : ''});
   }
-  saveState(); renderWordCnt(); refreshStars();
-  if(S.view === 'words') renderWords();
+  saveState(); renderCounts(); refreshStars();
+  toast(i >= 0 ? '単語帳から外しました' : `「${w}」を単語帳に入れました`);
+  if(S.view === 'words') renderWords(true);
 }
 function refreshStars(){
-  document.querySelectorAll('[data-star]').forEach(b => { const on = isSaved(b.dataset.star); b.setAttribute('aria-pressed', on); b.innerHTML = on ? ICON.starOn : ICON.star; });
+  $$('[data-star]').forEach(b => { const on = isSaved(b.dataset.star); b.setAttribute('aria-pressed', on); });
 }
 let blurMeanings = LS.get('blur', false);
-function renderWords(){
-  S.view = 'words'; setNav(); renderList(); stopSpeak();
+function renderWords(keep){
+  S.view = 'words'; setNav(); renderList(); stopSpeak(); closePop();
   $('#topTitle').textContent = '単語帳';
   $('#composer').hidden = true;
   const list = S.state.saved;
-  $('#thread').innerHTML = `<h2 class="view-h">単語帳</h2>
-    <p class="view-p">${list.length ? `${list.length}語。意味をかくして、思い出せるか試せます。` : '各ノートの単語の☆を押すと、ここに集まります。'}</p>
+  $('#thread').innerHTML = `<div class="view-head"><h2 class="view-h">単語帳<span class="c">${list.length ? list.length + '語' : ''}</span></h2>
+    <p class="view-p">${list.length ? '意味をかくして、思い出せるか試せます。' : ''}</p></div>
     ${list.length ? `<div class="row"><button class="btn ghost" data-act="blur">${blurMeanings ? '意味を見せる' : '意味をかくす'}</button></div>
-    <ul class="words ${blurMeanings ? 'blur' : ''}" id="savedWords">${list.map(w => {
-      const L = S.byId[w.from];
-      return wordRow({w: w.w, ja: w.ja, note: [w.note, L ? `出てきたノート：${L.title}` : ''].filter(Boolean).join('　'), from: w.from}, w.from);
-    }).join('')}</ul>` : ''}`;
-  $('#scroll').scrollTop = 0;
+    <ul class="words ${blurMeanings ? 'blur' : ''}">${list.map(w => wordRow({w: w.w, ja: w.ja, note: w.note}, w.from, {from: w.from})).join('')}</ul>`
+    : emptyMain('各話題の単語の ☆ を押すと、ここに集まります。', ICON.star.replace(/width="16" height="16"/, 'width="28" height="28"'))}`;
+  if(!keep){ $('#scroll').scrollTop = 0; enterAnim(); }
 }
 
 /* ---------- new note ---------- */
 function renderNew(){
-  S.view = 'new'; setNav(); renderList(); stopSpeak();
+  S.view = 'new'; setNav(); renderList(); stopSpeak(); closePop();
   $('#topTitle').textContent = '新しいノート';
   $('#composer').hidden = true;
   const can = !!S.sample;
-  $('#thread').innerHTML = `<h2 class="view-h">英語で読みたい文章を貼りつけてください</h2>
-    <p class="view-p">Xのポストやニュースの文を、中学英語のノートにします。日本語でも英語でも大丈夫です。</p>
+  $('#thread').innerHTML = `<div class="view-head"><h2 class="view-h">英語で読みたい文章を貼りつけてください</h2>
+    <p class="view-p">Xのポストやニュースの文を、中学英語のノートにします。日本語でも英語でも大丈夫です。</p></div>
     <textarea class="field" id="srcText" rows="7" placeholder="ここに貼りつけ">${esc(LS.get('newDraft', ''))}</textarea>
     <input class="field" id="srcUrl" placeholder="元のポストのURL（なくても大丈夫）">
     <div class="row"><button class="btn" id="makeBtn" ${can ? '' : 'disabled'}>ノートにする</button><span class="note" id="makeNote">${can ? '作るのに30秒〜1分ほどかかります。' : 'この画面ではAIを使えないため、ノートを作れません。'}</span></div>`;
-  $('#scroll').scrollTop = 0;
+  $('#scroll').scrollTop = 0; enterAnim();
 }
 const LESSON_SPEC = `次のJSONオブジェクトを1つだけ返してください（前後に文章を書かない）。
 {
@@ -594,7 +908,7 @@ const LESSON_SPEC = `次のJSONオブジェクトを1つだけ返してくださ
 - 元の文章の内容を変えない。書いていないことを足さない（推測しない）。
 - 日本語は自然なですます調。
 - 元の文章の言いまわし（例：「続投」「見放題」）が英語でどうなるかを words の note で触れるとよい。
-- クイズは、内容1問・単語1問・文法の穴うめ1問。`;
+- クイズは、内容1問・単語1問・文法の穴うめ1問。正解の位置はばらけさせる。`;
 async function makeNote(){
   const text = $('#srcText').value.trim(); const url = $('#srcUrl').value.trim();
   const note = $('#makeNote'); const btn = $('#makeBtn');
@@ -630,28 +944,58 @@ function normalizeLesson(r){
 }
 async function saveDraft(){
   const L = S.byId.__draft; if(!L) return;
-  if(!S.db){ alertBar('保存できませんでした（この画面では保存が使えません）。'); return; }
+  const bar = $('.draft-bar span');
+  if(!S.db){ if(bar) bar.textContent = '保存できませんでした（この画面では保存が使えません）。'; return; }
   const id = 'own-' + Date.now().toString(36);
   const doc = JSON.parse(JSON.stringify(L)); doc.id = id;
   try{
     await S.db.collection('lessons').doc(id).set(doc);
     S.chats[id] = S.chats.__draft || []; S.quiz[id] = S.quiz.__draft || {}; S.flips[id] = S.flips.__draft || {};
     delete S.byId.__draft; S.byId[id] = doc;
-    openLesson(id);
-  }catch(e){ alertBar('保存できませんでした。もう一度押してください。'); }
+    openLesson(id); toast('ノートを保存しました');
+  }catch(e){ if(bar) bar.textContent = '保存できませんでした。もう一度押してください。'; }
 }
-function alertBar(t){ const bar = document.querySelector('.draft-bar span'); if(bar) bar.textContent = t; }
 
 /* ---------- open / navigation ---------- */
-function openLesson(id){
+function openLesson(id, seq){
+  if(seq !== undefined) S.seq = seq;
   S.view = 'lesson'; S.cur = id; if(id !== '__draft') LS.set('last', id);
-  setNav(); renderList();
+  renderList();
   $('#composer').hidden = false;
   renderLesson(); setCompMode(S.compMode);
   $('#scroll').scrollTop = 0; closeSide();
+  const it = $(`#list [data-id="${CSS.escape(id)}"]`); if(it) it.scrollIntoView({block: 'nearest'});
+}
+function step(d){
+  const list = S.view === 'likes' ? likedIds().map(id => S.byId[id]) : seqList(); if(!list.length) return;
+  if(S.view === 'likes') S.seq = 'likes';
+  const i = list.findIndex(x => x.id === S.cur);
+  const n = S.view !== 'lesson' || i < 0 ? 0 : i + d;
+  if(n >= 0 && n < list.length) openLesson(list[n].id);
 }
 function openSide(){ $('#side').classList.add('open'); $('#scrim').classList.add('open'); }
 function closeSide(){ $('#side').classList.remove('open'); $('#scrim').classList.remove('open'); }
+
+/* ---------- word popover ---------- */
+let popFor = null;
+function openPop(el){
+  const L = S.byId[S.cur]; const wd = L && (L.words || [])[+el.dataset.wi]; if(!wd) return;
+  const pop = $('#pop'); popFor = el;
+  const on = isSaved(wd.w);
+  pop.innerHTML = `<div class="p-w"><b>${esc(wd.w)}</b><button class="say" data-say="${esc(wd.w)}" aria-label="読み上げ">${ICON.say}</button><button class="star" data-star="${esc(wd.w)}" data-from="${esc(L.id)}" aria-pressed="${on}" aria-label="単語帳に入れる">${ICON.star}</button></div>
+    <p class="p-m">${esc(wd.ja)}</p>${wd.note ? `<p class="p-n">${esc(wd.note)}</p>` : ''}`;
+  pop.hidden = false;
+  const r = el.getBoundingClientRect(); const pw = pop.offsetWidth, ph = pop.offsetHeight;
+  let left = Math.min(Math.max(16, r.left + r.width / 2 - pw / 2), window.innerWidth - pw - 16);
+  let top = r.bottom + 8; if(top + ph > window.innerHeight - 16) top = r.top - ph - 8;
+  pop.style.left = left + 'px'; pop.style.top = Math.max(8, top) + 'px';
+}
+function closePop(){ const p = $('#pop'); if(p && !p.hidden){ p.hidden = true; popFor = null; } }
+
+/* ---------- toast / keys ---------- */
+let toastTimer = 0;
+function toast(msg){ const t = $('#toast'); t.textContent = msg; t.classList.add('on'); clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('on'), 1800); }
+function toggleKeys(force){ const k = $('#keys'); k.hidden = force != null ? !force : !k.hidden; }
 
 /* ---------- chat with Claude ---------- */
 function lessonText(L){
@@ -715,10 +1059,7 @@ function msgHtml(m){
   }
   return `<div class="a-msg">${mdHtml(m.content)}</div>`;
 }
-function renderChat(){
-  const box = $('#chat'); if(!box) return;
-  box.innerHTML = chatOf(S.cur).map(msgHtml).join('');
-}
+function renderChat(){ const box = $('#chat'); if(box) box.innerHTML = chatOf(S.cur).map(msgHtml).join(''); }
 function errText(e){
   const c = e && e.code;
   if(['not_granted', 'sampling_disabled', 'not_declared', 'capability_disabled', 'capability_removed'].includes(c)) return 'この画面ではAIを使えません。';
@@ -731,7 +1072,7 @@ function errText(e){
 }
 function setCompMode(m){
   S.compMode = m;
-  document.querySelectorAll('#modeSeg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.mode === m));
+  $$('#modeSeg button').forEach(b => b.setAttribute('aria-pressed', b.dataset.mode === m));
   $('#msg').placeholder = m === 'talk' ? '英語で返事してみよう（日本語でも大丈夫）' : 'この話題について質問する…';
   setCompNote();
 }
@@ -749,13 +1090,13 @@ async function send(){
   const box = $('#msg'); const text = box.value.trim();
   const L = S.byId[S.cur]; if(!text || !L) return;
   if(!S.sample){ setCompNote('この画面ではAIを使えません'); return; }
-  const id = L.id === '__draft' ? '__draft' : S.cur; const mode = S.compMode;
+  const id = S.cur; const mode = S.compMode;
   const chat = chatOf(id);
   chat.push({role: 'user', content: text, mode}); saveChat(id);
   box.value = ''; autosize();
   const cbox = $('#chat');
   cbox.insertAdjacentHTML('beforeend', msgHtml(chat[chat.length - 1]));
-  cbox.insertAdjacentHTML('beforeend', '<div class="a-msg" id="pending"><p class="thinking">考えています…</p></div>');
+  cbox.insertAdjacentHTML('beforeend', '<div class="a-msg" id="pending"><p class="thinking">考えています</p></div>');
   const pend = $('#pending'); pend.removeAttribute('id');
   scrollBottom();
   const opener = chat.find(t => t.local && t.mode === 'talk');
@@ -777,16 +1118,15 @@ async function send(){
       pend.innerHTML = `<p class="err">${esc(errText(e))}</p>`;
     }
   }finally{
-    setBusy(false); S.ctl = null; if(S.cur === id || id === '__draft') scrollBottom(true);
+    setBusy(false); S.ctl = null; if(S.cur === id) scrollBottom(true);
   }
 }
 function startTalk(){
   const L = S.byId[S.cur]; if(!L || !L.talk) return;
   const id = S.cur; const chat = chatOf(id);
-  const content = `${L.talk.q}\n訳：${L.talk.ja}`;
   const last = chat[chat.length - 1];
   if(!(last && last.local && last.q === L.talk.q)){
-    chat.push({role: 'assistant', content, mode: 'talk', local: true, q: L.talk.q}); saveChat(id);
+    chat.push({role: 'assistant', content: `${L.talk.q}\n訳：${L.talk.ja}`, mode: 'talk', local: true, q: L.talk.q}); saveChat(id);
     $('#chat').insertAdjacentHTML('beforeend', msgHtml(chat[chat.length - 1]));
   }
   setCompMode('talk'); scrollBottom(true);
@@ -800,87 +1140,133 @@ function autosize(){ const t = $('#msg'); t.style.height = 'auto'; t.style.heigh
 function toggleCover(force){
   const c = $('#cover'); const show = force != null ? force : c.hidden;
   c.hidden = !show;
-  if(show){ stopSpeak(); $('#memo').focus(); }
+  if(show){ stopSpeak(); closePop(); toggleKeys(false); $('#toast').classList.remove('on'); $('#memo').focus(); }
 }
 $('#memo').value = LS.get('memo', '');
 $('#memo').addEventListener('input', e => LS.set('memo', e.target.value));
 
 /* ---------- events ---------- */
 document.addEventListener('keydown', e => {
-  if(e.key === 'Escape' && !e.isComposing){ e.preventDefault(); toggleCover(); }
+  if(e.key === 'Escape' && !e.isComposing){ e.preventDefault(); toggleCover(); return; }
+  if(!$('#cover').hidden || e.ctrlKey || e.metaKey || e.altKey || typing(document.activeElement)) return;
+  const k = e.key;
+  if(k === '?'){ e.preventDefault(); toggleKeys(); return; }
+  if(!$('#keys').hidden){ toggleKeys(false); }
+  if(k === '/'){ e.preventDefault(); $('#q').focus(); $('#q').select(); }
+  else if(k === 'j' || k === 'J'){ step(1); }
+  else if(k === 'k' || k === 'K'){ step(-1); }
+  else if((k === 'l' || k === 'L') && S.view === 'lesson'){ toggleLike(S.cur); }
+  else if((k === 'p' || k === 'P') && S.view === 'lesson'){ playAll(); }
+  else if(['1', '2', '3'].includes(k) && S.view === 'lesson' && $('#story')){ S.amount = +k; LS.set('amount', S.amount); rerenderStory(); }
+  else if(e.key === 'Enter' && document.activeElement && document.activeElement.classList.contains('kw')){ openPop(document.activeElement); }
 });
+document.addEventListener('pointerdown', e => {
+  if(!$('#pop').hidden && !e.target.closest('#pop') && !e.target.closest('.tk.kw')) closePop();
+});
+$('#keys').addEventListener('click', () => toggleKeys(false));
+$('#keysBtn').addEventListener('click', () => toggleKeys(true));
 $('#hideBtn').addEventListener('click', () => toggleCover(true));
+$('#likeBtn').addEventListener('click', () => toggleLike(S.cur));
 $('#openSide').addEventListener('click', openSide);
 $('#closeSide').addEventListener('click', closeSide);
 $('#scrim').addEventListener('click', closeSide);
 $('#newBtn').addEventListener('click', () => { renderNew(); closeSide(); });
 $('#wordsBtn').addEventListener('click', () => { renderWords(); closeSide(); });
+$('#likesBtn').addEventListener('click', () => { renderLikes(); closeSide(); });
+$('#q').addEventListener('input', e => { S.query = e.target.value; renderList(); });
+$('#q').addEventListener('keydown', e => {
+  if(e.key === 'Enter'){ const first = visible()[0]; if(first){ openLesson(first.id, null); e.target.blur(); } }
+});
 $('#filters').addEventListener('click', e => {
   const b = e.target.closest('[data-f]'); if(!b) return;
   S.filter = b.dataset.f;
-  document.querySelectorAll('#filters .chip').forEach(c => c.setAttribute('aria-pressed', c === b));
+  $$('#filters .chip').forEach(c => c.setAttribute('aria-pressed', c === b));
   renderList();
 });
-$('#list').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if(b) openLesson(b.dataset.id); });
+$('#list').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if(b) openLesson(b.dataset.id, null); });
+$('#filters').addEventListener('scroll', e => { const f = e.target; f.classList.toggle('end', f.scrollLeft + f.clientWidth >= f.scrollWidth - 4); }, {passive: true});
 $('#rateSeg').addEventListener('click', e => {
   const b = e.target.closest('[data-r]'); if(!b) return;
   S.rate = +b.dataset.r; LS.set('rate', S.rate); markRate(); speak('Hello. Nice to meet you.');
 });
-function markRate(){ document.querySelectorAll('#rateSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.r === S.rate)); }
+function markRate(){ $$('#rateSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.r === S.rate)); }
 markRate();
 $('#modeSeg').addEventListener('click', e => { const b = e.target.closest('[data-mode]'); if(b){ setCompMode(b.dataset.mode); $('#msg').focus(); } });
 $('#composer').addEventListener('submit', e => { e.preventDefault(); send(); });
 $('#msg').addEventListener('input', autosize);
 $('#msg').addEventListener('keydown', e => { if(e.key === 'Enter' && !e.shiftKey && !e.isComposing && e.keyCode !== 229){ e.preventDefault(); send(); } });
+let scrollRaf = 0;
+$('#scroll').addEventListener('scroll', () => {
+  closePop();
+  if(scrollRaf) return;
+  scrollRaf = requestAnimationFrame(() => {
+    scrollRaf = 0; const sc = $('#scroll'); const max = sc.scrollHeight - sc.clientHeight;
+    $('#topbar').style.setProperty('--p', max > 40 ? Math.min(1, sc.scrollTop / max) : 0);
+  });
+}, {passive: true});
 
-$('#thread').addEventListener('click', e => {
+function onAction(e){
   const t = e.target;
-  const sayLine = t.closest('[data-say-line]');
-  if(sayLine){ e.stopPropagation(); const L = S.byId[S.cur]; stopSpeak(); speak(L.lines[+sayLine.dataset.sayLine].en); return; }
+  const kw = t.closest('.tk.kw'); if(kw){ e.stopPropagation(); popFor === kw ? closePop() : openPop(kw); return; }
+  const sayLine = t.closest('[data-say-line]'); if(sayLine){ stopSpeak(); speakLine(+sayLine.dataset.sayLine); return; }
   const say = t.closest('[data-say]'); if(say){ stopSpeak(); speak(say.dataset.say); return; }
   const star = t.closest('[data-star]'); if(star){ toggleWord(star.dataset.star, star.dataset.from); return; }
+  const like = t.closest('[data-like]'); if(like){ toggleLike(like.dataset.like); return; }
+  const open = t.closest('[data-open]'); if(open){ openLesson(open.dataset.open, open.dataset.seq || (open.closest('.pager') ? undefined : null)); return; }
   const amt = t.closest('[data-amt]'); if(amt){ S.amount = +amt.dataset.amt; LS.set('amount', S.amount); rerenderStory(); return; }
   const li = t.closest('#story li');
-  if(li){ const L = S.byId[S.cur]; const i = +li.dataset.i; const f = S.flips[L.id] || (S.flips[L.id] = {}); f[i] = !f[i]; li.outerHTML = storyLine(L, i); return; }
+  if(li){
+    if(window.getSelection && String(window.getSelection()).length) return;
+    const L = S.byId[S.cur]; const i = +li.dataset.i; const f = S.flips[L.id] || (S.flips[L.id] = {}); f[i] = !f[i];
+    li.outerHTML = storyLine(L, i);
+    const nli = $(`#story li[data-i="${i}"] .s-body`); if(nli) nli.classList.add('swap');
+    return;
+  }
   const ch = t.closest('.choice'); if(ch && !ch.disabled){ answer(+ch.dataset.q, +ch.dataset.c); return; }
   const m = t.closest('.words.blur .m'); if(m){ m.classList.toggle('show'); return; }
   const act = t.closest('[data-act]'); if(!act) return;
   const a = act.dataset.act;
   if(a === 'playall') playAll();
   else if(a === 'talk') startTalk();
+  else if(a === 'retry') retryQuiz();
   else if(a === 'save-draft') saveDraft();
   else if(a === 'drop-draft'){ delete S.byId.__draft; const first = S.lessons[0]; if(first) openLesson(first.id); else renderNew(); }
-  else if(a === 'blur'){ blurMeanings = !blurMeanings; LS.set('blur', blurMeanings); renderWords(); }
-});
+  else if(a === 'blur'){ blurMeanings = !blurMeanings; LS.set('blur', blurMeanings); renderWords(true); }
+}
+$('#thread').addEventListener('click', onAction);
+$('#pop').addEventListener('click', onAction);
 $('#thread').addEventListener('input', e => { if(e.target.id === 'srcText') LS.set('newDraft', e.target.value); });
 $('#thread').addEventListener('click', e => { if(e.target.id === 'makeBtn') makeNote(); });
 
 /* ---------- boot ---------- */
-S.state = LS.get('state', {saved: [], done: {}});
-renderWordCnt();
+function openInitial(){
+  const hash = decodeURIComponent((location.hash || '').slice(1));
+  const last = LS.get('last', '');
+  const want = S.byId[hash] ? hash : (S.byId[last] ? last : (S.lessons[0] && S.lessons[0].id));
+  if(want) openLesson(want); else if(S.sample) renderNew(); else { $('#thread').innerHTML = emptyMain('まだ話題がありません。'); }
+}
+S.state = normState(LS.get('state', null));
+renderCounts();
 setCompMode('ask');
 
 (async () => {
   const [db, user, sample] = await Promise.all([use('db'), use('user'), use('sample')]);
   S.sample = typeof sample === 'function' ? sample : null;
   S.db = db;
-  setCompNote();
   if(!db && Array.isArray(window.LESSONS)){
     // public copy: lessons come from lessons.js, progress stays in this browser
     document.documentElement.classList.add('static');
-    S.sample = null; S.loaded = true;
+    S.loaded = true;
     S.lessons = window.LESSONS.filter(L => L && Array.isArray(L.lines) && L.lines.length).slice().sort((a, b) => a.added < b.added ? 1 : -1);
     S.lessons.forEach(L => { S.byId[L.id] = L; });
-    renderList();
-    const hash = decodeURIComponent((location.hash || '').slice(1));
-    const want = S.byId[hash] ? hash : (S.byId[LS.get('last', '')] ? LS.get('last', '') : (S.lessons[0] && S.lessons[0].id));
-    if(want) openLesson(want);
+    renderList(); renderCounts(); openInitial();
     return;
   }
+  setCompNote();
   if(!db){
     S.loaded = true;
-    $('#list').innerHTML = '<p class="empty-side">ノートを読み込めませんでした。claude.ai にログインした状態で開いてください。</p>';
-    $('#thread').innerHTML = '<p class="empty-main">ノートを読み込めませんでした。</p>';
+    $('#list').innerHTML = '<p class="empty-side">話題を読み込めませんでした。claude.ai にログインした状態で開いてください。</p>';
+    $('#thread').innerHTML = emptyMain('話題を読み込めませんでした。');
     return;
   }
   const uid = user ? await user.id().catch(() => null) : null;
@@ -888,12 +1274,15 @@ setCompMode('ask');
     try{
       S.stateRef = db.doc('data/users/' + uid + '/state');
       S.stateRef.onSnapshot(s => {
-        if(s.exists){ const d = s.data() || {}; S.state = {saved: Array.isArray(d.saved) ? d.saved.slice() : [], done: Object.assign({}, d.done || {})}; }
+        if(s.exists) S.state = normState(s.data() || {});
         else {
-          const local = LS.get('state', null);
-          if(local && (local.saved.length || Object.keys(local.done).length)) saveState();
+          const local = normState(LS.get('state', null));
+          if(local.saved.length || Object.keys(local.done).length || Object.keys(local.likes).length){ S.state = local; saveState(); }
         }
-        renderWordCnt(); refreshStars(); renderList(); if(S.view === 'words') renderWords(); else updateScore();
+        renderCounts(); refreshStars(); renderList();
+        if(S.view === 'words') renderWords(true);
+        else if(S.view === 'likes') renderLikes(true);
+        else if(S.view === 'lesson' && S.byId[S.cur]){ syncLikeBtn(); const sc = $('#score'); if(sc) sc.textContent = scoreText(S.byId[S.cur]); }
       }, () => { S.stateRef = null; });
     }catch(e){ S.stateRef = null; }
   }
@@ -903,17 +1292,12 @@ setCompMode('ask');
     S.byId = {}; S.lessons.forEach(L => { S.byId[L.id] = L; });
     if(draft) S.byId.__draft = draft;
     const first = !S.loaded; S.loaded = true;
-    renderList(); setCompNote();
-    if(first){
-      const hash = decodeURIComponent((location.hash || '').slice(1));
-      const want = S.byId[hash] ? hash : (S.byId[LS.get('last', '')] ? LS.get('last', '') : (S.lessons[0] && S.lessons[0].id));
-      if(want) openLesson(want); else renderNew();
-    } else if(S.view === 'lesson' && !S.byId[S.cur]){
-      const f = S.lessons[0]; if(f) openLesson(f.id); else renderNew();
-    }
+    renderList(); renderCounts(); setCompNote();
+    if(first) openInitial();
+    else if(S.view === 'lesson' && !S.byId[S.cur]){ const f = S.lessons[0]; if(f) openLesson(f.id); else renderNew(); }
   }, () => {
     S.loaded = true;
-    $('#list').innerHTML = '<p class="empty-side">ノートを読み込めませんでした。ページを開きなおしてください。</p>';
+    $('#list').innerHTML = '<p class="empty-side">話題を読み込めませんでした。ページを開きなおしてください。</p>';
   });
 })();
 })();
