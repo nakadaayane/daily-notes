@@ -7,7 +7,7 @@
 <meta name="googlebot" content="noindex,nofollow,noarchive,nosnippet,noimageindex">
 <meta name="referrer" content="no-referrer">
 <style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html,body{box-sizing:border-box}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Daily Notes</title>
+<title>English Notes</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
@@ -150,6 +150,7 @@ kbd{font-family:var(--ui);font-size:.625rem;line-height:1;color:var(--faint);bor
 @keyframes swap{from{opacity:.15;transform:translateY(2px)}to{opacity:1;transform:none}}
 .story .s-text.ja{font-family:var(--ui);font-size:var(--fs-m)}
 .story .s-sub{display:block;font-family:var(--ui);font-size:var(--fs-s);color:var(--muted);margin-top:1px}
+.story .s-sub.en-sub{font-family:var(--serif);font-size:var(--fs-m)}
 .mw{font-family:var(--serif);font-size:1.06em;background:var(--hl);padding:0 3px;border-radius:3px}
 .tk{border-radius:3px;transition:background-color .12s,box-shadow .12s}
 .tk.kw{text-decoration:underline dotted;text-decoration-color:var(--faint);text-decoration-thickness:1px;text-underline-offset:4px;cursor:help}
@@ -312,6 +313,43 @@ kbd{font-family:var(--ui);font-size:.625rem;line-height:1;color:var(--faint);bor
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+/* English amount slider */
+.amt{font-family:var(--ui);display:flex;flex-direction:column;gap:2px;padding:9px 14px 4px;border:1px solid var(--line);border-radius:12px;background:var(--card)}
+.amt-top{display:flex;align-items:baseline;gap:8px;font-size:var(--fs-xs);color:var(--faint)}
+.amt-top b{font-size:var(--fs-s);font-weight:600;color:var(--fg)}
+.amt-range{-webkit-appearance:none;appearance:none;display:block;width:100%;height:24px;background:transparent;margin:0;cursor:pointer;--fill:50%}
+.amt-range::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:linear-gradient(90deg,var(--accent) var(--fill),var(--line) var(--fill))}
+.amt-range::-moz-range-track{height:4px;border-radius:2px;background:var(--line)}
+.amt-range::-moz-range-progress{height:4px;border-radius:2px;background:var(--accent)}
+.amt-range::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:18px;height:18px;border-radius:50%;background:var(--card);border:2px solid var(--accent);margin-top:-7px;box-shadow:0 1px 4px var(--shadow)}
+.amt-range::-moz-range-thumb{box-sizing:border-box;width:18px;height:18px;border-radius:50%;background:var(--card);border:2px solid var(--accent)}
+.amt-range:focus-visible{outline:0}
+.amt-range:focus-visible::-webkit-slider-thumb{outline:2px solid var(--accent);outline-offset:2px}
+.amt-ticks{position:relative;height:22px}
+.amt-ticks button{position:absolute;top:0;transform:translateX(-50%);font-size:.625rem;line-height:22px;color:var(--faint);white-space:nowrap;padding:0 3px;border-radius:4px}
+.amt-ticks button:hover{color:var(--fg)}
+.amt-ticks button[aria-pressed="true"]{color:var(--accent);font-weight:600}
+/* streak, new mark, review */
+.side-top .brand{margin-right:auto}
+.streak{font-size:var(--fs-xs);color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:1px 9px;margin-right:6px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.new-tag{font-size:.625rem;font-weight:600;letter-spacing:.04em;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 40%,var(--line));border-radius:4px;padding:0 4px;line-height:1.5}
+.item.unseen .t{font-weight:600}
+.due{font-size:var(--fs-xs);color:var(--bg);background:var(--accent);border-radius:999px;padding:0 7px;margin-left:auto;font-variant-numeric:tabular-nums}
+.due:not([hidden]) + .cnt{margin-left:6px}
+.rv-box{display:flex;flex-direction:column;align-items:center;gap:14px;padding:28px 18px 24px;background:var(--card);border:1px solid var(--line);border-radius:16px;text-align:center}
+.rv-prog{font-size:var(--fs-xs);color:var(--faint);font-variant-numeric:tabular-nums}
+.rv-w{font-family:var(--serif);font-size:1.75rem;font-weight:600;line-height:1.3;display:flex;align-items:center;gap:6px;overflow-wrap:anywhere}
+.rv-m{font-size:var(--fs-l);margin:0}
+.rv-n{font-size:var(--fs-s);color:var(--muted);margin:0}
+.rv-from{font-size:var(--fs-xs);color:var(--faint)}
+.rv-from button{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;font-size:inherit}
+.rv-btns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.rv-btns .btn{min-width:120px;padding:8px 16px}
+.rv-meter{display:flex;gap:4px}
+.rv-meter i{width:18px;height:4px;border-radius:2px;background:var(--line)}
+.rv-meter i.on{background:var(--good)}
+.words .lv{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);font-variant-numeric:tabular-nums}
+.words .lv.due-now{color:var(--accent)}
 /* public copy (no Claude features): hide what needs Claude */
 html.static .ai-only{display:none!important}
 </style>
@@ -321,7 +359,7 @@ html.static .ai-only{display:none!important}
 <div class="app">
   <aside class="side" id="side" aria-label="話題の一覧">
     <div class="side-top">
-      <span class="brand">notes</span>
+      <span class="brand">English Notes</span><span class="streak" id="streak" hidden></span>
       <button class="icon-btn only-mobile" id="closeSide" aria-label="閉じる">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
@@ -342,7 +380,7 @@ html.static .ai-only{display:none!important}
       </button>
       <button class="nav-btn" id="wordsBtn">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/></svg>
-        単語帳 <span class="cnt" id="wordCnt"></span>
+        単語帳 <span class="due" id="dueCnt" hidden></span><span class="cnt" id="wordCnt"></span>
       </button>
     </div>
     <div class="filters" id="filters" role="group" aria-label="しぼりこみ">
@@ -404,7 +442,7 @@ html.static .ai-only{display:none!important}
       <dt><kbd>J</kbd><kbd>K</kbd></dt><dd>次の話題 ／ 前の話題</dd>
       <dt><kbd>L</kbd></dt><dd>いいね</dd>
       <dt><kbd>P</kbd></dt><dd>通して読む ／ 止める</dd>
-      <dt><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd></dt><dd>英語の量（すこし・半分・ぜんぶ）</dd>
+      <dt><kbd>0</kbd>〜<kbd>6</kbd></dt><dd>英語の量（0＝ぜんぶ日本語・6＝ぜんぶ英語）</dd>
       <dt><kbd>/</kbd></dt><dd>さがす</dd>
       <dt><kbd>Esc</kbd></dt><dd>メモ画面でかくす ／ もどす</dd>
     </dl>
@@ -440,6 +478,21 @@ const typing = el => el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' 
 const CAT = {anime:'アニメ', movie:'映画', manga:'漫画', own:'自分で追加'};
 const LEVEL = {1:'やさしい', 2:'ふつう', 3:'ちょっとむずかしい'};
 const SERIES = {haikyu:'ハイキュー!!', medalist:'メダリスト'};
+/* English amount: 0 = all Japanese … 6 = all English */
+const AMT = [
+  {tick: '日本語', name: 'ぜんぶ日本語'},
+  {tick: '単語', name: '英単語だけ英語', mix: 'mix'},
+  {tick: '1/4', name: '文の4分の1が英語', mix: 'q1'},
+  {tick: '半分', name: '文の半分が英語', mix: 'q2'},
+  {tick: '3/4', name: '文の4分の3が英語', mix: 'q3'},
+  {tick: '訳つき', name: 'ぜんぶ英語（訳つき）'},
+  {tick: '英語', name: 'ぜんぶ英語'}
+];
+const GRAD_KEYS = ['q1', 'q2', 'q3'];
+const hasBraces = x => typeof x === 'string' && /\{[^{}]+\}/.test(x) && !/\{[^}]*\{/.test(x);
+const gradOk = L => Array.isArray(L.grad) && L.grad.length === L.lines.length && L.grad.every(g => g && GRAD_KEYS.every(k => hasBraces(g[k])));
+const needsGrad = lv => lv >= 2 && lv <= 4;
+const AMT_MAX = AMT.length - 1;
 const HEART = '<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/>';
 const ICON = {
   say:'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M18.5 6a8.5 8.5 0 0 1 0 12"/></svg>',
@@ -459,16 +512,37 @@ const ICON = {
 /* ---------- state ---------- */
 const S = {
   lessons: [], byId: {}, cur: null, view: 'lesson', filter: 'all', query: '',
-  amount: LS.get('amount', 1), rate: LS.get('rate', 0.8), compMode: 'ask',
-  chats: {}, flips: {}, quiz: {},
+  amount: Math.max(0, Math.min(AMT_MAX, +LS.get('level', ({1: 1, 2: 3, 3: 6})[LS.get('amount', 1)] ?? 1) || 0)), rate: LS.get('rate', 0.8), compMode: 'ask',
+  chats: {}, flips: {}, quiz: {}, gradBusy: {}, gradErr: {},
   state: {saved: [], done: {}, likes: {}}, stateRef: null,
   db: null, sample: null, loaded: false, busy: false, ctl: null, seq: null
 };
 const normState = d => ({
   saved: Array.isArray(d && d.saved) ? d.saved.slice() : [],
   done: Object.assign({}, d && d.done || {}),
-  likes: Object.assign({}, d && d.likes || {})
+  likes: Object.assign({}, d && d.likes || {}),
+  seen: Object.assign({}, d && d.seen || {}),
+  days: Array.isArray(d && d.days) ? d.days.slice(-400) : []
 });
+/* ---------- review schedule (spaced) ---------- */
+const GAPS = [1, 2, 4, 7, 14, 30];
+const addDays = (d, n) => new Date(Date.parse(d) + n * 864e5).toISOString().slice(0, 10);
+const isDue = w => !w.due || w.due <= jstToday();
+const dueWords = () => S.state.saved.filter(isDue);
+/* ---------- streak ---------- */
+function streakDays(){
+  const set = new Set(S.state.days || []); if(!set.size) return 0;
+  let d = jstToday(); if(!set.has(d)) d = addDays(d, -1);
+  let n = 0; while(set.has(d)){ n++; d = addDays(d, -1); }
+  return n;
+}
+function markToday(){
+  const t = jstToday(); const days = S.state.days || (S.state.days = []);
+  if(days.includes(t)) return false;
+  days.push(t); if(days.length > 400) days.splice(0, days.length - 400);
+  return true;
+}
+const isNew = L => !L.own && !S.state.seen[L.id] && dayDiff(jstToday(), (L.added || '').slice(0, 10)) <= 3;
 
 /* ---------- speech ---------- */
 let voice = null;
@@ -610,9 +684,9 @@ function renderList(){
   for(const L of items){
     const gg = groupOf(L.added);
     if(gg !== g && !S.query){ html += `<div class="grp"><span>${esc(gg)}</span></div>`; g = gg; }
-    const done = S.state.done[L.id], liked = S.state.likes[L.id];
-    html += `<button class="item" data-id="${esc(L.id)}" aria-current="${S.view === 'lesson' && S.cur === L.id}">
-      <span class="dot ${L.own ? 'own' : esc(L.cat)}" aria-hidden="true"></span><span class="t">${hilite(L.title)}</span><span class="marks">${liked ? `<span class="lk" title="いいね">${ICON.heartS}</span>` : ''}${done ? `<span title="クイズ ${done.s}/${done.n}">✓</span>` : ''}</span></button>`;
+    const done = S.state.done[L.id], liked = S.state.likes[L.id], nw = isNew(L);
+    html += `<button class="item${nw ? ' unseen' : ''}" data-id="${esc(L.id)}" aria-current="${S.view === 'lesson' && S.cur === L.id}">
+      <span class="dot ${L.own ? 'own' : esc(L.cat)}" aria-hidden="true"></span><span class="t">${hilite(L.title)}</span><span class="marks">${nw ? '<span class="new-tag">NEW</span>' : ''}${liked ? `<span class="lk" title="いいね">${ICON.heartS}</span>` : ''}${done ? `<span title="クイズ ${done.s}/${done.n}">✓</span>` : ''}</span></button>`;
   }
   box.innerHTML = html;
 }
@@ -620,10 +694,15 @@ const likedIds = () => Object.entries(S.state.likes).filter(([id]) => S.byId[id]
 const seqList = () => S.seq === 'likes' ? likedIds().map(id => S.byId[id]) : visible();
 function renderCounts(){
   $('#wordCnt').textContent = S.state.saved.length || '';
+  const dn = dueWords().length; const dc = $('#dueCnt');
+  dc.hidden = !dn; dc.textContent = dn ? `復習 ${dn}` : '';
+  const st = streakDays(); const sk = $('#streak');
+  sk.hidden = !st; sk.textContent = st ? `${st}日連続` : '';
+  sk.title = st ? `${st}日続けて読んでいます` : '';
   $('#likeCnt').textContent = Object.keys(S.state.likes).filter(id => S.byId[id]).length || '';
 }
 function setNav(){
-  $('#wordsBtn').setAttribute('aria-current', S.view === 'words');
+  $('#wordsBtn').setAttribute('aria-current', S.view === 'words' || S.view === 'review');
   $('#likesBtn').setAttribute('aria-current', S.view === 'likes');
   $('#newBtn').setAttribute('aria-current', S.view === 'new');
   $('#likeBtn').hidden = !(S.view === 'lesson' && S.byId[S.cur] && S.cur !== '__draft');
@@ -633,18 +712,18 @@ function enterAnim(){ const th = $('#thread'); th.classList.remove('enter'); voi
 /* ---------- lesson view ---------- */
 function storyLine(L, i){
   const ln = L.lines[i]; const fl = !!(S.flips[L.id] && S.flips[L.id][i]);
-  let base;
-  if(S.amount === 1) base = ln.mix ? 'mix' : 'ja';
-  else if(S.amount === 2) base = (i % 2 === 0) ? 'en' : 'ja';
-  else base = 'en';
+  const lv = S.amount;
   let html;
-  if(S.amount === 3){
-    html = `<span class="s-text en">${enHtml(L, i)}</span>` + (fl ? `<span class="s-sub">${esc(ln.ja)}</span>` : '');
+  if(lv >= 5){
+    const sub = lv === 5 ? !fl : fl;
+    html = `<span class="s-text en">${enHtml(L, i)}</span>` + (sub ? `<span class="s-sub">${esc(ln.ja)}</span>` : '');
+  }else if(lv === 0){
+    html = `<span class="s-text ja">${esc(ln.ja)}</span>` + (fl ? `<span class="s-sub en-sub">${esc(ln.en)}</span>` : '');
   }else{
-    const show = fl ? (base === 'en' ? 'ja' : 'en') : base;
-    if(show === 'en') html = `<span class="s-text en">${enHtml(L, i)}</span>`;
-    else if(show === 'mix') html = `<span class="s-text ja">${mixHtml(ln.mix)}</span>`;
-    else html = `<span class="s-text ja">${esc(ln.ja)}</span>`;
+    const key = AMT[lv].mix;
+    let mx = key === 'mix' ? ln.mix : (gradOk(L) ? L.grad[i][key] : '');
+    if(!mx) mx = ln.mix;
+    html = (mx ? `<span class="s-text ja">${mixHtml(mx)}</span>` : `<span class="s-text ja">${esc(ln.ja)}</span>`) + (fl ? `<span class="s-sub">${esc(ln.ja)}</span>` : '');
   }
   return `<li data-i="${i}"><span class="s-body">${html}</span><button class="say" data-say-line="${i}" aria-label="英文を読み上げ">${ICON.say}</button></li>`;
 }
@@ -652,7 +731,8 @@ const isSaved = w => S.state.saved.some(s => s.w === w);
 const isLiked = id => !!S.state.likes[id];
 function wordRow(wd, lessonId, opts = {}){
   const on = isSaved(wd.w);
-  const from = opts.from && S.byId[opts.from] ? `<span class="n">${wd.note ? esc(wd.note) + '　' : ''}<button data-open="${esc(opts.from)}">${esc(S.byId[opts.from].title)}</button></span>` : (wd.note ? `<span class="n">${esc(wd.note)}</span>` : '');
+  let from = opts.from && S.byId[opts.from] ? `<span class="n">${wd.note ? esc(wd.note) + '　' : ''}<button data-open="${esc(opts.from)}">${esc(S.byId[opts.from].title)}</button></span>` : (wd.note ? `<span class="n">${esc(wd.note)}</span>` : '');
+  if(opts.book){ const sv = S.state.saved.find(s => s.w === wd.w); if(sv){ const due = isDue(sv); from += `<span class="n"><span class="lv${due ? ' due-now' : ''}">${due ? '今日の復習' : `次の復習 ${jpDate(sv.due)}`}</span></span>`; } }
   return `<li><button class="say" data-say="${esc(wd.w)}" aria-label="${esc(wd.w)} を読み上げ">${ICON.say}</button>
     <div class="wtxt"><span class="w">${esc(wd.w)}</span><span class="m">${esc(wd.ja)}</span>${from}</div>
     <button class="star" data-star="${esc(wd.w)}" data-from="${esc(lessonId || '')}" aria-pressed="${on}" aria-label="単語帳に入れる">${ICON.star}</button></li>`;
@@ -716,11 +796,9 @@ function renderLesson(){
 
       <section class="blk" aria-label="読んでみよう">
         <div class="blk-h"><h3>読んでみよう</h3><span class="sp"></span>
-          <span class="seg" id="amtSeg" role="group" aria-label="英語の量">
-            <button data-amt="1" aria-pressed="${S.amount === 1}">すこし</button><button data-amt="2" aria-pressed="${S.amount === 2}">半分</button><button data-amt="3" aria-pressed="${S.amount === 3}">ぜんぶ英語</button>
-          </span>
           <button class="txt-btn" data-act="playall">${ICON.play} 通して読む</button>
         </div>
+        ${amtHtml()}
         <p class="note" id="storyNote">${storyNote()}</p>
         <ol class="story" id="story">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
       </section>
@@ -759,13 +837,75 @@ function renderLesson(){
   renderChat();
   enterAnim();
 }
-const storyNote = () => S.amount === 3 ? '文をタップすると日本語訳が出ます。点線の単語をタップすると意味が見られます。' : '文をタップすると英語と日本語が入れかわります。';
+const storyNote = () => {
+  const lv = S.amount, kw = '点線の単語をタップすると意味が見られます。';
+  const L = S.byId[S.cur];
+  if(needsGrad(lv) && L && !gradOk(L)) return S.gradBusy[S.cur] ? '文の中の英語を作っています（10〜30秒ほど）。できるまでは単語だけ英語で表示します。' : (S.gradErr[S.cur] || 'この話題は、まだ単語だけ英語で表示しています。');
+  if(lv === 0) return '文をタップすると英文が出ます。';
+  if(lv <= 4) return '色のついた部分が英語です。文をタップすると日本語訳が出ます。';
+  if(lv === 5) return '文をタップすると訳をかくせます。' + kw;
+  if(lv === 6) return '文をタップすると日本語訳が出ます。' + kw;
+  return '文をタップすると英語と日本語が入れかわります。' + kw;
+};
+function amtHtml(){
+  const lv = S.amount;
+  return `<div class="amt" id="amt">
+    <div class="amt-top"><span>英語の量</span><b id="amtName">${esc(AMT[lv].name)}</b></div>
+    <input type="range" class="amt-range" id="amtRange" min="0" max="${AMT_MAX}" step="1" value="${lv}" aria-label="英語の量" aria-valuetext="${esc(AMT[lv].name)}" style="--fill:${lv / AMT_MAX * 100}%">
+    <div class="amt-ticks">${AMT.map((a, k) => `<button type="button" data-amt="${k}" aria-pressed="${k === lv}" aria-label="${esc(a.name)}" style="left:calc(9px + (100% - 18px) * ${k} / ${AMT_MAX})">${esc(a.tick)}</button>`).join('')}</div>
+  </div>`;
+}
+function syncAmt(){
+  const lv = S.amount, r = $('#amtRange'); if(!r) return;
+  if(+r.value !== lv) r.value = lv;
+  r.style.setProperty('--fill', lv / AMT_MAX * 100 + '%');
+  r.setAttribute('aria-valuetext', AMT[lv].name);
+  $('#amtName').textContent = AMT[lv].name;
+  $$('#amt [data-amt]').forEach(b => b.setAttribute('aria-pressed', +b.dataset.amt === lv));
+}
+function setAmount(v){
+  v = Math.max(0, Math.min(AMT_MAX, Math.round(+v))); if(isNaN(v)) return;
+  if(v === S.amount){ ensureGrad(); return; }
+  S.amount = v; LS.set('level', v);
+  rerenderStory(); ensureGrad();
+}
+const GRAD_SPEC = `日本語の文を少しずつ英語に置きかえる「段階つきの混ぜ文」を作ってください。学習者は日本の社会人で、英語は中学レベルです。
+各文には ja（日本語）、mix（日本語に英単語を1〜2個入れたもの）、en（英文）があります。その間を埋める3段階を作ります。
+- q1: 英語が約25%。日本語の語順・助詞のまま、内容語や短い句を3つ前後英語にする。mix より英語が多いこと。
+- q2: 英語が約50%。英語のかたまり（主語＋動詞、名詞句、前置詞句など）が文の半分くらい。英語の語順に寄せはじめてよい。
+- q3: 英語が約75%。en とほぼ同じ英語の語順で、むずかしめの語や句を1〜2か所だけ日本語のまま残す。
+ルール:
+- 英語の部分は必ず {波かっこ} で囲む。日本語の部分は囲まない。入れ子は禁止。
+- 英語の部分は、できるだけ en の単語・言いまわしをそのまま使う。
+- 内容を足したり変えたりしない。日本人が読んで意味が取れる自然な並びにする。
+- 英語の量は q1 < q2 < q3 とはっきり増やす。
+例: en "She wants to be an Olympic gold medalist." / ja "彼女はオリンピックの金メダリストになりたいと思っています。"
+q1 "{She} はオリンピックの {gold medalist} に {want to be}。" q2 "{She wants to be} オリンピックの {gold medalist}。" q3 "{She wants to be an} オリンピック {gold medalist.}"`;
+async function ensureGrad(){
+  const L = S.byId[S.cur]; const id = S.cur;
+  if(!L || S.view !== 'lesson' || !needsGrad(S.amount) || gradOk(L) || S.gradBusy[id] || !S.sample) return;
+  S.gradBusy[id] = true; delete S.gradErr[id]; const n = $('#storyNote'); if(n) n.textContent = storyNote();
+  try{
+    const lines = L.lines.map((l, i) => ({n: i + 1, en: l.en, ja: l.ja, mix: l.mix || ''}));
+    const r = await S.sample.json(`${GRAD_SPEC}\n\n次の${lines.length}文それぞれについて q1, q2, q3 を作り、{"grad": [{"q1": "...", "q2": "...", "q3": "..."}, ...]} の形のJSONを1つだけ返してください（文と同じ順番・同じ数）。\n${JSON.stringify(lines)}`, {modelTier: 'default'});
+    const g = r && Array.isArray(r.grad) ? r.grad.map(x => ({q1: String(x && x.q1 || ''), q2: String(x && x.q2 || ''), q3: String(x && x.q3 || '')})) : null;
+    const cand = Object.assign({}, L, {grad: g});
+    if(!g || !gradOk(cand)) throw {code: 'invalid_json'};
+    const cur = S.byId[id] || L; cur.grad = g; L.grad = g;
+    if(id !== '__draft' && S.db){ S.db.collection('lessons').doc(id).update({grad: g}).catch(() => {}); }
+  }catch(e){
+    S.gradErr[id] = e && e.code === 'not_granted' ? 'この画面では文の中の英語を作れないため、単語だけ英語で表示しています。' : '文の中の英語をうまく作れませんでした。目盛りを押しなおすと、もう一度作ります。';
+  }finally{
+    S.gradBusy[id] = false;
+    if(S.cur === id && S.view === 'lesson' && $('#story')) rerenderStory();
+  }
+}
 function rerenderStory(){
   const L = S.byId[S.cur]; if(!L) return;
   stopSpeak(); closePop();
   $('#story').innerHTML = L.lines.map((_, i) => storyLine(L, i)).join('');
   $$('#story .s-body').forEach(b => b.classList.add('swap'));
-  $$('#amtSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.amt === S.amount));
+  syncAmt();
   $('#storyNote').textContent = storyNote();
 }
 function answer(qi, ci){
@@ -869,13 +1009,67 @@ function renderWords(keep){
   S.view = 'words'; setNav(); renderList(); stopSpeak(); closePop();
   $('#topTitle').textContent = '単語帳';
   $('#composer').hidden = true;
-  const list = S.state.saved;
+  const list = S.state.saved; const dn = dueWords().length;
   $('#thread').innerHTML = `<div class="view-head"><h2 class="view-h">単語帳<span class="c">${list.length ? list.length + '語' : ''}</span></h2>
-    <p class="view-p">${list.length ? '意味をかくして、思い出せるか試せます。' : ''}</p></div>
-    ${list.length ? `<div class="row"><button class="btn ghost" data-act="blur">${blurMeanings ? '意味を見せる' : '意味をかくす'}</button></div>
-    <ul class="words ${blurMeanings ? 'blur' : ''}">${list.map(w => wordRow({w: w.w, ja: w.ja, note: w.note}, w.from, {from: w.from})).join('')}</ul>`
+    <p class="view-p">${list.length ? (dn ? `今日の復習は${dn}語です。覚えた単語は、間をあけてまた出てきます。` : '今日の復習はおわりました。次の復習日になると、また出てきます。') : ''}</p></div>
+    ${list.length ? `<div class="row">${dn ? `<button class="btn" data-act="review">今日の復習をはじめる（${dn}語）</button>` : ''}<button class="btn ghost" data-act="review-all">ぜんぶ復習する</button><button class="btn ghost" data-act="blur">${blurMeanings ? '意味を見せる' : '意味をかくす'}</button></div>
+    <ul class="words ${blurMeanings ? 'blur' : ''}">${list.map(w => wordRow({w: w.w, ja: w.ja, note: w.note}, w.from, {from: w.from, book: true})).join('')}</ul>`
     : emptyMain('各話題の単語の ☆ を押すと、ここに集まります。', ICON.star.replace(/width="16" height="16"/, 'width="28" height="28"'))}`;
   if(!keep){ $('#scroll').scrollTop = 0; enterAnim(); }
+}
+
+/* ---------- flashcard review ---------- */
+const RV = {queue: [], i: 0, shown: false, ok: 0, total: 0};
+function startReview(all){
+  const src = all ? S.state.saved.slice() : dueWords();
+  if(!src.length){ toast('今日の復習はありません'); return; }
+  RV.queue = src.map(w => w.w).sort(() => Math.random() - .5);
+  RV.i = 0; RV.shown = false; RV.ok = 0; RV.total = RV.queue.length; RV.all = !!all;
+  renderReview();
+}
+function renderReview(){
+  S.view = 'review'; setNav(); renderList(); stopSpeak(); closePop();
+  $('#topTitle').textContent = '単語の復習';
+  $('#composer').hidden = true;
+  const th = $('#thread');
+  if(RV.i >= RV.queue.length){
+    const left = dueWords().length;
+    th.innerHTML = `<div class="view-head"><h2 class="view-h">復習おつかれさまでした</h2>
+      <p class="view-p">${RV.total}語のうち、1回目で思い出せたのは${RV.ok}語でした。${left ? `まだ今日の復習が${left}語のこっています。` : '次の復習日になると、また出てきます。'}</p></div>
+      <div class="row">${left ? `<button class="btn" data-act="review">続けて復習する</button>` : ''}<button class="btn ghost" data-act="words">単語帳にもどる</button></div>`;
+    enterAnim(); return;
+  }
+  const w = S.state.saved.find(s => s.w === RV.queue[RV.i]);
+  if(!w){ RV.i++; renderReview(); return; }
+  const box = w.box || 0;
+  const from = w.from && S.byId[w.from] ? `<span class="rv-from">出てきた話題：<button data-open="${esc(w.from)}">${esc(S.byId[w.from].title)}</button></span>` : '';
+  th.innerHTML = `<div class="view-head"><h2 class="view-h">単語の復習</h2></div>
+    <div class="rv-box">
+      <span class="rv-prog">${RV.i + 1} / ${RV.queue.length}</span>
+      <span class="rv-meter" title="覚えぐあい">${GAPS.slice(0, 5).map((_, k) => `<i class="${k < box ? 'on' : ''}"></i>`).join('')}</span>
+      <div class="rv-w">${esc(w.w)}<button class="say" data-say="${esc(w.w)}" aria-label="読み上げ">${ICON.say}</button></div>
+      ${RV.shown ? `<p class="rv-m">${esc(w.ja)}</p>${w.note ? `<p class="rv-n">${esc(w.note)}</p>` : ''}${from}
+        <div class="rv-btns"><button class="btn ghost" data-act="rv-no">まだ覚えていない</button><button class="btn" data-act="rv-ok">覚えていた</button></div>`
+      : `<p class="rv-n">意味を思い出してから、ボタンを押してください。</p><div class="rv-btns"><button class="btn" data-act="rv-show">意味を見る</button></div>`}
+    </div>`;
+  if(!RV.shown) speak(w.w);
+}
+function rvAnswer(ok){
+  const w = S.state.saved.find(s => s.w === RV.queue[RV.i]);
+  if(w){
+    const firstTry = RV.queue.indexOf(w.w) === RV.i;
+    if(ok){
+      w.box = Math.min((w.box || 0) + 1, GAPS.length - 1);
+      w.due = addDays(jstToday(), GAPS[(w.box || 1) - 1]);
+      if(firstTry) RV.ok++;
+    }else{
+      w.box = 0; w.due = jstToday();
+      RV.queue.push(w.w);
+    }
+    if(markToday()) {}
+    saveState(); renderCounts();
+  }
+  RV.i++; RV.shown = false; renderReview();
 }
 
 /* ---------- new note ---------- */
@@ -897,7 +1091,7 @@ const LESSON_SPEC = `次のJSONオブジェクトを1つだけ返してくださ
  "summary": "日本語で1〜2文の要点（ですます調）",
  "cat": "anime" | "movie" | "manga" | "other",
  "level": 1 | 2 | 3,   // 1=中1レベル 2=中2 3=中3
- "lines": [ {"en": "英文", "ja": "その日本語訳", "mix": "日本語の文に、中学で習う英単語を1〜2個 {波かっこ} で入れたもの"} ],   // 4〜6文
+ "lines": [ {"en": "英文", "ja": "その日本語訳", "mix": "日本語の文に、中学で習う英単語を1〜2個 {波かっこ} で入れたもの", "q1": "英語が約25%の混ぜ文", "q2": "英語が約50%の混ぜ文", "q3": "英語が約75%の混ぜ文"} ],   // 4〜6文
  "words": [ {"w": "英単語や熟語", "ja": "意味", "note": "ひとこと説明（任意）"} ],   // 4〜5個
  "grammar": {"title": "中学で習う文法の名前", "body": "日本語で2〜3文の説明", "ex": [{"en": "例文", "ja": "訳"}, {"en": "例文", "ja": "訳"}]},
  "quiz": [ {"q": "問題（日本語）", "choices": ["選択肢1","選択肢2","選択肢3"], "a": 正解の番号(0から), "why": "日本語で1文の解説"} ],   // ちょうど3問
@@ -908,7 +1102,8 @@ const LESSON_SPEC = `次のJSONオブジェクトを1つだけ返してくださ
 - 元の文章の内容を変えない。書いていないことを足さない（推測しない）。
 - 日本語は自然なですます調。
 - 元の文章の言いまわし（例：「続投」「見放題」）が英語でどうなるかを words の note で触れるとよい。
-- クイズは、内容1問・単語1問・文法の穴うめ1問。正解の位置はばらけさせる。`;
+- クイズは、内容1問・単語1問・文法の穴うめ1問。正解の位置はばらけさせる。
+- q1・q2・q3 は ja から en へ少しずつ英語を増やした混ぜ文。q1 は日本語の語順のまま内容語を3つ前後英語に、q2 は英語のかたまりが半分くらい、q3 は en の語順でむずかしめの語を1〜2か所だけ日本語に残す。英語の部分は必ず {波かっこ} で囲み、en の言いまわしを使う。`;
 async function makeNote(){
   const text = $('#srcText').value.trim(); const url = $('#srcUrl').value.trim();
   const note = $('#makeNote'); const btn = $('#makeBtn');
@@ -930,8 +1125,10 @@ async function makeNote(){
 }
 function normalizeLesson(r){
   if(!r || typeof r !== 'object' || !Array.isArray(r.lines)) return null;
-  const lines = r.lines.filter(l => l && l.en && l.ja).map(l => ({en: String(l.en), ja: String(l.ja), mix: l.mix ? String(l.mix) : ''}));
+  const raw = r.lines.filter(l => l && l.en && l.ja);
+  const lines = raw.map(l => ({en: String(l.en), ja: String(l.ja), mix: l.mix ? String(l.mix) : ''}));
   if(!lines.length) return null;
+  const grad = raw.map(l => ({q1: String(l.q1 || ''), q2: String(l.q2 || ''), q3: String(l.q3 || '')}));
   const quiz = (Array.isArray(r.quiz) ? r.quiz : []).filter(q => q && q.q && Array.isArray(q.choices) && Number.isInteger(q.a) && q.a >= 0 && q.a < q.choices.length)
     .map(q => ({q: String(q.q), choices: q.choices.map(String), a: q.a, why: q.why ? String(q.why) : ''}));
   return {
@@ -939,7 +1136,8 @@ function normalizeLesson(r){
     cat: ['anime', 'movie', 'manga'].includes(r.cat) ? r.cat : 'other', level: [1, 2, 3].includes(r.level) ? r.level : 2,
     lines, words: (Array.isArray(r.words) ? r.words : []).filter(w => w && w.w).map(w => ({w: String(w.w), ja: String(w.ja || ''), note: w.note ? String(w.note) : ''})),
     grammar: r.grammar && r.grammar.title ? {title: String(r.grammar.title), body: String(r.grammar.body || ''), ex: (r.grammar.ex || []).filter(e => e && e.en).map(e => ({en: String(e.en), ja: String(e.ja || '')}))} : null,
-    quiz, talk: r.talk && r.talk.q ? {q: String(r.talk.q), ja: String(r.talk.ja || ''), hint: String(r.talk.hint || '')} : null
+    quiz, talk: r.talk && r.talk.q ? {q: String(r.talk.q), ja: String(r.talk.ja || ''), hint: String(r.talk.hint || '')} : null,
+    ...(gradOk({lines, grad}) ? {grad} : {})
   };
 }
 async function saveDraft(){
@@ -957,12 +1155,20 @@ async function saveDraft(){
 }
 
 /* ---------- open / navigation ---------- */
+function markVisit(id){
+  if(!id || id === '__draft' || !S.byId[id] || !S.loaded) return;
+  if(S.stateRef && !S.stateReady) return; // wait for saved progress before writing
+  let ch = markToday();
+  if(!S.state.seen[id]){ S.state.seen[id] = 1; ch = true; }
+  if(ch){ saveState(); renderCounts(); renderList(); }
+}
 function openLesson(id, seq){
   if(seq !== undefined) S.seq = seq;
   S.view = 'lesson'; S.cur = id; if(id !== '__draft') LS.set('last', id);
+  markVisit(id);
   renderList();
   $('#composer').hidden = false;
-  renderLesson(); setCompMode(S.compMode);
+  renderLesson(); setCompMode(S.compMode); syncChat(id); ensureGrad();
   $('#scroll').scrollTop = 0; closeSide();
   const it = $(`#list [data-id="${CSS.escape(id)}"]`); if(it) it.scrollIntoView({block: 'nearest'});
 }
@@ -1030,7 +1236,29 @@ ${opener ? `あなたは最初に「${opener}」と聞きました。` : 'あな
 絵文字・見出し・箇条書きは使わない。`;
 }
 function chatOf(id){ if(!S.chats[id]) S.chats[id] = id === '__draft' ? [] : LS.get('chat_' + id, []); return S.chats[id]; }
-function saveChat(id){ if(id !== '__draft') LS.set('chat_' + id, chatOf(id).slice(-40)); }
+const chatRef = id => (S.db && S.uid && id && id !== '__draft') ? S.db.doc('data/users/' + S.uid + '/chat_' + id) : null;
+const chatAt = {};
+function saveChat(id){
+  if(id === '__draft') return;
+  const msgs = chatOf(id).slice(-40); const at = Date.now(); chatAt[id] = at;
+  LS.set('chat_' + id, msgs); LS.set('chatAt_' + id, at);
+  const ref = chatRef(id); if(ref) ref.set({msgs: JSON.parse(JSON.stringify(msgs)), at}).catch(() => {});
+}
+async function syncChat(id){
+  const ref = chatRef(id); if(!ref) return;
+  try{
+    const snap = await ref.get();
+    const localAt = chatAt[id] || LS.get('chatAt_' + id, 0);
+    if(snap.exists){
+      const d = snap.data() || {};
+      if(Array.isArray(d.msgs) && (d.at || 0) > localAt){
+        if(S.busy && S.cur === id) return;
+        S.chats[id] = d.msgs; chatAt[id] = d.at; LS.set('chat_' + id, d.msgs); LS.set('chatAt_' + id, d.at);
+        if(S.cur === id && S.view === 'lesson') renderChat();
+      }
+    }else if(chatOf(id).length){ saveChat(id); }
+  }catch(e){}
+}
 function mdHtml(t){
   const lines = esc(t).split('\n'); let out = '', inList = false;
   for(const ln of lines){
@@ -1157,8 +1385,13 @@ document.addEventListener('keydown', e => {
   else if(k === 'k' || k === 'K'){ step(-1); }
   else if((k === 'l' || k === 'L') && S.view === 'lesson'){ toggleLike(S.cur); }
   else if((k === 'p' || k === 'P') && S.view === 'lesson'){ playAll(); }
-  else if(['1', '2', '3'].includes(k) && S.view === 'lesson' && $('#story')){ S.amount = +k; LS.set('amount', S.amount); rerenderStory(); }
+  else if(/^[0-6]$/.test(k) && S.view === 'lesson' && $('#story')){ setAmount(+k); }
   else if(e.key === 'Enter' && document.activeElement && document.activeElement.classList.contains('kw')){ openPop(document.activeElement); }
+  else if(S.view === 'review' && RV.i < RV.queue.length){
+    if(k === ' ' && !RV.shown){ e.preventDefault(); RV.shown = true; renderReview(); }
+    else if(RV.shown && (k === 'ArrowRight' || k === 'Enter')){ e.preventDefault(); rvAnswer(true); }
+    else if(RV.shown && k === 'ArrowLeft'){ e.preventDefault(); rvAnswer(false); }
+  }
 });
 document.addEventListener('pointerdown', e => {
   if(!$('#pop').hidden && !e.target.closest('#pop') && !e.target.closest('.tk.kw')) closePop();
@@ -1213,7 +1446,7 @@ function onAction(e){
   const star = t.closest('[data-star]'); if(star){ toggleWord(star.dataset.star, star.dataset.from); return; }
   const like = t.closest('[data-like]'); if(like){ toggleLike(like.dataset.like); return; }
   const open = t.closest('[data-open]'); if(open){ openLesson(open.dataset.open, open.dataset.seq || (open.closest('.pager') ? undefined : null)); return; }
-  const amt = t.closest('[data-amt]'); if(amt){ S.amount = +amt.dataset.amt; LS.set('amount', S.amount); rerenderStory(); return; }
+  const amt = t.closest('[data-amt]'); if(amt){ setAmount(+amt.dataset.amt); return; }
   const li = t.closest('#story li');
   if(li){
     if(window.getSelection && String(window.getSelection()).length) return;
@@ -1231,11 +1464,20 @@ function onAction(e){
   else if(a === 'retry') retryQuiz();
   else if(a === 'save-draft') saveDraft();
   else if(a === 'drop-draft'){ delete S.byId.__draft; const first = S.lessons[0]; if(first) openLesson(first.id); else renderNew(); }
+  else if(a === 'review') startReview(false);
+  else if(a === 'review-all') startReview(true);
+  else if(a === 'rv-show'){ RV.shown = true; renderReview(); }
+  else if(a === 'rv-ok') rvAnswer(true);
+  else if(a === 'rv-no') rvAnswer(false);
+  else if(a === 'words') renderWords();
   else if(a === 'blur'){ blurMeanings = !blurMeanings; LS.set('blur', blurMeanings); renderWords(true); }
 }
 $('#thread').addEventListener('click', onAction);
 $('#pop').addEventListener('click', onAction);
-$('#thread').addEventListener('input', e => { if(e.target.id === 'srcText') LS.set('newDraft', e.target.value); });
+$('#thread').addEventListener('input', e => {
+  if(e.target.id === 'srcText') LS.set('newDraft', e.target.value);
+  else if(e.target.id === 'amtRange') setAmount(e.target.value);
+});
 $('#thread').addEventListener('click', e => { if(e.target.id === 'makeBtn') makeNote(); });
 
 /* ---------- boot ---------- */
@@ -1270,10 +1512,13 @@ setCompMode('ask');
     return;
   }
   const uid = user ? await user.id().catch(() => null) : null;
+  S.uid = uid;
+  if(uid && S.view === 'lesson' && S.cur) syncChat(S.cur);
   if(uid){
     try{
       S.stateRef = db.doc('data/users/' + uid + '/state');
       S.stateRef.onSnapshot(s => {
+        const firstState = !S.stateReady; S.stateReady = true;
         if(s.exists) S.state = normState(s.data() || {});
         else {
           const local = normState(LS.get('state', null));
@@ -1281,9 +1526,11 @@ setCompMode('ask');
         }
         renderCounts(); refreshStars(); renderList();
         if(S.view === 'words') renderWords(true);
+        else if(S.view === 'review') {}
+        if(firstState && S.view === 'lesson') markVisit(S.cur);
         else if(S.view === 'likes') renderLikes(true);
         else if(S.view === 'lesson' && S.byId[S.cur]){ syncLikeBtn(); const sc = $('#score'); if(sc) sc.textContent = scoreText(S.byId[S.cur]); }
-      }, () => { S.stateRef = null; });
+      }, () => { S.stateRef = null; S.stateReady = true; });
     }catch(e){ S.stateRef = null; }
   }
   db.collection('lessons').orderBy('added', 'desc').limit(500).onSnapshot(snap => {
@@ -1294,6 +1541,7 @@ setCompMode('ask');
     const first = !S.loaded; S.loaded = true;
     renderList(); renderCounts(); setCompNote();
     if(first) openInitial();
+    if(first && S.uid && S.cur) syncChat(S.cur);
     else if(S.view === 'lesson' && !S.byId[S.cur]){ const f = S.lessons[0]; if(f) openLesson(f.id); else renderNew(); }
   }, () => {
     S.loaded = true;
