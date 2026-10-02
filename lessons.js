@@ -1,5 +1,477 @@
 window.LESSONS = [
 {
+"id": "20261002-kinro-yamazaki",
+"added": "2026-10-02T06:00",
+"cat": "movie",
+"level": 1,
+"title": "金曜ロードショー、2週連続で山崎貴監督作品",
+"summary": "『ゴジラ-0.0』の公開を記念して、金曜ロードショーで山崎貴監督の映画を2週連続で放送します。10月23日は『ALWAYS 三丁目の夕日』、10月30日は前作『ゴジラ-1.0』を本編ノーカットで放送します。",
+"post": {
+"url": "https://x.com/kinro_ntv/status/2105764697114878344",
+"account": "kinro_ntv",
+"name": "金曜ロードショー公式",
+"date": "2026-10-02",
+"likes": 2183
+},
+"lines": [
+{
+"en": "Kinyo Road Show will show two Takashi Yamazaki movies.",
+"ja": "金曜ロードショーで、山崎貴監督の映画を2本放送します。",
+"mix": "金曜ロードショーで、山崎貴監督の {movies} を2本放送します。"
+},
+{
+"en": "It is for the release of Godzilla Minus Zero.",
+"ja": "『ゴジラ-0.0』の公開を記念した企画です。",
+"mix": "『ゴジラ-0.0』の {release} を記念した企画です。"
+},
+{
+"en": "On October 23, it will show Always: Sunset on Third Street.",
+"ja": "10月23日は『ALWAYS 三丁目の夕日』を放送します。",
+"mix": "{October 23} は『ALWAYS 三丁目の夕日』を放送します。"
+},
+{
+"en": "It is a warm drama with laughs and tears.",
+"ja": "笑いと涙のある、あたたかい人間ドラマです。",
+"mix": "{laughs and tears} のある、あたたかい人間ドラマです。"
+},
+{
+"en": "On October 30, it will show Godzilla Minus One.",
+"ja": "10月30日は『ゴジラ-1.0』を放送します。",
+"mix": "{On October 30}、『ゴジラ-1.0』を放送します。"
+},
+{
+"en": "The movie will be shown with no cuts.",
+"ja": "本編をカットせずに放送します。",
+"mix": "本編を {no cuts} で放送します。"
+}
+],
+"words": [
+{
+"w": "release",
+"ja": "（映画の）公開",
+"note": "ポストの「公開記念」は for the release です。"
+},
+{
+"w": "show",
+"ja": "放送する・上映する",
+"note": "ポストの「放送」。名詞なら「番組・ショー」。"
+},
+{
+"w": "warm",
+"ja": "あたたかい",
+"note": "ポストの「人情あふれる」を warm で表しました。"
+},
+{
+"w": "tear",
+"ja": "涙",
+"note": "laughs and tears ＝ 笑いと涙。"
+},
+{
+"w": "no cuts",
+"ja": "ノーカット",
+"note": "ポストの「本編ノーカット放送」は shown with no cuts。"
+}
+],
+"grammar": {
+"title": "形容詞は名詞の前「あたたかいドラマ」",
+"body": "「あたたかいドラマ」のように、ようすを表すことば（形容詞）は名詞の前に置きます。a がつくときは a ＋ 形容詞 ＋ 名詞 の順です。",
+"ex": [
+{
+"en": "This is a funny manga.",
+"ja": "これはおもしろいマンガです。"
+},
+{
+"en": "She has a big dream.",
+"ja": "彼女には大きな夢があります。"
+}
+]
+},
+"quiz": [
+{
+"q": "10月30日に放送するのは？",
+"choices": [
+"ALWAYS 三丁目の夕日",
+"ゴジラ-1.0",
+"ゴジラ-0.0"
+],
+"a": 1,
+"why": "5文目に On October 30, it will show Godzilla Minus One. とあります。"
+},
+{
+"q": "laughs and tears の tear の意味は？",
+"choices": [
+"笑い",
+"声",
+"涙"
+],
+"a": 2,
+"why": "tear は「涙」。laugh が「笑い」です。"
+},
+{
+"q": "It is a ___ drama.（あたたかいドラマです）",
+"choices": [
+"warm",
+"warmly",
+"warms"
+],
+"a": 0,
+"why": "名詞 drama の前には形容詞 warm を置きます。"
+}
+],
+"talk": {
+"q": "Which Takashi Yamazaki movie do you want to watch?",
+"ja": "山崎貴監督の映画で、どれを見たいですか？",
+"hint": "I want to watch ___ because ___."
+},
+"grad": [
+{
+"q1": "金曜ロードショーで、山崎貴監督の {two movies} を {show} します。",
+"q2": "金曜ロードショーが {will show} 山崎貴監督の {two movies}。",
+"q3": "{Kinyo Road Show will show two} 山崎貴監督の {movies.}"
+},
+{
+"q1": "{Godzilla Minus Zero} の {release} を記念した企画です。",
+"q2": "{It is for} 『ゴジラ-0.0』の {release}。",
+"q3": "{It is for the release of} 『ゴジラ-0.0』。"
+},
+{
+"q1": "{On October 23}、『ALWAYS 三丁目の夕日』を {show} します。",
+"q2": "{On October 23}、{it will show} 『ALWAYS 三丁目の夕日』。",
+"q3": "{On October 23, it will show Always:} 三丁目の夕日。"
+},
+{
+"q1": "{laughs and tears} のある、{warm} な {drama} です。",
+"q2": "{It is a warm drama} 笑いと涙のある。",
+"q3": "{It is a warm drama with laughs and} 涙。"
+},
+{
+"q1": "{On October 30}、『ゴジラ-1.0』を {show} します。",
+"q2": "{On October 30, it will show} 『ゴジラ-1.0』。",
+"q3": "{On October 30, it will show Godzilla} -1.0。"
+},
+{
+"q1": "{The movie} を {no cuts} で放送します。",
+"q2": "{The movie will be shown} カットなしで。",
+"q3": "{The movie will be shown with no} カット。"
+}
+]
+},
+{
+"id": "20261002-nigewaka-final",
+"added": "2026-10-02T00:00",
+"cat": "manga",
+"level": 2,
+"title": "「逃げ上手の若君」最終巻、古文書をマンガに",
+"summary": "松井優征さんの「逃げ上手の若君」の最終27巻が10月2日に発売されました。記念に、松井さんが手に入れた古文書の1つを6ページのマンガにして、特設サイトで公開しています。",
+"post": {
+"url": "https://x.com/comic_natalie/status/2105674167647690932",
+"account": "comic_natalie",
+"name": "コミックナタリー",
+"date": "2026-10-02",
+"likes": 167
+},
+"lines": [
+{
+"en": "Volume 27 is the last volume of The Elusive Samurai.",
+"ja": "「逃げ上手の若君」は、27巻が最終巻です。",
+"mix": "「逃げ上手の若君」は、27巻が {last volume} です。"
+},
+{
+"en": "It came out on October 2.",
+"ja": "10月2日に発売されました。",
+"mix": "{October 2} に発売されました。"
+},
+{
+"en": "The manga ran in Weekly Shonen Jump for about five years.",
+"ja": "このマンガは、週刊少年ジャンプで約5年間連載されました。",
+"mix": "このマンガは、週刊少年ジャンプで {about five years} 連載されました。"
+},
+{
+"en": "It is a story based on real history.",
+"ja": "実際の歴史をもとにした物語です。",
+"mix": "実際の {history} をもとにした物語です。"
+},
+{
+"en": "In spring 2026, the author, Yusei Matsui, got some very old documents.",
+"ja": "2026年の春、作者の松井優征さんは、とても古い文書を手に入れました。",
+"mix": "2026年の春、作者の松井優征さんは、とても古い {documents} を手に入れました。"
+},
+{
+"en": "He made one of them into a six-page manga.",
+"ja": "そのうちの1つを、6ページのマンガにしました。",
+"mix": "そのうちの1つを、{six-page} のマンガにしました。"
+},
+{
+"en": "You can read it on the special website.",
+"ja": "特設サイトで読むことができます。",
+"mix": "{special website} で読むことができます。"
+}
+],
+"words": [
+{
+"w": "last volume",
+"ja": "最終巻",
+"note": "ポストの「最終27巻」は Volume 27, the last volume。"
+},
+{
+"w": "come out",
+"ja": "発売される・出る",
+"note": "過去形は came out。"
+},
+{
+"w": "run",
+"ja": "（マンガが）連載される",
+"note": "「走る」のほかに、連載や番組が「続く」の意味もあります。過去形は ran。"
+},
+{
+"w": "document",
+"ja": "文書",
+"note": "ポストの「古文書」は old documents と言えます。"
+},
+{
+"w": "make A into B",
+"ja": "AをBにする",
+"note": "ポストの「マンガ化」は make it into a manga。"
+}
+],
+"grammar": {
+"title": "one of ＋ 複数形「〜のうちの1つ」",
+"body": "one of のあとは複数形の名詞を置きます。「〜のうちの1つ（1人）」という意味です。one of them で「それらのうちの1つ」です。",
+"ex": [
+{
+"en": "One of my friends lives in Osaka.",
+"ja": "友だちの1人は大阪に住んでいます。"
+},
+{
+"en": "Haikyu!! is one of my favorite anime.",
+"ja": "『ハイキュー!!』は好きなアニメの1つです。"
+}
+]
+},
+"quiz": [
+{
+"q": "最終巻は何巻ですか？",
+"choices": [
+"25巻",
+"27巻",
+"30巻"
+],
+"a": 1,
+"why": "1文目に Volume 27 is the last volume とあります。"
+},
+{
+"q": "document の意味は？",
+"choices": [
+"地図",
+"映画",
+"文書"
+],
+"a": 2,
+"why": "document は「文書」。old documents で「古文書」です。"
+},
+{
+"q": "He made ___ of them into a manga.（そのうちの1つを）",
+"choices": [
+"one",
+"once",
+"first"
+],
+"a": 0,
+"why": "「〜のうちの1つ」は one of 〜 です。"
+}
+],
+"talk": {
+"q": "Do you like stories about history?",
+"ja": "歴史の物語は好きですか？",
+"hint": "Yes, I do. I like ___. / Not really. I like ___ more."
+},
+"grad": [
+{
+"q1": "「逃げ上手の若君」は、{Volume 27} が {last volume} です。",
+"q2": "{Volume 27 is} 「逃げ上手の若君」の {last volume}。",
+"q3": "{Volume 27 is the last volume of} 「逃げ上手の若君」。"
+},
+{
+"q1": "{It} は {October 2} に発売されました。",
+"q2": "{It came out} 10月2日に。",
+"q3": "{It came out on} 10月2日。"
+},
+{
+"q1": "{The manga} は、週刊少年ジャンプで {about five years} 連載されました。",
+"q2": "{The manga ran} 週刊少年ジャンプで {for about five years}。",
+"q3": "{The manga ran in Weekly Shonen Jump for} 約5年間。"
+},
+{
+"q1": "{real history} をもとにした {story} です。",
+"q2": "{It is a story} 実際の歴史をもとにした。",
+"q3": "{It is a story based on} 実際の歴史。"
+},
+{
+"q1": "{In spring 2026}、{the author} の松井優征さんは、とても古い {documents} を手に入れました。",
+"q2": "{In spring 2026}、作者の松井優征さんは {got some very old documents}。",
+"q3": "{In spring 2026, the author, Yusei Matsui, got some} とても古い {documents.}"
+},
+{
+"q1": "{one of them} を、{six-page} のマンガにしました。",
+"q2": "{He made one of them} 6ページのマンガに。",
+"q3": "{He made one of them into a} 6ページの {manga.}"
+},
+{
+"q1": "{special website} で {read} できます。",
+"q2": "{You can read it} 特設サイトで。",
+"q3": "{You can read it on the} 特設サイト。"
+}
+]
+},
+{
+"id": "20261001-haikyu-foryou-fair",
+"added": "2026-10-01T10:00",
+"cat": "anime",
+"series": "haikyu",
+"level": 1,
+"title": "ハイキュー!!「FOR YOU！フェア2026」開催決定",
+"summary": "「ハイキュー!!」の「FOR YOU！フェア2026」が、全国のアニメイトで開かれることが決まりました。新しい描き下ろしイラストを使ったグッズもたくさん売られます。",
+"post": {
+"url": "https://x.com/animehaikyu_com/status/2105462709781250418",
+"account": "animehaikyu_com",
+"name": "アニメ「ハイキュー!!」",
+"date": "2026-10-01",
+"likes": 7985
+},
+"lines": [
+{
+"en": "A new Haikyu!! fair is coming!",
+"ja": "「ハイキュー!!」の新しいフェアがやってきます！",
+"mix": "「ハイキュー!!」の新しい {fair} がやってきます！"
+},
+{
+"en": "Its name is FOR YOU! Fair 2026.",
+"ja": "名前は「FOR YOU！フェア2026」です。",
+"mix": "{name} は「FOR YOU！フェア2026」です。"
+},
+{
+"en": "It will be held at Animate stores all over Japan.",
+"ja": "全国のアニメイトで開かれます。",
+"mix": "{all over Japan} のアニメイトで開かれます。"
+},
+{
+"en": "Many new goods will be sold there.",
+"ja": "そこで、たくさんの新しいグッズが売られます。",
+"mix": "そこで、たくさんの新しい {goods} が売られます。"
+},
+{
+"en": "The goods use newly drawn pictures.",
+"ja": "グッズには、描き下ろしのイラストが使われます。",
+"mix": "グッズには、{newly drawn} イラストが使われます。"
+}
+],
+"words": [
+{
+"w": "fair",
+"ja": "フェア・催し",
+"note": "ポストの「フェア」はそのまま fair です。"
+},
+{
+"w": "be held",
+"ja": "開かれる",
+"note": "ポストの「開催」。The fair will be held ~. で「フェアが開かれます」。"
+},
+{
+"w": "all over Japan",
+"ja": "日本じゅうで・全国で",
+"note": "ポストの「全国の」はこう言えます。"
+},
+{
+"w": "goods",
+"ja": "グッズ・商品",
+"note": "いつも s のついた形で使います。"
+},
+{
+"w": "newly drawn",
+"ja": "描き下ろしの",
+"note": "ポストの「新規描き下ろし」。newly ＝ 新しく、drawn ＝ 描かれた。"
+}
+],
+"grammar": {
+"title": "all over 〜「〜じゅうで」",
+"body": "all over のあとに場所を置くと「〜じゅうで・〜のあちこちで」という意味になります。all over Japan で「日本じゅう（全国）」です。",
+"ex": [
+{
+"en": "People all over the world love anime.",
+"ja": "世界じゅうの人がアニメを好きです。"
+},
+{
+"en": "I want to travel all over Japan.",
+"ja": "日本じゅうを旅したいです。"
+}
+]
+},
+"quiz": [
+{
+"q": "フェアはどこで開かれますか？",
+"choices": [
+"東京体育館",
+"全国のアニメイト",
+"大戸屋"
+],
+"a": 1,
+"why": "3文目に at Animate stores all over Japan とあります。"
+},
+{
+"q": "goods の意味は？",
+"choices": [
+"チケット",
+"ゲーム",
+"グッズ・商品"
+],
+"a": 2,
+"why": "goods は「グッズ・商品」です。"
+},
+{
+"q": "People ___ over the world love Haikyu!!（世界じゅうの人）",
+"choices": [
+"all",
+"every",
+"many"
+],
+"a": 0,
+"why": "「〜じゅうで」は all over 〜 です。"
+}
+],
+"talk": {
+"q": "What Haikyu!! goods do you have?",
+"ja": "ハイキュー!!のグッズは何を持っていますか？",
+"hint": "I have a ___ of ___. / I don't have any, but I want ___."
+},
+"grad": [
+{
+"q1": "「ハイキュー!!」の {new fair} が {coming}！",
+"q2": "{A new Haikyu!! fair} がやってきます！",
+"q3": "{A new} ハイキュー!! {fair is coming!}"
+},
+{
+"q1": "{name} は {FOR YOU! Fair 2026} です。",
+"q2": "{Its name} は {FOR YOU! Fair 2026} です。",
+"q3": "{Its name is FOR YOU!} フェア2026。"
+},
+{
+"q1": "{all over Japan} の {Animate stores} で開かれます。",
+"q2": "{It will be held} 全国の {Animate stores} で。",
+"q3": "{It will be held at} アニメイト {stores all over Japan.}"
+},
+{
+"q1": "そこで、{many new goods} が売られます。",
+"q2": "{Many new goods} がそこで {will be sold}。",
+"q3": "{Many new} グッズ {will be sold there.}"
+},
+{
+"q1": "{goods} には、{newly drawn} の {pictures} が使われます。",
+"q2": "{The goods} には {newly drawn pictures} が使われます。",
+"q3": "{The goods use} 描き下ろしの {pictures.}"
+}
+]
+},
+{
 "id": "20261001-keionbu-akutami",
 "added": "2026-10-01T10:00",
 "cat": "manga",
