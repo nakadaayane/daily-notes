@@ -350,6 +350,18 @@ kbd{font-family:var(--ui);font-size:.625rem;line-height:1;color:var(--faint);bor
 .rv-meter i.on{background:var(--good)}
 .words .lv{font-family:var(--ui);font-size:var(--fs-xs);color:var(--faint);font-variant-numeric:tabular-nums}
 .words .lv.due-now{color:var(--accent)}
+/* device sync (public copy only) */
+html:not(.static) .static-only{display:none!important}
+#syncBtn{position:relative}
+.sync-dot{position:absolute;right:1px;top:1px;width:6px;height:6px;border-radius:50%;background:transparent}
+#syncBtn[data-s="ok"] .sync-dot,#syncBtn[data-s="idle"] .sync-dot{background:var(--good)}
+#syncBtn[data-s="busy"] .sync-dot{background:var(--faint)}
+#syncBtn[data-s="err"] .sync-dot{background:var(--bad)}
+.sync-in{max-width:min(380px,calc(100vw - 32px));display:flex;flex-direction:column;gap:10px}
+.sync-in h4{margin:0}
+.sync-p{margin:0;font-size:var(--fs-s);color:var(--muted);line-height:1.6}
+.sync-st{margin:0;font-size:var(--fs-s)}
+.sync-st[data-s="err"]{color:var(--bad)}
 /* public copy (no Claude features): hide what needs Claude */
 html.static .ai-only{display:none!important}
 </style>
@@ -525,8 +537,11 @@ const normState = d => ({
   done: Object.assign({}, d && d.done || {}),
   likes: Object.assign({}, d && d.likes || {}),
   seen: Object.assign({}, d && d.seen || {}),
-  days: Array.isArray(d && d.days) ? d.days.slice(-400) : []
+  days: Array.isArray(d && d.days) ? d.days.slice(-400) : [],
+  likesOff: Object.assign({}, d && d.likesOff || {}),
+  savedOff: Object.assign({}, d && d.savedOff || {})
 });
+const jstStampS = () => jstNow().toISOString().slice(0, 19);
 /* ---------- review schedule (spaced) ---------- */
 const GAPS = [1, 2, 4, 7, 14, 30];
 const addDays = (d, n) => new Date(Date.parse(d) + n * 864e5).toISOString().slice(0, 10);
@@ -953,7 +968,8 @@ function syncLikeBtn(pop){
 function toggleLike(id){
   if(!id || id === '__draft' || !S.byId[id]) return;
   const on = !isLiked(id);
-  if(on) S.state.likes[id] = jstStamp(); else delete S.state.likes[id];
+  if(on){ S.state.likes[id] = jstStampS(); delete S.state.likesOff[id]; }
+  else { delete S.state.likes[id]; S.state.likesOff[id] = jstStampS(); }
   saveState(); renderCounts(); renderList();
   if(S.cur === id) syncLikeBtn(true);
   if(S.view === 'likes') renderLikes(true);
@@ -985,7 +1001,7 @@ const emptyMain = (msg, icon = '') => `<div class="empty-main">${icon}<p style="
 let writing = false, again = false;
 async function saveState(){
   const snap = JSON.parse(JSON.stringify(S.state));
-  if(!S.stateRef){ LS.set('state', snap); return; }
+  if(!S.stateRef){ LS.set('state', snap); Sync.schedule(); return; }
   if(writing){ again = true; return; }
   writing = true;
   try{ await S.stateRef.set(snap); }catch(e){ LS.set('state', snap); }
@@ -994,11 +1010,12 @@ async function saveState(){
 }
 function toggleWord(w, from){
   const i = S.state.saved.findIndex(s => s.w === w);
-  if(i >= 0) S.state.saved.splice(i, 1);
+  if(i >= 0){ S.state.saved.splice(i, 1); S.state.savedOff[w] = Date.now(); }
   else {
+    delete S.state.savedOff[w];
     const L = S.byId[from] || S.byId[S.cur];
     const wd = L && (L.words || []).find(x => x.w === w);
-    S.state.saved.unshift({w, ja: wd ? wd.ja : '', note: wd && wd.note ? wd.note : '', from: L && L.id !== '__draft' ? L.id : ''});
+    S.state.saved.unshift({w, ja: wd ? wd.ja : '', note: wd && wd.note ? wd.note : '', from: L && L.id !== '__draft' ? L.id : '', t: Date.now()});
   }
   saveState(); renderCounts(); refreshStars();
   toast(i >= 0 ? '単語帳から外しました' : `「${w}」を単語帳に入れました`);
@@ -1069,6 +1086,7 @@ function rvAnswer(ok){
       w.box = 0; w.due = jstToday();
       RV.queue.push(w.w);
     }
+    w.t = Date.now();
     if(markToday()) {}
     saveState(); renderCounts();
   }
@@ -1483,6 +1501,124 @@ $('#thread').addEventListener('input', e => {
 });
 $('#thread').addEventListener('click', e => { if(e.target.id === 'makeBtn') makeNote(); });
 
+/* ---------- public copy: share likes etc. across devices via a private GitHub repo ---------- */
+const Sync = (() => {
+  const REPO = 'nakadaayane/daily-notes-data', PATH = 'state.json', API = `https://api.github.com/repos/${REPO}/contents/${PATH}`;
+  let token = LS.get('ghtoken', ''), sha = null, timer = 0, busy = false, again = false;
+  const st = {state: token ? 'idle' : 'off', last: LS.get('ghlast', ''), err: ''};
+  const b64e = s => btoa(unescape(encodeURIComponent(s)));
+  const b64d = s => decodeURIComponent(escape(atob(s.replace(/\s/g, ''))));
+  const hdr = () => ({Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'});
+  async function get(){
+    const r = await fetch(API + '?ref=main&_=' + Date.now(), {headers: hdr(), cache: 'no-store'});
+    if(r.status === 404) return {data: null, sha: null};
+    if(!r.ok) throw {status: r.status};
+    const j = await r.json(); return {data: JSON.parse(b64d(j.content)), sha: j.sha};
+  }
+  async function put(data){
+    const r = await fetch(API, {method: 'PUT', headers: hdr(), body: JSON.stringify({message: 'sync ' + jstStamp(), content: b64e(JSON.stringify(data, null, 1)), branch: 'main', ...(sha ? {sha} : {})})});
+    if(r.status === 409 || r.status === 422) throw {conflict: true};
+    if(!r.ok) throw {status: r.status};
+    sha = (await r.json()).content.sha;
+  }
+  const latest = (...v) => v.filter(Boolean).sort().pop() || '';
+  function merge(a, b){
+    const o = normState({});
+    new Set([...Object.keys(a.likes), ...Object.keys(b.likes), ...Object.keys(a.likesOff), ...Object.keys(b.likesOff)]).forEach(id => {
+      const on = latest(a.likes[id], b.likes[id]), off = latest(a.likesOff[id], b.likesOff[id]);
+      if(on && on >= off) o.likes[id] = on; else if(off) o.likesOff[id] = off;
+    });
+    const words = {};
+    [...b.saved, ...a.saved].forEach(w => { const c = words[w.w]; if(!c || (w.t || 0) > (c.t || 0)) words[w.w] = w; });
+    const offW = {};
+    [a.savedOff, b.savedOff].forEach(m => Object.entries(m).forEach(([w, t]) => { offW[w] = Math.max(offW[w] || 0, +t || 0); }));
+    o.saved = Object.values(words).filter(w => !(offW[w.w] && offW[w.w] >= (w.t || 0))).sort((x, y) => (y.t || 0) - (x.t || 0));
+    Object.entries(offW).forEach(([w, t]) => { if(!words[w] || t >= (words[w].t || 0)) o.savedOff[w] = t; });
+    [b.done, a.done].forEach(m => Object.entries(m).forEach(([id, v]) => { const c = o.done[id]; if(!c || (v && v.at || '') >= (c.at || '')) o.done[id] = v; }));
+    o.seen = Object.assign({}, b.seen, a.seen);
+    o.days = [...new Set([...a.days, ...b.days])].sort().slice(-400);
+    return canon(o);
+  }
+  const sortObj = m => Object.fromEntries(Object.keys(m).sort().map(k => [k, m[k]]));
+  function canon(x){
+    const o = normState(x);
+    ['likes', 'likesOff', 'savedOff', 'done', 'seen'].forEach(k => { o[k] = sortObj(o[k]); });
+    o.saved = o.saved.slice().sort((p, q) => (q.t || 0) - (p.t || 0) || (p.w < q.w ? -1 : p.w > q.w ? 1 : 0));
+    o.days = [...new Set(o.days)].sort();
+    return o;
+  }
+  const same = (x, y) => JSON.stringify(canon(x)) === JSON.stringify(canon(y));
+  function repaint(){
+    renderCounts(); refreshStars(); renderList();
+    if(S.view === 'words') renderWords(true);
+    else if(S.view === 'likes') renderLikes(true);
+    else if(S.view === 'lesson' && S.byId[S.cur]){ syncLikeBtn(); const sc = $('#score'); if(sc) sc.textContent = scoreText(S.byId[S.cur]); }
+  }
+  async function run(tries = 0){
+    if(!token || !document.documentElement.classList.contains('static')) return;
+    if(busy){ again = true; return; }
+    busy = true; st.state = 'busy'; paint();
+    try{
+      const remote = await get(); sha = remote.sha;
+      const r = normState(remote.data || {});
+      const merged = merge(normState(S.state), r);
+      if(!same(merged, normState(S.state))){ S.state = merged; LS.set('state', merged); repaint(); }
+      if(!remote.data || !same(merged, r)) await put(merged);
+      st.state = 'ok'; st.err = ''; st.last = jstStamp(); LS.set('ghlast', st.last);
+    }catch(e){
+      if(e && e.conflict && tries < 2){ busy = false; return run(tries + 1); }
+      st.state = 'err';
+      st.err = e && (e.status === 401 || e.status === 403) ? '合言葉が正しくないか、期限が切れています。' : e && e.status === 404 ? 'データ置き場が見つかりません（合言葉の対象リポジトリを確認してください）。' : 'つながりませんでした。あとでもう一度ためします。';
+    }finally{
+      busy = false; paint();
+      if(again){ again = false; run(); }
+    }
+  }
+  function schedule(){ if(!token) return; clearTimeout(timer); timer = setTimeout(run, 1500); }
+  function paint(){
+    const b = $('#syncBtn'); if(!b) return;
+    b.dataset.s = st.state;
+    b.title = st.state === 'off' ? 'ほかの端末と同期する' : st.state === 'err' ? '同期できませんでした' : st.state === 'busy' ? '同期中' : `同期ずみ（${st.last ? jpDate(st.last) + ' ' + st.last.slice(11, 16) : ''}）`;
+    const p = $('#syncPanel'); if(p && !p.hidden) renderPanel();
+  }
+  function renderPanel(){
+    const p = $('#syncPanel'); const on = !!token;
+    p.querySelector('.sync-in').innerHTML = `<h4>ほかの端末と同期</h4>
+      <p class="sync-p">いいね・単語帳・クイズの結果を、ほかのスマホやパソコンと共有します。同じ合言葉を、使う端末それぞれで一度だけ入れてください（この端末のブラウザに保存されます）。</p>
+      ${on ? `<p class="sync-st" data-s="${st.state}">${st.state === 'err' ? esc(st.err) : st.state === 'busy' ? '同期しています…' : `同期ずみ${st.last ? '：' + esc(jpDate(st.last)) + ' ' + esc(st.last.slice(11, 16)) : ''}`}</p>
+        <div class="row"><button class="btn" id="syncNow">いま同期する</button><button class="btn ghost" id="syncOff">この端末の同期をやめる</button></div>`
+      : `<input class="field" id="syncToken" type="password" autocomplete="off" spellcheck="false" placeholder="合言葉（github_pat_ ではじまる文字）">
+        <div class="row"><button class="btn" id="syncOn">つなぐ</button><span class="note" id="syncMsg"></span></div>`}
+      <div class="row"><button class="txt-btn" id="syncClose">閉じる</button></div>`;
+  }
+  function open(){ const p = $('#syncPanel'); p.hidden = false; renderPanel(); const t = $('#syncToken'); if(t) t.focus(); }
+  function close(){ $('#syncPanel').hidden = true; }
+  async function connect(val){
+    val = String(val || '').trim(); const msg = $('#syncMsg');
+    if(!/^(github_pat_|ghp_)[A-Za-z0-9_]{20,}$/.test(val)){ if(msg) msg.textContent = '合言葉の形がちがいます。'; return; }
+    token = val; if(msg) msg.textContent = 'たしかめています…';
+    try{ await get(); }catch(e){ token = ''; if(msg) msg.textContent = e && (e.status === 401 || e.status === 403) ? '合言葉が正しくないか、権限が足りません。' : e && e.status === 404 ? 'データ置き場が見つかりません。リポジトリの選び方を確認してください。' : 'つながりませんでした。'; return; }
+    LS.set('ghtoken', token); st.state = 'idle'; renderPanel(); await run(); toast('ほかの端末と同期するようにしました');
+  }
+  function disconnect(){ token = ''; sha = null; LS.set('ghtoken', ''); st.state = 'off'; renderPanel(); paint(); toast('この端末の同期をやめました'); }
+  function init(){
+    document.body.insertAdjacentHTML('beforeend', '<div class="keys" id="syncPanel" hidden><div class="keys-in sync-in" role="dialog" aria-label="ほかの端末と同期"></div></div>');
+    const foot = $('.side-foot .sp');
+    foot.insertAdjacentHTML('afterend', `<button class="foot-btn static-only" id="syncBtn" aria-label="ほかの端末と同期"><svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.6-8.96A6 6 0 0 1 18 9.5a4 4 0 0 1-.5 8"/><path d="M12 12v7M9.5 16.5 12 19l2.5-2.5"/></svg><i class="sync-dot"></i></button>`);
+    $('#syncBtn').addEventListener('click', open);
+    $('#syncPanel').addEventListener('click', e => {
+      if(e.target.id === 'syncPanel' || e.target.id === 'syncClose') close();
+      else if(e.target.id === 'syncOn') connect($('#syncToken').value);
+      else if(e.target.id === 'syncNow') run();
+      else if(e.target.id === 'syncOff') disconnect();
+    });
+    $('#syncPanel').addEventListener('keydown', e => { if(e.key === 'Enter' && e.target.id === 'syncToken') connect(e.target.value); });
+    document.addEventListener('visibilitychange', () => { if(document.visibilityState === 'visible') run(); });
+    paint();
+  }
+  return {init, run, schedule, merge};
+})();
+
 /* ---------- boot ---------- */
 function openInitial(){
   const hash = decodeURIComponent((location.hash || '').slice(1));
@@ -1505,6 +1641,7 @@ setCompMode('ask');
     S.lessons = window.LESSONS.filter(L => L && Array.isArray(L.lines) && L.lines.length).slice().sort((a, b) => a.added < b.added ? 1 : -1);
     S.lessons.forEach(L => { S.byId[L.id] = L; });
     renderList(); renderCounts(); openInitial();
+    Sync.init(); Sync.run();
     return;
   }
   setCompNote();
