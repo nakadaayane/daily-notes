@@ -385,6 +385,8 @@ html.static .ai-only{display:none!important}
     </div>
     <div class="filters" id="filters" role="group" aria-label="しぼりこみ">
       <button class="chip" data-f="all" aria-pressed="true">すべて</button>
+      <button class="chip" data-f="hot" aria-pressed="false" title="5,000いいね以上のポスト">人気</button>
+      <button class="chip" data-f="s:frieren" aria-pressed="false">フリーレン</button>
       <button class="chip" data-f="s:haikyu" aria-pressed="false">ハイキュー!!</button>
       <button class="chip" data-f="s:medalist" aria-pressed="false">メダリスト</button>
       <button class="chip" data-f="anime" aria-pressed="false">アニメ</button>
@@ -477,7 +479,8 @@ const jpDate = d => { if(!d) return ''; const [, m, dd] = d.slice(0, 10).split('
 const typing = el => el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
 const CAT = {anime:'アニメ', movie:'映画', manga:'漫画', own:'自分で追加'};
 const LEVEL = {1:'やさしい', 2:'ふつう', 3:'ちょっとむずかしい'};
-const SERIES = {haikyu:'ハイキュー!!', medalist:'メダリスト'};
+const SERIES = {haikyu:'ハイキュー!!', medalist:'メダリスト', frieren:'フリーレン'};
+const HOT = 5000; /* 「人気」= この数以上いいねされたポスト */
 /* English amount: 0 = all Japanese … 6 = all English */
 const AMT = [
   {tick: '日本語', name: 'ぜんぶ日本語'},
@@ -663,7 +666,7 @@ function haystack(L){
 }
 function visible(){
   const f = S.filter, q = S.query.trim().toLowerCase();
-  return S.lessons.filter(L => (f === 'all' || (f.startsWith('s:') ? L.series === f.slice(2) : f === 'own' ? L.own : (L.cat === f && !L.own)))
+  return S.lessons.filter(L => (f === 'all' || (f === 'hot' ? (L.post && +L.post.likes >= HOT) : f.startsWith('s:') ? L.series === f.slice(2) : f === 'own' ? L.own : (L.cat === f && !L.own)))
     && (!q || q.split(/\s+/).every(w => haystack(L).includes(w))));
 }
 function hilite(text){

@@ -1,5 +1,466 @@
 window.LESSONS = [
 {
+"id": "20261002-zoids-final-arc",
+"added": "2026-10-02T12:02",
+"cat": "manga",
+"level": 2,
+"title": "漫画「機獣新世紀ゾイド」、来年から完結編",
+"summary": "漫画家の上山道郎さんが、漫画「機獣新世紀ゾイド」の完結編を来年から連載すると発表しました。今度は物語を完結させるそうです。",
+"post": {
+"url": "https://x.com/ueyamamichiro/status/2105856022825112027",
+"account": "ueyamamichiro",
+"name": "上山道郎",
+"date": "2026-10-02",
+"likes": 7296
+},
+"lines": [
+{
+"en": "Manga artist Michiro Ueyama shared some good news.",
+"ja": "漫画家の上山道郎さんが、うれしいお知らせを伝えました。",
+"mix": "漫画家の上山道郎さんが、うれしい {news} を伝えました。"
+},
+{
+"en": "He will start the final arc of the Zoids manga next year.",
+"ja": "来年から、漫画「機獣新世紀ゾイド」の完結編の連載を始めます。",
+"mix": "来年から、漫画「機獣新世紀ゾイド」の {final arc} の連載を始めます。"
+},
+{
+"en": "A final arc is the last part of a story.",
+"ja": "完結編とは、物語の最後の部分のことです。",
+"mix": "完結編とは、物語の {last part} のことです。"
+},
+{
+"en": "He says that he will finish the story this time.",
+"ja": "今度は物語を完結させる、と言っています。",
+"mix": "{this time} は物語を完結させる、と言っています。"
+},
+{
+"en": "His post got more than 7,000 likes.",
+"ja": "このポストには、7,000以上の「いいね」がつきました。",
+"mix": "このポストには、7,000以上の {likes} がつきました。"
+}
+],
+"words": [
+{
+"w": "final arc",
+"ja": "完結編",
+"note": "ポストの「完結編」。arc は長い物語の「ひとまとまりの部分」です。"
+},
+{
+"w": "next year",
+"ja": "来年",
+"note": "ポストの「来年から連載開始」は start … next year と言えます。"
+},
+{
+"w": "finish",
+"ja": "終える・完結させる",
+"note": "ポストの「物語の完結までやります」は finish the story と言えます。"
+},
+{
+"w": "this time",
+"ja": "今度は・今回は",
+"note": "ポストの「今度は」。文の最後に置くことが多いです。"
+},
+{
+"w": "like",
+"ja": "（SNSの）いいね",
+"note": "「いいね」は英語で like。数えるときは likes です。"
+}
+],
+"grammar": {
+"title": "接続詞 that「〜ということ」",
+"body": "say（言う）、think（思う）、know（知っている）などのあとに that ＋ 文（主語＋動詞）を置くと、「〜ということを言う／思う／知っている」になります。会話では that をはぶくこともあります。",
+"ex": [
+{
+"en": "I think that this manga is great.",
+"ja": "このマンガはすばらしいと思います。"
+},
+{
+"en": "She knows that he draws manga.",
+"ja": "彼女は、彼がマンガをかいていることを知っています。"
+}
+]
+},
+"quiz": [
+{
+"q": "完結編の連載が始まるのはいつ？",
+"choices": [
+"来月",
+"今年",
+"来年"
+],
+"a": 2,
+"why": "2文目に He will start the final arc … next year. とあります。"
+},
+{
+"q": "final arc の意味は？",
+"choices": [
+"完結編",
+"第1話",
+"番外編"
+],
+"a": 0,
+"why": "final arc は物語の最後の部分＝「完結編」です。"
+},
+{
+"q": "He says ___ he will finish the story.（〜ということを）",
+"choices": [
+"and",
+"that",
+"but"
+],
+"a": 1,
+"why": "says のあとに文を続けるときは that ＋ 文 です。"
+}
+],
+"talk": {
+"q": "Which manga do you want to read to the end?",
+"ja": "最後まで読みたいマンガは何ですか？",
+"hint": "I want to read ___ to the end."
+},
+"grad": [
+{
+"q1": "{Manga artist} の上山道郎さんが、{good news} を {shared}。",
+"q2": "漫画家の上山道郎さんが {shared some good news}。",
+"q3": "{Manga artist Michiro Ueyama} 伝えました {some good news.}"
+},
+{
+"q1": "{next year} から、漫画「機獣新世紀ゾイド」の {final arc} を {start} します。",
+"q2": "{He will start} 漫画「機獣新世紀ゾイド」の {final arc}、来年から。",
+"q3": "{He will start the} 完結編 {of the Zoids manga next year.}"
+},
+{
+"q1": "{A final arc} とは、{a story} の {last part} のことです。",
+"q2": "{A final arc is} 物語の {last part}。",
+"q3": "{A final arc is the last} 部分 {of a story.}"
+},
+{
+"q1": "{He} は、{this time} は {the story} を完結させる、と言っています。",
+"q2": "{He says that he will finish} 物語を、今度は。",
+"q3": "{He says that he will} 完結させる {the story this time.}"
+},
+{
+"q1": "{His post} には、{more than 7,000} の {likes} がつきました。",
+"q2": "{His post got} 7,000以上の {likes}。",
+"q3": "{His post got more than 7,000} いいね。"
+}
+]
+},
+{
+"id": "20261002-biohazard-yume-group",
+"added": "2026-10-02T12:00",
+"cat": "movie",
+"level": 2,
+"title": "映画『バイオハザード』、夢グループとまさかのコラボ",
+"summary": "映画『バイオハザード』が夢グループとまさかのコラボをしました。「夢」にかけて、とどけるのは「悪夢」だそうです。映画は10月9日（金）に全国の映画館で公開されます。",
+"post": {
+"url": "https://x.com/biomovieJP/status/2105855297994838171",
+"account": "biomovieJP",
+"name": "映画『バイオハザード』公式",
+"date": "2026-10-02",
+"likes": 5263
+},
+"lines": [
+{
+"en": "The movie Biohazard did a surprise collab with Yume Group.",
+"ja": "映画『バイオハザード』が、夢グループとまさかのコラボをしました。",
+"mix": "映画『バイオハザード』が、夢グループとまさかの {collab} をしました。"
+},
+{
+"en": "Yume means “dream” in English.",
+"ja": "「夢」は、英語で dream という意味です。",
+"mix": "「夢」は、英語で {dream} という意味です。"
+},
+{
+"en": "But this collab brings you a bad dream, a nightmare!",
+"ja": "でも、このコラボがとどけるのは悪い夢、つまり悪夢です！",
+"mix": "でも、このコラボがとどけるのは {bad dream}、つまり {nightmare} です！"
+},
+{
+"en": "The post also has a joke.",
+"ja": "ポストには、こんな冗談もあります。",
+"mix": "ポストには、こんな {joke} もあります。"
+},
+{
+"en": "“After you watch the movie, your life is not safe!”",
+"ja": "「映画を観たあとは、あなたの命は安全ではありません！」",
+"mix": "「映画を観たあとは、あなたの命は {safe} ではありません！」"
+},
+{
+"en": "The movie opens in theaters across Japan on Friday, October 9.",
+"ja": "映画は10月9日（金）に、全国の映画館で公開されます。",
+"mix": "映画は10月9日（金）に、全国の {theaters} で公開されます。"
+}
+],
+"words": [
+{
+"w": "collab",
+"ja": "コラボ",
+"note": "ポストの「コラボ」。collaboration（共同作業）を短くした言い方です。"
+},
+{
+"w": "surprise",
+"ja": "まさかの・びっくりの",
+"note": "ポストの「まさかのコラボ」は a surprise collab と言えます。"
+},
+{
+"w": "nightmare",
+"ja": "悪夢",
+"note": "ポストの「悪夢」。a bad dream とも言えます。"
+},
+{
+"w": "safe",
+"ja": "安全な",
+"note": "ポストの「命の保証はありません」を、your life is not safe と言いかえました。"
+},
+{
+"w": "open",
+"ja": "（映画が）公開される",
+"note": "ポストの「映画館で公開」は opens in theaters です。"
+}
+],
+"grammar": {
+"title": "after ～ / before ～「〜のあとで／〜の前に」",
+"body": "after のあとに文（主語＋動詞）を置くと「〜したあとで」、before なら「〜する前に」になります。このまとまりは文の前にも後ろにも置けます。前に置くときは、あとにカンマを打ちます。",
+"ex": [
+{
+"en": "After I watch a movie, I eat ramen.",
+"ja": "映画を観たあとで、ラーメンを食べます。"
+},
+{
+"en": "I read manga before I go to bed.",
+"ja": "寝る前にマンガを読みます。"
+}
+]
+},
+"quiz": [
+{
+"q": "映画が公開されるのはいつ？",
+"choices": [
+"10月2日（金）",
+"10月9日（金）",
+"10月16日（金）"
+],
+"a": 1,
+"why": "6文目に on Friday, October 9 とあります。"
+},
+{
+"q": "nightmare の意味は？",
+"choices": [
+"夢の国",
+"昼寝",
+"悪夢"
+],
+"a": 2,
+"why": "nightmare は「悪夢」。a bad dream と同じ意味です。"
+},
+{
+"q": "___ you watch the movie, your life is not safe!（観たあとは）",
+"choices": [
+"After",
+"Before",
+"Because"
+],
+"a": 0,
+"why": "「〜したあとで」は after ＋ 文 です。before は「〜する前に」。"
+}
+],
+"talk": {
+"q": "Do you like scary movies?",
+"ja": "こわい映画は好きですか？",
+"hint": "Yes, I love them. / No, I'm scared of them!"
+},
+"grad": [
+{
+"q1": "{The movie} 『バイオハザード』が、{Yume Group} と {a surprise collab} をしました。",
+"q2": "{The movie Biohazard} が、{did a surprise collab} 夢グループと。",
+"q3": "{The movie Biohazard did a} まさかの {collab with Yume Group.}"
+},
+{
+"q1": "{Yume} は、英語で {“dream”} という意味です。",
+"q2": "{Yume means} 英語で {“dream”}。",
+"q3": "{Yume means “dream” in} 英語。"
+},
+{
+"q1": "でも、{this collab} がとどけるのは {a bad dream}、つまり {nightmare} です！",
+"q2": "{But this collab brings you} 悪い夢、つまり悪夢！",
+"q3": "{But this collab brings you a bad dream, a} 悪夢！"
+},
+{
+"q1": "{The post} には、こんな {joke} もあります。",
+"q2": "{The post also has} こんな冗談。",
+"q3": "{The post also has a} 冗談。"
+},
+{
+"q1": "「{the movie} を観た {after} は、{your life} は安全ではありません！」",
+"q2": "「{After you watch the movie}、あなたの命は安全ではありません！」",
+"q3": "「{After you watch the movie, your life is not} 安全！」"
+},
+{
+"q1": "{The movie} は {Friday, October 9} に、全国の {theaters} で公開されます。",
+"q2": "{The movie opens} 全国の映画館で、{on Friday, October 9}。",
+"q3": "{The movie opens in} 映画館 {across Japan on Friday, October 9.}"
+}
+]
+},
+{
+"id": "20261002-odoru-new-stage",
+"added": "2026-10-02T12:00",
+"cat": "movie",
+"level": 2,
+"title": "『踊る大捜査線 N.E.W.』初日舞台挨拶の裏側映像",
+"summary": "大ヒット上映中の『踊る大捜査線 N.E.W. メトロポリスを駆け抜けろ！』の公式アカウントが、初日舞台挨拶に登壇する前のキャストと監督をとらえたレア映像を公開しました。舞台挨拶のようすもYouTubeで見られます。",
+"post": {
+"url": "https://x.com/odoru_movief/status/2105855301207376324",
+"account": "odoru_movief",
+"name": "『踊る大捜査線 N.E.W.』公式",
+"date": "2026-10-02",
+"likes": 5078
+},
+"lines": [
+{
+"en": "The new Bayside Shakedown movie is a big hit.",
+"ja": "『踊る大捜査線』の新しい映画が大ヒット上映中です。",
+"mix": "『踊る大捜査線』の新しい映画が {big hit} です。"
+},
+{
+"en": "It is a new story of Shunsaku Aoshima.",
+"ja": "青島俊作の新しい物語です。",
+"mix": "青島俊作の {new story} です。"
+},
+{
+"en": "Yuji Oda plays the main character.",
+"ja": "主演は織田裕二さんです。",
+"mix": "織田裕二さんが {main character} を演じます。"
+},
+{
+"en": "The official account shared a rare video.",
+"ja": "公式アカウントが、レアな映像を公開しました。",
+"mix": "公式アカウントが、{rare} な映像を公開しました。"
+},
+{
+"en": "It shows the cast and the director backstage.",
+"ja": "舞台挨拶に上がる前の、キャストと監督が映っています。",
+"mix": "舞台挨拶の前の、{cast} と監督が映っています。"
+},
+{
+"en": "You can watch the stage event on YouTube, too.",
+"ja": "舞台挨拶のようすも、YouTubeで見られます。",
+"mix": "{stage event} のようすも、YouTubeで見られます。"
+}
+],
+"words": [
+{
+"w": "rare",
+"ja": "めずらしい・レアな",
+"note": "ポストの「レア映像」は a rare video。"
+},
+{
+"w": "cast",
+"ja": "キャスト・出演者",
+"note": "ポストの「キャスト陣」。"
+},
+{
+"w": "backstage",
+"ja": "舞台裏で",
+"note": "ポストの「裏側」「登壇前」をまとめた言い方です。"
+},
+{
+"w": "stage event",
+"ja": "舞台挨拶",
+"note": "ポストの「初日舞台挨拶」は the first-day stage event。"
+},
+{
+"w": "share",
+"ja": "公開する・共有する",
+"note": "SNS で「投稿する」の意味でよく使います。"
+}
+],
+"grammar": {
+"title": "too「〜も」（文の最後）",
+"body": "「〜も」と言いたいときは、文の最後に , too を置きます。You can watch it on YouTube, too. ＝ YouTubeでも見られます。",
+"ex": [
+{
+"en": "I like Haikyu!!, too.",
+"ja": "私もハイキュー!!が好きです。"
+},
+{
+"en": "My sister watched the movie, too.",
+"ja": "妹もその映画を見ました。"
+}
+]
+},
+"quiz": [
+{
+"q": "主演は誰ですか？",
+"choices": [
+"織田裕二さん",
+"本広克行さん",
+"山崎貴さん"
+],
+"a": 0,
+"why": "3文目に Yuji Oda plays the main character. とあります。"
+},
+{
+"q": "rare の意味は？",
+"choices": [
+"うるさい",
+"めずらしい",
+"こわい"
+],
+"a": 1,
+"why": "rare は「めずらしい・レアな」です。"
+},
+{
+"q": "You can watch it on YouTube, ___.（YouTubeでも）",
+"choices": [
+"so",
+"also",
+"too"
+],
+"a": 2,
+"why": "文の最後に置く「〜も」は too です。"
+}
+],
+"talk": {
+"q": "Do you like police movies?",
+"ja": "刑事ものの映画は好きですか？",
+"hint": "Yes, I do. My favorite is ___. / Not really."
+},
+"grad": [
+{
+"q1": "『踊る大捜査線』の {new movie} が {big hit} です。",
+"q2": "{The new Bayside Shakedown movie is} 大ヒット上映中です。",
+"q3": "{The new Bayside Shakedown movie is a big} ヒット。"
+},
+{
+"q1": "{Shunsaku Aoshima} の {new story} です。",
+"q2": "{It is a new story} 青島俊作の。",
+"q3": "{It is a new story of} 青島俊作。"
+},
+{
+"q1": "織田裕二さんが {main character} を {plays}。",
+"q2": "{Yuji Oda plays} 主人公を。",
+"q3": "{Yuji Oda plays the} 主人公。"
+},
+{
+"q1": "{official account} が、{rare} な {video} を公開しました。",
+"q2": "{The official account shared} レアな映像を。",
+"q3": "{The official account shared a rare} 映像。"
+},
+{
+"q1": "舞台挨拶の前の、{cast} と {director} が映っています。",
+"q2": "{It shows the cast and the director} 舞台挨拶の前に。",
+"q3": "{It shows the cast and the director} 舞台裏で。"
+},
+{
+"q1": "{stage event} のようすも、{YouTube} で {watch} できます。",
+"q2": "{You can watch the stage event} YouTubeでも。",
+"q3": "{You can watch the stage event on YouTube,} も。"
+}
+]
+},
+{
 "id": "20261002-kinro-yamazaki",
 "added": "2026-10-02T06:00",
 "cat": "movie",
@@ -320,6 +781,1694 @@ window.LESSONS = [
 "q1": "{special website} で {read} できます。",
 "q2": "{You can read it} 特設サイトで。",
 "q3": "{You can read it on the} 特設サイト。"
+}
+]
+},
+{
+"id": "20261001-mononoke-netflix-top10",
+"added": "2026-10-01T20:08",
+"cat": "anime",
+"level": 2,
+"title": "『劇場版モノノ怪 蛇神』、Netflix映画TOP10入り",
+"summary": "『劇場版モノノ怪 第三章 蛇神』が、Netflixの「今日の映画TOP10」に世界の各地で入りました。日本で4位、台湾で8位、韓国で10位です。",
+"post": {
+"url": "https://x.com/anime_mononoke/status/2105615798043856990",
+"account": "anime_mononoke",
+"name": "『劇場版モノノ怪』公式",
+"date": "2026-10-01",
+"likes": 2548
+},
+"lines": [
+{
+"en": "You can watch the third Mononoke movie, Hebigami, on Netflix.",
+"ja": "『劇場版モノノ怪』の第三章『蛇神』は、Netflixで観ることができます。",
+"mix": "『劇場版モノノ怪』の {third movie}『蛇神』は、Netflixで観ることができます。"
+},
+{
+"en": "It has entered Netflix's daily movie Top 10 in many places.",
+"ja": "Netflixの「今日の映画TOP10」に、世界の各地で入りました。",
+"mix": "Netflixの「今日の映画TOP10」に、世界の {many places} で入りました。"
+},
+{
+"en": "It was No. 4 in Japan.",
+"ja": "日本では4位でした。",
+"mix": "日本では {No. 4} でした。"
+},
+{
+"en": "It was No. 8 in Taiwan and No. 10 in Korea.",
+"ja": "台湾では8位、韓国では10位でした。",
+"mix": "台湾では {No. 8}、韓国では {No. 10} でした。"
+},
+{
+"en": "The official account thanked everyone around the world for watching.",
+"ja": "公式アカウントは、世界中で観てくれた人たちにお礼を言いました。",
+"mix": "公式アカウントは、{around the world} で観てくれた人たちにお礼を言いました。"
+},
+{
+"en": "It also asks for your thoughts with a hashtag.",
+"ja": "ハッシュタグ「#モノノ怪蛇神を見た」で、感想も待っています。",
+"mix": "ハッシュタグ「#モノノ怪蛇神を見た」で、{thoughts} も待っています。"
+}
+],
+"words": [
+{
+"w": "daily",
+"ja": "毎日の・日ごとの",
+"note": "ポストの「今日の映画TOP10」は毎日変わるランキングなので daily Top 10 としました。day ＋ ly です。"
+},
+{
+"w": "enter",
+"ja": "入る",
+"note": "ポストの「ランキング入り」は enter the Top 10。過去分詞も entered です。"
+},
+{
+"w": "many places",
+"ja": "いろいろな場所",
+"note": "ポストの「世界で続々」を in many places（いろいろな場所で）と言いかえました。"
+},
+{
+"w": "around the world",
+"ja": "世界中で",
+"note": "ポストの「世界中で」は around the world です。"
+},
+{
+"w": "thought",
+"ja": "考え・感想",
+"note": "ポストの「感想」は your thoughts と言えます。"
+}
+],
+"grammar": {
+"title": "現在完了（完了）「もう〜した」と yet「まだ」",
+"body": "have（has）＋ 過去分詞で、「（ちょうど／もう）〜した」と、終わったことが今につながっていることを表します。just（ちょうど）や already（もう）といっしょによく使います。否定文で yet を使うと「まだ〜していない」、疑問文なら「もう〜しましたか」です。",
+"ex": [
+{
+"en": "The movie has just started.",
+"ja": "映画はちょうど始まったところです。"
+},
+{
+"en": "I haven't watched it yet.",
+"ja": "まだそれを観ていません。"
+}
+]
+},
+"quiz": [
+{
+"q": "韓国では何位でしたか？",
+"choices": [
+"10位",
+"4位",
+"8位"
+],
+"a": 0,
+"why": "4文目に No. 10 in Korea とあります。日本は4位、台湾は8位です。"
+},
+{
+"q": "daily の意味は？",
+"choices": [
+"週ごとの",
+"月ごとの",
+"毎日の"
+],
+"a": 2,
+"why": "daily は「毎日の・日ごとの」。weekly は「週ごとの」です。"
+},
+{
+"q": "It has ___ Netflix's daily movie Top 10.（入りました）",
+"choices": [
+"enter",
+"entered",
+"entering"
+],
+"a": 1,
+"why": "現在完了は has ＋ 過去分詞。enter の過去分詞は entered です。"
+}
+],
+"talk": {
+"q": "Have you watched Mononoke yet?",
+"ja": "『モノノ怪』はもう観ましたか？",
+"hint": "Yes, I have. It was ___. / No, not yet."
+},
+"grad": [
+{
+"q1": "{You} は『劇場版モノノ怪』の {third movie}『蛇神』を、Netflixで {can watch}。",
+"q2": "{You can watch} 『劇場版モノノ怪』の第三章『蛇神』{on Netflix}。",
+"q3": "{You can watch the third Mononoke movie} 『蛇神』 {on Netflix.}"
+},
+{
+"q1": "{It} は Netflixの {daily movie Top 10} に、{many places} で入りました。",
+"q2": "{It has entered} Netflixの「今日の映画TOP10」に、{in many places}。",
+"q3": "{It has entered Netflix's} 今日の {movie Top 10 in many places.}"
+},
+{
+"q1": "{It} は日本で {No. 4} でした。",
+"q2": "{It was No. 4} 日本で。",
+"q3": "{It was No. 4 in} 日本。"
+},
+{
+"q1": "{It} は台湾で {No. 8}、韓国で {No. 10} でした。",
+"q2": "{It was No. 8 in Taiwan}、韓国では10位でした。",
+"q3": "{It was No. 8 in Taiwan and No. 10 in} 韓国。"
+},
+{
+"q1": "{The official account} は、{around the world} で観てくれた人たちに {thanked}。",
+"q2": "{The official account thanked everyone} 世界中で観てくれた。",
+"q3": "{The official account thanked everyone} 世界中の {for watching.}"
+},
+{
+"q1": "{hashtag}「#モノノ怪蛇神を見た」で、{your thoughts} も待っています。",
+"q2": "{It also asks for your thoughts} ハッシュタグで。",
+"q3": "{It also asks for your} 感想 {with a hashtag.}"
+}
+]
+},
+{
+"id": "20261001-eupho-final-pv",
+"added": "2026-10-01T20:02",
+"cat": "anime",
+"level": 2,
+"title": "「響け！ユーフォニアム」北宇治の歩みをたどるファイナルPV",
+"summary": "劇場アニメ「最終楽章 響け！ユーフォニアム」後編の“ファイナルPV”が公開されました。11年続いた物語をしめくくる映画で、北宇治高校吹奏楽部の歩みが名場面とともに収められています。",
+"post": {
+"url": "https://x.com/comic_natalie/status/2105614252572807248",
+"account": "comic_natalie",
+"name": "コミックナタリー",
+"date": "2026-10-01",
+"likes": 116
+},
+"lines": [
+{
+"en": "The final PV for the Sound! Euphonium movie is out.",
+"ja": "劇場アニメ「最終楽章 響け！ユーフォニアム」後編の“ファイナルPV”が公開されました。",
+"mix": "劇場アニメ「最終楽章 響け！ユーフォニアム」後編の {final PV} が公開されました。"
+},
+{
+"en": "The anime is about a high school band club.",
+"ja": "このアニメは、高校の吹奏楽部のお話です。",
+"mix": "このアニメは、高校の {band club} のお話です。"
+},
+{
+"en": "Its story ended with this movie after 11 years.",
+"ja": "11年続いた物語が、この映画で完結しました。",
+"mix": "11年続いた {story} が、この映画で完結しました。"
+},
+{
+"en": "The PV shows Kumiko, her friend Reina, and her rival Mayu.",
+"ja": "PVでは、久美子と、友だちの麗奈、ライバルの真由が描かれます。",
+"mix": "PVでは、久美子と、{friend} の麗奈、{rival} の真由が描かれます。"
+},
+{
+"en": "The band members want to win gold at the national contest.",
+"ja": "部員たちは、全国大会で金賞をとりたいと思っています。",
+"mix": "部員たちは、{national contest} で金賞をとりたいと思っています。"
+},
+{
+"en": "It also uses many memorable scenes from the series.",
+"ja": "シリーズの印象的な場面も、たくさん使われています。",
+"mix": "シリーズの {memorable} な {scenes} も、たくさん使われています。"
+}
+],
+"words": [
+{
+"w": "band club",
+"ja": "吹奏楽部",
+"note": "ポストの「吹奏楽部」は band club や school band と言えます。"
+},
+{
+"w": "end",
+"ja": "終わる・完結する",
+"note": "記事の「完結を迎えた」を ended で表しました。"
+},
+{
+"w": "rival",
+"ja": "ライバル",
+"note": "転校生の黒江真由は、久美子の rival です。"
+},
+{
+"w": "win gold",
+"ja": "金賞をとる",
+"note": "記事の「全国大会金賞」は gold at the national contest です。"
+},
+{
+"w": "memorable",
+"ja": "印象に残る",
+"note": "記事の「印象的なシーン」を memorable scenes で表しました。"
+}
+],
+"grammar": {
+"title": "不定詞（名詞的）want to ~「〜すること」",
+"body": "want to ＋ 動詞の原形 で「〜したい」。to ＋ 動詞 が「〜すること」という名詞のはたらきをして、want の目的語になっています。like to（〜するのが好き）、start to（〜しはじめる）も同じ形です。",
+"ex": [
+{
+"en": "I want to see the movie in a theater.",
+"ja": "その映画を映画館で見たいです。"
+},
+{
+"en": "She likes to play the trumpet.",
+"ja": "彼女はトランペットをふくのが好きです。"
+}
+]
+},
+"quiz": [
+{
+"q": "物語は何年続きましたか？",
+"choices": [
+"11年",
+"5年",
+"20年"
+],
+"a": 0,
+"why": "3文目に after 11 years とあります。"
+},
+{
+"q": "memorable の意味は？",
+"choices": [
+"わすれやすい",
+"あたらしい",
+"印象に残る"
+],
+"a": 2,
+"why": "memorable は「印象に残る・記憶に残る」。memory（記憶）の仲間です。"
+},
+{
+"q": "They want ___ win gold.（金賞をとりたい）",
+"choices": [
+"for",
+"to",
+"at"
+],
+"a": 1,
+"why": "「〜したい」は want to ＋ 動詞の原形 です。"
+}
+],
+"talk": {
+"q": "Were you in a club at school?",
+"ja": "学生のころ、部活に入っていましたか？",
+"hint": "Yes, I was in the ___ club. / No, I wasn't. I liked to ___."
+},
+"grad": [
+{
+"q1": "「響け！ユーフォニアム」の {movie} の {final PV} が公開されました。",
+"q2": "{The final PV is out}、「響け！ユーフォニアム」の映画の。",
+"q3": "{The final PV for the} 響け！ユーフォニアム {movie is out.}"
+},
+{
+"q1": "{The anime} は、{high school} の {band club} のお話です。",
+"q2": "{The anime is about} 高校の吹奏楽部。",
+"q3": "{The anime is about a high school} 吹奏楽部。"
+},
+{
+"q1": "{11 years} 続いた {story} が、{this movie} で完結しました。",
+"q2": "{Its story ended} この映画で、11年たって。",
+"q3": "{Its story ended with this movie after} 11年。"
+},
+{
+"q1": "{The PV} では、久美子と、{her friend} の麗奈、{her rival} の真由が描かれます。",
+"q2": "{The PV shows} 久美子と、{her friend} 麗奈、ライバルの真由。",
+"q3": "{The PV shows Kumiko, her friend Reina, and her} ライバル {Mayu.}"
+},
+{
+"q1": "{The band members} は、{national contest} で {gold} をとりたいと思っています。",
+"q2": "{The band members want to win} 金賞を全国大会で。",
+"q3": "{The band members want to win gold at the} 全国大会。"
+},
+{
+"q1": "{the series} の {memorable scenes} も、{many} 使われています。",
+"q2": "{It also uses many} シリーズの印象的な場面を。",
+"q3": "{It also uses many} 印象的な {scenes from the series.}"
+}
+]
+},
+{
+"id": "20261001-chiikawa-spanish-husband",
+"added": "2026-10-01T19:00",
+"cat": "movie",
+"level": 1,
+"title": "スペイン人の夫が観た『ちいかわ』映画の感想",
+"summary": "漫画家のいづみみなみさんが、スペイン人の夫が『ちいかわ』の映画を観た感想を1ページのマンガにしました。「悪い人はいなかった」のあとの、最後のひとことに注目です。",
+"post": {
+"url": "https://x.com/idumi_minami/status/2105598600868704513",
+"account": "idumi_minami",
+"name": "いづみみなみ",
+"date": "2026-10-01",
+"likes": 8574
+},
+"lines": [
+{
+"en": "Manga artist Izumi Minami drew a page about her husband.",
+"ja": "漫画家のいづみみなみさんが、夫についての1ページのマンガをかきました。",
+"mix": "漫画家のいづみみなみさんが、{husband} についての1ページのマンガをかきました。"
+},
+{
+"en": "He is from Spain, and he watched the Chiikawa movie.",
+"ja": "夫はスペインの人で、『ちいかわ』の映画を観ました。",
+"mix": "夫はスペインの人で、『ちいかわ』の {movie} を観ました。"
+},
+{
+"en": "He saw part of the anime but didn't know the movie's story.",
+"ja": "アニメは途中まで観ていましたが、映画のお話は知りませんでした。",
+"mix": "アニメは途中まで観ていましたが、映画の {story} は知りませんでした。"
+},
+{
+"en": "He said, “OK… this movie has more after the end credits.”",
+"ja": "夫は「なるほど…この映画は、エンドロールのあとにも続きがあるね」と言いました。",
+"mix": "夫は「なるほど…この映画は、{end credits} のあとにも続きがあるね」と言いました。"
+},
+{
+"en": "Then he said, “I understood. Deep… and there were no bad people…”",
+"ja": "それから「わかった。深い…そして悪い人はいなかった…」と言いました。",
+"mix": "それから「わかった。{deep}…そして {bad people} はいなかった…」と言いました。"
+},
+{
+"en": "In the last panel, he added, “…except Momonga.”",
+"ja": "最後のコマで、「…モモンガ以外は」とつけ加えました。",
+"mix": "最後の {panel} で、「…モモンガ以外は」とつけ加えました。"
+}
+],
+"words": [
+{
+"w": "husband",
+"ja": "夫",
+"note": "ポストの「スペイン人夫」は her husband from Spain と言えます。"
+},
+{
+"w": "end credits",
+"ja": "エンドロール",
+"note": "映画の最後に流れる「エンドロール」は、英語では end credits と言うことが多いです。"
+},
+{
+"w": "deep",
+"ja": "深い",
+"note": "マンガの中の「深い…」。お話の中身が「深い」ときも deep です。"
+},
+{
+"w": "panel",
+"ja": "（マンガの）コマ",
+"note": "マンガの「コマ」は panel。「最後のコマ」は the last panel です。"
+},
+{
+"w": "except",
+"ja": "〜以外は",
+"note": "最後のコマの「モモンガ以外は」は except Momonga です。"
+}
+],
+"grammar": {
+"title": "except ～「〜以外は」",
+"body": "except のあとに名詞を置くと「〜以外は・〜をのぞいて」という意味になります。everyone（みんな）、all（全部）、no（ひとつも〜ない）といっしょによく使います。no bad people except Momonga で「モモンガ以外に悪い人はいない」です。",
+"ex": [
+{
+"en": "Everyone came except Ken.",
+"ja": "ケン以外はみんな来ました。"
+},
+{
+"en": "I like all vegetables except tomatoes.",
+"ja": "トマト以外の野菜は全部好きです。"
+}
+]
+},
+"quiz": [
+{
+"q": "夫が最後のコマで言ったことばは？",
+"choices": [
+"…ちいかわ以外は",
+"…モモンガ以外は",
+"…自分以外は"
+],
+"a": 1,
+"why": "6文目に he added, “…except Momonga.” とあります。"
+},
+{
+"q": "panel の意味は？",
+"choices": [
+"ページ",
+"表紙",
+"コマ"
+],
+"a": 2,
+"why": "マンガの「コマ」は panel。the last panel で「最後のコマ」です。"
+},
+{
+"q": "There were no bad people ___ Momonga.（モモンガ以外は）",
+"choices": [
+"except",
+"with",
+"and"
+],
+"a": 0,
+"why": "「〜以外は」は except 〜 です。"
+}
+],
+"talk": {
+"q": "Do you stay for the end credits at the movies?",
+"ja": "映画館では、エンドロールが終わるまで席にいますか？",
+"hint": "Yes, I always do. / No, I usually ___."
+},
+"grad": [
+{
+"q1": "{Manga artist} のいづみみなみさんが、{her husband} について {a page} をかきました。",
+"q2": "漫画家のいづみみなみさんが {drew a page about her husband}。",
+"q3": "漫画家の {Izumi Minami drew a page about her husband.}"
+},
+{
+"q1": "{He} は {from Spain} で、『ちいかわ』の {movie} を {watched}。",
+"q2": "{He is from Spain}、そして {he watched} 『ちいかわ』の映画。",
+"q3": "{He is from Spain, and he} 観ました {the Chiikawa movie.}"
+},
+{
+"q1": "{the anime} は {part} だけ観ていましたが、{the movie's story} は知りませんでした。",
+"q2": "{He saw part of the anime}、でも映画のお話は知りませんでした。",
+"q3": "{He saw part of the anime but didn't know the} 映画の {story.}"
+},
+{
+"q1": "{He} は「なるほど…{this movie} は、{end credits} のあとにも続きがあるね」と {said}。",
+"q2": "{He said}、「{OK… this movie has more} エンドロールのあとに」。",
+"q3": "{He said}、「{OK… this movie has more after the} エンドロール」。"
+},
+{
+"q1": "{Then}、「わかった。{Deep}…そして {bad people} はいなかった…」と {said}。",
+"q2": "{Then he said}、「{I understood. Deep…} そして悪い人はいなかった…」。",
+"q3": "{Then he said}、「{I understood. Deep… and there were no bad} 人たち…」。"
+},
+{
+"q1": "{the last panel} で、「…モモンガ {except}」と {added}。",
+"q2": "{In the last panel}、{he added}、「…モモンガ以外は」。",
+"q3": "{In the last panel, he added}、「…{except} モモンガ」。"
+}
+]
+},
+{
+"id": "20261001-taiyo-4k",
+"added": "2026-10-01T18:38",
+"cat": "movie",
+"level": 2,
+"title": "『太陽を盗んだ男』4K版、「修復の仕上がりにちょっと泣いた」",
+"summary": "1979年の映画『太陽を盗んだ男』の4K版を試写室で観たシネフィルDVDのアカウントが、修復の美しさにちょっと泣いたと投稿して話題になりました。まるで新作のようだそうです。4K版は10月16日から2週間限定で公開されます。",
+"post": {
+"url": "https://x.com/cinefilDVD/status/2105593139046318172",
+"account": "cinefilDVD",
+"name": "シネフィルＤＶＤ",
+"date": "2026-10-01",
+"likes": 1088
+},
+"lines": [
+{
+"en": "The Man Who Stole the Sun is a Japanese movie from 1979.",
+"ja": "『太陽を盗んだ男』は、1979年の日本映画です。",
+"mix": "『太陽を盗んだ男』は、1979年の {Japanese movie} です。"
+},
+{
+"en": "Now it is back in 4K.",
+"ja": "いま、4Kになってよみがえりました。",
+"mix": "いま、4Kになって {back} です。"
+},
+{
+"en": "The account Cinefil DVD saw it in Toho's screening room.",
+"ja": "シネフィルDVDのアカウントが、東宝の試写室で観ました。",
+"mix": "シネフィルDVDのアカウントが、東宝の {screening room} で観ました。"
+},
+{
+"en": "They wrote, \"The restored picture made me cry a little.\"",
+"ja": "「修復の仕上がりに、ちょっと泣いた」と書いています。",
+"mix": "「{restored} の仕上がりに、ちょっと泣いた」と書いています。"
+},
+{
+"en": "It looks like a brand-new movie, they said.",
+"ja": "まるで、できたばかりの新作のようだそうです。",
+"mix": "まるで、できたばかりの {brand-new movie} のようだそうです。"
+},
+{
+"en": "It opens in theaters on October 16 for two weeks.",
+"ja": "10月16日から2週間だけ、映画館で公開されます。",
+"mix": "10月16日から {two weeks} だけ、映画館で公開されます。"
+}
+],
+"words": [
+{
+"w": "restore",
+"ja": "修復する",
+"note": "ポストの「修復」。restored picture ＝ 修復された映像。"
+},
+{
+"w": "screening room",
+"ja": "試写室",
+"note": "ポストの「東宝試写室」。screen ＝ 上映する。"
+},
+{
+"w": "brand-new",
+"ja": "できたばかりの・新品の",
+"note": "ポストの「出来たばかりの新作」。"
+},
+{
+"w": "a little",
+"ja": "少し",
+"note": "ポストの「ちょっと泣いた」は cried a little。"
+},
+{
+"w": "for two weeks",
+"ja": "2週間",
+"note": "公開は「2週間限定」です。"
+}
+],
+"grammar": {
+"title": "make ＋ 人 ＋ 動詞「人に〜させる」",
+"body": "make のあとに「人」と「動詞の原形」を置くと「（人）に〜させる」という意味になります。made me cry ＝ 私を泣かせた。",
+"ex": [
+{
+"en": "This movie made me cry.",
+"ja": "この映画に泣かされました。"
+},
+{
+"en": "My friend made me laugh.",
+"ja": "友だちが私を笑わせました。"
+}
+]
+},
+"quiz": [
+{
+"q": "4K版の公開はいつから？",
+"choices": [
+"10月6日",
+"10月16日",
+"11月16日"
+],
+"a": 1,
+"why": "6文目に on October 16 とあります。"
+},
+{
+"q": "brand-new の意味は？",
+"choices": [
+"古い",
+"高い",
+"できたばかりの"
+],
+"a": 2,
+"why": "brand-new は「できたばかりの・新品の」です。"
+},
+{
+"q": "The movie made me ___.（泣かせた）",
+"choices": [
+"cry",
+"cried",
+"crying"
+],
+"a": 0,
+"why": "make ＋ 人 のあとは動詞の原形です。"
+}
+],
+"talk": {
+"q": "Is there an old movie you love?",
+"ja": "大好きな昔の映画はありますか？",
+"hint": "Yes. I love ___. It is from the ___s."
+},
+"grad": [
+{
+"q1": "『太陽を盗んだ男』は、{1979} 年の {Japanese movie} です。",
+"q2": "{The Man Who Stole the Sun is} 1979年の日本映画です。",
+"q3": "{The Man Who Stole the Sun is a Japanese movie from} 1979年。"
+},
+{
+"q1": "{now}、4Kになって {back} です。",
+"q2": "{Now it is back} 4Kで。",
+"q3": "{Now it is back in} 4K。"
+},
+{
+"q1": "シネフィルDVDの {account} が、東宝の {screening room} で観ました。",
+"q2": "{The account Cinefil DVD saw it} 東宝の試写室で。",
+"q3": "{The account Cinefil DVD saw it in} 東宝の {screening room.}"
+},
+{
+"q1": "「{restored} の {picture} に、ちょっと泣いた」と書いています。",
+"q2": "{They wrote}、「修復の仕上がりが {made me cry a little}」。",
+"q3": "{They wrote, \"The restored picture made me cry} ちょっと。」"
+},
+{
+"q1": "まるで、できたばかりの {brand-new movie} のようだそうです。",
+"q2": "{It looks like} できたばかりの新作、{they said}。",
+"q3": "{It looks like a} できたばかりの {movie, they said.}"
+},
+{
+"q1": "{October 16} から {two weeks} だけ、映画館で公開されます。",
+"q2": "{It opens} 映画館で、{on October 16} から2週間。",
+"q3": "{It opens in theaters on October 16 for} 2週間。"
+}
+]
+},
+{
+"id": "20261001-kusuriya-s3",
+"added": "2026-10-01T18:01",
+"cat": "anime",
+"level": 2,
+"title": "『薬屋のひとりごと』第3期、10月2日スタート",
+"summary": "アニメ『薬屋のひとりごと』第3期が、10月2日から毎週金曜よる11時に放送されます。第3期の第1話（第49話「蝗」）のあらすじと先行カットが公開されました。",
+"post": {
+"url": "https://x.com/animatetimes/status/2105583780673335526",
+"account": "animatetimes",
+"name": "アニメイトタイムズ",
+"date": "2026-10-01",
+"likes": 148
+},
+"lines": [
+{
+"en": "Season 3 of The Apothecary Diaries starts on October 2.",
+"ja": "『薬屋のひとりごと』第3期が、10月2日に始まります。",
+"mix": "『薬屋のひとりごと』の {Season 3} が、10月2日に始まります。"
+},
+{
+"en": "It is on TV every Friday at 11 p.m.",
+"ja": "毎週金曜の夜11時に放送されます。",
+"mix": "{every Friday} の夜11時に放送されます。"
+},
+{
+"en": "Its first episode is Episode 49, \"Locusts.\"",
+"ja": "第3期の第1話は、第49話「蝗（いなご）」です。",
+"mix": "第3期の {first episode} は、第49話「蝗」です。"
+},
+{
+"en": "The story and some new pictures are out now.",
+"ja": "あらすじと新しい場面カットが公開されました。",
+"mix": "あらすじと {new pictures} が公開されました。"
+},
+{
+"en": "One morning, Maomao and Chou-u get cooked locusts for breakfast.",
+"ja": "ある朝、猫猫と趙迂は、朝ごはんにイナゴの煮つけを出されます。",
+"mix": "ある朝、猫猫と趙迂は、{breakfast} にイナゴの煮つけを出されます。"
+},
+{
+"en": "After that, Maomao thinks something is strange.",
+"ja": "そのあと、猫猫は何かがおかしいと思います。",
+"mix": "そのあと、猫猫は何かが {strange} だと思います。"
+}
+],
+"words": [
+{
+"w": "season",
+"ja": "〜期・シーズン",
+"note": "ポストの「第3期」は Season 3 です。"
+},
+{
+"w": "episode",
+"ja": "（アニメの）〜話",
+"note": "「第49話」は Episode 49。first episode で「第1話」。"
+},
+{
+"w": "locust",
+"ja": "イナゴ",
+"note": "第49話の題「蝗（いなご）」。複数形は locusts。"
+},
+{
+"w": "breakfast",
+"ja": "朝ごはん",
+"note": "あらすじの「朝餉（あさげ）」は朝ごはんのことです。"
+},
+{
+"w": "strange",
+"ja": "へんな・おかしい",
+"note": "あらすじの「違和感」を something is strange で表しました。"
+}
+],
+"grammar": {
+"title": "I think (that) ~「〜だと思う」",
+"body": "think のあとに「主語＋動詞」の文をつなげると「〜だと思う」になります。あいだの that は省略できます。主語が he / she / Maomao のときは thinks です。",
+"ex": [
+{
+"en": "I think this anime is exciting.",
+"ja": "このアニメはわくわくすると思います。"
+},
+{
+"en": "She thinks (that) the story is interesting.",
+"ja": "彼女はその話がおもしろいと思っています。"
+}
+]
+},
+"quiz": [
+{
+"q": "第3期は毎週何曜日に放送されますか？",
+"choices": [
+"月曜日",
+"金曜日",
+"日曜日"
+],
+"a": 1,
+"why": "2文目に every Friday とあります。"
+},
+{
+"q": "breakfast の意味は？",
+"choices": [
+"昼ごはん",
+"夕ごはん",
+"朝ごはん"
+],
+"a": 2,
+"why": "breakfast は「朝ごはん」。昼ごはんは lunch、夕ごはんは dinner です。"
+},
+{
+"q": "Maomao ___ something is strange.（猫猫は何かがおかしいと思います）",
+"choices": [
+"thinks",
+"think",
+"thinking"
+],
+"a": 0,
+"why": "主語が Maomao（1人）なので thinks。そのあとに「主語＋動詞」を続けます。"
+}
+],
+"talk": {
+"q": "Do you like mystery stories?",
+"ja": "なぞ解き（ミステリー）の物語は好きですか？",
+"hint": "Yes, I do. I think ___ is fun. / Not really. I like ___ more."
+},
+"grad": [
+{
+"q1": "『薬屋のひとりごと』の {Season 3} が {October 2} に {start} します。",
+"q2": "『薬屋のひとりごと』の {Season 3 starts on} 10月2日。",
+"q3": "{Season 3 of} 『薬屋のひとりごと』 {starts on October 2.}"
+},
+{
+"q1": "{every Friday} の {11 p.m.} に、{TV} で放送されます。",
+"q2": "{It is on TV} 毎週金曜の夜11時に。",
+"q3": "{It is on TV every Friday at} 夜11時。"
+},
+{
+"q1": "第3期の {first episode} は、{Episode 49}「蝗」です。",
+"q2": "{Its first episode is} 第49話「蝗」。",
+"q3": "{Its first episode is Episode 49,} 「蝗」。"
+},
+{
+"q1": "{The story} と {some new pictures} が {now} 公開されました。",
+"q2": "あらすじと {some new pictures are out now}。",
+"q3": "{The story and some new} 場面カット {are out now.}"
+},
+{
+"q1": "{One morning}、猫猫と趙迂は、{breakfast} に {cooked locusts} を出されます。",
+"q2": "{One morning, Maomao and Chou-u get} 朝ごはんにイナゴの煮つけを。",
+"q3": "{One morning, Maomao and Chou-u get cooked} イナゴ {for breakfast.}"
+},
+{
+"q1": "{After that}、猫猫は {something} が {strange} だと思います。",
+"q2": "{After that, Maomao thinks} 何かがおかしいと。",
+"q3": "{After that, Maomao thinks} 何か {is strange.}"
+}
+]
+},
+{
+"id": "20261001-frieren-gochisou",
+"added": "2026-10-01T18:00",
+"cat": "manga",
+"series": "frieren",
+"level": 1,
+"title": "「ごちそうのフリーレン」、ぬいぐるみと料理の写真",
+"summary": "『葬送のフリーレン』の公式アカウントが「ごちそうのフリーレン」として、フリーレンのぬいぐるみと料理の写真を投稿しました。「葬送（そうそう）」と「ごちそう」をかけたしゃれです。",
+"post": {
+"url": "https://x.com/FRIEREN_PR/status/2105583501676290512",
+"account": "FRIEREN_PR",
+"name": "『葬送のフリーレン』公式",
+"date": "2026-10-01",
+"likes": 14181
+},
+"lines": [
+{
+"en": "The official Frieren account posted photos titled “Gochisou no Frieren.”",
+"ja": "『葬送のフリーレン』の公式アカウントが、「ごちそうのフリーレン」という題で写真を投稿しました。",
+"mix": "『葬送のフリーレン』の {official} アカウントが、「ごちそうのフリーレン」という題で {photos} を投稿しました。"
+},
+{
+"en": "In the photos, a Frieren plush toy is next to some food.",
+"ja": "写真では、フリーレンのぬいぐるみが料理のとなりにいます。",
+"mix": "写真では、フリーレンの {plush toy} が料理のとなりにいます。"
+},
+{
+"en": "There are noodles, bread, sushi, and fried food.",
+"ja": "めん、パン、おすし、揚げ物があります。",
+"mix": "{noodles}、パン、おすし、{fried food} があります。"
+},
+{
+"en": "The title is a pun on Sousou no Frieren.",
+"ja": "この題は、『葬送のフリーレン』をもじったしゃれです。",
+"mix": "この {title} は、『葬送のフリーレン』をもじった {pun} です。"
+},
+{
+"en": "“Gochisou” means a feast, or very good food.",
+"ja": "「ごちそう」は、ごうかな食事、とてもおいしい料理という意味です。",
+"mix": "「ごちそう」は、{feast}、とてもおいしい料理という意味です。"
+},
+{
+"en": "Changing “sousou” to “gochisou” makes a fun new title.",
+"ja": "「葬送（そうそう）」を「ごちそう」に変えることで、楽しい新しい題になっています。",
+"mix": "「葬送（そうそう）」を「ごちそう」に変えることで、{fun} な新しい {title} になっています。"
+}
+],
+"words": [
+{
+"w": "official",
+"ja": "公式の",
+"note": "アカウント名『葬送のフリーレン』公式の「公式」。official account で「公式アカウント」です。"
+},
+{
+"w": "plush toy",
+"ja": "ぬいぐるみ",
+"note": "写真の「ぬいぐるみ」。stuffed toy とも言います。"
+},
+{
+"w": "fried food",
+"ja": "揚げ物",
+"note": "fry（揚げる）の形 fried ＋ food で「揚げた食べ物」です。"
+},
+{
+"w": "pun",
+"ja": "だじゃれ・しゃれ",
+"note": "「葬送」→「ごちそう」のように、音の似たことばで遊ぶしゃれが pun です。"
+},
+{
+"w": "feast",
+"ja": "ごちそう・ごうかな食事",
+"note": "ポストの題の「ごちそう」を英語にすると feast です。"
+}
+],
+"grammar": {
+"title": "動名詞が主語「〜することは」",
+"body": "動詞に ing をつけた形（動名詞）は「〜すること」という意味で、文の主語になれます。主語の動名詞は「1つのこと」なので、あとの動詞は makes / is のように三単現の形にします。",
+"ex": [
+{
+"en": "Watching anime is fun.",
+"ja": "アニメを見ることは楽しいです。"
+},
+{
+"en": "Reading manga makes me happy.",
+"ja": "マンガを読むと、幸せな気持ちになります。"
+}
+]
+},
+"quiz": [
+{
+"q": "写真で、フリーレンのぬいぐるみのとなりにあるのは？",
+"choices": [
+"料理",
+"本",
+"花"
+],
+"a": 0,
+"why": "2文目に a Frieren plush toy is next to some food とあります。"
+},
+{
+"q": "feast の意味は？",
+"choices": [
+"おやつ",
+"ごちそう",
+"飲み物"
+],
+"a": 1,
+"why": "feast は「ごちそう・ごうかな食事」です。"
+},
+{
+"q": "___ “sousou” to “gochisou” makes a fun new title.（変えることで）",
+"choices": [
+"Change",
+"Changed",
+"Changing"
+],
+"a": 2,
+"why": "主語になる「〜すること」は、動詞の ing 形（動名詞）を使います。"
+}
+],
+"talk": {
+"q": "Which food in the photos do you want to eat?",
+"ja": "写真の料理で、どれを食べたいですか？",
+"hint": "I want to eat the ___. It looks delicious!"
+},
+"grad": [
+{
+"q1": "{The official Frieren account} が、「ごちそうのフリーレン」という題で {photos} を {posted}。",
+"q2": "{The official Frieren account posted photos}、「ごちそうのフリーレン」という題で。",
+"q3": "{The official Frieren account} 投稿しました {photos titled “Gochisou no Frieren.”}"
+},
+{
+"q1": "{the photos} では、フリーレンの {plush toy} が {food} のとなりにいます。",
+"q2": "{In the photos, a Frieren plush toy} が料理のとなりにいます。",
+"q3": "{In the photos, a Frieren} ぬいぐるみ {is next to some food.}"
+},
+{
+"q1": "{noodles}、{bread}、{sushi}、揚げ物があります。",
+"q2": "{There are noodles, bread}、おすし、揚げ物。",
+"q3": "{There are noodles, bread, sushi, and} 揚げ物。"
+},
+{
+"q1": "{The title} は、{Sousou no Frieren} をもじった {pun} です。",
+"q2": "{The title is a pun on} 『葬送のフリーレン』。",
+"q3": "{The title is a} しゃれ {on Sousou no Frieren.}"
+},
+{
+"q1": "「ごちそう」は、{a feast}、とてもおいしい {food} という意味です。",
+"q2": "{“Gochisou” means a feast}、つまりとてもおいしい料理。",
+"q3": "{“Gochisou” means a} ごうかな食事、{or very good food.}"
+},
+{
+"q1": "「そうそう」を「ごちそう」に {changing} ことで、{a fun new title} になっています。",
+"q2": "{Changing “sousou” to “gochisou”}、楽しい新しい題になります。",
+"q3": "{Changing “sousou” to “gochisou” makes a fun new} 題。"
+}
+]
+},
+{
+"id": "20261001-toystory5-box-office",
+"added": "2026-10-01T18:00",
+"cat": "movie",
+"level": 2,
+"title": "『トイ・ストーリー5』興行収入130億円、ピクサー歴代1位",
+"summary": "『トイ・ストーリー5』の興行収入が130億円を突破し、ピクサー・アニメーションの歴代1位になりました。ディズニーの公式アカウントが、見てくれた人にお礼を伝えています。",
+"post": {
+"url": "https://x.com/DisneyStudioJ_A/status/2105583501777215828",
+"account": "DisneyStudioJ_A",
+"name": "ディズニー・スタジオ（アニメーション）公式",
+"date": "2026-10-01",
+"likes": 1618
+},
+"lines": [
+{
+"en": "Toy Story 5 is a huge hit in Japan.",
+"ja": "『トイ・ストーリー5』が、日本で大ヒットしています。",
+"mix": "『トイ・ストーリー5』が、日本で {huge hit} です。"
+},
+{
+"en": "It has made over 13 billion yen.",
+"ja": "興行収入は130億円を突破しました。",
+"mix": "興行収入は {13 billion yen} を突破しました。"
+},
+{
+"en": "It is now Pixar's No. 1 movie of all time in Japan.",
+"ja": "日本で、ピクサー作品の歴代1位になりました。",
+"mix": "日本で、ピクサー作品の {No. 1 of all time} になりました。"
+},
+{
+"en": "The official account thanked everyone who watched it.",
+"ja": "公式アカウントは、見てくれたみなさんにお礼を伝えています。",
+"mix": "公式アカウントは、見てくれたみなさんに {thanks} を伝えています。"
+}
+],
+"words": [
+{
+"w": "huge",
+"ja": "とても大きい",
+"note": "a huge hit ＝ 大ヒット。ポストの「大ヒット」。"
+},
+{
+"w": "billion",
+"ja": "10億",
+"note": "130億は 13 billion。"
+},
+{
+"w": "of all time",
+"ja": "歴代の・これまでで",
+"note": "ポストの「史上歴代No.1」。"
+},
+{
+"w": "thank",
+"ja": "お礼を言う",
+"note": "ポストの「ありがとうございます」。過去形は thanked。"
+},
+{
+"w": "everyone",
+"ja": "みんな",
+"note": "everyone は1人として数えるので、動詞は三単現の形。"
+}
+],
+"grammar": {
+"title": "関係代名詞 who「〜する人」",
+"body": "who は、前の「人」を説明する文をつなぎます。everyone who watched it ＝ それを見たみんな。中3で習う形です。",
+"ex": [
+{
+"en": "I have a friend who loves anime.",
+"ja": "私にはアニメが大好きな友だちがいます。"
+},
+{
+"en": "The man who made this movie is famous.",
+"ja": "この映画を作った人は有名です。"
+}
+]
+},
+"quiz": [
+{
+"q": "興行収入はいくらを突破しましたか？",
+"choices": [
+"13億円",
+"130億円",
+"1300億円"
+],
+"a": 1,
+"why": "13 billion yen ＝ 130億円です。"
+},
+{
+"q": "huge の意味は？",
+"choices": [
+"とても大きい",
+"とても古い",
+"とても速い"
+],
+"a": 0,
+"why": "huge は「とても大きい」です。"
+},
+{
+"q": "Thanks to everyone ___ watched it.（見てくれた人）",
+"choices": [
+"where",
+"which",
+"who"
+],
+"a": 2,
+"why": "「人」を説明するときは who を使います。"
+}
+],
+"talk": {
+"q": "Which Toy Story character do you like?",
+"ja": "トイ・ストーリーのキャラで、誰が好きですか？",
+"hint": "I like ___ because ___."
+},
+"grad": [
+{
+"q1": "『トイ・ストーリー5』が、{Japan} で {huge hit} です。",
+"q2": "{Toy Story 5 is} 日本で {a huge hit}。",
+"q3": "{Toy Story 5 is a huge hit in} 日本。"
+},
+{
+"q1": "興行収入は {over} {13 billion yen} を突破しました。",
+"q2": "{It has made} 130億円以上を。",
+"q3": "{It has made over} 130億円。"
+},
+{
+"q1": "{Japan} で、{Pixar's} 作品の {No. 1 of all time} になりました。",
+"q2": "{It is now Pixar's No. 1 movie} 日本で歴代の。",
+"q3": "{It is now Pixar's No. 1 movie of all time in} 日本。"
+},
+{
+"q1": "{official account} は、見てくれたみなさんに {thanks} を伝えています。",
+"q2": "{The official account thanked} 見てくれたみなさんに。",
+"q3": "{The official account thanked everyone who} 見てくれた。"
+}
+]
+},
+{
+"id": "20261001-edgerunners2-preview",
+"added": "2026-10-01T17:13",
+"cat": "anime",
+"level": 2,
+"title": "『エッジランナーズ2』試写会の感想「のっけから衝撃」",
+"summary": "『サイバーパンク エッジランナーズ2』の試写会に招待されたおついちさんの感想が話題です。群像劇とナイトシティがぴったり合い、トリガーらしさも全開で、最初から衝撃だったそうです。配信は10月20日から。",
+"post": {
+"url": "https://x.com/otsuichich/status/2105571919357792386",
+"account": "otsuichich",
+"name": "おついち",
+"date": "2026-10-01",
+"likes": 1275
+},
+"lines": [
+{
+"en": "Otsuichi was invited to a preview screening of Cyberpunk: Edgerunners 2.",
+"ja": "おついちさんが、『サイバーパンク エッジランナーズ2』の試写会に招待されました。",
+"mix": "おついちさんが、『エッジランナーズ2』の {preview screening} に招待されました。"
+},
+{
+"en": "They said the many characters and Night City fit together perfectly.",
+"ja": "たくさんの登場人物の物語と「ナイトシティ」が、ぴったり合っていたそうです。",
+"mix": "たくさんの登場人物の物語と「ナイトシティ」が、{fit together} していたそうです。"
+},
+{
+"en": "Trigger's style was at full power, too.",
+"ja": "トリガーらしさも全開だったそうです。",
+"mix": "トリガーらしさも {full power} だったそうです。"
+},
+{
+"en": "It was a big shock from the very start.",
+"ja": "最初から、ものすごい衝撃だったそうです。",
+"mix": "最初から、ものすごい {shock} だったそうです。"
+},
+{
+"en": "They can't wait to watch it from October 20.",
+"ja": "10月20日からの配信が待ちきれないそうです。",
+"mix": "10月20日からの配信が待ちきれない（{can't wait}）そうです。"
+}
+],
+"words": [
+{
+"w": "preview screening",
+"ja": "試写会",
+"note": "ポストの「試写会」。公開前に見る上映会です。"
+},
+{
+"w": "invite",
+"ja": "招待する",
+"note": "ポストの「ご招待いただきました」は was invited。"
+},
+{
+"w": "fit together",
+"ja": "ぴったり合う",
+"note": "ポストの「噛み合いすぎる」。"
+},
+{
+"w": "shock",
+"ja": "衝撃",
+"note": "ポストの「脳みそ焼き切られそうな衝撃」をやさしく言いかえました。"
+},
+{
+"w": "can't wait to ~",
+"ja": "〜するのが待ちきれない",
+"note": "ポストの「待ちきれません」。"
+}
+],
+"grammar": {
+"title": "can't wait to ~「〜するのが待ちきれない」",
+"body": "can't wait のあとに to ＋ 動詞の原形を置くと「〜するのが待ちきれない（楽しみでしかたない）」という意味になります。",
+"ex": [
+{
+"en": "I can't wait to see the movie.",
+"ja": "その映画を見るのが待ちきれません。"
+},
+{
+"en": "She can't wait to read the new volume.",
+"ja": "彼女は新刊を読むのが待ちきれません。"
+}
+]
+},
+"quiz": [
+{
+"q": "配信はいつからですか？",
+"choices": [
+"10月2日",
+"10月20日",
+"10月30日"
+],
+"a": 1,
+"why": "5文目に from October 20 とあります。"
+},
+{
+"q": "shock の意味は？",
+"choices": [
+"衝撃",
+"喜び",
+"眠気"
+],
+"a": 0,
+"why": "shock は「衝撃」です。"
+},
+{
+"q": "I can't wait ___ watch it.（見るのが待ちきれない）",
+"choices": [
+"at",
+"for",
+"to"
+],
+"a": 2,
+"why": "can't wait のあとは to ＋ 動詞の原形です。"
+}
+],
+"talk": {
+"q": "What anime are you waiting for now?",
+"ja": "いま、楽しみに待っているアニメは何ですか？",
+"hint": "I'm waiting for ___. I can't wait to watch it!"
+},
+"grad": [
+{
+"q1": "おついちさんが、『エッジランナーズ2』の {preview screening} に {invited} されました。",
+"q2": "{Otsuichi was invited to} 『エッジランナーズ2』の試写会に。",
+"q3": "{Otsuichi was invited to a preview screening of} 『エッジランナーズ2』。"
+},
+{
+"q1": "{many characters} の物語と「ナイトシティ」が、{fit together} していたそうです。",
+"q2": "{They said} たくさんの登場人物と「ナイトシティ」が {fit together perfectly}。",
+"q3": "{They said the many characters and Night City fit together} ぴったり。"
+},
+{
+"q1": "{Trigger's style} も {full power} だったそうです。",
+"q2": "{Trigger's style was} 全開だった、{too}。",
+"q3": "{Trigger's style was at} 全開, {too.}"
+},
+{
+"q1": "{from the very start}、ものすごい {shock} だったそうです。",
+"q2": "{It was a big shock} 最初から。",
+"q3": "{It was a big shock from the} 最初。"
+},
+{
+"q1": "{October 20} からの配信が {can't wait} だそうです。",
+"q2": "{They can't wait to watch it} 10月20日から。",
+"q3": "{They can't wait to watch it from} 10月20日。"
+}
+]
+},
+{
+"id": "20261001-precure-escape-game",
+"added": "2026-10-01T16:00",
+"cat": "anime",
+"level": 2,
+"title": "「名探偵プリキュア！」とリアル脱出ゲームがコラボ",
+"summary": "アニメ「名探偵プリキュア！」とリアル脱出ゲームのコラボイベントが開かれます。東京は11月27日から、大阪は12月5日からで、プリキュアといっしょに謎を解いていきます。",
+"post": {
+"url": "https://x.com/comic_natalie/status/2105553401434259917",
+"account": "comic_natalie",
+"name": "コミックナタリー",
+"date": "2026-10-01",
+"likes": 1131
+},
+"lines": [
+{
+"en": "The anime Detective Precure! is teaming up with Real Escape Game.",
+"ja": "アニメ「名探偵プリキュア！」が、リアル脱出ゲームとコラボします。",
+"mix": "アニメ「名探偵プリキュア！」が、リアル脱出ゲームと {team up} します。"
+},
+{
+"en": "You and the Precure team solve puzzles together.",
+"ja": "プリキュアのチームといっしょに、謎を解きます。",
+"mix": "プリキュアのチームといっしょに、{puzzles} を {solve} します。"
+},
+{
+"en": "In the story, someone steals a treasure box.",
+"ja": "物語の中で、だれかが宝箱を盗んでしまいます。",
+"mix": "物語の中で、だれかが {treasure box} を盗んでしまいます。"
+},
+{
+"en": "You can play with as many people as you like.",
+"ja": "好きなだけ多くの人といっしょに遊べます。",
+"mix": "好きなだけ多くの {people} といっしょに {play} できます。"
+},
+{
+"en": "Children in elementary school or younger can join too.",
+"ja": "小学生以下の子どもも参加できます。",
+"mix": "小学生以下の {children} も {join} できます。"
+},
+{
+"en": "It starts on November 27 in Tokyo and December 5 in Osaka.",
+"ja": "東京では11月27日から、大阪では12月5日から始まります。",
+"mix": "東京では {November 27} から、大阪では {December 5} から始まります。"
+}
+],
+"words": [
+{
+"w": "team up",
+"ja": "協力する・組む",
+"note": "ポストの「×（コラボ）」や「協力して」を team up で表しました。"
+},
+{
+"w": "puzzle",
+"ja": "なぞ・パズル",
+"note": "「謎解き」は solve puzzles と言えます。"
+},
+{
+"w": "solve",
+"ja": "解く・解決する",
+"note": "ポストの「はなまる解決」の「解決」です。"
+},
+{
+"w": "treasure box",
+"ja": "宝箱",
+"note": "物語で盗まれてしまう「宝箱」。treasure は「宝物」です。"
+},
+{
+"w": "steal",
+"ja": "盗む",
+"note": "過去形は stole。someone steals 〜 で「だれかが〜を盗む」。"
+}
+],
+"grammar": {
+"title": "as ~ as「同じくらい〜」",
+"body": "as ＋ 形容詞 ＋ as 〜 で「〜と同じくらい…」。as many ＋ 名詞 ＋ as you like なら「好きなのと同じくらいたくさんの〜」、つまり「好きなだけたくさんの〜」になります。",
+"ex": [
+{
+"en": "Ken is as tall as his father.",
+"ja": "ケンはお父さんと同じくらいの背の高さです。"
+},
+{
+"en": "You can read as many books as you like.",
+"ja": "好きなだけたくさん本を読めます。"
+}
+]
+},
+"quiz": [
+{
+"q": "東京で始まるのはいつですか？",
+"choices": [
+"12月5日",
+"10月10日",
+"11月27日"
+],
+"a": 2,
+"why": "6文目に November 27 in Tokyo とあります。12月5日は大阪です。"
+},
+{
+"q": "treasure box の意味は？",
+"choices": [
+"おもちゃ箱",
+"宝箱",
+"お弁当箱"
+],
+"a": 1,
+"why": "treasure は「宝物」。treasure box で「宝箱」です。"
+},
+{
+"q": "You can play with as many people ___ you like.",
+"choices": [
+"as",
+"than",
+"so"
+],
+"a": 0,
+"why": "as many 〜 as you like で「好きなだけたくさんの〜」。as と as でセットです。"
+}
+],
+"talk": {
+"q": "Do you like puzzle games?",
+"ja": "謎解きゲームは好きですか？",
+"hint": "Yes, I do. I like ___. / Not really, but I want to try one."
+},
+"grad": [
+{
+"q1": "{The anime}「名探偵プリキュア！」が、{Real Escape Game} と {team up} します。",
+"q2": "{The anime}「名探偵プリキュア！」{is teaming up with} リアル脱出ゲーム。",
+"q3": "{The anime} 名探偵プリキュア！ {is teaming up with Real Escape Game.}"
+},
+{
+"q1": "{You} は、プリキュアの {team} といっしょに、{puzzles} を解きます。",
+"q2": "{You and the Precure team} いっしょに謎を {solve} します。",
+"q3": "{You and the Precure team solve} 謎 {together.}"
+},
+{
+"q1": "{In the story}、だれかが {treasure box} を {steal} します。",
+"q2": "{In the story, someone steals} 宝箱を。",
+"q3": "{In the story, someone steals a} 宝箱。"
+},
+{
+"q1": "{as you like} 多くの {people} と {play} できます。",
+"q2": "{You can play} 好きなだけ多くの {people} と。",
+"q3": "{You can play with as many} 人 {as you like.}"
+},
+{
+"q1": "{elementary school} 以下の {children} も {join} できます。",
+"q2": "{Children} 小学生以下の {can join too}。",
+"q3": "{Children in} 小学校 {or younger can join too.}"
+},
+{
+"q1": "{in Tokyo} では {November 27} から、大阪では12月5日から {start} します。",
+"q2": "{It starts on November 27 in Tokyo}、大阪では12月5日から。",
+"q3": "{It starts on November 27 in Tokyo and December 5 in} 大阪。"
+}
+]
+},
+{
+"id": "20261001-nakajima-tiff",
+"added": "2026-10-01T14:57",
+"cat": "movie",
+"level": 3,
+"title": "中島健人さん、東京国際映画祭のナビゲーターに",
+"summary": "中島健人さんが、第39回東京国際映画祭のフェスティバル・ナビゲーターに決まりました。映画祭は10月26日から11月4日まで、東京の日比谷・有楽町・丸の内・銀座エリアで開かれます。",
+"post": {
+"url": "https://x.com/eiga_natalie/status/2105537484553965885",
+"account": "eiga_natalie",
+"name": "映画ナタリー",
+"date": "2026-10-01",
+"likes": 2040
+},
+"lines": [
+{
+"en": "Kento Nakajima became the navigator of the Tokyo International Film Festival.",
+"ja": "中島健人さんが、東京国際映画祭のナビゲーターになりました。",
+"mix": "中島健人さんが、東京国際映画祭の {navigator} になりました。"
+},
+{
+"en": "He laughed and said, \"Is a flashy idol like me OK?\"",
+"ja": "「ぼくみたいなギラギラのアイドルでいいのかな？」と笑って話しました。",
+"mix": "「ぼくみたいな {flashy} アイドルでいいのかな？」と笑って話しました。"
+},
+{
+"en": "He loves movies very much.",
+"ja": "中島さんは、映画が大好きです。",
+"mix": "中島さんは、{movies} が大好きです。"
+},
+{
+"en": "He says it is a great joy to join the festival.",
+"ja": "「この映画祭に参加できるのは、とてもうれしい」と話しています。",
+"mix": "「この映画祭に {join} できるのは、とてもうれしい」と話しています。"
+},
+{
+"en": "He says the festival connects Tokyo and the world through movies.",
+"ja": "「映画祭は、映画を通して東京と世界をつなぐ場所だ」と話しています。",
+"mix": "「映画祭は、映画を通して東京と世界を {connect} する場所だ」と話しています。"
+},
+{
+"en": "The 39th festival is from October 26 to November 4.",
+"ja": "第39回の映画祭は、10月26日から11月4日まで開かれます。",
+"mix": "第39回の {festival} は、10月26日から11月4日まで開かれます。"
+}
+],
+"words": [
+{
+"w": "navigator",
+"ja": "案内役・ナビゲーター",
+"note": "ポストの「フェスティバル・ナビゲーター」。navigate は「案内する」です。"
+},
+{
+"w": "flashy",
+"ja": "はでな・ギラギラした",
+"note": "中島さんの「ギラギラのアイドル」を a flashy idol で表しました。"
+},
+{
+"w": "joy",
+"ja": "喜び",
+"note": "「とてもうれしく思っています」を a great joy で表しました。"
+},
+{
+"w": "connect",
+"ja": "つなぐ",
+"note": "「東京と世界が映画を通してつながる場所」を connects Tokyo and the world で表しました。"
+},
+{
+"w": "festival",
+"ja": "お祭り・〜祭",
+"note": "film festival で「映画祭」です。"
+}
+],
+"grammar": {
+"title": "It is ~ to ...「…するのは〜だ」",
+"body": "It is ＋ 形容詞（または名詞）＋ to ＋ 動詞 で「…するのは〜だ」。It は仮の主語で、本当の主語は to のあとの「…すること」です。He says it is ~ to ... なら「…するのは〜だと言っている」。",
+"ex": [
+{
+"en": "It is fun to watch movies with friends.",
+"ja": "友だちと映画を見るのは楽しいです。"
+},
+{
+"en": "It is easy to read this manga.",
+"ja": "このマンガを読むのはかんたんです。"
+}
+]
+},
+"quiz": [
+{
+"q": "第39回東京国際映画祭はいつから開かれますか？",
+"choices": [
+"10月1日",
+"10月26日",
+"11月4日"
+],
+"a": 1,
+"why": "6文目に from October 26 to November 4 とあります。"
+},
+{
+"q": "connect の意味は？",
+"choices": [
+"つなぐ",
+"わける",
+"かくす"
+],
+"a": 0,
+"why": "connect は「つなぐ」。connects Tokyo and the world で「東京と世界をつなぐ」です。"
+},
+{
+"q": "It is a great joy ___ join the festival.（映画祭に参加するのは大きな喜びです）",
+"choices": [
+"for",
+"at",
+"to"
+],
+"a": 2,
+"why": "It is 〜 to ＋ 動詞 で「…するのは〜だ」です。"
+}
+],
+"talk": {
+"q": "Do you want to go to a film festival?",
+"ja": "映画祭に行ってみたいですか？",
+"hint": "Yes, I do. I want to see ___. / Not really. I like to watch movies at home."
+},
+"grad": [
+{
+"q1": "中島健人さんが、{Tokyo International Film Festival} の {navigator} になりました。",
+"q2": "{Kento Nakajima became the navigator} 東京国際映画祭の。",
+"q3": "{Kento Nakajima became the navigator of the} 東京国際映画祭。"
+},
+{
+"q1": "「ぼくみたいな {flashy idol} で {OK} かな？」と {laughed} して話しました。",
+"q2": "{He laughed and said}、「ぼくみたいな {flashy idol} でいいのかな？」",
+"q3": "{He laughed and said, \"Is a} ギラギラの {idol like me OK?\"}"
+},
+{
+"q1": "{He} は {movies} が {very much} 好きです。",
+"q2": "{He loves} 映画がとても。",
+"q3": "{He loves} 映画 {very much.}"
+},
+{
+"q1": "「この {festival} に {join} できるのは {great joy} だ」と話しています。",
+"q2": "{He says it is a great joy} 映画祭に参加できるのは。",
+"q3": "{He says it is a great} 喜び {to join the festival.}"
+},
+{
+"q1": "{the festival} は、{movies} を通して東京と {the world} を {connect} する場所だと話しています。",
+"q2": "{He says the festival connects} 東京と世界を、映画を通して。",
+"q3": "{He says the festival connects Tokyo and the world} 映画を通して。"
+},
+{
+"q1": "第39回の {festival} は、{October 26} から11月4日まで開かれます。",
+"q2": "{The 39th festival is} 10月26日から11月4日まで。",
+"q3": "{The 39th festival is from October 26 to} 11月4日。"
+}
+]
+},
+{
+"id": "20261001-dragonball-beerus",
+"added": "2026-10-01T12:00",
+"cat": "anime",
+"level": 1,
+"title": "『ドラゴンボール超 ビルス』10月15日からNetflixで配信",
+"summary": "アニメ『ドラゴンボール超 ビルス』が、10月15日からNetflix Japanで配信されます。破壊神ビルスとフリーザ、さらに地球にせまる新しい脅威が、悟空たちの前にあらわれます。",
+"post": {
+"url": "https://x.com/NetflixJP/status/2105492902730137623",
+"account": "NetflixJP",
+"name": "Netflix Japan",
+"date": "2026-10-01",
+"likes": 3004
+},
+"lines": [
+{
+"en": "The anime Dragon Ball Super: Beerus is coming to Netflix Japan.",
+"ja": "アニメ『ドラゴンボール超 ビルス』が、Netflix Japanにやってきます。",
+"mix": "アニメ『ドラゴンボール超 ビルス』が、Netflix Japanに {come} します。"
+},
+{
+"en": "If you have Netflix, you can watch it from October 15.",
+"ja": "Netflixに入っていれば、10月15日から見ることができます。",
+"mix": "Netflixに入っていれば、{October 15} から {watch} できます。"
+},
+{
+"en": "Beerus is the God of Destruction.",
+"ja": "ビルスは破壊神です。",
+"mix": "ビルスは {God of Destruction}（破壊神）です。"
+},
+{
+"en": "Beerus and Frieza stand in front of Goku and his friends.",
+"ja": "ビルスとフリーザが、悟空たちの前に立ちはだかります。",
+"mix": "ビルスとフリーザが、悟空と {his friends} の前に立ちはだかります。"
+},
+{
+"en": "And a new danger is coming to Earth!",
+"ja": "そして、新たな脅威が地球にせまってきます！",
+"mix": "そして、新たな {danger} が地球にせまってきます！"
+}
+],
+"words": [
+{
+"w": "come to",
+"ja": "〜にやってくる",
+"note": "ポストの「配信スタート」を is coming to Netflix Japan で表しました。"
+},
+{
+"w": "watch",
+"ja": "見る",
+"note": "アニメや映画、配信を「見る」は watch です。"
+},
+{
+"w": "God of Destruction",
+"ja": "破壊神",
+"note": "ポストの「破壊神ビルス」。destruction は「破壊」です。"
+},
+{
+"w": "in front of",
+"ja": "〜の前に",
+"note": "ポストの「立ちはだかる」を stand in front of 〜 で表しました。"
+},
+{
+"w": "danger",
+"ja": "危険・脅威",
+"note": "ポストの「新たな脅威」は a new danger です。"
+}
+],
+"grammar": {
+"title": "If ~「もし〜なら」",
+"body": "If ＋ 主語 ＋ 動詞 で「もし〜なら」という条件を表します。If のまとまりが前に来るときは、コンマ（,）のあとに言いたいことを続けます。",
+"ex": [
+{
+"en": "If you are free, let's watch anime together.",
+"ja": "もしひまなら、いっしょにアニメを見ましょう。"
+},
+{
+"en": "If it rains, I will stay home.",
+"ja": "もし雨がふったら、家にいます。"
+}
+]
+},
+"quiz": [
+{
+"q": "配信が始まるのはいつですか？",
+"choices": [
+"10月1日",
+"10月5日",
+"10月15日"
+],
+"a": 2,
+"why": "2文目に from October 15 とあります。"
+},
+{
+"q": "danger の意味は？",
+"choices": [
+"危険・脅威",
+"友だち",
+"宝物"
+],
+"a": 0,
+"why": "danger は「危険」。a new danger で「新たな脅威」です。"
+},
+{
+"q": "___ you have Netflix, you can watch it.（もしNetflixに入っていれば）",
+"choices": [
+"But",
+"If",
+"So"
+],
+"a": 1,
+"why": "「もし〜なら」は If ＋ 主語 ＋ 動詞 です。"
+}
+],
+"talk": {
+"q": "Who is your favorite Dragon Ball character?",
+"ja": "ドラゴンボールでいちばん好きなキャラクターはだれですか？",
+"hint": "My favorite is ___ because he is ___."
+},
+"grad": [
+{
+"q1": "{The anime}『ドラゴンボール超 ビルス』が、Netflix Japanに {come} します。",
+"q2": "{The anime}『ドラゴンボール超 ビルス』{is coming to} Netflix Japan。",
+"q3": "{The anime} ドラゴンボール超 ビルス {is coming to Netflix Japan.}"
+},
+{
+"q1": "{If} Netflixに入っていれば、{October 15} から {watch} できます。",
+"q2": "{If you have Netflix}、10月15日から {watch} できます。",
+"q3": "{If you have Netflix, you can watch it from} 10月15日。"
+},
+{
+"q1": "{Beerus} は破壊の {God} です。",
+"q2": "{Beerus is} 破壊の {God}。",
+"q3": "{Beerus is the God of} 破壊。"
+},
+{
+"q1": "ビルスとフリーザが、{Goku and his friends} の前に {stand} します。",
+"q2": "{Beerus and Frieza stand} 悟空たちの前に。",
+"q3": "{Beerus and Frieza stand in front of Goku and his} 仲間。"
+},
+{
+"q1": "{And}、{new danger} が {Earth} にせまってきます！",
+"q2": "そして、{a new danger is coming} 地球に！",
+"q3": "{And a new} 脅威 {is coming to Earth!}"
 }
 ]
 },
@@ -3722,6 +5871,164 @@ window.LESSONS = [
 ]
 },
 {
+"id": "20260925-haikyu-festival-shop",
+"added": "2026-09-25T18:00",
+"cat": "anime",
+"series": "haikyu",
+"level": 2,
+"title": "わくわく文化祭のポップアップショップ開催決定",
+"summary": "「ハイキュー!! わくわく文化祭 POP UP SHOP by Production I.G」の開催が決まりました。キャラクターたちが文化祭を楽しむ描き下ろしビジュアルが見どころで、東京・大阪・岐阜・群馬の4会場で順番に開かれます。",
+"post": {
+"url": "https://x.com/animehaikyu_com/status/2103409178291388867",
+"account": "animehaikyu_com",
+"name": "アニメ「ハイキュー!!」",
+"date": "2026-09-25",
+"likes": 23089
+},
+"lines": [
+{
+"en": "A Haikyu!! pop-up shop is coming!",
+"ja": "「ハイキュー!!」のポップアップショップがやってきます！",
+"mix": "「ハイキュー!!」の {pop-up shop} がやってきます！"
+},
+{
+"en": "Its name means \"Exciting School Festival Pop-Up Shop.\"",
+"ja": "名前は「わくわく文化祭 POP UP SHOP」です。",
+"mix": "{name} は「わくわく文化祭 POP UP SHOP」です。"
+},
+{
+"en": "Check out the newly drawn picture!",
+"ja": "描き下ろしのビジュアルに大注目です！",
+"mix": "{newly drawn} のビジュアルに大注目です！"
+},
+{
+"en": "The characters enjoy a school festival in their own ways.",
+"ja": "キャラクターたちは、思い思いに文化祭を楽しんでいます。",
+"mix": "キャラクターたちは、思い思いに {school festival} を楽しんでいます。"
+},
+{
+"en": "They all look so happy!",
+"ja": "みんな、とても楽しそうです！",
+"mix": "みんな、とても {happy} そうです！"
+},
+{
+"en": "The shop opens in Tokyo, Osaka, Gifu, and Gunma, one by one.",
+"ja": "お店は、東京・大阪・岐阜・群馬の4会場で、順番に開かれます。",
+"mix": "お店は、東京・大阪・岐阜・群馬の4会場で、{one by one} 開かれます。"
+}
+],
+"words": [
+{
+"w": "pop-up shop",
+"ja": "ポップアップショップ",
+"note": "ポストの「POP UP SHOP」。短い期間だけ開くお店のことです。"
+},
+{
+"w": "school festival",
+"ja": "文化祭",
+"note": "ポストの「文化祭」は school festival と言えます。"
+},
+{
+"w": "exciting",
+"ja": "わくわくする",
+"note": "「わくわく文化祭」の「わくわく」は exciting で表せます。"
+},
+{
+"w": "in their own ways",
+"ja": "思い思いに・それぞれのやり方で",
+"note": "ポストの「思い思いに文化祭を楽しむ」は enjoy a school festival in their own ways。"
+},
+{
+"w": "one by one",
+"ja": "順番に・ひとつずつ",
+"note": "ポストの「順次開催」は open one by one と言えます。"
+}
+],
+"grammar": {
+"title": "look ＋ 形容詞「〜に見える」",
+"body": "look のあとに形容詞（happy, tired など）を置くと「〜に見える・〜そうだ」という意味になります。主語が he / she / it のときは looks です。They all look so happy! で「みんなとても楽しそう！」です。",
+"ex": [
+{
+"en": "You look tired today.",
+"ja": "今日は疲れているように見えますね。"
+},
+{
+"en": "This cake looks delicious.",
+"ja": "このケーキはおいしそうです。"
+}
+]
+},
+"quiz": [
+{
+"q": "ポップアップショップは何か所で開かれますか？",
+"choices": [
+"2か所",
+"4か所",
+"6か所"
+],
+"a": 1,
+"why": "6文目に Tokyo, Osaka, Gifu, and Gunma の4つが出てきます。"
+},
+{
+"q": "one by one の意味は？",
+"choices": [
+"一度に全部",
+"1つだけ",
+"順番に・ひとつずつ"
+],
+"a": 2,
+"why": "one by one は「順番に・ひとつずつ」。ポストの「順次開催」にあたります。"
+},
+{
+"q": "They all ___ so happy!（とても楽しそうに見えます）",
+"choices": [
+"look",
+"see",
+"watch"
+],
+"a": 0,
+"why": "「〜に見える」は look ＋ 形容詞です。"
+}
+],
+"talk": {
+"q": "What did you do at your school festival?",
+"ja": "学生のころ、文化祭で何をしましたか？",
+"hint": "My class made a ___. It was fun!"
+},
+"grad": [
+{
+"q1": "「ハイキュー!!」の {pop-up shop} が {coming}！",
+"q2": "{A Haikyu!! pop-up shop} がやってきます！",
+"q3": "{A} ハイキュー!! {pop-up shop is coming!}"
+},
+{
+"q1": "{Its name} は「わくわく {School Festival} POP UP SHOP」です。",
+"q2": "{Its name means}「わくわく文化祭 POP UP SHOP」。",
+"q3": "{Its name means}「わくわく {School Festival Pop-Up Shop}」。"
+},
+{
+"q1": "{newly drawn} の {picture} に大注目です！",
+"q2": "{Check out} 描き下ろしのビジュアル！",
+"q3": "{Check out the} 描き下ろしの {picture!}"
+},
+{
+"q1": "{The characters} は、思い思いに {school festival} を {enjoy}。",
+"q2": "{The characters enjoy} 文化祭を、思い思いに。",
+"q3": "{The characters enjoy a school festival} 思い思いに。"
+},
+{
+"q1": "みんな、とても {happy} そうに {look}！",
+"q2": "{They all} とても楽しそうに {look}！",
+"q3": "{They all look so} 楽しそう！"
+},
+{
+"q1": "{The shop} は、東京・大阪・岐阜・群馬の4会場で、{one by one} {opens}。",
+"q2": "{The shop opens} 東京・大阪・岐阜・群馬で、順番に。",
+"q3": "{The shop opens in Tokyo, Osaka, Gifu, and Gunma,} 順番に。"
+}
+]
+},
+{
 "id": "20260924-medalist-rerun",
 "added": "2026-09-24T22:00",
 "cat": "anime",
@@ -3871,6 +6178,164 @@ window.LESSONS = [
 "q1": "{movie} の前に、{fans} は {story} を {look back on} できます。",
 "q2": "映画の前に、{fans can look back on the story}。",
 "q3": "{Fans can} 振り返る {the story before the movie.}"
+}
+]
+},
+{
+"id": "20260924-medalist-inori-pv",
+"added": "2026-09-24T19:00",
+"cat": "anime",
+"series": "medalist",
+"level": 1,
+"title": "劇場版を前に、結束いのりのキャラクターPV公開",
+"summary": "劇場版『メダリスト』の公開に向けて、これまでの物語を振り返るキャラクターPVの「結束いのり編」（声：春瀬なつみ）が公開されました。映画は2027年2月19日（金）に公開されます。",
+"post": {
+"url": "https://x.com/medalist_PR/status/2103061891119530188",
+"account": "medalist_PR",
+"name": "劇場版『メダリスト』公式",
+"date": "2026-09-24",
+"likes": 3025
+},
+"lines": [
+{
+"en": "A new character promo video for Medalist is out.",
+"ja": "『メダリスト』の新しいキャラクターPVが公開されました。",
+"mix": "『メダリスト』の新しいキャラクター {promo video} が公開されました。"
+},
+{
+"en": "It looks back on the story so far, before the movie.",
+"ja": "映画の前に、これまでの物語を振り返る映像です。",
+"mix": "映画の前に、これまでの物語を {look back on} する映像です。"
+},
+{
+"en": "This video is about Inori Yuitsuka.",
+"ja": "今回の映像は、結束いのり編です。",
+"mix": "今回の {video} は、結束いのり編です。"
+},
+{
+"en": "Natsumi Haruse is the voice of Inori.",
+"ja": "いのりの声を担当するのは、春瀬なつみさんです。",
+"mix": "いのりの {voice} を担当するのは、春瀬なつみさんです。"
+},
+{
+"en": "Inori and her coach Tsukasa have been a team since they met.",
+"ja": "いのりとコーチの司は、出会ってからずっとタッグを組んでいます。",
+"mix": "いのりとコーチの司は、出会ってからずっと {team} を組んでいます。"
+},
+{
+"en": "The movie opens on Friday, February 19, 2027.",
+"ja": "映画は2027年2月19日（金）に公開されます。",
+"mix": "映画は2027年2月19日（金）に {open} します。"
+}
+],
+"words": [
+{
+"w": "promo video",
+"ja": "宣伝用の映像・PV",
+"note": "ポストの「PV」は promotion video の略で、日本でよく使う言い方です。英語では promo video や trailer と言うのがふつうです。"
+},
+{
+"w": "look back on",
+"ja": "〜を振り返る",
+"note": "ポストの「振り返る」。look back は「後ろを見る」で、そこから「過去を思い返す」の意味になります。"
+},
+{
+"w": "so far",
+"ja": "これまで・今までのところ",
+"note": "ポストの「これまで」は so far。the story so far で「これまでの物語」です。"
+},
+{
+"w": "team",
+"ja": "チーム・コンビ",
+"note": "公式サイトの「タッグを組む」は be a team / team up で表せます。"
+},
+{
+"w": "open",
+"ja": "（映画が）公開される",
+"note": "ポストの「ROADSHOW（ロードショー）」は、日本では「公開」の意味で使われます。英語では The movie opens on ～. と言うのがふつうです。"
+}
+],
+"grammar": {
+"title": "現在完了（継続）have ＋ 過去分詞 ＋ for / since",
+"body": "「（前から今まで）ずっと〜している」は have / has ＋ 過去分詞 で表します。どのくらいの長さかは for（for ten years）、いつからかは since（since 2020 / since they met）で言います。be動詞の過去分詞は been で、have been a team ＝ ずっとチームでいる、です。",
+"ex": [
+{
+"en": "I have lived in Tokyo for ten years.",
+"ja": "私は10年間ずっと東京に住んでいます。"
+},
+{
+"en": "She has loved anime since she was a child.",
+"ja": "彼女は子どものころからずっとアニメが大好きです。"
+}
+]
+},
+"quiz": [
+{
+"q": "今回のキャラクターPVは、だれの回ですか？",
+"choices": [
+"明浦路司",
+"結束いのり",
+"狼嵜光"
+],
+"a": 1,
+"why": "3文目に This video is about Inori Yuitsuka. とあります。"
+},
+{
+"q": "so far の意味は？",
+"choices": [
+"これまで・今までのところ",
+"とても遠くに",
+"もうすぐ"
+],
+"a": 0,
+"why": "so far は「これまで」。the story so far で「これまでの物語」です。"
+},
+{
+"q": "Inori and Tsukasa have ___ a team since they met.（出会ってからずっとチーム）",
+"choices": [
+"be",
+"being",
+"been"
+],
+"a": 2,
+"why": "現在完了は have ＋ 過去分詞。be の過去分詞は been です。"
+}
+],
+"talk": {
+"q": "How long have you liked Medalist?",
+"ja": "『メダリスト』はいつごろから好きですか？",
+"hint": "I have liked it for ___ years. / I have liked it since ___."
+},
+"grad": [
+{
+"q1": "『メダリスト』の {new} キャラクター {promo video} が公開されました。",
+"q2": "『メダリスト』の {new character promo video} が {out} です。",
+"q3": "{A new character promo video for}『メダリスト』{is out.}"
+},
+{
+"q1": "{movie} の前に、{so far} の {story} を振り返る映像です。",
+"q2": "{It looks back on} これまでの物語を、{before the movie}。",
+"q3": "{It} 振り返る {the story so far, before the movie.}"
+},
+{
+"q1": "{This video} は、結束いのり編です。",
+"q2": "{This video is about} 結束いのり。",
+"q3": "{This} 映像 {is about Inori Yuitsuka.}"
+},
+{
+"q1": "{Inori} の {voice} を担当するのは、{Natsumi Haruse} さんです。",
+"q2": "春瀬なつみさんが {the voice of Inori} です。",
+"q3": "{Natsumi Haruse is the} 声 {of Inori.}"
+},
+{
+"q1": "{Inori} と {coach} の司は、出会ってからずっと {team} を組んでいます。",
+"q2": "{Inori and her coach Tsukasa} は、出会ってからずっとタッグを組んでいます。",
+"q3": "{Inori and her coach Tsukasa have been a} タッグ {since they met.}"
+},
+{
+"q1": "{The movie} は2027年2月19日（{Friday}）に {opens}。",
+"q2": "{The movie opens} 2027年2月19日（金）に。",
+"q3": "{The movie opens on} 金曜日{, February 19, 2027.}"
 }
 ]
 },
@@ -4029,6 +6494,164 @@ window.LESSONS = [
 "q1": "どうぞ、{them} を {look forward to} してくださいね！",
 "q2": "どうぞ {look forward to them}！",
 "q3": "{Please look forward to them} ね！"
+}
+]
+},
+{
+"id": "20260919-medalist-suzu",
+"added": "2026-09-19T12:00",
+"cat": "anime",
+"series": "medalist",
+"level": 2,
+"title": "劇場版メダリスト、鹿本すずの新ビジュアル公開",
+"summary": "劇場版『メダリスト』の新しいビジュアルとして、鹿本すず（声：伊藤彩沙）が公開されました。公式サイトによると、すずはいのりと同じ小学6年生で、近畿ブロック大会を100点を超える成績で制し、全日本ノービス大会への出場を決めています。",
+"post": {
+"url": "https://x.com/medalist_PR/status/2101144250884776184",
+"account": "medalist_PR",
+"name": "劇場版『メダリスト』公式",
+"date": "2026-09-19",
+"likes": 6365
+},
+"lines": [
+{
+"en": "A new visual for the Medalist movie shows Suzu Shikamoto.",
+"ja": "劇場版『メダリスト』の新しいビジュアルには、鹿本すずが描かれています。",
+"mix": "劇場版『メダリスト』の新しい {visual} には、鹿本すずが描かれています。"
+},
+{
+"en": "Ayasa Ito gives Suzu her voice.",
+"ja": "すずの声を担当するのは、伊藤彩沙さんです。",
+"mix": "すずの {voice} を担当するのは、伊藤彩沙さんです。"
+},
+{
+"en": "Suzu is in the sixth grade, like Inori.",
+"ja": "すずは、いのりと同じ小学6年生です。",
+"mix": "すずは、いのりと同じ小学 {sixth grade} です。"
+},
+{
+"en": "She is confident that she is cute, and she always shows it.",
+"ja": "彼女は自分がかわいいと自信を持っていて、いつもそれをアピールしています。",
+"mix": "彼女は自分が {cute} だと自信を持っていて、いつもそれを {show} しています。"
+},
+{
+"en": "She won the Kinki Block Competition with over 100 points.",
+"ja": "近畿ブロック大会では、100点を超える成績で優勝しました。",
+"mix": "近畿ブロック大会では、{over 100 points} の成績で優勝しました。"
+},
+{
+"en": "Now she can skate at the All-Japan Novice Competition.",
+"ja": "これで、全日本ノービス大会に出場できることになりました。",
+"mix": "これで、全日本ノービス大会で {skate} できることになりました。"
+}
+],
+"words": [
+{
+"w": "visual",
+"ja": "ビジュアル・宣伝用のイラスト",
+"note": "ポストの「新ビジュアル」は new visual。映画の宣伝で使う絵や写真のことです。"
+},
+{
+"w": "voice",
+"ja": "声",
+"note": "ポストの「CV.」は character voice の略。give ＋ キャラ ＋ voice で「キャラに声をあてる」と言えます。"
+},
+{
+"w": "confident",
+"ja": "自信がある",
+"note": "公式サイトの「自信があり」。be confident that ～ で「〜だと自信がある」です。"
+},
+{
+"w": "show",
+"ja": "見せる・アピールする",
+"note": "公式サイトの「アピールを欠かさない」は always shows it（いつもそれを見せる）と言えます。"
+},
+{
+"w": "point",
+"ja": "点・得点",
+"note": "公式サイトの「100点越え」は over 100 points。over は「〜を超えて」です。"
+}
+],
+"grammar": {
+"title": "give A B「AにBをあげる」",
+"body": "give のあとに「人（A）」、その次に「もの（B）」を置くと「AにBをあげる・与える」という意味になります。A に代名詞を入れるときは me / her / him の形です。Ayasa Ito gives Suzu her voice. は「伊藤彩沙さんがすずに声を与えている」、つまり「すずの声を担当している」という言い方です。",
+"ex": [
+{
+"en": "My mother gave me a book.",
+"ja": "母は私に本をくれました。"
+},
+{
+"en": "I gave my friend a movie ticket.",
+"ja": "友だちに映画のチケットをあげました。"
+}
+]
+},
+"quiz": [
+{
+"q": "鹿本すずの声を担当するのはだれですか？",
+"choices": [
+"伊藤彩沙さん",
+"春瀬なつみさん",
+"市ノ瀬加那さん"
+],
+"a": 0,
+"why": "2文目に Ayasa Ito gives Suzu her voice. とあります。"
+},
+{
+"q": "confident の意味は？",
+"choices": [
+"こわがっている",
+"つかれている",
+"自信がある"
+],
+"a": 2,
+"why": "confident は「自信がある」。be confident that ～ で「〜だと自信がある」です。"
+},
+{
+"q": "My mother gave ___ a book.（母は私に本をくれました）",
+"choices": [
+"I",
+"me",
+"my"
+],
+"a": 1,
+"why": "give ＋ 人 ＋ もの の「人」に代名詞を入れるときは me の形です。"
+}
+],
+"talk": {
+"q": "What are you confident about?",
+"ja": "あなたが自信を持っていることは何ですか？",
+"hint": "I'm confident about my ___. / I'm good at ___."
+},
+"grad": [
+{
+"q1": "『メダリスト』{movie} の {new visual} には、{Suzu Shikamoto} が描かれています。",
+"q2": "{A new visual for the}『メダリスト』{movie} には、鹿本すずが描かれています。",
+"q3": "{A new visual for the}『メダリスト』{movie shows Suzu Shikamoto.}"
+},
+{
+"q1": "{Ayasa Ito} さんが、{Suzu} に {voice} を与えています。",
+"q2": "{Ayasa Ito gives} すずに {her voice}。",
+"q3": "{Ayasa Ito gives Suzu her} 声。"
+},
+{
+"q1": "{Suzu} は、{Inori} と同じ小学 {sixth grade} です。",
+"q2": "{Suzu is in} 小学6年生、{like Inori}。",
+"q3": "{Suzu is in the} 小学 {sixth grade, like Inori.}"
+},
+{
+"q1": "{She} は自分が {cute} だと自信を持っていて、いつもそれを {show} しています。",
+"q2": "{She is confident that} 自分がかわいい、そしていつも {shows it}。",
+"q3": "{She is} 自信がある {that she is cute, and she always shows it.}"
+},
+{
+"q1": "近畿ブロック {Competition} では、{over 100 points} の成績で {won} しました。",
+"q2": "{She won} 近畿ブロック大会、{with over 100 points}。",
+"q3": "{She won the} 近畿ブロック {Competition with over 100 points.}"
+},
+{
+"q1": "{Now}、全日本ノービス {Competition} で {skate} できることになりました。",
+"q2": "{Now she can skate} 全日本ノービス大会で。",
+"q3": "{Now she can skate at the} 全日本ノービス {Competition.}"
 }
 ]
 },
@@ -4953,6 +7576,322 @@ window.LESSONS = [
 ]
 },
 {
+"id": "20260904-medalist-hikaru",
+"added": "2026-09-04T18:55",
+"cat": "anime",
+"series": "medalist",
+"level": 2,
+"title": "劇場版メダリスト、狼嵜光のビジュアル公開",
+"summary": "劇場版『メダリスト』のキャラクタービジュアル第3弾として、狼嵜光（声：市ノ瀬加那）が公開されました。前年の全日本ノービス大会で金メダルを取った光は、まっすぐ向かってくるいのりをライバルと認めていて、今大会で一緒に競えるのを楽しみにしていました。",
+"post": {
+"url": "https://x.com/medalist_PR/status/2095813116277985373",
+"account": "medalist_PR",
+"name": "劇場版『メダリスト』公式",
+"date": "2026-09-04",
+"likes": 5963
+},
+"lines": [
+{
+"en": "The third character art for the movie shows Hikaru Kamisaki.",
+"ja": "劇場版のキャラクタービジュアル第3弾には、狼嵜光が描かれています。",
+"mix": "劇場版の {character art} 第3弾には、狼嵜光が描かれています。"
+},
+{
+"en": "Kana Ichinose is the voice of Hikaru.",
+"ja": "光の声を担当するのは、市ノ瀬加那さんです。",
+"mix": "光の {voice} を担当するのは、市ノ瀬加那さんです。"
+},
+{
+"en": "Last year, she won the gold medal at the All-Japan Novice Competition.",
+"ja": "彼女は前年の全日本ノービス大会で、金メダルを取りました。",
+"mix": "彼女は前年の全日本ノービス大会で、{gold medal} を取りました。"
+},
+{
+"en": "The official site calls her a \"genius girl.\"",
+"ja": "公式サイトでは、彼女を「天才少女」と呼んでいます。",
+"mix": "公式サイトでは、彼女を「{genius girl}」と呼んでいます。"
+},
+{
+"en": "Hikaru sees Inori as her rival.",
+"ja": "光は、いのりをライバルとして認めています。",
+"mix": "光は、いのりを {rival} として認めています。"
+},
+{
+"en": "She was looking forward to competing with Inori at this event.",
+"ja": "彼女は、今大会でいのりと競い合うことを楽しみにしていました。",
+"mix": "彼女は、今大会でいのりと {compete} することを楽しみにしていました。"
+}
+],
+"words": [
+{
+"w": "genius",
+"ja": "天才",
+"note": "公式サイトの紹介文にある「天才少女」は genius girl と言えます。"
+},
+{
+"w": "official",
+"ja": "公式の",
+"note": "ポストの「公式」は official。official site で「公式サイト」、official account で「公式アカウント」です。"
+},
+{
+"w": "see A as B",
+"ja": "AをBとみなす・認める",
+"note": "ポストの「ライバルとして認め」は see her as a rival で表せます。"
+},
+{
+"w": "compete",
+"ja": "競い合う",
+"note": "ポストの「競い合う」。competition（大会・競争）と同じ仲間のことばです。"
+},
+{
+"w": "look forward to",
+"ja": "〜を楽しみにする",
+"note": "ポストの「楽しみにしていた」は was looking forward to。to のあとは名詞か、動詞の -ing 形（competing）を置きます。"
+}
+],
+"grammar": {
+"title": "call A B「AをBと呼ぶ」",
+"body": "call のあとに「人・もの（A）」、その次に「呼び名（B）」を置くと「AをBと呼ぶ」という意味になります。A に代名詞を入れるときは her / him / me の形です。The official site calls her a \"genius girl.\" ＝ 公式サイトは彼女を「天才少女」と呼んでいます。",
+"ex": [
+{
+"en": "Please call me Ken.",
+"ja": "ケンと呼んでください。"
+},
+{
+"en": "We call this dog Pochi.",
+"ja": "私たちはこの犬をポチと呼んでいます。"
+}
+]
+},
+"quiz": [
+{
+"q": "光は、前年の全日本ノービス大会で何を取りましたか？",
+"choices": [
+"銀メダル",
+"金メダル",
+"銅メダル"
+],
+"a": 1,
+"why": "3文目に won the gold medal とあります。"
+},
+{
+"q": "look forward to の意味は？",
+"choices": [
+"〜を楽しみにする",
+"〜を探す",
+"〜を振り返る"
+],
+"a": 0,
+"why": "look forward to は「〜を楽しみにする」です。"
+},
+{
+"q": "The official site ___ her a \"genius girl.\"（彼女を「天才少女」と呼んでいる）",
+"choices": [
+"says",
+"tells",
+"calls"
+],
+"a": 2,
+"why": "「AをBと呼ぶ」は call A B。主語が the official site なので calls です。"
+}
+],
+"talk": {
+"q": "What are you looking forward to?",
+"ja": "いま楽しみにしていることは何ですか？",
+"hint": "I'm looking forward to ___. / I'm looking forward to the Medalist movie!"
+},
+"grad": [
+{
+"q1": "{movie} の {third character art} には、狼嵜光が描かれています。",
+"q2": "{The third character art for the movie} には、狼嵜光が描かれています。",
+"q3": "{The third character art for the} 劇場版 {shows Hikaru Kamisaki.}"
+},
+{
+"q1": "{Hikaru} の {voice} を担当するのは、{Kana Ichinose} さんです。",
+"q2": "市ノ瀬加那さんが {the voice of Hikaru} です。",
+"q3": "{Kana Ichinose is the} 声 {of Hikaru.}"
+},
+{
+"q1": "{She} は {last year} の全日本ノービス {Competition} で、{gold medal} を取りました。",
+"q2": "{Last year}、彼女は全日本ノービス大会で {won the gold medal}。",
+"q3": "{Last year, she won the gold medal at the} 全日本ノービス {Competition.}"
+},
+{
+"q1": "{official site} では、{her} を「{genius girl}」と呼んでいます。",
+"q2": "{The official site calls her}「天才少女」。",
+"q3": "{The official site calls her a} \"天才 {girl.\"}"
+},
+{
+"q1": "{Hikaru} は、{Inori} を {rival} として認めています。",
+"q2": "{Hikaru sees} いのりを、{her rival} として。",
+"q3": "{Hikaru sees Inori as her} ライバル。"
+},
+{
+"q1": "{She} は、{this event} でいのりと {compete} することを楽しみにしていました。",
+"q2": "{She was looking forward to} 今大会でいのりと競い合うこと。",
+"q3": "{She was looking forward to} 競い合う {with Inori at this event.}"
+}
+]
+},
+{
+"id": "20260904-medalist-tsukasa",
+"added": "2026-09-04T18:53",
+"cat": "anime",
+"series": "medalist",
+"level": 2,
+"title": "劇場版メダリスト、明浦路司のビジュアル公開",
+"summary": "劇場版『メダリスト』のキャラクタービジュアル第2弾として、明浦路司（声：大塚剛央）が公開されました。ルクス東山FSCのアシスタントコーチで、いのりをメダリストにする方法をいつも探しながら、自分もコーチとして成長していきます。",
+"post": {
+"url": "https://x.com/medalist_PR/status/2095812440407908394",
+"account": "medalist_PR",
+"name": "劇場版『メダリスト』公式",
+"date": "2026-09-04",
+"likes": 3743
+},
+"lines": [
+{
+"en": "The second character art for the movie shows Tsukasa Akeuraji.",
+"ja": "劇場版のキャラクタービジュアル第2弾には、明浦路司が描かれています。",
+"mix": "劇場版の {character art} 第2弾には、明浦路司が描かれています。"
+},
+{
+"en": "Takeo Otsuka plays Tsukasa.",
+"ja": "司を演じるのは、大塚剛央さんです。",
+"mix": "司を {play} するのは、大塚剛央さんです。"
+},
+{
+"en": "Tsukasa is an assistant coach at Lux Higashiyama FSC.",
+"ja": "司は、ルクス東山FSCのアシスタントコーチです。",
+"mix": "司は、ルクス東山FSCの {assistant coach} です。"
+},
+{
+"en": "He started skating in junior high school, so he understands Inori's feelings.",
+"ja": "彼は中学生でスケートを始めたので、いのりの気持ちがよくわかります。",
+"mix": "彼は中学生でスケートを始めたので、いのりの {feelings} がよくわかります。"
+},
+{
+"en": "He always looks for ways to make Inori a medalist.",
+"ja": "彼は、いのりをメダリストにする方法を、いつも探しています。",
+"mix": "彼は、いのりをメダリストにする {ways} を、いつも探しています。"
+},
+{
+"en": "He also grows as a coach.",
+"ja": "そして、彼自身もコーチとして成長していきます。",
+"mix": "そして、彼自身もコーチとして {grow} していきます。"
+}
+],
+"words": [
+{
+"w": "assistant coach",
+"ja": "アシスタントコーチ",
+"note": "ポストの「アシスタントコーチ」はそのまま英語です。assistant は「助手・手伝う人」。"
+},
+{
+"w": "understand",
+"ja": "わかる・理解する",
+"note": "公式サイトの紹介にある「共感し」を、やさしく understand（気持ちがわかる）で表しました。"
+},
+{
+"w": "look for",
+"ja": "〜を探す",
+"note": "ポストの「模索し」は look for ways（方法を探す）と言えます。"
+},
+{
+"w": "make A B",
+"ja": "AをBにする",
+"note": "ポストの「いのりをメダリストにする」は make Inori a medalist です。"
+},
+{
+"w": "grow",
+"ja": "成長する・育つ",
+"note": "ポストの「成長していく」。grow as a coach で「コーチとして成長する」です。"
+}
+],
+"grammar": {
+"title": "so「だから・それで」",
+"body": "「A, so B」で「Aだから、B」「A。それでB」という意味になります。先に理由（A）、あとに結果（B）を言います。so の前にはふつうカンマを打ちます。because は理由の前に置くので、順番が逆になります。",
+"ex": [
+{
+"en": "It was cold, so I wore a coat.",
+"ja": "寒かったので、コートを着ました。"
+},
+{
+"en": "I love skating, so I go to the rink every week.",
+"ja": "スケートが大好きなので、毎週リンクに行きます。"
+}
+]
+},
+"quiz": [
+{
+"q": "司は、どこのクラブのアシスタントコーチですか？",
+"choices": [
+"名港ウィンドFSC",
+"蓮華茶FSC",
+"ルクス東山FSC"
+],
+"a": 2,
+"why": "3文目に an assistant coach at Lux Higashiyama FSC とあります。"
+},
+{
+"q": "grow の意味は？",
+"choices": [
+"教える",
+"成長する",
+"あきらめる"
+],
+"a": 1,
+"why": "grow は「成長する・育つ」。grow as a coach で「コーチとして成長する」です。"
+},
+{
+"q": "It was cold, ___ I wore a coat.（寒かったので、コートを着ました）",
+"choices": [
+"so",
+"but",
+"because"
+],
+"a": 0,
+"why": "先に理由、あとに結果を言うときは so（だから）を使います。"
+}
+],
+"talk": {
+"q": "When did you start your hobby?",
+"ja": "いまの趣味は、いつ始めましたか？",
+"hint": "I started ___ when I was ___."
+},
+"grad": [
+{
+"q1": "{movie} の {second character art} には、明浦路司が描かれています。",
+"q2": "{The second character art for the movie} には、明浦路司が描かれています。",
+"q3": "{The second character art for the} 劇場版 {shows Tsukasa Akeuraji.}"
+},
+{
+"q1": "{Tsukasa} を {play} するのは、{Takeo Otsuka} さんです。",
+"q2": "大塚剛央さんが {plays Tsukasa}。",
+"q3": "{Takeo Otsuka} 演じる {Tsukasa.}"
+},
+{
+"q1": "{Tsukasa} は、ルクス東山FSCの {assistant coach} です。",
+"q2": "{Tsukasa is an assistant coach} ルクス東山FSCで。",
+"q3": "{Tsukasa is an assistant coach at} ルクス東山 {FSC.}"
+},
+{
+"q1": "{He} は中学生で {started skating} したので、いのりの {feelings} がよくわかります。",
+"q2": "{He started skating} 中学生で、{so he understands} いのりの気持ちを。",
+"q3": "{He started skating in} 中学校{, so he understands Inori's} 気持ち。"
+},
+{
+"q1": "{He} は、いのりを {medalist} にする {ways} を、{always} 探しています。",
+"q2": "{He always looks for ways} いのりをメダリストにする。",
+"q3": "{He always} 探している {ways to make Inori a medalist.}"
+},
+{
+"q1": "そして、{he} 自身も {coach} として {grow} していきます。",
+"q2": "{He also grows} コーチとして。",
+"q3": "{He also} 成長する {as a coach.}"
+}
+]
+},
+{
 "id": "20260904-medalist-inori",
 "added": "2026-09-04T18:49",
 "cat": "anime",
@@ -5269,6 +8208,322 @@ window.LESSONS = [
 ]
 },
 {
+"id": "20260820-haikyu-reception3",
+"added": "2026-08-20T09:00",
+"cat": "anime",
+"series": "haikyu",
+"level": 2,
+"title": "RECEPTION #3、劇場版とスペシャルアニメの新情報",
+"summary": "「ハイキュー!! RECEPTION」#3で、『劇場版ハイキュー!! VS小さな巨人』のコンセプトビジュアルと、スペシャルアニメ「ハイキュー!! バケモノたちの行くところ」のティザービジュアル・アクションPVが発表されました。2027年に「試合開始」です。",
+"post": {
+"url": "https://x.com/animehaikyu_com/status/2090227311442334150",
+"account": "animehaikyu_com",
+"name": "アニメ「ハイキュー!!」",
+"date": "2026-08-20",
+"likes": 28451
+},
+"lines": [
+{
+"en": "There was new information at Haikyu!! RECEPTION #3.",
+"ja": "「ハイキュー!! RECEPTION」#3 で、新しい情報の発表がありました。",
+"mix": "「ハイキュー!! RECEPTION」#3 で、新しい {information} の発表がありました。"
+},
+{
+"en": "The movie's title means \"VS the Little Giant.\"",
+"ja": "劇場版のタイトルは『劇場版ハイキュー!! VS小さな巨人』です。",
+"mix": "劇場版の {title} は『劇場版ハイキュー!! VS小さな巨人』です。"
+},
+{
+"en": "There was a concept visual for the movie.",
+"ja": "劇場版のコンセプトビジュアルが公開されました。",
+"mix": "劇場版の {concept visual} が公開されました。"
+},
+{
+"en": "There were two new things for the special anime.",
+"ja": "スペシャルアニメについては、2つの新しい発表がありました。",
+"mix": "スペシャルアニメについては、{two new things} がありました。"
+},
+{
+"en": "They were a teaser visual and an action trailer.",
+"ja": "それは、ティザービジュアルとアクションPVでした。",
+"mix": "それは、ティザービジュアルとアクション {trailer} でした。"
+},
+{
+"en": "The \"match\" starts in 2027!",
+"ja": "2027年、「試合開始」です！",
+"mix": "2027年、「{match} 開始」です！"
+}
+],
+"words": [
+{
+"w": "information",
+"ja": "情報",
+"note": "ポストの「解禁情報」は new information。数えられない名詞なので s はつけません。"
+},
+{
+"w": "concept visual",
+"ja": "コンセプトビジュアル",
+"note": "ポストの「コンセプトビジュアル」は英語でも concept visual。作品のイメージを伝える絵のことです。"
+},
+{
+"w": "teaser",
+"ja": "ティザー（先に少しだけ見せる予告）",
+"note": "ポストの「ティザービジュアル」の teaser。tease は「じらす」という意味です。"
+},
+{
+"w": "trailer",
+"ja": "予告編・PV",
+"note": "ポストの「アクションPV」は action trailer。PV は英語では trailer と言うのがふつうです。"
+},
+{
+"w": "giant",
+"ja": "巨人",
+"note": "『VS小さな巨人』の「巨人」は giant。「小さな巨人」は the Little Giant です。"
+}
+],
+"grammar": {
+"title": "There was / There were「〜があった」",
+"body": "There is / There are（〜がある）の過去形です。あとに続くものが1つ（または information のように数えられないもの）なら was、2つ以上なら were を使います。",
+"ex": [
+{
+"en": "There was a big game last night.",
+"ja": "昨夜、大きな試合がありました。"
+},
+{
+"en": "There were many fans at the event.",
+"ja": "イベントには、たくさんのファンがいました。"
+}
+]
+},
+"quiz": [
+{
+"q": "劇場版のタイトルは？",
+"choices": [
+"バケモノたちの行くところ",
+"主題歌たちの宴",
+"VS小さな巨人"
+],
+"a": 2,
+"why": "2文目に \"VS the Little Giant\" とあります。『劇場版ハイキュー!! VS小さな巨人』です。"
+},
+{
+"q": "trailer の意味は？",
+"choices": [
+"主題歌",
+"予告編・PV",
+"ポスター"
+],
+"a": 1,
+"why": "trailer は「予告編」。日本でいう PV です。"
+},
+{
+"q": "There ___ two new pictures.（2枚の新しい絵がありました）",
+"choices": [
+"were",
+"was",
+"are"
+],
+"a": 0,
+"why": "2つ以上のものが「あった」ときは There were です。"
+}
+],
+"talk": {
+"q": "Which do you want to see more, the movie or the special anime?",
+"ja": "劇場版とスペシャルアニメ、どちらをもっと見たいですか？",
+"hint": "I want to see the ___ more because ___."
+},
+"grad": [
+{
+"q1": "「ハイキュー!! RECEPTION」#3 で、{new information} が {there was}。",
+"q2": "{There was new information}「ハイキュー!! RECEPTION」#3 で。",
+"q3": "{There was new} 情報 {at Haikyu!! RECEPTION #3.}"
+},
+{
+"q1": "{The movie's title} は『劇場版ハイキュー!! VS {the Little Giant}』です。",
+"q2": "{The movie's title means}『劇場版ハイキュー!! VS小さな巨人』。",
+"q3": "{The movie's title means \"VS the Little} 巨人{.\"}"
+},
+{
+"q1": "{the movie} の {concept visual} が公開されました。",
+"q2": "{There was} 劇場版の {concept visual}。",
+"q3": "{There was a} コンセプトビジュアル {for the movie.}"
+},
+{
+"q1": "スペシャルアニメについては、{two new things} が {there were}。",
+"q2": "{There were two new things} スペシャルアニメについて。",
+"q3": "{There were two new things for the} スペシャルアニメ{.}"
+},
+{
+"q1": "{a teaser visual} と、アクション {trailer} でした。",
+"q2": "{They were a teaser visual} と、アクションPV。",
+"q3": "{They were a teaser visual and an action} PV{.}"
+},
+{
+"q1": "2027年、「{match}」が {starts}！",
+"q2": "{The \"match\" starts} 2027年に！",
+"q3": "{The \"match\" starts in} 2027年！"
+}
+]
+},
+{
+"id": "20260819-haikyu-school-visuals",
+"added": "2026-08-19T21:16",
+"cat": "anime",
+"series": "haikyu",
+"level": 2,
+"title": "梟谷・狢坂の「学校ビジュアル」、セッター対決に注目",
+"summary": "梟谷学園高校と狢坂高校の「学校ビジュアル」が公開されました。赤葦京治と臼利満、2人のセッターの対決も見どころで、両校のキャラクタープロフィールは公式サイトで見られます。",
+"post": {
+"url": "https://x.com/animehaikyu_com/status/2090050288959066342",
+"account": "animehaikyu_com",
+"name": "アニメ「ハイキュー!!」",
+"date": "2026-08-19",
+"likes": 60418
+},
+"lines": [
+{
+"en": "New school pictures for Fukurodani and Mujinazaka are out!",
+"ja": "梟谷学園高校と狢坂高校の、新しい「学校ビジュアル」が公開されました！",
+"mix": "梟谷学園高校と狢坂高校の、新しい「{school pictures}」が公開されました！"
+},
+{
+"en": "Don't miss the battle of the two setters!",
+"ja": "2人のセッターの対決にも注目です！",
+"mix": "2人の {setters} の対決にも注目です！"
+},
+{
+"en": "Fukurodani's Keiji Akaashi opens the way for Kotaro Bokuto.",
+"ja": "梟谷の赤葦京治は、木兎光太郎の道を切り開きます。",
+"mix": "梟谷の赤葦京治は、木兎光太郎の {way} を切り開きます。"
+},
+{
+"en": "Mujinazaka's Mitsuru Usuri supports Hachi Kiryu.",
+"ja": "狢坂の臼利満は、桐生八を支えています。",
+"mix": "狢坂の臼利満は、桐生八を {support} しています。"
+},
+{
+"en": "Who will win the setter battle?",
+"ja": "セッター対決に勝つのは、誰でしょう？",
+"mix": "セッター対決に {win} するのは、誰でしょう？"
+},
+{
+"en": "Where can you see the character profiles? On the official website!",
+"ja": "キャラクターのプロフィールは、どこで見られるでしょう？ 公式サイトです！",
+"mix": "キャラクターの {profiles} は、どこで見られるでしょう？ {official website} です！"
+}
+],
+"words": [
+{
+"w": "setter",
+"ja": "セッター",
+"note": "ポストの「セッター対決」は a battle of setters / a setter battle と言えます。"
+},
+{
+"w": "battle",
+"ja": "対決・戦い",
+"note": "ポストの「対決」は battle。Don't miss the battle! で「対決に注目！」。"
+},
+{
+"w": "open the way for 〜",
+"ja": "〜の道を切り開く",
+"note": "ポストの「木兎光太郎の道を切り開く」は opens the way for Kotaro Bokuto。"
+},
+{
+"w": "support",
+"ja": "支える",
+"note": "ポストの「支える」はそのまま support。主語が1人なので supports になります。"
+},
+{
+"w": "profile",
+"ja": "プロフィール",
+"note": "ポストの「キャラクタープロフィール」は character profiles。"
+}
+],
+"grammar": {
+"title": "疑問詞 who / where",
+"body": "who は「だれ」、where は「どこ」をたずねる言葉で、文のいちばん前に置きます。Who will win? のように who が「だれが」のときは、すぐあとに動詞が続きます。Where can you 〜? は「どこで〜できますか」です。",
+"ex": [
+{
+"en": "Who is your favorite player?",
+"ja": "いちばん好きな選手は誰ですか？"
+},
+{
+"en": "Where is the gym?",
+"ja": "体育館はどこですか？"
+}
+]
+},
+"quiz": [
+{
+"q": "赤葦京治が「道を切り開く」相手は誰ですか？",
+"choices": [
+"臼利満",
+"桐生八",
+"木兎光太郎"
+],
+"a": 2,
+"why": "3文目に opens the way for Kotaro Bokuto とあります。"
+},
+{
+"q": "support の意味は？",
+"choices": [
+"支える",
+"勝つ",
+"見る"
+],
+"a": 0,
+"why": "support は「支える」。臼利満が桐生八を支えています。"
+},
+{
+"q": "___ will win the setter battle?（だれが）",
+"choices": [
+"Where",
+"Who",
+"What"
+],
+"a": 1,
+"why": "「だれが」をたずねるときは Who。Where は「どこ」です。"
+}
+],
+"talk": {
+"q": "Who is your favorite setter in Haikyu!!?",
+"ja": "「ハイキュー!!」でいちばん好きなセッターは誰ですか？",
+"hint": "My favorite setter is ___. His tosses are great."
+},
+"grad": [
+{
+"q1": "{Fukurodani} と {Mujinazaka} の、新しい「{school pictures}」が公開されました！",
+"q2": "梟谷と狢坂の {new school pictures are out!}",
+"q3": "{New school pictures for} 梟谷 {and} 狢坂 {are out!}"
+},
+{
+"q1": "2人の {setters} の {battle} にも注目です！",
+"q2": "{Don't miss} 2人のセッターの {battle}！",
+"q3": "{Don't miss the} 対決 {of the two setters!}"
+},
+{
+"q1": "{Fukurodani's} 赤葦京治は、{Kotaro Bokuto} の {way} を切り開きます。",
+"q2": "{Fukurodani's Keiji Akaashi} は、木兎光太郎のために {opens the way}。",
+"q3": "{Fukurodani's Keiji Akaashi} 切り開く {the way for Kotaro Bokuto.}"
+},
+{
+"q1": "{Mujinazaka's} 臼利満は、{Hachi Kiryu} を {supports}。",
+"q2": "{Mujinazaka's Mitsuru Usuri} は、桐生八を支えています。",
+"q3": "{Mujinazaka's Mitsuru Usuri} 支えている {Hachi Kiryu.}"
+},
+{
+"q1": "{setter battle} に勝つのは、{who} でしょう？",
+"q2": "{Who will win} セッター対決に？",
+"q3": "{Who will win the setter} 対決{?}"
+},
+{
+"q1": "キャラクターの {profiles} は、{where} で見られるでしょう？ {official website} です！",
+"q2": "{Where can you see} キャラクターのプロフィール？ 公式サイトで！",
+"q3": "{Where can you see the character profiles? On the} 公式 {website!}"
+}
+]
+},
+{
 "id": "20260819-haikyu-special-pv",
 "added": "2026-08-19T21:11",
 "cat": "anime",
@@ -5423,6 +8678,302 @@ window.LESSONS = [
 "q1": "2027年に「{match}」が {start} します！",
 "q2": "{The \"match\"} は、2027年に {starts}！",
 "q3": "{The \"match\" starts in} 2027年！"
+}
+]
+},
+{
+"id": "20260819-haikyu-burnout-covers",
+"added": "2026-08-19T10:00",
+"cat": "anime",
+"series": "haikyu",
+"level": 2,
+"title": "BURNOUT SYNDROMESが歴代主題歌をカバー",
+"summary": "8月19日に『ハイキュー!!×BURNOUT SYNDROMES –主題歌たちの宴-』がリリースされました。数々の曲で試合を彩ってきたBURNOUT SYNDROMESが、「ハイキュー!!」の歴代主題歌をカバーしています。",
+"post": {
+"url": "https://x.com/animehaikyu_com/status/2089880025680015371",
+"account": "animehaikyu_com",
+"name": "アニメ「ハイキュー!!」",
+"date": "2026-08-19",
+"likes": 32069
+},
+"lines": [
+{
+"en": "BURNOUT SYNDROMES released new Haikyu!! music on August 19.",
+"ja": "BURNOUT SYNDROMESが、8月19日に「ハイキュー!!」の新しい作品をリリースしました。",
+"mix": "BURNOUT SYNDROMESが、8月19日に「ハイキュー!!」の新しい {music} をリリースしました。"
+},
+{
+"en": "Its subtitle means \"A Feast of Theme Songs.\"",
+"ja": "サブタイトルは「主題歌たちの宴」です。",
+"mix": "{subtitle} は「主題歌たちの宴」です。"
+},
+{
+"en": "Their songs added color to many exciting matches.",
+"ja": "彼らは数々の曲で、熱い試合を彩ってきました。",
+"mix": "彼らは数々の {songs} で、熱い {matches} を彩ってきました。"
+},
+{
+"en": "This time, they covered past Haikyu!! theme songs.",
+"ja": "今回は、「ハイキュー!!」の歴代の主題歌をカバーしました。",
+"mix": "今回は、「ハイキュー!!」の歴代の {theme songs} をカバーしました。"
+},
+{
+"en": "You can stream it, download it, or buy it.",
+"ja": "配信やダウンロードで聴けるほか、購入することもできます。",
+"mix": "配信や {download} で聴けるほか、{buy} することもできます。"
+}
+],
+"words": [
+{
+"w": "release",
+"ja": "リリースする・発売する",
+"note": "ポストの「リリース」はそのまま release。過去形は released です。"
+},
+{
+"w": "theme song",
+"ja": "主題歌",
+"note": "ポストの「歴代主題歌」は past theme songs（これまでの主題歌）と言えます。"
+},
+{
+"w": "cover",
+"ja": "（ほかの人の曲を）カバーする",
+"note": "ポストの「カバー」も英語の cover から。過去形は covered。"
+},
+{
+"w": "add color to 〜",
+"ja": "〜を彩る",
+"note": "ポストの「熱戦を彩ってきた」は added color to exciting matches と言えます。"
+},
+{
+"w": "stream",
+"ja": "配信で聴く・見る",
+"note": "ポストの「Streaming」は stream の ing 形です。"
+}
+],
+"grammar": {
+"title": "過去形（規則動詞 -ed）",
+"body": "「〜した」と過去のことを言うときは、動詞のおしまいに -ed をつけます。cover → covered、add → added。release のように e で終わる動詞は -d だけつけて released です。",
+"ex": [
+{
+"en": "I watched Haikyu!! last night.",
+"ja": "昨夜『ハイキュー!!』を見ました。"
+},
+{
+"en": "We played volleyball after work.",
+"ja": "仕事のあとにバレーボールをしました。"
+}
+]
+},
+"quiz": [
+{
+"q": "BURNOUT SYNDROMES が今回カバーしたのは？",
+"choices": [
+"「ハイキュー!!」の歴代の主題歌",
+"ほかのアニメの主題歌",
+"海外のヒット曲"
+],
+"a": 0,
+"why": "4文目に they covered past Haikyu!! theme songs とあります。"
+},
+{
+"q": "cover の意味は？",
+"choices": [
+"作曲する",
+"聴く",
+"ほかの人の曲を歌う（カバーする）"
+],
+"a": 2,
+"why": "cover は「（ほかの人の曲を）カバーする」です。"
+},
+{
+"q": "They ___ the theme songs.（カバーしました）",
+"choices": [
+"cover",
+"covered",
+"covering"
+],
+"a": 1,
+"why": "「〜した」は動詞に -ed をつけて covered です。"
+}
+],
+"talk": {
+"q": "What is your favorite Haikyu!! theme song?",
+"ja": "「ハイキュー!!」の主題歌で、いちばん好きな曲は何ですか？",
+"hint": "My favorite is ___. I listen to it every day."
+},
+"grad": [
+{
+"q1": "BURNOUT SYNDROMESが、{August 19} に「ハイキュー!!」の {new music} を {released}。",
+"q2": "{BURNOUT SYNDROMES released}「ハイキュー!!」の新しい作品を、8月19日に。",
+"q3": "{BURNOUT SYNDROMES} リリースした {new Haikyu!! music on August 19.}"
+},
+{
+"q1": "{Its subtitle} は「{Theme Songs} たちの宴」です。",
+"q2": "{Its subtitle means}「主題歌たちの宴」。",
+"q3": "{Its subtitle means \"A} 宴 {of Theme Songs.\"}"
+},
+{
+"q1": "{Their songs} が、たくさんの熱い {matches} を彩ってきました。",
+"q2": "{Their songs} が、{many exciting matches} を彩ってきました。",
+"q3": "{Their songs} 彩った {many exciting matches.}"
+},
+{
+"q1": "{This time}、「ハイキュー!!」の歴代の {theme songs} を {covered}。",
+"q2": "{This time, they covered}「ハイキュー!!」の歴代の主題歌。",
+"q3": "{This time, they covered} 歴代の {Haikyu!! theme songs.}"
+},
+{
+"q1": "{stream} や {download} で聴けるほか、{buy} することもできます。",
+"q2": "{You can stream it}、ダウンロードや購入もできます。",
+"q3": "{You can} 配信で聴く{, download it, or buy it.}"
+}
+]
+},
+{
+"id": "20260819-haikyu-day-mascots",
+"added": "2026-08-19T08:19",
+"cat": "anime",
+"series": "haikyu",
+"level": 1,
+"title": "「ハイキュー!!の日」記念、マスコット55体が大集合",
+"summary": "2026年の「ハイキュー!!の日」を記念して、マスコットたちがぎゅっと集まったビジュアルが公開されました。新しく描きおこされた24体を加えて、全部で55体がそろって初登場です。",
+"post": {
+"url": "https://x.com/animehaikyu_com/status/2089854605568135652",
+"account": "animehaikyu_com",
+"name": "アニメ「ハイキュー!!」",
+"date": "2026-08-19",
+"likes": 74171
+},
+"lines": [
+{
+"en": "The Haikyu!! anime is celebrating Haikyu!! Day 2026.",
+"ja": "アニメ「ハイキュー!!」は、2026年の「ハイキュー!!の日」をお祝いしています。",
+"mix": "アニメ「ハイキュー!!」は、2026年の「ハイキュー!!の日」を {celebrate} しています。"
+},
+{
+"en": "In a new picture, many mascots are gathering together.",
+"ja": "新しいビジュアルで、たくさんのマスコットがぎゅっと集まっています。",
+"mix": "新しいビジュアルで、たくさんの {mascots} がぎゅっと集まっています。"
+},
+{
+"en": "Twenty-four of them are newly drawn.",
+"ja": "そのうち24体は、新しく描きおこされたものです。",
+"mix": "そのうち24体は、{newly drawn} マスコットです。"
+},
+{
+"en": "All 55 mascots appear together for the first time.",
+"ja": "全部で55体のマスコットが、初めてそろって登場します。",
+"mix": "全部で55体のマスコットが、{for the first time} そろって登場します。"
+},
+{
+"en": "Haikyu!! RECEPTION #3 starts tonight at 8:19 p.m.",
+"ja": "今夜8時19分から、「ハイキュー!! RECEPTION」#3 が始まります。",
+"mix": "{tonight} 8時19分から、「ハイキュー!! RECEPTION」#3 が始まります。"
+}
+],
+"words": [
+{
+"w": "celebrate",
+"ja": "お祝いする・記念する",
+"note": "ポストの「記念して」は to celebrate 〜 で表せます。ing 形は celebrating。"
+},
+{
+"w": "mascot",
+"ja": "マスコット",
+"note": "ポストの「マスコット」はそのまま mascot。たくさんなら mascots です。"
+},
+{
+"w": "gather",
+"ja": "集まる",
+"note": "ポストの「ぎゅっと集まった」は gather close together のように言えます。"
+},
+{
+"w": "newly drawn",
+"ja": "新しく描かれた・描きおこしの",
+"note": "ポストの「新たに描きおこされた」。newly ＝ 新しく、drawn ＝ 描かれた。"
+},
+{
+"w": "for the first time",
+"ja": "初めて",
+"note": "ポストの「初お披露目」は appear for the first time（初めて登場する）と言えます。"
+}
+],
+"grammar": {
+"title": "現在進行形「〜している」",
+"body": "be動詞（am / is / are）＋ 動詞の ing 形で「（いま）〜している」を表します。主語が1つなら is、2つ以上なら are を使います。many mascots are gathering で「たくさんのマスコットが集まっている」です。",
+"ex": [
+{
+"en": "I am watching Haikyu!! now.",
+"ja": "いま『ハイキュー!!』を見ています。"
+},
+{
+"en": "My friends are playing volleyball.",
+"ja": "友だちはバレーボールをしています。"
+}
+]
+},
+"quiz": [
+{
+"q": "ビジュアルのマスコットは全部で何体ですか？",
+"choices": [
+"24体",
+"55体",
+"81体"
+],
+"a": 1,
+"why": "4文目に All 55 mascots とあります。24体は、そのうち新しく描かれた数です。"
+},
+{
+"q": "celebrate の意味は？",
+"choices": [
+"お祝いする",
+"集まる",
+"描く"
+],
+"a": 0,
+"why": "celebrate は「お祝いする」。ポストの「記念して」にあたります。"
+},
+{
+"q": "Many mascots are ___ together.（集まっています）",
+"choices": [
+"gathered",
+"gather",
+"gathering"
+],
+"a": 2,
+"why": "「〜している」は be動詞 ＋ ing 形。are gathering です。"
+}
+],
+"talk": {
+"q": "Which Haikyu!! mascot do you like the best?",
+"ja": "「ハイキュー!!」のマスコットで、いちばん好きなのはどれですか？",
+"hint": "I like the ___ mascot. It is so cute."
+},
+"grad": [
+{
+"q1": "{The Haikyu!! anime} は、2026年の「{Haikyu!! Day}」を {is celebrating}。",
+"q2": "{The Haikyu!! anime is celebrating} 2026年の「ハイキュー!!の日」。",
+"q3": "{The Haikyu!! anime is celebrating}「ハイキュー!!の日」{2026.}"
+},
+{
+"q1": "{a new picture} で、{many mascots} がぎゅっと {are gathering}。",
+"q2": "{In a new picture}、たくさんのマスコットが {are gathering together}。",
+"q3": "{In a new picture, many} マスコットたち {are gathering together.}"
+},
+{
+"q1": "そのうち {Twenty-four} 体は、{newly drawn} のものです。",
+"q2": "{Twenty-four of them} は、新しく描きおこされたものです。",
+"q3": "{Twenty-four of them are} 新しく {drawn.}"
+},
+{
+"q1": "全部で55体の {mascots} が、{for the first time} そろって登場します。",
+"q2": "{All 55 mascots} が、初めてそろって {appear}。",
+"q3": "{All 55 mascots appear together} 初めて。"
+},
+{
+"q1": "{tonight} の {8:19 p.m.} から、「ハイキュー!! RECEPTION」#3 が始まります。",
+"q2": "{Haikyu!! RECEPTION #3 starts} 今夜8時19分から。",
+"q3": "{Haikyu!! RECEPTION #3 starts tonight at} 午後8時19分。"
 }
 ]
 }
