@@ -332,6 +332,10 @@ kbd{font-family:var(--ui);font-size:.625rem;line-height:1;color:var(--faint);bor
 /* streak, new mark, review */
 .side-top .brand{margin-right:auto}
 .streak{font-size:var(--fs-xs);color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:1px 9px;margin-right:6px;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fresh{display:flex;align-items:center;gap:6px;margin:-4px 18px 6px;font-size:var(--fs-xs);color:var(--faint);font-variant-numeric:tabular-nums}
+.fresh::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--line);flex:none}
+.fresh.today{color:var(--muted)}
+.fresh.today::before{background:var(--good)}
 .new-tag{font-size:.625rem;font-weight:600;letter-spacing:.04em;color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 40%,var(--line));border-radius:4px;padding:0 4px;line-height:1.5}
 .item.unseen .t{font-weight:600}
 .due{font-size:var(--fs-xs);color:var(--bg);background:var(--accent);border-radius:999px;padding:0 7px;margin-left:auto;font-variant-numeric:tabular-nums}
@@ -376,6 +380,7 @@ html.static .ai-only{display:none!important}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
       </button>
     </div>
+    <p class="fresh" id="fresh" hidden></p>
     <label class="search">
       <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
       <input id="q" type="search" placeholder="さがす" aria-label="話題をさがす" autocomplete="off">
@@ -560,7 +565,7 @@ function markToday(){
   days.push(t); if(days.length > 400) days.splice(0, days.length - 400);
   return true;
 }
-const isNew = L => !L.own && !S.state.seen[L.id] && dayDiff(jstToday(), (L.added || '').slice(0, 10)) <= 3;
+const isNew = L => !L.own && !S.state.seen[L.id] && dayDiff(jstToday(), (L.addedAt || L.added || '').slice(0, 10)) <= 3;
 
 /* ---------- speech ---------- */
 let voice = null;
@@ -718,6 +723,22 @@ function renderCounts(){
   sk.hidden = !st; sk.textContent = st ? `${st}日連続` : '';
   sk.title = st ? `${st}日続けて読んでいます` : '';
   $('#likeCnt').textContent = Object.keys(S.state.likes).filter(id => S.byId[id]).length || '';
+  renderFresh();
+}
+/* 「最終追加」: 話題を足した日時（addedAt・日本時間）のいちばん新しいもの */
+function renderFresh(){
+  const el = $('#fresh'); if(!el) return;
+  const stamps = S.lessons.map(L => L.addedAt).filter(x => typeof x === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}/.test(x));
+  if(!stamps.length){ el.hidden = true; return; }
+  const last = stamps.reduce((a, b) => a > b ? a : b);
+  const day = last.slice(0, 10), hm = `${+last.slice(11, 13)}:${last.slice(14, 16)}`;
+  const n = stamps.filter(x => x.slice(0, 10) === day).length;
+  const diff = dayDiff(jstToday(), day);
+  const when = diff <= 0 ? '今日' : diff === 1 ? '昨日' : `${+day.slice(5, 7)}/${+day.slice(8, 10)}`;
+  el.textContent = `最終追加 ${when} ${hm}・${n}件`;
+  el.title = `${jpDate(day)} ${hm}に${n}件の話題を足しました`;
+  el.classList.toggle('today', diff <= 0);
+  el.hidden = false;
 }
 function setNav(){
   $('#wordsBtn').setAttribute('aria-current', S.view === 'words' || S.view === 'review');

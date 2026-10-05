@@ -130,7 +130,8 @@ window.LESSONS = [
 "note": "ポストの「なんで触れてこなかったんや」の「今まで」。",
 "w": "before"
 }
-]
+],
+"addedAt": "2026-10-05T09:59"
 },
 {
 "added": "2026-10-04T12:34",
@@ -287,7 +288,8 @@ window.LESSONS = [
 "note": "映画やアニメをまとめる人。",
 "w": "producer"
 }
-]
+],
+"addedAt": "2026-10-05T09:59"
 },
 {
 "added": "2026-10-04T12:01",
@@ -419,7 +421,8 @@ window.LESSONS = [
 "note": "長く続く番組なので long history と言えます。",
 "w": "history"
 }
-]
+],
+"addedAt": "2026-10-05T09:59"
 },
 {
 "added": "2026-10-03T18:00",
@@ -577,7 +580,8 @@ window.LESSONS = [
 "note": "ポストの画像のこと。",
 "w": "picture"
 }
-]
+],
+"addedAt": "2026-10-05T09:59"
 },
 {
 "id": "20261002-zoids-final-arc",
