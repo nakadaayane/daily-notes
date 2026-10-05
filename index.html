@@ -749,6 +749,16 @@ function setNav(){
 function enterAnim(){ const th = $('#thread'); th.classList.remove('enter'); void th.offsetWidth; th.classList.add('enter'); }
 
 /* ---------- lesson view ---------- */
+/* 混ぜ文の段（英語の量 1〜4）で文をタップしたときの3段：0 もとの混ぜ文 → 1 割合が逆の混ぜ文 → 2 ぜんぶ英語＋訳 */
+const revKey = lv => lv >= 4 ? 'q1' : 'q3';   /* 日本語が多い段 → 英語が多い混ぜ文、英語が多い段（3/4）→ 日本語が多い混ぜ文 */
+const tapStage = (L, i) => { const f = S.flips[L.id]; return f ? (+f[i] || 0) : 0; };
+function nextTap(L, i){
+  const lv = S.amount, f = S.flips[L.id] || (S.flips[L.id] = {});
+  if(lv < 1 || lv > 4){ f[i] = f[i] ? 0 : 1; return; }
+  let st = ((+f[i] || 0) + 1) % 3;
+  if(st === 1 && !gradOk(L)) st = 2;   /* 段階つきの混ぜ文がまだ無い話題は、逆をとばして全文英語へ */
+  f[i] = st;
+}
 function storyLine(L, i){
   const ln = L.lines[i]; const fl = !!(S.flips[L.id] && S.flips[L.id][i]);
   const lv = S.amount;
@@ -759,10 +769,15 @@ function storyLine(L, i){
   }else if(lv === 0){
     html = `<span class="s-text ja">${esc(ln.ja)}</span>` + (fl ? `<span class="s-sub en-sub">${esc(ln.en)}</span>` : '');
   }else{
-    const key = AMT[lv].mix;
-    let mx = key === 'mix' ? ln.mix : (gradOk(L) ? L.grad[i][key] : '');
-    if(!mx) mx = ln.mix;
-    html = (mx ? `<span class="s-text ja">${mixHtml(mx)}</span>` : `<span class="s-text ja">${esc(ln.ja)}</span>`) + (fl ? `<span class="s-sub">${esc(ln.ja)}</span>` : '');
+    const st = tapStage(L, i);
+    if(st === 2){
+      html = `<span class="s-text en">${enHtml(L, i)}</span><span class="s-sub">${esc(ln.ja)}</span>`;
+    }else{
+      const key = st === 1 ? revKey(lv) : AMT[lv].mix;
+      let mx = key === 'mix' ? ln.mix : (gradOk(L) ? L.grad[i][key] : '');
+      if(!mx) mx = ln.mix;
+      html = mx ? `<span class="s-text ja">${mixHtml(mx)}</span>` : `<span class="s-text ja">${esc(ln.ja)}</span>`;
+    }
   }
   return `<li data-i="${i}"><span class="s-body">${html}</span><button class="say" data-say-line="${i}" aria-label="英文を読み上げ">${ICON.say}</button></li>`;
 }
@@ -881,7 +896,7 @@ const storyNote = () => {
   const L = S.byId[S.cur];
   if(needsGrad(lv) && L && !gradOk(L)) return S.gradBusy[S.cur] ? '文の中の英語を作っています（10〜30秒ほど）。できるまでは単語だけ英語で表示します。' : (S.gradErr[S.cur] || 'この話題は、まだ単語だけ英語で表示しています。');
   if(lv === 0) return '文をタップすると英文が出ます。';
-  if(lv <= 4) return '色のついた部分が英語です。文をタップすると日本語訳が出ます。';
+  if(lv <= 4) return `色のついた部分が英語です。文をタップすると、1回目で${lv >= 4 ? '日本語' : '英語'}多めに、2回目でぜんぶ英語（訳つき）に、3回目でもとにもどります。`;
   if(lv === 5) return '文をタップすると訳をかくせます。' + kw;
   if(lv === 6) return '文をタップすると日本語訳が出ます。' + kw;
   return '文をタップすると英語と日本語が入れかわります。' + kw;
@@ -905,7 +920,7 @@ function syncAmt(){
 function setAmount(v){
   v = Math.max(0, Math.min(AMT_MAX, Math.round(+v))); if(isNaN(v)) return;
   if(v === S.amount){ ensureGrad(); return; }
-  S.amount = v; LS.set('level', v);
+  S.amount = v; LS.set('level', v); if(S.cur) S.flips[S.cur] = {};
   rerenderStory(); ensureGrad();
 }
 const GRAD_SPEC = `日本語の文を少しずつ英語に置きかえる「段階つきの混ぜ文」を作ってください。学習者は日本の社会人で、英語は中学レベルです。
@@ -1492,7 +1507,7 @@ function onAction(e){
   const li = t.closest('#story li');
   if(li){
     if(window.getSelection && String(window.getSelection()).length) return;
-    const L = S.byId[S.cur]; const i = +li.dataset.i; const f = S.flips[L.id] || (S.flips[L.id] = {}); f[i] = !f[i];
+    const L = S.byId[S.cur]; const i = +li.dataset.i; nextTap(L, i);
     li.outerHTML = storyLine(L, i);
     const nli = $(`#story li[data-i="${i}"] .s-body`); if(nli) nli.classList.add('swap');
     return;
