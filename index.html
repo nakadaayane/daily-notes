@@ -88,6 +88,7 @@ kbd{font-family:var(--ui);font-size:.625rem;line-height:1;color:var(--faint);bor
 .dot.movie{background:var(--dot-movie)}.dot.anime{background:var(--dot-anime)}.dot.manga{background:var(--dot-manga)}.dot.own{background:var(--dot-own)}
 .side-foot{border-top:1px solid var(--line);padding:9px 14px 11px;display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:var(--fs-xs);color:var(--muted)}
 .side-foot .sp{flex:1}
+.voice-sel{font:inherit;font-size:var(--fs-xs);color:var(--muted);background:var(--card);border:1px solid var(--line);border-radius:999px;padding:1px 8px;max-width:150px;min-width:0}
 .foot-btn{display:inline-flex;align-items:center;gap:5px;color:var(--muted);font-size:var(--fs-xs);padding:2px 4px;border-radius:5px}
 .foot-btn:hover{color:var(--fg);background:var(--bubble)}
 .empty-side{color:var(--faint);font-size:var(--fs-s);padding:12px 10px;line-height:1.7}
@@ -152,6 +153,15 @@ kbd{font-family:var(--ui);font-size:.625rem;line-height:1;color:var(--faint);bor
 .story .s-sub{display:block;font-family:var(--ui);font-size:var(--fs-s);color:var(--muted);margin-top:1px}
 .story .s-sub.en-sub{font-family:var(--serif);font-size:var(--fs-m)}
 .mw{font-family:var(--serif);font-size:1.06em;background:var(--hl);padding:0 3px;border-radius:3px}
+.mw[data-k]{cursor:pointer;transition:background-color .12s,color .12s}
+.mw[data-k]:hover{box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 35%,transparent)}
+.mw.ja{font-family:var(--ui);font-size:1em;background:var(--accent-soft);color:var(--accent)}
+.mw.busy{opacity:.55}
+.story .tk:not(.kw){cursor:pointer}
+.story .tk:not(.kw):hover{background:var(--hl)}
+.say.tr{font-family:var(--ui);font-size:var(--fs-xs);font-weight:600}
+.pop .p-link{display:inline-block;margin-top:4px;color:var(--muted);font-size:var(--fs-xs)}
+.pop .p-busy{color:var(--faint)}
 .tk{border-radius:3px;transition:background-color .12s,box-shadow .12s}
 .tk.kw{text-decoration:underline dotted;text-decoration-color:var(--faint);text-decoration-thickness:1px;text-underline-offset:4px;cursor:help}
 .tk.kw:hover,.tk.kw:focus-visible{color:var(--accent);text-decoration-color:var(--accent);outline:0}
@@ -415,6 +425,7 @@ html.static .ai-only{display:none!important}
     <div class="side-foot">
       <span>読み上げ</span>
       <span class="seg" id="rateSeg"><button data-r="0.8" aria-pressed="false">ゆっくり</button><button data-r="1" aria-pressed="false">ふつう</button></span>
+      <select class="voice-sel" id="voiceSel" aria-label="読み上げの声" hidden></select>
       <span class="sp"></span>
       <button class="foot-btn" id="keysBtn" aria-label="ショートカット"><kbd>?</kbd></button>
     </div>
@@ -482,7 +493,11 @@ html.static .ai-only{display:none!important}
 const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const mixHtml = s => esc(s).replace(/\{([^}]+)\}/g, '<span class="mw">$1</span>');
+/* gloss（教材ごとの意味の辞書）のキー。lessons_tool.py の gkey と同じ決まり */
+const gkey = s => String(s ?? '').toLowerCase().replace(/’/g, "'").replace(/[^a-z0-9' -]+/g, ' ').replace(/\s+/g, ' ').trim().replace(/^[' -]+|[' -]+$/g, '');
+const unesc = s => String(s).replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
+const mixHtml = s => esc(s).replace(/\{([^}]+)\}/g, (m, c) => `<span class="mw" data-k="${gkey(unesc(c))}" role="button" tabindex="0">${c}</span>`);
+const glossOf = (L, w) => (L && L.gloss && L.gloss[gkey(w)]) || '';
 const LS = {
   get(k, d){ try{ const v = localStorage.getItem('dn_' + k); return v == null ? d : JSON.parse(v); }catch(e){ return d; } },
   set(k, v){ try{ localStorage.setItem('dn_' + k, JSON.stringify(v)); }catch(e){} }
@@ -569,12 +584,25 @@ const isNew = L => !L.own && !S.state.seen[L.id] && dayDiff(jstToday(), (L.added
 
 /* ---------- speech ---------- */
 let voice = null;
+/* ロボットっぽい声（iPhone の Eloquence 系、Mac のおもしろ声）はよける */
+const BAD_VOICE = /\b(eddy|flo|grandma|grandpa|reed|rocko|sandy|shelley|albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|junior|ralph|fred|kathy)\b/i;
+const GOOD_VOICE = [/premium|enhanced|natural|neural/i, /google us english/i, /\b(samantha|ava|allison|alex|susan|zoe|nicky|evan|nathan|joelle|noelle)\b/i, /aria|jenny|guy|michelle/i, /google uk english/i];
 function pickVoice(){
   if(!('speechSynthesis' in window)) return;
-  const vs = speechSynthesis.getVoices().filter(v => /^en(-|_)/i.test(v.lang));
-  const pref = [/natural/i, /google us english/i, /samantha/i, /aria|jenny|guy/i, /en-us/i];
-  for(const p of pref){ const v = vs.find(v => p.test(v.name) || p.test(v.lang)); if(v){ voice = v; return; } }
-  voice = vs[0] || null;
+  const vs = speechSynthesis.getVoices().filter(v => /^en(-|_)/i.test(v.lang) && !BAD_VOICE.test(v.name));
+  const saved = LS.get('voice', '');
+  voice = (saved && vs.find(v => v.name === saved)) || null;
+  if(!voice){
+    const us = vs.filter(v => /^en[-_]us/i.test(v.lang));
+    for(const p of GOOD_VOICE){ voice = us.find(v => p.test(v.name)) || vs.find(v => p.test(v.name)) || null; if(voice) break; }
+    if(!voice) voice = us[0] || vs[0] || null;
+  }
+  const sel = $('#voiceSel');
+  if(sel){
+    sel.innerHTML = `<option value="">声：おまかせ${voice && !saved ? `（${esc(voice.name.replace(/\s*\(.*\)$/, ''))}）` : ''}</option>` + vs.map(v => `<option value="${esc(v.name)}">${esc(v.name.replace(/\s*\(.*\)$/, ''))}${/^en[-_]us/i.test(v.lang) ? '' : `（${esc(v.lang)}）`}</option>`).join('');
+    sel.value = saved && vs.some(v => v.name === saved) ? saved : '';
+    sel.hidden = !vs.length;
+  }
 }
 if('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
 let speakToken = 0, speakTimer = 0;
@@ -779,7 +807,7 @@ function storyLine(L, i){
       html = mx ? `<span class="s-text ja">${mixHtml(mx)}</span>` : `<span class="s-text ja">${esc(ln.ja)}</span>`;
     }
   }
-  return `<li data-i="${i}"><span class="s-body">${html}</span><button class="say" data-say-line="${i}" aria-label="英文を読み上げ">${ICON.say}</button></li>`;
+  return `<li data-i="${i}"><span class="s-body">${html}</span><button class="say tr" data-tr-line="${i}" aria-label="表示を切りかえ" title="表示を切りかえ">訳</button><button class="say" data-say-line="${i}" aria-label="英文を読み上げ">${ICON.say}</button></li>`;
 }
 const isSaved = w => S.state.saved.some(s => s.w === w);
 const isLiked = id => !!S.state.likes[id];
@@ -895,10 +923,11 @@ const storyNote = () => {
   const lv = S.amount, kw = '点線の単語をタップすると意味が見られます。';
   const L = S.byId[S.cur];
   if(needsGrad(lv) && L && !gradOk(L)) return S.gradBusy[S.cur] ? '文の中の英語を作っています（10〜30秒ほど）。できるまでは単語だけ英語で表示します。' : (S.gradErr[S.cur] || 'この話題は、まだ単語だけ英語で表示しています。');
-  if(lv === 0) return '文をタップすると英文が出ます。';
-  if(lv <= 4) return `色のついた部分が英語です。文をタップすると、1回目で${lv >= 4 ? '日本語' : '英語'}多めに、2回目でぜんぶ英語（訳つき）に、3回目でもとにもどります。`;
-  if(lv === 5) return '文をタップすると訳をかくせます。' + kw;
-  if(lv === 6) return '文をタップすると日本語訳が出ます。' + kw;
+  const any = '英文の単語はどれでもタップすると意味が出ます（点線は大事な単語）。';
+  if(lv === 0) return '文か「訳」をタップすると英文が出ます。';
+  if(lv <= 4) return `色のついた英語をタップすると、そこだけ日本語になります。「訳」か文の日本語の部分をタップすると、${lv >= 4 ? '日本語' : '英語'}多め → ぜんぶ英語（訳つき）→ もとに、と切りかわります。`;
+  if(lv === 5) return '「訳」で訳をかくせます。' + any;
+  if(lv === 6) return '「訳」で日本語訳が出ます。' + any;
   return '文をタップすると英語と日本語が入れかわります。' + kw;
 };
 function amtHtml(){
@@ -1051,7 +1080,7 @@ function toggleWord(w, from){
     delete S.state.savedOff[w];
     const L = S.byId[from] || S.byId[S.cur];
     const wd = L && (L.words || []).find(x => x.w === w);
-    S.state.saved.unshift({w, ja: wd ? wd.ja : '', note: wd && wd.note ? wd.note : '', from: L && L.id !== '__draft' ? L.id : '', t: Date.now()});
+    S.state.saved.unshift({w, ja: wd ? wd.ja : glossOf(L, w), note: wd && wd.note ? wd.note : '', from: L && L.id !== '__draft' ? L.id : '', t: Date.now()});
   }
   saveState(); renderCounts(); refreshStars();
   toast(i >= 0 ? '単語帳から外しました' : `「${w}」を単語帳に入れました`);
@@ -1242,11 +1271,17 @@ function closeSide(){ $('#side').classList.remove('open'); $('#scrim').classList
 /* ---------- word popover ---------- */
 let popFor = null;
 function openPop(el){
-  const L = S.byId[S.cur]; const wd = L && (L.words || [])[+el.dataset.wi]; if(!wd) return;
+  const L = S.byId[S.cur]; if(!L) return;
+  let w, ja, note = '', kw = el.dataset.wi != null;
+  if(kw){ const wd = (L.words || [])[+el.dataset.wi]; if(!wd) return; w = wd.w; ja = wd.ja; note = wd.note || ''; }
+  else { w = el.textContent.trim(); ja = glossOf(L, w); }
   const pop = $('#pop'); popFor = el;
-  const on = isSaved(wd.w);
-  pop.innerHTML = `<div class="p-w"><b>${esc(wd.w)}</b><button class="say" data-say="${esc(wd.w)}" aria-label="読み上げ">${ICON.say}</button><button class="star" data-star="${esc(wd.w)}" data-from="${esc(L.id)}" aria-pressed="${on}" aria-label="単語帳に入れる">${ICON.star}</button></div>
-    <p class="p-m">${esc(wd.ja)}</p>${wd.note ? `<p class="p-n">${esc(wd.note)}</p>` : ''}`;
+  const on = isSaved(w);
+  const li = el.closest('li'); const sent = li && L.lines[+li.dataset.i] ? L.lines[+li.dataset.i].en : '';
+  const busy = !ja && !kw && !!S.sample;
+  pop.innerHTML = `<div class="p-w"><b>${esc(w)}</b><button class="say" data-say="${esc(w)}" aria-label="読み上げ">${ICON.say}</button><button class="star" data-star="${esc(w)}" data-from="${esc(L.id)}" aria-pressed="${on}" aria-label="単語帳に入れる">${ICON.star}</button></div>
+    <p class="p-m${busy ? ' p-busy' : ''}">${ja ? esc(ja) : busy ? '意味を調べています…' : 'この単語の意味はまだ入っていません。'}</p>${note ? `<p class="p-n">${esc(note)}</p>` : ''}${kw ? '' : `<a class="p-link" href="https://ejje.weblio.jp/content/${encodeURIComponent(w)}" target="_blank" rel="noopener">辞書でくわしく見る</a>`}`;
+  if(busy) fetchGloss(L, gkey(w), w, sent).then(v => { if(v && popFor === el) openPop(el); else if(!v && popFor === el){ const m = $('#pop .p-m'); if(m){ m.classList.remove('p-busy'); m.textContent = '意味を調べられませんでした。下の辞書で見てください。'; } } });
   pop.hidden = false;
   const r = el.getBoundingClientRect(); const pw = pop.offsetWidth, ph = pop.offsetHeight;
   let left = Math.min(Math.max(16, r.left + r.width / 2 - pw / 2), window.innerWidth - pw - 16);
@@ -1254,6 +1289,41 @@ function openPop(el){
   pop.style.left = left + 'px'; pop.style.top = Math.max(8, top) + 'px';
 }
 function closePop(){ const p = $('#pop'); if(p && !p.hidden){ p.hidden = true; popFor = null; } }
+/* gloss に無い単語・かたまりは、Claude版だけ Claude に聞いて db に足す（公開版は辞書リンク） */
+const glossBusy = {};
+function fetchGloss(L, key, text, sentence){
+  if(!S.sample || !key || !L) return Promise.resolve('');
+  const id = L.id + '|' + key; if(glossBusy[id]) return glossBusy[id];
+  return glossBusy[id] = (async () => {
+    try{
+      const r = await S.sample.json(`英語を勉強中の日本人（中学〜TOEIC500くらい）向けです。次の英文の中の「${text}」の意味を、この文の中での意味として日本語で短く（20字以内）答えてください。{"ja": "..."} の形のJSONを1つだけ返してください。\n英文: ${sentence}`, {modelTier: 'quick'});
+      const ja = r && typeof r.ja === 'string' ? r.ja.trim() : '';
+      if(ja){
+        L.gloss = Object.assign({}, L.gloss, {[key]: ja});
+        if(L.id !== '__draft' && S.db) S.db.collection('lessons').doc(L.id).update({gloss: L.gloss}).catch(() => {});
+      }
+      return ja;
+    }catch(e){ return ''; }
+    finally{ delete glossBusy[id]; }
+  })();
+}
+/* オレンジ（混ぜ文の英語）をタップ → そこだけ日本語に。もう一度で英語にもどす */
+async function toggleChunk(el){
+  const L = S.byId[S.cur]; if(!L) return;
+  if(el.classList.contains('ja')){ el.textContent = el.dataset.en; el.classList.remove('ja'); return; }
+  let ja = (L.gloss || {})[el.dataset.k];
+  if(!ja && S.sample){
+    const li = el.closest('li'); const i = li ? +li.dataset.i : -1;
+    el.classList.add('busy'); ja = await fetchGloss(L, el.dataset.k, el.textContent, i >= 0 && L.lines[i] ? L.lines[i].en : ''); el.classList.remove('busy');
+  }
+  if(!ja){ toast('この部分の訳はまだありません'); return; }
+  el.dataset.en = el.textContent; el.textContent = ja; el.classList.add('ja');
+}
+function redrawLine(L, i){
+  const li = $(`#story li[data-i="${i}"]`); if(!li) return;
+  li.outerHTML = storyLine(L, i);
+  const nli = $(`#story li[data-i="${i}"] .s-body`); if(nli) nli.classList.add('swap');
+}
 
 /* ---------- toast / keys ---------- */
 let toastTimer = 0;
@@ -1444,6 +1514,7 @@ document.addEventListener('keydown', e => {
   else if((k === 'p' || k === 'P') && S.view === 'lesson'){ playAll(); }
   else if(/^[0-6]$/.test(k) && S.view === 'lesson' && $('#story')){ setAmount(+k); }
   else if(e.key === 'Enter' && document.activeElement && document.activeElement.classList.contains('kw')){ openPop(document.activeElement); }
+  else if(e.key === 'Enter' && document.activeElement && document.activeElement.matches('#story .mw[data-k]')){ toggleChunk(document.activeElement); }
   else if(S.view === 'review' && RV.i < RV.queue.length){
     if(k === ' ' && !RV.shown){ e.preventDefault(); RV.shown = true; renderReview(); }
     else if(RV.shown && (k === 'ArrowRight' || k === 'Enter')){ e.preventDefault(); rvAnswer(true); }
@@ -1451,7 +1522,7 @@ document.addEventListener('keydown', e => {
   }
 });
 document.addEventListener('pointerdown', e => {
-  if(!$('#pop').hidden && !e.target.closest('#pop') && !e.target.closest('.tk.kw')) closePop();
+  if(!$('#pop').hidden && !e.target.closest('#pop') && !e.target.closest('#story .tk')) closePop();
 });
 $('#keys').addEventListener('click', () => toggleKeys(false));
 $('#keysBtn').addEventListener('click', () => toggleKeys(true));
@@ -1481,6 +1552,7 @@ $('#rateSeg').addEventListener('click', e => {
 });
 function markRate(){ $$('#rateSeg button').forEach(b => b.setAttribute('aria-pressed', +b.dataset.r === S.rate)); }
 markRate();
+$('#voiceSel').addEventListener('change', e => { LS.set('voice', e.target.value); pickVoice(); speak('Hello. Nice to meet you.'); });
 $('#modeSeg').addEventListener('click', e => { const b = e.target.closest('[data-mode]'); if(b){ setCompMode(b.dataset.mode); $('#msg').focus(); } });
 $('#composer').addEventListener('submit', e => { e.preventDefault(); send(); });
 $('#msg').addEventListener('input', autosize);
@@ -1498,6 +1570,9 @@ $('#scroll').addEventListener('scroll', () => {
 function onAction(e){
   const t = e.target;
   const kw = t.closest('.tk.kw'); if(kw){ e.stopPropagation(); popFor === kw ? closePop() : openPop(kw); return; }
+  const tr = t.closest('[data-tr-line]'); if(tr){ const L = S.byId[S.cur]; if(L){ const i = +tr.dataset.trLine; nextTap(L, i); redrawLine(L, i); } return; }
+  const chunk = t.closest('#story .mw[data-k]'); if(chunk){ e.stopPropagation(); toggleChunk(chunk); return; }
+  const wtk = t.closest('#story .tk'); if(wtk && !(window.getSelection && String(window.getSelection()).length)){ e.stopPropagation(); popFor === wtk ? closePop() : openPop(wtk); return; }
   const sayLine = t.closest('[data-say-line]'); if(sayLine){ stopSpeak(); speakLine(+sayLine.dataset.sayLine); return; }
   const say = t.closest('[data-say]'); if(say){ stopSpeak(); speak(say.dataset.say); return; }
   const star = t.closest('[data-star]'); if(star){ toggleWord(star.dataset.star, star.dataset.from); return; }
@@ -1507,9 +1582,7 @@ function onAction(e){
   const li = t.closest('#story li');
   if(li){
     if(window.getSelection && String(window.getSelection()).length) return;
-    const L = S.byId[S.cur]; const i = +li.dataset.i; nextTap(L, i);
-    li.outerHTML = storyLine(L, i);
-    const nli = $(`#story li[data-i="${i}"] .s-body`); if(nli) nli.classList.add('swap');
+    const L = S.byId[S.cur]; const i = +li.dataset.i; nextTap(L, i); redrawLine(L, i);
     return;
   }
   const ch = t.closest('.choice'); if(ch && !ch.disabled){ answer(+ch.dataset.q, +ch.dataset.c); return; }
