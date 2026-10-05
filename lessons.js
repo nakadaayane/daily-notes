@@ -1,5 +1,2602 @@
 window.LESSONS = [
 {
+"added": "2026-10-05T07:54",
+"addedAt": "2026-10-05T12:54",
+"cat": "movie",
+"gloss": {
+"2 925 billion dollars": "29億2500万ドル",
+"a": "ひとつの",
+"a re-release": "再上映",
+"again": "再び",
+"all": "すべて",
+"and": "そして",
+"as": "〜として",
+"avatar": "アバター",
+"avatar set": "『アバター』が打ち立てた",
+"avatar set that record": "『アバター』がその記録を作った",
+"avengers": "アベンジャーズ",
+"avengers endgame has become": "『エンドゲーム』は〜になった",
+"avengers endgame has become the highest-grossing film": "『エンドゲーム』は歴代1位の映画になった",
+"back": "取り戻して",
+"beaten": "破った（beatの過去分詞）",
+"become": "〜になる（becomeの過去分詞）",
+"biggest": "一番大きい",
+"biggest hit": "最大のヒット作",
+"billion": "10億",
+"broken": "破った・更新した（breakの過去分詞）",
+"by": "〜によって",
+"dollars": "ドル",
+"endgame": "エンドゲーム",
+"endgame has broken the record": "『エンドゲーム』は記録を更新した",
+"endgame has broken the record set by avatar": "『エンドゲーム』は『アバター』の記録を更新した",
+"endgame has taken": "『エンドゲーム』は〜を取った",
+"endgame has taken back": "『エンドゲーム』は〜を取り戻した",
+"film": "映画",
+"has": "〜した（現在完了）",
+"has become": "〜になった",
+"highest-grossing": "興行収入が最も高い",
+"hit": "ヒット作",
+"in": "〜に",
+"in 2021": "2021年に",
+"is": "〜です",
+"is 2 925 billion dollars": "29億2500万ドルである",
+"it": "それは",
+"it has beaten avatar and returned": "『アバター』を破って返り咲いた",
+"it has beaten avatar and returned as the biggest": "『アバター』を破り、最大の〜として返り咲いた",
+"media": "メディア",
+"no 1": "1位",
+"of": "〜の",
+"of all time": "史上",
+"overseas": "海外の",
+"overseas media": "海外メディア",
+"overseas media reported that": "海外メディアは〜と報じた",
+"overseas media reported that the": "海外メディアは、その〜と報じた",
+"re-release": "再上映",
+"record": "記録",
+"reported": "報じた",
+"returned": "返り咲いた",
+"revenue": "興行収入",
+"set": "打ち立てた（setの過去分詞・過去形）",
+"spot": "座・位置",
+"taken": "取った（takeの過去分詞）",
+"taken back": "取り戻した",
+"that": "〜ということ",
+"the": "その",
+"the biggest hit of all time": "史上最大のヒット作",
+"the record set by avatar": "『アバター』が打ち立てた記録",
+"the top spot": "トップの座",
+"time": "時代",
+"top": "トップの",
+"top spot": "トップの座",
+"total": "累計の",
+"total revenue": "累計興収",
+"with": "〜で",
+"with a re-release": "再上映で",
+"worldwide": "全世界で"
+},
+"grad": [
+{
+"q1": "『アベンジャーズ／エンドゲーム』が、{worldwide} で再び {No. 1} に {has become}。",
+"q2": "{Avengers: Endgame has become} 歴代1位の映画に、{again}。",
+"q3": "{Avengers: Endgame has become the highest-grossing film} 全世界で {again.}"
+},
+{
+"q1": "『アバター』を {beaten}、{biggest hit} に {returned}。",
+"q2": "{It has beaten Avatar and returned} 史上最大のヒット作として。",
+"q3": "{It has beaten Avatar and returned as the biggest} ヒット作 {of all time.}"
+},
+{
+"q1": "{Overseas media} は、{total revenue} が {2.925 billion dollars} と {reported}。",
+"q2": "{Overseas media reported that} 累計興収は {2.925 billion dollars}。",
+"q3": "{Overseas media reported that the} 累計興収 {is 2.925 billion dollars.}"
+},
+{
+"q1": "『エンドゲーム』は、{Avatar} の {record} を {broken}。",
+"q2": "{Endgame has broken the record} 『アバター』が打ち立てた、{in 2021}。",
+"q3": "{Endgame has broken the record set by Avatar} 2021年に{.}"
+},
+{
+"q1": "{Avatar} は {re-release} で {record} を {set}。",
+"q2": "{Avatar set that record} 再上映で。",
+"q3": "{Avatar set} その記録を {with a re-release.}"
+},
+{
+"q1": "{Endgame} は {top spot} を {taken back}。",
+"q2": "{Endgame has taken back} トップの座を。",
+"q3": "{Endgame has taken} 取り返しました {the top spot.}"
+}
+],
+"grammar": {
+"body": "名詞のあとに過去分詞を置くと「〜された（名詞）」という説明になります。the record set by Avatar は the record which was set by Avatar を短くしたかたちです。",
+"ex": [
+{
+"en": "The movie made in 2019 is famous.",
+"ja": "2019年に作られた映画は有名です。"
+},
+{
+"en": "This is a song loved by many fans.",
+"ja": "これは多くのファンに愛されている歌です。"
+}
+],
+"title": "過去分詞の後ろからの説明「〜された…」"
+},
+"id": "20261005-endgame-no1",
+"level": 3,
+"lines": [
+{
+"en": "Avengers: Endgame has become the highest-grossing film worldwide again.",
+"ja": "『アベンジャーズ／エンドゲーム』が、全世界興行収入で再び歴代1位になりました。",
+"mix": "『アベンジャーズ／エンドゲーム』が、{worldwide} で再び歴代1位に {has become}。"
+},
+{
+"en": "It has beaten Avatar and returned as the biggest hit of all time.",
+"ja": "『アバター』を破り、史上最大のヒット作に返り咲きました。",
+"mix": "『アバター』を {beaten} て、{the biggest hit of all time} に返り咲きました。"
+},
+{
+"en": "Overseas media reported that the total revenue is 2.925 billion dollars.",
+"ja": "海外メディアは、累計興収が29億2500万ドルだと報じています。",
+"mix": "{Overseas media} は、累計興収が {2.925 billion dollars} だと報じています。"
+},
+{
+"en": "Endgame has broken the record set by Avatar in 2021.",
+"ja": "『エンドゲーム』は、2021年に『アバター』が打ち立てた記録を更新しました。",
+"mix": "『エンドゲーム』は、{the record set by Avatar} を {broken} ました。"
+},
+{
+"en": "Avatar set that record with a re-release.",
+"ja": "『アバター』は再上映でその記録を作りました。",
+"mix": "『アバター』は {a re-release} でその記録を作りました。"
+},
+{
+"en": "Endgame has taken back the top spot.",
+"ja": "『エンドゲーム』はトップの座を取り返しました。",
+"mix": "『エンドゲーム』は {the top spot} を取り返しました。"
+}
+],
+"post": {
+"account": "denfaminicogame",
+"date": "2026-10-05",
+"likes": 2994,
+"name": "電ファミニコゲーマー",
+"url": "https://x.com/denfaminicogame/status/2106880787195072568"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"2億9250万ドル",
+"29億2500万ドル",
+"292億5000万ドル"
+],
+"q": "累計興行収入はいくら？",
+"why": "3文目に 2.925 billion dollars とあります。billion は10億です。"
+},
+{
+"a": 2,
+"choices": [
+"見る",
+"待つ",
+"破る"
+],
+"q": "beat Avatar の beat の意味は？",
+"why": "beat は「打ち負かす」。ここでは記録で『アバター』を上回りました。"
+},
+{
+"a": 0,
+"choices": [
+"set",
+"setting",
+"sets"
+],
+"q": "the record ___ by Avatar in 2021（『アバター』が打ち立てた記録）",
+"why": "名詞のあとに過去分詞 set（setは原形と同じ形）を置きます。"
+}
+],
+"summary": "『アベンジャーズ／エンドゲーム』が全世界興行収入で再び歴代1位になりました。『アバター』を破って累計29億2500万ドルを記録したと海外メディアが報じていて、2021年に『アバター』が再上映で作った記録を更新したそうです。",
+"talk": {
+"hint": "I think ___ is the best because ___.",
+"ja": "歴代最高のヒット作はどの映画だと思いますか？ なぜですか？",
+"q": "Which movie do you think is the best hit of all time? Why?"
+},
+"title": "『エンドゲーム』が歴代興行収入1位に返り咲き",
+"words": [
+{
+"ja": "全世界で",
+"note": "ポストの「全世界興行収入」は worldwide box office。",
+"w": "worldwide"
+},
+{
+"ja": "破る・打ち負かす",
+"note": "ポストの「『アバター』破り」は beat Avatar（過去分詞は beaten）。",
+"w": "beat"
+},
+{
+"ja": "記録",
+"note": "「記録を更新」は break the record。",
+"w": "record"
+},
+{
+"ja": "海外の",
+"note": "ポストの「海外メディア」は overseas media。",
+"w": "overseas"
+},
+{
+"ja": "取り戻す",
+"note": "ポストの「奪い返す」にあたります。",
+"w": "take back"
+}
+]
+},
+{
+"added": "2026-10-05T00:09",
+"addedAt": "2026-10-05T12:54",
+"cat": "manga",
+"gloss": {
+"a": "ひとつの",
+"a devil's medicine": "悪魔の薬",
+"a man": "ある男",
+"an": "ひとつの",
+"an anime": "アニメ",
+"anime": "アニメ",
+"art": "絵・作画",
+"art idea": "作画原案",
+"become": "〜になる",
+"by": "〜による",
+"devil's": "悪魔の",
+"he": "彼は",
+"he makes": "彼は作る",
+"he makes a": "彼はひとつ作る",
+"idea": "アイデア・原案",
+"is": "〜です",
+"makes": "作る（makeの三単現）",
+"man": "男の人",
+"manga": "マンガ",
+"manshu": "満州（作品名）",
+"manshu opium squad will become": "『満州アヘンスクワッド』は〜になる",
+"manshu opium squad will become an": "『満州アヘンスクワッド』は〜になる",
+"medicine": "薬",
+"monma": "門馬（人名）",
+"of": "〜の",
+"of a man": "ある男の",
+"opium": "アヘン（作品名）",
+"original": "もとの",
+"squad": "分隊・チーム（作品名）",
+"story": "物語・話",
+"the": "その",
+"the art idea": "作画原案",
+"the art idea is": "作画原案は〜です",
+"the art idea is by": "作画原案は〜による",
+"the manga": "漫画",
+"the manga is": "漫画は〜です",
+"the original story": "原作",
+"the original story is": "原作は〜です",
+"the original story is by": "原作は〜による",
+"this": "これ",
+"this is a": "これはひとつの〜です",
+"this is a story": "これは物語です",
+"tsukasa": "司（人名）",
+"tsukasa monma": "門馬司（人名）",
+"tsurushima": "ツルシマ（人名）",
+"will": "〜になるだろう（未来）"
+},
+"grad": [
+{
+"q1": "『満州アヘンスクワッド』が {an anime} に {become}。",
+"q2": "{Manshu Opium Squad will become} アニメに。",
+"q3": "{Manshu Opium Squad will become an} アニメ。"
+},
+{
+"q1": "{The original story} は {Tsukasa Monma} さんです。",
+"q2": "{The original story is} 門馬司さん{.}",
+"q3": "{The original story is by} 門馬司。"
+},
+{
+"q1": "{The manga} は {Tsurushima} さんです。",
+"q2": "{The manga is} ツルシマさん。",
+"q3": "{The manga is} ツルシマ {by}。"
+},
+{
+"q1": "{The art idea} は {鹿子} さんです。",
+"q2": "{The art idea is} 鹿子さん。",
+"q3": "{The art idea is by} 鹿子 {.}"
+},
+{
+"q1": "これは {a man} の {story} です。",
+"q2": "{This is a story} ある男の。",
+"q3": "{This is a} 物語 {of a man.}"
+},
+{
+"q1": "彼は {devil's} {medicine} を作ります。",
+"q2": "{He makes} 悪魔の薬を。",
+"q3": "{He makes a} 悪魔の {medicine.}"
+}
+],
+"grammar": {
+"body": "「だれが作ったか」を言うときは by のあとに人の名前を置きます。「原作は門馬司さん」は The original story is by Tsukasa Monma. です。",
+"ex": [
+{
+"en": "This song is by my favorite singer.",
+"ja": "この歌は私の好きな歌手のものです。"
+},
+{
+"en": "The picture is by my sister.",
+"ja": "この絵は私の姉が描いたものです。"
+}
+],
+"title": "by 〜「〜による・〜が書いた」"
+},
+"id": "20261005-manshu-anime",
+"level": 1,
+"lines": [
+{
+"en": "Manshu Opium Squad will become an anime.",
+"ja": "『満州アヘンスクワッド』がアニメになります。",
+"mix": "『満州アヘンスクワッド』が {an anime} になります。"
+},
+{
+"en": "The original story is by Tsukasa Monma.",
+"ja": "原作は門馬司さんです。",
+"mix": "{The original story} は門馬司さんです。"
+},
+{
+"en": "The manga is by Tsurushima.",
+"ja": "漫画はツルシマさんです。",
+"mix": "{manga} はツルシマさんです。"
+},
+{
+"en": "The art idea is by 鹿子.",
+"ja": "作画原案は鹿子さんです。",
+"mix": "{art idea} は鹿子さんです。"
+},
+{
+"en": "This is a story of a man.",
+"ja": "これはある男の物語です。",
+"mix": "これはある男の {story} です。"
+},
+{
+"en": "He makes a devil's medicine.",
+"ja": "彼は「悪魔の薬」を作ります。",
+"mix": "彼は {a devil's medicine} を作ります。"
+}
+],
+"post": {
+"account": "manshu_ym",
+"date": "2026-10-05",
+"likes": 6413,
+"name": "【公式】『満州アヘンスクワッド』＠連載再開＆アニメ化決定！",
+"url": "https://x.com/manshu_ym/status/2106763567060181430"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"門馬司さん",
+"ツルシマさん",
+"鹿子さん"
+],
+"q": "漫画を担当しているのはだれ？",
+"why": "3文目に The manga is by Tsurushima. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"薬",
+"悪魔",
+"絵"
+],
+"q": "medicine の意味は？",
+"why": "medicine は「薬」。devil が「悪魔」です。"
+},
+{
+"a": 2,
+"choices": [
+"on",
+"at",
+"by"
+],
+"q": "The manga is ___ Tsurushima.（漫画はツルシマさんです）",
+"why": "「〜による」は by を使います。"
+}
+],
+"summary": "マンガ『満州アヘンスクワッド』のアニメ化が決まりました。原作は門馬司さん、漫画はツルシマさん、作画原案は鹿子さんです。公式のお知らせでは「“悪魔の薬”を作る男の物語」と紹介されています。",
+"talk": {
+"hint": "I want to watch it because ___.",
+"ja": "このアニメを見たいですか？",
+"q": "Do you want to watch this anime?"
+},
+"title": "『満州アヘンスクワッド』アニメ化決定",
+"words": [
+{
+"ja": "アニメ",
+"note": "ポストの「アニメ化決定」は will become an anime のように言えます。",
+"w": "anime"
+},
+{
+"ja": "原作",
+"note": "ポストの「原作」。the original story と言います。",
+"w": "original story"
+},
+{
+"ja": "絵・作画",
+"note": "ポストの「作画原案」の「作画」は art で表せます。",
+"w": "art"
+},
+{
+"ja": "悪魔",
+"note": "ポストの「悪魔の薬」は a devil's medicine です。",
+"w": "devil"
+},
+{
+"ja": "薬",
+"note": "ポストの「薬」。",
+"w": "medicine"
+}
+]
+},
+{
+"added": "2026-10-04T22:23",
+"addedAt": "2026-10-05T12:54",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a drawing reference": "作画資料",
+"accurate": "正確な",
+"accurate shapes": "正確な形",
+"anime": "アニメ",
+"are": "〜です",
+"art": "絵",
+"at": "〜で",
+"believe": "信じる",
+"believes": "信じる（believeの三単現）",
+"corners": "角（cornerの複数形）",
+"cut": "切る",
+"cut corners": "手を抜く",
+"drawing": "作画",
+"drawing reference": "作画資料",
+"drawn": "描かれた（drawの過去分詞）",
+"end": "終わり",
+"every": "すべての",
+"hands": "手（handの複数形）",
+"however": "しかし",
+"however the poster thinks": "しかしこの人は〜と考える",
+"however the poster thinks it is just the": "しかしこの人はまさに〜だと考える",
+"in": "〜の中の",
+"in the end": "結局",
+"in the end the poster just loves": "結局この人は〜が大好きだ",
+"is": "〜です",
+"it": "それは",
+"it is rare to see hands": "手を見ることはめったにない",
+"it is rare to see hands drawn with such accurate shapes at a": "そんな正確な形で描かれた手を〜で見るのはめったにない",
+"just": "まさに",
+"just the opposite": "まったく逆",
+"level": "レベル",
+"loves": "大好きだ",
+"muchimaro-sensei's": "むちまろ先生の",
+"muchimaro-sensei's art": "むちまろ先生の絵",
+"of": "〜の",
+"on": "〜の上に",
+"on the level of a drawing reference": "作画資料レベル",
+"opposite": "反対・逆",
+"people": "人々",
+"poster": "投稿した人",
+"rare": "めったにない",
+"reference": "資料",
+"say": "言う",
+"scene": "場面",
+"see": "見る",
+"shapes": "形（shapeの複数形）",
+"simplified": "簡略化された",
+"so": "だから",
+"so the staff cut corners": "だからスタッフは手を抜いた",
+"some": "一部の",
+"some people say": "〜と言う人もいる",
+"some people say the hands in the anime are simplified so the staff": "アニメの手は簡略化されたのでスタッフは〜と言う人もいる",
+"staff": "スタッフ",
+"such": "そのような",
+"the": "その",
+"the poster believes": "この人は〜と信じている",
+"the poster believes every scene is on the level of a": "この人はどの場面も〜レベルだと信じている",
+"the staff cut corners": "スタッフが手を抜いた",
+"think": "思う",
+"thinks": "思う（thinkの三単現）",
+"to": "〜すること",
+"with": "〜で"
+},
+"grad": [
+{
+"q1": "アニメの手は {simplified} されていて、{the staff cut corners} と言う人もいます。",
+"q2": "{Some people say} 手は {simplified}、{so the staff cut corners}。",
+"q3": "{Some people say the hands in the anime are simplified, so the staff} 手を抜いた {cut corners.}"
+},
+{
+"q1": "しかしこの人は、{just the opposite} だと {think} しています。",
+"q2": "{However, the poster thinks} まったく {just the opposite}。",
+"q3": "{However, the poster thinks it is just the} 逆 {opposite.}"
+},
+{
+"q1": "{accurate shapes} で描かれた手は {rare} です。",
+"q2": "{It is rare to see hands} 正確な形で {drawn} 描かれた。",
+"q3": "{It is rare to see hands drawn with such accurate shapes at a} 簡略化した {level.}"
+},
+{
+"q1": "この人は、どの場面も {a drawing reference} レベルだと {believe} しています。",
+"q2": "{The poster believes} どの場面も {on the level of a drawing reference}。",
+"q3": "{The poster believes every scene is on the level of a} 作画 {reference.}"
+},
+{
+"q1": "{In the end}、この人は {Muchimaro-sensei's art} が {loves}。",
+"q2": "{In the end, the poster just loves} むちまろ先生の {art}。",
+"q3": "{In the end, the poster just loves} むちまろ先生の {art.}"
+}
+],
+"grammar": {
+"body": "過去分詞（drawn, made など）を名詞のあとに置くと、「〜された…」と説明できます。hands drawn with accurate shapes は「正確な形で描かれた手」です。",
+"ex": [
+{
+"en": "I like the picture drawn by her.",
+"ja": "私は彼女が描いた絵が好きです。"
+},
+{
+"en": "This is a game made in Japan.",
+"ja": "これは日本で作られたゲームです。"
+}
+],
+"title": "過去分詞が名詞を後ろから説明「〜された…」"
+},
+"id": "20261004-seitokai-hands",
+"level": 3,
+"lines": [
+{
+"en": "Some people say the hands in the anime are simplified, so the staff cut corners.",
+"ja": "アニメの手は簡略化されていて手抜きだ、と言う人もいます。",
+"mix": "アニメの手は {simplified} されていて、{cut corners} だと言う人もいます。"
+},
+{
+"en": "However, the poster thinks it is just the opposite.",
+"ja": "しかしこの人は、まったく逆だと考えています。",
+"mix": "しかしこの人は、まったく {opposite} だと考えています。"
+},
+{
+"en": "It is rare to see hands drawn with such accurate shapes at a simplified level.",
+"ja": "簡略化したレベルで、あれほど正確な形で描かれた手はめったにありません。",
+"mix": "簡略化したレベルで、あれほど {accurate} な形で描かれた手は {rare} です。"
+},
+{
+"en": "The poster believes every scene is on the level of a drawing reference.",
+"ja": "この人は、どの場面も作画資料レベルだと思っています。",
+"mix": "この人は、どの場面も {drawing reference} レベルだと思っています。"
+},
+{
+"en": "In the end, the poster just loves Muchimaro-sensei's art.",
+"ja": "結局、この人はむちまろ先生の絵が大好きなのです。",
+"mix": "結局、この人は {Muchimaro-sensei's art} が大好きなのです。"
+}
+],
+"post": {
+"account": "Oekaki_oekaki_1",
+"date": "2026-10-04",
+"likes": 2172,
+"name": "♡お絵描き大好き♡@skebやってます",
+"url": "https://x.com/Oekaki_oekaki_1/status/2106736993547976795"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"手抜きだと思う",
+"作画資料レベルだと思う",
+"気にならない"
+],
+"q": "この人は、手がデフォルメされていることをどう見ていますか？",
+"why": "4文目に、every scene is on the level of a drawing reference とあります。"
+},
+{
+"a": 0,
+"choices": [
+"めったにない",
+"よくある",
+"新しい"
+],
+"q": "rare の意味は？",
+"why": "rare は「めったにない」。ポストの「なかなかない」です。"
+},
+{
+"a": 2,
+"choices": [
+"draw",
+"drew",
+"drawn"
+],
+"q": "hands ___ with accurate shapes（正確な形で描かれた手）",
+"why": "「描かれた」を後ろから足すので、過去分詞 drawn を使います。"
+}
+],
+"summary": "『生徒会にも穴はある！』の手がデフォルメされていて手抜きだ、という意見に対して、このポストの人は逆だと言います。デフォルメの中であそこまで形が取れている手はなかなかなく、全部が作画資料レベル。むちまろ先生の絵が大好きだそうです。",
+"talk": {
+"hint": "I like ___ hands more because ___.",
+"ja": "リアルな手と、シンプルな手では、どちらが好きですか？",
+"q": "Which do you like more, realistic hands or simple hands?"
+},
+"title": "『生徒会にも穴はある！』の手は手抜きどころか作画資料レベル",
+"words": [
+{
+"ja": "簡略化された",
+"note": "ポストの「デフォルメされた」を simplified と言いかえました。deformed でも通じます。",
+"w": "simplified"
+},
+{
+"ja": "めったにない",
+"note": "ポストの「なかなかない」は It is rare to ~。",
+"w": "rare"
+},
+{
+"ja": "正確な",
+"note": "ポストの「形が取れている」を accurate shapes（正確な形）で表しました。",
+"w": "accurate"
+},
+{
+"ja": "反対・逆",
+"note": "ポストの「ガチで逆」は just the opposite。",
+"w": "opposite"
+},
+{
+"ja": "資料・手本",
+"note": "ポストの「作画資料」は drawing reference。",
+"w": "reference"
+}
+]
+},
+{
+"added": "2026-10-04T22:07",
+"addedAt": "2026-10-05T12:54",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a great": "すばらしい",
+"a great movie": "最高の一本",
+"a lot": "たくさん",
+"an": "ひとつの",
+"an event": "イベント",
+"an event inspired by": "〜にインスパイアされたイベント",
+"an event inspired by wreck-it ralph is": "『シュガー・ラッシュ』にインスパイアされたイベントが",
+"and": "そして",
+"by": "〜によって",
+"can": "〜できる",
+"cry": "泣く",
+"cry a lot": "大泣きする",
+"disney": "ディズニー",
+"disney plus": "ディズニープラス",
+"enjoy": "楽しむ",
+"event": "イベント",
+"fans": "ファン（fanの複数形）",
+"game": "ゲーム",
+"game fans": "ゲーム好きの人たち",
+"game fans in japan will": "日本のゲーム好きは〜できる",
+"game fans in japan will enjoy": "日本のゲーム好きは楽しめる",
+"great": "すばらしい",
+"have": "持っている・〜した（現在完了）",
+"held": "開催される（holdの過去分詞）",
+"if": "もし〜なら",
+"in": "〜で・〜の中で",
+"in twisted wonderland": "ツイステで",
+"inspired": "インスパイアされた",
+"is": "〜です",
+"is held": "開催される",
+"it": "それを",
+"it is": "それは〜です",
+"it is a great": "それはすばらしい〜です",
+"japan": "日本",
+"laugh": "笑う",
+"laugh a lot": "大笑いする",
+"lot": "たくさん",
+"many": "たくさんの",
+"many scenes in the movie": "映画の多くのシーン",
+"movie": "映画",
+"not": "〜ない",
+"on": "〜で（配信サービス）",
+"plus": "プラス",
+"ralph": "ラルフ（作品名の一部）",
+"scenes": "シーン（sceneの複数形）",
+"seen": "見た（seeの過去分詞）",
+"should": "〜したほうがいい",
+"the": "その",
+"twisted": "ツイステッド（作品名の一部）",
+"watch": "見る",
+"watch it": "それを見る",
+"will": "〜するだろう",
+"wonderland": "ワンダーランド",
+"wreck-it": "シュガー・ラッシュ（原題Wreck-It Ralph）",
+"you": "あなたは",
+"you can watch it": "見られます",
+"you can watch it on": "〜で見られます",
+"you should watch it": "見たほうがいいですよ",
+"you should watch it if you have not": "まだなら見たほうがいい",
+"you will laugh a lot": "大笑いするでしょう",
+"you will laugh a lot and": "大笑いして、そして〜"
+},
+"grad": [
+{
+"q1": "{An event} が、ツイステで {is held}。",
+"q2": "{An event inspired by} 『シュガー・ラッシュ』が {is held} ツイステで。",
+"q3": "{An event inspired by Wreck-It Ralph is} 開催される {in Twisted Wonderland.}"
+},
+{
+"q1": "日本の {game fans} は、映画の {scenes} を {enjoy}。",
+"q2": "{Game fans in Japan will enjoy} 映画の多くの {scenes}。",
+"q3": "{Game fans in Japan will} 楽しむ {many scenes in the movie.}"
+},
+{
+"q1": "{Disney Plus} で {watch} できます。",
+"q2": "{You can watch it} ディズニープラスで。",
+"q3": "{You can watch it on} ディズニープラス{.}"
+},
+{
+"q1": "まだ見ていない人は、{watch it} したほうがいい。",
+"q2": "{You should watch it} まだ見ていない人は。",
+"q3": "{You should watch it if you have not} 見て{.}"
+},
+{
+"q1": "{a great} {movie} です。",
+"q2": "{It is} 最高の {movie}。",
+"q3": "{It is a great} 映画{.}"
+},
+{
+"q1": "{laugh} も {cry} も、{a lot}。",
+"q2": "{You will laugh a lot} 大泣きも。",
+"q3": "{You will laugh a lot and} 大泣き {a lot.}"
+}
+],
+"grammar": {
+"body": "人にすすめるときは should ＋ 動詞 を使います。「〜するべき」より、やわらかい「〜したほうがいい」です。",
+"ex": [
+{
+"en": "You should read this manga.",
+"ja": "このマンガを読んだほうがいいですよ。"
+},
+{
+"en": "We should go to the movie.",
+"ja": "わたしたちはその映画を見に行ったほうがいいです。"
+}
+],
+"title": "should ＋ 動詞「〜したほうがいい」"
+},
+"id": "20261004-sugar-rush-twst",
+"level": 2,
+"lines": [
+{
+"en": "An event inspired by Wreck-It Ralph is held in Twisted Wonderland.",
+"ja": "『シュガー・ラッシュ』にインスパイアされたイベントが、ツイステで開催されます。",
+"mix": "{An event inspired by} 『シュガー・ラッシュ』が、ツイステで {is held}。"
+},
+{
+"en": "Game fans in Japan will enjoy many scenes in the movie.",
+"ja": "日本のゲーム好きは、その映画の多くのシーンを楽しめます。",
+"mix": "日本の {game fans} は、その映画の多くの {scenes} を楽しめます。"
+},
+{
+"en": "You can watch it on Disney Plus.",
+"ja": "ディズニープラスで見られます。",
+"mix": "{Disney Plus} で {watch} できます。"
+},
+{
+"en": "You should watch it if you have not seen it.",
+"ja": "まだ見ていない人は、見たほうがいいですよ。",
+"mix": "まだ見ていない人は、{You should watch it}。"
+},
+{
+"en": "It is a great movie.",
+"ja": "最高の一本です。",
+"mix": "{a great movie} です。"
+},
+{
+"en": "You will laugh a lot and cry a lot.",
+"ja": "大笑いも大泣きも、間違いなしです。",
+"mix": "{laugh a lot} も {cry a lot} も、間違いなしです。"
+}
+],
+"post": {
+"account": "toboso_official",
+"date": "2026-10-04",
+"likes": 10151,
+"name": "枢やな_Staff",
+"url": "https://x.com/toboso_official/status/2106732841526779929"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"Netflix",
+"映画館だけ",
+"ディズニープラス"
+],
+"q": "映画を見られるのはどこ？",
+"why": "3文目に You can watch it on Disney Plus. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"場面",
+"季節",
+"音楽"
+],
+"q": "scene の意味は？",
+"why": "many scenes は「多くのシーン」。"
+},
+{
+"a": 1,
+"choices": [
+"shoulds",
+"should",
+"should to"
+],
+"q": "You ___ watch it.（見たほうがいいですよ）",
+"why": "should の次は動詞の原形。s も to もつけません。"
+}
+],
+"summary": "『シュガー・ラッシュ』にインスパイアされたイベントが『ツイステ』で開催されます。ツイステ公式の枢やなさんは、原作映画はゲーム好きの日本人なら絶対に楽しめるシーンが多く、ディズニープラスで見られる、大笑いも大泣きも間違いなしの最高の一本だと書いています。",
+"talk": {
+"hint": "My favorite is ___ because ___.",
+"ja": "好きなディズニー映画は何ですか？",
+"q": "What is your favorite Disney movie?"
+},
+"title": "ツイステ×『シュガー・ラッシュ』枢やなさんのおすすめ",
+"words": [
+{
+"ja": "〜にインスパイアされた",
+"note": "ポストの「インスパイアされた」は inspired by 〜。",
+"w": "inspired"
+},
+{
+"ja": "イベント",
+"note": "ポストの「イベントが開催」は an event is held。",
+"w": "event"
+},
+{
+"ja": "場面・シーン",
+"note": "ポストの「シーンが目白押し」は many scenes。",
+"w": "scene"
+},
+{
+"ja": "笑う",
+"note": "「大笑い」は laugh a lot。",
+"w": "laugh"
+},
+{
+"ja": "泣く",
+"note": "「大泣き」は cry a lot。",
+"w": "cry"
+}
+]
+},
+{
+"added": "2026-10-04T21:49",
+"addedAt": "2026-10-05T12:54",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a new challenge": "新しい挑戦",
+"also": "〜も",
+"and": "〜と",
+"animation": "作画・アニメーション",
+"anime": "アニメ",
+"be": "〜である",
+"but": "でも",
+"challenge": "挑戦",
+"character": "キャラクター",
+"character ideas": "キャラクター原案",
+"chief": "総〜・主任の",
+"chief animation direction": "総作画監督",
+"demvamps": "DemVAMPS（作品名）",
+"direction": "監督（すること）",
+"director": "監督",
+"does": "担当する（doの三単現）",
+"everything": "すべてのこと",
+"everything is a new": "すべてが新しい〜だ",
+"everything is a new challenge": "すべてが新しい挑戦だ",
+"favorite": "好きな",
+"favorite things": "好きなもの",
+"finally": "ついに",
+"for": "〜にとって",
+"for lam": "LAMにとって",
+"forward": "前へ",
+"friends": "仲間・友だち",
+"grow": "広がる・育つ",
+"ideas": "原案（ideaの複数形）",
+"into": "〜の中へ",
+"into it with friends": "仲間と作品の中へ",
+"is": "〜です",
+"it": "それ（作品）",
+"it may grow slowly": "ゆっくり広がるかもしれない",
+"it may grow slowly but please": "ゆっくり広がるかもしれないが、どうか",
+"lam": "LAM（人名）",
+"lam also does": "LAMは〜も担当する",
+"lam also does the character ideas": "LAMはキャラクター原案も担当する",
+"lam also does the character ideas and the chief": "LAMはキャラ原案と総〜も担当する",
+"lam also does the original story and the": "LAMは原作と〜も担当する",
+"lam is putting": "LAMは入れている",
+"lam is putting favorite things": "LAMは好きなものを入れている",
+"lam will be the director of": "LAMが〜の監督を務める",
+"lam will be the director of the original": "LAMがオリジナルの〜の監督を務める",
+"look": "見る",
+"look forward to": "〜を楽しみにする",
+"may": "〜かもしれない",
+"new": "新しい",
+"new challenge": "新しい挑戦",
+"of": "〜の",
+"original": "オリジナルの",
+"original story": "原作",
+"please": "どうか〜してください",
+"project": "プロジェクト",
+"putting": "入れている（putの-ing形）",
+"script": "脚本",
+"short": "短い",
+"short anime": "ショートアニメ",
+"slowly": "ゆっくり",
+"starting": "始まっている（startの-ing形）",
+"story": "物語・原作",
+"the": "その",
+"the project is": "プロジェクトは〜",
+"the project is finally": "プロジェクトはついに〜",
+"things": "もの（thingの複数形）",
+"to": "〜へ・〜を",
+"will": "〜するだろう（未来）",
+"with": "〜といっしょに"
+},
+"grad": [
+{
+"q1": "LAMさんが {original} {short anime} {DemVAMPS} の {director} を務めます。",
+"q2": "{LAM will be the director of} オリジナルのショートアニメ {DemVAMPS.}",
+"q3": "{LAM will be the director of the original} ショートアニメ {DemVAMPS.}"
+},
+{
+"q1": "このプロジェクトが {finally} {starting}。",
+"q2": "{The project is} ついに {starting.}",
+"q3": "{The project is finally} 始動{.}"
+},
+{
+"q1": "{LAM} は {original story} と {script} も担当します。",
+"q2": "{LAM also does} 原作と脚本も。",
+"q3": "{LAM also does the original story and the} 脚本{.}"
+},
+{
+"q1": "{character ideas} と {chief animation direction} も {does}。",
+"q2": "{LAM also does the character ideas} と総作画監督も。",
+"q3": "{LAM also does the character ideas and the chief} 作画監督{.}"
+},
+{
+"q1": "{Everything} は {new challenge} です、{LAM} にとって。",
+"q2": "{Everything is a new challenge} LAMさんにとって。",
+"q3": "{Everything is a new} 挑戦 {for LAM.}"
+},
+{
+"q1": "{LAM} は {friends} と {favorite things} を詰め込んでいます。",
+"q2": "{LAM is putting favorite things} 作品に、仲間と一緒に。",
+"q3": "{LAM is putting} 好きなもの {into it with friends.}"
+},
+{
+"q1": "{slowly} かもしれませんが、{DemVAMPS} を {look forward to}。",
+"q2": "{It may grow slowly,} でも DemVAMPS を {look forward to}。",
+"q3": "{It may grow slowly, but please} 楽しみにして {DemVAMPS.}"
+}
+],
+"grammar": {
+"body": "待ちどおしい気持ちは look forward to のあとに名詞を置いて言います。to のあとに動詞を置くときは 〜ing の形にします。",
+"ex": [
+{
+"en": "I look forward to the new movie.",
+"ja": "私は新しい映画を楽しみにしています。"
+},
+{
+"en": "We look forward to seeing you.",
+"ja": "私たちはあなたに会うのを楽しみにしています。"
+}
+],
+"title": "look forward to 〜「〜を楽しみにする」"
+},
+"id": "20261004-demvamps",
+"level": 2,
+"lines": [
+{
+"en": "LAM will be the director of the original short anime DemVAMPS.",
+"ja": "LAMさんがオリジナルのショートアニメ「DemVAMPS」の監督を務めます。",
+"mix": "LAMさんがオリジナルの {short anime} 「DemVAMPS」の {director} を務めます。"
+},
+{
+"en": "The project is finally starting.",
+"ja": "このプロジェクトが、ついに始動します。",
+"mix": "このプロジェクトが、{finally} 始動します。"
+},
+{
+"en": "LAM also does the original story and the script.",
+"ja": "LAMさんは原作と脚本も担当します。",
+"mix": "LAMさんは {original story} と脚本も担当します。"
+},
+{
+"en": "LAM also does the character ideas and the chief animation direction.",
+"ja": "キャラクター原案と総作画監督も担当します。",
+"mix": "{character ideas} と {chief animation direction} も担当します。"
+},
+{
+"en": "Everything is a new challenge for LAM.",
+"ja": "LAMさんにとって、初めて挑戦することばかりです。",
+"mix": "LAMさんにとって、{a new challenge} ばかりです。"
+},
+{
+"en": "LAM is putting favorite things into it with friends.",
+"ja": "LAMさんは仲間たちと「好き」を作品に詰め込んでいます。",
+"mix": "LAMさんは仲間たちと {favorite things} を作品に詰め込んでいます。"
+},
+{
+"en": "It may grow slowly, but please look forward to DemVAMPS.",
+"ja": "ゆっくりかもしれませんが、DemVAMPSを楽しみにしていてください。",
+"mix": "{It may grow slowly}、でも DemVAMPS を {look forward to} してください。"
+}
+],
+"post": {
+"account": "ramdayo1122",
+"date": "2026-10-04",
+"likes": 31288,
+"name": "LAM",
+"url": "https://x.com/ramdayo1122/status/2106728368138043816"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"原作と脚本",
+"声優",
+"総作画監督"
+],
+"q": "LAMさんがやることとして、文章に出てこないのは？",
+"why": "3・4文目に原作、脚本、総作画監督は出ますが、声優は出てきません。"
+},
+{
+"a": 0,
+"choices": [
+"ついに",
+"ゆっくり",
+"ずっと"
+],
+"q": "finally の意味は？",
+"why": "The project is finally starting. で「ついに始動」。"
+},
+{
+"a": 1,
+"choices": [
+"at",
+"to",
+"for"
+],
+"q": "Please look forward ___ DemVAMPS.（DemVAMPSを楽しみにしてください）",
+"why": "look forward to 〜 で「〜を楽しみにする」です。"
+}
+],
+"summary": "LAMさん初監督のオリジナルショートアニメ「DemVAMPS」が始動しました。LAMさんは監督に加えて、原作・脚本・キャラクター原案・総作画監督も担当します。「好き」を詰め込みながら、ゆっくり少しずつ広げていくそうです。",
+"talk": {
+"hint": "I want to watch an anime about ___.",
+"ja": "どんなショートアニメを見たいですか？",
+"q": "What kind of short anime do you want to watch?"
+},
+"title": "LAMさん初監督のショートアニメ「DemVAMPS」始動",
+"words": [
+{
+"ja": "監督",
+"note": "ポストの「初監督」の「監督」。映画やアニメを指揮する人です。",
+"w": "director"
+},
+{
+"ja": "脚本",
+"note": "ポストの「脚本」。",
+"w": "script"
+},
+{
+"ja": "主任の・いちばん上の",
+"note": "「総作画監督」は chief animation director のように言えます。",
+"w": "chief"
+},
+{
+"ja": "ついに",
+"note": "ポストの「ついに始動」の「ついに」。",
+"w": "finally"
+},
+{
+"ja": "〜を楽しみにする",
+"note": "ポストの「楽しみにしていてください」は please look forward to 〜。",
+"w": "look forward to"
+}
+]
+},
+{
+"added": "2026-10-04T20:00",
+"addedAt": "2026-10-05T12:54",
+"cat": "movie",
+"gloss": {
+"270th": "270番目の",
+"270th anniversary": "270周年",
+"4k": "4K（高画質）",
+"4k restored version": "4Kレストア版",
+"a": "ひとりの",
+"about": "〜について",
+"amadeus": "アマデウス（作品名）",
+"anniversary": "周年・記念日",
+"be": "〜される",
+"between": "〜の間の",
+"between the two men": "2人の男性の間の",
+"birth": "誕生",
+"by": "〜に",
+"court": "宮廷",
+"court musician": "宮廷音楽家",
+"film": "映画",
+"for": "〜のために",
+"for this occasion": "この機会に",
+"for this occasion the 4k restored version of amadeus": "この機会に『アマデウス』4Kレストア版が",
+"for this occasion the 4k restored version of amadeus will be": "この機会に『アマデウス』4Kレストア版が〜される",
+"front": "前",
+"genius": "天才",
+"god": "神",
+"in": "〜で",
+"in theaters": "劇場で",
+"is": "〜です",
+"it": "それは",
+"it is the 270th anniversary": "270周年にあたる",
+"it is the 270th anniversary of": "〜の270周年にあたる",
+"loved": "愛された（loveの過去分詞）",
+"loved by god": "神に愛された",
+"men": "男性（manの複数形）",
+"mozart": "モーツァルト",
+"mozart is a": "モーツァルトはひとりの〜だ",
+"mozart is a genius": "モーツァルトは天才だ",
+"mozart's": "モーツァルトの",
+"mozart's talent": "モーツァルトの才能",
+"musician": "音楽家",
+"occasion": "機会",
+"of": "〜の",
+"relationship": "関係",
+"released": "公開される（releaseの過去分詞）",
+"restored": "修復された",
+"salieri": "サリエリ（人名）",
+"salieri is a court musician": "サリエリは宮廷音楽家だ",
+"salieri is a court musician struggling in front of": "サリエリは〜の前で葛藤する宮廷音楽家だ",
+"story": "物語",
+"struggling": "葛藤している",
+"talent": "才能",
+"the": "その",
+"the film": "その映画",
+"the film is a story": "映画は物語だ",
+"the film is a story about the": "映画は〜についての物語だ",
+"theaters": "映画館（theaterの複数形）",
+"this": "この",
+"two": "2人の",
+"two men": "2人の男性",
+"version": "版",
+"will": "〜するだろう",
+"will be released": "公開される"
+},
+"grad": [
+{
+"q1": "モーツァルトの {birth} の {270th anniversary} にあたります。",
+"q2": "{It is the 270th anniversary} モーツァルトの生誕の。",
+"q3": "{It is the 270th anniversary of} モーツァルトの {birth.}"
+},
+{
+"q1": "{For this occasion}、『アマデウス』の {4K restored version} が {theaters} で {released}。",
+"q2": "{For this occasion, the 4K restored version of Amadeus} 劇場で公開されます。",
+"q3": "{For this occasion, the 4K restored version of Amadeus will be} 公開される {in theaters.}"
+},
+{
+"q1": "{Mozart} は {God} に {loved} {genius} です。",
+"q2": "{Mozart is a genius} 神に愛された。",
+"q3": "{Mozart is a} 天才 {loved by God.}"
+},
+{
+"q1": "{Salieri} は {Mozart's talent} を前に {struggling} する {court musician}。",
+"q2": "{Salieri is a court musician} モーツァルトの才能を前に葛藤している。",
+"q3": "{Salieri is a court musician struggling in front of} モーツァルトの {talent.}"
+},
+{
+"q1": "{The film} は、{two men} の {relationship} を描いた {story}。",
+"q2": "{The film is a story} 2人の関係についての。",
+"q3": "{The film is a story about the} 関係 {between the two men.}"
+}
+],
+"grammar": {
+"body": "名詞のあとに 過去分詞（〜された）や 現在分詞（〜している）を置くと、その名詞を説明できます。a genius loved by God は「神に愛された天才」、a musician struggling 〜 は「〜で葛藤している音楽家」です。",
+"ex": [
+{
+"en": "This is a film made in 1984.",
+"ja": "これは1984年に作られた映画です。"
+},
+{
+"en": "The man standing there is the director.",
+"ja": "そこに立っている男性が監督です。"
+}
+],
+"title": "分詞が名詞をうしろから説明する"
+},
+"id": "20261004-amadeus-4k",
+"level": 3,
+"lines": [
+{
+"en": "It is the 270th anniversary of Mozart's birth.",
+"ja": "モーツァルトの生誕270周年にあたります。",
+"mix": "モーツァルトの生誕 {270th anniversary} にあたります。"
+},
+{
+"en": "For this occasion, the 4K restored version of Amadeus will be released in theaters.",
+"ja": "これを機に、『アマデウス』の4Kレストア版が劇場で公開されます。",
+"mix": "これを機に、『アマデウス』の {4K restored version} が劇場で {will be released} されます。"
+},
+{
+"en": "Mozart is a genius loved by God.",
+"ja": "モーツァルトは神に愛された天才です。",
+"mix": "モーツァルトは {loved by God} {genius} です。"
+},
+{
+"en": "Salieri is a court musician struggling in front of Mozart's talent.",
+"ja": "サリエリはモーツァルトの才能を前に葛藤する宮廷音楽家です。",
+"mix": "サリエリはモーツァルトの {talent} を前に {struggling} する {court musician} です。"
+},
+{
+"en": "The film is a story about the relationship between the two men.",
+"ja": "この映画は、2人の関係を描いた物語です。",
+"mix": "この映画は、2人の {relationship} を描いた物語です。"
+}
+],
+"post": {
+"account": "eiga_natalie",
+"date": "2026-10-04",
+"likes": 4087,
+"name": "映画ナタリー",
+"url": "https://x.com/eiga_natalie/status/2106700905555083707"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"映画監督",
+"宮廷音楽家",
+"神に愛された天才"
+],
+"q": "モーツァルトはどんな人物として描かれていますか？",
+"why": "3文目に a genius loved by God とあります。宮廷音楽家はサリエリです。"
+},
+{
+"a": 1,
+"choices": [
+"誕生",
+"周年・記念日",
+"映画館"
+],
+"q": "anniversary の意味は？",
+"why": "the 270th anniversary は「270周年」です。"
+},
+{
+"a": 0,
+"choices": [
+"struggling",
+"struggled",
+"struggles"
+],
+"q": "Salieri is a court musician ___ in front of Mozart's talent.",
+"why": "名詞のあとに現在分詞を置いて「〜している音楽家」と説明します。"
+}
+],
+"summary": "モーツァルト生誕270周年を記念して、映画『アマデウス』の4Kレストア版が劇場公開されます。神に愛された天才モーツァルトと、その才能を前に葛藤する宮廷音楽家サリエリの関係を描いた物語です。",
+"talk": {
+"hint": "Yes, because ___. / No, because ___.",
+"ja": "名作映画を、もう一度映画館で見たいですか？",
+"q": "Do you want to see a classic film again in a theater?"
+},
+"title": "『アマデウス』4Kレストア版が劇場公開",
+"words": [
+{
+"ja": "〜周年・記念日",
+"note": "ポストの「生誕270周年」は the 270th anniversary of birth。",
+"w": "anniversary"
+},
+{
+"ja": "修復する",
+"note": "restored version で「レストア版（修復された版）」。",
+"w": "restore"
+},
+{
+"ja": "天才",
+"note": "ポストの「天才モーツァルト」。",
+"w": "genius"
+},
+{
+"ja": "葛藤する・もがく",
+"note": "ポストの「葛藤する」は struggle で表せます。",
+"w": "struggle"
+},
+{
+"ja": "関係",
+"note": "ポストの「関係を描いた」の「関係」。",
+"w": "relationship"
+}
+]
+},
+{
+"added": "2026-10-04T19:45",
+"addedAt": "2026-10-05T12:54",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a large amount of information": "大量の情報",
+"amount": "量",
+"and": "〜と",
+"and chief animation director": "そして総作画監督",
+"animation": "アニメーション・作画",
+"anime": "アニメ",
+"are": "〜です",
+"as": "〜として",
+"as a result": "その結果",
+"as a result the picture contains a large": "その結果、絵は大量の〜を含む",
+"body": "体",
+"bones": "骨（boneの複数形）",
+"bones and muscles": "骨格や筋肉",
+"bumps": "凹凸（bumpの複数形）",
+"character": "キャラクター",
+"character designer": "キャラクターデザイナー",
+"chief": "総〜・主任の",
+"chief animation director": "総作画監督",
+"colored": "色つきの",
+"colored outlines": "色トレス（色つき輪郭線）",
+"contains": "含む",
+"deformed": "デフォルメした",
+"deformed style": "デフォルメ調",
+"design": "デザイン",
+"designer": "デザイナー",
+"director": "監督",
+"from": "〜から",
+"from looking heavy": "重たく見えないように",
+"heavy": "重たい",
+"however": "しかし",
+"however colored outlines keep": "しかし色トレスが〜を保つ",
+"however colored outlines keep the whole picture from": "しかし色トレスが全体を〜させない",
+"imamura": "今村（人名）",
+"in": "〜の中で",
+"information": "情報",
+"is": "〜です",
+"is very unique": "とても独特だ",
+"keep": "〜に保つ",
+"large": "大きな",
+"looking": "見える（lookの-ing形）",
+"looking heavy": "重たく見える",
+"make": "作る",
+"mixes": "混ぜる（mixの三単現）",
+"more": "より多くの",
+"more steps of shading": "より多段階の影付け",
+"muscles": "筋肉（muscleの複数形）",
+"of": "〜の",
+"on": "〜に",
+"on the body": "体に",
+"ordinary": "ふつうの",
+"outlines": "輪郭線（outlineの複数形）",
+"picture": "絵",
+"realism": "リアルさ",
+"result": "結果",
+"ryo": "亮（人名）",
+"ryo imamura": "今村亮（人名）",
+"ryo imamura is": "今村亮は〜です",
+"ryo imamura is the": "今村亮は〜です",
+"shading": "影付け",
+"shown": "表される（showの過去分詞）",
+"small": "小さな・細かな",
+"small bumps": "細かな凹凸",
+"steps": "段階（stepの複数形）",
+"style": "スタイル",
+"style is very unique": "調はとても独特だ",
+"than": "〜より",
+"than in ordinary anime": "一般的なアニメより",
+"the": "その",
+"the bones and muscles make": "骨格や筋肉が〜を作る",
+"the bones and muscles make small": "骨格や筋肉が細かな〜を作る",
+"the design which mixes": "〜を混ぜたそのデザイン",
+"the design which mixes realism and": "リアルさと〜を混ぜたデザイン",
+"these": "これらの",
+"these bumps are shown": "その凹凸は表現される",
+"these bumps are shown with more steps of": "その凹凸はより多段階の〜で表現される",
+"unique": "独特の",
+"very": "とても",
+"which": "それは（関係代名詞）",
+"whole": "全体の",
+"with": "〜で"
+},
+"grad": [
+{
+"q1": "{Ryo Imamura} が {character designer} と {chief animation director} です。",
+"q2": "{Ryo Imamura is} キャラクター {designer} と {chief animation director}。",
+"q3": "{Ryo Imamura is the} キャラクターデザイン {and chief animation director.}"
+},
+{
+"q1": "{bones and muscles} が、体に {small bumps} を作ります。",
+"q2": "{The bones and muscles make} 体の {small bumps}。",
+"q3": "{The bones and muscles make small} 凹凸 {on the body.}"
+},
+{
+"q1": "その {bumps} は、一般的なアニメより {more steps of shading} で表現されます。",
+"q2": "{These bumps are shown} 一般的なアニメより {more steps of shading}。",
+"q3": "{These bumps are shown with more steps of} 影付け {than in ordinary anime.}"
+},
+{
+"q1": "{As a result}、絵の {information} 量は {large} です。",
+"q2": "{As a result,} 絵は {a large amount of information} を含みます。",
+"q3": "{As a result, the picture contains a large} 量の {information.}"
+},
+{
+"q1": "しかし {colored outlines} のおかげで、全体は {heavy} に見えません。",
+"q2": "{However, colored outlines keep} 全体が {from looking heavy}。",
+"q3": "{However, colored outlines keep the whole picture from} 重たく {looking heavy.}"
+},
+{
+"q1": "{realism} と {deformed style} が同居した {design} は、とても {unique} です。",
+"q2": "{The design, which mixes} リアルとデフォルメ、{is very unique.}",
+"q3": "{The design, which mixes realism and} デフォルメ {style, is very unique.}"
+}
+],
+"grammar": {
+"body": "名詞のあとに , which ～ , を置くと、その名詞に説明を足せます。物について言うときは which を使い、前に , を付けることが多いです。",
+"ex": [
+{
+"en": "The movie, which came out in July, is a big hit.",
+"ja": "7月に公開されたその映画は、大ヒットしています。"
+},
+{
+"en": "She drew a picture, which looks very real.",
+"ja": "彼女は絵を描き、それはとても本物らしく見えます。"
+}
+],
+"title": "関係代名詞 which（あとから説明を足す）"
+},
+"id": "20261004-seitokai-art",
+"level": 3,
+"lines": [
+{
+"en": "Ryo Imamura is the character designer and chief animation director.",
+"ja": "今村亮さんがキャラクターデザイン・総作画監督です。",
+"mix": "{Ryo Imamura} が {character designer} と総作画監督です。"
+},
+{
+"en": "The bones and muscles make small bumps on the body.",
+"ja": "骨格や筋肉が、体に細かな凹凸を作ります。",
+"mix": "{bones and muscles} が、体に細かな {bumps} を作ります。"
+},
+{
+"en": "These bumps are shown with more steps of shading than in ordinary anime.",
+"ja": "その凹凸は、一般的なアニメより多段階の影付けで表現されます。",
+"mix": "その凹凸は、一般的なアニメより多段階の {shading} で表現されます。"
+},
+{
+"en": "As a result, the picture contains a large amount of information.",
+"ja": "その結果、絵の情報量はとても多くなります。",
+"mix": "その結果、絵の {information} 量はとても多くなります。"
+},
+{
+"en": "However, colored outlines keep the whole picture from looking heavy.",
+"ja": "しかし色トレスのおかげで、全体は重たく見えません。",
+"mix": "しかし {colored outlines} のおかげで、全体は重たく見えません。"
+},
+{
+"en": "The design, which mixes realism and deformed style, is very unique.",
+"ja": "リアルとデフォルメが同居したこのデザインは、とても独特です。",
+"mix": "{realism} と {deformed style} が同居したこのデザインは、とても独特です。"
+}
+],
+"post": {
+"account": "reme_yg",
+"date": "2026-10-04",
+"likes": 7785,
+"name": "リミナ",
+"url": "https://x.com/reme_yg/status/2106697098305699919"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"全体を重たく見せないため",
+"影を減らすため",
+"色を増やすため"
+],
+"q": "色トレスを使う目的は？",
+"why": "5文目に、colored outlines keep the whole picture from looking heavy とあります。"
+},
+{
+"a": 1,
+"choices": [
+"色",
+"凹凸",
+"線"
+],
+"q": "bump の意味に近いのは？",
+"why": "bump は「でこぼこ」。骨格や筋肉の細かな凹凸のことです。"
+},
+{
+"a": 1,
+"choices": [
+"who",
+"which",
+"where"
+],
+"q": "The design, ___ mixes realism and deformed style, is unique.",
+"why": "物（design）を説明するので which を使います。"
+}
+],
+"summary": "アニメ『生徒会にも穴はある！』の作画を解説したポストです。キャラクターデザイン・総作画監督は今村亮さん。体の細かな凹凸を多段階の影付けで描きつつ、色トレスで重たくならない印象にしています。",
+"talk": {
+"hint": "I like ___ more because ___.",
+"ja": "リアルな絵とデフォルメした絵では、どちらが好きですか？",
+"q": "Do you like realistic drawings or deformed drawings more?"
+},
+"title": "『生徒会にも穴はある！』の作画、リアルとデフォルメの同居",
+"words": [
+{
+"ja": "影付け",
+"note": "ポストの「影付け」は shading。shade は「影・日かげ」です。",
+"w": "shading"
+},
+{
+"ja": "でこぼこ・凹凸",
+"note": "ポストの「細かな凹凸」は small bumps で表しました。",
+"w": "bump"
+},
+{
+"ja": "輪郭線",
+"note": "ポストの「色トレス」は colored outlines（色つきの輪郭線）と言いかえました。",
+"w": "outline"
+},
+{
+"ja": "デフォルメした",
+"note": "アニメ用語の「デフォルメ」は deformed や simplified と言います。",
+"w": "deformed"
+},
+{
+"ja": "独特の・ほかにない",
+"note": "ポストの「独特な」にあたる語です。",
+"w": "unique"
+}
+]
+},
+{
+"added": "2026-10-04T18:00",
+"addedAt": "2026-10-05T12:54",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"episode": "（1回分の）話",
+"episode of season 4": "シーズン4の話",
+"famous": "有名な",
+"famous scene": "有名な場面・名シーン",
+"final": "最後の",
+"final episode": "最終回",
+"from": "〜から",
+"hero": "英雄",
+"i": "私は",
+"i wanted to see you": "会いたかった",
+"is": "〜です",
+"it": "それは",
+"it is from": "それは〜からの場面です",
+"it is from the": "それは〜からの場面です",
+"it is from the final episode of": "それは〜の最終回の場面です",
+"line": "せりふ",
+"of": "〜の",
+"please": "どうぞ〜してください",
+"please watch": "どうぞ見てください",
+"re": "リ（作品名Re:Zero）",
+"rem": "レム（キャラ名）",
+"rem i wanted to see you": "レム、会いたかった",
+"scene": "場面",
+"season": "シーズン・期",
+"see": "会う・見る",
+"the": "その",
+"the line is": "せりふは",
+"the line is rem i wanted to see you": "せりふは「レム、会いたかった」",
+"the title of": "〜の題名は",
+"the title of episode 85 was": "第85話の題名は",
+"this": "これは",
+"this is": "これは〜です",
+"this is a famous scene from": "これは〜の名シーンです",
+"title": "題名",
+"to": "〜すること",
+"wanted": "〜したかった",
+"was": "〜でした（isの過去形）",
+"was hero": "「英雄」でした",
+"watch": "見る",
+"watch it": "それを見る",
+"you": "あなたに",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "これは『リゼロ』の {famous} {scene} です。",
+"q2": "{This is} 『リゼロ』の {famous scene}。",
+"q3": "{This is a famous scene from} 『リゼロ』。"
+},
+{
+"q1": "4th seasonの {final} {episode} の場面です。",
+"q2": "{It is from} 4th seasonの {final episode}。",
+"q3": "{It is from the} 最終回の {episode of season 4.}"
+},
+{
+"q1": "第85話の {title} は「{Hero}」でした。",
+"q2": "{The title of} 第85話 {was \"Hero.\"}",
+"q3": "{The title of episode 85 was} 「英雄」{\"Hero.\"}"
+},
+{
+"q1": "せりふは {Rem}、{I wanted to see you} です。",
+"q2": "{The line is} 「レム、{I wanted to see you.}」",
+"q3": "{The line is \"Rem, I wanted to see you.\"} です。"
+},
+{
+"q1": "ぜひ {watch} {it} ください。",
+"q2": "{Please watch} それを。",
+"q3": "{Please watch} ぜひ {it.}"
+}
+],
+"grammar": {
+"body": "過去のことを言うとき、I / he / she / it のあとの is は was になります。you / we / they のときは were です。",
+"ex": [
+{
+"en": "It was a great movie.",
+"ja": "それはすばらしい映画でした。"
+},
+{
+"en": "She was happy.",
+"ja": "彼女はうれしかったです。"
+}
+],
+"title": "be動詞の過去 was「〜でした」"
+},
+"id": "20261004-rezero-s4-final",
+"level": 2,
+"lines": [
+{
+"en": "This is a famous scene from Re:Zero.",
+"ja": "これは『リゼロ』の名シーンです。",
+"mix": "これは『リゼロ』の {famous scene} です。"
+},
+{
+"en": "It is from the final episode of season 4.",
+"ja": "4th seasonの最終回の場面です。",
+"mix": "4th seasonの {final episode} の場面です。"
+},
+{
+"en": "The title of episode 85 was \"Hero.\"",
+"ja": "第85話の題名は「英雄」でした。",
+"mix": "第85話の {title} は「英雄」でした。"
+},
+{
+"en": "The line is \"Rem, I wanted to see you.\"",
+"ja": "せりふは「レム、会いたかった」です。",
+"mix": "せりふは {\"Rem, I wanted to see you.\"} です。"
+},
+{
+"en": "Please watch it.",
+"ja": "ぜひご覧ください。",
+"mix": "ぜひ {watch it} ください。"
+}
+],
+"post": {
+"account": "Rezero_official",
+"date": "2026-10-04",
+"likes": 10363,
+"name": "『Re:ゼロから始める異世界生活』公式",
+"url": "https://x.com/Rezero_official/status/2106670669752840330"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"第58話",
+"第85話",
+"第8話"
+],
+"q": "この話は第何話？",
+"why": "3文目に episode 85 とあります。"
+},
+{
+"a": 2,
+"choices": [
+"せりふ",
+"最終回",
+"場面"
+],
+"q": "scene の意味は？",
+"why": "scene は「場面・シーン」。せりふは line です。"
+},
+{
+"a": 1,
+"choices": [
+"is",
+"was",
+"were"
+],
+"q": "The title ___ \"Hero.\"（題名は「英雄」でした）",
+"why": "過去で、主語が単数の title なので was です。"
+}
+],
+"summary": "『Re:ゼロから始める異世界生活』4th seasonの最終回（第85話「英雄」）の名シーンを、公式が紹介しました。せりふは「――レム 会いたかった」です。",
+"talk": {
+"hint": "My favorite character is ___ because ___.",
+"ja": "リゼロで好きなキャラクターは誰ですか？",
+"q": "Who is your favorite character in Re:Zero?"
+},
+"title": "リゼロ4th season最終回、名シーンは「レム 会いたかった」",
+"words": [
+{
+"ja": "場面・シーン",
+"note": "ポストの「名シーン」は famous scene。",
+"w": "scene"
+},
+{
+"ja": "最後の",
+"note": "ポストの「最終回」は the final episode。",
+"w": "final"
+},
+{
+"ja": "せりふ",
+"note": "ポストの「せりふ」は line。映画やドラマでよく使います。",
+"w": "line"
+},
+{
+"ja": "英雄・ヒーロー",
+"note": "ポストの話題「英雄」の英語です。",
+"w": "hero"
+},
+{
+"ja": "（1回分の）話",
+"note": "「第85話」は episode 85。",
+"w": "episode"
+}
+]
+},
+{
+"added": "2026-10-04T17:30",
+"addedAt": "2026-10-05T12:54",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"abema": "ABEMA（配信サービス）",
+"an": "ひとつの",
+"and": "〜と",
+"anime": "アニメ",
+"are": "〜している（be）",
+"boku": "僕（作品名）",
+"comments": "感想（commentの複数形）",
+"end": "終わり",
+"fastest": "いちばん速い",
+"for": "〜に対して",
+"for watching": "見てくれて",
+"from": "〜から",
+"has": "〜した（have）",
+"is": "〜です",
+"kimi": "君（作品名）",
+"message": "お知らせ・メッセージ",
+"na": "な（作品名）",
+"official": "公式の",
+"official website": "公式サイト",
+"on": "〜で・〜に",
+"on abema and prime video": "ABEMAとPrime Videoで",
+"prime": "プライム（サービス名）",
+"prime video": "Prime Video（配信サービス）",
+"seihantai": "正反対（作品名）",
+"seihantai na kimi to boku": "正反対な君と僕（作品名）",
+"started": "始まった",
+"streaming": "配信",
+"thank": "感謝する",
+"thank you": "ありがとう",
+"thank you for": "〜してくれてありがとう",
+"thank you for watching": "見てくれてありがとう",
+"the": "その",
+"the fastest streaming": "最速配信",
+"the fastest streaming has": "最速配信が〜した",
+"the fastest streaming has started": "最速配信が始まった",
+"there": "（there is で）ある",
+"there is an official": "公式の〜がある",
+"there is an official website": "公式サイトがある",
+"this": "これ",
+"this is a message": "これはお知らせです",
+"this is a message from the": "これは〜からのお知らせです",
+"to": "〜まで・と",
+"to the end": "最後まで",
+"too": "〜も",
+"tv": "テレビ",
+"tv anime": "TVアニメ",
+"video": "ビデオ",
+"waiting": "待っている",
+"waiting for": "〜を待っている",
+"watching": "見ること",
+"we": "私たち",
+"we are waiting for": "私たちは〜を待っている",
+"we are waiting for your": "私たちはあなたの〜を待っている",
+"website": "ウェブサイト",
+"you": "あなた",
+"your": "あなたの"
+},
+"grad": [
+{
+"q1": "これは {TV anime} からの {message} です。",
+"q2": "{This is a message} TVアニメ『正反対な君と僕』から。",
+"q3": "{This is a message from the} TVアニメ {Seihantai na Kimi to Boku.}"
+},
+{
+"q1": "{Thank you} {for watching} 最後まで。",
+"q2": "{Thank you for watching} {to the end.}",
+"q3": "{Thank you for} 見て {to the end.}"
+},
+{
+"q1": "ABEMAと {Prime Video} で、{fastest} {streaming} が始まりました。",
+"q2": "{The fastest streaming has started} ABEMAとPrime Videoで。",
+"q3": "{The fastest streaming has} 始まりました {on ABEMA and Prime Video.}"
+},
+{
+"q1": "{official} {website} もあります。",
+"q2": "{There is an official website} も。",
+"q3": "{There is an official} ウェブサイト {too.}"
+},
+{
+"q1": "{We} {waiting} みなさんの {comments} を。",
+"q2": "{We are waiting for} あなたの感想を。",
+"q3": "{We are waiting for your} 感想{.}"
+}
+],
+"grammar": {
+"body": "お礼の理由は for のあとに動詞の ing 形で言います。「見てくれてありがとう」は Thank you for watching. です。",
+"ex": [
+{
+"en": "Thank you for helping me.",
+"ja": "手伝ってくれてありがとう。"
+},
+{
+"en": "Thank you for coming today.",
+"ja": "今日は来てくれてありがとう。"
+}
+],
+"title": "Thank you for 〜ing「〜してくれてありがとう」"
+},
+"id": "20261004-seihantai-final",
+"level": 1,
+"lines": [
+{
+"en": "This is a message from the TV anime Seihantai na Kimi to Boku.",
+"ja": "これはTVアニメ『正反対な君と僕』からのお知らせです。",
+"mix": "これはTVアニメ『正反対な君と僕』からの {message} です。"
+},
+{
+"en": "Thank you for watching to the end.",
+"ja": "最後まで見てくれて、ありがとうございます。",
+"mix": "{Thank you for watching} 最後まで。"
+},
+{
+"en": "The fastest streaming has started on ABEMA and Prime Video.",
+"ja": "ABEMAとPrime Videoで、最速配信が始まりました。",
+"mix": "ABEMAとPrime Videoで、{the fastest streaming} が始まりました。"
+},
+{
+"en": "There is an official website too.",
+"ja": "公式サイトもあります。",
+"mix": "{official website} もあります。"
+},
+{
+"en": "We are waiting for your comments.",
+"ja": "みなさんの感想をお待ちしています。",
+"mix": "みなさんの {comments} を {waiting for}います。"
+}
+],
+"post": {
+"account": "seihantai_x",
+"date": "2026-10-04",
+"likes": 4546,
+"name": "正反対な君と僕 公式",
+"url": "https://x.com/seihantai_x/status/2106663112778846221"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"ABEMAとPrime Video",
+"テレビだけ",
+"映画館"
+],
+"q": "最速配信が始まったのはどこ？",
+"why": "3文目に on ABEMA and Prime Video とあります。"
+},
+{
+"a": 0,
+"choices": [
+"公式の",
+"新しい",
+"大きい"
+],
+"q": "official の意味は？",
+"why": "official website は「公式サイト」です。"
+},
+{
+"a": 1,
+"choices": [
+"watch",
+"watching",
+"watched"
+],
+"q": "Thank you for ___ to the end.（最後まで見てくれてありがとう）",
+"why": "for のあとは動詞の ing 形、watching です。"
+}
+],
+"summary": "TVアニメ『正反対な君と僕』の最終話のあとの公式のお知らせです。最後まで見てくれた人へのお礼と、ABEMAとPrime Videoでの最速配信、感想の投稿を待っていることが書かれています。",
+"talk": {
+"hint": "I liked episode ___ because ___.",
+"ja": "どの話がいちばん好きでしたか？",
+"q": "Which episode did you like the best?"
+},
+"title": "『正反対な君と僕』最終話のあとのお知らせ",
+"words": [
+{
+"ja": "お知らせ・メッセージ",
+"note": "ポストの「お知らせ」は message で表せます。",
+"w": "message"
+},
+{
+"ja": "配信する",
+"note": "streaming は「配信」。ポストの「最速配信」は the fastest streaming。",
+"w": "stream"
+},
+{
+"ja": "速い",
+"note": "最上級は the fastest「いちばん速い」。ポストの「最速」。",
+"w": "fast"
+},
+{
+"ja": "公式の",
+"note": "ポストの「公式サイト」は official website。",
+"w": "official"
+},
+{
+"ja": "感想・コメント",
+"note": "ポストの「感想」は comment で表せます。",
+"w": "comment"
+}
+]
+},
+{
+"added": "2026-10-04T17:22",
+"addedAt": "2026-10-05T12:54",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"adaptation": "アニメ化",
+"and": "そして",
+"best": "最善",
+"blue": "青い（作品名の一部）",
+"box": "箱（作品名の一部）",
+"can": "〜できる",
+"care": "心づかい・大切さ",
+"character": "人柄・らしさ",
+"did": "した（doの過去形）",
+"direction": "演出",
+"drawings": "作画（drawingの複数形）",
+"drawings and direction": "作画と演出",
+"english": "英語",
+"episode": "話・エピソード",
+"episode 26": "第26話",
+"episode 26 of blue box is now": "『アオのハコ』第26話は今〜",
+"feel": "感じる",
+"for": "〜への",
+"have": "〜した（現在完了）",
+"have made": "作った",
+"his": "彼の",
+"his own character": "彼らしさ",
+"i": "わたしは",
+"i can feel love and respect": "愛とリスペクトを感じる",
+"i can feel love and respect for the work in the": "作品への愛と敬意を〜に感じる",
+"i did my best including the english": "英語もふくめて頑張った",
+"i did my best including the english to keep his": "彼の〜を保つよう英語もふくめ頑張った",
+"i voice": "わたしは声を担当する",
+"in": "〜に・〜の中で",
+"including": "〜をふくめて",
+"is": "〜です",
+"it": "それを",
+"kazuma": "一馬（人名）",
+"kazuma matsuoka": "松岡一馬",
+"keep": "保つ",
+"love": "愛",
+"love and respect": "愛とリスペクト",
+"made": "作った（makeの過去分詞）",
+"made it": "それを作った",
+"matsuoka": "松岡（人名）",
+"mood": "空気感",
+"my": "わたしの",
+"now": "今",
+"now streaming": "配信中",
+"of": "〜の",
+"of the original": "原作の",
+"original": "原作",
+"own": "自分自身の",
+"respect": "敬意",
+"staff": "スタッフ",
+"streaming": "配信中",
+"the": "その",
+"the english": "英語",
+"the staff": "スタッフ",
+"the staff have made it": "スタッフはそれを作った",
+"the staff have made it with care to keep the": "スタッフは〜を保つよう丁寧に作った",
+"to": "〜するために",
+"voice": "声を担当する",
+"what": "なんて",
+"what a": "なんて〜な",
+"what a wonderful": "なんて素晴らしい",
+"what a wonderful adaptation": "なんて素晴らしいアニメ化",
+"with": "〜で",
+"wonderful": "素晴らしい",
+"work": "作品"
+},
+"grad": [
+{
+"q1": "『アオのハコ』{Episode 26} の {streaming} が始まりました。",
+"q2": "『アオのハコ』{Episode 26} が {now streaming}。",
+"q3": "{Episode 26 of Blue Box is now} 配信中{.}"
+},
+{
+"q1": "{The staff} は、原作の {mood} を {keep} して作って {have made}。",
+"q2": "{The staff have made it} 原作の {mood} を大切に。",
+"q3": "{The staff have made it with care to keep the} 空気感 {of the original.}"
+},
+{
+"q1": "{What a} {wonderful} {adaptation}！",
+"q2": "{What a wonderful adaptation}！",
+"q3": "{What a wonderful} アニメ化{!}"
+},
+{
+"q1": "{drawings and direction} から、作品への {love and respect} を感じます。",
+"q2": "{I can feel love and respect} 作品への、作画と演出に。",
+"q3": "{I can feel love and respect for the work in the} 作画と {direction.}"
+},
+{
+"q1": "わたしは {Kazuma Matsuoka} の {voice} を担当しています。",
+"q2": "{I voice} 松岡一馬。",
+"q3": "{I} 声を担当する {Kazuma Matsuoka.}"
+},
+{
+"q1": "{His own character} を大切に、{the English} も {including}、頑張りました。",
+"q2": "{I did my best, including the English,} 彼らしさを大切に。",
+"q3": "{I did my best, including the English, to keep his} 彼らしさ{.}"
+}
+],
+"grammar": {
+"body": "「なんて〜な…だ！」と感動を言うときは What a ＋ 形容詞 ＋ 名詞（単数）！ を使います。名詞が複数のときは a をつけません。",
+"ex": [
+{
+"en": "What a great story!",
+"ja": "なんてすばらしい物語なんだ！"
+},
+{
+"en": "What beautiful pictures!",
+"ja": "なんて美しい絵なんだ！"
+}
+],
+"title": "感嘆文 What a ＋ 形容詞 ＋ 名詞！"
+},
+"id": "20261004-aonohako-kaji",
+"level": 3,
+"lines": [
+{
+"en": "Episode 26 of Blue Box is now streaming.",
+"ja": "『アオのハコ』第26話の配信が始まりました。",
+"mix": "『アオのハコ』第26話の {streaming} が始まりました。"
+},
+{
+"en": "The staff have made it with care to keep the mood of the original.",
+"ja": "スタッフの方々は、原作の空気感を大切に作ってくださっています。",
+"mix": "スタッフの方々は、原作の {mood} を大切に {made it} くださっています。"
+},
+{
+"en": "What a wonderful adaptation!",
+"ja": "なんて素晴らしいアニメ化なんだ！",
+"mix": "{What a wonderful} アニメ化なんだ！"
+},
+{
+"en": "I can feel love and respect for the work in the drawings and direction.",
+"ja": "作画と演出から、作品への愛とリスペクトを感じます。",
+"mix": "作画と {direction} から、作品への愛と {respect} を感じます。"
+},
+{
+"en": "I voice Kazuma Matsuoka.",
+"ja": "わたしは松岡一馬の声を担当しています。",
+"mix": "わたしは松岡一馬の {voice} を担当しています。"
+},
+{
+"en": "I did my best, including the English, to keep his own character.",
+"ja": "彼らしさを大切に、英語もふくめて頑張りました。",
+"mix": "彼らしさを大切に、{English} も {including} 頑張りました。"
+}
+],
+"post": {
+"account": "KAJI__OFFICIAL",
+"date": "2026-10-04",
+"likes": 1632,
+"name": "梶裕貴 Yuki Kaji",
+"url": "https://x.com/KAJI__OFFICIAL/status/2106661335262228605"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"原作の空気感を大切にした作画と演出",
+"新しい主題歌",
+"声優のアドリブ"
+],
+"q": "梶さんがほめているのは？",
+"why": "2文目と4文目に、原作の空気感・作画と演出の話があります。"
+},
+{
+"a": 1,
+"choices": [
+"作画",
+"演出",
+"原作"
+],
+"q": "direction の意味は？",
+"why": "the drawings and direction は「作画と演出」。"
+},
+{
+"a": 2,
+"choices": [
+"How",
+"Which",
+"What"
+],
+"q": "___ a wonderful adaptation!（なんて素晴らしいアニメ化なんだ）",
+"why": "What a ＋ 形容詞 ＋ 名詞！ の形です。"
+}
+],
+"summary": "声優の梶裕貴さんが『アオのハコ』第26話の配信開始に合わせてポストしました。原作の空気感を大切にした素晴らしいアニメ化で、作品愛とリスペクトを感じる作画と演出だとほめています。松岡一馬の声を担当し、英語もふくめて頑張ったそうです。",
+"talk": {
+"hint": "I like the ___ because ___.",
+"ja": "好きなマンガのアニメ版の、どこが好きですか？",
+"q": "What do you like about the anime version of your favorite manga?"
+},
+"title": "梶裕貴さんが語る『アオのハコ』第26話の作画と演出",
+"words": [
+{
+"ja": "アニメ化・映像化",
+"note": "ポストの「アニメ化」は adaptation（原作をもとにした作品）。",
+"w": "adaptation"
+},
+{
+"ja": "敬意・リスペクト",
+"note": "ポストの「リスペクト」はそのまま respect。",
+"w": "respect"
+},
+{
+"ja": "演出",
+"note": "ポストの「演出」。映像を作る指導・見せ方のこと。",
+"w": "direction"
+},
+{
+"ja": "雰囲気・空気感",
+"note": "ポストの「原作の空気感」は the mood of the original。",
+"w": "mood"
+},
+{
+"ja": "声を担当する（動詞）",
+"note": "ポストの「声を担当」を I voice 〜 と言えます。名詞は「声」。",
+"w": "voice"
+}
+]
+},
+{
+"added": "2026-10-04T17:03",
+"addedAt": "2026-10-05T12:54",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a line": "せりふ",
+"a strong face": "強い表情",
+"about": "〜について",
+"added": "加えられる",
+"all": "すべて",
+"all at once": "一気に",
+"and": "〜と",
+"and a strong face change everything": "そして強い表情がすべてを変える",
+"anime": "アニメ",
+"around": "ぐるっと",
+"at": "〜で",
+"attracted": "惹かれている",
+"beauty": "美しさ・美学",
+"builds": "作り上げる",
+"carefully": "丁寧に",
+"certain": "確実な",
+"change": "変える",
+"change everything": "すべてを変える",
+"changes": "変わる",
+"defeat": "負け",
+"defeat seems certain": "負けが確実に思える",
+"everything": "すべて",
+"face": "表情・顔",
+"first": "まず",
+"first the story carefully builds a mood": "まず物語は空気を丁寧に作る",
+"first the story carefully builds a mood in which": "まず物語は〜という空気を丁寧に作る",
+"however": "しかし",
+"however the poster is": "しかしこの人は〜です",
+"however the poster is more attracted to the beauty of": "しかしこの人は〜の美学にもっと惹かれている",
+"in": "〜の中で",
+"in jojo": "ジョジョでは",
+"in the anime": "アニメでは",
+"in the anime reversal": "アニメでは逆転の〜",
+"in the anime reversal music is": "アニメでは逆転の音楽が〜",
+"is": "〜です",
+"is added too": "も加わる",
+"jojo": "ジョジョ",
+"line": "せりふ",
+"many": "多くの",
+"many people talk about": "多くの人が〜について語る",
+"many people talk about the stand": "多くの人がスタンド〜を語る",
+"mood": "空気・雰囲気",
+"more": "もっと",
+"more attracted": "もっと惹かれている",
+"music": "音楽",
+"of": "〜の",
+"once": "一度",
+"people": "人々",
+"poster": "投稿した人",
+"reversal": "逆転",
+"reversal scenes": "逆転シーン",
+"saying": "言う（sayの-ing形）",
+"scene": "場面",
+"scenes": "場面（sceneの複数形）",
+"seems": "〜に思える",
+"seems certain": "確実に思える",
+"stand": "スタンド（作品用語）",
+"story": "物語",
+"strong": "強い",
+"system": "システム",
+"talk": "話す",
+"the": "その",
+"the mood of the scene": "その場の空気",
+"the mood of the scene changes all": "その場の空気がすべて変わる",
+"the stand system": "スタンドシステム",
+"then": "そして",
+"then a line saying things will": "そして〜するというせりふ",
+"then a line saying things will turn around": "そして逆転するというせりふ",
+"things": "物事",
+"to": "〜に",
+"too": "〜も",
+"turn": "向く",
+"turn around": "逆転する",
+"which": "それ（関係代名詞）",
+"will": "〜だろう"
+},
+"grad": [
+{
+"q1": "ジョジョでは、多くの人が {the Stand system} について {talk} します。",
+"q2": "{Many people talk about} スタンドシステム {in JoJo.}",
+"q3": "{Many people talk about the Stand} システム {in JoJo.}"
+},
+{
+"q1": "しかしこの人は、{reversal scenes} の {beauty} に {attracted} です。",
+"q2": "{However, the poster is} 逆転シーンの {beauty} に {more attracted}。",
+"q3": "{However, the poster is more attracted to the beauty of} 逆転 {scenes.}"
+},
+{
+"q1": "まず物語は、{defeat} が {certain} という {mood} を丁寧に作ります。",
+"q2": "{First, the story carefully builds a mood} 負けが確実に思える。",
+"q3": "{First, the story carefully builds a mood in which} 負け {seems certain.}"
+},
+{
+"q1": "そして {a line} と {a strong face} が、すべてを {change} します。",
+"q2": "{Then a line saying things will turn around,} 強い表情が {change everything.}",
+"q3": "{Then a line saying things will} 逆転する、{and a strong face, change everything.}"
+},
+{
+"q1": "{In the anime}、逆転の {music} も {added} されます。",
+"q2": "{In the anime, reversal music is} 加わります。",
+"q3": "{In the anime, reversal} 音楽 {is added too.}"
+},
+{
+"q1": "その場の {mood} が {all at once} 変わります。",
+"q2": "{The mood of the scene} 一気に {changes}。",
+"q3": "{The mood of the scene changes all} 一度に{.}"
+}
+],
+"grammar": {
+"body": "attract（惹きつける）の過去分詞 attracted は「惹かれている」という気持ちを表す形容詞です。be ＋ attracted to ＋ 名詞 の形で使います。interested in や excited about も同じなかまです。",
+"ex": [
+{
+"en": "I am attracted to old movies.",
+"ja": "私は古い映画に惹かれています。"
+},
+{
+"en": "He is interested in drawing.",
+"ja": "彼は絵を描くことに興味があります。"
+}
+],
+"title": "be attracted to 〜「〜に惹かれている」（過去分詞の形容詞）"
+},
+"id": "20261004-jojo-reversal",
+"level": 3,
+"lines": [
+{
+"en": "Many people talk about the Stand system in JoJo.",
+"ja": "ジョジョでは、多くの人がスタンドシステムについて語ります。",
+"mix": "ジョジョでは、多くの人が {the Stand system} について語ります。"
+},
+{
+"en": "However, the poster is more attracted to the beauty of reversal scenes.",
+"ja": "しかしこの人は、逆転シーンの美学にもっと惹かれています。",
+"mix": "しかしこの人は、逆転シーンの {beauty} にもっと惹かれています。"
+},
+{
+"en": "First, the story carefully builds a mood in which defeat seems certain.",
+"ja": "まず物語は、負けが確実に思える空気を丁寧に作ります。",
+"mix": "まず物語は、{defeat seems certain} という空気を丁寧に作ります。"
+},
+{
+"en": "Then a line saying things will turn around, and a strong face, change everything.",
+"ja": "そして「ここから逆転する」というせりふと表情が、すべてを変えます。",
+"mix": "そして「ここから {turn around}」というせりふと表情が、すべてを変えます。"
+},
+{
+"en": "In the anime, reversal music is added too.",
+"ja": "アニメでは、逆転のBGMも加わります。",
+"mix": "アニメでは、逆転の {music} も加わります。"
+},
+{
+"en": "The mood of the scene changes all at once.",
+"ja": "その場の空気が一気に変わります。",
+"mix": "その場の空気が {all at once} 変わります。"
+}
+],
+"post": {
+"account": "fukuchi_tsubasa",
+"date": "2026-10-04",
+"likes": 5641,
+"name": "福地翼@パラショッパーズ",
+"url": "https://x.com/fukuchi_tsubasa/status/2106656334230036893"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"スタンドシステム",
+"逆転演出の美学",
+"新しいキャラクター"
+],
+"q": "このポストの人が惹かれているのは？",
+"why": "2文目に、attracted to the beauty of reversal scenes とあります。"
+},
+{
+"a": 0,
+"choices": [
+"空気・雰囲気",
+"音楽",
+"せりふ"
+],
+"q": "mood の意味は？",
+"why": "mood は「雰囲気」。ポストの「ムード」と同じです。"
+},
+{
+"a": 2,
+"choices": [
+"attract",
+"attracting",
+"attracted"
+],
+"q": "I am ___ to old movies.（古い映画に惹かれています）",
+"why": "「惹かれている」は be ＋ attracted（過去分詞）です。"
+}
+],
+"summary": "ジョジョはスタンドシステムがよく語られますが、このポストの人は「逆転演出の美学」に惹かれています。負けそうな空気を丁寧に作り、逆転のせりふと表情で一気に空気を変える演出について語っています。",
+"talk": {
+"hint": "I like scenes where ___.",
+"ja": "アニメで、どんな場面が好きですか？",
+"q": "What kind of scene do you like in anime?"
+},
+"title": "ジョジョの魅力は「スタンド」より「逆転演出の美学」",
+"words": [
+{
+"ja": "逆転",
+"note": "ポストの「逆転演出」は reversal scenes（逆転シーン）で表しました。",
+"w": "reversal"
+},
+{
+"ja": "美しさ・美学",
+"note": "ポストの「美学」は beauty と言いかえました。",
+"w": "beauty"
+},
+{
+"ja": "空気・雰囲気",
+"note": "ポストの「負け確ムード」の「ムード」は mood。",
+"w": "mood"
+},
+{
+"ja": "確実な",
+"note": "ポストの「負け確」は defeat seems certain（負けが確実に思える）。",
+"w": "certain"
+},
+{
+"ja": "惹かれた",
+"note": "ポストの「惹かれてます」は be attracted to 〜。",
+"w": "attracted"
+}
+]
+},
+{
+"added": "2026-10-04T16:39",
+"addedAt": "2026-10-05T12:54",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"as": "〜と・〜として",
+"as a child": "子どものころ",
+"as a child i used to think": "子どものころ、わたしは〜と思っていた",
+"as a child i used to think spikers were the": "子どものころ、スパイカーが一番〜と思っていた",
+"but": "でも",
+"but i": "でも、わたしは",
+"child": "子ども",
+"cool": "かっこいい",
+"coolest": "一番かっこいい",
+"haikyu": "ハイキュー",
+"have": "持っている",
+"hinata": "日向（人名）",
+"how": "どれほど",
+"how cool": "どれほどかっこいいか",
+"i": "わたしは",
+"i have the same idea as": "わたしは〜と同じ発想です",
+"i watched": "わたしは見た",
+"idea": "考え・発想",
+"is": "〜です",
+"libero": "リベロ",
+"noticed": "気づいた（noticeの過去形）",
+"same": "同じ",
+"spikers": "スパイカー（spikerの複数形）",
+"the": "その",
+"the same idea": "同じ発想",
+"then": "そして・それから",
+"then i noticed": "そして、わたしは気づいた",
+"then i noticed how cool the": "そして、〜のかっこよさに気づいた",
+"think": "思う",
+"to": "〜する（used toで）",
+"used": "以前は〜した（used to）",
+"used to think": "以前は思っていた",
+"watched": "見た（watchの過去形）",
+"were": "〜だった"
+},
+"grad": [
+{
+"q1": "{Hinata} と同じ {idea} です。",
+"q2": "日向と {the same idea} です。",
+"q3": "{I have the same idea as} 日向。"
+},
+{
+"q1": "{As a child}、{spikers} が一番かっこいいと {think} いました。",
+"q2": "{As a child, I used to think} スパイカーが一番 {cool}。",
+"q3": "{As a child, I used to think spikers were the} 一番かっこいい。"
+},
+{
+"q1": "でも、{Haikyu} を {watched}。",
+"q2": "でも、{I watched} ハイキュー。",
+"q3": "{But I} 見ました {Haikyu.}"
+},
+{
+"q1": "そして、{libero} の {cool} さに {noticed}。",
+"q2": "{Then I noticed} リベロの {how cool}。",
+"q3": "{Then I noticed how cool the} リベロ {is.}"
+}
+],
+"grammar": {
+"body": "今はちがうけれど、むかしはよくそうだった・そう思っていた、と言うときは used to ＋ 動詞 を使います。",
+"ex": [
+{
+"en": "I used to play volleyball.",
+"ja": "わたしは以前バレーをしていました。"
+},
+{
+"en": "He used to like spikers.",
+"ja": "彼は以前スパイカーが好きでした。"
+}
+],
+"title": "used to ～「以前は〜していた」"
+},
+"id": "20261004-haikyu-libero",
+"level": 2,
+"lines": [
+{
+"en": "I have the same idea as Hinata.",
+"ja": "日向と同じ発想です。",
+"mix": "日向と {the same idea} です。"
+},
+{
+"en": "As a child, I used to think spikers were the coolest.",
+"ja": "子どものころ、スパイカーが一番かっこいいと思っていました。",
+"mix": "{As a child}、スパイカーが一番かっこいいと {used to think} いました。"
+},
+{
+"en": "But I watched Haikyu.",
+"ja": "でも、ハイキューを見ました。",
+"mix": "でも、ハイキューを {watched} 。"
+},
+{
+"en": "Then I noticed how cool the libero is.",
+"ja": "そして、リベロのかっこよさに気づきました。",
+"mix": "そして、リベロの {cool} さに {noticed} 。"
+}
+],
+"post": {
+"account": "pomchan_0827",
+"date": "2026-10-04",
+"likes": 4609,
+"name": "ぽむちゃん",
+"url": "https://x.com/pomchan_0827/status/2106650366947536902"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"リベロ",
+"スパイカー",
+"セッター"
+],
+"q": "子どものころ、一番かっこいいと思っていたのは？",
+"why": "2文目に I used to think spikers were the coolest. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"待つ",
+"数える",
+"気づく"
+],
+"q": "notice の意味は？",
+"why": "I noticed ... は「気づきました」。"
+},
+{
+"a": 0,
+"choices": [
+"used to",
+"use to",
+"using to"
+],
+"q": "I ___ think spikers were the coolest.（以前は〜と思っていた）",
+"why": "過去の習慣・考えは used to ＋ 動詞。"
+}
+],
+"series": "haikyu",
+"summary": "子どものころはバレーのスパイカーが一番かっこいいと思っていた人が、『ハイキュー!!』を見てリベロのかっこよさに気づいた、というポストです。「日向と同じ発想」とも書いています。",
+"talk": {
+"hint": "I think ___ is cool because ___.",
+"ja": "バレーのどのポジションがかっこいいと思いますか？",
+"q": "Which volleyball position do you think is cool?"
+},
+"title": "スパイカーよりリベロ？ハイキューで気づいた魅力",
+"words": [
+{
+"ja": "考え・発想",
+"note": "ポストの「同じ発想」は the same idea。",
+"w": "idea"
+},
+{
+"ja": "以前は〜していた",
+"note": "ポストの「子供の頃〜と思ってた」は used to think で表せます。",
+"w": "used to"
+},
+{
+"ja": "一番かっこいい",
+"note": "cool の最上級。「スパイカーが一番カッコイイ」。",
+"w": "coolest"
+},
+{
+"ja": "リベロ",
+"note": "バレーの守備専門の選手。そのままリベロと言います。",
+"w": "libero"
+},
+{
+"ja": "気づく",
+"note": "ポストの「かっこよさに気づいた」は noticed。",
+"w": "notice"
+}
+]
+},
+{
 "added": "2026-10-04T13:09",
 "cat": "anime",
 "grad": [
@@ -7240,6 +9837,244 @@ window.LESSONS = [
 "which character's selection": "どのキャラクターのセレクション",
 "which character's selection do you want to": "どのキャラクターのセレクションを〜たい？"
 }
+},
+{
+"added": "2026-09-30T12:54",
+"addedAt": "2026-10-05T12:54",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"act": "行動する",
+"acted": "行動した（actの過去形）",
+"acted out": "荒れた",
+"adult": "社会人・大人",
+"adult part": "社会人編",
+"akitaro": "暁太郎（人名）",
+"also": "〜も",
+"and": "そして",
+"are": "〜です",
+"bad": "ひどい",
+"be": "〜である",
+"be the one": "その人である",
+"can": "〜できる",
+"compared": "比べられた",
+"compared with that": "それに比べると",
+"compared with that the adult part suddenly has": "それに比べ、社会人編は急に〜が増える",
+"days": "時代・日々",
+"delicate": "繊細な",
+"described": "描かれる（describeの過去分詞）",
+"described in": "〜で描かれる",
+"do": "〜する（否定のdo）",
+"elementary": "小学校の",
+"enough": "十分に",
+"explain": "説明する",
+"explain it": "それを説明する",
+"given": "〜を考えると",
+"given the story": "話の流れから考えて",
+"given the story wouldn't akitaro be the": "話の流れなら、暁太郎が〜ではないか",
+"has": "持っている",
+"high": "高い・中学校",
+"his": "彼の",
+"his parents": "彼の親",
+"his parents are not bad": "彼の親はひどくない",
+"his parents are not bad enough to": "彼の親は〜するほどひどくない",
+"i": "わたしは",
+"i also do not know why": "なぜ〜か、わたしも分からない",
+"i also do not know why tsubasa": "なぜ翼が〜か、わたしも分からない",
+"i can understand why": "なぜ〜か分かる",
+"i can understand why some people say the": "なぜ〜と言う人がいるか分かる",
+"in": "〜で・〜に",
+"in junior high": "中学生のときに",
+"is": "〜です",
+"is weak": "微妙だ",
+"it": "それ",
+"junior": "中学の（junior high）",
+"know": "知っている・分かる",
+"more": "もっと多くの",
+"not": "〜ない",
+"one": "人・ひとり",
+"out": "外へ（act outで荒れる）",
+"parents": "親（parentの複数形）",
+"part": "部分・編",
+"people": "人々",
+"realistic": "リアルな",
+"realistic way": "リアルなやり方",
+"say": "言う",
+"scenes": "場面（sceneの複数形）",
+"school": "学校",
+"some": "一部の",
+"stereotyped": "類型的な",
+"stereotyped scenes": "類型的な描写",
+"story": "話の流れ",
+"suddenly": "急に",
+"suddenly has more": "急に〜が増える",
+"that": "それ",
+"the": "その",
+"the elementary school days": "小学生時代",
+"the elementary school days are described in a": "小学生時代は〜に描かれている",
+"to": "〜するほど",
+"to act out": "荒れる",
+"tsubasa": "翼（人名）",
+"understand": "理解する",
+"way": "やり方",
+"weak": "弱い・微妙な",
+"why": "なぜ〜か",
+"with": "〜と",
+"wouldn't": "〜ではないか"
+},
+"grad": [
+{
+"q1": "{adult part} が {weak} だという評価がある {why} は、{understand}。",
+"q2": "{I can understand why} 社会人編が {weak} だと言う人がいる。",
+"q3": "{I can understand why some people say the} 社会人編が {is weak.}"
+},
+{
+"q1": "小学生時代は、{delicate} で {realistic} に {described}。",
+"q2": "{The elementary school days} は {described in} 繊細でリアルに。",
+"q3": "{The elementary school days are described in a} 繊細で {realistic way.}"
+},
+{
+"q1": "{Compared with that}、{adult part} は {stereotyped} な描写が増えます。",
+"q2": "{Compared with that,} 社会人編は {suddenly has more} 類型的な描写。",
+"q3": "{Compared with that, the adult part suddenly has} もっと {stereotyped scenes.}"
+},
+{
+"q1": "中学生時代に {Tsubasa} が {acted out} した {why} も、分かりません。",
+"q2": "{I also do not know why} 翼が {acted out} 中学生時代に。",
+"q3": "{I also do not know why Tsubasa} 荒れた {in junior high.}"
+},
+{
+"q1": "{His parents} は、{explain it} できるほどひどくありません。",
+"q2": "{His parents are not bad} それを説明できるほど。",
+"q3": "{His parents are not bad enough to} 説明する {it.}"
+},
+{
+"q1": "{Given the story}、{Akitaro} のほうでは？",
+"q2": "{Given the story,} 暁太郎が {be the one} では？",
+"q3": "{Given the story, wouldn't Akitaro be the} 荒れる人 {to act out?}"
+}
+],
+"grammar": {
+"body": "「なぜ〜か」を文の中に入れるときは、why のあとを ふつうの文の順（主語 ＋ 動詞）にします。I know why she is happy. のように、疑問文の順にはしません。",
+"ex": [
+{
+"en": "I know why she is happy.",
+"ja": "わたしは、彼女がなぜ喜んでいるか知っています。"
+},
+{
+"en": "Tell me why you like this movie.",
+"ja": "なぜこの映画が好きか教えてください。"
+}
+],
+"title": "間接疑問「なぜ〜か」why ＋ 主語 ＋ 動詞"
+},
+"id": "20260930-wareware-critique",
+"level": 3,
+"lines": [
+{
+"en": "I can understand why some people say the adult part is weak.",
+"ja": "社会人編が微妙だという評価がある理由は、わりと分かります。",
+"mix": "社会人編が {weak} だという評価がある {why} は、わりと分かります。"
+},
+{
+"en": "The elementary school days are described in a delicate and realistic way.",
+"ja": "小学生時代は、繊細でリアルに描かれています。",
+"mix": "小学生時代は、{delicate} で {realistic} に描かれています。"
+},
+{
+"en": "Compared with that, the adult part suddenly has more stereotyped scenes.",
+"ja": "それに比べると、社会人編は急に類型的な描写が増えます。",
+"mix": "{Compared with that}、社会人編は急に {stereotyped} な描写が増えます。"
+},
+{
+"en": "I also do not know why Tsubasa acted out in junior high.",
+"ja": "中学生時代に翼が荒れていた理由も、よく分かりません。",
+"mix": "中学生時代に翼が {acted out} した {why} も、よく分かりません。"
+},
+{
+"en": "His parents are not bad enough to explain it.",
+"ja": "あの家庭環境なら荒れるよね、と思えるほどの親ではありません。",
+"mix": "{His parents} は、それを説明できるほどひどくありません。"
+},
+{
+"en": "Given the story, wouldn't Akitaro be the one to act out?",
+"ja": "話の流れから考えて、荒れるなら暁太郎のほうでは？",
+"mix": "{Given the story}、荒れるなら {Akitaro} のほうでは？"
+}
+],
+"post": {
+"account": "d_noch",
+"date": "2026-09-30",
+"likes": 276,
+"name": "ＤーＪＯ（ディージョ）",
+"url": "https://x.com/d_noch/status/2105144211645600103"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"小学生時代より類型的な描写が増える",
+"小学生時代よりくわしく描かれる",
+"映像がいちばんきれい"
+],
+"q": "社会人編について、投稿者が言っていることは？",
+"why": "3文目に、急に stereotyped scenes が増えるとあります。"
+},
+{
+"a": 1,
+"choices": [
+"大きい",
+"繊細な",
+"古い"
+],
+"q": "delicate の意味は？",
+"why": "delicate は「繊細な」。小学生時代の描き方をほめています。"
+},
+{
+"a": 2,
+"choices": [
+"because",
+"what",
+"why"
+],
+"q": "I understand ___ Tsubasa acted out.（なぜ翼が荒れたか）",
+"why": "「なぜ〜か」は why ＋ 主語 ＋ 動詞。"
+}
+],
+"summary": "『我々は宇宙人』を見た人のポストで、作品の中身に対する批判的な感想です。小学生時代はとても繊細でリアルなのに、社会人編は急に類型的な描写が増えること、中学生時代に翼が荒れていた理由がよく分からないことを挙げています。",
+"talk": {
+"hint": "I like the ___ part better because ___.",
+"ja": "物語の中で、学生時代と大人の時代のどちらが好きですか？",
+"q": "Which part of a story do you like better, the school days or the adult days?"
+},
+"title": "『我々は宇宙人』社会人編はなぜ微妙？批判的な感想",
+"words": [
+{
+"ja": "繊細な",
+"note": "ポストの「繊細な」。ていねいで細かいようす。",
+"w": "delicate"
+},
+{
+"ja": "リアルな・現実的な",
+"note": "ポストの「リアルな解像度の高さ」は realistic and detailed のように言えます。",
+"w": "realistic"
+},
+{
+"ja": "型にはまった・類型的な",
+"note": "ポストの「類型的な描写」は stereotyped scenes。",
+"w": "stereotyped"
+},
+{
+"ja": "荒れる・問題行動を起こす",
+"note": "ポストの「荒れていた」を act out で表しました。",
+"w": "act out"
+},
+{
+"ja": "〜と比べて",
+"note": "ポストの「〜に比べると」。",
+"w": "compared with"
+}
+]
 },
 {
 "id": "20260930-haikyu-jumpplus-free",
