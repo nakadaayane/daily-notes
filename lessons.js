@@ -1,5 +1,585 @@
 window.LESSONS = [
 {
+"added": "2026-10-04T13:09",
+"cat": "anime",
+"grad": [
+{
+"q1": "{I started watching} ハイキューの {anime} を {now}。",
+"q2": "{I started watching the Haikyu anime} 今になって。",
+"q3": "{I started watching the Haikyu anime now.}"
+},
+{
+"q1": "{I know} 遅れているのは {I am late}。",
+"q2": "{I know I am} 遅れている{late}。",
+"q3": "{I know I am late.}"
+},
+{
+"q1": "{But} すごく {interesting} です！",
+"q2": "{But it is so} 面白い！",
+"q3": "{But it is so interesting!}"
+},
+{
+"q1": "どうして {before} {didn't I} 見なかったの？",
+"q2": "{Why didn't I} 今までそれを見なかったの？",
+"q3": "{Why didn't I watch it} before{?}"
+}
+],
+"grammar": {
+"body": "過去のことで「どうして〜しなかったのだろう」と言うときは Why didn't I ＋ 動詞のもとの形 ～? を使います。didn't のあとは、動詞は元の形です。",
+"ex": [
+{
+"en": "Why didn't you call me?",
+"ja": "どうして電話してくれなかったの？"
+},
+{
+"en": "Why didn't I read this manga before?",
+"ja": "どうして今までこのマンガを読まなかったんだろう？"
+}
+],
+"title": "Why didn't I ~?「どうして〜しなかったの？」"
+},
+"id": "20261004-haikyu-newfan",
+"level": 1,
+"lines": [
+{
+"en": "I started watching the Haikyu anime now.",
+"ja": "今になって、ハイキューのアニメを見始めました。",
+"mix": "今になって、ハイキューの {anime} を {started watching}。"
+},
+{
+"en": "I know I am late.",
+"ja": "遅れているのはわかっています。",
+"mix": "{late} なのはわかっています。"
+},
+{
+"en": "But it is so interesting!",
+"ja": "でも、すごく面白いです！",
+"mix": "でも、{so interesting} です！"
+},
+{
+"en": "Why didn't I watch it before?",
+"ja": "どうして今まで見なかったのでしょう？",
+"mix": "どうして {before} 見なかったのでしょう？"
+}
+],
+"post": {
+"account": "lalalalack",
+"date": "2026-10-04",
+"likes": 9342,
+"name": "lack",
+"url": "https://x.com/lalalalack/status/2106597524010369426"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"バレーボール",
+"ハイキューのアニメを見ること",
+"マンガを描くこと"
+],
+"q": "この人はなにを始めましたか？",
+"why": "1文目に I started watching the Haikyu anime. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"面白い",
+"むずかしい",
+"さびしい"
+],
+"q": "interesting の意味は？",
+"why": "interesting は「面白い・興味をひく」です。"
+},
+{
+"a": 1,
+"choices": [
+"don't",
+"didn't",
+"wasn't"
+],
+"q": "Why ___ I watch it before?（どうして見なかったの？）",
+"why": "過去の否定の疑問は didn't を使います。"
+}
+],
+"series": "haikyu",
+"summary": "あるファンが、今になってアニメ『ハイキュー!!』を見始めて「面白すぎる」と感想をポストしました。「なんで今まで見なかったんだ」という、うれしい後悔が9,000以上のいいねを集めています。",
+"talk": {
+"hint": "I like it because ___.",
+"ja": "どうしてハイキューが好きですか？",
+"q": "Why do you like Haikyu?"
+},
+"title": "「今更ながらハイキューを見始めた。面白すぎる」",
+"words": [
+{
+"ja": "〜し始める",
+"note": "ポストの「見始めた」は started watching。",
+"w": "start ~ing"
+},
+{
+"ja": "遅れた・遅い",
+"note": "ポストの「今更ながら」の気持ちを I am late で表しました。",
+"w": "late"
+},
+{
+"ja": "面白い・興味をひく",
+"note": "ポストの「面白い」。funny は「笑える」なので少し違います。",
+"w": "interesting"
+},
+{
+"ja": "以前に・今までに",
+"note": "ポストの「なんで触れてこなかったんや」の「今まで」。",
+"w": "before"
+}
+]
+},
+{
+"added": "2026-10-04T12:34",
+"cat": "movie",
+"grad": [
+{
+"q1": "ポストした人は、{the commentary version} を {saw}。",
+"q2": "{The poster saw} この映画の {commentary version}。",
+"q3": "{The poster saw the commentary version of the} 映画{.}"
+},
+{
+"q1": "映画館で {watch} しながら、{earphones} で {listen} します。",
+"q2": "{You listen with earphones} 映画館で見ながら。",
+"q3": "{You listen with earphones while you watch it in the} 映画館{.}"
+},
+{
+"q1": "{voice actors} と {producer} が {behind-the-scenes stories} を話します。",
+"q2": "{The voice actors and the producer tell} 裏話を。",
+"q3": "{The voice actors and the producer tell behind-the-scenes} 話{.}"
+},
+{
+"q1": "プロデューサーは、{the plan} が {crazy} に聞こえたと {says}。",
+"q2": "{The producer says the plan} 正気とは思えなかった。",
+"q3": "{The producer says the plan sounded} とんでもない{.}"
+},
+{
+"q1": "冒頭の {song} が {so good} だったので、{opening} を作りました。",
+"q2": "{The song at the start was so good that} オープニングを作りました。",
+"q3": "{The song at the start was so good that they made an} オープニング{.}"
+},
+{
+"q1": "{The post says} スタッフは {many small things} を話します。",
+"q2": "{The post says the staff talk about} 細かいことをたくさん。",
+"q3": "{The post says the staff talk about many small} こと{.}"
+}
+],
+"grammar": {
+"body": "同じときに2つのことをするときは、while ＋ 〜ing で「〜しながら」と言えます。",
+"ex": [
+{
+"en": "I listen to music while I walk.",
+"ja": "歩きながら音楽を聞きます。"
+},
+{
+"en": "She reads manga while she eats lunch.",
+"ja": "彼女は昼ごはんを食べながらマンガを読みます。"
+}
+],
+"title": "while ～「〜しながら」"
+},
+"id": "20261004-kaguya-commentary",
+"level": 2,
+"lines": [
+{
+"en": "The poster saw the commentary version of the movie.",
+"ja": "ポストした人は、この映画のコメンタリー版を見ました。",
+"mix": "ポストした人は、この映画の {commentary version} を見ました。"
+},
+{
+"en": "You listen with earphones while you watch it in the theater.",
+"ja": "映画館で見ながら、イヤホンで音声を聞きます。",
+"mix": "映画館で {watch} しながら、{earphones} で音声を聞きます。"
+},
+{
+"en": "The voice actors and the producer tell behind-the-scenes stories.",
+"ja": "声優さんとプロデューサーが裏話を話します。",
+"mix": "声優さんとプロデューサーが {behind-the-scenes stories} を話します。"
+},
+{
+"en": "The producer says the plan sounded crazy.",
+"ja": "プロデューサーは、企画が正気とは思えない内容だったと話しています。",
+"mix": "プロデューサーは、企画が {crazy} に聞こえたと話しています。"
+},
+{
+"en": "The song at the start was so good that they made an opening.",
+"ja": "冒頭の曲の出来がとても良かったので、オープニングを作りました。",
+"mix": "冒頭の曲が {so good} だったので、オープニングを作りました。"
+},
+{
+"en": "The post says the staff talk about many small things.",
+"ja": "ポストによると、スタッフは細かいことをたくさん話します。",
+"mix": "ポストによると、スタッフは {many small things} を話します。"
+}
+],
+"post": {
+"account": "NStyles",
+"date": "2026-10-04",
+"likes": 2639,
+"name": "あれっくす",
+"url": "https://x.com/NStyles/status/2106588746816930149"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"スピーカー",
+"イヤホン",
+"ラジオ"
+],
+"q": "この形式では、音声をなにで聞きますか？",
+"why": "2文目に with earphones とあります。"
+},
+{
+"a": 0,
+"choices": [
+"裏話",
+"怖い話",
+"昔話"
+],
+"q": "behind-the-scenes stories の意味は？",
+"why": "behind-the-scenes は「舞台裏の」という意味です。"
+},
+{
+"a": 0,
+"choices": [
+"while",
+"because",
+"after"
+],
+"q": "I eat snacks ___ I watch movies.（見ながら）",
+"why": "「〜しながら」は while を使います。"
+}
+],
+"summary": "映画『超かぐや姫！』のコメンタリー版を見た人の感想です。アプリで音声を聞きながら映画館で見る形式で、声優さんやプロデューサーが裏話を話すそうです。ポストには、企画書や主題歌の話などが紹介されています。",
+"talk": {
+"hint": "Yes, I do. I like to hear about ___.",
+"ja": "裏話を聞くのは好きですか？",
+"q": "Do you like to hear behind-the-scenes stories?"
+},
+"title": "「超かぐや姫！」コメンタリー上映の感想",
+"words": [
+{
+"ja": "（作品の）解説音声・コメンタリー",
+"note": "ポストの「コメンタリー版」。",
+"w": "commentary"
+},
+{
+"ja": "映画館",
+"note": "ポストの「映画館で鑑賞」は watch it in the theater。",
+"w": "theater"
+},
+{
+"ja": "舞台裏の・裏話の",
+"note": "ポストの「裏話」。",
+"w": "behind-the-scenes"
+},
+{
+"ja": "正気でない・とんでもない",
+"note": "ポストの「正気を疑われた」くらいの内容、ということ。",
+"w": "crazy"
+},
+{
+"ja": "プロデューサー",
+"note": "映画やアニメをまとめる人。",
+"w": "producer"
+}
+]
+},
+{
+"added": "2026-10-04T12:01",
+"cat": "movie",
+"grad": [
+{
+"q1": "{Today} は {Kinyo Road Show's} {birthday} です。",
+"q2": "{Today is} 金曜ロードショーの誕生日。",
+"q3": "{Today is Kinyo Road Show's} 誕生日{.}"
+},
+{
+"q1": "{41 years old} に {turned}。",
+"q2": "{It turned} 41歳に。",
+"q3": "{It turned 41} 歳に{.}"
+},
+{
+"q1": "{Studio Ghibli} と {the same age} です。",
+"q2": "{It is the same age as} スタジオジブリ。",
+"q3": "{It is the same age as Studio} ジブリ{.}"
+},
+{
+"q1": "この {show} には {long history} が あります。",
+"q2": "{The show has} 長い歴史が。",
+"q3": "{The show has a long} 歴史{.}"
+}
+],
+"grammar": {
+"body": "誕生日に年をとって「〜歳になる」と言うときは turn を使います。過去のことは turned です。",
+"ex": [
+{
+"en": "My brother turns 15 today.",
+"ja": "弟は今日15歳になります。"
+},
+{
+"en": "She turned 20 last week.",
+"ja": "彼女は先週20歳になりました。"
+}
+],
+"title": "turn ＋ 年齢「〜歳になる」"
+},
+"id": "20261004-kinro-41st",
+"level": 1,
+"lines": [
+{
+"en": "Today is Kinyo Road Show's birthday.",
+"ja": "今日は金曜ロードショーの誕生日です。",
+"mix": "{Today} は金曜ロードショーの {birthday} です。"
+},
+{
+"en": "It turned 41 years old.",
+"ja": "41歳になりました。",
+"mix": "{41 years old} になりました。"
+},
+{
+"en": "It is the same age as Studio Ghibli.",
+"ja": "スタジオジブリと同い年です。",
+"mix": "スタジオジブリと {the same age} です。"
+},
+{
+"en": "The show has a long history.",
+"ja": "この番組には長い歴史があります。",
+"mix": "この番組には {long history} があります。"
+}
+],
+"post": {
+"account": "kinro_ghibli",
+"date": "2026-10-04",
+"likes": 5192,
+"name": "金曜ロードショーとジブリ展【公式】",
+"url": "https://x.com/kinro_ghibli/status/2106580315712139622"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"14歳",
+"41歳",
+"40歳"
+],
+"q": "金曜ロードショーはいくつになりましたか？",
+"why": "2文目に It turned 41 years old. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"〜と同い年",
+"〜より年上",
+"〜より年下"
+],
+"q": "the same age as の意味は？",
+"why": "same は「同じ」、age は「年齢」です。"
+},
+{
+"a": 1,
+"choices": [
+"turn",
+"turned",
+"turning"
+],
+"q": "He ___ 12 yesterday.（12歳になった）",
+"why": "過去のことなので turned を使います。"
+}
+],
+"summary": "金曜ロードショーの公式アカウントが「今日は金曜ロードショーの誕生日。41歳になりました。スタジオジブリと同い年です」とポストしました。5,000以上のいいねが集まっています。",
+"talk": {
+"hint": "My favorite is ___.",
+"ja": "スタジオジブリの映画で、好きなものはなんですか？",
+"q": "What is your favorite movie from Studio Ghibli?"
+},
+"title": "金曜ロードショー、41歳の誕生日",
+"words": [
+{
+"ja": "誕生日",
+"note": "ポストの「誕生日」。",
+"w": "birthday"
+},
+{
+"ja": "（ある年齢）になる",
+"note": "ポストの「41歳になりました」は turned 41。",
+"w": "turn"
+},
+{
+"ja": "〜と同い年",
+"note": "ポストの「同い年」。",
+"w": "the same age as"
+},
+{
+"ja": "歴史",
+"note": "長く続く番組なので long history と言えます。",
+"w": "history"
+}
+]
+},
+{
+"added": "2026-10-03T18:00",
+"cat": "anime",
+"grad": [
+{
+"q1": "{Frieren} の {third season} が {will have}。",
+"q2": "{Frieren will have} 第3期を。",
+"q3": "{Frieren will have a third} シーズン。"
+},
+{
+"q1": "{It is called} 【黄金郷編】です。",
+"q2": "{It is called the} 黄金郷 {arc.}",
+"q3": "{It is called the Golden Land} 編。"
+},
+{
+"q1": "{October 2027} に {start} します。",
+"q2": "{It will start} 2027年10月に。",
+"q3": "{It will start in October} 2027。"
+},
+{
+"q1": "{Nippon TV} で {will be} 放送されます。",
+"q2": "{It will be on} 日本テレビ系で。",
+"q3": "{It will be on Nippon} TV。"
+},
+{
+"q1": "新しい {picture} に {Mahato} が描かれています。",
+"q2": "{The new picture shows} マハトを。",
+"q3": "{The new picture shows} Mahato{.}"
+},
+{
+"q1": "{the last and strongest} の {Seven Wizards} です。",
+"q2": "{He is the last and strongest of} 七崩賢の。",
+"q3": "{He is the last and strongest of the Seven} 魔法使い{.}"
+}
+],
+"grammar": {
+"body": "これから先のことは will ＋ 動詞のもとの形で言います。決まった予定にも使えます。",
+"ex": [
+{
+"en": "It will start tomorrow.",
+"ja": "それは明日始まります。"
+},
+{
+"en": "I will watch it with my friend.",
+"ja": "友だちといっしょに見ます。"
+}
+],
+"title": "will ～「〜するでしょう・〜します」"
+},
+"id": "20261003-frieren-s3",
+"level": 1,
+"lines": [
+{
+"en": "Frieren will have a third season.",
+"ja": "フリーレンの第3期が決まりました。",
+"mix": "フリーレンの {third season} が決まりました。"
+},
+{
+"en": "It is called the Golden Land arc.",
+"ja": "タイトルは【黄金郷編】です。",
+"mix": "タイトルは {Golden Land} 編です。"
+},
+{
+"en": "It will start in October 2027.",
+"ja": "2027年10月に放送が始まります。",
+"mix": "{October 2027} に放送が始まります。"
+},
+{
+"en": "It will be on Nippon TV.",
+"ja": "日本テレビ系で放送されます。",
+"mix": "{Nippon TV} で放送されます。"
+},
+{
+"en": "The new picture shows Mahato.",
+"ja": "新しいビジュアルにはマハトが描かれています。",
+"mix": "新しい {picture} にはマハトが描かれています。"
+},
+{
+"en": "He is the last and strongest of the Seven Wizards.",
+"ja": "最後にして最強の七崩賢です。",
+"mix": "{the last and strongest} の七崩賢です。"
+}
+],
+"post": {
+"account": "FRIEREN_PR",
+"date": "2026-10-03",
+"likes": 150872,
+"name": "『葬送のフリーレン』公式",
+"url": "https://x.com/FRIEREN_PR/status/2106308281786421404"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"October 2027",
+"October 2026",
+"March 2027"
+],
+"q": "第3期はいつ始まりますか？",
+"why": "3文目に It will start in October 2027. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"いちばん速い",
+"いちばん強い",
+"いちばん古い"
+],
+"q": "last and strongest の strongest の意味は？",
+"why": "strong は「強い」。-est で「いちばん〜」になります。"
+},
+{
+"a": 1,
+"choices": [
+"is",
+"will",
+"does"
+],
+"q": "The new season ___ start next year.（始まります）",
+"why": "未来のことは will ＋ 動詞のもとの形です。"
+}
+],
+"series": "frieren",
+"summary": "『葬送のフリーレン』第3期【黄金郷編】が、2027年10月に日本テレビ系で放送されることが決まりました。公式が発表したビジュアルには、最強の七崩賢、黄金郷のマハトが描かれています。",
+"talk": {
+"hint": "Yes, I am. I want to see ___.",
+"ja": "新しいシーズンが楽しみですか？",
+"q": "Are you looking forward to the new season?"
+},
+"title": "フリーレン第3期、2027年10月に放送決定",
+"words": [
+{
+"ja": "（アニメの）期・シーズン",
+"note": "ポストの「第3期」は third season。",
+"w": "season"
+},
+{
+"ja": "〜という名前の",
+"note": "It is called ~ で「〜と呼ばれる」。",
+"w": "called"
+},
+{
+"ja": "始まる",
+"note": "ポストの「放送決定」の放送は、ここでは start や be on TV で表せます。",
+"w": "start"
+},
+{
+"ja": "強い",
+"note": "最上級 strongest は「最強」。",
+"w": "strong"
+},
+{
+"ja": "絵・ビジュアル",
+"note": "ポストの画像のこと。",
+"w": "picture"
+}
+]
+},
+{
 "id": "20261002-zoids-final-arc",
 "added": "2026-10-02T12:02",
 "cat": "manga",
