@@ -6,22 +6,22 @@ window.LESSONS = [
 {
 "q1": "{I started watching} ハイキューの {anime} を {now}。",
 "q2": "{I started watching the Haikyu anime} 今になって。",
-"q3": "{I started watching the Haikyu anime now.}"
+"q3": "{I} 見始めた {the Haikyu anime now.}"
 },
 {
 "q1": "{I know} 遅れているのは {I am late}。",
 "q2": "{I know I am} 遅れている{late}。",
-"q3": "{I know I am late.}"
+"q3": "{I} わかっている {I am late.}"
 },
 {
 "q1": "{But} すごく {interesting} です！",
 "q2": "{But it is so} 面白い！",
-"q3": "{But it is so interesting!}"
+"q3": "でも、{it is so interesting!}"
 },
 {
 "q1": "どうして {before} {didn't I} 見なかったの？",
 "q2": "{Why didn't I} 今までそれを見なかったの？",
-"q3": "{Why didn't I watch it} before{?}"
+"q3": "{Why didn't I watch it} 今まで{?}"
 }
 ],
 "grammar": {
@@ -441,17 +441,17 @@ window.LESSONS = [
 {
 "q1": "{October 2027} に {start} します。",
 "q2": "{It will start} 2027年10月に。",
-"q3": "{It will start in October} 2027。"
+"q3": "{It will} 始まる {in October 2027.}"
 },
 {
 "q1": "{Nippon TV} で {will be} 放送されます。",
 "q2": "{It will be on} 日本テレビ系で。",
-"q3": "{It will be on Nippon} TV。"
+"q3": "{It will be} 放送 {on Nippon TV.}"
 },
 {
 "q1": "新しい {picture} に {Mahato} が描かれています。",
 "q2": "{The new picture shows} マハトを。",
-"q3": "{The new picture shows} Mahato{.}"
+"q3": "{The new picture} 描いているのは {Mahato.}"
 },
 {
 "q1": "{the last and strongest} の {Seven Wizards} です。",
@@ -1192,7 +1192,7 @@ window.LESSONS = [
 {
 "q1": "{On October 30}、『ゴジラ-1.0』を {show} します。",
 "q2": "{On October 30, it will show} 『ゴジラ-1.0』。",
-"q3": "{On October 30, it will show Godzilla} -1.0。"
+"q3": "{On October 30, it will} 放送する {Godzilla Minus One.}"
 },
 {
 "q1": "{The movie} を {no cuts} で放送します。",
@@ -1972,7 +1972,7 @@ window.LESSONS = [
 {
 "q1": "{now}、4Kになって {back} です。",
 "q2": "{Now it is back} 4Kで。",
-"q3": "{Now it is back in} 4K。"
+"q3": "{Now it is} よみがえった {in 4K.}"
 },
 {
 "q1": "シネフィルDVDの {account} が、東宝の {screening room} で観ました。",
@@ -8940,7 +8940,7 @@ window.LESSONS = [
 {
 "q1": "{a teaser visual} と、アクション {trailer} でした。",
 "q2": "{They were a teaser visual} と、アクションPV。",
-"q3": "{They were a teaser visual and an action} PV{.}"
+"q3": "{They were a teaser visual and an} アクションPV{.}"
 },
 {
 "q1": "2027年、「{match}」が {starts}！",
