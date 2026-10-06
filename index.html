@@ -740,6 +740,37 @@ html.static .ai-only{display:none!important}
 .dc-sum .sum-h{display:block;padding:14px 0 4px;border-bottom:1px solid var(--line);font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted);letter-spacing:.04em}
 .dc-end-tools .btn{background:var(--bubble);color:var(--fg)}
 .dc-end-tools .btn:hover{background:color-mix(in srgb,var(--bubble) 70%,var(--line));opacity:1}
+/* ===== 6回目の見直し ===== */
+/* 新しく英語になった語だけに細い下線（チップの影ではなく文字の下線） */
+.mw.lvup{box-shadow:none}
+.mw .nu{text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent) 60%,transparent);text-decoration-thickness:1.5px;text-underline-offset:.3em}
+/* 多めの段の日本語は「まだ日本語」の扱い（押せるものと見間違えないよう、アクセント色は使わない） */
+.jr{color:var(--muted)}
+/* 文：行の長さをそろえる、♡と🔊の間をあけて押し間違いを防ぐ */
+.story .s-text{text-wrap:balance}
+@media (max-width: 640px){ .story .acts{gap:6px} .story .say::before{inset:-7px -3px} }
+/* スマホで英語の量が見えなくなったら、上のバーに今の段（押すと選べる） */
+.amt-mini{font-size:var(--fs-s);color:var(--muted);padding:4px 8px;border-radius:8px;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;flex:none}
+.amt-mini:hover{background:var(--bubble);color:var(--fg)}
+.amt-mini svg{transition:transform .2s var(--ease)}
+.amt-mini[aria-expanded="true"] svg{transform:rotate(180deg)}
+.amt-menu{position:fixed;z-index:35;right:12px;top:calc(46px + env(safe-area-inset-top,0px));min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px var(--shadow);padding:6px;display:flex;flex-direction:column;animation:rise .16s var(--ease)}
+.amt-menu button{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:9px 12px;border-radius:9px;font-size:var(--fs-m);text-align:left}
+.amt-menu button:hover{background:var(--bubble)}
+.amt-menu button[aria-checked="true"]{color:var(--accent);font-weight:600}
+.amt-menu button small{color:var(--muted);font-weight:400;font-size:var(--fs-xs)}
+/* 書き取りのまとめ：題名だけ控えめに、自分の答えを小さく */
+.dc-ttl{margin:0;font-size:var(--fs-s);color:var(--muted)}
+.dc-sum .you{display:block;margin-top:2px;font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted)}
+.dc-seg i.gap{background:none}
+/* 流し聞き：英文は大きく上寄せ、ひとつ前の文を薄く残す、再生ボタンはひかえめ */
+.fl-prev{margin:0 0 6px;font-family:var(--serif);font-size:var(--fs-m);color:var(--faint);line-height:1.5;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#flBox .dc-big{background:color-mix(in srgb,var(--fg) 82%,var(--card))}
+@media (max-width: 640px){
+  .fl-en{font-size:clamp(1.5rem,7vw,1.875rem)}
+  #flBox .fl-text{justify-content:flex-start;padding-top:8vh}
+  #flBox .dc-big{width:48px;height:48px}
+}
 </style>
 <script src="lessons.js"></script>
 </head>
@@ -816,6 +847,7 @@ html.static .ai-only{display:none!important}
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
       </button>
       <div class="top-title" id="topTitle"></div>
+      <button class="amt-mini" id="amtMini" aria-haspopup="true" aria-expanded="false" hidden><span id="amtMiniT"></span><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></button>
       <button class="icon-btn heart" id="likeBtn" aria-pressed="false" aria-label="いいね（L）" title="いいね（L）" hidden>
         <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
       </button>
@@ -891,8 +923,9 @@ function mixHtml(s, inv, prev){
     if(i % 2 === 0) return inv ? invHtml(x) : jaHtml(x);
     const pv = parts[i - 1] || '', nx = parts[i + 1] || '';
     const fresh = prev && (x.toLowerCase().match(/[a-z0-9][a-z0-9.'’-]*/g) || []).some(w => !prev.has(w));
+    const body = prev ? x.split(/([A-Za-z0-9][A-Za-z0-9.'’-]*)/).map((y, k) => k % 2 && !prev.has(y.toLowerCase()) ? `<span class="nu">${nbh(esc(y))}</span>` : nbh(esc(y))).join('') : nbh(esc(x));
     const cls = ['mw', x.trim().split(/\s+/).length <= 2 ? 'nw' : '', MW_PRE_B.test(pv) ? 'pl' : MW_PRE_P.test(pv) ? 'pa' : '', MW_POST.test(nx) ? 'pp' : '', inv ? 'quiet' : '', i === 1 && !pv.trim() ? 'first' : '', fresh ? 'lvup' : ''].filter(Boolean).join(' ');
-    return `<span class="${cls}" data-k="${gkey(x)}" role="button" tabindex="0">${nbh(esc(x))}</span>`;
+    return `<span class="${cls}" data-k="${gkey(x)}" role="button" tabindex="0">${body}</span>`;
   }).join('');
 }
 /* 日本語の説明の中の英語（2文字以上のつながり）を英文の書体に */
@@ -1205,6 +1238,7 @@ function setNav(){
   $('#flowBtn').setAttribute('aria-current', S.view === 'flow');
   if(S.view !== 'flow') flStop();
   $('#topTitle').classList.toggle('dim', S.view === 'lesson');
+  if(S.view !== 'lesson'){ $('#amtMini').hidden = true; closeAmtMenu(); }
   $('#likeBtn').hidden = !(S.view === 'lesson' && S.byId[S.cur] && S.cur !== '__draft');
 }
 function enterAnim(){ const scn = $('#scroll'); if(scn && scn.scrollTop <= 4) scn.classList.remove('scrolled'); const th = $('#thread'); th.classList.remove('enter'); void th.offsetWidth; th.classList.add('enter'); }
@@ -1379,7 +1413,22 @@ function dcLessonHtml(L){
       </section>`;
 }
 /* 本文の見出し（l-title）が見えているあいだは、上のバーの題名をかくす */
+/* 英語の量のカードが上に隠れたら、上のバーに今の段を出す（押すと7段から選べる） */
+function syncAmtMini(){
+  const b = $('#amtMini'), a = S.view === 'lesson' && $('#amt');
+  const show = !!a && a.getBoundingClientRect().bottom < $('#topbar').getBoundingClientRect().bottom;
+  b.hidden = !show; if(!show) closeAmtMenu();
+  if(show) $('#amtMiniT').textContent = `英語：${AMT[S.amount].tick}`;
+}
+function closeAmtMenu(){ const m = $('#amtMenu'); if(m){ m.remove(); $('#amtMini').setAttribute('aria-expanded', 'false'); } }
+function openAmtMenu(){
+  if($('#amtMenu')){ closeAmtMenu(); return; }
+  const L = S.byId[S.cur];
+  document.body.insertAdjacentHTML('beforeend', `<div class="amt-menu" id="amtMenu" role="menu" aria-label="英語の量">${AMT.map((a, k) => `<button role="menuitemradio" aria-checked="${k === S.amount}" data-amt-m="${k}">${esc(a.tick)}<small>${esc(k >= 1 && k <= 4 && L ? amtLabel(L, k) : a.name)}</small></button>`).join('')}</div>`);
+  $('#amtMini').setAttribute('aria-expanded', 'true');
+}
 function syncTopTitle(){
+  syncAmtMini();
   const t = $('#topTitle'), h = S.view === 'lesson' && $('#thread .l-title');
   if(!h){ t.classList.remove('dim'); return; }
   t.classList.toggle('dim', h.getBoundingClientRect().bottom > $('#topbar').getBoundingClientRect().bottom + 2);
@@ -1446,6 +1495,7 @@ function syncAmt(){
   const L = S.byId[S.cur], n = $('#amtE');
   if(L && n){ const [e, t] = shareSum(engShare(L, lv)); countUp(n, e); }
   if(L){ const nm = amtLabel(L, lv); $('#amtName').textContent = nm; r.setAttribute('aria-valuetext', nm); }
+  syncAmtMini();
 }
 function setAmount(v){
   v = Math.max(0, Math.min(AMT_MAX, Math.round(+v))); if(isNaN(v)) return;
@@ -1464,6 +1514,7 @@ const GRAD_SPEC = `日本語の文を少しずつ英語に置きかえる「段�
 - 英語と日本語の両方で活用させない（×「{beaten} て」「{broken} ました」）。動詞を英語にするときは時制ごと英語のかたまりに入れ、日本語は「、」「そして」などのつなぎだけにする。
 - 内容を足したり変えたりしない。日本人が読んで意味が取れる自然な並びにする。
 - 英語の量は mix < q1 < q2 < q3 とはっきり増やす（6語以下の短い文は減らなければよい）。
+- 段は積み上げる：下の段で英語だった語は、上の段でも英語のまま（mix の英語 ⊂ q1 ⊂ q2 ⊂ q3。上の段で日本語に戻さない）。
 例: en "She wants to be an Olympic gold medalist." / ja "彼女はオリンピックの金メダリストになりたいと思っています。"
 q1 "{She} は {Olympic} の {gold medalist} になりたいと思っています。" q2 "{She wants to be} オリンピックの {gold medalist}。" q3 "{She wants to be an} オリンピックの {gold medalist.}"`;
 async function ensureGrad(){
@@ -1787,7 +1838,7 @@ function dcCheck(give){
   const hist = LS.get(dcKey('Hist'), {}); const h = hist[d.k] || {n: 0, ok: 0};
   h.n++; if(DC.res.perfect) h.ok++; h.last = jstToday(); hist[d.k] = h; LS.set(dcKey('Hist'), hist);
   const st = dcStats(); st.n++; st.words += DC.res.total; st.ok += DC.res.hit; if(DC.res.perfect) st.perfect++; LS.set(dcKey('Stat'), st);
-  if(dcLessonId()) DC.lres[DC.cur.i] = {hit: DC.res.hit, total: DC.res.total, perfect: DC.res.perfect, gave: DC.gave, marks: DC.res.A.map(t => t.ok ? 1 : 0)};
+  if(dcLessonId()) DC.lres[DC.cur.i] = {typed: DC.typed, hit: DC.res.hit, total: DC.res.total, perfect: DC.res.perfect, gave: DC.gave, marks: DC.res.A.map(t => t.ok ? 1 : 0)};
   if(markToday()) saveState();
   renderCounts(); renderDict(true);
   const nx = $('[data-act="dc-next"]'); if(nx) nx.focus({preventScroll: true});
@@ -1815,7 +1866,7 @@ function renderDict(keep){
   let html = `<div class="view-head"><h1 class="view-h">${W ? '日本語から英作文' : '書き取り'}<span class="c">${st.n ? `今日 ${st.n}文${st.perfect ? `（ぴったり ${st.perfect}文）` : ''}${rateTxt}` : ''}</span></h1>
     <p class="view-p">${W ? '日本語を見て、英語で書きます。書いたらお手本とくらべます。言い方はひとつではないので、近ければ大丈夫です。' : '英文を聞いて、聞こえたとおりに書きます。何度聞いても大丈夫です。'}${lid ? '' : '終わりはありません。'}</p></div>
     <div class="dc-bar"><span class="seg" role="group" aria-label="やり方"><button data-dcmode="listen" aria-pressed="${!W}">聞いて書く</button><button data-dcmode="write" aria-pressed="${W}">日本語から英作文</button></span></div>
-    ${srcRows('dcsrc', DC.src, lid && LL ? `<button class="chip" data-dcsrc="lesson:${esc(lid)}" aria-pressed="true" title="${esc(LL.title)}">この話題：${esc(LL.title)}</button>` : '')}`;
+    ${DC.phase === 'end' && LL ? `<p class="dc-ttl">この話題：${esc(LL.title)}</p>` : srcRows('dcsrc', DC.src, lid && LL ? `<button class="chip" data-dcsrc="lesson:${esc(lid)}" aria-pressed="true" title="${esc(LL.title)}">この話題：${esc(LL.title)}</button>` : '')}`;
   if(DC.phase === 'end' && LL){
     const r = DC.lres, done = r.filter(Boolean), perf = done.filter(x => x.perfect).length;
     const ok = done.reduce((a, x) => a + x.hit, 0), w = done.reduce((a, x) => a + x.total, 0);
@@ -1823,12 +1874,12 @@ function renderDict(keep){
     const head = done.length ? `${w ? `<span class="big">${Math.round(ok / w * 100)}<small>%</small></span>` : ''}<span class="lbl">${W ? 'お手本と同じ語' : '単語の正解率'}<span class="sub">${nAll}文中${done.length}文${perf ? `・ぴったり${perf}文` : ''}</span></span>` : 'この話題の文は、ぜんぶとばしました。';
     html += `<div class="dc-box" aria-live="polite">
       <p class="dc-res hero${done.length && perf === done.length ? ' perfect' : ''}">${head}</p>
-      <div class="dc-seg" aria-hidden="true" style="grid-template-columns:repeat(${nAll},1fr)">${LL.lines.map((_, i) => { const x = r[i]; return `<i class="${!x ? '' : x.perfect ? 'ok' : x.hit ? 'part' : ''}"></i>`; }).join('')}</div>
+      ${(() => { const ord = [...LL.lines.map((_, i) => i).filter(i => r[i]), ...(done.length && skipped.length ? ['gap'] : []), ...skipped]; return `<div class="dc-seg" aria-hidden="true" style="grid-template-columns:${ord.map(i => i === 'gap' ? '6px' : '1fr').join(' ')}">${ord.map(i => { if(i === 'gap') return '<i class="gap"></i>'; const x = r[i]; return `<i class="${!x ? '' : x.perfect ? 'ok' : x.hit ? 'part' : ''}"></i>`; }).join('')}</div>`; })()}
       <ol class="dc-sum">${[...LL.lines.map((_, i) => i).filter(i => r[i]), ...skipped].map((i, n) => {
         const ln = LL.lines[i], x = r[i], T = dcTok(ln.en);
         const sh = !x && n === done.length && done.length ? `<li class="sum-h">とばした${skipped.length}文</li>` : '';
         if(x && x.marks) T.forEach((t, j) => { t.ok = !!x.marks[j]; });
-        const txt = !x ? esc(ln.ja) : x.marks && !x.gave ? markText(ln.en, T, t => t.ok ? '' : 'miss') : nbh(esc(ln.en));
+        const txt = (!x ? esc(ln.ja) : x.marks && !x.gave ? markText(ln.en, T, t => t.ok ? '' : 'miss') : nbh(esc(ln.en))) + (x && !x.gave && !x.perfect && x.typed ? `<span class="you" lang="en">あなた：${esc(x.typed)}</span>` : '');
         const cnt = !x ? `${T.length}語` : x.gave ? '答えを見た' : x.perfect ? 'ぴったり' : `${x.hit}/${x.total}語`;
         return `${sh}<li class="${!x ? 'skip' : x.perfect ? 'perfect' : ''}"><span class="se"${x ? ' lang="en"' : ''}>${txt}</span><span class="cnt">${cnt}</span></li>`;
       }).join('')}</ol>
@@ -1951,8 +2002,9 @@ function renderFlow(keep, swap){
   const toks = tokenize(c.ln.en).map(t => t.w ? `<span class="tk" data-s="${t.s}" data-e="${t.e}">${nbh(esc(t.t))}</span>` : esc(t.t)).join('');
   const veil = FL.hideEn && !FL.peek;
   html += `<div class="fl-box${FL.on ? ' on' : ''}" id="flBox">
-    <div class="dc-top"><span>${FL.pos + 1} / ${n}</span>${lvlHtml(c.L.level)}</div>
+    <div class="dc-top"><span>この回 ${FL.pos + 1}文目</span>${lvlHtml(c.L.level)}</div>
     <div class="fl-text${swap ? ' swap' : ''}">
+      ${(() => { const pk = FL.order[FL.pos - 1]; if(!pk) return ''; const [pid, pi] = splitKey(pk), PL = S.byId[pid]; return PL && PL.lines[pi] ? `<p class="fl-prev" lang="en" aria-hidden="true">${esc(PL.lines[pi].en)}</p>` : ''; })()}
       <div class="fl-enw"><p class="fl-en${veil ? ' veil' : ''}" id="flEn" lang="en"${veil ? ' data-act="fl-peek" role="button" tabindex="0" aria-label="かくした英文を見る"' : ''}>${toks}</p>${veil ? '<span class="veil-lbl" aria-hidden="true"><span>英文はかくしています・タップで表示</span></span>' : ''}</div>
       ${FL.showJa ? `<p class="fl-ja">${esc(c.ln.ja)}</p>` : ''}
     </div>
@@ -2368,6 +2420,11 @@ $('#likesBtn').addEventListener('click', () => { renderLikes(); closeSide(); });
 $('#dictBtn').addEventListener('click', () => { renderDict(); closeSide(); });
 $('#flowBtn').addEventListener('click', () => { renderFlow(); closeSide(); });
 $('#coverBack').addEventListener('click', () => toggleCover(false));
+$('#amtMini').addEventListener('click', e => { e.stopPropagation(); openAmtMenu(); });
+document.addEventListener('click', e => {
+  const m = e.target.closest('[data-amt-m]'); if(m){ closeAmtMenu(); setAmount(+m.dataset.amtM); syncAmtMini(); return; }
+  if(!e.target.closest('#amtMenu')) closeAmtMenu();
+});
 $('#q').addEventListener('input', e => { S.query = e.target.value; renderList(); });
 $('#q').addEventListener('keydown', e => {
   if(e.key === 'Enter'){ const first = visible()[0]; if(first){ openLesson(first.id, null); e.target.blur(); } }
