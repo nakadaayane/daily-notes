@@ -741,17 +741,32 @@ html.static .ai-only{display:none!important}
 .dc-end-tools .btn{background:var(--bubble);color:var(--fg)}
 .dc-end-tools .btn:hover{background:color-mix(in srgb,var(--bubble) 70%,var(--line));opacity:1}
 /* ===== 6回目の見直し ===== */
+/* 一覧の日付の見出し：上の2pxのすき間から前の行が見えないように */
+.list .grp{top:-2px}
 /* 新しく英語になった語だけに細い下線（チップの影ではなく文字の下線） */
 .mw.lvup{box-shadow:none}
 .mw .nu{text-decoration:underline;text-decoration-color:color-mix(in srgb,var(--accent) 60%,transparent);text-decoration-thickness:1.5px;text-underline-offset:.3em}
 /* 多めの段の日本語は「まだ日本語」の扱い（押せるものと見間違えないよう、アクセント色は使わない） */
 .jr{color:var(--muted)}
-/* 文：行の長さをそろえる、♡と🔊の間をあけて押し間違いを防ぐ */
-.story .s-text{text-wrap:balance}
-@media (max-width: 640px){ .story .acts{gap:6px} .story .say::before{inset:-7px -3px} }
+/* 文：行の長さをそろえる（balance は段落の箱に効くので s-body に）。
+   スマホは♡🔊を右の列に分ける（回り込みがあると行がそろわない・ボタンの位置も文ごとにそろう） */
+.story .s-body{text-wrap:balance}
+@media (max-width: 640px){
+  .story li{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:4px;align-items:start}
+  .story .s-body{display:block}
+  .story .acts{float:none;position:static;height:auto;margin:-1px -6px 0 0;display:inline-flex;gap:4px}
+  .story .say::before{inset:-7px -2px}
+}
+/* 単語：🔊☆は見出し語の行にそろえる */
+.words li{align-items:start}
+.words .say,.words .star{margin-top:-2px}
+@media (pointer:coarse){ .words .say,.words .star{margin-top:-6px} }
+/* 一覧の「レベル」の字を、上の段のチップの字にそろえる */
+.lv-filters .flbl{padding-left:9px}
 /* スマホで英語の量が見えなくなったら、上のバーに今の段（押すと選べる） */
-.amt-mini{font-size:var(--fs-s);color:var(--muted);padding:4px 8px;border-radius:8px;display:inline-flex;align-items:center;gap:4px;white-space:nowrap;flex:none}
-.amt-mini:hover{background:var(--bubble);color:var(--fg)}
+.amt-mini{font-size:var(--fs-s);color:var(--muted);padding:3px 8px 3px 11px;margin-left:6px;border:1px solid var(--line);border-radius:999px;background:var(--card);display:inline-flex;align-items:center;gap:5px;white-space:nowrap;flex:none}
+.amt-mini b{color:var(--fg);font-weight:600}
+.amt-mini:hover{border-color:var(--faint);color:var(--fg)}
 .amt-mini svg{transition:transform .2s var(--ease)}
 .amt-mini[aria-expanded="true"] svg{transform:rotate(180deg)}
 .amt-menu{position:fixed;z-index:35;right:12px;top:calc(46px + env(safe-area-inset-top,0px));min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 12px 32px var(--shadow);padding:6px;display:flex;flex-direction:column;animation:rise .16s var(--ease)}
@@ -764,7 +779,14 @@ html.static .ai-only{display:none!important}
 .dc-sum .you{display:block;margin-top:2px;font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted)}
 .dc-seg i.gap{background:none}
 /* 流し聞き：英文は大きく上寄せ、ひとつ前の文を薄く残す、再生ボタンはひかえめ */
-.fl-prev{margin:0 0 6px;font-family:var(--serif);font-size:var(--fs-m);color:var(--faint);line-height:1.5;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fl-prev{margin:0 0 6px;font-family:var(--serif);font-size:var(--fs-m);color:var(--faint);line-height:1.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+/* 流し聞きの上：話題の題（押すと開く）と、その話題の何文目か */
+.fl-ttl{min-width:0;flex:1 1 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:left;color:var(--muted);font-size:inherit}
+.fl-ttl:hover{color:var(--fg);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+#flBox .dc-top{flex-wrap:nowrap}
+#flBox .dc-top > :not(.fl-ttl){flex:none}
+/* 書き取りのまとめの下：今日ぜんぶの記録 */
+.dc-today{margin:0;font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums}
 #flBox .dc-big{background:color-mix(in srgb,var(--fg) 82%,var(--card))}
 @media (max-width: 640px){
   .fl-en{font-size:clamp(1.5rem,7vw,1.875rem)}
@@ -917,13 +939,16 @@ const jaHtml = t => esc(t).replace(/\d[\d,.]*(?:[万億兆千百]\d*)*(?:ドル|
 const INV_P = {'、': ', ', '。': '.', '！': '!', '？': '?'};
 const invHtml = x => x.split(/([、。！？])/).map(y => INV_P[y] != null ? INV_P[y] : HAS_JA.test(y) ? `<span class="jr">${jaHtml(y)}</span>` : esc(y)).join('');
 function mixHtml(s, inv, prev){
-  const src = String(s ?? '').replace(/([^\x00-\x7F])\s+\{/g, '$1{').replace(/\}\s+([^\x00-\x7F])/g, '}$1');
+  /* ふだんは和文が地なので英語の前後の空白を詰める。多めの段は英語が地なので、英語と日本語の間に空きを入れる */
+  const src = inv
+    ? String(s ?? '').replace(/([^\x00-\x7F、。！？「『（])\s*\{/g, '$1 {').replace(/\}\s*([^\x00-\x7F、。！？」』）])/g, '} $1')
+    : String(s ?? '').replace(/([^\x00-\x7F])\s+\{/g, '$1{').replace(/\}\s+([^\x00-\x7F])/g, '}$1');
   const parts = src.split(/\{([^{}]+)\}/);
   return parts.map((x, i) => {
     if(i % 2 === 0) return inv ? invHtml(x) : jaHtml(x);
     const pv = parts[i - 1] || '', nx = parts[i + 1] || '';
-    const fresh = prev && (x.toLowerCase().match(/[a-z0-9][a-z0-9.'’-]*/g) || []).some(w => !prev.has(w));
-    const body = prev ? x.split(/([A-Za-z0-9][A-Za-z0-9.'’-]*)/).map((y, k) => k % 2 && !prev.has(y.toLowerCase()) ? `<span class="nu">${nbh(esc(y))}</span>` : nbh(esc(y))).join('') : nbh(esc(x));
+    const fresh = prev && (x.toLowerCase().match(/[a-z0-9]+(?:[.'’-][a-z0-9]+)*/g) || []).some(w => !prev.has(w));
+    const body = prev ? x.split(/([A-Za-z0-9]+(?:[.'’-][A-Za-z0-9]+)*)/).map((y, k) => k % 2 && !prev.has(y.toLowerCase()) ? `<span class="nu">${nbh(esc(y))}</span>` : nbh(esc(y))).join('') : nbh(esc(x));
     const cls = ['mw', x.trim().split(/\s+/).length <= 2 ? 'nw' : '', MW_PRE_B.test(pv) ? 'pl' : MW_PRE_P.test(pv) ? 'pa' : '', MW_POST.test(nx) ? 'pp' : '', inv ? 'quiet' : '', i === 1 && !pv.trim() ? 'first' : '', fresh ? 'lvup' : ''].filter(Boolean).join(' ');
     return `<span class="${cls}" data-k="${gkey(x)}" role="button" tabindex="0">${body}</span>`;
   }).join('');
@@ -1237,7 +1262,7 @@ function setNav(){
   $('#dictBtn').setAttribute('aria-current', S.view === 'dict');
   $('#flowBtn').setAttribute('aria-current', S.view === 'flow');
   if(S.view !== 'flow') flStop();
-  $('#topTitle').classList.toggle('dim', S.view === 'lesson');
+  $('#topTitle').classList.add('dim'); requestAnimationFrame(syncTopTitle);
   if(S.view !== 'lesson'){ $('#amtMini').hidden = true; closeAmtMenu(); }
   $('#likeBtn').hidden = !(S.view === 'lesson' && S.byId[S.cur] && S.cur !== '__draft');
 }
@@ -1272,7 +1297,7 @@ function storyLine(L, i){
       let mx = key === 'mix' ? ln.mix : (gradOk(L) ? L.grad[i][key] : '');
       if(!mx) mx = ln.mix;
       let prev = null;
-      if(st === 0 && (lv === 2 || lv === 3)){ const pk = AMT[lv - 1].mix, pt = pk === 'mix' ? ln.mix : (gradOk(L) ? L.grad[i][pk] : ''); prev = new Set(((pt || '').match(/\{([^{}]+)\}/g) || []).join(' ').toLowerCase().match(/[a-z0-9][a-z0-9.'’-]*/g) || []); }
+      if(st === 0 && lv >= 2 && lv <= 4){ const pk = AMT[lv - 1].mix, pt = pk === 'mix' ? ln.mix : (gradOk(L) ? L.grad[i][pk] : ''); prev = new Set(((pt || '').match(/\{([^{}]+)\}/g) || []).join(' ').toLowerCase().match(/[a-z0-9]+(?:[.'’-][a-z0-9]+)*/g) || []); }
       html = mx ? `<span class="s-text ja">${mixHtml(mx, key === 'q3', prev)}</span>` : `<span class="s-text ja">${jaHtml(ln.ja)}</span>`;
     }
   }
@@ -1418,7 +1443,7 @@ function syncAmtMini(){
   const b = $('#amtMini'), a = S.view === 'lesson' && $('#amt');
   const show = !!a && a.getBoundingClientRect().bottom < $('#topbar').getBoundingClientRect().bottom;
   b.hidden = !show; if(!show) closeAmtMenu();
-  if(show) $('#amtMiniT').textContent = `英語：${AMT[S.amount].tick}`;
+  if(show) $('#amtMiniT').innerHTML = `英語 <b>${esc(AMT[S.amount].tick)}</b>`;
 }
 function closeAmtMenu(){ const m = $('#amtMenu'); if(m){ m.remove(); $('#amtMini').setAttribute('aria-expanded', 'false'); } }
 function openAmtMenu(){
@@ -1429,7 +1454,7 @@ function openAmtMenu(){
 }
 function syncTopTitle(){
   syncAmtMini();
-  const t = $('#topTitle'), h = S.view === 'lesson' && $('#thread .l-title');
+  const t = $('#topTitle'), h = $('#thread .l-title, #thread .view-h');   /* どの画面も、見出しが見えているあいだは上の題名をかくす */
   if(!h){ t.classList.remove('dim'); return; }
   t.classList.toggle('dim', h.getBoundingClientRect().bottom > $('#topbar').getBoundingClientRect().bottom + 2);
 }
@@ -1447,7 +1472,7 @@ const storyNote = () => {
   const lv = S.amount, kw = '点線の単語をタップすると意味が見られます。';
   const any = '英文の単語はどれでもタップすると意味が出ます（点線は大事な単語）。♡ でその文にいいね。';
   if(lv === 0) return '文か「訳」をタップすると英文が出ます。';
-  if(lv <= 4) return `${lv === 2 || lv === 3 ? '下線のある英語は、ひとつ前の段から新しく英語になった所です。' : ''}色のついた英語をタップすると、そこだけ日本語になります。${matchMedia('(max-width: 640px)').matches ? '文の日本語の部分' : '「訳」か文の日本語の部分'}をタップすると、${lv >= 4 ? '日本語' : '英語'}多め → ぜんぶ英語（訳つき）→ もとに、と切りかわります。♡ でその文にいいね。`;
+  if(lv <= 4) return `${lv >= 2 ? '下線のある英語は、ひとつ前の段から新しく英語になった所です。' : ''}${lv === 4 ? '英語' : '色のついた英語'}をタップすると、そこだけ日本語になります。${matchMedia('(max-width: 640px)').matches ? '文の日本語の部分' : '「訳」か文の日本語の部分'}をタップすると、${lv >= 4 ? '日本語' : '英語'}多め → ぜんぶ英語（訳つき）→ もとに、と切りかわります。♡ でその文にいいね。`;
   if(lv === 5) return '「訳」で訳をかくせます。' + any;
   if(lv === 6) return '「訳」で日本語訳が出ます。' + any;
   return '文をタップすると英語と日本語が入れかわります。' + kw;
@@ -1507,7 +1532,7 @@ const GRAD_SPEC = `日本語の文を少しずつ英語に置きかえる「段�
 各文には ja（日本語）、mix（日本語に英単語を1〜2個入れたもの）、en（英文）があります。その間を埋める3段階を作ります。
 - q1: 英語は全体の語数の35%まで。日本語の語順・助詞のまま、名詞のかたまりだけを英語にする。述語（動詞）は日本語のまま。mix より英語が多いこと。
 - q2: 英語が約50%。動詞を英語にするのはここから。英語のかたまり（主語＋動詞、名詞句、前置詞句など）が文の半分くらい。英語の語順に寄せはじめてよい。
-- q3: 英語が約75%。en とほぼ同じ英語の語順で、むずかしめの語や句を1〜2か所だけ日本語のまま残す。短い文でも必ず日本語を1か所以上残し、全部を英語にしない（例: "I know I am late." → "{I} わかっている {I am late.}"）。
+- q3: 英語が約75%。en とほぼ同じ英語の語順で、むずかしめの語や句を1〜2か所だけ日本語のまま残す。短い文でも必ず日本語を1か所以上残し、全部を英語にしない（例: "I know I am late." → "{I} わかっている {I am late.}"）。残す日本語は意味のある語（動詞・形容詞・ふつうの名詞）にし、『作品名』・人名・地名・「さん」・助詞だけを残さない（人名・作品名は q3 では英語に。例: "Takeo Otsuka plays Tsukasa." → "{Takeo Otsuka} 演じる {Tsukasa.}"）。
 ルール:
 - 英語の部分は必ず {波かっこ} で囲む。日本語の部分は囲まない。入れ子は禁止。
 - 英語の部分は en にある単語だけを使う（言いかえたり、en に無い語を足したりしない）。
@@ -1536,7 +1561,7 @@ async function ensureGrad(){
     if(S.cur === id && S.view === 'lesson' && $('#story')) rerenderStory();
   }
 }
-const enWords = el => el.textContent.toLowerCase().match(/[a-z0-9][a-z0-9.'’-]*/g) || [];
+const enWords = el => el.textContent.toLowerCase().match(/[a-z0-9]+(?:[.'’-][a-z0-9]+)*/g) || [];
 function rerenderStory(){
   const L = S.byId[S.cur]; if(!L) return;
   stopSpeak(); closePop();
@@ -1863,15 +1888,20 @@ function renderDict(keep){
   if(S.loaded && DC.phase !== 'end' && (!DC.cur || !dcLine())){ DC.cur = dcPick(); dcReset(); }
   const st = dcStats(), d = dcLine();
   const rateTxt = st.words ? `・${W ? 'お手本と同じ語' : '単語の正解率'} ${Math.round(st.ok / st.words * 100)}%` : '';
-  let html = `<div class="view-head"><h1 class="view-h">${W ? '日本語から英作文' : '書き取り'}<span class="c">${st.n ? `今日 ${st.n}文${st.perfect ? `（ぴったり ${st.perfect}文）` : ''}${rateTxt}` : ''}</span></h1>
+  const todayTxt = st.n ? `今日 ${st.n}文${st.perfect ? `（ぴったり ${st.perfect}文）` : ''}${rateTxt}` : '';
+  /* 話題ごとのまとめでは、説明・やり方の切りかえ・今日ぜんぶの数字は出さない（結果を上に。今日の数字はいちばん下に1行） */
+  const ended = DC.phase === 'end' && LL;
+  let html = ended ? `<div class="view-head"><h1 class="view-h">${W ? '日本語から英作文' : '書き取り'}</h1></div>
+    <p class="dc-ttl">この話題：${esc(LL.title)}</p>`
+    : `<div class="view-head"><h1 class="view-h">${W ? '日本語から英作文' : '書き取り'}<span class="c">${todayTxt}</span></h1>
     <p class="view-p">${W ? '日本語を見て、英語で書きます。書いたらお手本とくらべます。言い方はひとつではないので、近ければ大丈夫です。' : '英文を聞いて、聞こえたとおりに書きます。何度聞いても大丈夫です。'}${lid ? '' : '終わりはありません。'}</p></div>
     <div class="dc-bar"><span class="seg" role="group" aria-label="やり方"><button data-dcmode="listen" aria-pressed="${!W}">聞いて書く</button><button data-dcmode="write" aria-pressed="${W}">日本語から英作文</button></span></div>
-    ${DC.phase === 'end' && LL ? `<p class="dc-ttl">この話題：${esc(LL.title)}</p>` : srcRows('dcsrc', DC.src, lid && LL ? `<button class="chip" data-dcsrc="lesson:${esc(lid)}" aria-pressed="true" title="${esc(LL.title)}">この話題：${esc(LL.title)}</button>` : '')}`;
+    ${srcRows('dcsrc', DC.src, lid && LL ? `<button class="chip" data-dcsrc="lesson:${esc(lid)}" aria-pressed="true" title="${esc(LL.title)}">この話題：${esc(LL.title)}</button>` : '')}`;
   if(DC.phase === 'end' && LL){
     const r = DC.lres, done = r.filter(Boolean), perf = done.filter(x => x.perfect).length;
     const ok = done.reduce((a, x) => a + x.hit, 0), w = done.reduce((a, x) => a + x.total, 0);
     const nAll = LL.lines.length, skipped = LL.lines.map((_, i) => i).filter(i => !r[i]);
-    const head = done.length ? `${w ? `<span class="big">${Math.round(ok / w * 100)}<small>%</small></span>` : ''}<span class="lbl">${W ? 'お手本と同じ語' : '単語の正解率'}<span class="sub">${nAll}文中${done.length}文${perf ? `・ぴったり${perf}文` : ''}</span></span>` : 'この話題の文は、ぜんぶとばしました。';
+    const head = done.length ? `${w ? `<span class="big">${Math.round(ok / w * 100)}<small>%</small></span>` : ''}<span class="lbl">${W ? 'この話題でお手本と同じ語' : 'この話題の正解率'}<span class="sub">書いた${done.length}文で${perf ? `・ぴったり${perf}文` : ''}${skipped.length ? `（${skipped.length}文はとばし）` : ''}</span></span>` : 'この話題の文は、ぜんぶとばしました。';
     html += `<div class="dc-box" aria-live="polite">
       <p class="dc-res hero${done.length && perf === done.length ? ' perfect' : ''}">${head}</p>
       ${(() => { const ord = [...LL.lines.map((_, i) => i).filter(i => r[i]), ...(done.length && skipped.length ? ['gap'] : []), ...skipped]; return `<div class="dc-seg" aria-hidden="true" style="grid-template-columns:${ord.map(i => i === 'gap' ? '6px' : '1fr').join(' ')}">${ord.map(i => { if(i === 'gap') return '<i class="gap"></i>'; const x = r[i]; return `<i class="${!x ? '' : x.perfect ? 'ok' : x.hit ? 'part' : ''}"></i>`; }).join('')}</div>`; })()}
@@ -1883,7 +1913,8 @@ function renderDict(keep){
         const cnt = !x ? `${T.length}語` : x.gave ? '答えを見た' : x.perfect ? 'ぴったり' : `${x.hit}/${x.total}語`;
         return `${sh}<li class="${!x ? 'skip' : x.perfect ? 'perfect' : ''}"><span class="se"${x ? ' lang="en"' : ''}>${txt}</span><span class="cnt">${cnt}</span></li>`;
       }).join('')}</ol>
-      <div class="dc-tools dc-end-tools">${skipped.length && done.length ? `<button class="btn" data-act="dc-lesson-skipped">とばした${skipped.length}文を${W ? '書く' : '書き取る'}</button>` : `<button class="btn" data-act="dc-lesson-again">もう一度この話題で</button>`}<button class="txt-btn" data-open="${esc(lid)}">話題にもどる</button><button class="txt-btn" data-act="dc-all">いろいろな文で続ける</button></div></div>`;
+      <div class="dc-tools dc-end-tools">${skipped.length && done.length ? `<button class="btn" data-act="dc-lesson-skipped">とばした${skipped.length}文を${W ? '書く' : '書き取る'}</button>` : `<button class="btn" data-act="dc-lesson-again">もう一度この話題で</button>`}<button class="txt-btn" data-open="${esc(lid)}">話題にもどる</button><button class="txt-btn" data-act="dc-all">いろいろな文で続ける</button></div>
+      ${todayTxt ? `<p class="dc-today">${todayTxt}</p>` : ''}</div>`;
     $('#thread').innerHTML = html; if(!keep){ $('#scroll').scrollTop = 0; enterAnim(); } return;
   }
   if(!d){
@@ -1938,10 +1969,15 @@ function flPool(){
   S.lessons.forEach(L => { if(FL.src !== 'all' && String(L.level) !== FL.src) return; (L.lines || []).forEach((ln, i) => { if(ln && ln.en) out.push(sentKey(L.id, i)); }); });
   return out;
 }
+/* 話題の順はランダム、話題の中は文の順（ひとつ前の文が文脈になり、聞き取りやすい） */
 function flShuffle(avoid){
-  const a = flPool();
-  for(let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; }
-  if(avoid && a.length > 1 && a[0] === avoid) a.push(a.shift());
+  const groups = new Map();
+  flPool().forEach(k => { const [id, i] = splitKey(k); if(!groups.has(id)) groups.set(id, []); groups.get(id).push([+i, k]); });
+  const g = [...groups.entries()];
+  for(let i = g.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [g[i], g[j]] = [g[j], g[i]]; }
+  const av = avoid ? splitKey(avoid)[0] : '';
+  if(av && g.length > 1 && g[0][0] === av) g.push(g.shift());
+  const a = g.flatMap(([, xs]) => xs.sort((x, y) => x[0] - y[0]).map(x => x[1]));
   FL.order = a; FL.pos = a.length ? 0 : -1;
 }
 function flCur(){ const k = FL.order[FL.pos]; if(!k) return null; const [id, i] = splitKey(k); const L = S.byId[id]; return L && L.lines[i] ? {k, L, i, ln: L.lines[i]} : null; }
@@ -1993,7 +2029,7 @@ function renderFlow(keep, swap){
   if(S.loaded && (!FL.order.length || !flCur())) flShuffle();
   const c = flCur(), n = FL.order.length;
   let html = `<div class="view-head"><h1 class="view-h">流し聞き<span class="c">${n ? n + '文' : ''}</span></h1>
-    <p class="view-p">文をランダムな順に、続けて読み上げます。聞き流しや、まねして言う練習（シャドーイング）に。</p></div>
+    <p class="view-p">話題をランダムな順に、文を続けて読み上げます。聞き流しや、まねして言う練習（シャドーイング）に。</p></div>
     ${srcRows('flsrc', FL.src, '')}`;
   if(!c){
     html += emptyMain(!S.loaded ? '読み込んでいます…' : FL.src === 'liked' ? 'いいねした文がまだありません。<br>話題の「読んでみよう」で、文の右の ♡ を押すと、ここで流せます。' : '流せる文がありません。');
@@ -2002,9 +2038,9 @@ function renderFlow(keep, swap){
   const toks = tokenize(c.ln.en).map(t => t.w ? `<span class="tk" data-s="${t.s}" data-e="${t.e}">${nbh(esc(t.t))}</span>` : esc(t.t)).join('');
   const veil = FL.hideEn && !FL.peek;
   html += `<div class="fl-box${FL.on ? ' on' : ''}" id="flBox">
-    <div class="dc-top"><span>この回 ${FL.pos + 1}文目</span>${lvlHtml(c.L.level)}</div>
+    <div class="dc-top"><button class="fl-ttl" data-open="${esc(c.L.id)}" data-line="${c.i}" title="この話題を開く">${esc(c.L.title)}</button><span>${c.i + 1} / ${c.L.lines.length}</span>${lvlHtml(c.L.level)}</div>
     <div class="fl-text${swap ? ' swap' : ''}">
-      ${(() => { const pk = FL.order[FL.pos - 1]; if(!pk) return ''; const [pid, pi] = splitKey(pk), PL = S.byId[pid]; return PL && PL.lines[pi] ? `<p class="fl-prev" lang="en" aria-hidden="true">${esc(PL.lines[pi].en)}</p>` : ''; })()}
+      ${(() => { const pk = FL.order[FL.pos - 1]; if(!pk) return ''; const [pid, pi] = splitKey(pk), PL = S.byId[pid]; return pid === c.L.id && PL && PL.lines[pi] ? `<p class="fl-prev" lang="en" aria-hidden="true">${esc(PL.lines[pi].en)}</p>` : ''; })()}
       <div class="fl-enw"><p class="fl-en${veil ? ' veil' : ''}" id="flEn" lang="en"${veil ? ' data-act="fl-peek" role="button" tabindex="0" aria-label="かくした英文を見る"' : ''}>${toks}</p>${veil ? '<span class="veil-lbl" aria-hidden="true"><span>英文はかくしています・タップで表示</span></span>' : ''}</div>
       ${FL.showJa ? `<p class="fl-ja">${esc(c.ln.ja)}</p>` : ''}
     </div>
@@ -2021,7 +2057,6 @@ function renderFlow(keep, swap){
       <button class="tg" data-act="fl-en" aria-pressed="${!FL.hideEn}">英文</button>
       <button class="tg" data-act="fl-gap" aria-pressed="${FL.gap}">まねして言う間</button>
     </div>
-    <span class="dc-from">出てきた話題：<button data-open="${esc(c.L.id)}" data-line="${c.i}">${esc(c.L.title)}</button></span>
   </div>`;
   $('#thread').innerHTML = html;
   if(!keep){ $('#scroll').scrollTop = 0; enterAnim(); }
@@ -2059,7 +2094,7 @@ const LESSON_SPEC = `次のJSONオブジェクトを1つだけ返してくださ
 - 日本語は自然なですます調。
 - 元の文章の言いまわし（例：「続投」「見放題」）が英語でどうなるかを words の note で触れるとよい。
 - クイズは、内容1問・単語1問・文法の穴うめ1問。正解の位置はばらけさせる。
-- mix・q1・q2・q3 は ja から en へ少しずつ英語を増やした混ぜ文。mix は名詞か形容詞を1〜2か所、q1 は日本語の語順のまま名詞のかたまりだけ英語に（動詞は日本語）、q2 から動詞も英語に（英語のかたまりが半分くらい）、q3 は en の語順でむずかしめの語を1〜2か所だけ日本語に残す。英語の部分は必ず {波かっこ} で囲み、en にある単語だけを使う。英語の動詞に「て」「ました」をつけない。`;
+- mix・q1・q2・q3 は ja から en へ少しずつ英語を増やした混ぜ文。mix は名詞か形容詞を1〜2か所、q1 は日本語の語順のまま名詞のかたまりだけ英語に（動詞は日本語）、q2 から動詞も英語に（英語のかたまりが半分くらい）、q3 は en の語順でむずかしめの語を1〜2か所だけ日本語に残す（残すのは動詞・形容詞・ふつうの名詞。人名・作品名・「さん」・助詞だけを残さない）。下の段で英語だった語は上の段でも英語のまま。英語の部分は必ず {波かっこ} で囲み、en にある単語だけを使う。英語の動詞に「て」「ました」をつけない。`;
 async function makeNote(){
   const text = $('#srcText').value.trim(); const url = $('#srcUrl').value.trim();
   const note = $('#makeNote'); const btn = $('#makeBtn');
@@ -2467,7 +2502,7 @@ let scrollRaf = 0;
 $('#scroll').addEventListener('scroll', () => {
   closePop();
   const scn = $('#scroll'); scn.classList.toggle('scrolled', scn.scrollTop > 4);
-  if(S.view === 'lesson') syncTopTitle();
+  syncTopTitle();
   if(scrollRaf) return;
   scrollRaf = requestAnimationFrame(() => {
     scrollRaf = 0; const sc = $('#scroll'); const max = sc.scrollHeight - sc.clientHeight;
