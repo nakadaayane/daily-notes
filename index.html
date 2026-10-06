@@ -710,6 +710,36 @@ html.static .ai-only{display:none!important}
   #flBox{flex:1}
   #flBox .fl-text{flex:1}
 }
+/* ===== 5回目の見直し ===== */
+/* スマホ：♡🔊は各文の右上に回り込ませる（アイコンだけの行を作らない） */
+.story .acts{order:2}
+@media (max-width: 640px){
+  .story .s-body > :last-child::after{content:none}
+  .story .acts{position:static;float:right;height:1.85em;align-items:center;margin:0 -6px 0 10px;vertical-align:0}
+  .story li{padding-bottom:6px}
+}
+/* 和英の混ぜ方：英語のかたまりの左端を和文の行頭にそろえる。多めの段は地の色を使わないので余白もなし */
+.mw.quiet{padding-inline:0;margin-inline:0;-webkit-box-decoration-break:slice;box-decoration-break:slice}
+.mw.first:not(.quiet){margin-left:-3px}
+.nwj{white-space:nowrap}
+/* ひとつ前の段から新しく英語になった所：細い下線（静止画でも段の重なりがわかる） */
+.mw.lvup{box-shadow:inset 0 -2px 0 color-mix(in srgb,var(--accent) 55%,transparent)}
+/* 上のバーの下で文字が切れないよう、上端をふわっと溶かす */
+.scroll.scrolled{-webkit-mask-image:linear-gradient(#0000,#000 18px);mask-image:linear-gradient(#0000,#000 18px)}
+/* 出す文：スマホは1行（横にスクロール） */
+@media (max-width: 640px){ .dc-src{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none} .dc-src::-webkit-scrollbar{display:none} .dc-src .chip{flex:none} }
+/* 流し聞きのオン/オフは塗らずに印だけ */
+.fl-opts{border-top:1px solid var(--line);padding-top:12px;gap:4px 18px}
+.fl-opts .tg{border:0;background:none;padding:4px 0;color:var(--muted)}
+.fl-opts .tg[aria-pressed="true"]{background:none;color:var(--fg)}
+.fl-opts .tg[aria-pressed="true"]::before{background:var(--accent);border-color:var(--accent);box-shadow:inset 0 0 0 2px var(--card)}
+/* 書き取りのまとめ：％は小さく、説明は2行、ボタンは控えめ */
+.dc-res .big small{font-size:.5em;font-weight:400;color:var(--muted);margin-left:2px}
+.dc-res .lbl{display:flex;flex-direction:column;gap:1px;color:var(--fg);font-size:var(--fs-s)}
+.dc-res .lbl .sub{font-size:var(--fs-xs);color:var(--muted)}
+.dc-sum .sum-h{display:block;padding:14px 0 4px;border-bottom:1px solid var(--line);font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted);letter-spacing:.04em}
+.dc-end-tools .btn{background:var(--bubble);color:var(--fg)}
+.dc-end-tools .btn:hover{background:color-mix(in srgb,var(--bubble) 70%,var(--line));opacity:1}
 </style>
 <script src="lessons.js"></script>
 </head>
@@ -849,13 +879,19 @@ const gkey = s => String(s ?? '').toLowerCase().replace(/’/g, "'").replace(/[^
 const unesc = s => String(s).replace(/&#39;/g, "'").replace(/&quot;/g, '"').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 /* 混ぜ文 → HTML。英語のかたまり（{…}）は .mw。前後が括弧・句読点なら余白を詰める。inv（3/4 の段）では英語を地にして、残った日本語（.jr）に色 */
 const MW_PRE_B = /[『「（(“]$/, MW_PRE_P = /[、。，]$/, MW_POST = /^[、。，．！？」』）)”]/, HAS_JA = /[぀-ヿ㐀-鿿]/;
-function mixHtml(s, inv){
+/* 和文の中の「数＋単位」は途中で改行しない（29億2500万ドル など） */
+const jaHtml = t => esc(t).replace(/\d[\d,.]*(?:[万億兆千百]\d*)*(?:ドル|円|人|回|年|月|日|位|%|％|倍|件|語|本|話|巻|作)?/g, m => `<span class="nwj">${m}</span>`);
+/* inv（多めの段）では英語が地。和文の句読点は英語のものに置きかえ、残った日本語だけ色をつける */
+const INV_P = {'、': ', ', '。': '.', '！': '!', '？': '?'};
+const invHtml = x => x.split(/([、。！？])/).map(y => INV_P[y] != null ? INV_P[y] : HAS_JA.test(y) ? `<span class="jr">${jaHtml(y)}</span>` : esc(y)).join('');
+function mixHtml(s, inv, prev){
   const src = String(s ?? '').replace(/([^\x00-\x7F])\s+\{/g, '$1{').replace(/\}\s+([^\x00-\x7F])/g, '}$1');
   const parts = src.split(/\{([^{}]+)\}/);
   return parts.map((x, i) => {
-    if(i % 2 === 0) return inv && HAS_JA.test(x) ? `<span class="jr">${esc(x)}</span>` : esc(x);
-    const prev = parts[i - 1] || '', next = parts[i + 1] || '';
-    const cls = ['mw', x.trim().split(/\s+/).length <= 2 ? 'nw' : '', MW_PRE_B.test(prev) ? 'pl' : MW_PRE_P.test(prev) ? 'pa' : '', MW_POST.test(next) ? 'pp' : '', inv ? 'quiet' : ''].filter(Boolean).join(' ');
+    if(i % 2 === 0) return inv ? invHtml(x) : jaHtml(x);
+    const pv = parts[i - 1] || '', nx = parts[i + 1] || '';
+    const fresh = prev && (x.toLowerCase().match(/[a-z0-9][a-z0-9.'’-]*/g) || []).some(w => !prev.has(w));
+    const cls = ['mw', x.trim().split(/\s+/).length <= 2 ? 'nw' : '', MW_PRE_B.test(pv) ? 'pl' : MW_PRE_P.test(pv) ? 'pa' : '', MW_POST.test(nx) ? 'pp' : '', inv ? 'quiet' : '', i === 1 && !pv.trim() ? 'first' : '', fresh ? 'lvup' : ''].filter(Boolean).join(' ');
     return `<span class="${cls}" data-k="${gkey(x)}" role="button" tabindex="0">${nbh(esc(x))}</span>`;
   }).join('');
 }
@@ -1171,7 +1207,7 @@ function setNav(){
   $('#topTitle').classList.toggle('dim', S.view === 'lesson');
   $('#likeBtn').hidden = !(S.view === 'lesson' && S.byId[S.cur] && S.cur !== '__draft');
 }
-function enterAnim(){ const th = $('#thread'); th.classList.remove('enter'); void th.offsetWidth; th.classList.add('enter'); }
+function enterAnim(){ const scn = $('#scroll'); if(scn && scn.scrollTop <= 4) scn.classList.remove('scrolled'); const th = $('#thread'); th.classList.remove('enter'); void th.offsetWidth; th.classList.add('enter'); }
 
 /* ---------- lesson view ---------- */
 /* 混ぜ文の段（英語の量 1〜4）で文をタップしたときの3段：0 もとの混ぜ文 → 1 割合が逆の混ぜ文 → 2 ぜんぶ英語＋訳 */
@@ -1201,11 +1237,13 @@ function storyLine(L, i){
       const key = st === 1 ? revKey(lv) : AMT[lv].mix;
       let mx = key === 'mix' ? ln.mix : (gradOk(L) ? L.grad[i][key] : '');
       if(!mx) mx = ln.mix;
-      html = mx ? `<span class="s-text ja">${mixHtml(mx, key === 'q3')}</span>` : `<span class="s-text ja">${esc(ln.ja)}</span>`;
+      let prev = null;
+      if(st === 0 && (lv === 2 || lv === 3)){ const pk = AMT[lv - 1].mix, pt = pk === 'mix' ? ln.mix : (gradOk(L) ? L.grad[i][pk] : ''); prev = new Set(((pt || '').match(/\{([^{}]+)\}/g) || []).join(' ').toLowerCase().match(/[a-z0-9][a-z0-9.'’-]*/g) || []); }
+      html = mx ? `<span class="s-text ja">${mixHtml(mx, key === 'q3', prev)}</span>` : `<span class="s-text ja">${jaHtml(ln.ja)}</span>`;
     }
   }
   const lk = L.id !== '__draft' ? `<button class="say heart" data-sent="${esc(sentKey(L.id, i))}" aria-pressed="${isSentLiked(L.id, i)}" aria-label="この文にいいね" title="この文にいいね">${ICON.heart}</button>` : '';
-  return `<li data-i="${i}" style="--li:${i}"><span class="s-body">${html}</span><span class="acts"><button class="say tr" data-tr-line="${i}" aria-label="表示を切りかえ" title="表示を切りかえ">訳</button><button class="say" data-say-line="${i}" aria-label="英文を読み上げ">${ICON.say}</button>${lk}</span></li>`;
+  return `<li data-i="${i}" style="--li:${i}"><span class="acts"><button class="say tr" data-tr-line="${i}" aria-label="表示を切りかえ" title="表示を切りかえ">訳</button><button class="say" data-say-line="${i}" aria-label="英文を読み上げ">${ICON.say}</button>${lk}</span><span class="s-body">${html}</span></li>`;
 }
 const isSaved = w => S.state.saved.some(s => s.w === w);
 const isLiked = id => !!S.state.likes[id];
@@ -1360,7 +1398,7 @@ const storyNote = () => {
   const lv = S.amount, kw = '点線の単語をタップすると意味が見られます。';
   const any = '英文の単語はどれでもタップすると意味が出ます（点線は大事な単語）。♡ でその文にいいね。';
   if(lv === 0) return '文か「訳」をタップすると英文が出ます。';
-  if(lv <= 4) return `色のついた英語をタップすると、そこだけ日本語になります。${matchMedia('(max-width: 640px)').matches ? '文の日本語の部分' : '「訳」か文の日本語の部分'}をタップすると、${lv >= 4 ? '日本語' : '英語'}多め → ぜんぶ英語（訳つき）→ もとに、と切りかわります。♡ でその文にいいね。`;
+  if(lv <= 4) return `${lv === 2 || lv === 3 ? '下線のある英語は、ひとつ前の段から新しく英語になった所です。' : ''}色のついた英語をタップすると、そこだけ日本語になります。${matchMedia('(max-width: 640px)').matches ? '文の日本語の部分' : '「訳」か文の日本語の部分'}をタップすると、${lv >= 4 ? '日本語' : '英語'}多め → ぜんぶ英語（訳つき）→ もとに、と切りかわります。♡ でその文にいいね。`;
   if(lv === 5) return '「訳」で訳をかくせます。' + any;
   if(lv === 6) return '「訳」で日本語訳が出ます。' + any;
   return '文をタップすると英語と日本語が入れかわります。' + kw;
@@ -1667,7 +1705,7 @@ if(String(DC.src).startsWith('lesson:')) DC.src = 'all';
 function srcRows(attr, cur, extra){
   const nl = likedSents().length;
   const chip = (k, label, dis) => `<button class="chip" data-${attr}="${k}" aria-pressed="${cur === k}"${dis ? ' disabled' : ''}>${label}</button>`;
-  return `<div class="dc-src" role="group" aria-label="出す文">${extra}${chip('all', 'すべて')}<span class="sep" aria-hidden="true"></span><span class="src-lbl">レベル</span>${[1, 2, 3].map(l => chip(String(l), LEVEL[l])).join('')}<span class="sep" aria-hidden="true"></span>${chip('liked', `いいねした文 ${nl}`, !nl && cur !== 'liked')}</div>`;
+  return `<div class="dc-src" role="group" aria-label="出す文">${extra}${chip('all', 'すべて')}${nl || cur === 'liked' ? chip('liked', `いいね ${nl}`) : ''}<span class="sep" aria-hidden="true"></span>${[1, 2, 3].map(l => chip(String(l), LEVEL[l])).join('')}</div>`;
 }
 const DC_SRC = [['all', 'すべて'], ['1', 'やさしい'], ['2', 'ふつう'], ['3', 'ちょっとむずい'], ['liked', 'いいねした文']];
 const NUMW = {zero: '0', one: '1', two: '2', three: '3', four: '4', five: '5', six: '6', seven: '7', eight: '8', nine: '9', ten: '10', eleven: '11', twelve: '12', thirteen: '13', fourteen: '14', fifteen: '15', sixteen: '16', seventeen: '17', eighteen: '18', nineteen: '19', twenty: '20', thirty: '30', forty: '40', fifty: '50', sixty: '60', seventy: '70', eighty: '80', ninety: '90', hundred: '100'};
@@ -1782,16 +1820,17 @@ function renderDict(keep){
     const r = DC.lres, done = r.filter(Boolean), perf = done.filter(x => x.perfect).length;
     const ok = done.reduce((a, x) => a + x.hit, 0), w = done.reduce((a, x) => a + x.total, 0);
     const nAll = LL.lines.length, skipped = LL.lines.map((_, i) => i).filter(i => !r[i]);
-    const head = done.length ? `${w ? `<span class="big">${Math.round(ok / w * 100)}%</span>` : ''}<span>${W ? 'お手本と同じ語' : '単語の正解率'}・${nAll}文中${done.length}文に挑戦${perf ? `・ぴったり${perf}文` : ''}</span>` : 'この話題の文は、ぜんぶとばしました。';
+    const head = done.length ? `${w ? `<span class="big">${Math.round(ok / w * 100)}<small>%</small></span>` : ''}<span class="lbl">${W ? 'お手本と同じ語' : '単語の正解率'}<span class="sub">${nAll}文中${done.length}文${perf ? `・ぴったり${perf}文` : ''}</span></span>` : 'この話題の文は、ぜんぶとばしました。';
     html += `<div class="dc-box" aria-live="polite">
       <p class="dc-res hero${done.length && perf === done.length ? ' perfect' : ''}">${head}</p>
       <div class="dc-seg" aria-hidden="true" style="grid-template-columns:repeat(${nAll},1fr)">${LL.lines.map((_, i) => { const x = r[i]; return `<i class="${!x ? '' : x.perfect ? 'ok' : x.hit ? 'part' : ''}"></i>`; }).join('')}</div>
-      <ol class="dc-sum">${LL.lines.map((ln, i) => {
-        const x = r[i], T = dcTok(ln.en);
+      <ol class="dc-sum">${[...LL.lines.map((_, i) => i).filter(i => r[i]), ...skipped].map((i, n) => {
+        const ln = LL.lines[i], x = r[i], T = dcTok(ln.en);
+        const sh = !x && n === done.length && done.length ? `<li class="sum-h">とばした${skipped.length}文</li>` : '';
         if(x && x.marks) T.forEach((t, j) => { t.ok = !!x.marks[j]; });
         const txt = !x ? esc(ln.ja) : x.marks && !x.gave ? markText(ln.en, T, t => t.ok ? '' : 'miss') : nbh(esc(ln.en));
-        const cnt = !x ? `とばした・${T.length}語` : x.gave ? '答えを見た' : x.perfect ? 'ぴったり' : `${x.hit}/${x.total}語`;
-        return `<li class="${!x ? 'skip' : x.perfect ? 'perfect' : ''}"><span class="se"${x ? ' lang="en"' : ''}>${txt}</span><span class="cnt">${cnt}</span></li>`;
+        const cnt = !x ? `${T.length}語` : x.gave ? '答えを見た' : x.perfect ? 'ぴったり' : `${x.hit}/${x.total}語`;
+        return `${sh}<li class="${!x ? 'skip' : x.perfect ? 'perfect' : ''}"><span class="se"${x ? ' lang="en"' : ''}>${txt}</span><span class="cnt">${cnt}</span></li>`;
       }).join('')}</ol>
       <div class="dc-tools dc-end-tools">${skipped.length && done.length ? `<button class="btn" data-act="dc-lesson-skipped">とばした${skipped.length}文を${W ? '書く' : '書き取る'}</button>` : `<button class="btn" data-act="dc-lesson-again">もう一度この話題で</button>`}<button class="txt-btn" data-open="${esc(lid)}">話題にもどる</button><button class="txt-btn" data-act="dc-all">いろいろな文で続ける</button></div></div>`;
     $('#thread').innerHTML = html; if(!keep){ $('#scroll').scrollTop = 0; enterAnim(); } return;
@@ -2370,6 +2409,7 @@ $('#msg').addEventListener('keydown', e => { if(e.key === 'Enter' && !e.shiftKey
 let scrollRaf = 0;
 $('#scroll').addEventListener('scroll', () => {
   closePop();
+  const scn = $('#scroll'); scn.classList.toggle('scrolled', scn.scrollTop > 4);
   if(S.view === 'lesson') syncTopTitle();
   if(scrollRaf) return;
   scrollRaf = requestAnimationFrame(() => {
