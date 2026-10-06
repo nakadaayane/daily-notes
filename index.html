@@ -785,6 +785,22 @@ html.static .ai-only{display:none!important}
 .fl-ttl:hover{color:var(--fg);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 #flBox .dc-top{flex-wrap:nowrap}
 #flBox .dc-top > :not(.fl-ttl){flex:none}
+/* ===== 7回目の見直し ===== */
+/* 「半分」の段は英語が文の半分以上：地は敷かず、書体のちがいと下線だけで見せる（段を上げるほど静かに） */
+#story[data-amt="3"] .mw:not(.quiet){background:none;padding-inline:0;box-shadow:none;margin-inline:.22em;-webkit-box-decoration-break:slice;box-decoration-break:slice}
+#story[data-amt="3"] .mw.pp{margin-right:0}
+#story[data-amt="3"] .mw.pl,#story[data-amt="3"] .mw.pa,#story[data-amt="3"] .mw.first{margin-left:0}
+/* 和文と英字の間は、使えるブラウザでは自動の空き（行頭がそろう） */
+@supports (text-autospace: normal){
+  #story[data-amt="3"] .s-text{text-autospace:normal}
+  #story[data-amt="3"] .mw:not(.quiet){margin-inline:0}
+}
+#story[data-amt="3"] .mw[data-k]:hover{box-shadow:none;color:var(--accent)}
+#story[data-amt="3"] .mw.ja{color:var(--accent)}
+#story[data-amt="3"].morph .mw.new{animation-name:chunkInQ}
+/* 書き取りのまとめ：とばした文は1行で（書いた文が主役） */
+.dc-sum li.skip{padding:7px 0}
+.dc-sum li.skip .se{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:var(--fs-s);min-width:0}
 /* 書き取りのまとめの下：今日ぜんぶの記録 */
 .dc-today{margin:0;font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums}
 #flBox .dc-big{background:color-mix(in srgb,var(--fg) 82%,var(--card))}
@@ -934,10 +950,11 @@ const unesc = s => String(s).replace(/&#39;/g, "'").replace(/&quot;/g, '"').repl
 /* 混ぜ文 → HTML。英語のかたまり（{…}）は .mw。前後が括弧・句読点なら余白を詰める。inv（3/4 の段）では英語を地にして、残った日本語（.jr）に色 */
 const MW_PRE_B = /[『「（(“]$/, MW_PRE_P = /[、。，]$/, MW_POST = /^[、。，．！？」』）)”]/, HAS_JA = /[぀-ヿ㐀-鿿]/;
 /* 和文の中の「数＋単位」は途中で改行しない（29億2500万ドル など） */
-const jaHtml = t => esc(t).replace(/\d[\d,.]*(?:[万億兆千百]\d*)*(?:ドル|円|人|回|年|月|日|位|%|％|倍|件|語|本|話|巻|作)?/g, m => `<span class="nwj">${m}</span>`);
+const jaHtml = t => esc(t).replace(/第?\d[\d,.]*(?:[万億兆千百]\d*)*(?:周年|ドル|円|人|回|年|月|日|位|%|％|倍|件|語|本|話|巻|作|弾|期|歳|時|分|秒|号|部|章|代)?/g, m => `<span class="nwj">${m}</span>`);
 /* inv（多めの段）では英語が地。和文の句読点は英語のものに置きかえ、残った日本語だけ色をつける */
 const INV_P = {'、': ', ', '。': '.', '！': '!', '？': '?'};
 const invHtml = x => x.split(/([、。！？])/).map(y => INV_P[y] != null ? INV_P[y] : HAS_JA.test(y) ? `<span class="jr">${jaHtml(y)}</span>` : esc(y)).join('');
+const NU_FW = /^(a|an|the|is|are|was|were|be|been|to|of|in|on|at|for|as|by|with|from|so|and|or|but|he|she|it|they|we|you|i|me|him|them|his|her|its|their|my|our|your|this|that|there|will|can|has|have|had|do|does|did|not)$/i;
 function mixHtml(s, inv, prev){
   /* ふだんは和文が地なので英語の前後の空白を詰める。多めの段は英語が地なので、英語と日本語の間に空きを入れる */
   const src = inv
@@ -948,7 +965,9 @@ function mixHtml(s, inv, prev){
     if(i % 2 === 0) return inv ? invHtml(x) : jaHtml(x);
     const pv = parts[i - 1] || '', nx = parts[i + 1] || '';
     const fresh = prev && (x.toLowerCase().match(/[a-z0-9]+(?:[.'’-][a-z0-9]+)*/g) || []).some(w => !prev.has(w));
-    const body = prev ? x.split(/([A-Za-z0-9]+(?:[.'’-][A-Za-z0-9]+)*)/).map((y, k) => k % 2 && !prev.has(y.toLowerCase()) ? `<span class="nu">${nbh(esc(y))}</span>` : nbh(esc(y))).join('') : nbh(esc(x));
+    let body = prev ? x.split(/([A-Za-z0-9]+(?:[.'’-][A-Za-z0-9]+)*)/).map((y, k) => k % 2 && !prev.has(y.toLowerCase()) ? `<span class="nu">${nbh(esc(y))}</span>` : nbh(esc(y))).join('') : nbh(esc(x));
+    /* 下線は続く語をつないで1本に。a・is・for などの短い語だけの線は引かない（中身の語を目立たせる） */
+    if(prev) body = body.replace(/<\/span>(\s+)<span class="nu">/g, '$1').replace(/<span class="nu">([^<]+)<\/span>/g, (m, w) => w.trim().split(/\s+/).every(y => NU_FW.test(y)) ? w : m);
     const cls = ['mw', x.trim().split(/\s+/).length <= 2 ? 'nw' : '', MW_PRE_B.test(pv) ? 'pl' : MW_PRE_P.test(pv) ? 'pa' : '', MW_POST.test(nx) ? 'pp' : '', inv ? 'quiet' : '', i === 1 && !pv.trim() ? 'first' : '', fresh ? 'lvup' : ''].filter(Boolean).join(' ');
     return `<span class="${cls}" data-k="${gkey(x)}" role="button" tabindex="0">${body}</span>`;
   }).join('');
@@ -1383,7 +1402,7 @@ function renderLesson(){
         ${amtHtml()}
         <p class="note status" id="storyStatus"${storyStatus() ? '' : ' hidden'}>${esc(storyStatus())}</p>
         <details class="tip" id="tip"${LS.get('tipOpen', false) ? ' open' : ''}><summary>タップでできること</summary><p class="note" id="storyNote">${storyNote()}</p></details>
-        <ol class="story" id="story" data-mix="${S.amount >= 1 && S.amount <= 4 ? 1 : 0}">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
+        <ol class="story" id="story" data-mix="${S.amount >= 1 && S.amount <= 4 ? 1 : 0}" data-amt="${S.amount}">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
         <div id="storyNext"></div>
       </section>
 
@@ -1491,9 +1510,9 @@ function engShare(L, lv){
   });
 }
 const shareSum = sh => [sh.reduce((a, x) => a + x[0], 0), sh.reduce((a, x) => a + x[1], 0)];
-const shareText = sh => { const [e, t] = shareSum(sh); return `英語 <b id="amtE">${e}</b> / ${t}語`; };
+const shareText = sh => { const [e, t] = shareSum(sh); return `<b id="amtE">${e}</b> / ${t}語`; };
 /* 実際の英語の割合から段の名前を出す（ラベルと数字を食い違わせない） */
-const fracName = r => r < .2 ? '英語は少し' : r < .3 ? '文の約4分の1が英語' : r < .42 ? '文の約3分の1が英語' : r < .6 ? '文の約半分が英語' : r < .72 ? '文の約3分の2が英語' : '文の約4分の3が英語';
+const fracName = r => `約${Math.max(1, Math.min(9, Math.round(r * 10)))}割`;   /* 「4分の3」とまとめず、実際の割合を1割きざみで */
 const amtLabel = (L, lv) => { if(!L || lv < 1 || lv > 4) return AMT[lv].name; if(lv === 1) return '英単語だけ英語'; const [e, t] = shareSum(engShare(L, lv)); return fracName(e / t); };
 function countUp(el, to){
   const from = +el.textContent || 0; if(from === to){ el.textContent = to; return; }
@@ -1532,7 +1551,7 @@ const GRAD_SPEC = `日本語の文を少しずつ英語に置きかえる「段�
 各文には ja（日本語）、mix（日本語に英単語を1〜2個入れたもの）、en（英文）があります。その間を埋める3段階を作ります。
 - q1: 英語は全体の語数の35%まで。日本語の語順・助詞のまま、名詞のかたまりだけを英語にする。述語（動詞）は日本語のまま。mix より英語が多いこと。
 - q2: 英語が約50%。動詞を英語にするのはここから。英語のかたまり（主語＋動詞、名詞句、前置詞句など）が文の半分くらい。英語の語順に寄せはじめてよい。
-- q3: 英語が約75%。en とほぼ同じ英語の語順で、むずかしめの語や句を1〜2か所だけ日本語のまま残す。短い文でも必ず日本語を1か所以上残し、全部を英語にしない（例: "I know I am late." → "{I} わかっている {I am late.}"）。残す日本語は意味のある語（動詞・形容詞・ふつうの名詞）にし、『作品名』・人名・地名・「さん」・助詞だけを残さない（人名・作品名は q3 では英語に。例: "Takeo Otsuka plays Tsukasa." → "{Takeo Otsuka} 演じる {Tsukasa.}"）。
+- q3: 英語が約75%。en とほぼ同じ英語の語順で、むずかしめの語や句を1〜2か所だけ日本語のまま残す。短い文でも必ず日本語を1か所以上残し、全部を英語にしない（例: "I know I am late." → "{I} わかっている {I am late.}"）。残す日本語は意味のある語（動詞・形容詞・ふつうの名詞）にし、『作品名』・人名・地名・「さん」・助詞・日付や数だけを残さない（人名・作品名・日付・数は q3 では英語に。例: "Takeo Otsuka plays Tsukasa." → "{Takeo Otsuka} 演じる {Tsukasa.}"）。q3 の日本語は置きかえた英語の位置に置き、英文にない「、」を足して日本語を文の後ろに回さない（例: "He also grows as a coach." → "{He also} 成長する {as a coach.}"）。
 ルール:
 - 英語の部分は必ず {波かっこ} で囲む。日本語の部分は囲まない。入れ子は禁止。
 - 英語の部分は en にある単語だけを使う（言いかえたり、en に無い語を足したりしない）。
@@ -1569,7 +1588,7 @@ function rerenderStory(){
   $('#story').innerHTML = L.lines.map((_, i) => storyLine(L, i)).join('');
   $$('#story li').forEach((li, i) => { let k = 0; li.querySelectorAll('.mw').forEach(m => { if(before[i] && enWords(m).some(w => !before[i].has(w))){ m.classList.add('new'); m.style.setProperty('--k', k++); } }); });
   const nx = $('#storyNext'); if(nx) nx.innerHTML = '';
-  const sto = $('#story'); sto.dataset.mix = S.amount >= 1 && S.amount <= 4 ? 1 : 0;
+  const sto = $('#story'); sto.dataset.mix = S.amount >= 1 && S.amount <= 4 ? 1 : 0; sto.dataset.amt = S.amount;
   sto.classList.remove('morph'); void sto.offsetWidth; sto.classList.add('morph');
   clearTimeout(rerenderStory.t); rerenderStory.t = setTimeout(() => sto.classList.remove('morph'), 1600);
   syncAmt();
@@ -1901,7 +1920,7 @@ function renderDict(keep){
     const r = DC.lres, done = r.filter(Boolean), perf = done.filter(x => x.perfect).length;
     const ok = done.reduce((a, x) => a + x.hit, 0), w = done.reduce((a, x) => a + x.total, 0);
     const nAll = LL.lines.length, skipped = LL.lines.map((_, i) => i).filter(i => !r[i]);
-    const head = done.length ? `${w ? `<span class="big">${Math.round(ok / w * 100)}<small>%</small></span>` : ''}<span class="lbl">${W ? 'この話題でお手本と同じ語' : 'この話題の正解率'}<span class="sub">書いた${done.length}文で${perf ? `・ぴったり${perf}文` : ''}${skipped.length ? `（${skipped.length}文はとばし）` : ''}</span></span>` : 'この話題の文は、ぜんぶとばしました。';
+    const head = done.length ? `${w ? `<span class="big">${Math.round(ok / w * 100)}<small>%</small></span>` : ''}<span class="lbl">${W ? 'この話題でお手本と同じ語' : 'この話題の正解率'}<span class="sub">書いた${done.length}文・${w}語中${ok}語${perf ? `（ぴったり${perf}文）` : ''}</span></span>` : 'この話題の文は、ぜんぶとばしました。';
     html += `<div class="dc-box" aria-live="polite">
       <p class="dc-res hero${done.length && perf === done.length ? ' perfect' : ''}">${head}</p>
       ${(() => { const ord = [...LL.lines.map((_, i) => i).filter(i => r[i]), ...(done.length && skipped.length ? ['gap'] : []), ...skipped]; return `<div class="dc-seg" aria-hidden="true" style="grid-template-columns:${ord.map(i => i === 'gap' ? '6px' : '1fr').join(' ')}">${ord.map(i => { if(i === 'gap') return '<i class="gap"></i>'; const x = r[i]; return `<i class="${!x ? '' : x.perfect ? 'ok' : x.hit ? 'part' : ''}"></i>`; }).join('')}</div>`; })()}
@@ -2094,7 +2113,7 @@ const LESSON_SPEC = `次のJSONオブジェクトを1つだけ返してくださ
 - 日本語は自然なですます調。
 - 元の文章の言いまわし（例：「続投」「見放題」）が英語でどうなるかを words の note で触れるとよい。
 - クイズは、内容1問・単語1問・文法の穴うめ1問。正解の位置はばらけさせる。
-- mix・q1・q2・q3 は ja から en へ少しずつ英語を増やした混ぜ文。mix は名詞か形容詞を1〜2か所、q1 は日本語の語順のまま名詞のかたまりだけ英語に（動詞は日本語）、q2 から動詞も英語に（英語のかたまりが半分くらい）、q3 は en の語順でむずかしめの語を1〜2か所だけ日本語に残す（残すのは動詞・形容詞・ふつうの名詞。人名・作品名・「さん」・助詞だけを残さない）。下の段で英語だった語は上の段でも英語のまま。英語の部分は必ず {波かっこ} で囲み、en にある単語だけを使う。英語の動詞に「て」「ました」をつけない。`;
+- mix・q1・q2・q3 は ja から en へ少しずつ英語を増やした混ぜ文。mix は名詞か形容詞を1〜2か所、q1 は日本語の語順のまま名詞のかたまりだけ英語に（動詞は日本語）、q2 から動詞も英語に（英語のかたまりが半分くらい）、q3 は en の語順でむずかしめの語を1〜2か所だけ日本語に残す（残すのは動詞・形容詞・ふつうの名詞。人名・作品名・「さん」・助詞・日付や数だけを残さない。日本語は置きかえた英語の位置に置き、英文にない「、」を足さない）。下の段で英語だった語は上の段でも英語のまま。英語の部分は必ず {波かっこ} で囲み、en にある単語だけを使う。英語の動詞に「て」「ました」をつけない。`;
 async function makeNote(){
   const text = $('#srcText').value.trim(); const url = $('#srcUrl').value.trim();
   const note = $('#makeNote'); const btn = $('#makeBtn');

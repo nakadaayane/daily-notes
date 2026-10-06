@@ -564,7 +564,7 @@ window.LESSONS = [
 {
 "q1": "{plush toy} のうしろに、大きな {building} があります。",
 "q2": "{There is} 大きな {building}、{plush toy} のうしろに。",
-"q3": "{There is a big building}、{the plush toy} のうしろに。"
+"q3": "{There is a big building} うしろに {the plush toy.}"
 },
 {
 "q1": "建物の前に、{a yellow bus} があります。",
@@ -998,7 +998,9 @@ window.LESSONS = [
 "has been around": "ずっと続いている",
 "has been around for 40 years": "40年間ずっと続いている",
 "taka in abunai deka": "『あぶない刑事』のタカ",
-"to yokohama red brick warehouse": "横浜赤レンガ倉庫に"
+"to yokohama red brick warehouse": "横浜赤レンガ倉庫に",
+"for the 40th anniversary": "40周年のための",
+"is for the 40th anniversary": "40周年のためのものだ"
 },
 "grad": [
 {
@@ -1022,9 +1024,9 @@ window.LESSONS = [
 "q3": "{The event was the kickoff of a} 新しい {project.}"
 },
 {
-"q1": "その {project} は {40th anniversary} のためのものです。",
-"q2": "{The project is}、{40th anniversary} のためのもの。",
-"q3": "{The project is}、{the 40th anniversary} のため。"
+"q1": "そのプロジェクトは {the 40th anniversary} のためのものです。",
+"q2": "その企画は {for the 40th anniversary.}",
+"q3": "{The} 企画 {is for the 40th anniversary.}"
 },
 {
 "q1": "『あぶない刑事』は {40 years} ずっと続いています。",
@@ -1278,7 +1280,7 @@ window.LESSONS = [
 {
 "q1": "{The poster} は、今は {the story} の流れがずっとわかりやすいと言っています。",
 "q2": "{The poster says}、今は {the story} の流れがずっとわかりやすい。",
-"q3": "{The poster says the story is much easier to follow}、今は。"
+"q3": "{The poster says the story is much easier to follow} 今では。"
 },
 {
 "q1": "ポストした人は、{a new movie} がこっそり更新されたことに驚いています。",
@@ -1743,13 +1745,17 @@ window.LESSONS = [
 "according to the news article the release was decided": "記事によると公開が決まった",
 "she invites everyone to visit a theater in": "彼女はみんなに〜の映画館へと呼びかける",
 "sho sakurai and yu aoi": "櫻井翔さんと蒼井優さん",
-"in the movie": "この映画に"
+"in the movie": "この映画に",
+"honey and clover was shown again in theaters as a revival": "『ハチクロ』がリバイバルで再上映された",
+"the release": "公開",
+"according to the news article the release": "ニュース記事によると公開は",
+"due to good reviews": "好評のため"
 },
 "grad": [
 {
 "q1": "映画『{Honey and Clover}』が、{revival} として {theaters} で再び上映されました。",
 "q2": "映画『{Honey and Clover}』{was shown again in theaters}、{revival} として。",
-"q3": "{The movie \"Honey and Clover\" was shown again in theaters}、{a revival} として。"
+"q3": "{The} 映画 {\"Honey and Clover\" was shown again in theaters as a revival.}"
 },
 {
 "q1": "{Chika Umino} さんは、見に来てくれた {everyone} にお礼を言いました。",
@@ -1768,8 +1774,8 @@ window.LESSONS = [
 },
 {
 "q1": "{news article} によると、{good reviews} のため公開が決まりました。",
-"q2": "{news article} によると、{good reviews} のため {the release was decided}。",
-"q3": "{According to the news article, the release was decided}、{good reviews} のため。"
+"q2": "{news article} によると、{good reviews} のため {the release} が決まりました。",
+"q3": "{According to the news article, the release} 決まった {due to good reviews.}"
 },
 {
 "q1": "{The movie} は {October} から、{Japan} 各地で順次上映される予定です。",
@@ -2414,7 +2420,9 @@ window.LESSONS = [
 "watched it": "それを見た",
 "the same words": "同じ言葉",
 "she wrote the same words": "彼女は同じ言葉を書いた",
-"liked the post": "ポストにいいねした"
+"liked the post": "ポストにいいねした",
+"it was": "それは〜だった",
+"good that she wrote the same words three times": "良くて彼女は同じ言葉を3回書いた"
 },
 "grad": [
 {
@@ -2430,7 +2438,7 @@ window.LESSONS = [
 {
 "q1": "とても良かったので、彼女は {the same words} を3回書きました。",
 "q2": "とても良かったので、{she wrote the same words} 3回。",
-"q3": "{It was so good that she wrote the same words} 3回。"
+"q3": "{It was} とても {good that she wrote the same words three times.}"
 },
 {
 "q1": "彼女は {this morning} この {post} を書いて、おはようございますと言いました。",
@@ -2647,7 +2655,9 @@ window.LESSONS = [
 "it will be": "それは〜になる",
 "inside out on friday october 9": "『インサイド・ヘッド』を10月9日に",
 "inside out 2": "『インサイド・ヘッド2』",
-"on friday october 16 it": "10月16日（金）に金曜ロードショーは"
+"on friday october 16 it": "10月16日（金）に金曜ロードショーは",
+"at 9 p m with no cuts": "夜9時からノーカットで",
+"an eleven-year-old": "11歳の"
 },
 "grad": [
 {
@@ -2657,13 +2667,13 @@ window.LESSONS = [
 },
 {
 "q1": "{It} は夜9時から、{no cuts} で放送します。",
-"q2": "{It is on} 夜9時から、{no cuts} で。",
-"q3": "{It is on at} 夜9時、{with no cuts.}"
+"q2": "{It} は {9 p.m.} から、{no cuts} で放送します。",
+"q3": "{It} 放送される {at 9 p.m. with no cuts.}"
 },
 {
-"q1": "{Riley} は11歳の {girl} です。",
-"q2": "{Riley is} 11歳の {girl}。",
-"q3": "{Riley is an} 11歳の {girl.}"
+"q1": "{Riley} は {eleven-year-old} の少女です。",
+"q2": "{Riley} は {an eleven-year-old} 少女です。",
+"q3": "{Riley is an eleven-year-old} 少女。"
 },
 {
 "q1": "{her feelings} は {colorful} でしょうか？ はい、カラフルです。",
@@ -2711,7 +2721,7 @@ window.LESSONS = [
 {
 "en": "Riley is an eleven-year-old girl.",
 "ja": "ライリーは11歳の少女です。",
-"mix": "ライリーは11歳の {girl} です。"
+"mix": "ライリーは {eleven-year-old} の少女です。"
 },
 {
 "en": "Are her feelings colorful? Yes, they are.",
@@ -2888,7 +2898,8 @@ window.LESSONS = [
 "avengers endgame has become the highest-grossing film worldwide": "エンドゲームが全世界興収歴代1位に",
 "it has beaten avatar": "それは『アバター』を破った",
 "it has beaten avatar and returned as the": "『アバター』を破り〜として返り咲いた",
-"endgame has taken back the top": "エンドゲームがトップを奪還"
+"endgame has taken back the top": "エンドゲームがトップを奪還",
+"by avatar in 2021": "2021年に『アバター』によって"
 },
 "grad": [
 {
@@ -2909,7 +2920,7 @@ window.LESSONS = [
 {
 "q1": "{Endgame} は、2021年に {Avatar} が打ち立てた {the record} を更新しました。",
 "q2": "{Endgame has broken the record}、2021年に {Avatar} が打ち立てた。",
-"q3": "{Endgame has broken the record set by Avatar}、2021年に。"
+"q3": "{Endgame has broken the record} 打ち立てられた {by Avatar in 2021.}"
 },
 {
 "q1": "{Avatar} は再上映で {that record} を作りました。",
@@ -3876,7 +3887,7 @@ window.LESSONS = [
 {
 "q1": "{You} は、{laugh} も {cry} も間違いなしです。",
 "q2": "{You will laugh a lot}、{cry} も。",
-"q3": "{You will laugh a lot}、そして {cry a lot.}"
+"q3": "{You will laugh a lot} そして {cry a lot.}"
 }
 ],
 "grammar": {
@@ -4089,7 +4100,8 @@ window.LESSONS = [
 "the original story": "原作",
 "lam also": "LAMさんは〜も",
 "the original story and the script": "原作と脚本",
-"the director of the original short anime demvamps": "オリジナルのショートアニメ「DemVAMPS」の監督"
+"the director of the original short anime demvamps": "オリジナルのショートアニメ「DemVAMPS」の監督",
+"is a new challenge for lam": "LAMにとって新しい挑戦だ"
 },
 "grad": [
 {
@@ -4114,8 +4126,8 @@ window.LESSONS = [
 },
 {
 "q1": "{LAM} にとって、{new challenge} ばかりです。",
-"q2": "{LAM} にとって、{everything} が {a new challenge} です。",
-"q3": "{Everything is a new challenge}、{LAM} にとって。"
+"q2": "{LAM} にとって、すべてが {a new challenge} です。",
+"q3": "すべて {is a new challenge for LAM.}"
 },
 {
 "q1": "LAMさんは {friends} と「{favorite things}」を作品に詰め込んでいます。",
@@ -4793,7 +4805,9 @@ window.LESSONS = [
 "rem i": "レム、私は",
 "re zero": "リゼロ（作品名）",
 "this is a famous": "これは有名な〜です",
-"from re zero": "『リゼロ』の・『リゼロ』から"
+"from re zero": "『リゼロ』の・『リゼロ』から",
+"episode 85": "第85話",
+"of episode 85 was hero": "第85話の〜は「英雄」だった"
 },
 "grad": [
 {
@@ -4807,9 +4821,9 @@ window.LESSONS = [
 "q3": "{It is from the} 最終回 {of season 4.}"
 },
 {
-"q1": "第85話の {title} は「{Hero}」でした。",
-"q2": "第85話の {title was “Hero.”}",
-"q3": "{The title of} 第85話 {was “Hero.”}"
+"q1": "{episode 85} の題名は「{Hero}」でした。",
+"q2": "{episode 85} の題名 {was “Hero.”}",
+"q3": "{The} 題名 {of episode 85 was “Hero.”}"
 },
 {
 "q1": "{The line} は「{Rem}、会いたかった」です。",
@@ -4819,7 +4833,7 @@ window.LESSONS = [
 {
 "q1": "ぜひ {it} をご覧ください。",
 "q2": "ぜひ {watch it}！",
-"q3": "{Please watch it}、ぜひ！"
+"q3": "ぜひ {watch it.}"
 }
 ],
 "grammar": {
@@ -4852,7 +4866,7 @@ window.LESSONS = [
 {
 "en": "The title of episode 85 was \"Hero.\"",
 "ja": "第85話の題名は「英雄」でした。",
-"mix": "第85話の {title} は「英雄」でした。"
+"mix": "第85話の題名は「{Hero}」でした。"
 },
 {
 "en": "The line is \"Rem, I wanted to see you.\"",
@@ -5248,18 +5262,19 @@ window.LESSONS = [
 "i did my best": "頑張りました",
 "to keep his own character": "彼らしさを大切にするために",
 "blue box episode 26": "『アオのハコ』第26話",
-"episode 26 of blue box": "『アオのハコ』の第26話"
+"episode 26 of blue box": "『アオのハコ』の第26話",
+"episode 26 of blue box is": "『アオのハコ』第26話は"
 },
 "grad": [
 {
 "q1": "『アオのハコ』{Episode 26} の {streaming} が始まりました。",
 "q2": "{Blue Box Episode 26} の {streaming} が始まりました。",
-"q3": "{Episode 26 of Blue Box} の {streaming} が始まりました。"
+"q3": "{Episode 26 of Blue Box is} いま {streaming.}"
 },
 {
 "q1": "{The staff} は、{the original} の {mood} を大切に作ってくださっています。",
 "q2": "{The staff have made it}、{the original} の {mood} を大切に。",
-"q3": "{The staff have made it} 大切に、{to keep the mood of the original.}"
+"q3": "{The staff have made it} 大切に {to keep the mood of the original.}"
 },
 {
 "q1": "なんて {wonderful adaptation} なんだ！",
@@ -5717,7 +5732,9 @@ window.LESSONS = [
 "i noticed": "私は気づいた",
 "i noticed how cool the libero is": "リベロのかっこよさに気づいた",
 "i have the": "私には〜がある",
-"idea as hinata": "日向と（同じ）発想"
+"idea as hinata": "日向と（同じ）発想",
+"then i noticed how": "そして、どれほど〜か気づいた",
+"the libero is": "リベロが（〜だ）"
 },
 "grad": [
 {
@@ -5738,7 +5755,7 @@ window.LESSONS = [
 {
 "q1": "そして、{the libero} のかっこよさに気づきました。",
 "q2": "そして、{I noticed} {the libero} のかっこよさ。",
-"q3": "そして、{I noticed how cool the libero is.}"
+"q3": "{Then I noticed how} かっこいい {the libero is.}"
 }
 ],
 "grammar": {
@@ -5861,12 +5878,12 @@ window.LESSONS = [
 {
 "q1": "今になって、{Haikyu anime} を見始めました。",
 "q2": "{I started watching} {Haikyu anime}、今になって。",
-"q3": "{I started watching the Haikyu anime}、今になって。"
+"q3": "{I started watching the Haikyu anime} 今になって。"
 },
 {
 "q1": "{I} が {late} なのは、わかっています。",
 "q2": "{I know}、{late} なのは。",
-"q3": "{I know}、{I} が {late} なのは。"
+"q3": "{I know} 私が {late.}"
 },
 {
 "q1": "でも、{it} はすごく {interesting} です！",
@@ -6054,7 +6071,7 @@ window.LESSONS = [
 {
 "q1": "{the start} の {song} の出来がとても良かったので、{an opening} を作りました。",
 "q2": "{The song at the start was so good}、{an opening} を作りました。",
-"q3": "{The song at the start was so good}、だから {they made an opening.}"
+"q3": "{The song at the start was so good that they} 作った {an opening.}"
 },
 {
 "q1": "ポストによると、{the staff} は {small things} をたくさん話します。",
@@ -6270,7 +6287,8 @@ window.LESSONS = [
 "an opening": "オープニング",
 "the song at the start was so good": "冒頭の曲がとても良かった",
 "they made an opening": "オープニングを作った",
-"the staff talk about": "スタッフが〜について話す"
+"the staff talk about": "スタッフが〜について話す",
+"the song at the start was so good that they": "冒頭の曲がとても良かったので彼らは"
 }
 },
 {
@@ -6285,7 +6303,7 @@ window.LESSONS = [
 {
 "q1": "41 {years old} になりました。",
 "q2": "{It} は41 {years old} になりました。",
-"q3": "{It} は {41 years old} になりました。"
+"q3": "{It} になった {41 years old.}"
 },
 {
 "q1": "{It} は {Studio Ghibli} と同い年です。",
@@ -6458,7 +6476,7 @@ window.LESSONS = [
 {
 "q1": "{Frieren} の {third season} が決まりました。",
 "q2": "{Frieren} に {a third season} が決まりました。",
-"q3": "{Frieren will have a third season} が決定。"
+"q3": "{Frieren will} 迎える {a third season.}"
 },
 {
 "q1": "{It} は【{Golden Land} 編】です。",
@@ -6680,7 +6698,8 @@ window.LESSONS = [
 "he is": "彼は〜です",
 "he is the": "彼は〜です",
 "strongest of the seven wizards": "七崩賢のうち最強",
-"frieren will have a third season": "フリーレンに第3期がある"
+"frieren will have a third season": "フリーレンに第3期がある",
+"frieren will": "フリーレンは〜する予定"
 }
 },
 {
@@ -6821,7 +6840,7 @@ window.LESSONS = [
 {
 "q1": "今度は {the story} を完結させる、と言っています。",
 "q2": "今度は {he will finish the story}、と言っています。",
-"q3": "{He says that he will finish the story}、今度は。"
+"q3": "{He says that he will finish the story} 今度は。"
 },
 {
 "q1": "{His post} には、7,000以上の「{likes}」がつきました。",
@@ -7278,7 +7297,7 @@ window.LESSONS = [
 {
 "q1": "舞台挨拶に上がる前の、{cast} と {director} が映っています。",
 "q2": "{It shows} 舞台挨拶に上がる前の、{cast} と {director}。",
-"q3": "{It shows the cast and the director}、舞台挨拶に上がる前に。"
+"q3": "{It shows the cast and the director} 舞台裏で。"
 },
 {
 "q1": "{stage event} のようすも、{YouTube} で見られます。",
@@ -8234,18 +8253,18 @@ window.LESSONS = [
 },
 {
 "q1": "{Japan} では {No. 4} でした。",
-"q2": "{Japan} では、{it} は {No. 4} でした。",
-"q3": "{It}、{No. 4 in Japan} でした。"
+"q2": "{In Japan}、{No. 4} でした。",
+"q3": "それは {was No. 4 in Japan.}"
 },
 {
 "q1": "{Taiwan} では {No. 8}、{Korea} では10位でした。",
 "q2": "{It was No. 8 in Taiwan}、{Korea} では10位。",
-"q3": "{It was No. 8 in Taiwan and} 10位 {in Korea.}"
+"q3": "{It was No. 8 in Taiwan} そして {No. 10 in Korea.}"
 },
 {
 "q1": "{The official account} は、世界中で観てくれた {everyone} にお礼を言いました。",
 "q2": "{The official account thanked} 世界中で観てくれた {everyone}。",
-"q3": "{The official account thanked everyone} 世界中の、{for watching.}"
+"q3": "{The official account thanked everyone} 世界中で {for watching.}"
 },
 {
 "q1": "ハッシュタグ「#モノノ怪蛇神を見た」で、{your thoughts} も待っています。",
@@ -8331,7 +8350,10 @@ window.LESSONS = [
 "the third mononoke movie hebigami on netflix": "モノノ怪第三章『蛇神』をNetflixで",
 "no 4 in japan": "日本で4位",
 "it was no 8 in taiwan and": "台湾では8位で、",
-"in korea": "韓国で"
+"in korea": "韓国で",
+"in japan": "日本では",
+"was no 4 in japan": "日本で4位だった",
+"no 10 in korea": "韓国で10位"
 }
 },
 {
@@ -8471,8 +8493,8 @@ window.LESSONS = [
 },
 {
 "q1": "11年続いた {story} が、{this movie} で完結しました。",
-"q2": "{Its story ended with this movie}、11年たって。",
-"q3": "{Its story ended with this movie after} 11年。"
+"q2": "{After 11 years}、{its story} が {this movie} で完結しました。",
+"q3": "{Its story} 完結した {with this movie after 11 years.}"
 },
 {
 "q1": "{The PV} では、久美子と、{friend} の麗奈、{rival} の真由が描かれます。",
@@ -8578,7 +8600,10 @@ window.LESSONS = [
 "her friend reina": "友だちの麗奈",
 "her rival mayu": "ライバルの真由",
 "kumiko her friend reina and her rival mayu": "久美子、友だちの麗奈、ライバルの真由",
-"want to win gold at the national contest": "全国大会で金賞をとりたい"
+"want to win gold at the national contest": "全国大会で金賞をとりたい",
+"after 11 years": "11年たって",
+"its story": "その物語",
+"with this movie after 11 years": "11年たってこの映画で"
 }
 },
 {
@@ -8729,7 +8754,7 @@ window.LESSONS = [
 {
 "q1": "それから「わかった。{Deep}…そして {bad people} はいなかった…」と言いました。",
 "q2": "{Then he said}、「わかった。{Deep}…そして {bad people} はいなかった…」。",
-"q3": "{Then he said}、「{I understood. Deep… and} {bad people} はいなかった…」。"
+"q3": "{Then he said}、「{I} わかった。{Deep… and there were no bad people…}」"
 },
 {
 "q1": "{the last panel} で、「…モモンガ以外は」とつけ加えました。",
@@ -8824,7 +8849,8 @@ window.LESSONS = [
 "izumi minami drew": "いづみみなみさんがかいた",
 "about her husband": "彼女の夫について",
 "this movie has more after the end credits": "エンドロールのあとにも続きがある",
-"i understood deep and": "わかった。深い…そして"
+"i understood deep and": "わかった。深い…そして",
+"deep and there were no bad people": "深い…そして悪い人はいなかった…"
 }
 },
 {
@@ -8953,14 +8979,14 @@ window.LESSONS = [
 },
 "grad": [
 {
-"q1": "『太陽を盗んだ男』は、1979年の {Japanese movie} です。",
-"q2": "『太陽を盗んだ男』{is a} 1979年の {Japanese movie}。",
-"q3": "{The Man Who Stole the Sun is a} 1979年の {Japanese movie.}"
+"q1": "『太陽を盗んだ男』は、{1979} 年の {Japanese} 映画です。",
+"q2": "『太陽を盗んだ男』{is a Japanese} 映画 {from 1979.}",
+"q3": "{The Man Who Stole the Sun is a Japanese} 映画 {from 1979.}"
 },
 {
 "q1": "いま、{it} は {4K} でよみがえりました。",
 "q2": "いま、{it is back}、{4K} で。",
-"q3": "いま、{it is back in 4K.}"
+"q3": "いま {it is back in 4K.}"
 },
 {
 "q1": "シネフィルDVDの {account} が、東宝の {screening room} で観ました。",
@@ -8980,7 +9006,7 @@ window.LESSONS = [
 {
 "q1": "{October 16} から {two weeks} だけ、映画館で公開されます。",
 "q2": "{It opens} 映画館で、{October 16} から {two weeks}。",
-"q3": "{It opens in theaters on October 16}、{two weeks} だけ。"
+"q3": "{It opens} 映画館で {on October 16 for two weeks.}"
 }
 ],
 "gloss": {
@@ -9061,7 +9087,11 @@ window.LESSONS = [
 "it opens in theaters on october 16": "10月16日に映画館で公開",
 "the account cinefil dvd": "シネフィルDVDのアカウント",
 "toho's screening room": "東宝の試写室",
-"it in toho's screening room": "東宝の試写室でそれを"
+"it in toho's screening room": "東宝の試写室でそれを",
+"is a japanese": "日本の〜である",
+"from 1979": "1979年の",
+"the man who stole the sun is a japanese": "『太陽を盗んだ男』は日本の〜",
+"on october 16 for two weeks": "10月16日から2週間"
 }
 },
 {
@@ -9087,7 +9117,7 @@ window.LESSONS = [
 {
 "en": "It is on TV every Friday at 11 p.m.",
 "ja": "毎週金曜の夜11時に放送されます。",
-"mix": "{every Friday} の夜11時に放送されます。"
+"mix": "毎週 {Friday} の夜11時に放送されます。"
 },
 {
 "en": "Its first episode is Episode 49, \"Locusts.\"",
@@ -9195,9 +9225,9 @@ window.LESSONS = [
 "q3": "{Season 3 of The Apothecary Diaries} 始まる {on October 2.}"
 },
 {
-"q1": "{every Friday} の夜11時に、{TV} で放送されます。",
-"q2": "{It is on TV every Friday}、夜11時に。",
-"q3": "{It is on TV every Friday at} 夜11時。"
+"q1": "毎週 {Friday} の夜11時に、{TV} で放送されます。",
+"q2": "{It is on TV} 毎週 {Friday}、夜11時に。",
+"q3": "{It is on TV} 毎週 {Friday at 11 p.m.}"
 },
 {
 "q1": "{Its first episode} は、第49話「蝗（いなご）」です。",
@@ -9300,7 +9330,8 @@ window.LESSONS = [
 "get cooked locusts for breakfast": "朝食にイナゴの煮つけを出される",
 "season 3 of the apothecary diaries": "『薬屋のひとりごと』第3期",
 "on october 2": "10月2日に",
-"maomao and chou-u get cooked locusts for breakfast": "猫猫と趙迂に朝食でイナゴの煮つけが出る"
+"maomao and chou-u get cooked locusts for breakfast": "猫猫と趙迂に朝食でイナゴの煮つけが出る",
+"friday at 11 p m": "金曜の夜11時に"
 }
 },
 {
@@ -9437,7 +9468,7 @@ window.LESSONS = [
 {
 "q1": "{photos} では、フリーレンの {plush toy} が {food} のとなりにいます。",
 "q2": "{In the photos, a Frieren plush toy} が {food} のとなりにいます。",
-"q3": "{In the photos, a Frieren plush toy is}、{some food} のとなりに。"
+"q3": "{In the photos, a Frieren plush toy is} となりに {some food.}"
 },
 {
 "q1": "{noodles}、{bread}、{sushi}、揚げ物があります。",
@@ -9445,9 +9476,9 @@ window.LESSONS = [
 "q3": "{There are noodles, bread, sushi, and} 揚げ物。"
 },
 {
-"q1": "{The title} は、『葬送のフリーレン』をもじった {pun} です。",
-"q2": "{The title is a pun}、『葬送のフリーレン』をもじった。",
-"q3": "{The title is a pun}、{Sousou no Frieren} をもじった。"
+"q1": "{The title} は、『葬送のフリーレン』をもじったしゃれです。",
+"q2": "{The title is}『葬送のフリーレン』をもじったしゃれ。",
+"q3": "{The title is a} しゃれ {on Sousou no Frieren.}"
 },
 {
 "q1": "「ごちそう」は、{a feast}、とてもおいしい {food} という意味です。",
@@ -9534,7 +9565,8 @@ window.LESSONS = [
 "gochisou means a feast or": "ごちそうは、ごうかな食事または",
 "makes a fun new title": "楽しい新しい題になる",
 "to gochisou makes a fun new title": "ごちそうに変えて楽しい新題に",
-"sousou to gochisou makes a fun new title": "そうそう→ごちそうで、楽しい新しい題に"
+"sousou to gochisou makes a fun new title": "そうそう→ごちそうで、楽しい新しい題に",
+"the title is": "この題は〜です"
 }
 },
 {
@@ -10084,7 +10116,7 @@ window.LESSONS = [
 {
 "q1": "{Precure team} といっしょに、{puzzles} を解きます。",
 "q2": "{Precure team} といっしょに、{solve puzzles}。",
-"q3": "{You and the Precure team solve puzzles}、いっしょに。"
+"q3": "{You and the Precure team solve puzzles} いっしょに。"
 },
 {
 "q1": "{story} の中で、だれかが {treasure box} を盗んでしまいます。",
@@ -10094,7 +10126,7 @@ window.LESSONS = [
 {
 "q1": "好きなだけ {many people} といっしょに遊べます。",
 "q2": "{You can play with} 好きなだけ {many people}。",
-"q3": "{You can play with as many people}、好きなだけ。"
+"q3": "{You can play with as many people as you} 好きなだけ。"
 },
 {
 "q1": "{elementary school} 以下の {children} も参加できます。",
@@ -10194,7 +10226,8 @@ window.LESSONS = [
 "on november 27 in tokyo and december 5 in osaka": "東京は11月27日、大阪は12月5日から",
 "detective precure": "『名探偵プリキュア！』",
 "the anime detective precure": "アニメ『名探偵プリキュア！』",
-"with real escape game": "リアル脱出ゲームと"
+"with real escape game": "リアル脱出ゲームと",
+"you can play with as many people as you": "〜なだけ多くの人と遊べる"
 }
 },
 {
@@ -10340,7 +10373,7 @@ window.LESSONS = [
 {
 "q1": "「この {festival} に参加できるのは {a great joy}」と話しています。",
 "q2": "{He says}「この {festival} に参加できるのは {a great joy}」。",
-"q3": "{He says it is a great joy}、{the festival} に参加できるのは。"
+"q3": "{He says it is a great joy to} 参加する {the festival.}"
 },
 {
 "q1": "「{The festival} は、映画を通して {Tokyo} と {world} をつなぐ場所だ」と話しています。",
@@ -10349,8 +10382,8 @@ window.LESSONS = [
 },
 {
 "q1": "{The 39th festival} は、10月26日から11月4日まで開かれます。",
-"q2": "{The 39th festival is}、10月26日から11月4日まで。",
-"q3": "{The 39th festival is from October 26 to} 11月4日。"
+"q2": "{The 39th festival} は、{October 26} から11月4日まで開かれます。",
+"q3": "{The 39th festival} 開かれる {from October 26 to November 4.}"
 }
 ],
 "gloss": {
@@ -10420,7 +10453,9 @@ window.LESSONS = [
 "the 39th festival": "第39回の映画祭",
 "kento nakajima became the": "中島健人さんが〜になった",
 "a great joy": "大きな喜び",
-"he says": "彼は〜と話している"
+"he says": "彼は〜と話している",
+"he says it is a great joy to": "〜できるのは大きな喜びだと話す",
+"from october 26 to november 4": "10月26日から11月4日まで"
 }
 },
 {
@@ -10551,7 +10586,7 @@ window.LESSONS = [
 {
 "q1": "{Netflix} に入っていれば、10月15日から {it} を見ることができます。",
 "q2": "{If you have Netflix}、10月15日から {it} を見ることができます。",
-"q3": "{If you have Netflix, you can watch it from} 10月15日。"
+"q3": "{If you have Netflix, you can} 見る {it from October 15.}"
 },
 {
 "q1": "{Beerus} は、破壊の {God} です。",
@@ -10631,7 +10666,9 @@ window.LESSONS = [
 "and a new danger is coming to": "そして新たな脅威が〜に迫る",
 "the anime dragon ball super beerus": "アニメ『ドラゴンボール超 ビルス』",
 "the anime dragon ball super beerus is": "アニメ『ドラゴンボール超 ビルス』が",
-"to netflix japan": "Netflix Japanに"
+"to netflix japan": "Netflix Japanに",
+"if you have netflix you can": "Netflixに入っていれば〜できる",
+"it from october 15": "10月15日からそれを"
 }
 },
 {
@@ -10768,7 +10805,7 @@ window.LESSONS = [
 {
 "q1": "全国の {Animate stores} で開かれます。",
 "q2": "{It will be held} 全国の {Animate stores} で。",
-"q3": "{It will be held at Animate stores}、全国で。"
+"q3": "{It will be held at Animate stores} 全国で。"
 },
 {
 "q1": "そこで、たくさんの {new goods} が売られます。",
@@ -10977,7 +11014,7 @@ window.LESSONS = [
 {
 "q1": "{obi} は、本に巻いてある {paper band} のことです。",
 "q2": "{An obi is a paper band}、本に巻いてある。",
-"q3": "{An obi is a paper band}、{a book} に巻いてある。"
+"q3": "{An obi is a paper band} まわりに {a book.}"
 },
 {
 "q1": "{Akutami} さんが描いたのは、バンドの {bass player}・幸山厘です。",
@@ -10986,8 +11023,8 @@ window.LESSONS = [
 },
 {
 "q1": "{Rin} は、呪術廻戦の {new anime} に合わせて公開するつもりでした。",
-"q2": "{Rin planned to show it}、呪術廻戦の {new anime} に合わせて。",
-"q3": "{Rin planned to show it}、{the new Jujutsu Kaisen anime} に合わせて。"
+"q2": "{Rin planned to} 公開する、呪術廻戦の {new anime} に合わせて。",
+"q3": "{Rin planned to} 公開する {it with the new Jujutsu Kaisen anime.}"
 },
 {
 "q1": "でも {Akutami} さんは「{I} はもう描いたよ」と言いました。",
@@ -11072,7 +11109,9 @@ window.LESSONS = [
 "gege akutami the creator of jujutsu kaisen": "『呪術廻戦』の作者・芥見下々さん",
 "a picture for its obi": "帯のためのイラスト",
 "rin kouyama the band's bass player": "バンドのベース担当・幸山厘",
-"the new jujutsu kaisen anime": "呪術廻戦の新しいアニメ"
+"the new jujutsu kaisen anime": "呪術廻戦の新しいアニメ",
+"rin planned to": "厘は〜するつもりだった",
+"it with the new jujutsu kaisen anime": "それを呪術廻戦の新アニメに合わせて"
 }
 },
 {
@@ -11098,7 +11137,7 @@ window.LESSONS = [
 {
 "en": "The free days are October 1 and 2.",
 "ja": "無料になるのは、10月1日と2日の2日間です。",
-"mix": "{free} になるのは、10月1日と2日の2日間です。"
+"mix": "無料になる {days} は、10月1日と2日の2日間です。"
 },
 {
 "en": "Volumes 1 to 35 are free at e-book stores.",
@@ -11206,9 +11245,9 @@ window.LESSONS = [
 "q3": "{You can read} 全巻 {of Keroro Gunso for free!}"
 },
 {
-"q1": "{The free days} は、10月1日と2日の2日間です。",
-"q2": "{The free days are} 10月1日と2日。",
-"q3": "{The free days are} 10月 {1 and 2.}"
+"q1": "無料になる {days} は、{October 1} と2日の2日間です。",
+"q2": "{The} 無料の {days are October 1} と2日。",
+"q3": "{The} 無料の {days are October 1 and 2.}"
 },
 {
 "q1": "1巻から35巻までが、{e-book stores} で {free} 公開されています。",
@@ -11222,13 +11261,13 @@ window.LESSONS = [
 },
 {
 "q1": "{new Keroro anime} の放送は、10月3日にスタートします。",
-"q2": "{The new Keroro anime starts}、10月3日に。",
-"q3": "{The new Keroro anime starts on} 10月3日。"
+"q2": "{The new Keroro anime} は、{October 3} にスタートします。",
+"q3": "{The new Keroro anime} 始まる {on October 3.}"
 },
 {
 "q1": "{anime} が始まる前に読む、{good chance} です。",
 "q2": "{It is a good chance}、{the anime} が始まる前に読む。",
-"q3": "{It is a good chance to read it}、{the anime} の前に。"
+"q3": "{It is a good chance to} 読む {it before the anime.}"
 }
 ],
 "gloss": {
@@ -11300,7 +11339,13 @@ window.LESSONS = [
 "the new keroro anime starts on": "ケロロの新作アニメは〜に始まる",
 "the anime": "アニメ",
 "1 and 2": "1日と2日",
-"volumes can you read in two days": "（何）巻を2日間で読めるか"
+"volumes can you read in two days": "（何）巻を2日間で読めるか",
+"october 1": "10月1日",
+"days are october 1": "日は10月1日（と…）",
+"the new keroro anime": "ケロロの新作アニメ",
+"on october 3": "10月3日に",
+"it is a good chance to": "〜するいいチャンスだ",
+"it before the anime": "アニメの前にそれを"
 }
 },
 {
@@ -11336,7 +11381,7 @@ window.LESSONS = [
 {
 "en": "Hiroya Oku is the creator of GANTZ.",
 "ja": "奥浩哉さんは『GANTZ』の作者です。",
-"mix": "奥浩哉さんは『GANTZ』の {creator} です。"
+"mix": "{Hiroya Oku} さんは『GANTZ』の作者です。"
 },
 {
 "en": "There is also a new trailer with scenes we have never seen before.",
@@ -11431,7 +11476,7 @@ window.LESSONS = [
 {
 "q1": "池田祐輝さんが、お祝いに {a picture} を描きました。",
 "q2": "池田祐輝さんが {drew a picture}、お祝いに。",
-"q3": "{Yuki Ikeda drew a picture}、お祝いに。"
+"q3": "{Yuki Ikeda drew a picture to} お祝いする {it.}"
 },
 {
 "q1": "{Yuki Ikeda} は、奥浩哉さんの別の {name} です。",
@@ -11439,9 +11484,9 @@ window.LESSONS = [
 "q3": "{Yuki Ikeda is} 別の {name for Hiroya Oku.}"
 },
 {
-"q1": "奥浩哉さんは『{GANTZ}』の {creator} です。",
-"q2": "{Hiroya Oku} は『{GANTZ}』の {creator} です。",
-"q3": "{Hiroya Oku}、{the creator of GANTZ} です。"
+"q1": "{Hiroya Oku} さんは『{GANTZ}』の作者です。",
+"q2": "{Hiroya Oku is}『{GANTZ}』の作者。",
+"q3": "{Hiroya Oku is the} 作者 {of GANTZ.}"
 },
 {
 "q1": "初公開の {scenes} を使った {a new trailer} も出ました。",
@@ -11517,7 +11562,8 @@ window.LESSONS = [
 "the creator of gantz": "『GANTZ』の作者",
 "thunder 3": "「サンダー3」",
 "the anime thunder 3 will": "アニメ「サンダー3」はこれから〜",
-"a second season in 2027": "2027年に第2期を"
+"a second season in 2027": "2027年に第2期を",
+"yuki ikeda drew a picture to": "池田祐輝さんが〜ために絵を描いた"
 }
 },
 {
@@ -11663,7 +11709,7 @@ window.LESSONS = [
 {
 "q1": "{patches} を組み合わせて、自分だけの {bag} を作れます。",
 "q2": "{patches} を組み合わせて、{you can make} 自分だけの {bag}。",
-"q3": "{patches} を組み合わせて、{you can make your own bag.}"
+"q3": "{You can make} 自分だけの {bag with patches.}"
 },
 {
 "q1": "当面のあいだ、お店に入るには {a reservation} をしなければなりません。",
@@ -11672,8 +11718,8 @@ window.LESSONS = [
 },
 {
 "q1": "{Star Wars} は、2027年で50周年です。",
-"q2": "{Star Wars turns 50} 2027年に。",
-"q3": "{Star Wars turns 50 in} 2027年。"
+"q2": "{Star Wars} は {in 2027}、50周年を迎えます。",
+"q3": "{Star Wars} 迎える {50 in 2027.}"
 }
 ],
 "gloss": {
@@ -11751,7 +11797,9 @@ window.LESSONS = [
 "ikebukuro parco": "池袋PARCO",
 "on the sixth floor of ikebukuro parco": "池袋PARCOの6階に",
 "millennium falcon": "ミレニアム・ファルコン",
-"four areas like the millennium falcon": "ミレニアム・ファルコンなど4つのエリア"
+"four areas like the millennium falcon": "ミレニアム・ファルコンなど4つのエリア",
+"in 2027": "2027年に",
+"50 in 2027": "2027年に50（周年）"
 }
 },
 {
@@ -12506,7 +12554,7 @@ window.LESSONS = [
 {
 "q1": "{English} では、{people} は「It's a wrap!（撮影終了！）」と言います。",
 "q2": "{In English}、{people} は「It's a wrap!（撮影終了！）」と言います。",
-"q3": "{In English, people} 言う、「{It's a wrap!}」（撮影終了！）"
+"q3": "{In English, people} 言う、「{It's a wrap!}」"
 },
 {
 "q1": "{post} には「{more news} を安らかに待って」とあります。",
@@ -12526,7 +12574,7 @@ window.LESSONS = [
 {
 "q1": "{Season 3} を待ちましょう！",
 "q2": "{for Season 3}、待ちましょう！",
-"q3": "さあ、{wait for Season 3!}"
+"q3": "{Let's} 待つ {for Season 3!}"
 }
 ],
 "gloss": {
@@ -13202,12 +13250,12 @@ window.LESSONS = [
 {
 "q1": "アニメ化 {55th anniversary} を記念して、{PART1} が {4K} リマスター版で発売されます。",
 "q2": "{For the 55th anniversary}、{PART1} が {4K} リマスター版で発売されます。",
-"q3": "{For the 55th anniversary, PART1 is going to come out}、{4K} リマスター版で。"
+"q3": "{For the 55th anniversary, PART1 is going to} 発売される {in 4K.}"
 },
 {
 "q1": "{The Blu-ray box} は、2027年1月27日に発売されます。",
-"q2": "{The Blu-ray box goes on sale} 2027年1月27日に。",
-"q3": "{The Blu-ray box goes on sale on January 27,} 2027年。"
+"q2": "{The Blu-ray box} は、{January 27, 2027} に発売されます。",
+"q3": "{The Blu-ray box} 発売される {on January 27, 2027.}"
 },
 {
 "q1": "『ルパン三世』の {TV series} が {4K} になるのは、これが初めてです。",
@@ -13298,7 +13346,11 @@ window.LESSONS = [
 "this is the": "これは〜だ",
 "4k for": "〜の4K化",
 "4k for the lupin iii tv series": "『ルパン三世』TVシリーズの4K化",
-"hayao miyazaki and isao takahata": "宮崎駿さんと高畑勲さん"
+"hayao miyazaki and isao takahata": "宮崎駿さんと高畑勲さん",
+"for the 55th anniversary part1 is going to": "55周年にPART1が〜される",
+"in 4k": "4K（リマスター版）で",
+"january 27 2027": "2027年1月27日",
+"on january 27 2027": "2027年1月27日に"
 }
 },
 {
@@ -13434,7 +13486,7 @@ window.LESSONS = [
 {
 "q1": "Netflixの {members} なら、{it} を好きなだけ見られます。",
 "q2": "Netflixの {members can watch it}、好きなだけ。",
-"q3": "{Netflix members can watch it}、好きなだけ。"
+"q3": "{Netflix members can watch it} 好きなだけ。"
 },
 {
 "q1": "{the voice cast} は、佐野晶哉さん（Aぇ! group）、上白石萌歌さん、柿澤勇人さんです。",
@@ -13678,9 +13730,9 @@ window.LESSONS = [
 "q3": "{The Conan story}「30号殺人事件」{is only on Netflix.}"
 },
 {
-"q1": "Netflixの日本の {weekly Top 10}〈{movies}〉で1位です。",
-"q2": "{It is}、Netflixの日本の {weekly Top 10}〈{movies}〉で1位。",
-"q3": "{It is} 1位 {in Netflix Japan's weekly Top 10 for movies.}"
+"q1": "Netflixの日本の {weekly Top 10}〈映画〉で1位です。",
+"q2": "{It is}、Netflixの日本の {weekly Top 10}〈映画〉で1位。",
+"q3": "{It is No. 1 in Netflix Japan's weekly Top 10 for} 映画。"
 },
 {
 "q1": "TV {anime}『名探偵コナン』は {30th anniversary} です。",
@@ -13690,12 +13742,12 @@ window.LESSONS = [
 {
 "q1": "それを記念して、{Netflix} では30種類の {special selections} も見られます。",
 "q2": "それを記念して、{Netflix also has} 30種類の {special selections}。",
-"q3": "{Netflix also has 30 special selections}、それを記念して。"
+"q3": "{Netflix also has 30 special selections} それを記念して。"
 },
 {
 "q1": "{selection} は、{character} ごとに分かれています。",
-"q2": "{Each selection} は、1人の {character} について。",
-"q3": "{Each selection is about} 1人の {character.}"
+"q2": "それぞれの {selection is about} 1人の {character}。",
+"q3": "それぞれの {selection is about one character.}"
 },
 {
 "q1": "あなたは、{which character's selection} を見たいですか？",
@@ -13775,7 +13827,10 @@ window.LESSONS = [
 "which character's selection do": "どのキャラのセレクションを",
 "it is": "それは〜です",
 "in netflix japan's weekly top 10 for movies": "Netflix日本の週間映画TOP10で",
-"its 30th anniversary": "30周年"
+"its 30th anniversary": "30周年",
+"it is no 1 in netflix japan's weekly top 10 for": "Netflix日本週間TOP10〜で1位",
+"selection is about": "セレクションは〜について",
+"selection is about one character": "セレクションは1人のキャラについて"
 }
 },
 {
@@ -14164,8 +14219,8 @@ window.LESSONS = [
 },
 {
 "q1": "「{Haikyu!! Exhibition}」の開催を記念した企画です。",
-"q2": "{It celebrates}「{Haikyu!! Exhibition}」の開催。",
-"q3": "{It celebrates the}「{Haikyu!! Exhibition}」の開催。"
+"q2": "{It} は「{Haikyu!! Exhibition}」の開催を記念しています。",
+"q3": "{It} 記念する {the Haikyu!! Exhibition.}"
 },
 {
 "q1": "いまは「春高vs音駒」の {part} が {free} で読めます。",
@@ -14256,7 +14311,8 @@ window.LESSONS = [
 "spring high vs": "春高（春の高校バレー）vs",
 "this part is": "この部分は〜だ",
 "as a movie too": "映画としても",
-"spring high vs nekoma": "春高vs音駒"
+"spring high vs nekoma": "春高vs音駒",
+"the haikyu exhibition": "「ハイキュー!!展」"
 }
 },
 {
@@ -14592,8 +14648,8 @@ window.LESSONS = [
 "grad": [
 {
 "q1": "「すみっコぐらし」の {the fifth movie} が、2027年に公開されます。",
-"q2": "{The fifth}「すみっコぐらし」{movie comes out}、2027年に。",
-"q3": "{The fifth Sumikko Gurashi movie comes out in} 2027年。"
+"q2": "{The fifth Sumikko Gurashi movie} が、2027年に公開されます。",
+"q3": "{The fifth Sumikko Gurashi movie} 公開される {in 2027.}"
 },
 {
 "q1": "{main character} の「ねこ」が {the movie} に登場します。",
@@ -14617,8 +14673,8 @@ window.LESSONS = [
 },
 {
 "q1": "シリーズの {second movie} も、10月31日から {theaters} で再上映されます。",
-"q2": "{The second movie comes back to theaters}、10月31日から。",
-"q3": "{The second movie comes back to theaters from} 10月31日。"
+"q2": "{The second movie} も、{October 31} から {theaters} で再上映されます。",
+"q3": "{The second movie} 戻ってくる {to theaters from October 31.}"
 }
 ],
 "gloss": {
@@ -14699,7 +14755,10 @@ window.LESSONS = [
 "the second movie comes back to theaters from": "第2弾が〜から映画館で再上映",
 "neko the cat": "ねこ（キャラクター名）",
 "a main character": "メインキャラクター",
-"in the movie": "映画に"
+"in the movie": "映画に",
+"in 2027": "2027年に",
+"october 31": "10月31日",
+"to theaters from october 31": "10月31日から映画館に"
 }
 },
 {
@@ -14830,7 +14889,7 @@ window.LESSONS = [
 {
 "q1": "「星の王子さま」が、ふたたび {a live-action movie} になります。",
 "q2": "{The Little Prince} が、ふたたび {a live-action movie} になります。",
-"q3": "{The Little Prince becomes a live-action movie}、ふたたび。"
+"q3": "{The Little Prince} になる {a live-action movie again.}"
 },
 {
 "q1": "原作は、{French writer} サン＝テグジュペリの本です。",
@@ -14855,7 +14914,7 @@ window.LESSONS = [
 {
 "q1": "{cast} や {release date} は、まだわかっていません。",
 "q2": "{cast} や {release date} は、まだ {we don't know}。",
-"q3": "{We don't know the cast or the release date}、まだ。"
+"q3": "{We don't know the cast or the release date} まだ。"
 }
 ],
 "gloss": {
@@ -14932,7 +14991,8 @@ window.LESSONS = [
 "movie gets ideas from the writer's life": "映画は作者の生涯から着想を得る",
 "the movie is live-action but the prince": "映画は実写だが、王子さまは",
 "with vfx": "VFXで",
-"morten tyldum": "モルテン・ティルドゥム（監督の名前）"
+"morten tyldum": "モルテン・ティルドゥム（監督の名前）",
+"a live-action movie again": "ふたたび実写映画に"
 }
 },
 {
@@ -16007,7 +16067,7 @@ window.LESSONS = [
 {
 "q1": "{The characters} は、思い思いに {school festival} を楽しんでいます。",
 "q2": "{The characters enjoy a school festival}、思い思いに。",
-"q3": "{The characters enjoy a school festival}、思い思いの {ways} で。"
+"q3": "{The characters enjoy a school festival in} 思い思いの {ways.}"
 },
 {
 "q1": "{They} はみんな、とても {happy} そうです！",
@@ -16084,7 +16144,8 @@ window.LESSONS = [
 "the newly drawn picture": "描き下ろしの絵",
 "the shop opens in": "お店は〜で開かれる",
 "tokyo osaka gifu and gunma": "東京・大阪・岐阜・群馬",
-"in tokyo osaka gifu and gunma one by one": "東京・大阪・岐阜・群馬で順番に"
+"in tokyo osaka gifu and gunma one by one": "東京・大阪・岐阜・群馬で順番に",
+"the characters enjoy a school festival in": "キャラたちは〜に文化祭を楽しむ"
 }
 },
 {
@@ -16215,8 +16276,8 @@ window.LESSONS = [
 },
 {
 "q1": "{TV anime} が、{rerun} で帰ってきます。",
-"q2": "{The TV anime comes back}、{rerun} で。",
-"q3": "{The TV anime comes back}、{a rerun} として。"
+"q2": "{The TV anime} が、{a rerun} で帰ってきます。",
+"q3": "{The TV anime} 帰ってくる {as a rerun.}"
 },
 {
 "q1": "TOKYO MXでは、{October 1}（木）の {10 p.m.} に始まります。",
@@ -16236,7 +16297,7 @@ window.LESSONS = [
 {
 "q1": "{movie} の前に、{fans} は {story} を振り返ることができます。",
 "q2": "{movie} の前に、{fans can look back on the story}。",
-"q3": "{Fans can look back on the story}、{the movie} の前に。"
+"q3": "{Fans can look back on the story} 前に {the movie.}"
 }
 ],
 "gloss": {
@@ -16318,7 +16379,8 @@ window.LESSONS = [
 "it starts on october 1": "10月1日に始まる",
 "opens in february 2027": "2027年2月に公開される",
 "the medalist": "『メダリスト』",
-"the movie": "映画"
+"the movie": "映画",
+"as a rerun": "再放送として"
 }
 },
 {
@@ -16474,8 +16536,8 @@ window.LESSONS = [
 },
 {
 "q1": "{The movie} は2027年2月19日（{Friday}）に公開されます。",
-"q2": "{The movie opens on Friday}、2027年2月19日。",
-"q3": "{The movie opens on Friday, February 19}、2027年。"
+"q2": "{The movie} は {Friday, February 19, 2027} に公開されます。",
+"q3": "{The movie} 公開される {on Friday, February 19, 2027.}"
 }
 ],
 "gloss": {
@@ -16558,7 +16620,9 @@ window.LESSONS = [
 "have been a team": "ずっとタッグを組んでいる",
 "have been a team since they met": "出会ってからずっとタッグを組む",
 "the movie opens on friday february 19": "映画は2月19日（金）に公開",
-"character promo video for medalist is out": "『メダリスト』のキャラPVが公開"
+"character promo video for medalist is out": "『メダリスト』のキャラPVが公開",
+"friday february 19 2027": "2027年2月19日（金）",
+"on friday february 19 2027": "2027年2月19日（金）に"
 }
 },
 {
@@ -16714,8 +16778,8 @@ window.LESSONS = [
 },
 {
 "q1": "{Please}、{them} をお楽しみに！",
-"q2": "{Please look forward to them}！",
-"q3": "{Please look forward to them} ね！"
+"q2": "{Please}、{them} を楽しみにしてね！",
+"q3": "{Please} 楽しみにして {them!}"
 }
 ],
 "gloss": {
@@ -16910,7 +16974,7 @@ window.LESSONS = [
 {
 "q1": "劇場版『メダリスト』の {new visual} には、{Suzu Shikamoto} が描かれています。",
 "q2": "{The Medalist movie} の {new visual} には、{Suzu Shikamoto} が描かれています。",
-"q3": "{A new visual for the Medalist movie} には {Suzu Shikamoto} が描かれています。"
+"q3": "{A new visual for the Medalist movie} 描いている {Suzu Shikamoto.}"
 },
 {
 "q1": "すずの {voice} を担当するのは、{Ayasa Ito} さんです。",
@@ -16935,7 +16999,7 @@ window.LESSONS = [
 {
 "q1": "これで、{All-Japan Novice Competition} に出場できることになりました。",
 "q2": "これで、{she can skate}、{All-Japan Novice Competition} で。",
-"q3": "これで、{she can skate at the All-Japan Novice Competition.}"
+"q3": "これで {she can skate at the All-Japan Novice Competition.}"
 }
 ],
 "gloss": {
@@ -17163,8 +17227,8 @@ window.LESSONS = [
 },
 {
 "q1": "{The movie} は2027年1月15日に公開されます。",
-"q2": "{The movie opens} 2027年1月15日に。",
-"q3": "{The movie opens on January 15,} 2027年。"
+"q2": "{The movie} は {January 15, 2027} に公開されます。",
+"q3": "{The movie} 公開される {on January 15, 2027.}"
 },
 {
 "q1": "{The opening song} は、米津玄師さんの「さよーならまたいつか！」です。",
@@ -17244,7 +17308,9 @@ window.LESSONS = [
 "the movie opens": "映画が公開される",
 "is out now": "いま公開中",
 "it was a popular morning drama": "それは人気の朝ドラだった",
-"the main character again": "また主人公を"
+"the main character again": "また主人公を",
+"january 15 2027": "2027年1月15日",
+"on january 15 2027": "2027年1月15日に"
 }
 },
 {
@@ -17379,8 +17445,8 @@ window.LESSONS = [
 },
 {
 "q1": "52日間で {ten million people} が見ました。",
-"q2": "52日間で、{ten million people saw it}。",
-"q3": "{Ten million people saw it in} 52日間。"
+"q2": "{52 days} で {ten million people} が見ました。",
+"q3": "{Ten million people} 見た {it in 52 days.}"
 },
 {
 "q1": "興行収入は {14.6 billion yen} を超えました。",
@@ -17389,8 +17455,8 @@ window.LESSONS = [
 },
 {
 "q1": "9月19日からは、{theaters} で「{secret book}」がもらえます。",
-"q2": "9月19日からは、{theaters} で {fans can get a \"secret book\"}。",
-"q3": "{From} 9月19日、{fans can get a \"secret book\" at theaters.}"
+"q2": "9月19日からは、{fans} が {theaters} で {a \"secret book\"} をもらえます。",
+"q3": "{From September 19, fans} もらえる {a \"secret book\" at theaters.}"
 }
 ],
 "gloss": {
@@ -17453,7 +17519,11 @@ window.LESSONS = [
 "fans can get a secret book": "ファンは「ひみつ本」をもらえる",
 "fans can get a secret book at theaters": "映画館で「ひみつ本」がもらえる",
 "mermaid island": "人魚の島",
-"the secret of mermaid island": "人魚の島のひみつ（作品名）"
+"the secret of mermaid island": "人魚の島のひみつ（作品名）",
+"it in 52 days": "52日間でそれを",
+"a secret book": "「ひみつ本」",
+"from september 19 fans": "9月19日から、ファンは",
+"a secret book at theaters": "映画館で「ひみつ本」を"
 }
 },
 {
@@ -17609,8 +17679,8 @@ window.LESSONS = [
 },
 {
 "q1": "{The Medalist movie} は、2027年2月19日に公開されます。",
-"q2": "{The Medalist movie will be released}、2027年2月19日に。",
-"q3": "{The Medalist movie will be released on} 2027年2月19日。"
+"q2": "{The Medalist movie} は {February 19, 2027} に公開されます。",
+"q3": "{The Medalist movie will} 公開される {on February 19, 2027.}"
 }
 ],
 "gloss": {
@@ -17688,7 +17758,8 @@ window.LESSONS = [
 "is the world of figure skating": "フィギュアスケートの世界だ",
 "the medalist movie will be released": "劇場版『メダリスト』が公開される",
 "the medalist movie will be released on": "劇場版『メダリスト』が〜に公開",
-"on august 30": "8月30日に"
+"on august 30": "8月30日に",
+"the medalist movie will": "劇場版『メダリスト』は〜する予定"
 }
 },
 {
@@ -17714,12 +17785,12 @@ window.LESSONS = [
 {
 "en": "November 3 is a holiday in Japan.",
 "ja": "11月3日は日本の祝日です。",
-"mix": "11月3日は日本の {holiday} です。"
+"mix": "11月3日は {Japan} の祝日です。"
 },
 {
 "en": "Takashi Yamazaki is the director.",
 "ja": "監督は山崎貴さんです。",
-"mix": "{director} は山崎貴さんです。"
+"mix": "監督は {Takashi Yamazaki} さんです。"
 },
 {
 "en": "He also wrote the story and made the VFX.",
@@ -17818,18 +17889,18 @@ window.LESSONS = [
 "grad": [
 {
 "q1": "『{Godzilla Minus Zero}』は11月3日に公開されます。",
-"q2": "{Godzilla Minus Zero opens}、11月3日に。",
-"q3": "{Godzilla Minus Zero opens on} 11月3日。"
+"q2": "{Godzilla Minus Zero} は {November 3} に公開されます。",
+"q3": "{Godzilla Minus Zero} 公開される {on November 3.}"
 },
 {
-"q1": "11月3日は {Japan} の {holiday} です。",
-"q2": "11月3日 {is} {Japan} の {holiday}。",
-"q3": "11月3日 {is a holiday in Japan.}"
+"q1": "{November 3} は {Japan} の祝日です。",
+"q2": "{November 3 is} {Japan} の祝日。",
+"q3": "{November 3 is a} 祝日 {in Japan.}"
 },
 {
-"q1": "{The director} は山崎貴さんです。",
-"q2": "山崎貴さんが {the director} を務めます。",
-"q3": "{Takashi Yamazaki} が {the director} を務めます。"
+"q1": "監督は {Takashi Yamazaki} さんです。",
+"q2": "{Takashi Yamazaki is} 監督。",
+"q3": "{Takashi Yamazaki is the} 監督。"
 },
 {
 "q1": "{He} は、脚本と {the VFX} も担当しました。",
@@ -17902,7 +17973,12 @@ window.LESSONS = [
 "made the vfx": "VFXを担当した",
 "the catchphrase": "キャッチコピー",
 "a new despair is coming": "新たな絶望が迫ってくる",
-"is a holiday in japan": "日本の祝日です"
+"is a holiday in japan": "日本の祝日です",
+"on november 3": "11月3日に",
+"november 3 is a": "11月3日は（ひとつの）〜です",
+"in japan": "日本で・日本の",
+"takashi yamazaki is": "山崎貴さんは〜です",
+"takashi yamazaki is the": "山崎貴さんがその〜です"
 }
 },
 {
@@ -18034,7 +18110,7 @@ window.LESSONS = [
 {
 "q1": "『メダリスト』の {event} で、{fans} への {surprise} がありました。",
 "q2": "『メダリスト』の {event} で、{a surprise for fans} がありました。",
-"q3": "{At the Medalist event, a surprise for fans} がありました。"
+"q3": "{At the Medalist event,} あった {a surprise for fans.}"
 },
 {
 "q1": "坂本花織さんが {a video message} を届けてくれました。",
@@ -18263,8 +18339,8 @@ window.LESSONS = [
 },
 {
 "q1": "{The movie} は2027年2月19日に公開されます。",
-"q2": "{The movie will open} 2027年2月19日に。",
-"q3": "{The movie will open on February 19,} 2027年。"
+"q2": "{The movie} は {February 19, 2027} に公開されます。",
+"q3": "{The movie will} 公開される {on February 19, 2027.}"
 },
 {
 "q1": "その日は {a Friday} です。",
@@ -18333,7 +18409,10 @@ window.LESSONS = [
 "the medalist movie": "劇場版『メダリスト』",
 "a teaser for the medalist movie is": "劇場版『メダリスト』の特報は",
 "you can": "〜できます",
-"it on youtube": "それをYouTubeで"
+"it on youtube": "それをYouTubeで",
+"february 19 2027": "2027年2月19日",
+"the movie will": "その映画は〜する（予定）",
+"on february 19 2027": "2027年2月19日に"
 }
 },
 {
@@ -18465,7 +18544,7 @@ window.LESSONS = [
 {
 "q1": "劇場版の {character art} 第3弾には、{Hikaru Kamisaki} が描かれています。",
 "q2": "劇場版の {third character art} には、{Hikaru Kamisaki} が描かれています。",
-"q3": "{The third character art for the movie} には {Hikaru Kamisaki} が描かれています。"
+"q3": "{The third character art for the movie} 描いている {Hikaru Kamisaki.}"
 },
 {
 "q1": "光の {voice} を担当するのは、{Kana Ichinose} さんです。",
@@ -18484,8 +18563,8 @@ window.LESSONS = [
 },
 {
 "q1": "{Hikaru} は、{Inori} を {rival} として認めています。",
-"q2": "{Hikaru sees Inori}、{rival} として。",
-"q3": "{Hikaru sees Inori}、{her rival} として。"
+"q2": "{Hikaru} は {Inori} を {her rival} として認めています。",
+"q3": "{Hikaru} 見ている {Inori as her rival.}"
 },
 {
 "q1": "彼女は、{this event} で {Inori} と競い合うことを楽しみにしていました。",
@@ -18570,7 +18649,8 @@ window.LESSONS = [
 "hikaru sees inori": "光はいのりを〜とみなす",
 "kana ichinose is": "市ノ瀬加那さんは〜です",
 "calls her": "彼女を〜と呼ぶ",
-"calls her a genius girl": "彼女を「天才少女」と呼ぶ"
+"calls her a genius girl": "彼女を「天才少女」と呼ぶ",
+"inori as her rival": "いのりを自分のライバルとして"
 }
 },
 {
@@ -18722,12 +18802,12 @@ window.LESSONS = [
 {
 "q1": "彼は、{Inori} を {medalist} にする {ways} を、いつも探しています。",
 "q2": "彼は、いつも {ways to make Inori a medalist} を探しています。",
-"q3": "{He always} 探している、{ways to make Inori a medalist.}"
+"q3": "{He always} 探している {ways to make Inori a medalist.}"
 },
 {
 "q1": "そして、彼自身も {a coach} として成長していきます。",
-"q2": "そして、彼自身も {a coach} として {grows}。",
-"q3": "{He also grows}、{a coach} として。"
+"q2": "{He} も {a coach} として成長していきます。",
+"q3": "{He also} 成長する {as a coach.}"
 }
 ],
 "gloss": {
@@ -19406,7 +19486,7 @@ window.LESSONS = [
 {
 "q1": "「ハイキュー!! RECEPTION」#3 で、{new information} の発表がありました。",
 "q2": "「{Haikyu!! RECEPTION}」#3 で、{new information} の発表がありました。",
-"q3": "{At Haikyu!! RECEPTION #3,} 発表があった {new information.}"
+"q3": "あった {new information at Haikyu!! RECEPTION #3.}"
 },
 {
 "q1": "{The movie's title} は『劇場版ハイキュー!! VS小さな巨人』です。",
@@ -19416,7 +19496,7 @@ window.LESSONS = [
 {
 "q1": "劇場版の {a concept visual} が公開されました。",
 "q2": "{The movie} の {a concept visual} が公開されました。",
-"q3": "{A concept visual for the movie} が公開されました。"
+"q3": "あった {a concept visual for the movie.}"
 },
 {
 "q1": "スペシャルアニメについては、{two new things} がありました。",
@@ -19430,8 +19510,8 @@ window.LESSONS = [
 },
 {
 "q1": "2027年、「{the match}」が始まります！",
-"q2": "{The \"match\" starts} 2027年に！",
-"q3": "{The \"match\" starts in} 2027年！"
+"q2": "{The \"match\"} が2027年に始まります！",
+"q3": "{The \"match\"} 始まる {in 2027!}"
 }
 ],
 "gloss": {
@@ -19499,7 +19579,9 @@ window.LESSONS = [
 "there was new information at": "〜で新しい情報があった",
 "a concept visual": "コンセプトビジュアル",
 "a concept visual for the movie": "劇場版のコンセプトビジュアル",
-"haikyu reception": "「ハイキュー!! RECEPTION」"
+"haikyu reception": "「ハイキュー!! RECEPTION」",
+"new information at haikyu reception 3": "RECEPTION #3での新情報",
+"in 2027": "2027年に"
 }
 },
 {
@@ -19634,9 +19716,9 @@ window.LESSONS = [
 "q3": "{New school pictures for Fukurodani and Mujinazaka} が公開されました！"
 },
 {
-"q1": "2人の {setters} の {battle} にも注目です！",
-"q2": "{Don't miss}、2人の {setters} の {battle}！",
-"q3": "{Don't miss the battle of} 2人の {setters!}"
+"q1": "{two setters} の対決にも注目です！",
+"q2": "{Don't miss}、{the two setters} の対決！",
+"q3": "{Don't miss the} 対決 {of the two setters!}"
 },
 {
 "q1": "梟谷の {Keiji Akaashi} は、木兎光太郎の {way} を切り開きます。",
@@ -19656,7 +19738,7 @@ window.LESSONS = [
 {
 "q1": "キャラクターの {profiles} は、どこで見られるでしょう？ {the official website} です！",
 "q2": "{Where can you see} キャラクターの {profiles}？ {the official website} です！",
-"q3": "{Where can you see the character profiles?} {the official website} です！"
+"q3": "{Where can you see the} キャラクター {profiles? On the official website!}"
 }
 ],
 "gloss": {
@@ -19738,7 +19820,10 @@ window.LESSONS = [
 "will win": "勝つ（だろう）",
 "will win the setter battle": "セッター対決に勝つ",
 "the official website": "公式サイト",
-"new school pictures for fukurodani and mujinazaka": "梟谷と狢坂の新しい学校ビジュアル"
+"new school pictures for fukurodani and mujinazaka": "梟谷と狢坂の新しい学校ビジュアル",
+"the two setters": "2人のセッター",
+"where can you see the": "どこで〜を見られる？",
+"profiles on the official website": "プロフィール？ 公式サイトで"
 }
 },
 {
@@ -19894,8 +19979,8 @@ window.LESSONS = [
 },
 {
 "q1": "2027年に {the \"match\"} が始まります！",
-"q2": "{The \"match\" starts} 2027年に！",
-"q3": "{The \"match\" starts in} 2027年！"
+"q2": "{The \"match\"} が2027年に始まります！",
+"q3": "{The \"match\"} 始まる {in 2027!}"
 }
 ],
 "gloss": {
@@ -19980,7 +20065,8 @@ window.LESSONS = [
 "is fukurodani vs mujinazaka": "梟谷 VS 狢坂です",
 "two aces": "2人のエース",
 "are two of": "〜のうちの2人です",
-"kotaro bokuto and hachi kiryu are two of": "木兎光太郎と桐生八は〜の2人"
+"kotaro bokuto and hachi kiryu are two of": "木兎光太郎と桐生八は〜の2人",
+"in 2027": "2027年に"
 }
 },
 {
@@ -20106,8 +20192,8 @@ window.LESSONS = [
 "grad": [
 {
 "q1": "BURNOUT SYNDROMESが、8月19日に {new Haikyu!! music} をリリースしました。",
-"q2": "{BURNOUT SYNDROMES released}「{Haikyu!!}」の {new music}、8月19日に。",
-"q3": "{BURNOUT SYNDROMES released new Haikyu!! music on} 8月19日。"
+"q2": "{BURNOUT SYNDROMES} は、8月19日に {new Haikyu!! music} をリリースしました。",
+"q3": "{BURNOUT SYNDROMES} リリースした {new Haikyu!! music on August 19.}"
 },
 {
 "q1": "{Its subtitle} は「主題歌たちの {Feast}」です。",
@@ -20340,8 +20426,8 @@ window.LESSONS = [
 },
 {
 "q1": "今夜8時19分から、「{Haikyu!! RECEPTION #3}」が始まります。",
-"q2": "「{Haikyu!! RECEPTION #3}」{starts tonight}、8時19分から。",
-"q3": "{Haikyu!! RECEPTION #3 starts tonight at} 8時19分。"
+"q2": "{tonight} 8時19分から、「{Haikyu!! RECEPTION #3}」が始まります。",
+"q3": "{Haikyu!! RECEPTION #3} 始まる {tonight at 8:19 p.m.}"
 }
 ],
 "gloss": {
@@ -20408,7 +20494,8 @@ window.LESSONS = [
 "is celebrating haikyu day 2026": "ハイキュー!!の日2026を祝っている",
 "the haikyu": "「ハイキュー!!」の",
 "in a new": "新しい〜で",
-"starts tonight": "今夜始まる"
+"starts tonight": "今夜始まる",
+"tonight at 8 19 p m": "今夜、午後8時19分に"
 }
 }
 ];
