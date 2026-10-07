@@ -787,17 +787,17 @@ html.static .ai-only{display:none!important}
 #flBox .dc-top > :not(.fl-ttl){flex:none}
 /* ===== 7回目の見直し ===== */
 /* 「半分」の段は英語が文の半分以上：地は敷かず、書体のちがいと下線だけで見せる（段を上げるほど静かに） */
-#story[data-amt="3"] .mw:not(.quiet){background:none;padding-inline:0;box-shadow:none;margin-inline:.22em;-webkit-box-decoration-break:slice;box-decoration-break:slice}
-#story[data-amt="3"] .mw.pp{margin-right:0}
-#story[data-amt="3"] .mw.pl,#story[data-amt="3"] .mw.pa,#story[data-amt="3"] .mw.first{margin-left:0}
+#story[data-lv="3"] .mw:not(.quiet){background:none;padding-inline:0;box-shadow:none;margin-inline:.22em;-webkit-box-decoration-break:slice;box-decoration-break:slice}
+#story[data-lv="3"] .mw.pp{margin-right:0}
+#story[data-lv="3"] .mw.pl,#story[data-lv="3"] .mw.pa,#story[data-lv="3"] .mw.first{margin-left:0}
 /* 和文と英字の間は、使えるブラウザでは自動の空き（行頭がそろう） */
 @supports (text-autospace: normal){
-  #story[data-amt="3"] .s-text{text-autospace:normal}
-  #story[data-amt="3"] .mw:not(.quiet){margin-inline:0}
+  #story[data-lv="3"] .s-text{text-autospace:normal}
+  #story[data-lv="3"] .mw:not(.quiet){margin-inline:0}
 }
-#story[data-amt="3"] .mw[data-k]:hover{box-shadow:none;color:var(--accent)}
-#story[data-amt="3"] .mw.ja{color:var(--accent)}
-#story[data-amt="3"].morph .mw.new{animation-name:chunkInQ}
+#story[data-lv="3"] .mw[data-k]:hover{box-shadow:none;color:var(--accent)}
+#story[data-lv="3"] .mw.ja{color:var(--accent)}
+#story[data-lv="3"].morph .mw.new{animation-name:chunkInQ}
 /* 書き取りのまとめ：とばした文は1行で（書いた文が主役） */
 .dc-sum li.skip{padding:7px 0}
 .dc-sum li.skip .se{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:var(--fs-s);min-width:0}
@@ -1402,7 +1402,7 @@ function renderLesson(){
         ${amtHtml()}
         <p class="note status" id="storyStatus"${storyStatus() ? '' : ' hidden'}>${esc(storyStatus())}</p>
         <details class="tip" id="tip"${LS.get('tipOpen', false) ? ' open' : ''}><summary>タップでできること</summary><p class="note" id="storyNote">${storyNote()}</p></details>
-        <ol class="story" id="story" data-mix="${S.amount >= 1 && S.amount <= 4 ? 1 : 0}" data-amt="${S.amount}">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
+        <ol class="story" id="story" data-mix="${S.amount >= 1 && S.amount <= 4 ? 1 : 0}" data-lv="${S.amount}">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
         <div id="storyNext"></div>
       </section>
 
@@ -1588,7 +1588,7 @@ function rerenderStory(){
   $('#story').innerHTML = L.lines.map((_, i) => storyLine(L, i)).join('');
   $$('#story li').forEach((li, i) => { let k = 0; li.querySelectorAll('.mw').forEach(m => { if(before[i] && enWords(m).some(w => !before[i].has(w))){ m.classList.add('new'); m.style.setProperty('--k', k++); } }); });
   const nx = $('#storyNext'); if(nx) nx.innerHTML = '';
-  const sto = $('#story'); sto.dataset.mix = S.amount >= 1 && S.amount <= 4 ? 1 : 0; sto.dataset.amt = S.amount;
+  const sto = $('#story'); sto.dataset.mix = S.amount >= 1 && S.amount <= 4 ? 1 : 0; sto.dataset.lv = S.amount;   /* data-amt は目盛りのボタンの印なので使わない（文のタップが目盛りの押下になってしまう） */
   sto.classList.remove('morph'); void sto.offsetWidth; sto.classList.add('morph');
   clearTimeout(rerenderStory.t); rerenderStory.t = setTimeout(() => sto.classList.remove('morph'), 1600);
   syncAmt();
@@ -2546,7 +2546,7 @@ function onAction(e){
   const ds = t.closest('[data-dcsrc]'); if(ds){ const v = ds.dataset.dcsrc; if(v.startsWith('lesson:')){ dcStartLesson(v.slice(7)); return; } DC.src = v; LS.set('dcSrc', v); DC.recent = []; DC.cur = null; dcNew(false); return; }
   const dm = t.closest('[data-dcmode]'); if(dm){ const m = dm.dataset.dcmode; if(m !== DC.mode){ DC.mode = m; LS.set('dcMode', m); const lid = dcLessonId(); if(lid){ dcStartLesson(lid); return; } else { DC.cur = null; dcNew(false); } } return; }
   const fs = t.closest('[data-flsrc]'); if(fs){ FL.src = fs.dataset.flsrc; LS.set('flSrc', FL.src); flShuffle(); renderFlow(true, true); if(FL.on) flSpeak(); return; }
-  const amt = t.closest('[data-amt]'); if(amt){ setAmount(+amt.dataset.amt); return; }
+  const amt = t.closest('button[data-amt]'); if(amt){ setAmount(+amt.dataset.amt); return; }
   const bk = t.closest('[data-bank]'); if(bk){ const ta = $('#dcIn'); if(ta){ ta.value = (ta.value.replace(/\s+$/, '') + ' ' + bk.dataset.bank).replace(/^\s+/, ''); DC.typed = ta.value; bk.classList.add('used'); ta.focus({preventScroll: true}); } return; }
   const li = t.closest('#story li');
   if(li){
