@@ -787,17 +787,17 @@ html.static .ai-only{display:none!important}
 #flBox .dc-top > :not(.fl-ttl){flex:none}
 /* ===== 7回目の見直し ===== */
 /* 「半分」の段は英語が文の半分以上：地は敷かず、書体のちがいと下線だけで見せる（段を上げるほど静かに） */
-#story[data-lv="3"] .mw:not(.quiet){background:none;padding-inline:0;box-shadow:none;margin-inline:.22em;-webkit-box-decoration-break:slice;box-decoration-break:slice}
-#story[data-lv="3"] .mw.pp{margin-right:0}
-#story[data-lv="3"] .mw.pl,#story[data-lv="3"] .mw.pa,#story[data-lv="3"] .mw.first{margin-left:0}
+#story[data-stage="3"] .mw:not(.quiet){background:none;padding-inline:0;box-shadow:none;margin-inline:.22em;-webkit-box-decoration-break:slice;box-decoration-break:slice}
+#story[data-stage="3"] .mw.pp{margin-right:0}
+#story[data-stage="3"] .mw.pl,#story[data-stage="3"] .mw.pa,#story[data-stage="3"] .mw.first{margin-left:0}
 /* 和文と英字の間は、使えるブラウザでは自動の空き（行頭がそろう） */
 @supports (text-autospace: normal){
-  #story[data-lv="3"] .s-text{text-autospace:normal}
-  #story[data-lv="3"] .mw:not(.quiet){margin-inline:0}
+  #story[data-stage="3"] .s-text{text-autospace:normal}
+  #story[data-stage="3"] .mw:not(.quiet){margin-inline:0}
 }
-#story[data-lv="3"] .mw[data-k]:hover{box-shadow:none;color:var(--accent)}
-#story[data-lv="3"] .mw.ja{color:var(--accent)}
-#story[data-lv="3"].morph .mw.new{animation-name:chunkInQ}
+#story[data-stage="3"] .mw[data-k]:hover{box-shadow:none;color:var(--accent)}
+#story[data-stage="3"] .mw.ja{color:var(--accent)}
+#story[data-stage="3"].morph .mw.new{animation-name:chunkInQ}
 /* 書き取りのまとめ：とばした文は1行で（書いた文が主役） */
 .dc-sum li.skip{padding:7px 0}
 .dc-sum li.skip .se{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:var(--fs-s);min-width:0}
@@ -855,9 +855,11 @@ html.static .ai-only{display:none!important}
       <button class="chip" data-f="s:frieren" aria-pressed="false">フリーレン</button>
       <button class="chip" data-f="s:haikyu" aria-pressed="false">ハイキュー!!</button>
       <button class="chip" data-f="s:medalist" aria-pressed="false">メダリスト</button>
+      <button class="chip" data-f="s:worldtrigger" aria-pressed="false">ワールドトリガー</button>
       <button class="chip" data-f="anime" aria-pressed="false">アニメ</button>
       <button class="chip" data-f="movie" aria-pressed="false">映画</button>
       <button class="chip" data-f="manga" aria-pressed="false">漫画</button>
+      <button class="chip" data-f="art" aria-pressed="false">美術</button>
       <button class="chip ai-only" data-f="own" aria-pressed="false">自分で追加</button>
     </div>
     <div class="filters lv-filters" id="lvFilters" role="group" aria-label="むずかしさでしぼりこむ（もう一度押すと解除）">
@@ -987,9 +989,9 @@ const jstStamp = () => jstNow().toISOString().slice(0, 16);
 const dayDiff = (a, b) => Math.round((Date.parse(a) - Date.parse(b)) / 864e5);
 const jpDate = d => { if(!d) return ''; const [, m, dd] = d.slice(0, 10).split('-'); return `${+m}月${+dd}日`; };
 const typing = el => el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
-const CAT = {anime:'アニメ', movie:'映画', manga:'漫画', own:'自分で追加'};
+const CAT = {anime:'アニメ', movie:'映画', manga:'漫画', art:'美術', own:'自分で追加'};
 const LEVEL = {1:'やさしい', 2:'ふつう', 3:'ちょっとむずい'};
-const SERIES = {haikyu:'ハイキュー!!', medalist:'メダリスト', frieren:'フリーレン'};
+const SERIES = {haikyu:'ハイキュー!!', medalist:'メダリスト', frieren:'フリーレン', worldtrigger:'ワールドトリガー'};
 const HOT = 5000; /* 「人気」= この数以上いいねされたポスト */
 /* English amount: 0 = all Japanese … 6 = all English */
 const AMT = [
@@ -1402,7 +1404,7 @@ function renderLesson(){
         ${amtHtml()}
         <p class="note status" id="storyStatus"${storyStatus() ? '' : ' hidden'}>${esc(storyStatus())}</p>
         <details class="tip" id="tip"${LS.get('tipOpen', false) ? ' open' : ''}><summary>タップでできること</summary><p class="note" id="storyNote">${storyNote()}</p></details>
-        <ol class="story" id="story" data-mix="${S.amount >= 1 && S.amount <= 4 ? 1 : 0}" data-lv="${S.amount}">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
+        <ol class="story" id="story" data-mix="${S.amount >= 1 && S.amount <= 4 ? 1 : 0}" data-stage="${S.amount}">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
         <div id="storyNext"></div>
       </section>
 
@@ -1588,7 +1590,7 @@ function rerenderStory(){
   $('#story').innerHTML = L.lines.map((_, i) => storyLine(L, i)).join('');
   $$('#story li').forEach((li, i) => { let k = 0; li.querySelectorAll('.mw').forEach(m => { if(before[i] && enWords(m).some(w => !before[i].has(w))){ m.classList.add('new'); m.style.setProperty('--k', k++); } }); });
   const nx = $('#storyNext'); if(nx) nx.innerHTML = '';
-  const sto = $('#story'); sto.dataset.mix = S.amount >= 1 && S.amount <= 4 ? 1 : 0; sto.dataset.lv = S.amount;   /* data-amt は目盛りのボタンの印なので使わない（文のタップが目盛りの押下になってしまう） */
+  const sto = $('#story'); sto.dataset.mix = S.amount >= 1 && S.amount <= 4 ? 1 : 0; sto.dataset.stage = S.amount;   /* data-amt（目盛りのボタン）・data-lv（レベルのボタン）とは別の名前にする（同じ名前だとタップの取り違えが起きる） */
   sto.classList.remove('morph'); void sto.offsetWidth; sto.classList.add('morph');
   clearTimeout(rerenderStory.t); rerenderStory.t = setTimeout(() => sto.classList.remove('morph'), 1600);
   syncAmt();
@@ -2099,7 +2101,7 @@ const LESSON_SPEC = `次のJSONオブジェクトを1つだけ返してくださ
 {
  "title": "サイドバーに出す日本語の短い題（25字以内）",
  "summary": "日本語で1〜2文の要点（ですます調）",
- "cat": "anime" | "movie" | "manga" | "other",
+ "cat": "anime" | "movie" | "manga" | "art" | "other",
  "level": 1 | 2 | 3,   // 1=中1レベル 2=中2 3=中3
  "lines": [ {"en": "英文", "ja": "その日本語訳", "mix": "日本語の文に、名詞か形容詞の英単語を1〜2か所（1か所2語まで）{波かっこ} で入れたもの", "q1": "名詞のかたまりだけ英語の混ぜ文（英語は35%まで・動詞は日本語）", "q2": "英語が約50%の混ぜ文", "q3": "英語が約75%の混ぜ文（短い文でも日本語を1か所は残す）"} ],   // 4〜6文
  "words": [ {"w": "英単語や熟語", "ja": "意味", "note": "ひとこと説明（任意）"} ],   // 4〜5個
@@ -2143,7 +2145,7 @@ function normalizeLesson(r){
     .map(q => ({q: String(q.q), choices: q.choices.map(String), a: q.a, why: q.why ? String(q.why) : ''}));
   return {
     title: String(r.title || '新しいノート').slice(0, 40), summary: String(r.summary || ''),
-    cat: ['anime', 'movie', 'manga'].includes(r.cat) ? r.cat : 'other', level: [1, 2, 3].includes(r.level) ? r.level : 2,
+    cat: ['anime', 'movie', 'manga', 'art'].includes(r.cat) ? r.cat : 'other', level: [1, 2, 3].includes(r.level) ? r.level : 2,
     lines, words: (Array.isArray(r.words) ? r.words : []).filter(w => w && w.w).map(w => ({w: String(w.w), ja: String(w.ja || ''), note: w.note ? String(w.note) : ''})),
     grammar: r.grammar && r.grammar.title ? {title: String(r.grammar.title), body: String(r.grammar.body || ''), ex: (r.grammar.ex || []).filter(e => e && e.en).map(e => ({en: String(e.en), ja: String(e.ja || '')}))} : null,
     quiz, talk: r.talk && r.talk.q ? {q: String(r.talk.q), ja: String(r.talk.ja || ''), hint: String(r.talk.hint || '')} : null,
