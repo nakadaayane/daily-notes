@@ -811,6 +811,19 @@ html.static .ai-only{display:none!important}
 .dict a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
 .dict a:hover{color:var(--fg);text-decoration-color:var(--faint)}
 .pop .p-link{display:flex;gap:8px;flex-wrap:wrap;align-items:baseline;margin:6px 0 0}
+/* 一覧の絞り込み（2026-10-08 持ち主「パソコンだとジャンルの切りかえがやりにくい」）：
+   横にずらさなくても全部見えるよう、「種類」「作品」「レベル」の行に分けて折り返す。左の見出しの列をそろえる */
+#filters,#lvFilters{overflow:visible;-webkit-mask-image:none;mask-image:none}
+#filters{display:flex;flex-direction:column;gap:3px}
+.filters .f-row,.filters.f-row{display:grid;grid-template-columns:2.75rem minmax(0,1fr);align-items:start}
+.f-chips{display:flex;flex-wrap:wrap;gap:3px;min-width:0}
+.f-row .flbl,#lvFilters .flbl{align-self:start;font-size:var(--fs-xs);line-height:1.65;color:var(--muted);padding:2px 0 0 8px;white-space:nowrap}
+#filters .chip{padding-inline:7px}
+#lvFilters .chip{padding-inline:6px}
+@media (pointer:coarse){ .f-row .flbl,#lvFilters .flbl{padding-top:5px} #filters .chip,#lvFilters .chip{padding-inline:10px} }
+/* 物語は本ごと：日付の流れのあとに「物語」の区切り、本の題の見出しの下に第1回から順に */
+.shelf-h{margin:16px 10px 0;padding-top:10px;border-top:1px solid var(--line);font-size:var(--fs-xs);color:var(--muted);letter-spacing:.04em}
+.grp.bk span:first-child{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;letter-spacing:0}
 /* 書き取りのまとめの下：今日ぜんぶの記録 */
 .dc-today{margin:0;font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums}
 #flBox .dc-big{background:color-mix(in srgb,var(--fg) 82%,var(--card))}
@@ -860,24 +873,29 @@ html.static .ai-only{display:none!important}
       </button>
     </div>
     <div class="filters" id="filters" role="group" aria-label="しぼりこみ">
-      <button class="chip" data-f="all" aria-pressed="true">すべて</button>
-      <button class="chip" data-f="hot" aria-pressed="false" title="5,000いいね以上のポスト">人気</button>
-      <button class="chip" data-f="s:frieren" aria-pressed="false">フリーレン</button>
-      <button class="chip" data-f="s:haikyu" aria-pressed="false">ハイキュー!!</button>
-      <button class="chip" data-f="s:medalist" aria-pressed="false">メダリスト</button>
-      <button class="chip" data-f="s:worldtrigger" aria-pressed="false">ワールドトリガー</button>
-      <button class="chip" data-f="anime" aria-pressed="false">アニメ</button>
-      <button class="chip" data-f="movie" aria-pressed="false">映画</button>
-      <button class="chip" data-f="manga" aria-pressed="false">漫画</button>
-      <button class="chip" data-f="art" aria-pressed="false">美術</button>
-      <button class="chip" data-f="story" aria-pressed="false" title="Project Gutenberg の物語（やさしい英語の連載＋原文）">物語</button>
-      <button class="chip ai-only" data-f="own" aria-pressed="false">自分で追加</button>
+      <div class="f-row"><span class="flbl" aria-hidden="true">種類</span><div class="f-chips">
+        <button class="chip" data-f="all" aria-pressed="true">すべて</button>
+        <button class="chip" data-f="hot" aria-pressed="false" title="5,000いいね以上のポスト">人気</button>
+        <button class="chip" data-f="anime" aria-pressed="false">アニメ</button>
+        <button class="chip" data-f="movie" aria-pressed="false">映画</button>
+        <button class="chip" data-f="manga" aria-pressed="false">漫画</button>
+        <button class="chip" data-f="art" aria-pressed="false">美術</button>
+        <button class="chip" data-f="story" aria-pressed="false" title="Project Gutenberg の物語（やさしい英語の連載＋原文）。本ごとに第1回から並びます">物語</button>
+        <button class="chip ai-only" data-f="own" aria-pressed="false">自分で追加</button>
+      </div></div>
+      <div class="f-row"><span class="flbl" aria-hidden="true">作品</span><div class="f-chips">
+        <button class="chip" data-f="s:frieren" aria-pressed="false">フリーレン</button>
+        <button class="chip" data-f="s:haikyu" aria-pressed="false">ハイキュー!!</button>
+        <button class="chip" data-f="s:medalist" aria-pressed="false">メダリスト</button>
+        <button class="chip" data-f="s:worldtrigger" aria-pressed="false">ワールドトリガー</button>
+      </div></div>
     </div>
-    <div class="filters lv-filters" id="lvFilters" role="group" aria-label="むずかしさでしぼりこむ（もう一度押すと解除）">
-      <span class="flbl" aria-hidden="true">レベル</span>
-      <button class="chip" data-lv="1" aria-pressed="false">やさしい</button>
-      <button class="chip" data-lv="2" aria-pressed="false">ふつう</button>
-      <button class="chip" data-lv="3" aria-pressed="false">ちょっとむずい</button>
+    <div class="filters lv-filters f-row" id="lvFilters" role="group" aria-label="むずかしさでしぼりこむ（もう一度押すと解除）">
+      <span class="flbl" aria-hidden="true">レベル</span><div class="f-chips">
+        <button class="chip" data-lv="1" aria-pressed="false">やさしい</button>
+        <button class="chip" data-lv="2" aria-pressed="false">ふつう</button>
+        <button class="chip" data-lv="3" aria-pressed="false">ちょっとむずい</button>
+      </div>
     </div>
     <div class="list" id="list"></div>
     <div class="side-foot">
@@ -1228,11 +1246,26 @@ function haystack(L){
   if(!L._hay) L._hay = [L.title, L.summary, ...(L.lines || []).map(l => l.en + ' ' + l.ja), ...(L.words || []).map(w => w.w + ' ' + w.ja), SERIES[L.series] || ''].join(' ').toLowerCase();
   return L._hay;
 }
+/* 物語は本ごとにまとめる（2026-10-08 持ち主「物語だけ、シリーズでわけて」）：
+   日付の流れからは外して最後に。本は新しく足した順、本の中は第1回から順。前後の移動（J/K・前の回／次の回）もこの順 */
+const isStory = L => !!(L && L.cat === 'story' && L.book);
+const bookKey = L => L.book.url || L.book.title || '';
+function storyOrder(list){
+  const rank = {};
+  list.forEach(L => { const k = bookKey(L), a = L.added || ''; if(!(k in rank) || a > rank[k]) rank[k] = a; });
+  return list.slice().sort((a, b) => {
+    const ka = bookKey(a), kb = bookKey(b);
+    if(ka !== kb) return rank[ka] !== rank[kb] ? (rank[ka] < rank[kb] ? 1 : -1) : (ka < kb ? -1 : 1);
+    return (+a.book.part || 0) - (+b.book.part || 0);
+  });
+}
+const partLabel = L => L.title.replace(/^『[^』]*』\s*/, '');
 function visible(){
   const f = S.filter, q = S.query.trim().toLowerCase();
-  return S.lessons.filter(L => (f === 'all' || (f === 'hot' ? (L.post && +L.post.likes >= HOT) : f.startsWith('s:') ? L.series === f.slice(2) : f === 'own' ? L.own : (L.cat === f && !L.own)))
+  const items = S.lessons.filter(L => (f === 'all' || (f === 'hot' ? (L.post && +L.post.likes >= HOT) : f.startsWith('s:') ? L.series === f.slice(2) : f === 'own' ? L.own : (L.cat === f && !L.own)))
     && (!S.lvf || String(L.level) === S.lvf)
     && (!q || q.split(/\s+/).every(w => haystack(L).includes(w))));
+  return [...items.filter(L => !isStory(L)), ...storyOrder(items.filter(isStory))];
 }
 function hilite(text){
   const q = S.query.trim(); if(!q) return esc(text);
@@ -1248,16 +1281,30 @@ function renderList(){
     box.innerHTML = `<p class="empty-side">${S.query ? `「${esc(S.query)}」に合う話題はありません。` : S.lessons.length ? (S.lvf ? `「${esc(LEVEL[S.lvf] || '')}」の話題は、この種類にはまだありません。` : 'この種類の話題はまだありません。') : 'まだ話題がありません。毎朝、映画・アニメ・漫画の話題が届きます。'}</p>`;
     return;
   }
-  let html = S.query ? `<div class="grp"><span>${items.length}件</span></div>` : '', g = '';
-  const gcnt = {}; if(!S.query) items.forEach(L => { const k = groupOf(L.addedAt || L.added); gcnt[k] = (gcnt[k] || 0) + 1; });
-  for(const L of items){
-    const gg = groupOf(L.addedAt || L.added);
-    if(gg !== g && !S.query){ html += `${g ? '</div>' : ''}<div class="grp-box"><div class="grp"><span>${esc(gg)}</span><span class="n">${gcnt[gg]}</span></div>`; g = gg; }
+  const row = (L, label) => {
     const done = S.state.done[L.id], liked = S.state.likes[L.id], nw = isNew(L);
-    html += `<button class="item${nw ? ' unseen' : ''}${S.state.seen[L.id] ? ' seen' : ''}" data-id="${esc(L.id)}" aria-current="${S.view === 'lesson' && S.cur === L.id}">
-      <span class="t">${hilite(L.title)}</span><span class="marks">${nw ? '<span class="new-dot" role="img" aria-label="新着" title="新着"></span>' : ''}${liked ? `<span class="lk" title="いいね">${ICON.heartS}</span>` : ''}${done ? `<span title="クイズ ${done.s}/${done.n}">✓</span>` : ''}</span></button>`;
+    return `<button class="item${nw ? ' unseen' : ''}${S.state.seen[L.id] ? ' seen' : ''}" data-id="${esc(L.id)}" aria-current="${S.view === 'lesson' && S.cur === L.id}" title="${esc(L.title)}">
+      <span class="t">${hilite(label)}</span><span class="marks">${nw ? '<span class="new-dot" role="img" aria-label="新着" title="新着"></span>' : ''}${liked ? `<span class="lk" title="いいね">${ICON.heartS}</span>` : ''}${done ? `<span title="クイズ ${done.s}/${done.n}">✓</span>` : ''}</span></button>`;
+  };
+  if(S.query){ box.innerHTML = `<div class="grp"><span>${items.length}件</span></div>` + items.map(L => row(L, L.title)).join(''); return; }
+  const news = items.filter(L => !isStory(L)), books = items.filter(isStory);
+  let html = '', g = '';
+  const gcnt = {}; news.forEach(L => { const k = groupOf(L.addedAt || L.added); gcnt[k] = (gcnt[k] || 0) + 1; });
+  for(const L of news){
+    const gg = groupOf(L.addedAt || L.added);
+    if(gg !== g){ html += `${g ? '</div>' : ''}<div class="grp-box"><div class="grp"><span>${esc(gg)}</span><span class="n">${gcnt[gg]}</span></div>`; g = gg; }
+    html += row(L, L.title);
   }
-  box.innerHTML = html + (g ? '</div>' : '');
+  if(g) html += '</div>';
+  /* 物語：本の題の見出し（全◯回）の下に「第1回　…」 */
+  if(books.length && news.length) html += '<div class="shelf-h">物語</div>';
+  let b = '';
+  for(const L of books){
+    const k = bookKey(L);
+    if(k !== b){ html += `${b ? '</div>' : ''}<div class="grp-box"><div class="grp bk"><span>『${esc(L.book.titleJa || L.book.title)}』</span><span class="n">全${esc(L.book.parts)}回</span></div>`; b = k; }
+    html += row(L, partLabel(L));
+  }
+  box.innerHTML = html + (b ? '</div>' : '');
 }
 const likedIds = () => Object.entries(S.state.likes).filter(([id]) => S.byId[id]).sort((a, b) => a[1] < b[1] ? 1 : -1).map(([id]) => id);
 const seqList = () => S.seq === 'likes' ? likedIds().map(id => S.byId[id]) : visible();
@@ -1402,9 +1449,10 @@ function renderLesson(){
   const nWords = L.lines.reduce((a, l) => a + wc(l.en), 0);
   const draft = S.cur === '__draft' ? `<div class="draft-bar"><span>このノートはまだ保存していません。</span><button class="btn" data-act="save-draft">保存する</button><button class="btn ghost" data-act="drop-draft">捨てる</button></div>` : '';
   const prev = idx > 0 ? list[idx - 1] : null, next = idx >= 0 && idx < list.length - 1 ? list[idx + 1] : null;
+  const sameBook = o => isStory(L) && isStory(o) && bookKey(o) === bookKey(L);   /* 同じ本のとなりの回は「前の回／次の回」 */
   const pager = (prev || next) ? `<nav class="pager" aria-label="ほかの話題">
-      ${prev ? `<button class="prev" data-open="${esc(prev.id)}"><span class="lbl">${ICON.left}${S.seq === 'likes' ? 'いいねの前' : '前の話題'}<kbd>K</kbd></span><span class="ttl">${esc(prev.title)}</span></button>` : ''}
-      ${next ? `<button class="next" data-open="${esc(next.id)}"><span class="lbl">${ICON.right}${S.seq === 'likes' ? 'いいねの次' : '次の話題'}<kbd>J</kbd></span><span class="ttl">${esc(next.title)}</span></button>` : ''}
+      ${prev ? `<button class="prev" data-open="${esc(prev.id)}"><span class="lbl">${ICON.left}${S.seq === 'likes' ? 'いいねの前' : sameBook(prev) ? '前の回' : '前の話題'}<kbd>K</kbd></span><span class="ttl">${esc(prev.title)}</span></button>` : ''}
+      ${next ? `<button class="next" data-open="${esc(next.id)}"><span class="lbl">${ICON.right}${S.seq === 'likes' ? 'いいねの次' : sameBook(next) ? '次の回' : '次の話題'}<kbd>J</kbd></span><span class="ttl">${esc(next.title)}</span></button>` : ''}
     </nav>` : '';
   th.innerHTML = `${draft}
     <div class="u-row"><div class="u-bubble">${userMsg}</div></div>
@@ -2586,7 +2634,7 @@ function onAction(e){
   else if(a === 'talk') startTalk();
   else if(a === 'retry') retryQuiz();
   else if(a === 'save-draft') saveDraft();
-  else if(a === 'drop-draft'){ delete S.byId.__draft; const first = S.lessons[0]; if(first) openLesson(first.id); else renderNew(); }
+  else if(a === 'drop-draft'){ delete S.byId.__draft; const first = visible()[0] || S.lessons[0]; if(first) openLesson(first.id); else renderNew(); }
   else if(a === 'review') startReview(false);
   else if(a === 'review-all') startReview(true);
   else if(a === 'rv-show'){ RV.shown = true; renderReview(); }
@@ -2757,7 +2805,8 @@ function openInitial(){
   if(hash === 'dict'){ renderDict(); return; }
   if(hash === 'flow'){ renderFlow(); return; }
   const last = LS.get('last', '');
-  const want = S.byId[hash] ? hash : (S.byId[last] ? last : (S.lessons[0] && S.lessons[0].id));
+  const top = visible()[0] || S.lessons[0];   /* 物語は一覧の最後なので、はじめはいちばん新しい話題 */
+  const want = S.byId[hash] ? hash : (S.byId[last] ? last : (top && top.id));
   if(want) openLesson(want); else if(S.sample) renderNew(); else { $('#thread').innerHTML = emptyMain('まだ話題がありません。'); }
 }
 S.state = normState(LS.get('state', null));
