@@ -1,5 +1,4769 @@
 window.LESSONS = [
 {
+"id": "20261008-peterrabbit-01",
+"added": "2026-10-08T23:58",
+"cat": "story",
+"level": 1,
+"title": "『ピーターラビットのおはなし』第1回　入っちゃだめな畑へ",
+"summary": "4ひきの子うさぎのうち、いたずらっ子のピーターは、お母さんに止められていたマグレガーさんの畑に入ってしまいます。マグレガーさんに追いかけられ、くつと上着をなくしながら、じょうろにかくれたり窓から飛び出したりして逃げ回ります。",
+"book": {
+"title": "The Tale of Peter Rabbit",
+"titleJa": "ピーターラビットのおはなし",
+"author": "Beatrix Potter",
+"year": 1902,
+"url": "https://www.gutenberg.org/ebooks/14838",
+"part": 1,
+"parts": 2
+},
+"orig": [
+{
+"en": "But Peter, who was very naughty, ran straight away to Mr. McGregor's garden, and squeezed under the gate!",
+"ja": "でも、とてもいたずらっ子のピーターは、まっすぐマグレガーさんの畑へかけていき、門の下からもぐりこみました！"
+},
+{
+"en": "'Now run along, and don't get into mischief. I am going out.'",
+"ja": "「さあ、遊びにいってらっしゃい。いたずらをしてはいけませんよ。お母さんは出かけてきますからね。」"
+}
+],
+"lines": [
+{
+"en": "Flopsy, Mopsy, Cotton-tail, and Peter were four little rabbits.",
+"ja": "フロプシー、モプシー、カトンテール、ピーターは、4ひきの小さなうさぎでした。",
+"mix": "フロプシー、モプシー、カトンテール、ピーターは、4ひきの小さな {rabbits} でした。"
+},
+{
+"en": "Their mother said, “Don't go into Mr. McGregor's garden.”",
+"ja": "お母さんは「マグレガーさんの畑に入ってはいけませんよ」と言いました。",
+"mix": "お母さんは「マグレガーさんの {garden} に入ってはいけませんよ」と言いました。"
+},
+{
+"en": "But Peter was very naughty and ran straight to the garden.",
+"ja": "でもピーターはとてもいたずらっ子で、まっすぐ畑へ走っていきました。",
+"mix": "でもピーターはとても {naughty} で、まっすぐ畑へ走っていきました。"
+},
+{
+"en": "He ate some lettuces and beans, and then he met Mr. McGregor!",
+"ja": "ピーターはレタスや豆を食べ、そのあと、なんとマグレガーさんに出くわしました！",
+"mix": "ピーターは {lettuces} や {beans} を食べ、そのあと、なんとマグレガーさんに出くわしました！"
+},
+{
+"en": "Mr. McGregor ran after him, and Peter lost his shoes.",
+"ja": "マグレガーさんが追いかけてきて、ピーターはくつをなくしてしまいました。",
+"mix": "マグレガーさんが追いかけてきて、ピーターは {shoes} をなくしてしまいました。"
+},
+{
+"en": "His jacket got caught in a net, so he left it there.",
+"ja": "上着が網に引っかかったので、ピーターは上着をそこに残していきました。",
+"mix": "{jacket} が {net} に引っかかったので、ピーターは上着をそこに残していきました。"
+},
+{
+"en": "He hid in a can and then jumped out of a window.",
+"ja": "ピーターはじょうろの中にかくれ、それから窓から飛び出しました。",
+"mix": "ピーターは {can} の中にかくれ、それから {window} から飛び出しました。"
+}
+],
+"words": [
+{
+"w": "naughty",
+"ja": "いたずらな・言うことをきかない",
+"note": "原文も Peter, who was very naughty。子どもをしかるときによく使うことばです。"
+},
+{
+"w": "garden",
+"ja": "畑・庭",
+"note": "英語の garden は花の庭だけでなく、野菜を育てる畑にも使います。"
+},
+{
+"w": "run after",
+"ja": "〜を追いかける",
+"note": "ran after him ＝ 彼を追いかけた。原文は ran after Peter。"
+},
+{
+"w": "get caught",
+"ja": "引っかかる・つかまる",
+"note": "got caught in a net ＝ 網に引っかかった。"
+},
+{
+"w": "leave",
+"ja": "置いていく（過去形 left）",
+"note": "left it there ＝ そこに置いていった。原文は leaving his jacket behind him。"
+}
+],
+"grammar": {
+"title": "否定の命令文 Don't ＋ 動詞「〜してはいけない」",
+"body": "「〜しないで」「〜してはいけません」と言うときは、Don't（do not）のあとに動詞のもとの形を置きます。命令文なので主語の you は言いません。2文目の Don't go into Mr. McGregor's garden. は「マグレガーさんの畑に入ってはいけません」。be 動詞のときは Don't be 〜 の形になります（Don't be late. 遅れないで）。",
+"ex": [
+{
+"en": "Don't eat too much.",
+"ja": "食べすぎてはいけません。"
+},
+{
+"en": "Don't be afraid.",
+"ja": "こわがらないで。"
+}
+]
+},
+"quiz": [
+{
+"q": "網に引っかかったとき、ピーターは何を置いていった？",
+"choices": [
+"くつ",
+"上着",
+"かご"
+],
+"a": 1,
+"why": "6文目に His jacket got caught in a net, so he left it there. とあります。くつはその前（5文目）になくしました。"
+},
+{
+"q": "naughty の意味は？",
+"choices": [
+"いたずらな",
+"ねむい",
+"やさしい"
+],
+"a": 0,
+"why": "naughty は「いたずらな・言うことをきかない」。3文目 Peter was very naughty。"
+},
+{
+"q": "___ go into the garden.（畑に入ってはいけません）",
+"choices": [
+"Not",
+"No",
+"Don't"
+],
+"a": 2,
+"why": "「〜してはいけない」は Don't ＋ 動詞のもとの形。Not や No で始めることはできません。"
+}
+],
+"talk": {
+"q": "Were you a naughty child like Peter?",
+"ja": "ピーターのように、いたずらっ子でしたか？",
+"hint": "Yes, I was. I often ___. / No, I wasn't. I was ___."
+},
+"grad": [
+{
+"q1": "フロプシー、モプシー、カトンテール、{Peter} は、4ひきの小さな {rabbits} でした。",
+"q2": "フロプシー、モプシー、カトンテール、{Peter} は、{were four} 小さな {rabbits}。",
+"q3": "{Flopsy, Mopsy, Cotton-tail, and Peter were four} 小さな {rabbits.}"
+},
+{
+"q1": "お母さんは「{Mr. McGregor's garden} に入ってはいけませんよ」と言いました。",
+"q2": "お母さんは「{Don't go into Mr. McGregor's garden}」と言いました。",
+"q3": "{Their} お母さん {said, “Don't go into Mr. McGregor's garden.”}"
+},
+{
+"q1": "でも {Peter} はとても {naughty} で、まっすぐ {the garden} へ走っていきました。",
+"q2": "{But Peter was very naughty} で、まっすぐ {the garden} へ走っていきました。",
+"q3": "{But Peter was very naughty and ran} まっすぐ {to the garden.}"
+},
+{
+"q1": "ピーターは {some lettuces and beans} を食べ、そのあと、なんとマグレガーさんに出くわしました！",
+"q2": "{He ate some lettuces and beans}、そのあと、なんと {Mr. McGregor} に出くわしました！",
+"q3": "{He ate some lettuces and beans, and then he} 出くわした {Mr. McGregor!}"
+},
+{
+"q1": "{Mr. McGregor} が追いかけてきて、ピーターは {his shoes} をなくしてしまいました。",
+"q2": "{Mr. McGregor ran after him}、ピーターは {his shoes} をなくしてしまいました。",
+"q3": "{Mr. McGregor ran after him, and Peter} なくした {his shoes.}"
+},
+{
+"q1": "{His jacket} が {a net} に引っかかったので、ピーターは上着をそこに残していきました。",
+"q2": "{His jacket got caught in a net} ので、ピーターは上着をそこに残していきました。",
+"q3": "{His jacket got caught in a net, so he} 残していった {it there.}"
+},
+{
+"q1": "ピーターは {a can} の中にかくれ、それから {a window} から飛び出しました。",
+"q2": "{He hid in a can}、それから {a window} から飛び出しました。",
+"q3": "{He hid in a can and then} 飛び出した {out of a window.}"
+}
+],
+"gloss": {
+"flopsy": "フロプシー（うさぎの名前）",
+"mopsy": "モプシー（うさぎの名前）",
+"cotton-tail": "カトンテール（うさぎの名前）",
+"and": "〜と・そして",
+"peter": "ピーター（うさぎの名前）",
+"were": "〜だった（areの過去形）",
+"four": "4つの・4ひきの",
+"little": "小さな",
+"rabbits": "うさぎ（rabbitの複数形）",
+"their": "彼らの",
+"mother": "お母さん",
+"said": "言った（sayの過去形）",
+"don't": "〜してはいけない",
+"go": "行く",
+"into": "〜の中へ",
+"mr": "〜さん（男の人）",
+"mcgregor's": "マグレガーさんの",
+"garden": "畑・庭",
+"but": "でも",
+"was": "〜だった（isの過去形）",
+"very": "とても",
+"naughty": "いたずらな",
+"ran": "走った（runの過去形）",
+"straight": "まっすぐ",
+"to": "〜へ",
+"the": "その",
+"he": "彼は",
+"ate": "食べた（eatの過去形）",
+"some": "いくつかの",
+"lettuces": "レタス（lettuceの複数形）",
+"beans": "豆（beanの複数形）",
+"then": "そのあと・それから",
+"met": "出会った（meetの過去形）",
+"mcgregor": "マグレガー（人名）",
+"after": "〜のあとを",
+"him": "彼を",
+"lost": "なくした（loseの過去形）",
+"his": "彼の",
+"shoes": "くつ（shoeの複数形）",
+"jacket": "上着",
+"got": "〜になった（getの過去形）",
+"caught": "引っかかった（catchの過去分詞）",
+"in": "〜の中に",
+"a": "ひとつの",
+"net": "網",
+"so": "だから",
+"left": "置いていった（leaveの過去形）",
+"it": "それを",
+"there": "そこに",
+"hid": "かくれた（hideの過去形）",
+"can": "じょうろ（水を入れる缶）",
+"jumped": "飛んだ（jumpの過去形）",
+"out": "外へ",
+"of": "〜から",
+"window": "窓",
+"were four": "4ひきの〜だった",
+"flopsy mopsy cotton-tail and peter were four": "4人きょうだいは4ひきの〜だった",
+"mr mcgregor's garden": "マグレガーさんの畑",
+"don't go into mr mcgregor's garden": "マグレガーさんの畑に入らないで",
+"said don't go into mr mcgregor's garden": "「畑に入らないで」と言った",
+"the garden": "その畑",
+"but peter was very naughty": "でもピーターはとてもいたずら",
+"but peter was very naughty and ran": "でもピーターはいたずらで走った",
+"to the garden": "畑へ",
+"some lettuces and beans": "レタスや豆",
+"he ate some lettuces and beans": "彼はレタスや豆を食べた",
+"mr mcgregor": "マグレガーさん",
+"he ate some lettuces and beans and then he": "レタスや豆を食べ、そのあと彼は",
+"his shoes": "彼のくつ",
+"mr mcgregor ran after him": "マグレガーさんが彼を追いかけた",
+"mr mcgregor ran after him and peter": "マグレガーさんが追い、ピーターは",
+"his jacket": "彼の上着",
+"a net": "網",
+"his jacket got caught in a net": "上着が網に引っかかった",
+"his jacket got caught in a net so he": "上着が網に引っかかり、彼は",
+"it there": "それをそこに",
+"a can": "じょうろ",
+"a window": "窓",
+"he hid in a can": "彼はじょうろにかくれた",
+"he hid in a can and then": "じょうろにかくれ、それから",
+"out of a window": "窓から外へ"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-peterrabbit-02",
+"added": "2026-10-08T23:57",
+"cat": "story",
+"level": 1,
+"title": "『ピーターラビットのおはなし』第2回　門をくぐって、やっと家へ",
+"summary": "畑で迷子になったピーターは、ネズミに道をたずねても答えてもらえません。やっと門を見つけて、その下をすりぬけて家に帰りますが、その晩は具合が悪くなり、カモミールティーを飲まされます。",
+"book": {
+"title": "The Tale of Peter Rabbit",
+"titleJa": "ピーターラビットのおはなし",
+"author": "Beatrix Potter",
+"year": 1902,
+"url": "https://www.gutenberg.org/ebooks/14838",
+"part": 2,
+"parts": 2
+},
+"orig": [
+{
+"en": "He slipped underneath the gate, and was safe at last in the wood outside the garden.",
+"ja": "ピーターは門の下をすりぬけ、とうとう畑の外の森に出て、もう安心でした。"
+},
+{
+"en": "But Flopsy, Mopsy, and Cotton-tail had bread and milk and blackberries for supper.",
+"ja": "でも、フロプシーとモプシーとカトンテールは、夕ごはんにパンと牛乳とブラックベリーを食べました。"
+}
+],
+"lines": [
+{
+"en": "Peter rested, but he did not know which way to go.",
+"ja": "ピーターはひと休みしましたが、どっちへ行けばいいのかわかりませんでした。",
+"mix": "ピーターはひと休みしましたが、どの {way} へ行けばいいのかわかりませんでした。"
+},
+{
+"en": "He asked a mouse the way, but she could not answer.",
+"ja": "ピーターはネズミに道をたずねましたが、ネズミは答えることができませんでした。",
+"mix": "ピーターは {mouse} に道をたずねましたが、ネズミは答えることができませんでした。"
+},
+{
+"en": "Then he saw Mr. McGregor working, and he saw the gate, too!",
+"ja": "すると、マグレガーさんが働いているのが見え、門も見えました！",
+"mix": "すると、マグレガーさんが働いているのが見え、{gate} も見えました！"
+},
+{
+"en": "Peter ran as fast as he could and slipped under the gate.",
+"ja": "ピーターはできるだけ速く走って、門の下をすりぬけました。",
+"mix": "ピーターはできるだけ速く走って、{gate} の下をすりぬけました。"
+},
+{
+"en": "Mr. McGregor used Peter's jacket and shoes for a scarecrow.",
+"ja": "マグレガーさんは、ピーターの上着とくつを、かかしに使いました。",
+"mix": "マグレガーさんは、ピーターの上着とくつを、{scarecrow} に使いました。"
+},
+{
+"en": "At home, Peter felt sick, so his mother gave him camomile tea.",
+"ja": "家に帰ったピーターは具合が悪くなったので、お母さんはカモミールティーを飲ませました。",
+"mix": "家に帰ったピーターは具合が悪くなったので、お母さんは {camomile tea} を飲ませました。"
+},
+{
+"en": "But Flopsy, Mopsy, and Cotton-tail had bread, milk, and blackberries for supper.",
+"ja": "でも、フロプシー、モプシー、カトンテールは、夕ごはんにパンと牛乳とブラックベリーを食べました。",
+"mix": "でも、フロプシー、モプシー、カトンテールは、夕ごはんにパンと牛乳と {blackberries} を食べました。"
+}
+],
+"words": [
+{
+"w": "way",
+"ja": "道・方向",
+"note": "which way to go ＝ どっちへ行けばいいか。ask 人 the way ＝ 人に道をたずねる。"
+},
+{
+"w": "as fast as he could",
+"ja": "できるだけ速く",
+"note": "as ～ as 人 could で「（その人に）できるだけ〜」。原文も as fast as he could go。"
+},
+{
+"w": "slip under",
+"ja": "〜の下をすりぬける",
+"note": "原文は slipped underneath the gate（門の下をすりぬけた）。"
+},
+{
+"w": "scarecrow",
+"ja": "かかし",
+"note": "scare（こわがらせる）＋ crow（カラス）でできたことばです。"
+},
+{
+"w": "supper",
+"ja": "夕ごはん",
+"note": "for supper ＝ 夕ごはんに。家で食べるふだんの夕食によく使います。"
+}
+],
+"grammar": {
+"title": "could not ＋ 動詞「〜できなかった」",
+"body": "can（〜できる）の過去形は could です。「〜できなかった」は could not（短くすると couldn't）のあとに動詞のもとの形を置きます。主語が he でも she でも形は同じです。2文目の she could not answer は「ネズミは答えることができなかった」。",
+"ex": [
+{
+"en": "I could not sleep last night.",
+"ja": "ゆうべは眠れませんでした。"
+},
+{
+"en": "She couldn't find her key.",
+"ja": "彼女はかぎを見つけられませんでした。"
+}
+]
+},
+"quiz": [
+{
+"q": "マグレガーさんは、ピーターの上着とくつを何に使った？",
+"choices": [
+"ぼうし",
+"ベッド",
+"かかし"
+],
+"a": 2,
+"why": "5文目 Mr. McGregor used Peter's jacket and shoes for a scarecrow.（かかしに使った）とあります。"
+},
+{
+"q": "supper の意味は？",
+"choices": [
+"朝ごはん",
+"夕ごはん",
+"おやつ"
+],
+"a": 1,
+"why": "supper は「夕ごはん」。7文目 for supper ＝ 夕ごはんに。"
+},
+{
+"q": "The mouse ___ answer.（ネズミは答えられなかった）",
+"choices": [
+"could not",
+"can",
+"could"
+],
+"a": 0,
+"why": "「〜できなかった」は could not ＋ 動詞のもとの形。can は今のこと、could だけだと「答えられた」になります。"
+}
+],
+"talk": {
+"q": "What do you drink when you feel sick?",
+"ja": "具合が悪いとき、何を飲みますか？",
+"hint": "When I feel sick, I drink ___."
+},
+"grad": [
+{
+"q1": "{Peter} はひと休みしましたが、どの {way} へ行けばいいのかわかりませんでした。",
+"q2": "{Peter rested}、{but he did not know} どの {way} へ行けばいいのか。",
+"q3": "{Peter rested, but he did not know which way} 行けばいいのか。"
+},
+{
+"q1": "ピーターは {a mouse} に {the way} をたずねましたが、ネズミは答えることができませんでした。",
+"q2": "{He asked a mouse the way}、でもネズミは答えることができませんでした。",
+"q3": "{He asked a mouse the way, but she could not} 答える。"
+},
+{
+"q1": "すると、{Mr. McGregor} が働いているのが見え、{the gate} も見えました！",
+"q2": "{Then he saw Mr. McGregor working}、{the gate} も見えました！",
+"q3": "{Then he saw Mr. McGregor working, and he} 見た {the gate, too!}"
+},
+{
+"q1": "{Peter} はできるだけ速く走って、{the gate} の下をすりぬけました。",
+"q2": "{Peter ran} できるだけ {fast}、{the gate} の下をすりぬけました。",
+"q3": "{Peter ran as fast as he could and} すりぬけた {under the gate.}"
+},
+{
+"q1": "マグレガーさんは、ピーターの {jacket} と {shoes} を、{a scarecrow} に使いました。",
+"q2": "{Mr. McGregor} は、ピーターの {jacket and shoes} を、{a scarecrow} に使いました。",
+"q3": "{Mr. McGregor} 使った {Peter's jacket and shoes for a scarecrow.}"
+},
+{
+"q1": "家に帰ったピーターは具合が悪くなったので、{his mother} は {camomile tea} を飲ませました。",
+"q2": "{At home}、ピーターは具合が悪くなったので、{his mother gave him camomile tea}。",
+"q3": "{At home, Peter felt} 具合が悪い、{so his mother gave him camomile tea.}"
+},
+{
+"q1": "でも、フロプシー、モプシー、カトンテールは、{supper} に {bread}、{milk}、{blackberries} を食べました。",
+"q2": "でも、フロプシー、モプシー、カトンテールは、{bread, milk, and blackberries for supper} を食べました。",
+"q3": "{But Flopsy, Mopsy, and Cotton-tail} 食べた {bread, milk, and blackberries for supper.}"
+}
+],
+"gloss": {
+"peter": "ピーター（うさぎの名前）",
+"rested": "休んだ（restの過去形）",
+"but": "でも",
+"he": "彼は",
+"did": "（did notで）〜しなかった",
+"not": "〜ない",
+"know": "知っている・わかる",
+"which": "どの・どちらの",
+"way": "道・方向",
+"to": "〜へ・〜すべき",
+"go": "行く",
+"asked": "たずねた（askの過去形）",
+"a": "ひとつの・1ぴきの",
+"mouse": "ネズミ",
+"the": "その",
+"she": "彼女は（ネズミのこと）",
+"could": "〜できた（canの過去形）",
+"answer": "答える",
+"then": "すると・それから",
+"saw": "見た（seeの過去形）",
+"mr": "〜さん（男の人）",
+"mcgregor": "マグレガー（人名）",
+"working": "働いている",
+"and": "そして・〜と",
+"gate": "門",
+"too": "〜も",
+"ran": "走った（runの過去形）",
+"as": "（as 〜 as で）同じくらい",
+"fast": "速く",
+"slipped": "すりぬけた（slipの過去形）",
+"under": "〜の下を",
+"used": "使った（useの過去形）",
+"peter's": "ピーターの",
+"jacket": "上着",
+"shoes": "くつ（shoeの複数形）",
+"for": "〜として・〜に",
+"scarecrow": "かかし",
+"felt": "感じた（feelの過去形）",
+"sick": "具合が悪い",
+"so": "だから",
+"his": "彼の",
+"mother": "お母さん",
+"gave": "あたえた（giveの過去形）",
+"him": "彼に",
+"camomile": "カモミール（ハーブ）",
+"tea": "お茶",
+"flopsy": "フロプシー（うさぎの名前）",
+"mopsy": "モプシー（うさぎの名前）",
+"cotton-tail": "カトンテール（うさぎの名前）",
+"had": "食べた（haveの過去形）",
+"bread": "パン",
+"milk": "牛乳",
+"blackberries": "ブラックベリー（複数形）",
+"supper": "夕ごはん",
+"camomile tea": "カモミールティー",
+"peter rested": "ピーターは休んだ",
+"but he did not know": "でも彼はわからなかった",
+"peter rested but he did not know which way": "休んだが、どの道かわからなかった",
+"a mouse": "1ぴきのネズミ",
+"the way": "道",
+"he asked a mouse the way": "彼はネズミに道をたずねた",
+"he asked a mouse the way but she could not": "道をたずねたが、ネズミはできなかった",
+"mr mcgregor": "マグレガーさん",
+"the gate": "門",
+"then he saw mr mcgregor working": "マグレガーさんが働くのが見えた",
+"then he saw mr mcgregor working and he": "マグレガーさんが見え、そして彼は",
+"the gate too": "門も",
+"peter ran": "ピーターは走った",
+"peter ran as fast as he could and": "ピーターは全速力で走り、",
+"under the gate": "門の下を",
+"a scarecrow": "かかし",
+"jacket and shoes": "上着とくつ",
+"peter's jacket and shoes for a scarecrow": "ピーターの上着とくつをかかしに",
+"his mother": "彼のお母さん",
+"his mother gave him camomile tea": "お母さんはカモミールティーをあげた",
+"so his mother gave him camomile tea": "だからお母さんはカモミールティーを",
+"bread milk and blackberries for supper": "夕ごはんにパンと牛乳とベリー",
+"but flopsy mopsy and cotton-tail": "でもフロプシーたち3びきは",
+"at": "〜で",
+"home": "家",
+"at home": "家で",
+"at home peter felt": "家でピーターは〜と感じた"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-ripvanwinkle-01",
+"added": "2026-10-08T22:58",
+"cat": "story",
+"level": 2,
+"title": "『リップ・ヴァン・ウィンクル』第1回　人気者だけど、畑仕事は大きらい",
+"summary": "カーツキル山地のふもとの村に住むリップは、やさしくて村の人気者ですが、自分の畑の仕事は大きらい。奥さんにしかられてばかりの彼は、犬のウルフと森へ出かけ、ある秋の夕方、山の高いところで奥さんのことを思ってため息をつきます。",
+"book": {
+"title": "Rip Van Winkle",
+"titleJa": "リップ・ヴァン・ウィンクル",
+"author": "Washington Irving",
+"year": 1819,
+"url": "https://www.gutenberg.org/ebooks/2048",
+"part": 1,
+"parts": 3
+},
+"orig": [
+{
+"en": "In a word, Rip was ready to attend to anybody’s business but his own; but as to doing family duty, and keeping his farm in order, he found it impossible.",
+"ja": "ひと言でいえば、リップは自分のこと以外なら、だれの用事でも進んで引き受けるのでした。けれども、家の務めを果たすことや、自分の畑をきちんとしておくことは、とてもできなかったのです。"
+}
+],
+"lines": [
+{
+"en": "Rip Van Winkle lived in an old Dutch village by the Kaatskill mountains.",
+"ja": "リップ・ヴァン・ウィンクルは、カーツキル山地のそばの、オランダ系の古い村に住んでいました。",
+"mix": "リップ・ヴァン・ウィンクルは、カーツキル山地のそばの、オランダ系の古い {village} に住んでいました。"
+},
+{
+"en": "He was a kind man, and the village children loved him.",
+"ja": "彼はやさしい人で、村の子どもたちは彼が大好きでした。",
+"mix": "彼はやさしい人で、村の {children} は彼が大好きでした。"
+},
+{
+"en": "He would fish all day, but he hated working on his own farm.",
+"ja": "彼はよく一日じゅう魚つりをしていましたが、自分の畑で働くのは大きらいでした。",
+"mix": "彼はよく一日じゅう魚つりをしていましたが、自分の {farm} で働くのは大きらいでした。"
+},
+{
+"en": "His wife, Dame Van Winkle, scolded him from morning till night.",
+"ja": "奥さんのヴァン・ウィンクル夫人は、朝から晩まで彼をしかってばかりいました。",
+"mix": "{wife} のヴァン・ウィンクル夫人は、朝から晩まで彼をしかってばかりいました。"
+},
+{
+"en": "He liked to sit with his friends on a bench in front of the inn.",
+"ja": "彼は、宿屋の前のベンチで仲間たちとすわっているのが好きでした。",
+"mix": "彼は、{inn} の前の {bench} で仲間たちとすわっているのが好きでした。"
+},
+{
+"en": "He often went into the woods with his gun and his dog, Wolf.",
+"ja": "彼はよく、銃を持ち、犬のウルフを連れて森へ出かけました。",
+"mix": "彼はよく、銃を持ち、{dog} のウルフを連れて {the woods} へ出かけました。"
+},
+{
+"en": "One autumn evening, high in the mountains, he sighed and thought of his wife.",
+"ja": "ある秋の夕方、山の高いところで、リップはため息をつき、奥さんのことを思いました。",
+"mix": "ある秋の夕方、山の高いところで、リップはため息をつき、{wife} のことを思いました。"
+}
+],
+"words": [
+{
+"w": "village",
+"ja": "村",
+"note": "town（町）より小さい集まり。the village children ＝ 村の子どもたち。"
+},
+{
+"w": "farm",
+"ja": "畑・農場",
+"note": "原文には keeping his farm in order（畑をきちんとしておくこと）ができなかった、とあります。"
+},
+{
+"w": "scold",
+"ja": "しかる（過去形 scolded）",
+"note": "from morning till night ＝ 朝から晩まで。"
+},
+{
+"w": "inn",
+"ja": "宿屋",
+"note": "泊まれて、食事やお酒も出す昔の宿。リップたちは店の前のベンチに集まっていました。"
+},
+{
+"w": "sigh",
+"ja": "ため息をつく（過去形 sighed）",
+"note": "名詞の「ため息」も sigh。原文は heaved a heavy sigh（深いため息をついた）。"
+}
+],
+"grammar": {
+"title": "would ＋ 動詞「（昔は）よく〜したものだ」",
+"body": "would は will の過去形ですが、「昔はよく〜したものだ」と、過去にくり返していた動作を話すときにも使います。3文目の He would fish all day は「よく一日じゅう魚つりをしていたものだった」。この would は動作だけに使い、live や be のような「状態」には使いません（状態は used to：He used to live in a village.）。",
+"ex": [
+{
+"en": "My grandfather would tell me old stories.",
+"ja": "祖父はよく昔話をしてくれたものです。"
+},
+{
+"en": "On Sundays, we would go fishing in the river.",
+"ja": "日曜日には、よく川へ釣りに行ったものでした。"
+}
+]
+},
+"quiz": [
+{
+"q": "リップが大きらいだったことは？",
+"choices": [
+"魚つり",
+"森へ出かけること",
+"自分の畑で働くこと"
+],
+"a": 2,
+"why": "3文目 he hated working on his own farm（自分の畑で働くのが大きらい）とあります。"
+},
+{
+"q": "scold の意味は？",
+"choices": [
+"しかる",
+"ほめる",
+"わらう"
+],
+"a": 0,
+"why": "scold は「しかる」。4文目 scolded him from morning till night。"
+},
+{
+"q": "He ___ fish all day.（彼は昔、よく一日じゅう魚つりをしたものだった）",
+"choices": [
+"will",
+"would",
+"wants"
+],
+"a": 1,
+"why": "昔くり返した動作は would ＋ 動詞のもとの形。will は未来のこと、wants はあとに to が要り、意味も合いません。"
+}
+],
+"talk": {
+"q": "Do you like fishing like Rip?",
+"ja": "リップのように、魚つりは好きですか？",
+"hint": "Yes, I do. I like ___. / No, I don't. I like ___ better."
+},
+"grad": [
+{
+"q1": "リップ・ヴァン・ウィンクルは、{the Kaatskill mountains} のそばの、オランダ系の古い {village} に住んでいました。",
+"q2": "{Rip Van Winkle lived in} オランダ系の古い {village}、{by the Kaatskill mountains}。",
+"q3": "{Rip Van Winkle lived in an} 古い {Dutch village by the Kaatskill mountains.}"
+},
+{
+"q1": "彼はやさしい {man} で、{the village children} は彼が大好きでした。",
+"q2": "{He was} やさしい {man} で、{the village children} は彼が大好きでした。",
+"q3": "{He was a} やさしい {man, and the village children loved him.}"
+},
+{
+"q1": "彼はよく {all day} 魚つりをしていましたが、{his own farm} で働くのは大きらいでした。",
+"q2": "{He would fish all day}、でも {his own farm} で働くのは大きらいでした。",
+"q3": "{He would fish all day, but he} 大きらいだった {working on his own farm.}"
+},
+{
+"q1": "{His wife} のヴァン・ウィンクル夫人は、{morning} から {night} まで彼をしかってばかりいました。",
+"q2": "{His wife} のヴァン・ウィンクル夫人は、{from morning till night} 彼をしかってばかりいました。",
+"q3": "{His wife, Dame Van Winkle,} しかった {him from morning till night.}"
+},
+{
+"q1": "彼は、{the inn} の前の {a bench} で仲間たちとすわっているのが好きでした。",
+"q2": "{He liked to sit}、{the inn} の前の {a bench} で、仲間たちと。",
+"q3": "{He liked to sit with his} 仲間たち {on a bench in front of the inn.}"
+},
+{
+"q1": "彼はよく、銃を持ち、{his dog, Wolf} を連れて {the woods} へ出かけました。",
+"q2": "{He often went into the woods}、銃を持ち、{his dog, Wolf} を連れて。",
+"q3": "{He often went into the woods with his} 銃 {and his dog, Wolf.}"
+},
+{
+"q1": "ある {autumn evening}、山の高いところで、リップはため息をつき、{his wife} のことを思いました。",
+"q2": "{One autumn evening}、山の高いところで、リップはため息をつき、{thought of his wife}。",
+"q3": "{One autumn evening, high in the mountains, he} ため息をつき {and thought of his wife.}"
+}
+],
+"gloss": {
+"rip": "リップ（人名）",
+"van": "ヴァン（名字の一部）",
+"winkle": "ウィンクル（名字の一部）",
+"lived": "住んでいた（liveの過去形）",
+"in": "〜に・〜の中で",
+"an": "ひとつの",
+"old": "古い",
+"dutch": "オランダの・オランダ系の",
+"village": "村",
+"by": "〜のそばの",
+"the": "その",
+"kaatskill": "カーツキル（山地の名前）",
+"mountains": "山々・山地",
+"he": "彼は",
+"was": "〜だった（isの過去形）",
+"a": "ひとりの・ひとつの",
+"kind": "やさしい・親切な",
+"man": "男の人・人",
+"and": "そして・〜と",
+"children": "子どもたち（childの複数形）",
+"loved": "大好きだった（loveの過去形）",
+"him": "彼を",
+"would": "（昔は）よく〜したものだ",
+"fish": "魚つりをする",
+"all": "〜じゅう（all dayで一日じゅう）",
+"day": "日",
+"but": "でも",
+"hated": "大きらいだった（hateの過去形）",
+"working": "働くこと",
+"on": "〜で・〜の上に",
+"his": "彼の",
+"own": "自分の",
+"farm": "畑・農場",
+"wife": "妻・奥さん",
+"dame": "〜夫人（昔の呼び方）",
+"scolded": "しかった（scoldの過去形）",
+"from": "〜から",
+"morning": "朝",
+"till": "〜まで",
+"night": "夜",
+"liked": "好きだった（likeの過去形）",
+"to": "〜すること",
+"sit": "すわる",
+"with": "〜といっしょに・〜を持って",
+"friends": "友だち・仲間（複数形）",
+"bench": "ベンチ",
+"front": "前（in front ofで〜の前に）",
+"of": "〜の",
+"inn": "宿屋",
+"often": "よく・しばしば",
+"went": "行った（goの過去形）",
+"into": "〜の中へ",
+"woods": "森",
+"gun": "銃",
+"dog": "犬",
+"wolf": "ウルフ（犬の名前）",
+"one": "ある",
+"autumn": "秋",
+"evening": "夕方",
+"high": "高いところで",
+"sighed": "ため息をついた（sighの過去形）",
+"thought": "思った（thinkの過去形）",
+"the woods": "森",
+"the kaatskill mountains": "カーツキル山地",
+"rip van winkle lived in": "リップ・ヴァン・ウィンクルは〜に住んだ",
+"by the kaatskill mountains": "カーツキル山地のそばの",
+"rip van winkle lived in an": "リップは〜に住んでいた",
+"dutch village by the kaatskill mountains": "カーツキル山地そばのオランダ系の村",
+"the village children": "村の子どもたち",
+"he was": "彼は〜だった",
+"he was a": "彼は〜だった",
+"man and the village children loved him": "人で、村の子どもたちに好かれた",
+"all day": "一日じゅう",
+"his own farm": "自分の畑",
+"he would fish all day": "よく一日じゅう魚つりをした",
+"he would fish all day but he": "一日じゅう魚つりをしたが、彼は",
+"working on his own farm": "自分の畑で働くこと",
+"his wife": "彼の奥さん",
+"from morning till night": "朝から晩まで",
+"his wife dame van winkle": "奥さんのヴァン・ウィンクル夫人",
+"him from morning till night": "彼を朝から晩まで",
+"the inn": "宿屋",
+"a bench": "ベンチ",
+"he liked to sit": "彼はすわるのが好きだった",
+"he liked to sit with his": "彼は自分の〜とすわるのが好きだった",
+"on a bench in front of the inn": "宿屋の前のベンチで",
+"his dog wolf": "彼の犬のウルフ",
+"he often went into the woods": "彼はよく森へ出かけた",
+"he often went into the woods with his": "彼はよく自分の〜を持って森へ",
+"and his dog wolf": "と、犬のウルフ",
+"autumn evening": "秋の夕方",
+"one autumn evening": "ある秋の夕方",
+"thought of his wife": "奥さんのことを思った",
+"one autumn evening high in the mountains he": "ある秋の夕方、山の高くで彼は",
+"and thought of his wife": "そして奥さんのことを思った"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-ripvanwinkle-02",
+"added": "2026-10-08T22:57",
+"cat": "story",
+"level": 2,
+"title": "『リップ・ヴァン・ウィンクル』第2回　山の男たちと、ふしぎな眠り",
+"summary": "山でふしぎな老人に出会ったリップは、ナインピンズをする男たちの酒を飲んで眠りこみます。目をさますとウルフはいなくなっていて、村には知らない人ばかり。ひげは1フィートも伸び、家は空っぽでした。",
+"book": {
+"title": "Rip Van Winkle",
+"titleJa": "リップ・ヴァン・ウィンクル",
+"author": "Washington Irving",
+"year": 1819,
+"url": "https://www.gutenberg.org/ebooks/2048",
+"part": 2,
+"parts": 3
+},
+"orig": [
+{
+"en": "“Surely,” thought Rip, “I have not slept here all night.”",
+"ja": "「まさか、ここでひと晩じゅう眠っていたわけじゃないだろうな」とリップは思いました。"
+},
+{
+"en": "The constant recurrence of this gesture induced Rip, involuntarily, to do the same, when, to his astonishment, he found his beard had grown a foot long!",
+"ja": "みんながくり返しそのしぐさ（あごをなでること）をするので、リップも思わず同じようにしてみました。すると驚いたことに、あごひげが1フィートも伸びていたのです！"
+}
+],
+"lines": [
+{
+"en": "As he started down, Rip heard a voice calling his name.",
+"ja": "山を下りはじめたとき、リップは自分の名前を呼ぶ声を聞きました。",
+"mix": "山を下りはじめたとき、リップは自分の {name} を呼ぶ {voice} を聞きました。"
+},
+{
+"en": "He helped a strange old man carry a keg up the mountain.",
+"ja": "リップは、見なれない老人がたるを山の上へ運ぶのを手伝いました。",
+"mix": "リップは、見なれない {old man} がたるを山の上へ運ぶのを手伝いました。"
+},
+{
+"en": "There, odd men were playing ninepins, and the balls sounded like thunder.",
+"ja": "そこでは、奇妙な男たちがナインピンズ（ボウリングに似た遊び）をしていて、球の音がかみなりのように聞こえました。",
+"mix": "そこでは、奇妙な男たちが {ninepins} をしていて、球の音が {thunder} のように聞こえました。"
+},
+{
+"en": "Rip drank from the flagon again and again and fell into a deep sleep.",
+"ja": "リップは酒の入れ物から何度も何度も飲んで、深い眠りに落ちました。",
+"mix": "リップは {flagon} から何度も何度も飲んで、深い {sleep} に落ちました。"
+},
+{
+"en": "When he woke up, Wolf was gone, and he found an old, rusty gun.",
+"ja": "目をさますと、ウルフはいなくなっていて、リップは古くてさびた銃を見つけました。",
+"mix": "目をさますと、ウルフはいなくなっていて、リップは古くてさびた {gun} を見つけました。"
+},
+{
+"en": "Rip knew nobody in the village, and his beard was a foot long!",
+"ja": "村には知っている人がひとりもおらず、あごひげは1フィート（約30センチ）にもなっていました！",
+"mix": "村には知っている人がひとりもおらず、{beard} は1フィート（約30センチ）にもなっていました！"
+},
+{
+"en": "His house was empty and falling apart, and no one answered his call.",
+"ja": "家は空っぽで、くずれかけていて、呼んでもだれも答えませんでした。",
+"mix": "{house} は空っぽで、くずれかけていて、呼んでもだれも答えませんでした。"
+}
+],
+"words": [
+{
+"w": "keg",
+"ja": "小さなたる",
+"note": "お酒などを入れる小さなたる。原文では a stout keg, that seemed full of liquor（お酒でいっぱいらしい、がっしりしたたる）。"
+},
+{
+"w": "ninepins",
+"ja": "ナインピンズ（九柱戯）",
+"note": "9本のピンを球で倒す、ボウリングに似た昔の遊び。"
+},
+{
+"w": "thunder",
+"ja": "かみなり（の音）",
+"note": "sound like thunder ＝ かみなりのように聞こえる。"
+},
+{
+"w": "rusty",
+"ja": "さびた",
+"note": "rust（さび）に y がついて「さびた」。"
+},
+{
+"w": "beard",
+"ja": "あごひげ",
+"note": "a foot long ＝ 1フィート（約30センチ）の長さ。"
+}
+],
+"grammar": {
+"title": "hear / see ＋ 人・もの ＋ 〜ing「〜が…しているのが聞こえる・見える」",
+"body": "hear（聞こえる）や see（見える）のあとに「人・もの ＋ 〜ing」を置くと、「〜が…しているところが聞こえる・見える」という意味になります。動作のとちゅうを聞いた・見たときの言い方です。1文目の Rip heard a voice calling his name は「自分の名前を呼ぶ声が聞こえた」。動作を初めから終わりまで聞いた・見たときは、〜ing ではなく動詞のもとの形を使います（I saw him cross the street. 彼が通りをわたるのを見た）。",
+"ex": [
+{
+"en": "I heard someone singing outside.",
+"ja": "外でだれかが歌っているのが聞こえました。"
+},
+{
+"en": "We saw the children playing in the park.",
+"ja": "子どもたちが公園で遊んでいるのが見えました。"
+}
+]
+},
+"quiz": [
+{
+"q": "目をさましたリップが見つけたものは？",
+"choices": [
+"新しい銃",
+"古くてさびた銃",
+"犬のウルフ"
+],
+"a": 1,
+"why": "5文目 Wolf was gone, and he found an old, rusty gun. とあります。ウルフはいなくなっていました。"
+},
+{
+"q": "beard の意味は？",
+"choices": [
+"まゆげ",
+"かみの毛",
+"あごひげ"
+],
+"a": 2,
+"why": "beard は「あごひげ」。6文目 his beard was a foot long。"
+},
+{
+"q": "Rip heard a voice ___ his name.（リップは、声が自分の名前を呼んでいるのを聞いた）",
+"choices": [
+"calling",
+"calls",
+"called"
+],
+"a": 0,
+"why": "hear ＋ もの ＋ 〜ing で「〜が…しているのが聞こえる」。"
+}
+],
+"talk": {
+"q": "Have you ever slept for a very long time?",
+"ja": "とても長く眠ってしまったことはありますか？",
+"hint": "Yes. I once slept for ___ hours. / No, I haven't."
+},
+"grad": [
+{
+"q1": "山を下りはじめたとき、リップは {his name} を呼ぶ {a voice} を聞きました。",
+"q2": "山を下りはじめたとき、{Rip heard a voice calling his name}。",
+"q3": "{As he} 下りはじめた、{Rip heard a voice calling his name.}"
+},
+{
+"q1": "リップは、見なれない {old man} が {a keg} を山の上へ運ぶのを手伝いました。",
+"q2": "{He helped} 見なれない {old man}、{a keg} を山の上へ運ぶのを。",
+"q3": "{He helped a} 見なれない {old man carry a keg up the mountain.}"
+},
+{
+"q1": "そこでは、奇妙な {men} が {ninepins} をしていて、球の音が {thunder} のように聞こえました。",
+"q2": "そこでは、奇妙な {men were playing ninepins}、球の音が {thunder} のように聞こえました。",
+"q3": "{There,} 奇妙な {men were playing ninepins, and the balls sounded like thunder.}"
+},
+{
+"q1": "リップは {the flagon} から何度も何度も飲んで、深い {sleep} に落ちました。",
+"q2": "{Rip drank from the flagon} 何度も何度も、深い {sleep} に落ちました。",
+"q3": "{Rip drank from the flagon again and again and fell into a} 深い {sleep.}"
+},
+{
+"q1": "目をさますと、{Wolf} はいなくなっていて、リップは古くてさびた {gun} を見つけました。",
+"q2": "{When he woke up}、{Wolf was gone}、リップは古くてさびた {gun} を見つけました。",
+"q3": "{When he woke up, Wolf was gone, and he found an old,} さびた {gun.}"
+},
+{
+"q1": "村には知っている人がひとりもおらず、{his beard} は {a foot}（約30センチ）にもなっていました！",
+"q2": "村には知っている人がひとりもおらず、{his beard was a foot long!}",
+"q3": "{Rip knew nobody in the} 村、{and his beard was a foot long!}"
+},
+{
+"q1": "{His house} は空っぽで、くずれかけていて、{his call} にだれも答えませんでした。",
+"q2": "{His house was} 空っぽで、{falling apart}、{his call} にだれも答えませんでした。",
+"q3": "{His house was} 空っぽ {and falling apart, and no one answered his call.}"
+}
+],
+"gloss": {
+"as": "〜したとき",
+"he": "彼は",
+"started": "〜しはじめた（startの過去形）",
+"down": "下へ",
+"rip": "リップ（人名）",
+"heard": "聞いた（hearの過去形）",
+"a": "ひとつの・ひとりの",
+"voice": "声",
+"calling": "呼んでいる",
+"his": "彼の",
+"name": "名前",
+"helped": "手伝った（helpの過去形）",
+"strange": "見なれない・ふしぎな",
+"old": "年をとった・古い",
+"man": "男の人",
+"carry": "運ぶ",
+"keg": "小さなたる",
+"up": "上へ（woke upで目がさめた）",
+"the": "その",
+"mountain": "山",
+"there": "そこで",
+"odd": "奇妙な",
+"men": "男たち（manの複数形）",
+"were": "〜していた（areの過去形）",
+"playing": "（遊びを）している",
+"ninepins": "ナインピンズ（九柱戯）",
+"and": "そして",
+"balls": "球（ballの複数形）",
+"sounded": "〜のように聞こえた",
+"like": "〜のように",
+"thunder": "かみなり",
+"drank": "飲んだ（drinkの過去形）",
+"from": "〜から",
+"flagon": "酒の入れ物（取っ手つき）",
+"again": "もう一度",
+"fell": "落ちた（fallの過去形）",
+"into": "〜の中へ",
+"deep": "深い",
+"sleep": "眠り",
+"when": "〜したとき",
+"woke": "目がさめた（wakeの過去形）",
+"wolf": "ウルフ（犬の名前）",
+"was": "〜だった（isの過去形）",
+"gone": "いなくなった",
+"found": "見つけた（findの過去形）",
+"an": "ひとつの",
+"rusty": "さびた",
+"gun": "銃",
+"knew": "知っていた（knowの過去形）",
+"nobody": "だれも〜ない",
+"in": "〜の中で",
+"village": "村",
+"beard": "あごひげ",
+"foot": "フィート（約30センチ）",
+"long": "〜の長さの",
+"house": "家",
+"empty": "空っぽの",
+"no": "ひとりも〜ない",
+"one": "人（no oneでだれも〜ない）",
+"answered": "答えた（answerの過去形）",
+"call": "呼び声",
+"old man": "老人",
+"his name": "彼の名前",
+"a voice": "（だれかの）声",
+"rip heard a voice calling his name": "名前を呼ぶ声がリップに聞こえた",
+"as he": "彼が〜したとき",
+"a keg": "小さなたる",
+"he helped": "彼は手伝った",
+"he helped a": "彼はひとりの〜を手伝った",
+"old man carry a keg up the mountain": "老人がたるを山の上へ運ぶ",
+"men were playing ninepins": "男たちがナインピンズをしていた",
+"men were playing ninepins and the balls sounded like thunder": "男たちが遊び、球はかみなりの音",
+"the flagon": "その酒の入れ物",
+"rip drank from the flagon": "リップは酒の入れ物から飲んだ",
+"rip drank from the flagon again and again and fell into a": "何度も飲んで、〜に落ちた",
+"when he woke up": "目がさめたとき",
+"wolf was gone": "ウルフはいなくなっていた",
+"when he woke up wolf was gone and he found an old": "起きるとウルフはおらず、古い〜が",
+"his beard": "彼のあごひげ",
+"a foot": "1フィート（約30センチ）",
+"his beard was a foot long": "ひげは1フィートの長さだった",
+"rip knew nobody in the": "リップはその〜にだれも知らない",
+"and his beard was a foot long": "そしてひげは1フィートもあった",
+"his house": "彼の家",
+"his call": "彼の呼び声",
+"falling": "くずれかけている",
+"apart": "ばらばらに",
+"his house was": "彼の家は〜だった",
+"falling apart": "くずれかけて",
+"and falling apart and no one answered his call": "くずれかけ、だれも答えなかった"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-ripvanwinkle-03",
+"added": "2026-10-08T22:56",
+"cat": "story",
+"level": 2,
+"title": "『リップ・ヴァン・ウィンクル』第3回　20年後の村と、娘との再会",
+"summary": "村は変わり、国はイギリスから独立していました。昔の仲間の多くはもういませんでしたが、リップは娘と再会して、いっしょに暮らすことになります。",
+"book": {
+"title": "Rip Van Winkle",
+"titleJa": "リップ・ヴァン・ウィンクル",
+"author": "Washington Irving",
+"year": 1819,
+"url": "https://www.gutenberg.org/ebooks/2048",
+"part": 3,
+"parts": 3
+},
+"orig": [
+{
+"en": "Rip’s story was soon told, for the whole twenty years had been to him but as one night.",
+"ja": "リップの話はすぐに語り終わりました。彼にとって、この20年はまるごと、たったひと晩のようなものだったからです。"
+}
+],
+"lines": [
+{
+"en": "The inn was gone, and the sign showed General Washington instead of King George.",
+"ja": "宿屋はなくなっていて、看板には、ジョージ王ではなく、ワシントン将軍がえがかれていました。",
+"mix": "宿屋はなくなっていて、{sign} には、ジョージ王ではなく、ワシントン将軍がえがかれていました。"
+},
+{
+"en": "Rip asked about his old friends, but many were dead or gone.",
+"ja": "リップは昔の仲間のことをたずねましたが、多くは亡くなったか、いなくなっていました。",
+"mix": "リップは昔の {friends} のことをたずねましたが、多くは亡くなったか、いなくなっていました。"
+},
+{
+"en": "“Does nobody here know Rip Van Winkle?” cried the poor man.",
+"ja": "「ここには、リップ・ヴァン・ウィンクルを知っている人はだれもいないのか？」と、かわいそうな男はさけびました。",
+"mix": "「ここには、リップ・ヴァン・ウィンクルを知っている人はだれもいないのか？」と、かわいそうな {man} はさけびました。"
+},
+{
+"en": "A young woman said her father, Rip Van Winkle, left home twenty years ago.",
+"ja": "ある若い女の人が、父のリップ・ヴァン・ウィンクルは20年前に家を出たのだと言いました。",
+"mix": "ある若い {woman} が、父のリップ・ヴァン・ウィンクルは20年前に家を出たのだと言いました。"
+},
+{
+"en": "“I am your father!” Rip cried, and an old woman recognized him.",
+"ja": "「わたしがおまえの父さんだ！」とリップはさけび、あるおばあさんが、それがリップだと気づきました。",
+"mix": "「わたしがおまえの {father} だ！」とリップはさけび、あるおばあさんが、それがリップだと気づきました。"
+},
+{
+"en": "Old Peter Vanderdonk said Hendrick Hudson's crew played ninepins in the mountains.",
+"ja": "年寄りのピーター・ヴァンダードンクは、ヘンドリック・ハドソンの船の乗組員たちが山でナインピンズをしていたのだと話しました。",
+"mix": "年寄りのピーター・ヴァンダードンクは、ヘンドリック・ハドソンの {crew} が山で {ninepins} をしていたのだと話しました。"
+},
+{
+"en": "Rip lived with his daughter, and he told his story to every visitor.",
+"ja": "リップは娘といっしょに暮らし、やって来る人みんなに自分の話を聞かせました。",
+"mix": "リップは {daughter} といっしょに暮らし、やって来る人みんなに自分の {story} を聞かせました。"
+}
+],
+"words": [
+{
+"w": "sign",
+"ja": "看板",
+"note": "店の前に出す看板。「しるし・合図」の意味もあります。"
+},
+{
+"w": "nobody",
+"ja": "だれも〜ない",
+"note": "Does nobody know 〜? ＝ だれも〜を知らないのか？"
+},
+{
+"w": "recognize",
+"ja": "（見て）だれだかわかる（過去形 recognized）",
+"note": "知っている人や物を見て「あの人だ」と気づくこと。"
+},
+{
+"w": "crew",
+"ja": "乗組員",
+"note": "船や飛行機で働く人たち。原文では、ハドソン川を最初に見つけたヘンドリック・ハドソンと、Half-moon（ハーフムーン号）の乗組員です。"
+},
+{
+"w": "visitor",
+"ja": "訪ねてくる人",
+"note": "原文は every stranger that arrived at Mr. Doolittle’s hotel（ドゥーリトルさんのホテルに来た、よその人みんな）。"
+}
+],
+"grammar": {
+"title": "nobody「だれも〜ない」",
+"body": "nobody は「だれも〜ない」という意味で、これだけで否定の文になります。not といっしょには使いません（× Nobody doesn't know. ○ Nobody knows.）。主語になるときは3人称単数として扱うので、現在の文では動詞に s が付きます。3文目の Does nobody here know Rip Van Winkle? は「ここにはリップ・ヴァン・ウィンクルを知っている人はだれもいないのか？」という、驚きと悲しみのこもった質問です。no one も同じ意味です。",
+"ex": [
+{
+"en": "Nobody was at home.",
+"ja": "家にはだれもいませんでした。"
+},
+{
+"en": "Nobody knows the answer.",
+"ja": "だれも答えを知りません。"
+}
+]
+},
+"quiz": [
+{
+"q": "宿屋の看板にえがかれていたのは？",
+"choices": [
+"ワシントン将軍",
+"ジョージ王",
+"リップ"
+],
+"a": 0,
+"why": "1文目 the sign showed General Washington instead of King George. とあります。"
+},
+{
+"q": "recognize の意味は？",
+"choices": [
+"わすれる",
+"（見て）だれだかわかる",
+"招待する"
+],
+"a": 1,
+"why": "recognize は、知っている人を見て「あの人だ」と気づくこと。5文目 an old woman recognized him。"
+},
+{
+"q": "___ here knows me.（ここでは、だれもわたしを知らない）",
+"choices": [
+"Anybody",
+"Somebody",
+"Nobody"
+],
+"a": 2,
+"why": "「だれも〜ない」は Nobody。not を使わずに否定の意味になり、動詞は knows（3人称単数）です。"
+}
+],
+"talk": {
+"q": "What do you think was the biggest change for Rip?",
+"ja": "リップにとって、いちばん大きな変化は何だったと思いますか？",
+"hint": "I think it was ___ because ___."
+},
+"grad": [
+{
+"q1": "宿屋はなくなっていて、{the sign} には、ジョージ王ではなく、{General Washington} がえがかれていました。",
+"q2": "宿屋は {was gone}、{the sign showed General Washington}、ジョージ王ではなく。",
+"q3": "{The} 宿屋 {was gone, and the sign showed General Washington instead of King George.}"
+},
+{
+"q1": "{Rip} は {his old friends} のことをたずねましたが、多くは亡くなったか、いなくなっていました。",
+"q2": "{Rip asked about his old friends}、でも多くは亡くなったか、いなくなっていました。",
+"q3": "{Rip asked about his old friends, but many were} 亡くなった {or gone.}"
+},
+{
+"q1": "「ここには、リップ・ヴァン・ウィンクルを知っている人はだれもいないのか？」と、{the poor man} はさけびました。",
+"q2": "「{Does nobody here know} リップ・ヴァン・ウィンクル？」と、{the poor man} はさけびました。",
+"q3": "{“Does nobody here know Rip Van Winkle?”} さけんだ {the poor man.}"
+},
+{
+"q1": "ある若い {woman} が、{her father} のリップ・ヴァン・ウィンクルは {twenty years} 前に家を出たのだと言いました。",
+"q2": "ある若い {woman said}、{her father} のリップ・ヴァン・ウィンクルは {left home twenty years ago}。",
+"q3": "{A} 若い {woman said her father, Rip Van Winkle, left home twenty years ago.}"
+},
+{
+"q1": "「わたしがおまえの {father} だ！」とリップはさけび、ある {old woman} が、それがリップだと気づきました。",
+"q2": "「{I am your father!}」と {Rip cried}、ある {old woman} が、それがリップだと気づきました。",
+"q3": "{“I am your father!” Rip cried, and an old woman} 気づいた {him.}"
+},
+{
+"q1": "年寄りのピーター・ヴァンダードンクは、ヘンドリック・ハドソンの {crew} が {the mountains} で {ninepins} をしていたのだと話しました。",
+"q2": "年寄りのピーター・ヴァンダードンクは、{Hendrick Hudson's crew played ninepins in the mountains} と話しました。",
+"q3": "年寄りの {Peter Vanderdonk said Hendrick Hudson's crew played ninepins in the mountains.}"
+},
+{
+"q1": "リップは {his daughter} といっしょに暮らし、やって来る人みんなに {his story} を聞かせました。",
+"q2": "リップは {his daughter} といっしょに暮らし、{he told his story to every visitor}。",
+"q3": "{Rip} 暮らした {with his daughter, and he told his story to every visitor.}"
+}
+],
+"gloss": {
+"the": "その",
+"sign": "看板",
+"showed": "見せていた（showの過去形）",
+"general": "将軍",
+"washington": "ワシントン（人名）",
+"instead": "（instead ofで）〜のかわりに",
+"of": "〜の",
+"king": "王",
+"george": "ジョージ（人名）",
+"rip": "リップ（人名）",
+"asked": "たずねた（askの過去形）",
+"about": "〜について",
+"his": "彼の",
+"old": "昔の・年をとった",
+"friends": "友だち・仲間（複数形）",
+"but": "でも",
+"many": "多くの人",
+"were": "〜だった（areの過去形）",
+"dead": "亡くなった",
+"or": "または",
+"gone": "いなくなった",
+"does": "（疑問文で）〜するの？",
+"nobody": "だれも〜ない",
+"here": "ここで",
+"know": "知っている",
+"van": "ヴァン（名字の一部）",
+"winkle": "ウィンクル（名字の一部）",
+"cried": "さけんだ（cryの過去形）",
+"poor": "かわいそうな",
+"man": "男の人",
+"a": "ひとりの",
+"young": "若い",
+"woman": "女の人",
+"said": "言った（sayの過去形）",
+"her": "彼女の",
+"father": "父",
+"left": "出た（leaveの過去形）",
+"home": "家",
+"twenty": "20の",
+"years": "年（yearの複数形）",
+"ago": "〜前に",
+"i": "わたしは",
+"am": "〜です",
+"your": "あなたの・おまえの",
+"and": "そして",
+"an": "ひとりの",
+"recognized": "だれだかわかった",
+"him": "彼を",
+"peter": "ピーター（人名）",
+"vanderdonk": "ヴァンダードンク（人名）",
+"hendrick": "ヘンドリック（人名）",
+"hudson's": "ハドソンの",
+"crew": "乗組員",
+"played": "（遊びを）した（playの過去形）",
+"ninepins": "ナインピンズ（九柱戯）",
+"in": "〜の中で",
+"mountains": "山々",
+"lived": "暮らした（liveの過去形）",
+"with": "〜といっしょに",
+"daughter": "娘",
+"he": "彼は",
+"told": "話した（tellの過去形）",
+"story": "話・物語",
+"to": "〜に",
+"every": "すべての・〜みんな",
+"visitor": "訪ねてくる人",
+"general washington": "ワシントン将軍",
+"his old friends": "昔の仲間たち",
+"rip asked about his old friends": "リップは昔の仲間のことをたずねた",
+"rip asked about his old friends but many were": "仲間のことをたずねたが、多くは",
+"or gone": "または、いなくなった",
+"the poor man": "かわいそうな男",
+"does nobody here know": "ここではだれも知らないのか",
+"does nobody here know rip van winkle": "だれもリップを知らないのか",
+"her father": "彼女の父",
+"twenty years": "20年",
+"woman said": "女の人が言った",
+"left home twenty years ago": "20年前に家を出た",
+"woman said her father rip van winkle left home twenty years ago": "女の人は父が20年前に家を出たと言った",
+"old woman": "おばあさん",
+"i am your father": "わたしがおまえの父さんだ",
+"rip cried": "リップはさけんだ",
+"i am your father rip cried and an old woman": "「父だ」とさけぶと、おばあさんが",
+"the mountains": "山",
+"hendrick hudson's crew played ninepins in the mountains": "ハドソンの乗組員が山でナインピンズ",
+"peter vanderdonk said hendrick hudson's crew played ninepins in the mountains": "ヴァンダードンクは乗組員が遊んだと言った",
+"his daughter": "彼の娘",
+"his story": "彼の話",
+"he told his story to every visitor": "来る人みんなに自分の話をした",
+"with his daughter and he told his story to every visitor": "娘と。そして来る人みんなに話をした",
+"inn": "宿屋",
+"was": "〜だった（isの過去形）",
+"the sign": "看板",
+"was gone": "なくなっていた",
+"the sign showed general washington": "看板はワシントン将軍の絵だった",
+"was gone and the sign showed general washington instead of king george": "なくなり、看板はワシントン将軍に"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-redheaded-01",
+"added": "2026-10-08T21:58",
+"cat": "story",
+"level": 2,
+"title": "『赤毛組合』第1回　赤毛の依頼人と不思議な広告",
+"summary": "ワトソンがホームズを訪ねると、燃えるような赤毛の質屋ジェイベズ・ウィルソンが相談に来ていました。ウィルソンは、助手のスポールディングから教えられた「赤毛組合」の新聞広告を見せます。",
+"book": {
+"title": "The Red-Headed League",
+"titleJa": "赤毛組合",
+"author": "Arthur Conan Doyle",
+"year": 1891,
+"url": "https://www.gutenberg.org/ebooks/1661",
+"part": 1,
+"parts": 4
+},
+"orig": [
+{
+"en": "“You could not possibly have come at a better time, my dear Watson,” he said cordially.",
+"ja": "「これ以上ないほどいいところに来てくれたね、ワトソン君」と、彼はにこやかに言いました。"
+},
+{
+"en": "‘I wish to the Lord, Mr. Wilson, that I was a red-headed man.’",
+"ja": "「ああ、ウィルソンさん、ぼくが赤毛の男だったらどんなにいいか」"
+}
+],
+"lines": [
+{
+"en": "One autumn day, Dr. Watson visited his friend Sherlock Holmes.",
+"ja": "秋のある日、医師のワトソンは、友人のシャーロック・ホームズを訪ねました。",
+"mix": "{autumn} のある日、医師のワトソンは、{friend} のシャーロック・ホームズを訪ねました。"
+},
+{
+"en": "Holmes was talking with Jabez Wilson, a man with bright red hair.",
+"ja": "ホームズは、あざやかな赤毛の男性、ジェイベズ・ウィルソンと話していました。",
+"mix": "ホームズは、あざやかな {red hair} の男性、ジェイベズ・ウィルソンと話していました。"
+},
+{
+"en": "Holmes looked at his hands and clothes and found out many things about him.",
+"ja": "ホームズは彼の手や服を見て、彼について多くのことを見抜きました。",
+"mix": "ホームズは彼の {hands} や {clothes} を見て、彼について多くのことを見抜きました。"
+},
+{
+"en": "Wilson showed them a newspaper ad about the Red-headed League.",
+"ja": "ウィルソンは、「赤毛組合」についての新聞広告を二人に見せました。",
+"mix": "ウィルソンは、「赤毛組合」についての新聞 {ad} を二人に見せました。"
+},
+{
+"en": "Wilson had a small pawnshop, and his assistant worked for half pay.",
+"ja": "ウィルソンは小さな質屋を営んでいて、助手は半分の給料で働いていました。",
+"mix": "ウィルソンは小さな {pawnshop} を営んでいて、{assistant} は半分の給料で働いていました。"
+},
+{
+"en": "The assistant, Vincent Spaulding, loved taking pictures and often went down into the cellar.",
+"ja": "助手のヴィンセント・スポールディングは写真をとるのが大好きで、よく地下室にもぐりこんでいました。",
+"mix": "助手のヴィンセント・スポールディングは {pictures} をとるのが大好きで、よく {cellar} にもぐりこんでいました。"
+},
+{
+"en": "Spaulding told Wilson that the League paid a lot for very little work.",
+"ja": "スポールディングはウィルソンに、組合はほんの少しの仕事でたくさんお金を払ってくれると話しました。",
+"mix": "スポールディングはウィルソンに、{League} はほんの少しの {work} でたくさんお金を払ってくれると話しました。"
+}
+],
+"words": [
+{
+"w": "pawnshop",
+"ja": "質屋",
+"note": "原文では pawnbroker’s business（質屋の商売）。pawnbroker は「質屋さん（人）」です。"
+},
+{
+"w": "assistant",
+"ja": "助手",
+"note": "店や仕事を手伝う人。shop assistant なら「店員」。"
+},
+{
+"w": "ad",
+"ja": "広告",
+"note": "advertisement を短くした言い方。原文では advertisement が使われています。"
+},
+{
+"w": "half pay",
+"ja": "半分の給料",
+"note": "pay は「給料」。原文では half wages（ふつうの半分の賃金）。"
+},
+{
+"w": "cellar",
+"ja": "地下室",
+"note": "物をしまう地下の部屋。basement とも言います。"
+}
+],
+"grammar": {
+"title": "tell ＋ 人 ＋ that 〜「（人）に〜と話す」",
+"body": "「だれに、どんなことを話したか」は tell ＋ 人 ＋ that ＋ 文 で表します。told（tell の過去形）のときは、that のあとの動詞もふつう過去形にそろえます（the League paid）。that は省略することもあります。say は人をすぐうしろに置かず、say that 〜 の形です。",
+"ex": [
+{
+"en": "She told me that she liked the movie.",
+"ja": "彼女は私に、その映画が好きだと言いました。"
+},
+{
+"en": "He told his friends that the manga was funny.",
+"ja": "彼は友だちに、そのマンガはおもしろいと話しました。"
+}
+]
+},
+"quiz": [
+{
+"q": "ウィルソンの助手スポールディングが大好きだったことは？",
+"choices": [
+"絵をかくこと",
+"写真をとること",
+"本を読むこと"
+],
+"a": 1,
+"why": "6文目に loved taking pictures（写真をとるのが大好き）とあります。"
+},
+{
+"q": "pawnshop の意味は？",
+"choices": [
+"パン屋",
+"本屋",
+"質屋"
+],
+"a": 2,
+"why": "pawnshop は「質屋」。ウィルソンは小さな質屋を営んでいました。"
+},
+{
+"q": "Spaulding ___ Wilson that the League paid a lot.（スポールディングはウィルソンに〜と話しました）",
+"choices": [
+"told",
+"said",
+"talked"
+],
+"a": 0,
+"why": "「人に〜と話す」は tell ＋ 人 ＋ that。過去形は told です。say と talk は、人をすぐうしろに置けません。"
+}
+],
+"talk": {
+"q": "Do you think the Red-headed League is real?",
+"ja": "赤毛組合は本物だと思いますか？",
+"hint": "I think it is / isn't real because ___."
+},
+"grad": [
+{
+"q1": "ある {autumn day}、医師のワトソンは、{his friend} シャーロック・ホームズを訪ねました。",
+"q2": "{One autumn day}、{Dr. Watson} は {his friend} のシャーロック・ホームズを訪ねました。",
+"q3": "{One autumn day, Dr. Watson} 訪ねた {his friend Sherlock Holmes.}"
+},
+{
+"q1": "{Holmes} は、あざやかな {red hair} の {man}、ジェイベズ・ウィルソンと話していました。",
+"q2": "{Holmes was talking with Jabez Wilson}、あざやかな {red hair} の {man}。",
+"q3": "{Holmes was talking with Jabez Wilson, a man with} あざやかな {red hair.}"
+},
+{
+"q1": "{Holmes} は彼の {hands} や {clothes} を見て、彼について {many things} を見抜きました。",
+"q2": "{Holmes looked at his hands and clothes}、彼について {many things} を見抜きました。",
+"q3": "{Holmes looked at his hands and clothes and} 見抜いた {many things about him.}"
+},
+{
+"q1": "{Wilson} は、{Red-headed League} についての新聞 {ad} を二人に見せました。",
+"q2": "{Wilson showed them} 新聞 {ad}、{about the Red-headed League}。",
+"q3": "{Wilson showed them a} 新聞 {ad about the Red-headed League.}"
+},
+{
+"q1": "ウィルソンは小さな {pawnshop} を営んでいて、{assistant} は {half pay} で働いていました。",
+"q2": "{Wilson had a small pawnshop}、{his assistant} は {half pay} で働いていました。",
+"q3": "{Wilson had a small pawnshop, and his assistant} 働いていた {for half pay.}"
+},
+{
+"q1": "{assistant} の {Vincent Spaulding} は {pictures} をとるのが大好きで、よく {cellar} にもぐりこんでいました。",
+"q2": "{The assistant, Vincent Spaulding, loved taking pictures}、よく {the cellar} にもぐりこんでいました。",
+"q3": "{The assistant, Vincent Spaulding, loved taking pictures and often} 降りていった {into the cellar.}"
+},
+{
+"q1": "{Spaulding} は {Wilson} に、{the League} はほんの少しの {work} でたくさんお金を払ってくれると話しました。",
+"q2": "{Spaulding told Wilson}、{the League} はほんの少しの {work} でたくさんお金を払ってくれると。",
+"q3": "{Spaulding told Wilson that the League} 払っていた {a lot for very little work.}"
+}
+],
+"gloss": {
+"one": "ある（one dayで「ある日」）",
+"autumn": "秋",
+"day": "日",
+"dr": "〜先生（医師）",
+"watson": "ワトソン（人名）",
+"visited": "訪ねた（visitの過去形）",
+"his": "彼の",
+"friend": "友人",
+"sherlock": "シャーロック（人名）",
+"holmes": "ホームズ（人名）",
+"was": "（was 〜ingで）〜していた",
+"talking": "話している（talkの-ing形）",
+"with": "〜と・〜のある",
+"jabez": "ジェイベズ（人名）",
+"wilson": "ウィルソン（人名）",
+"a": "ひとつの・ひとりの",
+"man": "男の人",
+"bright": "あざやかな・明るい",
+"red": "赤い",
+"hair": "髪",
+"looked": "見た（lookの過去形）",
+"at": "〜を（look atで）",
+"hands": "手（handの複数形）",
+"and": "〜と・そして",
+"clothes": "服",
+"found": "（found outで）見抜いた",
+"out": "（found outで）見抜いた",
+"many": "たくさんの",
+"things": "こと（thingの複数形）",
+"about": "〜について",
+"him": "彼",
+"showed": "見せた（showの過去形）",
+"them": "彼らに",
+"newspaper": "新聞",
+"ad": "広告",
+"the": "その",
+"red-headed": "赤毛の",
+"league": "組合",
+"had": "持っていた・営んでいた",
+"small": "小さな",
+"pawnshop": "質屋",
+"assistant": "助手",
+"worked": "働いた（workの過去形）",
+"for": "〜で・〜に対して",
+"half": "半分の",
+"pay": "給料",
+"vincent": "ヴィンセント（人名）",
+"spaulding": "スポールディング（人名）",
+"loved": "大好きだった（loveの過去形）",
+"taking": "とること（takeの-ing形）",
+"pictures": "写真（pictureの複数形）",
+"often": "よく・しばしば",
+"went": "行った（goの過去形）",
+"down": "下へ",
+"into": "〜の中へ",
+"cellar": "地下室",
+"told": "話した（tellの過去形）",
+"that": "〜ということを",
+"paid": "払った（payの過去形）",
+"lot": "（a lotで）たくさん",
+"very": "とても",
+"little": "少しの",
+"work": "仕事",
+"red hair": "赤い髪・赤毛",
+"autumn day": "秋の日",
+"his friend": "彼の友人",
+"one autumn day": "秋のある日",
+"dr watson": "ワトソン先生（医師）",
+"one autumn day dr watson": "秋のある日、ワトソンは",
+"his friend sherlock holmes": "友人シャーロック・ホームズ",
+"holmes was talking with jabez wilson": "ホームズはウィルソンと話していた",
+"holmes was talking with jabez wilson a man with": "ホームズは〜の男ウィルソンと話していた",
+"many things": "多くのこと",
+"holmes looked at his hands and clothes": "ホームズは彼の手と服を見た",
+"holmes looked at his hands and clothes and": "ホームズは手と服を見て",
+"many things about him": "彼について多くのこと",
+"red-headed league": "赤毛組合",
+"wilson showed them": "ウィルソンは二人に見せた",
+"about the red-headed league": "赤毛組合について",
+"wilson showed them a": "ウィルソンは二人に〜を見せた",
+"ad about the red-headed league": "赤毛組合についての広告",
+"half pay": "半分の給料",
+"wilson had a small pawnshop": "ウィルソンは小さな質屋を営んでいた",
+"his assistant": "彼の助手",
+"wilson had a small pawnshop and his assistant": "小さな質屋を営み、助手は",
+"for half pay": "半分の給料で",
+"vincent spaulding": "ヴィンセント・スポールディング",
+"the assistant vincent spaulding loved taking pictures": "助手スポールディングは写真が大好き",
+"the cellar": "地下室",
+"the assistant vincent spaulding loved taking pictures and often": "助手は写真が大好きで、よく",
+"into the cellar": "地下室の中へ",
+"the league": "組合",
+"spaulding told wilson": "スポールディングはウィルソンに話した",
+"spaulding told wilson that the league": "組合は〜とウィルソンに話した",
+"a lot for very little work": "ほんの少しの仕事でたくさん"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-redheaded-02",
+"added": "2026-10-08T21:57",
+"cat": "story",
+"level": 2,
+"title": "『赤毛組合』第2回　週4ポンドの不思議な仕事",
+"summary": "赤毛の男たちであふれる中でウィルソンは組合に選ばれ、毎日10時から2時まで事務所で百科事典を書き写して、週4ポンドをもらいます。ところが8週間後、事務所の戸には「赤毛組合は解散した」という紙がはられていました。",
+"book": {
+"title": "The Red-Headed League",
+"titleJa": "赤毛組合",
+"author": "Arthur Conan Doyle",
+"year": 1891,
+"url": "https://www.gutenberg.org/ebooks/1661",
+"part": 2,
+"parts": 4
+},
+"orig": [
+{
+"en": "Fleet Street was choked with red-headed folk, and Pope’s Court looked like a coster’s orange barrow.",
+"ja": "フリート街は赤毛の人たちでごったがえし、ポープス・コートは、まるで果物売りのオレンジの手押し車のようでした。"
+},
+{
+"en": "“THE RED-HEADED LEAGUE IS DISSOLVED. October 9, 1890.”",
+"ja": "「赤毛組合は解散した。1890年10月9日」"
+}
+],
+"lines": [
+{
+"en": "Wilson closed his shop and went to the League's office with Spaulding.",
+"ja": "ウィルソンは店を閉めて、スポールディングといっしょに組合の事務所へ行きました。",
+"mix": "ウィルソンは {shop} を閉めて、スポールディングといっしょに組合の {office} へ行きました。"
+},
+{
+"en": "Fleet Street was full of men with red hair.",
+"ja": "フリート街は、赤い髪の男たちでいっぱいでした。",
+"mix": "フリート街は、{red hair} の男たちでいっぱいでした。"
+},
+{
+"en": "But the manager, Duncan Ross, chose Wilson because of his bright red hair.",
+"ja": "けれども、責任者のダンカン・ロスは、あざやかな赤毛を理由にウィルソンを選びました。",
+"mix": "けれども、{manager} のダンカン・ロスは、あざやかな {red hair} を理由にウィルソンを選びました。"
+},
+{
+"en": "The job was from ten to two, and the pay was four pounds a week.",
+"ja": "仕事は10時から2時まで、給料は週に4ポンドでした。",
+"mix": "{job} は10時から2時まで、給料は週に4 {pounds} でした。"
+},
+{
+"en": "Wilson had to stay in the office and copy the Encyclopaedia Britannica.",
+"ja": "ウィルソンは事務所にいて、『ブリタニカ百科事典』を書き写さなければなりませんでした。",
+"mix": "ウィルソンは {office} にいて、{Encyclopaedia Britannica} を書き写さなければなりませんでした。"
+},
+{
+"en": "After eight weeks, a card on the locked door said the League was dissolved.",
+"ja": "8週間後、鍵のかかった戸にはられた紙に、組合は解散したと書いてありました。",
+"mix": "8週間後、{locked door} にはられた {card} に、組合は解散したと書いてありました。"
+},
+{
+"en": "No one knew where Duncan Ross was, so Wilson came to Holmes for help.",
+"ja": "ダンカン・ロスがどこにいるのかだれも知らず、ウィルソンはホームズに助けを求めに来たのでした。",
+"mix": "ダンカン・ロスがどこにいるのかだれも知らず、ウィルソンはホームズに {help} を求めに来たのでした。"
+}
+],
+"words": [
+{
+"w": "manager",
+"ja": "責任者・支配人",
+"note": "原文でもダンカン・ロスは the manager と呼ばれています。"
+},
+{
+"w": "pay",
+"ja": "給料",
+"note": "原文の広告では salary。「週4ポンド」は £ 4 a week と書かれています。"
+},
+{
+"w": "copy",
+"ja": "書き写す",
+"note": "機械でコピーするだけでなく、手で書き写すのも copy です。"
+},
+{
+"w": "locked",
+"ja": "鍵のかかった",
+"note": "lock（鍵をかける）の過去分詞。the locked door ＝ 鍵のかかった戸。"
+},
+{
+"w": "dissolve",
+"ja": "解散する・解散させる",
+"note": "原文の貼り紙 THE RED-HEADED LEAGUE IS DISSOLVED.（赤毛組合は解散した）。もとは「溶かす」という意味です。"
+}
+],
+"grammar": {
+"title": "間接疑問 where ＋ 主語 ＋ 動詞「どこに〜か」",
+"body": "Where was Duncan Ross?（ダンカン・ロスはどこにいた？）を文の中に入れると、where Duncan Ross was のように「主語 ＋ 動詞」の順になります（was を前に出しません）。know・ask・tell などのあとでよく使います。",
+"ex": [
+{
+"en": "I don't know where she lives.",
+"ja": "彼女がどこに住んでいるのか、私は知りません。"
+},
+{
+"en": "Do you know where the theater is?",
+"ja": "映画館がどこにあるか知っていますか？"
+}
+]
+},
+"quiz": [
+{
+"q": "ウィルソンの仕事の時間は？",
+"choices": [
+"10時から2時",
+"9時から5時",
+"朝から夜まで"
+],
+"a": 0,
+"why": "4文目に The job was from ten to two とあります。"
+},
+{
+"q": "The League was dissolved. の dissolved の意味は？",
+"choices": [
+"始まった",
+"解散した",
+"引っこした"
+],
+"a": 1,
+"why": "dissolve は「解散する・解散させる」。was dissolved で「解散した（解散させられた）」です。"
+},
+{
+"q": "No one knew where Duncan Ross ___.（ダンカン・ロスがどこにいるのか）",
+"choices": [
+"is he",
+"was he",
+"was"
+],
+"a": 2,
+"why": "間接疑問は「主語 ＋ 動詞」の順。knew（過去）に合わせて was にします。"
+}
+],
+"talk": {
+"q": "Would you copy an encyclopedia for four pounds a week?",
+"ja": "週4ポンドで百科事典を書き写す仕事、やってみたいですか？",
+"hint": "Yes, I would, because ___. / No, I wouldn't, because ___."
+},
+"grad": [
+{
+"q1": "{Wilson} は {shop} を閉めて、{Spaulding} といっしょに組合の {office} へ行きました。",
+"q2": "{Wilson closed his shop}、{Spaulding} といっしょに {the League's office} へ行きました。",
+"q3": "{Wilson closed his shop and} 行った {to the League's office with Spaulding.}"
+},
+{
+"q1": "フリート街は、{red hair} の {men} でいっぱいでした。",
+"q2": "{Fleet Street} は、{men with red hair} でいっぱいでした。",
+"q3": "{Fleet Street was} いっぱい {of men with red hair.}"
+},
+{
+"q1": "けれども、{manager} の {Duncan Ross} は、あざやかな {red hair} を理由にウィルソンを選びました。",
+"q2": "{But the manager, Duncan Ross, chose Wilson}、あざやかな {red hair} を理由に。",
+"q3": "{But the manager, Duncan Ross, chose Wilson because of his} あざやかな {red hair.}"
+},
+{
+"q1": "{The job} は10時から2時まで、給料は週に {four pounds} でした。",
+"q2": "{The job was from ten to two}、給料は週に {four pounds} でした。",
+"q3": "{The job was from ten to two, and the} 給料 {was four pounds a week.}"
+},
+{
+"q1": "{Wilson} は {office} にいて、{Encyclopaedia Britannica} を書き写さなければなりませんでした。",
+"q2": "{Wilson had to stay in the office}、{the Encyclopaedia Britannica} を書き写す。",
+"q3": "{Wilson had to stay in the office and} 書き写す {the Encyclopaedia Britannica.}"
+},
+{
+"q1": "8週間後、{locked door} にはられた {card} に、{League} は解散したと書いてありました。",
+"q2": "8週間後、{a card on the locked door} に、{the League was dissolved} と書いてありました。",
+"q3": "{After eight weeks, a card on the locked door} 書いてあった {the League was dissolved.}"
+},
+{
+"q1": "{Duncan Ross} がどこにいるのかだれも知らず、{Wilson} は {Holmes} に {help} を求めに来たのでした。",
+"q2": "{No one knew where Duncan Ross was}、{Wilson} は {Holmes} に {help} を求めに来たのでした。",
+"q3": "{No one knew where Duncan Ross was, so Wilson} 来た {to Holmes for help.}"
+}
+],
+"gloss": {
+"wilson": "ウィルソン（人名）",
+"closed": "閉めた（closeの過去形）",
+"his": "彼の",
+"shop": "店",
+"and": "そして・〜と",
+"went": "行った（goの過去形）",
+"to": "〜へ・〜まで",
+"the": "その",
+"league's": "組合の",
+"office": "事務所",
+"with": "〜といっしょに・〜のある",
+"spaulding": "スポールディング（人名）",
+"fleet": "フリート（通りの名）",
+"street": "通り・街",
+"was": "〜だった",
+"full": "いっぱいの",
+"of": "（full ofで）〜でいっぱい",
+"men": "男たち（manの複数形）",
+"red": "赤い",
+"hair": "髪",
+"but": "けれども",
+"manager": "責任者・支配人",
+"duncan": "ダンカン（人名）",
+"ross": "ロス（人名）",
+"chose": "選んだ（chooseの過去形）",
+"because": "（because ofで）〜が理由で",
+"bright": "あざやかな",
+"job": "仕事",
+"from": "〜から",
+"ten": "10（時）",
+"two": "2（時）",
+"pay": "給料",
+"four": "4",
+"pounds": "ポンド（イギリスのお金）",
+"a": "（a weekで）1週間につき",
+"week": "週",
+"had": "（had toで）〜ねばならなかった",
+"stay": "いる・とどまる",
+"in": "〜の中に",
+"copy": "書き写す",
+"encyclopaedia": "百科事典（英国式のつづり）",
+"britannica": "ブリタニカ（百科事典の名）",
+"after": "〜のあと",
+"eight": "8",
+"weeks": "週（weekの複数形）",
+"card": "紙・カード",
+"on": "〜に（はってある）",
+"locked": "鍵のかかった",
+"door": "戸・ドア",
+"said": "書いてあった（sayの過去形）",
+"league": "組合",
+"dissolved": "解散した（dissolveの過去分詞）",
+"no": "（no oneで）だれも〜ない",
+"one": "（no oneで）だれも〜ない",
+"knew": "知っていた（knowの過去形）",
+"where": "どこに〜か",
+"so": "だから",
+"came": "来た（comeの過去形）",
+"holmes": "ホームズ（人名）",
+"for": "〜を求めて",
+"help": "助け",
+"red hair": "赤い髪・赤毛",
+"encyclopaedia britannica": "ブリタニカ百科事典",
+"locked door": "鍵のかかった戸",
+"wilson closed his shop": "ウィルソンは店を閉めた",
+"the league's office": "組合の事務所",
+"wilson closed his shop and": "ウィルソンは店を閉めて",
+"to the league's office with spaulding": "スポールディングと組合の事務所へ",
+"fleet street": "フリート街",
+"men with red hair": "赤い髪の男たち",
+"fleet street was": "フリート街は〜だった",
+"of men with red hair": "赤い髪の男たちで",
+"duncan ross": "ダンカン・ロス（人名）",
+"but the manager duncan ross chose wilson": "でも責任者ロスはウィルソンを選んだ",
+"but the manager duncan ross chose wilson because of his": "でもロスは彼の〜を理由に彼を選んだ",
+"the job": "その仕事",
+"four pounds": "4ポンド",
+"the job was from ten to two": "仕事は10時から2時まで",
+"the job was from ten to two and the": "仕事は10時から2時までで、その",
+"was four pounds a week": "週に4ポンドだった",
+"wilson had to stay in the office": "事務所にいなければならなかった",
+"the encyclopaedia britannica": "ブリタニカ百科事典",
+"wilson had to stay in the office and": "事務所にいて〜しなければならなかった",
+"a card on the locked door": "鍵のかかった戸にはられた紙",
+"the league was dissolved": "組合は解散した",
+"after eight weeks a card on the locked door": "8週間後、鍵のかかった戸の紙が",
+"no one knew where duncan ross was": "ロスがどこにいるかだれも知らなかった",
+"no one knew where duncan ross was so wilson": "ロスの居場所がわからず、ウィルソンは",
+"to holmes for help": "助けを求めてホームズのもとへ"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-redheaded-03",
+"added": "2026-10-08T21:56",
+"cat": "story",
+"level": 2,
+"title": "『赤毛組合』第3回　ホームズ、質屋の店先を調べる",
+"summary": "ホームズは助手スポールディングの特徴を聞いて目を光らせ、パイプをふかして考えたあと、ワトソンとウィルソンの店を見に行きます。ステッキで地面をたたき、助手のひざを見て、角の向こうに銀行があるのを確かめたホームズは、その夜の手伝いをワトソンにたのみます。",
+"book": {
+"title": "The Red-Headed League",
+"titleJa": "赤毛組合",
+"author": "Arthur Conan Doyle",
+"year": 1891,
+"url": "https://www.gutenberg.org/ebooks/1661",
+"part": 3,
+"parts": 4
+},
+"orig": [
+{
+"en": "“It is quite a three pipe problem, and I beg that you won’t speak to me for fifty minutes.”",
+"ja": "「これはパイプ3服分の問題だ。50分間、話しかけないでくれたまえ」"
+},
+{
+"en": "My dear doctor, this is a time for observation, not for talk.",
+"ja": "ねえきみ、いまは話すときではなく、観察するときだよ。"
+}
+],
+"lines": [
+{
+"en": "When Wilson said Spaulding had a white mark on his forehead, Holmes got excited.",
+"ja": "ウィルソンが、スポールディングの額には白い跡があると言うと、ホームズは興奮しました。",
+"mix": "ウィルソンが、スポールディングの {forehead} には {white mark} があると言うと、ホームズは興奮しました。"
+},
+{
+"en": "Holmes said it was a three pipe problem and smoked his pipe quietly.",
+"ja": "ホームズは「これはパイプ3服分の問題だ」と言って、静かにパイプをふかしました。",
+"mix": "ホームズは「これはパイプ3服分の {problem} だ」と言って、静かに {pipe} をふかしました。"
+},
+{
+"en": "Then Holmes and Watson went to Wilson's shop in Saxe-Coburg Square.",
+"ja": "それからホームズとワトソンは、サックス・コバーグ・スクエアにあるウィルソンの店へ行きました。",
+"mix": "それからホームズとワトソンは、サックス・コバーグ・スクエアにあるウィルソンの {shop} へ行きました。"
+},
+{
+"en": "Holmes hit the ground with his stick and knocked on the door.",
+"ja": "ホームズはステッキで地面をたたき、戸をノックしました。",
+"mix": "ホームズは {stick} で {ground} をたたき、戸をノックしました。"
+},
+{
+"en": "He asked the assistant the way, but he really wanted to see his knees.",
+"ja": "ホームズは助手に道をたずねましたが、本当は助手のひざを見たかったのです。",
+"mix": "ホームズは {assistant} に道をたずねましたが、本当は助手の {knees} を見たかったのです。"
+},
+{
+"en": "Around the corner, there was a busy street with shops and a bank.",
+"ja": "角を曲がると、お店や銀行が並ぶにぎやかな通りがありました。",
+"mix": "角を曲がると、お店や {bank} が並ぶにぎやかな {street} がありました。"
+},
+{
+"en": "After a concert, Holmes asked Watson to help him stop a big crime that night.",
+"ja": "音楽会のあと、ホームズはワトソンに、その夜、大きな犯罪を止めるのを手伝ってほしいとたのみました。",
+"mix": "{concert} のあと、ホームズはワトソンに、その夜、大きな {crime} を止めるのを手伝ってほしいとたのみました。"
+}
+],
+"words": [
+{
+"w": "forehead",
+"ja": "額（ひたい）",
+"note": "原文では a white splash of acid upon his forehead（額に、酸でできた白い跡）。"
+},
+{
+"w": "pipe",
+"ja": "（たばこの）パイプ",
+"note": "three pipe problem は「パイプを3服吸うあいだ考えるほどの難問」。ホームズらしい言い方です。"
+},
+{
+"w": "stick",
+"ja": "ステッキ・つえ",
+"note": "原文ではホームズはステッキで歩道を2〜3回強くたたきました。"
+},
+{
+"w": "knee",
+"ja": "ひざ",
+"note": "複数形は knees。原文でホームズは The knees of his trousers.（ズボンのひざ）と答えます。"
+},
+{
+"w": "crime",
+"ja": "犯罪",
+"note": "原文では A considerable crime is in contemplation.（大きな犯罪がたくらまれている）。"
+}
+],
+"grammar": {
+"title": "ask ＋ 人 ＋ to 〜「（人）に〜するようにたのむ」",
+"body": "「人に〜するようにたのむ」は ask ＋ 人 ＋ to ＋ 動詞のもとの形 で表します。asked Watson to help は「ワトソンに手伝うようにたのんだ」。help him stop のように、help ＋ 人 ＋ 動詞のもとの形 で「人が〜するのを手伝う」とも言えます。",
+"ex": [
+{
+"en": "I asked him to open the door.",
+"ja": "私は彼に、ドアを開けてとたのみました。"
+},
+{
+"en": "My friend asked me to watch the movie with her.",
+"ja": "友だちは私に、いっしょにその映画を見てとたのみました。"
+}
+]
+},
+"quiz": [
+{
+"q": "ホームズが本当に見たかったのは、助手のどこ？",
+"choices": [
+"顔",
+"手",
+"ひざ"
+],
+"a": 2,
+"why": "5文目に he really wanted to see his knees とあります。"
+},
+{
+"q": "forehead の意味は？",
+"choices": [
+"額（ひたい）",
+"ほお",
+"あご"
+],
+"a": 0,
+"why": "forehead は「額（ひたい）」。スポールディングの額には白い跡がありました。"
+},
+{
+"q": "Holmes asked Watson ___ him.（手伝ってくれるように）",
+"choices": [
+"help",
+"to help",
+"helping"
+],
+"a": 1,
+"why": "ask ＋ 人 ＋ to ＋ 動詞のもとの形 で「人に〜するようにたのむ」です。"
+}
+],
+"talk": {
+"q": "Why do you think Holmes looked at the assistant's knees?",
+"ja": "ホームズはなぜ助手のひざを見たのだと思いますか？",
+"hint": "I think he wanted to know ___."
+},
+"grad": [
+{
+"q1": "{Wilson} が、{Spaulding} の {forehead} には {white mark} があると言うと、ホームズは興奮しました。",
+"q2": "{Wilson} が、{Spaulding had a white mark on his forehead} と言うと、ホームズは興奮しました。",
+"q3": "{When Wilson said Spaulding had a white mark on his forehead, Holmes got} 興奮した。"
+},
+{
+"q1": "{Holmes} は「これは {three pipe problem} だ」と言って、静かに {pipe} をふかしました。",
+"q2": "{Holmes said it was a three pipe problem}、静かに {his pipe} をふかしました。",
+"q3": "{Holmes said it was a three pipe problem and} ふかした {his pipe quietly.}"
+},
+{
+"q1": "それから {Holmes} と {Watson} は、サックス・コバーグ・スクエアにある {Wilson's shop} へ行きました。",
+"q2": "それから {Holmes and Watson} は、{Saxe-Coburg Square} にある {Wilson's shop} へ行きました。",
+"q3": "{Then Holmes and Watson} 行った {to Wilson's shop in Saxe-Coburg Square.}"
+},
+{
+"q1": "{Holmes} は {stick} で {ground} をたたき、{door} をノックしました。",
+"q2": "{Holmes hit the ground with his stick}、{the door} をノックしました。",
+"q3": "{Holmes hit the ground with his stick and} ノックした {on the door.}"
+},
+{
+"q1": "ホームズは {the assistant} に {the way} をたずねましたが、本当は助手の {knees} を見たかったのです。",
+"q2": "{He asked the assistant the way}、でも本当は {his knees} を見たかったのです。",
+"q3": "{He asked the assistant the way, but he really wanted to} 見る {his knees.}"
+},
+{
+"q1": "角を曲がると、{shops} や {a bank} が並ぶにぎやかな {street} がありました。",
+"q2": "角を曲がると、{there was} にぎやかな {street}、{with shops and a bank}。",
+"q3": "{Around the corner, there was a} にぎやかな {street with shops and a bank.}"
+},
+{
+"q1": "{concert} のあと、{Holmes} は {Watson} に、その夜、{big crime} を止めるのを手伝ってほしいとたのみました。",
+"q2": "{After a concert}、{Holmes asked Watson}、その夜、{a big crime} を止めるのを手伝ってほしいと。",
+"q3": "{After a concert, Holmes asked Watson to help him} 止める {a big crime that night.}"
+}
+],
+"gloss": {
+"when": "〜すると・〜したとき",
+"wilson": "ウィルソン（人名）",
+"said": "言った（sayの過去形）",
+"spaulding": "スポールディング（人名）",
+"had": "あった（haveの過去形）",
+"a": "ひとつの",
+"white": "白い",
+"mark": "跡・しるし",
+"on": "〜に",
+"his": "彼の",
+"forehead": "額（ひたい）",
+"holmes": "ホームズ（人名）",
+"got": "（got excitedで）〜になった",
+"excited": "興奮した",
+"it": "それは",
+"was": "〜だった",
+"three": "3つの",
+"pipe": "パイプ",
+"problem": "問題",
+"and": "そして・〜と",
+"smoked": "（たばこを）吸った",
+"quietly": "静かに",
+"then": "それから",
+"watson": "ワトソン（人名）",
+"went": "行った（goの過去形）",
+"to": "〜へ・（to ＋動詞）〜すること",
+"wilson's": "ウィルソンの",
+"shop": "店",
+"in": "〜にある",
+"saxe-coburg": "サックス・コバーグ（地名）",
+"square": "広場・スクエア",
+"hit": "たたいた（hitの過去形）",
+"the": "その",
+"ground": "地面",
+"with": "〜で・〜のある",
+"stick": "ステッキ・つえ",
+"knocked": "ノックした",
+"door": "戸・ドア",
+"he": "彼は",
+"asked": "たずねた・たのんだ（askの過去形）",
+"assistant": "助手",
+"way": "道",
+"but": "でも",
+"really": "本当は",
+"wanted": "（wanted toで）〜したかった",
+"see": "見る",
+"knees": "ひざ（kneeの複数形）",
+"around": "〜を曲がったところに",
+"corner": "角",
+"there": "（there wasで）〜があった",
+"busy": "にぎやかな",
+"street": "通り",
+"shops": "店（shopの複数形）",
+"bank": "銀行",
+"after": "〜のあと",
+"concert": "音楽会・コンサート",
+"help": "手伝う",
+"him": "彼が・彼を",
+"stop": "止める",
+"big": "大きな",
+"crime": "犯罪",
+"that": "その（that nightで）",
+"night": "夜",
+"white mark": "白い跡",
+"spaulding had a white mark on his forehead": "スポールディングの額に白い跡があった",
+"when wilson said spaulding had a white mark on his forehead holmes got": "額の白い跡の話を聞くと、ホームズは",
+"three pipe problem": "パイプ3服分の問題",
+"holmes said it was a three pipe problem": "ホームズはパイプ3服分の難問だと言った",
+"his pipe": "彼のパイプ",
+"holmes said it was a three pipe problem and": "パイプ3服分の問題だと言って",
+"his pipe quietly": "静かにパイプを",
+"wilson's shop": "ウィルソンの店",
+"holmes and watson": "ホームズとワトソン",
+"saxe-coburg square": "サックス・コバーグ・スクエア",
+"then holmes and watson": "それからホームズとワトソンは",
+"to wilson's shop in saxe-coburg square": "スクエアにあるウィルソンの店へ",
+"holmes hit the ground with his stick": "ホームズはステッキで地面をたたいた",
+"the door": "戸・ドア",
+"holmes hit the ground with his stick and": "ステッキで地面をたたいて",
+"on the door": "戸を（knock onで）",
+"the assistant": "助手",
+"the way": "道",
+"he asked the assistant the way": "彼は助手に道をたずねた",
+"his knees": "彼のひざ",
+"he asked the assistant the way but he really wanted to": "道をたずねたが、本当は〜したかった",
+"a bank": "銀行",
+"there was": "〜があった",
+"with shops and a bank": "店や銀行のある",
+"around the corner there was a": "角を曲がると、〜があった",
+"street with shops and a bank": "店や銀行が並ぶ通り",
+"big crime": "大きな犯罪",
+"after a concert": "音楽会のあと",
+"holmes asked watson": "ホームズはワトソンにたのんだ",
+"a big crime": "大きな犯罪",
+"after a concert holmes asked watson to help him": "音楽会のあと、手伝いをたのんだ",
+"a big crime that night": "その夜の大きな犯罪"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-redheaded-04",
+"added": "2026-10-08T21:55",
+"cat": "story",
+"level": 2,
+"title": "『赤毛組合』第4回　銀行の地下室で待ちぶせ",
+"summary": "その夜、ホームズたちは警察のジョーンズ、銀行のメリーウェザー氏といっしょに、銀行の地下室で暗やみの中を待ちます。床の石の下から現れたのはウィルソンの助手ジョン・クレイで、赤毛組合は、ウィルソンを店から遠ざけて銀行までトンネルを掘るためのたくらみだったのです。",
+"book": {
+"title": "The Red-Headed League",
+"titleJa": "赤毛組合",
+"author": "Arthur Conan Doyle",
+"year": 1891,
+"url": "https://www.gutenberg.org/ebooks/1661",
+"part": 4,
+"parts": 4
+},
+"orig": [
+{
+"en": "“It’s no use, John Clay,” said Holmes blandly. “You have no chance at all.”",
+"ja": "「むだだよ、ジョン・クレイ」とホームズはおだやかに言いました。「きみに勝ち目はまったくない」"
+},
+{
+"en": "“You reasoned it out beautifully,” I exclaimed in unfeigned admiration. “It is so long a chain, and yet every link rings true.”",
+"ja": "「みごとな推理だね」と、ぼくは心から感心して言いました。「ずいぶん長い鎖なのに、どの輪もちゃんとつながっている」"
+}
+],
+"lines": [
+{
+"en": "That night, Jones from the police and Mr. Merryweather from the bank came too.",
+"ja": "その夜、警察のジョーンズと、銀行のメリーウェザー氏も加わりました。",
+"mix": "その夜、{police} のジョーンズと、{bank} のメリーウェザー氏も加わりました。"
+},
+{
+"en": "In the bank's cellar, there was a lot of French gold.",
+"ja": "銀行の地下室には、フランスの金貨がたくさんありました。",
+"mix": "銀行の {cellar} には、フランスの {gold} がたくさんありました。"
+},
+{
+"en": "They hid in the dark and waited for a long time.",
+"ja": "みんなは暗やみにかくれて、長いあいだ待ちました。",
+"mix": "みんなは {the dark} にかくれて、長いあいだ待ちました。"
+},
+{
+"en": "Suddenly, a stone in the floor moved, and a young man came out.",
+"ja": "とつぜん、床の石が動いて、若い男が出てきました。",
+"mix": "とつぜん、床の {stone} が動いて、若い {man} が出てきました。"
+},
+{
+"en": "The man was John Clay, Wilson's assistant, and Holmes caught him.",
+"ja": "その男は、ウィルソンの助手のジョン・クレイで、ホームズがつかまえました。",
+"mix": "その男は、ウィルソンの {assistant} のジョン・クレイで、ホームズがつかまえました。"
+},
+{
+"en": "Holmes explained that Clay was digging a tunnel from Wilson's cellar to the bank.",
+"ja": "ホームズは、クレイがウィルソンの地下室から銀行までトンネルを掘っていたのだと説明しました。",
+"mix": "ホームズは、クレイがウィルソンの {cellar} から銀行まで {tunnel} を掘っていたのだと説明しました。"
+},
+{
+"en": "The Red-headed League was only a trick to get Wilson out of his shop.",
+"ja": "赤毛組合は、ウィルソンを店から追い出しておくための、ただのたくらみだったのです。",
+"mix": "赤毛組合は、ウィルソンを店から追い出しておくための、ただの {trick} だったのです。"
+}
+],
+"words": [
+{
+"w": "police",
+"ja": "警察",
+"note": "原文ではジョーンズは Scotland Yard（ロンドン警視庁）の人です。"
+},
+{
+"w": "gold",
+"ja": "金・金貨",
+"note": "原文では、銀行はフランスの銀行から napoleons（ナポレオン金貨）を3万枚借りていました。"
+},
+{
+"w": "dig",
+"ja": "掘る",
+"note": "過去形は dug。was digging は「掘っていた」。"
+},
+{
+"w": "tunnel",
+"ja": "トンネル",
+"note": "原文でホームズは running a tunnel（トンネルを掘り進める）と言っています。"
+},
+{
+"w": "trick",
+"ja": "たくらみ・ごまかし",
+"note": "人をだますための計画。手品も trick と言います。"
+}
+],
+"grammar": {
+"title": "名詞 ＋ to 〜「〜するための（名詞）」（不定詞の形容詞的用法）",
+"body": "a trick to get Wilson out のように、名詞のすぐあとに to ＋ 動詞のもとの形 を置くと、「〜するための（名詞）」「〜するべき（名詞）」という意味になり、その名詞をうしろから説明します。",
+"ex": [
+{
+"en": "I want something to drink.",
+"ja": "何か飲むものがほしいです。"
+},
+{
+"en": "I have a lot of homework to do.",
+"ja": "やらなければならない宿題がたくさんあります。"
+}
+]
+},
+"quiz": [
+{
+"q": "地下室でホームズがつかまえた男はだれ？",
+"choices": [
+"ジョーンズ",
+"ジョン・クレイ",
+"メリーウェザー"
+],
+"a": 1,
+"why": "5文目に The man was John Clay, Wilson's assistant, and Holmes caught him. とあります。"
+},
+{
+"q": "was digging a tunnel の dig の意味は？",
+"choices": [
+"運ぶ",
+"かくす",
+"掘る"
+],
+"a": 2,
+"why": "dig は「掘る」。was digging で「掘っていた」です。"
+},
+{
+"q": "It was a trick ___ Wilson out of his shop.（ウィルソンを店から追い出すための）",
+"choices": [
+"to get",
+"get",
+"got"
+],
+"a": 0,
+"why": "名詞 trick のうしろに to ＋ 動詞のもとの形 を置いて「〜するための」を表します。"
+}
+],
+"talk": {
+"q": "Did you guess the plan before Holmes explained it?",
+"ja": "ホームズが説明する前に、たくらみがわかりましたか？",
+"hint": "Yes, I did. I thought ___. / No, I didn't. I was surprised that ___."
+},
+"grad": [
+{
+"q1": "その夜、{the police} の {Jones} と、{the bank} のメリーウェザー氏も加わりました。",
+"q2": "その夜、{Jones from the police} と、{Mr. Merryweather from the bank} も加わりました。",
+"q3": "{That night, Jones from the police and Mr. Merryweather from the bank} 加わった。"
+},
+{
+"q1": "{bank's cellar} には、フランスの {gold} がたくさんありました。",
+"q2": "{In the bank's cellar}、たくさんのフランスの {gold} がありました。",
+"q3": "{In the bank's cellar, there was} たくさんの {French gold.}"
+},
+{
+"q1": "みんなは {the dark} にかくれて、長い {time} 待ちました。",
+"q2": "{They hid in the dark}、{for a long time} 待ちました。",
+"q3": "{They hid in the dark and} 待った {for a long time.}"
+},
+{
+"q1": "とつぜん、{the floor} の {a stone} が動いて、若い {man} が出てきました。",
+"q2": "とつぜん、{a stone in the floor moved}、若い {man} が出てきました。",
+"q3": "{Suddenly, a stone in the floor moved, and a} 若い {man came out.}"
+},
+{
+"q1": "{The man} は、{Wilson's assistant} のジョン・クレイで、ホームズがつかまえました。",
+"q2": "{The man was John Clay}、{Wilson's assistant} で、ホームズがつかまえました。",
+"q3": "{The man was John Clay, Wilson's assistant, and Holmes} つかまえた {him.}"
+},
+{
+"q1": "ホームズは、{Clay} が {Wilson's cellar} から銀行まで {tunnel} を掘っていたのだと説明しました。",
+"q2": "{Holmes explained that Clay}、{Wilson's cellar} から銀行まで {a tunnel} を掘っていたと。",
+"q3": "{Holmes explained that Clay} 掘っていた {a tunnel from Wilson's cellar to the bank.}"
+},
+{
+"q1": "{Red-headed League} は、ウィルソンを {shop} から追い出しておくための、ただの {trick} だったのです。",
+"q2": "{The Red-headed League was only a trick}、ウィルソンを {his shop} から追い出しておくための。",
+"q3": "{The Red-headed League was only a trick to} 追い出す {Wilson out of his shop.}"
+}
+],
+"gloss": {
+"that": "その・（that 〜で）〜と",
+"night": "夜",
+"jones": "ジョーンズ（人名）",
+"from": "〜の・〜から",
+"the": "その",
+"police": "警察",
+"and": "〜と・そして",
+"mr": "〜氏・〜さん",
+"merryweather": "メリーウェザー（人名）",
+"bank": "銀行",
+"came": "来た（comeの過去形）",
+"too": "〜も",
+"in": "〜の中に",
+"bank's": "銀行の",
+"cellar": "地下室",
+"there": "（there wasで）〜があった",
+"was": "〜だった・あった",
+"a": "ひとつの・ひとりの",
+"lot": "（a lot ofで）たくさんの",
+"of": "〜の",
+"french": "フランスの",
+"gold": "金・金貨",
+"they": "彼らは",
+"hid": "かくれた（hideの過去形）",
+"dark": "暗やみ",
+"waited": "待った（waitの過去形）",
+"for": "〜のあいだ",
+"long": "長い",
+"time": "時間",
+"suddenly": "とつぜん",
+"stone": "石",
+"floor": "床",
+"moved": "動いた（moveの過去形）",
+"young": "若い",
+"man": "男",
+"out": "外へ（came outで出てきた）",
+"john": "ジョン（人名）",
+"clay": "クレイ（人名）",
+"wilson's": "ウィルソンの",
+"assistant": "助手",
+"holmes": "ホームズ（人名）",
+"caught": "つかまえた（catchの過去形）",
+"him": "彼を",
+"explained": "説明した",
+"digging": "掘っている（digの-ing形）",
+"tunnel": "トンネル",
+"to": "〜まで・〜するための",
+"red-headed": "赤毛の",
+"league": "組合",
+"only": "ただの",
+"trick": "たくらみ",
+"get": "（get 〜 out ofで）〜から出す",
+"wilson": "ウィルソン（人名）",
+"his": "彼の",
+"shop": "店",
+"the dark": "暗やみ",
+"the police": "警察",
+"the bank": "銀行",
+"jones from the police": "警察のジョーンズ",
+"mr merryweather from the bank": "銀行のメリーウェザー氏",
+"that night jones from the police and mr merryweather from the bank": "その夜、ジョーンズとメリーウェザー氏が",
+"bank's cellar": "銀行の地下室",
+"in the bank's cellar": "銀行の地下室に",
+"in the bank's cellar there was": "銀行の地下室には〜があった",
+"french gold": "フランスの金貨",
+"they hid in the dark": "彼らは暗やみにかくれた",
+"for a long time": "長いあいだ",
+"they hid in the dark and": "暗やみにかくれて",
+"the floor": "床",
+"a stone": "ひとつの石",
+"a stone in the floor moved": "床の石が動いた",
+"suddenly a stone in the floor moved and a": "とつぜん床の石が動いて、ひとりの",
+"man came out": "男が出てきた",
+"the man": "その男",
+"wilson's assistant": "ウィルソンの助手",
+"the man was john clay": "その男はジョン・クレイだった",
+"the man was john clay wilson's assistant and holmes": "男は助手のクレイで、ホームズが",
+"wilson's cellar": "ウィルソンの地下室",
+"holmes explained that clay": "ホームズはクレイが〜と説明した",
+"a tunnel": "トンネル",
+"a tunnel from wilson's cellar to the bank": "地下室から銀行までのトンネル",
+"red-headed league": "赤毛組合",
+"the red-headed league was only a trick": "赤毛組合はただのたくらみだった",
+"his shop": "彼の店",
+"the red-headed league was only a trick to": "赤毛組合は〜するためのたくらみ",
+"wilson out of his shop": "ウィルソンを店の外へ"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-lostworld-01",
+"added": "2026-10-08T20:58",
+"cat": "story",
+"level": 3,
+"title": "『失われた世界』第1回　好きな人の一言で冒険へ",
+"summary": "新聞記者のマローンは、好きなグラディスから「理想は、死をおそれず自分でチャンスをつくる男性」と言われ、冒険を探そうと決めます。編集長にすすめられたチャレンジャー教授に会うため、記者ではなく科学を学ぶ者として手紙を書きます。",
+"book": {
+"title": "The Lost World",
+"titleJa": "失われた世界",
+"author": "Arthur Conan Doyle",
+"year": 1912,
+"url": "https://www.gutenberg.org/ebooks/139",
+"part": 1,
+"parts": 8
+},
+"orig": [
+{
+"en": "There are heroisms all round us waiting to be done.",
+"ja": "わたしたちのまわりには、だれかが成しとげるのを待っている英雄的な行いがたくさんあるのよ。"
+},
+{
+"en": "So why should you not try your luck with Professor Challenger, of Enmore Park?",
+"ja": "それなら、エンモア・パークのチャレンジャー教授に当たってみてはどうかね？"
+}
+],
+"lines": [
+{
+"en": "Ned Malone, a young newspaper reporter, wanted to ask Gladys to marry him.",
+"ja": "若い新聞記者のネッド・マローンは、グラディスに結婚を申し込みたいと思っていました。",
+"mix": "若い {newspaper reporter} のネッド・マローンは、グラディスに結婚を申し込みたいと思っていました。"
+},
+{
+"en": "But Gladys said that she loved an ideal man who could look death in the face without fear.",
+"ja": "でもグラディスは、自分が好きなのは、死を前にしてもおそれない理想の男性だと言いました。",
+"mix": "でもグラディスは、自分が好きなのは、死を前にしてもおそれない {ideal man} だと言いました。"
+},
+{
+"en": "She told him that chances were all around him, and that her ideal man made his own chances.",
+"ja": "チャンスはまわりのどこにでもあり、理想の男性は自分でチャンスをつくるものだと、彼女は言いました。",
+"mix": "{Chances} はまわりのどこにでもあり、理想の男性は自分でチャンスをつくるものだと、彼女は言いました。"
+},
+{
+"en": "Ned went to his office, determined to find an adventure that was worthy of Gladys.",
+"ja": "ネッドは、グラディスにふさわしい冒険を見つけようと心に決めて、職場の新聞社へ向かいました。",
+"mix": "ネッドは、グラディスにふさわしい {adventure} を見つけようと心に決めて、職場の新聞社へ向かいました。"
+},
+{
+"en": "There, he asked McArdle, the news editor, to send him on a mission with adventure and danger.",
+"ja": "そこで彼は、ニュース編集長のマッカードルに、冒険と危険のある仕事に行かせてほしいと頼みました。",
+"mix": "そこで彼は、ニュース編集長のマッカードルに、{adventure} と {danger} のある仕事に行かせてほしいと頼みました。"
+},
+{
+"en": "McArdle told him to visit Professor Challenger, a famous zoologist who came back from South America with a strange story.",
+"ja": "マッカードルは彼に、南アメリカから不思議な話を持ち帰った有名な動物学者、チャレンジャー教授を訪ねるように言いました。",
+"mix": "マッカードルは彼に、南アメリカから {strange story} を持ち帰った有名な {zoologist}、チャレンジャー教授を訪ねるように言いました。"
+},
+{
+"en": "Challenger was known for throwing reporters down the stairs, so Ned wrote to him as a student of science.",
+"ja": "チャレンジャー教授は記者を階段から放り出すことで有名だったので、ネッドは科学を学ぶ者として手紙を書きました。",
+"mix": "チャレンジャー教授は記者を階段から放り出すことで有名だったので、ネッドは {science} を学ぶ {student} として手紙を書きました。"
+}
+],
+"words": [
+{
+"w": "reporter",
+"ja": "記者",
+"note": "newspaper reporter＝新聞記者。マローンは新聞『デイリー・ガゼット』の記者です。"
+},
+{
+"w": "ideal",
+"ja": "理想（の）",
+"note": "原文でグラディスは、好きなのは only an ideal（理想の人だけ）と言います。an ideal man＝理想の男性。"
+},
+{
+"w": "chance",
+"ja": "機会・チャンス",
+"note": "make his own chances＝自分でチャンスをつくる。グラディスの言う理想の男性の条件です。"
+},
+{
+"w": "worthy of",
+"ja": "〜にふさわしい",
+"note": "原文は some deed which was worthy of my lady（彼女にふさわしい行い）。"
+},
+{
+"w": "zoologist",
+"ja": "動物学者",
+"note": "zoology（動物学）を研究する人。zoo（動物園）と同じなかまのことばです。"
+}
+],
+"grammar": {
+"title": "ask / tell ＋ 人 ＋ to 〜「人に〜するよう頼む・言う」",
+"body": "ask ＋ 人 ＋ to ＋ 動詞のもとの形 で「人に〜してくれるよう頼む」、tell ＋ 人 ＋ to 〜 で「人に〜するように言う」という意味です。to のあとの動作をするのは、間にはさまった「人」のほうです。本文の asked McArdle to send him（マッカードルに、自分を送り出してくれるよう頼んだ）と told him to visit（彼に訪ねるように言った）がこの形です。",
+"ex": [
+{
+"en": "My friend asked me to watch the movie with her.",
+"ja": "友だちは私に、いっしょにその映画を見てほしいと頼みました。"
+},
+{
+"en": "The teacher told us to read this book.",
+"ja": "先生は私たちに、この本を読むように言いました。"
+}
+]
+},
+"quiz": [
+{
+"q": "グラディスが好きなのは、どんな男性？",
+"choices": [
+"お金持ちでやさしい男性",
+"新聞社で出世した男性",
+"死をおそれない理想の男性"
+],
+"a": 2,
+"why": "2文目に she loved an ideal man who could look death in the face without fear とあります。"
+},
+{
+"q": "zoologist の意味は？",
+"choices": [
+"動物学者",
+"新聞記者",
+"編集長"
+],
+"a": 0,
+"why": "zoologist は「動物学者」。zoo（動物園）と同じなかまのことばです。"
+},
+{
+"q": "He asked McArdle ___ send him on a mission.（自分を送り出してくれるよう頼んだ）",
+"choices": [
+"for",
+"to",
+"that"
+],
+"a": 1,
+"why": "「人に〜してくれるよう頼む」は ask ＋ 人 ＋ to ＋ 動詞のもとの形 です。"
+}
+],
+"talk": {
+"q": "What kind of adventure would you like to go on?",
+"ja": "あなたなら、どんな冒険に出てみたいですか？",
+"hint": "I'd like to go to ___ and ___."
+},
+"grad": [
+{
+"q1": "若い {newspaper reporter} の {Ned Malone} は、グラディスに結婚を申し込みたいと思っていました。",
+"q2": "{Ned Malone, a young newspaper reporter, wanted to} グラディスに結婚を申し込む。",
+"q3": "{Ned Malone, a young newspaper reporter, wanted to} 頼む {Gladys to marry him.}"
+},
+{
+"q1": "でも {Gladys} は、自分が好きなのは、{death} を前にしてもおそれない {an ideal man} だと言いました。",
+"q2": "{But Gladys said that she loved an ideal man} 、{death} を前にしてもおそれない。",
+"q3": "{But Gladys said that she loved an ideal man who could look death in the face} おそれずに。"
+},
+{
+"q1": "{Chances} はまわりのどこにでもあり、{her ideal man} は自分で {chances} をつくるものだと、彼女は言いました。",
+"q2": "{She told him that chances were all around him} 、{her ideal man} は自分で {chances} をつくる。",
+"q3": "{She told him that chances were all around him, and that her ideal man} つくる {his own chances.}"
+},
+{
+"q1": "{Ned} は、{Gladys} にふさわしい {adventure} を見つけようと心に決めて、{his office} へ向かいました。",
+"q2": "{Ned went to his office} 、{Gladys} にふさわしい {adventure} を見つけようと決めて。",
+"q3": "{Ned went to his office,} 決心して {to find an adventure that was worthy of Gladys.}"
+},
+{
+"q1": "そこで彼は、ニュース編集長の {McArdle} に、{adventure} と {danger} のある {mission} に行かせてほしいと頼みました。",
+"q2": "{There, he asked McArdle, the news editor,} に、{adventure} と {danger} のある {mission} に行かせてほしいと。",
+"q3": "{There, he asked McArdle, the news editor, to} 送り出す {him on a mission with adventure and danger.}"
+},
+{
+"q1": "マッカードルは彼に、{South America} から {strange story} を持ち帰った有名な {zoologist}、{Professor Challenger} を訪ねるように言いました。",
+"q2": "{McArdle told him to visit Professor Challenger,} {South America} から {a strange story} を持ち帰った有名な {zoologist}。",
+"q3": "{McArdle told him to visit Professor Challenger, a famous zoologist who} 帰ってきた {from South America with a strange story.}"
+},
+{
+"q1": "{Challenger} は {reporters} を {stairs} から放り出すことで有名だったので、{Ned} は {science} を学ぶ {student} として手紙を書きました。",
+"q2": "{Challenger was known for throwing reporters down the stairs} ので、{Ned} は {science} を学ぶ {student} として手紙を書きました。",
+"q3": "{Challenger was known for throwing reporters down the stairs, so Ned} 手紙を書いた {to him as a student of science.}"
+}
+],
+"gloss": {
+"ned": "ネッド（人名・エドワードの愛称）",
+"malone": "マローン（人名）",
+"a": "ひとりの・ひとつの",
+"young": "若い",
+"newspaper": "新聞",
+"reporter": "記者",
+"wanted": "〜したかった（wantの過去形）",
+"to": "〜すること・〜するよう・〜へ",
+"ask": "頼む",
+"gladys": "グラディス（人名）",
+"marry": "結婚する",
+"him": "彼を・彼に",
+"but": "でも・しかし",
+"said": "言った（sayの過去形）",
+"that": "〜ということ・〜する（もの）",
+"she": "彼女は",
+"loved": "愛していた（loveの過去形）",
+"an": "ひとりの・ひとつの",
+"ideal": "理想の",
+"man": "男性",
+"who": "〜する（人）",
+"could": "〜できた（canの過去形）",
+"look": "見る（in the faceで直視）",
+"death": "死",
+"in": "〜の中に・〜で",
+"the": "その",
+"face": "顔（in the face＝正面から）",
+"without": "〜なしで",
+"fear": "おそれ・恐怖",
+"told": "言った（tellの過去形）",
+"chances": "チャンス（chanceの複数形）",
+"were": "〜だった・あった",
+"all": "すっかり（all around）",
+"around": "〜のまわりに",
+"and": "そして・〜と",
+"her": "彼女の",
+"made": "つくった（makeの過去形）",
+"his": "彼の・自分の",
+"own": "自分自身の",
+"went": "行った（goの過去形）",
+"office": "職場・オフィス",
+"determined": "心に決めて",
+"find": "見つける",
+"adventure": "冒険",
+"was": "〜だった（isの過去形）",
+"worthy": "ふさわしい（worthy of）",
+"of": "〜の・〜に",
+"there": "そこで",
+"he": "彼は",
+"asked": "頼んだ（askの過去形）",
+"mcardle": "マッカードル（人名）",
+"news": "ニュース",
+"editor": "編集長・編集者",
+"send": "送り出す",
+"on": "〜に（on a mission＝任務に）",
+"mission": "任務・仕事",
+"with": "〜のある・〜を持って",
+"danger": "危険",
+"visit": "訪ねる",
+"professor": "教授",
+"challenger": "チャレンジャー（人名）",
+"famous": "有名な",
+"zoologist": "動物学者",
+"came": "来た（comeの過去形）",
+"back": "もどって（came back＝帰った）",
+"from": "〜から",
+"south": "南の（South America）",
+"america": "アメリカ（South＝南米）",
+"strange": "不思議な・奇妙な",
+"story": "話",
+"known": "知られて（knowの過去分詞）",
+"for": "〜で（known for＝〜で有名）",
+"throwing": "投げること（throw＋ing）",
+"reporters": "記者たち（reporterの複数形）",
+"down": "〜を下へ",
+"stairs": "階段",
+"so": "だから",
+"wrote": "書いた（writeの過去形）",
+"as": "〜として",
+"student": "学ぶ人・学生",
+"science": "科学",
+"newspaper reporter": "新聞記者",
+"ideal man": "理想の男性",
+"strange story": "不思議な話",
+"ned malone": "ネッド・マローン",
+"ned malone a young newspaper reporter wanted to": "若い記者ネッド・マローンは〜したかった",
+"gladys to marry him": "グラディスに結婚してくれるよう",
+"an ideal man": "理想の男性",
+"but gladys said that she loved an ideal man": "でもグラディスは理想の男性が好きと言った",
+"but gladys said that she loved an ideal man who could look death in the face": "死を直視できる理想の男が好きと言った",
+"her ideal man": "彼女の理想の男性",
+"she told him that chances were all around him": "チャンスはまわりにあると彼女は言った",
+"she told him that chances were all around him and that her ideal man": "チャンスはまわりにあり、理想の男性は〜と",
+"his own chances": "自分自身のチャンス",
+"his office": "彼の職場",
+"ned went to his office": "ネッドは職場へ行った",
+"to find an adventure that was worthy of gladys": "グラディスにふさわしい冒険を見つけようと",
+"there he asked mcardle the news editor": "そこで彼は編集長マッカードルに頼んだ",
+"there he asked mcardle the news editor to": "編集長マッカードルに〜するよう頼んだ",
+"him on a mission with adventure and danger": "自分を冒険と危険のある任務に",
+"south america": "南アメリカ（南米）",
+"professor challenger": "チャレンジャー教授",
+"mcardle told him to visit professor challenger": "チャレンジャー教授を訪ねるよう言った",
+"a strange story": "不思議な話",
+"mcardle told him to visit professor challenger a famous zoologist who": "〜した有名な動物学者を訪ねるよう言った",
+"from south america with a strange story": "南米から不思議な話を持って",
+"challenger was known for throwing reporters down the stairs": "教授は記者を階段から放り出すので有名",
+"challenger was known for throwing reporters down the stairs so ned": "記者を放り出すことで有名なので、ネッドは",
+"to him as a student of science": "科学を学ぶ者として彼に"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-lostworld-02",
+"added": "2026-10-08T20:57",
+"cat": "story",
+"level": 3,
+"title": "『失われた世界』第2回　怒れる教授と恐竜のスケッチ",
+"summary": "チャレンジャー教授にうそを見破られたマローンは取っ組み合いになりますが、警官に「悪いのは自分」と答えたことで教授に気に入られます。教授は、南米で亡くなった画家のスケッチ帳や翼竜の翼を見せ、大昔の生き物が今も生き残る土地があると語ります。",
+"book": {
+"title": "The Lost World",
+"titleJa": "失われた世界",
+"author": "Arthur Conan Doyle",
+"year": 1912,
+"url": "https://www.gutenberg.org/ebooks/139",
+"part": 2,
+"parts": 8
+},
+"orig": [
+{
+"en": "I must tell you that he is a perfectly impossible person--absolutely impossible.",
+"ja": "申し上げておきますけれど、夫はまったくどうしようもない人なんです――本当にどうしようもないの。"
+},
+{
+"en": "You are a Columbus of science who has discovered a lost world.",
+"ja": "あなたは、失われた世界を発見した科学界のコロンブスです。"
+}
+],
+"lines": [
+{
+"en": "When Malone visited Challenger, the professor soon found out that Malone knew nothing about science.",
+"ja": "マローンがチャレンジャー教授を訪ねると、教授は、マローンが科学について何も知らないことをすぐに見抜きました。",
+"mix": "マローンがチャレンジャー教授を訪ねると、{professor} は、マローンが {science} について何も知らないことをすぐに見抜きました。"
+},
+{
+"en": "They fought and rolled down the steps into the street, but Malone told a policeman that it was his own fault.",
+"ja": "ふたりは取っ組み合いになって玄関の階段を通りまで転がり落ちましたが、マローンは警官に、悪いのは自分だと言いました。",
+"mix": "ふたりは取っ組み合いになって玄関の {steps} を通りまで転がり落ちましたが、マローンは {policeman} に、悪いのは自分だと言いました。"
+},
+{
+"en": "Pleased with this answer, Challenger showed him a sketch-book left by Maple White, an American artist who died near the Amazon.",
+"ja": "その答えを気に入ったチャレンジャー教授は、アマゾン川の近くで亡くなったアメリカ人の画家、メイプル・ホワイトが残したスケッチ帳を見せました。",
+"mix": "その答えを気に入ったチャレンジャー教授は、アマゾン川の近くで亡くなったアメリカ人の {artist}、メイプル・ホワイトが残した {sketch-book} を見せました。"
+},
+{
+"en": "One picture showed a huge creature that looked very much like a Stegosaurus, a dinosaur from the Jurassic period.",
+"ja": "その中の1枚には、ジュラ紀の恐竜ステゴサウルスにとてもよく似た、巨大な生き物が描かれていました。",
+"mix": "その中の1枚には、ジュラ紀の {dinosaur} ステゴサウルスにとてもよく似た、巨大な {creature} が描かれていました。"
+},
+{
+"en": "Challenger also showed him photos of high cliffs and part of a wing from a pterodactyl, a flying reptile.",
+"ja": "チャレンジャー教授はさらに、高い崖の写真と、空を飛ぶ爬虫類である翼竜プテロダクティルスの翼の一部も見せました。",
+"mix": "チャレンジャー教授はさらに、高い {cliffs} の写真と、空を飛ぶ爬虫類である翼竜プテロダクティルスの {wing} の一部も見せました。"
+},
+{
+"en": "He thought the land on top of the cliffs was lifted up and cut off long ago, so ancient creatures survived there.",
+"ja": "教授は、崖の上の土地は大昔に持ち上げられて周りから切り離されたので、古代の生き物がそこで生き残ったのだと考えていました。",
+"mix": "教授は、崖の上の {land} は大昔に持ち上げられて周りから切り離されたので、{ancient creatures} がそこで生き残ったのだと考えていました。"
+},
+{
+"en": "Malone was finally convinced and said that Challenger had discovered a lost world.",
+"ja": "マローンはついに納得し、チャレンジャー教授は失われた世界を発見したのだと言いました。",
+"mix": "マローンはついに納得し、チャレンジャー教授は {lost world} を発見したのだと言いました。"
+}
+],
+"words": [
+{
+"w": "creature",
+"ja": "生き物",
+"note": "動物をまとめて言うことば。この物語では、まだ知られていない生き物によく使われます。"
+},
+{
+"w": "pterodactyl",
+"ja": "翼竜（プテロダクティルス）",
+"note": "原文では a flying reptile of the Jurassic period（ジュラ紀の空飛ぶ爬虫類）と説明されます。最初の p は読みません。"
+},
+{
+"w": "survive",
+"ja": "生き残る",
+"note": "原文は Creatures survive which would otherwise disappear.（ほかの場所なら消えたはずの生き物が生き残る）。"
+},
+{
+"w": "fault",
+"ja": "（失敗の）責任・せい",
+"note": "It's my fault.＝私のせいです。原文のマローンは I was to blame myself.（悪いのは自分です）と言います。"
+},
+{
+"w": "convinced",
+"ja": "納得した・確信した",
+"note": "原文は I was convinced.（私は確信した）。証拠がそろって、マローンは教授を信じました。"
+}
+],
+"grammar": {
+"title": "look like ＋ 名詞「〜のように見える・〜に似ている」",
+"body": "look like のあとに名詞を置くと「〜のように見える・〜に似ている」という意味になります。形容詞なら look happy のように like はつけません。look very much like 〜 は「〜にとてもよく似ている」、look just like 〜 は「〜にそっくり」です。本文の a huge creature that looked very much like a Stegosaurus は「ステゴサウルスにとてもよく似た巨大な生き物」。",
+"ex": [
+{
+"en": "That cloud looks like a fish.",
+"ja": "あの雲は魚のように見えます。"
+},
+{
+"en": "He looks just like his father.",
+"ja": "彼はお父さんにそっくりです。"
+}
+]
+},
+"quiz": [
+{
+"q": "チャレンジャー教授がマローンを気に入ったのは、なぜ？",
+"choices": [
+"マローンが警官に、悪いのは自分だと言ったから",
+"マローンが科学にくわしかったから",
+"マローンが崖の写真を持っていたから"
+],
+"a": 0,
+"why": "2文目の Malone told a policeman that it was his own fault のあと、3文目に Pleased with this answer とあります。"
+},
+{
+"q": "survive の意味は？",
+"choices": [
+"持ち上げる",
+"生き残る",
+"発見する"
+],
+"a": 1,
+"why": "survive は「生き残る」。ancient creatures survived there＝古代の生き物がそこで生き残った。"
+},
+{
+"q": "The creature looked ___ a Stegosaurus.（ステゴサウルスに似ていた）",
+"choices": [
+"at",
+"for",
+"like"
+],
+"a": 2,
+"why": "「〜に似ている・〜のように見える」は look like ＋ 名詞。look at は「〜を見る」です。"
+}
+],
+"talk": {
+"q": "Do you believe Challenger's story? Why or why not?",
+"ja": "あなたはチャレンジャー教授の話を信じますか？その理由は？",
+"hint": "I believe it because ___. / I don't believe it because ___."
+},
+"grad": [
+{
+"q1": "{Malone} が {Challenger} を訪ねると、{the professor} は、マローンが {science} について何も知らないことをすぐに見抜きました。",
+"q2": "{When Malone visited Challenger, the professor soon found out} 、マローンが {science} について何も知らないことを。",
+"q3": "{When Malone visited Challenger, the professor soon found out that Malone} 何も知らない {about science.}"
+},
+{
+"q1": "ふたりは取っ組み合いになって {the steps} を {the street} まで転がり落ちましたが、{Malone} は {a policeman} に、悪いのは自分だと言いました。",
+"q2": "{They fought and rolled down the steps into the street} 、でも {Malone} は {a policeman} に、悪いのは自分だと言いました。",
+"q3": "{They fought and rolled down the steps into the street, but Malone told a policeman that it was his own} 落ち度。"
+},
+{
+"q1": "その答えを気に入った {Challenger} は、アマゾン川の近くで亡くなったアメリカ人の {artist}、{Maple White} が残した {a sketch-book} を見せました。",
+"q2": "{Pleased with this answer, Challenger showed him a sketch-book} 、アマゾン川の近くで亡くなったアメリカ人の {artist}、{Maple White} が残した。",
+"q3": "{Pleased with this answer, Challenger showed him a sketch-book left by Maple White, an American artist who} 亡くなった {near the Amazon.}"
+},
+{
+"q1": "{One picture} には、ジュラ紀の {dinosaur}、{Stegosaurus} にとてもよく似た、巨大な {creature} が描かれていました。",
+"q2": "{One picture showed} 巨大な {creature that looked very much like a Stegosaurus} 、ジュラ紀の {dinosaur}。",
+"q3": "{One picture showed a} 巨大な {creature that looked very much like a Stegosaurus, a dinosaur from the Jurassic period.}"
+},
+{
+"q1": "{Challenger} はさらに、{high cliffs} の {photos} と、{flying reptile} である翼竜プテロダクティルスの {wing} の一部も見せました。",
+"q2": "{Challenger also showed him photos of high cliffs} と、{flying reptile} である翼竜の {wing} の一部。",
+"q3": "{Challenger also showed him photos of high cliffs and} 一部 {of a wing from a pterodactyl, a flying reptile.}"
+},
+{
+"q1": "教授は、{the cliffs} の上の {the land} は大昔に持ち上げられて周りから切り離されたので、{ancient creatures} がそこで生き残ったのだと考えていました。",
+"q2": "{He thought the land on top of the cliffs} は大昔に持ち上げられて切り離されたので、{ancient creatures survived there}。",
+"q3": "{He thought the land on top of the cliffs was} 持ち上げられ {and cut off long ago, so ancient creatures survived there.}"
+},
+{
+"q1": "{Malone} はついに納得し、{Challenger} は {a lost world} を発見したのだと言いました。",
+"q2": "{Malone was finally convinced} 、そして {Challenger had discovered a lost world} だと言いました。",
+"q3": "{Malone was finally convinced and} 言った {that Challenger had discovered a lost world.}"
+}
+],
+"gloss": {
+"when": "〜すると・〜したとき",
+"malone": "マローン（人名）",
+"visited": "訪ねた（visitの過去形）",
+"challenger": "チャレンジャー（人名）",
+"the": "その",
+"professor": "教授",
+"soon": "すぐに",
+"found": "見つけた（found out＝見抜いた）",
+"out": "（find out＝見抜く・気づく）",
+"that": "〜ということ・〜する（もの）",
+"knew": "知っていた（knowの過去形）",
+"nothing": "何も〜ない",
+"about": "〜について",
+"science": "科学",
+"they": "彼らは・ふたりは",
+"fought": "取っ組み合った（fightの過去形）",
+"and": "そして・〜と",
+"rolled": "転がった（rollの過去形）",
+"down": "〜を下へ",
+"steps": "（玄関の）階段・段",
+"into": "〜の中へ・〜まで",
+"street": "通り",
+"but": "でも・しかし",
+"told": "言った（tellの過去形）",
+"a": "ひとりの・ひとつの",
+"policeman": "警官",
+"it": "それは",
+"was": "〜だった・〜された",
+"his": "彼の・自分の",
+"own": "自分自身の",
+"fault": "責任・落ち度",
+"pleased": "気に入って・満足して",
+"with": "〜に・〜で",
+"this": "この",
+"answer": "答え",
+"showed": "見せた（showの過去形）",
+"him": "彼に",
+"sketch-book": "スケッチ帳",
+"left": "残された（leaveの過去分詞）",
+"by": "〜によって",
+"maple": "メイプル（人名）",
+"white": "ホワイト（人名）",
+"an": "ひとりの",
+"american": "アメリカ人の",
+"artist": "画家",
+"who": "〜した（人）",
+"died": "亡くなった（dieの過去形）",
+"near": "〜の近くで",
+"amazon": "アマゾン川",
+"one": "1枚の・ひとつの",
+"picture": "絵",
+"huge": "巨大な",
+"creature": "生き物",
+"looked": "〜に見えた（lookの過去形）",
+"like": "〜のような・〜に似た",
+"stegosaurus": "ステゴサウルス（恐竜）",
+"dinosaur": "恐竜",
+"from": "〜の・〜から",
+"jurassic": "ジュラ紀の",
+"period": "時代・〜紀",
+"also": "さらに・〜も",
+"photos": "写真（photoの複数形）",
+"of": "〜の",
+"high": "高い",
+"cliffs": "崖（cliffの複数形）",
+"part": "一部",
+"wing": "翼",
+"pterodactyl": "翼竜（プテロダクティルス）",
+"flying": "空を飛ぶ",
+"reptile": "爬虫類",
+"he": "彼は",
+"thought": "考えた（thinkの過去形）",
+"land": "土地",
+"on": "〜の上に（on top of）",
+"top": "てっぺん・上",
+"lifted": "持ち上げられた（liftの過去分詞）",
+"up": "上へ",
+"cut": "切られた（cut off＝切り離す）",
+"off": "離れて（cut off）",
+"long": "ずっと（long ago＝大昔）",
+"ago": "前に（long ago＝大昔）",
+"so": "だから",
+"ancient": "古代の・大昔の",
+"creatures": "生き物（creatureの複数形）",
+"survived": "生き残った（surviveの過去形）",
+"there": "そこで",
+"finally": "ついに",
+"convinced": "納得した・確信した",
+"said": "言った（sayの過去形）",
+"had": "（had＋過去分詞＝〜していた）",
+"discovered": "発見した（discoverの過去分詞）",
+"lost": "失われた",
+"world": "世界",
+"ancient creatures": "古代の生き物",
+"lost world": "失われた世界",
+"the professor": "その教授",
+"when malone visited challenger the professor soon found out": "マローンが訪ねると、教授はすぐ見抜いた",
+"when malone visited challenger the professor soon found out that malone": "教授はすぐ、マローンが〜と見抜いた",
+"about science": "科学について",
+"the steps": "（玄関の）階段",
+"the street": "通り",
+"a policeman": "ひとりの警官",
+"they fought and rolled down the steps into the street": "ふたりは争い、階段を通りまで転がった",
+"they fought and rolled down the steps into the street but malone told a policeman that it was his own": "転がり落ちたが、警官には自分の〜と言った",
+"maple white": "メイプル・ホワイト（人名）",
+"a sketch-book": "1冊のスケッチ帳",
+"pleased with this answer challenger showed him a sketch-book": "答えを気に入った教授はスケッチ帳を見せた",
+"pleased with this answer challenger showed him a sketch-book left by maple white an american artist who": "画家ホワイトの残したスケッチ帳を見せた",
+"near the amazon": "アマゾン川の近くで",
+"one picture": "1枚の絵",
+"one picture showed": "1枚の絵が見せていた",
+"one picture showed a": "1枚の絵には〜が描かれていた",
+"high cliffs": "高い崖",
+"flying reptile": "空を飛ぶ爬虫類",
+"challenger also showed him photos of high cliffs": "教授は高い崖の写真も見せた",
+"challenger also showed him photos of high cliffs and": "教授は高い崖の写真と〜も見せた",
+"of a wing from a pterodactyl a flying reptile": "空飛ぶ爬虫類・翼竜の翼の",
+"the cliffs": "その崖",
+"the land": "その土地",
+"he thought the land on top of the cliffs": "教授は崖の上の土地が〜と考えた",
+"ancient creatures survived there": "古代の生き物がそこで生き残った",
+"he thought the land on top of the cliffs was": "崖の上の土地は〜されたと考えた",
+"and cut off long ago so ancient creatures survived there": "大昔に切り離され、古代生物が生き残った",
+"a lost world": "失われた世界",
+"malone was finally convinced": "マローンはついに納得した",
+"challenger had discovered a lost world": "教授は失われた世界を発見した",
+"malone was finally convinced and": "マローンはついに納得して",
+"that challenger had discovered a lost world": "教授が失われた世界を発見したと",
+"very": "とても",
+"much": "大いに（very much＝とても）",
+"creature that looked very much like a stegosaurus": "ステゴサウルスによく似た生き物",
+"creature that looked very much like a stegosaurus a dinosaur from the jurassic period": "ジュラ紀の恐竜ステゴサウルスに似た生き物"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-lostworld-03",
+"added": "2026-10-08T20:56",
+"cat": "story",
+"level": 3,
+"title": "『失われた世界』第3回　「質問！」から決まった探検隊",
+"summary": "講演会で「巨大な爬虫類は人間が現れる前に絶滅した」という話に、チャレンジャー教授は何度も「質問！」と声を上げ、「今も生きている。私は見た」と言い切ります。確かめに行く人としてサマリー教授、マローン、ジョン・ロクストン卿が決まり、一行は南米へ旅立ちます。",
+"book": {
+"title": "The Lost World",
+"titleJa": "失われた世界",
+"author": "Arthur Conan Doyle",
+"year": 1912,
+"url": "https://www.gutenberg.org/ebooks/139",
+"part": 3,
+"parts": 8
+},
+"orig": [
+{
+"en": "I know because I have seen some of them.",
+"ja": "なぜわかるのか？そのいくつかを、この目で見たからです。"
+},
+{
+"en": "But a sportin' risk, young fellah, that's the salt of existence.",
+"ja": "だがな、若いの、スリルのある危険こそが人生の味つけなんだ。"
+}
+],
+"lines": [
+{
+"en": "At a science lecture that night, Mr. Waldron said that the great reptiles died out long before humans appeared.",
+"ja": "その夜の科学の講演会で、ウォルドロン氏は、巨大な爬虫類は人間が現れるずっと前に絶滅したと話しました。",
+"mix": "その夜の科学の {lecture} で、ウォルドロン氏は、巨大な {reptiles} は人間が現れるずっと前に絶滅したと話しました。"
+},
+{
+"en": "Challenger kept shouting “Question!” from the stage, and soon the students started to shout it too.",
+"ja": "チャレンジャー教授は壇上から何度も「質問！」と叫び、やがて学生たちもいっしょに叫ぶようになりました。",
+"mix": "チャレンジャー教授は {stage} の上から何度も「質問！」と叫び、やがて {students} もいっしょに叫ぶようになりました。"
+},
+{
+"en": "Then Challenger told everyone that creatures from the Jurassic period still existed and that he had seen some of them.",
+"ja": "そしてチャレンジャー教授は、ジュラ紀の生き物は今も生きていて、自分はそのいくつかを見たことがあると、みんなに告げました。",
+"mix": "そしてチャレンジャー教授は、ジュラ紀の {creatures} は今も生きていて、自分はそのいくつかを見たことがあると、みんなに告げました。"
+},
+{
+"en": "When people called him a liar, he asked them to choose some people to go and test his story.",
+"ja": "みんなにうそつきと言われると、チャレンジャー教授は、自分の話を確かめに行く人を選んでほしいと頼みました。",
+"mix": "みんなに {liar} と言われると、チャレンジャー教授は、自分の {story} を確かめに行く人を選んでほしいと頼みました。"
+},
+{
+"en": "Professor Summerlee agreed to go, and Malone and Lord John Roxton, a famous hunter and traveler, also volunteered.",
+"ja": "サマリー教授が行くことに同意し、マローンと、有名な狩猟家で旅行家のジョン・ロクストン卿も名乗り出ました。",
+"mix": "サマリー教授が行くことに同意し、マローンと、有名な {hunter} で {traveler} のジョン・ロクストン卿も名乗り出ました。"
+},
+{
+"en": "In his rooms, Lord John tested Malone's courage and decided that Malone was a man he could trust.",
+"ja": "自分の部屋で、ジョン卿はマローンの勇気を試し、マローンは信頼できる男だと認めました。",
+"mix": "自分の部屋で、ジョン卿はマローンの {courage} を試し、マローンは信頼できる男だと認めました。"
+},
+{
+"en": "At the port, Challenger gave them a sealed envelope and told them to open it only at a set time in Manaos.",
+"ja": "港でチャレンジャー教授は一行に封をした封筒を渡し、マナオスで決められた時刻になってから開けるように言いました。",
+"mix": "港でチャレンジャー教授は一行に封をした {envelope} を渡し、マナオスで決められた {time} になってから開けるように言いました。"
+}
+],
+"words": [
+{
+"w": "lecture",
+"ja": "講演・講義",
+"note": "give a lecture＝講演をする。大学の「講義」にも使います。"
+},
+{
+"w": "reptile",
+"ja": "爬虫類",
+"note": "ヘビやワニ、トカゲのなかま。the great reptiles＝（恐竜のような）巨大な爬虫類。"
+},
+{
+"w": "liar",
+"ja": "うそつき",
+"note": "lie（うそをつく）からできた語。call 人 a liar＝人をうそつき呼ばわりする。"
+},
+{
+"w": "volunteer",
+"ja": "自分から名乗り出る・志願する",
+"note": "日本語の「ボランティア」と同じ語。原文の講演会でマローンは I will go（私が行きます）と名乗り出ました。"
+},
+{
+"w": "courage",
+"ja": "勇気",
+"note": "test 人's courage＝人の勇気を試す。ジョン卿は危ない頼みごとをもちかけて、マローンを試しました。"
+}
+],
+"grammar": {
+"title": "keep ＋ 〜ing「何度も〜する・〜し続ける」",
+"body": "keep のあとに 〜ing を置くと「〜し続ける・何度もくり返し〜する」という意味になります。本文の Challenger kept shouting “Question!” は「チャレンジャー教授は何度も『質問！』と叫んだ」。keep のあとは to 〜 ではなく 〜ing の形です。",
+"ex": [
+{
+"en": "She kept talking about the movie.",
+"ja": "彼女はその映画の話をし続けました。"
+},
+{
+"en": "Keep going straight.",
+"ja": "そのまままっすぐ進んでください。"
+}
+]
+},
+"quiz": [
+{
+"q": "講演会でチャレンジャー教授が何度も叫んだことばは？",
+"choices": [
+"Liar!",
+"Question!",
+"Shame!"
+],
+"a": 1,
+"why": "2文目に Challenger kept shouting “Question!” とあります。"
+},
+{
+"q": "volunteer の意味は？",
+"choices": [
+"うそをつく",
+"勇気を試す",
+"自分から名乗り出る"
+],
+"a": 2,
+"why": "volunteer は「自分から名乗り出る・志願する」。日本語の「ボランティア」と同じ語です。"
+},
+{
+"q": "Challenger kept ___ “Question!”（何度も「質問！」と叫んだ）",
+"choices": [
+"shouting",
+"shouted",
+"to shout"
+],
+"a": 0,
+"why": "keep のあとは 〜ing の形。kept shouting で「叫び続けた・何度も叫んだ」です。"
+}
+],
+"talk": {
+"q": "Have you ever seen a dinosaur skeleton?",
+"ja": "恐竜の骨格を見たことはありますか？",
+"hint": "Yes, I have seen one at ___. / No, I have never seen one."
+},
+"grad": [
+{
+"q1": "その夜の科学の {lecture} で、{Mr. Waldron} は、{the great reptiles} は人間が現れるずっと前に絶滅したと話しました。",
+"q2": "{At a science lecture that night, Mr. Waldron said} 、{the great reptiles} は人間が現れるずっと前に絶滅したと。",
+"q3": "{At a science lecture that night, Mr. Waldron said that the great reptiles} 絶滅した {long before humans appeared.}"
+},
+{
+"q1": "{Challenger} は {the stage} の上から何度も {“Question!”} と叫び、やがて {the students} もいっしょに叫ぶようになりました。",
+"q2": "{Challenger kept shouting “Question!” from the stage} 、やがて {the students} もいっしょに叫ぶようになりました。",
+"q3": "{Challenger kept shouting “Question!” from the stage, and soon the students started to} 叫ぶ {it too.}"
+},
+{
+"q1": "そして {Challenger} は、{the Jurassic period} の {creatures} は今も生きていて、自分はそのいくつかを見たことがあると、みんなに告げました。",
+"q2": "{Then Challenger told} みんなに、{creatures from the Jurassic period still existed} 、そして自分はそのいくつかを見たことがあると。",
+"q3": "{Then Challenger told} みんな {that creatures from the Jurassic period still existed and that he had seen some of them.}"
+},
+{
+"q1": "みんなに {a liar} と言われると、彼は、{his story} を確かめに行く {some people} を選んでほしいと頼みました。",
+"q2": "{When people called him a liar, he asked them} 、{his story} を確かめに行く {some people} を選んでほしいと。",
+"q3": "{When people called him a liar, he asked them to choose some people to go and} 確かめる {his story.}"
+},
+{
+"q1": "サマリー教授が行くことに同意し、{Malone} と、有名な {hunter} で {traveler} の {Lord John Roxton} も名乗り出ました。",
+"q2": "{Professor Summerlee agreed to go} 、{Malone} と、有名な {hunter} で {traveler} の {Lord John Roxton} も {volunteered}。",
+"q3": "{Professor Summerlee agreed to go, and Malone and Lord John Roxton, a} 有名な {hunter and traveler, also volunteered.}"
+},
+{
+"q1": "自分の部屋で、{Lord John} は {Malone's courage} を試し、マローンは信頼できる {a man} だと認めました。",
+"q2": "{In his rooms, Lord John tested Malone's courage and decided} 、マローンは信頼できる {a man} だと。",
+"q3": "{In his rooms, Lord John tested Malone's courage and decided that Malone was a man he could} 信頼する。"
+},
+{
+"q1": "港で {Challenger} は一行に {a sealed envelope} を渡し、{Manaos} で決められた {time} になってから開けるように言いました。",
+"q2": "{At the port, Challenger gave them a sealed envelope} 、{Manaos} で決められた {time} になってから開けるように言いました。",
+"q3": "{At the port, Challenger gave them a sealed envelope and told them to} 開ける {it only at a set time in Manaos.}"
+}
+],
+"gloss": {
+"at": "〜で（場所・時）",
+"a": "ひとつの・ひとりの",
+"science": "科学",
+"lecture": "講演",
+"that": "その・〜ということ",
+"night": "夜",
+"mr": "〜氏・〜さん（Mr.）",
+"waldron": "ウォルドロン（人名）",
+"said": "言った（sayの過去形）",
+"the": "その",
+"great": "巨大な・大きな",
+"reptiles": "爬虫類（reptileの複数形）",
+"died": "死んだ（died out＝絶滅した）",
+"out": "（die out＝絶滅する）",
+"long": "ずっと（long before）",
+"before": "〜より前に",
+"humans": "人間（humanの複数形）",
+"appeared": "現れた（appearの過去形）",
+"challenger": "チャレンジャー（人名）",
+"kept": "〜し続けた（keepの過去形）",
+"shouting": "叫ぶこと（shout＋ing）",
+"question": "質問（ここでは「異議あり」）",
+"from": "〜から・〜の",
+"stage": "壇上・舞台",
+"and": "そして・〜と",
+"soon": "やがて・すぐに",
+"students": "学生たち（studentの複数形）",
+"started": "始めた（startの過去形）",
+"to": "〜すること・〜するよう",
+"shout": "叫ぶ",
+"it": "それを",
+"too": "〜も",
+"then": "それから・そして",
+"told": "告げた・言った（tellの過去形）",
+"everyone": "みんな",
+"creatures": "生き物（creatureの複数形）",
+"jurassic": "ジュラ紀の",
+"period": "時代・〜紀",
+"still": "今でも",
+"existed": "存在した（existの過去形）",
+"he": "彼は",
+"had": "（had＋過去分詞＝〜したことがあった）",
+"seen": "見た（seeの過去分詞）",
+"some": "いくつか",
+"of": "〜の",
+"them": "それら",
+"when": "〜すると・〜したとき",
+"people": "人々",
+"called": "呼んだ（callの過去形）",
+"him": "彼を",
+"liar": "うそつき",
+"asked": "頼んだ（askの過去形）",
+"choose": "選ぶ",
+"go": "行く",
+"test": "確かめる・試す",
+"his": "彼の",
+"story": "話",
+"professor": "教授",
+"summerlee": "サマリー（人名）",
+"agreed": "同意した（agreeの過去形）",
+"malone": "マローン（人名）",
+"lord": "卿（貴族の敬称）",
+"john": "ジョン（人名）",
+"roxton": "ロクストン（人名）",
+"famous": "有名な",
+"hunter": "狩猟家・ハンター",
+"traveler": "旅行家",
+"also": "〜も",
+"volunteered": "名乗り出た（volunteerの過去形）",
+"in": "〜で・〜の中で",
+"rooms": "部屋・住まい（roomの複数形）",
+"tested": "試した（testの過去形）",
+"malone's": "マローンの",
+"courage": "勇気",
+"decided": "判断した・決めた",
+"was": "〜だった",
+"man": "男",
+"could": "〜できた（canの過去形）",
+"trust": "信頼する",
+"port": "港",
+"gave": "渡した（giveの過去形）",
+"sealed": "封をした",
+"envelope": "封筒",
+"open": "開ける",
+"only": "〜になって初めて・〜だけ",
+"set": "決められた",
+"time": "時刻",
+"manaos": "マナオス（地名）",
+"mr waldron": "ウォルドロン氏",
+"the great reptiles": "巨大な爬虫類",
+"at a science lecture that night mr waldron said": "その夜の講演会でウォルドロン氏は言った",
+"at a science lecture that night mr waldron said that the great reptiles": "講演で、巨大な爬虫類は〜と彼は言った",
+"long before humans appeared": "人間が現れるずっと前に",
+"the stage": "壇上",
+"the students": "学生たち",
+"challenger kept shouting question from the stage": "教授は壇上から「質問！」と叫び続けた",
+"challenger kept shouting question from the stage and soon the students started to": "叫び続け、やがて学生たちも〜し始めた",
+"it too": "それを（自分たちも）",
+"the jurassic period": "ジュラ紀",
+"then challenger told": "そして教授は告げた",
+"creatures from the jurassic period still existed": "ジュラ紀の生き物が今も生きていた",
+"that creatures from the jurassic period still existed and that he had seen some of them": "ジュラ紀の生物は今もいて、自分は見たと",
+"a liar": "うそつき",
+"his story": "彼の話",
+"some people": "何人かの人",
+"when people called him a liar he asked them": "うそつきと言われると、彼は頼んだ",
+"when people called him a liar he asked them to choose some people to go and": "人を選び、行って〜してと頼んだ",
+"lord john roxton": "ジョン・ロクストン卿",
+"professor summerlee agreed to go": "サマリー教授は行くことに同意した",
+"professor summerlee agreed to go and malone and lord john roxton a": "教授が同意し、マローンとロクストン卿が",
+"hunter and traveler also volunteered": "狩猟家で旅行家の〜も名乗り出た",
+"lord john": "ジョン卿（ロクストン卿）",
+"malone's courage": "マローンの勇気",
+"a man": "ひとりの男",
+"in his rooms lord john tested malone's courage and decided": "部屋で卿はマローンの勇気を試し、判断した",
+"in his rooms lord john tested malone's courage and decided that malone was a man he could": "マローンは〜できる男だと卿は判断した",
+"a sealed envelope": "封をした封筒",
+"at the port challenger gave them a sealed envelope": "港で教授は一行に封筒を渡した",
+"at the port challenger gave them a sealed envelope and told them to": "港で封筒を渡し、〜するように言った",
+"it only at a set time in manaos": "マナオスで決まった時刻にだけそれを"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-lostworld-04",
+"added": "2026-10-08T20:55",
+"cat": "story",
+"level": 3,
+"title": "『失われた世界』第4回　白紙の封筒と赤い崖",
+"summary": "マナオスで決められた時刻に封筒を開けると、中は白紙。そこへチャレンジャー教授本人が現れ、探検隊を率いることになります。川をさかのぼり森を進んだ一行は、ついにスケッチと同じ赤い崖を目にします。",
+"book": {
+"title": "The Lost World",
+"titleJa": "失われた世界",
+"author": "Arthur Conan Doyle",
+"year": 1912,
+"url": "https://www.gutenberg.org/ebooks/139",
+"part": 4,
+"parts": 8
+},
+"orig": [
+{
+"en": "So to-morrow we disappear into the unknown.",
+"ja": "こうして明日、私たちは未知の世界へと消えていきます。"
+},
+{
+"en": "It was a stork, if ever I saw one.",
+"ja": "あれはどう見てもコウノトリだったよ。"
+}
+],
+"lines": [
+{
+"en": "In Manaos, the team opened Challenger's envelope at exactly twelve o'clock, but the paper inside was blank.",
+"ja": "マナオスで、一行はちょうど12時にチャレンジャー教授の封筒を開けましたが、中の紙は白紙でした。",
+"mix": "マナオスで、一行はちょうど12時にチャレンジャー教授の {envelope} を開けましたが、中の {paper} は白紙でした。"
+},
+{
+"en": "Summerlee laughed, but then Challenger himself suddenly appeared and said that he would lead the expedition.",
+"ja": "サマリー教授は笑いましたが、そこへチャレンジャー教授本人が突然現れ、これからは自分が探検隊を率いると言いました。",
+"mix": "サマリー教授は笑いましたが、そこへチャレンジャー教授本人が突然現れ、これからは自分が {expedition} を率いると言いました。"
+},
+{
+"en": "They traveled up a river by boat and then by canoe, while the two professors argued all the time.",
+"ja": "一行は船で、そのあとカヌーで川をさかのぼりましたが、そのあいだ、ふたりの教授はずっと言い争っていました。",
+"mix": "一行は船で、そのあと {canoe} で川をさかのぼりましたが、そのあいだ、ふたりの {professors} はずっと言い争っていました。"
+},
+{
+"en": "They heard war drums from the forest, but the professors were too interested in birds and plants to be afraid.",
+"ja": "森の奥から戦いの太鼓が聞こえてきましたが、教授たちは鳥や植物に夢中で、こわがりもしませんでした。",
+"mix": "森の奥から戦いの {drums} が聞こえてきましたが、教授たちは鳥や {plants} に夢中で、こわがりもしませんでした。"
+},
+{
+"en": "Challenger found a secret entrance hidden by reeds, which led to a beautiful green tunnel of water.",
+"ja": "チャレンジャー教授はアシにかくれた秘密の入り口を見つけ、そこは緑のトンネルのような美しい水路へと続いていました。",
+"mix": "チャレンジャー教授はアシにかくれた秘密の {entrance} を見つけ、そこは緑の {tunnel} のような美しい水路へと続いていました。"
+},
+{
+"en": "They saw a big gray creature flying, and Challenger said it was a pterodactyl, but Summerlee said it was a stork.",
+"ja": "大きな灰色の生き物が飛ぶのを見て、チャレンジャー教授は翼竜だと言いましたが、サマリー教授はコウノトリだと言いました。",
+"mix": "大きな灰色の {creature} が飛ぶのを見て、チャレンジャー教授は翼竜だと言いましたが、サマリー教授は {stork} だと言いました。"
+},
+{
+"en": "At last, they saw the line of high red cliffs from the picture, about seven miles away.",
+"ja": "ついに一行は、あの絵と同じ高く赤い崖の連なりを、約7マイル（約11キロ）先に目にしました。",
+"mix": "ついに一行は、あの {picture} と同じ高く赤い {cliffs} の連なりを、約7マイル（約11キロ）先に目にしました。"
+}
+],
+"words": [
+{
+"w": "envelope",
+"ja": "封筒",
+"note": "a sealed envelope＝封をした封筒。表には「マナオスで7月15日12時ちょうどに開けること」と書かれていました。"
+},
+{
+"w": "blank",
+"ja": "白紙の・何も書いていない",
+"note": "原文は It was a blank sheet.（白紙の紙だった）。裏返しても白紙でした。"
+},
+{
+"w": "expedition",
+"ja": "探検（隊）",
+"note": "原文でチャレンジャー教授は I take command of this expedition（この探検隊の指揮をとる）と言います。"
+},
+{
+"w": "entrance",
+"ja": "入り口",
+"note": "原文でチャレンジャー教授は、この入り口を my private gate into the unknown（未知への私の秘密の門）と呼びます。"
+},
+{
+"w": "stork",
+"ja": "コウノトリ",
+"note": "サマリー教授の言葉は It was a stork, if ever I saw one.（どう見てもコウノトリだった）。"
+}
+],
+"grammar": {
+"title": "too ＋ 形容詞 ＋ to 〜「〜すぎて…しない・できない」",
+"body": "too ＋ 形容詞 ＋ to ＋ 動詞のもとの形 で「〜すぎて…しない・できない」という意味です。本文の the professors were too interested in birds and plants to be afraid は「教授たちは鳥や植物に夢中すぎて、こわがりもしなかった」。not を使わなくても、意味は「…しない」になります。",
+"ex": [
+{
+"en": "This bag is too heavy to carry.",
+"ja": "このかばんは重すぎて運べません。"
+},
+{
+"en": "I was too tired to watch the movie.",
+"ja": "私は疲れすぎて、その映画を見られませんでした。"
+}
+]
+},
+"quiz": [
+{
+"q": "マナオスで封筒を開けると、中には何があった？",
+"choices": [
+"くわしい地図",
+"何も書いていない紙",
+"崖の写真"
+],
+"a": 1,
+"why": "1文目に the paper inside was blank とあります。blank は「白紙の」。"
+},
+{
+"q": "stork の意味は？",
+"choices": [
+"コウノトリ",
+"翼竜",
+"カヌー"
+],
+"a": 0,
+"why": "stork は「コウノトリ」。サマリー教授は、飛んでいたのはコウノトリだと言いました。"
+},
+{
+"q": "They were ___ interested in birds to be afraid.（夢中すぎて、こわがりもしなかった）",
+"choices": [
+"so",
+"very",
+"too"
+],
+"a": 2,
+"why": "「〜すぎて…しない」は too ＋ 形容詞 ＋ to ＋ 動詞 で表します。"
+}
+],
+"talk": {
+"q": "Which would you rather see, a pterodactyl or a Stegosaurus?",
+"ja": "翼竜とステゴサウルス、見てみたいのはどちらですか？",
+"hint": "I'd rather see a ___ because ___."
+},
+"grad": [
+{
+"q1": "{Manaos} で、{the team} はちょうど12時に {Challenger's envelope} を開けましたが、中の {paper} は白紙でした。",
+"q2": "{In Manaos, the team opened Challenger's envelope} ちょうど12時に、でも {the paper inside} は白紙でした。",
+"q3": "{In Manaos, the team opened Challenger's envelope at exactly twelve o'clock, but the paper inside was} 白紙。"
+},
+{
+"q1": "{Summerlee} は笑いましたが、そこへ {Challenger himself} が突然現れ、これからは自分が {the expedition} を率いると言いました。",
+"q2": "{Summerlee laughed, but then Challenger himself suddenly appeared} 、これからは自分が {the expedition} を率いると {said}。",
+"q3": "{Summerlee laughed, but then Challenger himself suddenly appeared and said that he would} 率いる {the expedition.}"
+},
+{
+"q1": "一行は {boat} で、そのあと {canoe} で {a river} をさかのぼりましたが、そのあいだ、{the two professors} はずっと言い争っていました。",
+"q2": "{They traveled up a river} 、{boat} で、そのあと {canoe} で、そのあいだ {the two professors} はずっと言い争っていました。",
+"q3": "{They traveled up a river by boat and then by canoe, while the two professors} 言い争った {all the time.}"
+},
+{
+"q1": "森の奥から {war drums} が聞こえてきましたが、{the professors} は {birds} や {plants} に夢中で、こわがりもしませんでした。",
+"q2": "{They heard war drums from the forest} が、{the professors} は {birds} や {plants} に夢中で、こわがりもしませんでした。",
+"q3": "{They heard war drums from the forest, but the professors were too} 夢中 {in birds and plants to be afraid.}"
+},
+{
+"q1": "{Challenger} は {reeds} にかくれた {a secret entrance} を見つけ、そこは緑の {tunnel} のような美しい水路へと続いていました。",
+"q2": "{Challenger found a secret entrance hidden by reeds} 、そこは美しい緑の {tunnel of water} へと続いていました。",
+"q3": "{Challenger found a secret entrance hidden by reeds, which} 続いていた {to a beautiful green tunnel of water.}"
+},
+{
+"q1": "大きな灰色の {creature} が飛ぶのを見て、{Challenger} は {a pterodactyl} だと言いましたが、{Summerlee} は {a stork} だと言いました。",
+"q2": "{They saw a big gray creature flying} 、{Challenger} は {a pterodactyl} だと言いましたが、{Summerlee} は {a stork} だと言いました。",
+"q3": "{They saw a big gray creature flying, and Challenger} 言った {it was a pterodactyl, but Summerlee said it was a stork.}"
+},
+{
+"q1": "ついに一行は、{the picture} と同じ高く赤い {cliffs} の連なりを、約 {seven miles}（約11キロ）先に目にしました。",
+"q2": "{At last, they saw the line of high} 赤い {cliffs} 、{the picture} と同じ、約 {seven miles} 先に。",
+"q3": "{At last, they saw the line of high} 赤い {cliffs from the picture, about seven miles away.}"
+}
+],
+"gloss": {
+"in": "〜で・〜に",
+"manaos": "マナオス（地名）",
+"the": "その",
+"team": "一行・チーム",
+"opened": "開けた（openの過去形）",
+"challenger's": "チャレンジャーの",
+"envelope": "封筒",
+"at": "〜に（時刻）",
+"exactly": "ちょうど",
+"twelve": "12",
+"o'clock": "〜時",
+"but": "でも・しかし",
+"paper": "紙",
+"inside": "中の",
+"was": "〜だった",
+"blank": "白紙の",
+"summerlee": "サマリー（人名）",
+"laughed": "笑った（laughの過去形）",
+"then": "そのとき・それから",
+"challenger": "チャレンジャー（人名）",
+"himself": "本人・自身",
+"suddenly": "突然",
+"appeared": "現れた（appearの過去形）",
+"and": "そして・〜と",
+"said": "言った（sayの過去形）",
+"that": "〜ということ",
+"he": "彼は",
+"would": "〜するつもりだ（willの過去形）",
+"lead": "率いる",
+"expedition": "探検隊",
+"they": "彼らは・一行は",
+"traveled": "進んだ・旅をした",
+"up": "上流へ（travel up）",
+"a": "ひとつの",
+"river": "川",
+"by": "〜で（手段）",
+"boat": "船",
+"canoe": "カヌー",
+"while": "〜するあいだ",
+"two": "ふたりの",
+"professors": "教授たち（professorの複数形）",
+"argued": "言い争った（argueの過去形）",
+"all": "すべての（all the time）",
+"time": "時間（all the time＝ずっと）",
+"heard": "聞いた（hearの過去形）",
+"war": "戦い・戦争",
+"drums": "太鼓（drumの複数形）",
+"from": "〜から",
+"forest": "森",
+"were": "〜だった",
+"too": "〜すぎる",
+"interested": "興味を持った・夢中の",
+"birds": "鳥（birdの複数形）",
+"plants": "植物（plantの複数形）",
+"to": "〜すること・〜へ",
+"be": "〜である",
+"afraid": "こわがって",
+"found": "見つけた（findの過去形）",
+"secret": "秘密の",
+"entrance": "入り口",
+"hidden": "かくされた（hideの過去分詞）",
+"reeds": "アシ（reedの複数形）",
+"which": "そしてそれは（関係代名詞）",
+"led": "通じていた（leadの過去形）",
+"beautiful": "美しい",
+"green": "緑の",
+"tunnel": "トンネル",
+"of": "〜の",
+"water": "水",
+"saw": "見た（seeの過去形）",
+"big": "大きな",
+"gray": "灰色の",
+"creature": "生き物",
+"flying": "飛んでいる",
+"it": "それは",
+"pterodactyl": "翼竜（プテロダクティルス）",
+"stork": "コウノトリ",
+"last": "最後（at last＝ついに）",
+"line": "連なり・列",
+"high": "高い",
+"red": "赤い",
+"cliffs": "崖（cliffの複数形）",
+"picture": "絵",
+"about": "約・およそ",
+"seven": "7つの",
+"miles": "マイル（1マイル＝約1.6km）",
+"away": "離れて",
+"the team": "一行",
+"challenger's envelope": "チャレンジャーの封筒",
+"in manaos the team opened challenger's envelope": "マナオスで一行は教授の封筒を開けた",
+"the paper inside": "中の紙",
+"in manaos the team opened challenger's envelope at exactly twelve o'clock but the paper inside was": "12時に封筒を開けたが、中の紙は〜だった",
+"challenger himself": "チャレンジャー本人",
+"the expedition": "探検隊",
+"summerlee laughed but then challenger himself suddenly appeared": "笑ったが、そこへ教授本人が現れた",
+"summerlee laughed but then challenger himself suddenly appeared and said that he would": "教授本人が現れ、自分が〜すると言った",
+"a river": "川",
+"the two professors": "ふたりの教授",
+"they traveled up a river": "一行は川をさかのぼった",
+"they traveled up a river by boat and then by canoe while the two professors": "船とカヌーで川を上る間、二人の教授は",
+"all the time": "いつも・ずっと",
+"war drums": "戦いの太鼓",
+"the professors": "教授たち",
+"they heard war drums from the forest": "森から戦いの太鼓が聞こえた",
+"they heard war drums from the forest but the professors were too": "太鼓が聞こえたが、教授たちは〜すぎた",
+"in birds and plants to be afraid": "鳥や植物に（夢中で）こわがれない",
+"a secret entrance": "秘密の入り口",
+"challenger found a secret entrance hidden by reeds": "アシにかくれた秘密の入り口を見つけた",
+"tunnel of water": "水のトンネル（水路）",
+"challenger found a secret entrance hidden by reeds which": "アシにかくれた入り口を見つけ、そこは",
+"to a beautiful green tunnel of water": "美しい緑の水のトンネルへ",
+"a pterodactyl": "翼竜",
+"a stork": "コウノトリ",
+"they saw a big gray creature flying": "大きな灰色の生き物が飛ぶのを見た",
+"they saw a big gray creature flying and challenger": "灰色の生き物が飛ぶのを見て、教授は",
+"it was a pterodactyl but summerlee said it was a stork": "それは翼竜、だがサマリーはコウノトリと",
+"the picture": "その絵",
+"seven miles": "7マイル（約11キロ）",
+"at last they saw the line of high": "ついに一行は高い〜の連なりを見た",
+"cliffs from the picture about seven miles away": "約7マイル先の、絵と同じ崖"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-lostworld-05",
+"added": "2026-10-08T20:54",
+"cat": "story",
+"level": 3,
+"title": "『失われた世界』第5回　橋を落とされ台地に取り残される",
+"summary": "チャレンジャー教授の考えた木の橋で崖の上の台地に渡った4人ですが、ゴメスに橋を落とされ、帰れなくなってしまいます。次の日には、イグアノドンの群れを見たり、翼竜の群れにおそわれたりします。",
+"book": {
+"title": "The Lost World",
+"titleJa": "失われた世界",
+"author": "Arthur Conan Doyle",
+"year": 1912,
+"url": "https://www.gutenberg.org/ebooks/139",
+"parts": 8,
+"part": 5
+},
+"orig": [
+{
+"en": "We are, in truth, as far from any human aid as if we were in the moon.",
+"ja": "実のところ、私たちは、まるで月にいるかのように、人の助けからはるか遠く離れているのです。"
+},
+{
+"en": "Even the babies were as big as elephants, while the two large ones were far beyond all creatures I have ever seen.",
+"ja": "子どもでさえゾウほどの大きさがあり、2頭の大人は、私がこれまでに見たどんな生き物よりもはるかに大きかったのです。"
+}
+],
+"lines": [
+{
+"en": "The four men walked around the cliffs for six days, but they found no way up.",
+"ja": "4人は6日かけて崖のまわりを歩きましたが、登る道はひとつも見つかりませんでした。",
+"mix": "4人は6日かけて {cliffs} のまわりを歩きましたが、登る {way} はひとつも見つかりませんでした。"
+},
+{
+"en": "One night, a pterodactyl stole their dinner, and Summerlee finally said sorry to Challenger.",
+"ja": "ある夜、翼竜に夕食を盗まれ、サマリー教授はついにチャレンジャー教授にあやまりました。",
+"mix": "ある夜、{pterodactyl} に {dinner} を盗まれ、サマリー教授はついにチャレンジャー教授にあやまりました。"
+},
+{
+"en": "Challenger's plan was to cut down a tall tree on a rock pillar and use it as a bridge.",
+"ja": "チャレンジャー教授の計画は、岩の柱の上に立つ高い木を切りたおし、それを橋にすることでした。",
+"mix": "チャレンジャー教授の {plan} は、岩の柱の上に立つ高い木を切りたおし、それを {bridge} にすることでした。"
+},
+{
+"en": "Soon after they crossed it, Gomez, one of their helpers, pushed the bridge down to get revenge on Lord John.",
+"ja": "4人が渡ってすぐ、一行の手伝いのひとりだったゴメスが、ジョン卿への復讐のために、その橋を突き落としました。",
+"mix": "4人が渡ってすぐ、一行の手伝いのひとりだったゴメスが、ジョン卿への {revenge} のために、その {bridge} を突き落としました。"
+},
+{
+"en": "Their rope was too short to reach the bottom, so they were trapped on the plateau.",
+"ja": "ロープは短すぎて下まで届かず、4人は台地に閉じこめられてしまいました。",
+"mix": "{rope} は短すぎて下まで届かず、4人は {plateau} に閉じこめられてしまいました。"
+},
+{
+"en": "The next day, they watched five iguanodons, huge dinosaurs that looked like giant kangaroos.",
+"ja": "次の日、4人は、巨大なカンガルーのような姿の大きな恐竜、イグアノドン5頭をじっと見ました。",
+"mix": "次の日、4人は、巨大なカンガルーのような姿の大きな {dinosaurs}、{iguanodons} 5頭をじっと見ました。"
+},
+{
+"en": "Later, many pterodactyls attacked them in a swamp, and they barely escaped into the forest.",
+"ja": "そのあと、4人は沼地でたくさんの翼竜におそわれ、なんとか森へ逃げこみました。",
+"mix": "そのあと、4人は {swamp} でたくさんの {pterodactyls} におそわれ、なんとか森へ逃げこみました。"
+}
+],
+"words": [
+{
+"w": "pterodactyl",
+"ja": "翼竜（プテロダクティルス）",
+"note": "原文でも pterodactyl。p は読まず「テロダクティル」と発音します。空を飛ぶは虫類で、恐竜とは別のなかまです。"
+},
+{
+"w": "revenge",
+"ja": "復讐・仕返し",
+"note": "get revenge on 人 ＝ 人に復讐する。ゴメスは、兄弟のかたきとしてジョン卿をうらんでいました。"
+},
+{
+"w": "trapped",
+"ja": "閉じこめられた",
+"note": "be trapped ＝ （わなにかかったように）出られなくなる。原文でもゴメスが you are trapped とさけびます。"
+},
+{
+"w": "plateau",
+"ja": "台地・高原",
+"note": "まわりが崖になった、高くて平らな土地。この物語の舞台です。"
+},
+{
+"w": "barely",
+"ja": "なんとか・かろうじて",
+"note": "barely escaped ＝ ぎりぎりで逃げることができた。"
+}
+],
+"grammar": {
+"title": "no ＋ 名詞「ひとつも〜ない」",
+"body": "動詞のあとに no ＋ 名詞 を置くと、「〜がひとつもない」という否定の文になります。they found no way up は「登る道がひとつも見つからなかった」。not ... any と同じ意味で、they didn't find any way up とも言えます。",
+"ex": [
+{
+"en": "There was no water in the bottle.",
+"ja": "ボトルには水がまったく入っていませんでした。"
+},
+{
+"en": "I had no time yesterday.",
+"ja": "昨日は時間がまったくありませんでした。"
+}
+]
+},
+"quiz": [
+{
+"q": "4人が台地から下りられなくなったのは、だれが何をしたから？",
+"choices": [
+"サマリー教授がロープを切った",
+"ゴメスが橋を突き落とした",
+"翼竜が橋をこわした"
+],
+"a": 1,
+"why": "4文目に Gomez ... pushed the bridge down とあります。"
+},
+{
+"q": "barely escaped の barely の意味は？",
+"choices": [
+"ゆっくりと",
+"楽々と",
+"なんとか・かろうじて"
+],
+"a": 2,
+"why": "barely は「なんとか・ぎりぎりで」。barely escaped で「かろうじて逃げた」です。"
+},
+{
+"q": "They found ___ way up.（登る道はひとつも見つからなかった）",
+"choices": [
+"no",
+"not",
+"none"
+],
+"a": 0,
+"why": "名詞 way の前に no を置くと「ひとつも〜ない」。not や none は名詞の前に置けません。"
+}
+],
+"talk": {
+"q": "Which dinosaur do you want to see the most?",
+"ja": "いちばん見てみたい恐竜は何ですか？",
+"hint": "I want to see ___ because ___."
+},
+"grad": [
+{
+"q1": "4人は {six days} かけて {the cliffs} のまわりを歩きましたが、登る {way} はひとつも見つかりませんでした。",
+"q2": "{The four men walked around the cliffs for six days}、でも登る {way} はひとつも見つかりませんでした。",
+"q3": "{The four men walked around the cliffs for six days, but they} 見つけた {no way up.}"
+},
+{
+"q1": "ある夜、{a pterodactyl} に {their dinner} を盗まれ、{Summerlee} はついにチャレンジャー教授にあやまりました。",
+"q2": "{One night, a pterodactyl stole their dinner}、そして {Summerlee} はついにチャレンジャー教授にあやまりました。",
+"q3": "{One night, a pterodactyl stole their dinner, and Summerlee finally} あやまった {to Challenger.}"
+},
+{
+"q1": "{Challenger's plan} は、{rock pillar} の上に立つ高い {tree} を切りたおし、それを {bridge} にすることでした。",
+"q2": "{Challenger's plan} は、{rock pillar} の上の高い {tree} を {cut down}、{use it as a bridge} ことでした。",
+"q3": "{Challenger's plan was to cut down a} 高い {tree on a rock pillar and use it as a bridge.}"
+},
+{
+"q1": "4人が渡ってすぐ、一行の {helpers} のひとりだった {Gomez} が、{Lord John} への {revenge} のために、{the bridge} を突き落としました。",
+"q2": "4人が渡ってすぐ、{Gomez, one of their helpers, pushed the bridge down}、{Lord John} への {revenge} のために。",
+"q3": "{Soon after they} 渡った {it, Gomez, one of their helpers, pushed the bridge down to get revenge on Lord John.}"
+},
+{
+"q1": "{Their rope} は短すぎて {bottom} まで届かず、4人は {the plateau} に閉じこめられてしまいました。",
+"q2": "{Their rope was too short to} 届く {the bottom}、だから4人は {the plateau} に閉じこめられました。",
+"q3": "{Their rope was too short to} 届く {the bottom, so they were trapped on the plateau.}"
+},
+{
+"q1": "次の日、4人は、{giant kangaroos} のような姿の大きな {dinosaurs}、{five iguanodons} をじっと見ました。",
+"q2": "{The next day, they watched five iguanodons}、{giant kangaroos} のような姿の大きな {dinosaurs}。",
+"q3": "{The next day, they watched five iguanodons,} 巨大な {dinosaurs that looked like giant kangaroos.}"
+},
+{
+"q1": "そのあと、4人は {a swamp} で {many pterodactyls} におそわれ、なんとか {forest} へ逃げこみました。",
+"q2": "そのあと、{many pterodactyls attacked them in a swamp}、4人はなんとか {forest} へ逃げこみました。",
+"q3": "{Later, many pterodactyls attacked them in a swamp, and they barely} 逃げこんだ {into the forest.}"
+}
+],
+"gloss": {
+"the": "その",
+"four": "4人の",
+"men": "男たち（manの複数形）",
+"walked": "歩いた（walkの過去形）",
+"around": "〜のまわりを",
+"cliffs": "崖（cliffの複数形）",
+"for": "〜のあいだ",
+"six": "6",
+"days": "日（dayの複数形）",
+"but": "しかし",
+"they": "彼らは",
+"found": "見つけた（findの過去形）",
+"no": "ひとつも〜ない",
+"way": "道・方法",
+"up": "上へ",
+"one": "ある・ひとり（one ofで〜のうち1人）",
+"night": "夜",
+"a": "ひとつの・1匹の",
+"pterodactyl": "翼竜（プテロダクティルス）",
+"stole": "盗んだ（stealの過去形）",
+"their": "彼らの",
+"dinner": "夕食",
+"and": "そして",
+"summerlee": "サマリー（教授の名前）",
+"finally": "ついに・やっと",
+"said": "言った（sayの過去形）",
+"sorry": "すまなく思って（say sorryで謝る）",
+"to": "〜に・〜すること（to不定詞）",
+"challenger": "チャレンジャー（教授の名前）",
+"challenger's": "チャレンジャー教授の",
+"plan": "計画",
+"was": "〜だった",
+"cut": "切る（cut downで切りたおす）",
+"down": "下へ",
+"tall": "背の高い",
+"tree": "木",
+"on": "〜の上の・〜に",
+"rock": "岩",
+"pillar": "柱",
+"use": "使う",
+"it": "それ",
+"as": "〜として",
+"bridge": "橋",
+"soon": "すぐに",
+"after": "〜したあとで",
+"crossed": "渡った（crossの過去形）",
+"gomez": "ゴメス（人名）",
+"of": "〜の（one ofで〜のうち1人）",
+"helpers": "手伝いの人（helperの複数形）",
+"pushed": "押した（pushの過去形）",
+"get": "得る（get revengeで復讐する）",
+"revenge": "復讐・仕返し",
+"lord": "卿（貴族の呼び名）",
+"john": "ジョン（人名）",
+"rope": "ロープ",
+"too": "〜すぎる",
+"short": "短い",
+"reach": "〜に届く",
+"bottom": "いちばん下・底",
+"so": "だから",
+"were": "〜だった（be動詞の過去）",
+"trapped": "閉じこめられた",
+"plateau": "台地・高原",
+"next": "次の",
+"day": "日",
+"watched": "じっと見た（watchの過去形）",
+"five": "5頭の",
+"iguanodons": "イグアノドン（複数形）",
+"huge": "巨大な",
+"dinosaurs": "恐竜（dinosaurの複数形）",
+"that": "〜する（関係代名詞）",
+"looked": "見えた（look likeで似ている）",
+"like": "〜のような",
+"giant": "巨大な",
+"kangaroos": "カンガルー（複数形）",
+"later": "あとで・そのあと",
+"many": "たくさんの",
+"pterodactyls": "翼竜（複数形）",
+"attacked": "おそった（attackの過去形）",
+"them": "彼らを",
+"in": "〜の中で",
+"swamp": "沼地",
+"barely": "なんとか・かろうじて",
+"escaped": "逃げた（escapeの過去形）",
+"into": "〜の中へ",
+"forest": "森",
+"six days": "6日間",
+"the cliffs": "その崖",
+"the four men walked around the cliffs for six days": "4人は6日間、崖のまわりを歩いた",
+"the four men walked around the cliffs for six days but they": "4人は6日間崖を歩いたが、彼らは",
+"no way up": "登る道がひとつもない",
+"a pterodactyl": "1匹の翼竜",
+"their dinner": "彼らの夕食",
+"one night a pterodactyl stole their dinner": "ある夜、翼竜が夕食を盗んだ",
+"one night a pterodactyl stole their dinner and summerlee finally": "翼竜が夕食を盗み、サマリーはついに",
+"to challenger": "チャレンジャー教授に",
+"challenger's plan": "チャレンジャー教授の計画",
+"rock pillar": "岩の柱",
+"cut down": "切りたおす",
+"use it as a bridge": "それを橋として使う",
+"challenger's plan was to cut down a": "教授の計画は〜を切りたおすこと",
+"tree on a rock pillar and use it as a bridge": "岩の柱の上の木、それを橋にする",
+"lord john": "ジョン卿（ジョン・ロクストン卿）",
+"the bridge": "その橋",
+"gomez one of their helpers pushed the bridge down": "手伝いのゴメスが橋を突き落とした",
+"soon after they": "彼らが〜してすぐ",
+"it gomez one of their helpers pushed the bridge down to get revenge on lord john": "それを。ゴメスが復讐で橋を落とした",
+"their rope": "彼らのロープ",
+"the plateau": "その台地",
+"their rope was too short to": "ロープは短すぎて〜できなかった",
+"the bottom": "いちばん下・底",
+"the bottom so they were trapped on the plateau": "下に。だから台地に閉じこめられた",
+"giant kangaroos": "巨大なカンガルー",
+"five iguanodons": "5頭のイグアノドン",
+"the next day they watched five iguanodons": "次の日、イグアノドン5頭を見た",
+"dinosaurs that looked like giant kangaroos": "巨大カンガルーのような恐竜",
+"a swamp": "沼地",
+"many pterodactyls": "たくさんの翼竜",
+"many pterodactyls attacked them in a swamp": "沼地で多くの翼竜がおそった",
+"later many pterodactyls attacked them in a swamp and they barely": "沼で翼竜におそわれ、彼らはなんとか",
+"into the forest": "森の中へ"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-lostworld-06",
+"added": "2026-10-08T20:53",
+"cat": "story",
+"level": 3,
+"title": "『失われた世界』第6回　夜の湖へひとりで向かったマローン",
+"summary": "マローンは大木に登って台地全体を見わたし、中央の湖を恋人の名前からグラディス湖と名づけます。その夜ひとりで湖へ向かいますが、帰り道で恐竜に追われ、もどるとキャンプから仲間が消えています。",
+"book": {
+"title": "The Lost World",
+"titleJa": "失われた世界",
+"author": "Arthur Conan Doyle",
+"year": 1912,
+"url": "https://www.gutenberg.org/ebooks/139",
+"parts": 8,
+"part": 6
+},
+"orig": [
+{
+"en": "For once I was the hero of the expedition.",
+"ja": "このときばかりは、私が探検隊のヒーローでした。"
+},
+{
+"en": "There were human beings, then, upon the plateau.",
+"ja": "つまり、この台地には人間がいたのです。"
+}
+],
+"lines": [
+{
+"en": "One night, a meat-eating dinosaur came to their camp, but Lord John chased it away with fire.",
+"ja": "ある夜、肉食の恐竜がキャンプにやってきましたが、ジョン卿が火で追いはらいました。",
+"mix": "ある夜、{meat-eating} 恐竜が {camp} にやってきましたが、ジョン卿が火で追いはらいました。"
+},
+{
+"en": "Malone climbed a giant tree, and on the way up, he came face to face with an ape-man.",
+"ja": "マローンは巨大な木に登り、その途中で、猿人とばったり顔を合わせました。",
+"mix": "マローンは巨大な {tree} に登り、その途中で、{ape-man} とばったり顔を合わせました。"
+},
+{
+"en": "From the top, he saw a big lake, and later he named it Lake Gladys after the woman he loved.",
+"ja": "てっぺんからは大きな湖が見え、マローンはあとで、愛する女性にちなんで、それをグラディス湖と名づけました。",
+"mix": "てっぺんからは大きな {lake} が見え、マローンはあとで、愛する {woman} にちなんで、それをグラディス湖と名づけました。"
+},
+{
+"en": "Late that night, he walked to the lake alone, where he saw a stegosaurus and fires in caves.",
+"ja": "その夜おそく、マローンはひとりで湖まで歩いていき、そこでステゴサウルスと、洞窟の中の火を見ました。",
+"mix": "その夜おそく、マローンはひとりで {lake} まで歩いていき、そこで {stegosaurus} と、洞窟の中の火を見ました。"
+},
+{
+"en": "On the way back, a huge dinosaur chased him, and he fell into a trap made by people.",
+"ja": "帰り道、巨大な恐竜に追いかけられたマローンは、人が作った落とし穴に落ちてしまいました。",
+"mix": "帰り道、巨大な {dinosaur} に追いかけられたマローンは、人が作った {trap} に落ちてしまいました。"
+},
+{
+"en": "When he got back to camp in the morning, his friends were gone.",
+"ja": "朝になってキャンプにもどると、仲間たちはいなくなっていました。",
+"mix": "朝になって {camp} にもどると、{friends} はいなくなっていました。"
+}
+],
+"words": [
+{
+"w": "meat-eating",
+"ja": "肉食の",
+"note": "meat（肉）＋ eating（食べる）。原文では carnivorous（肉食の）というむずかしい語です。"
+},
+{
+"w": "ape-man",
+"ja": "猿人",
+"note": "ape（類人猿）＋ man。複数形は ape-men です。"
+},
+{
+"w": "come face to face with",
+"ja": "〜とばったり顔を合わせる",
+"note": "顔と顔が向かい合うイメージ。原文では、目の前30〜60センチに顔があったと書かれています。"
+},
+{
+"w": "name A after B",
+"ja": "Bにちなんで A と名づける",
+"note": "恋人グラディスの名前をとって、湖を Lake Gladys と名づけました。"
+},
+{
+"w": "trap",
+"ja": "わな・落とし穴",
+"note": "原文では、大きな動物をつかまえるために人がほった、深い穴のわなでした。"
+}
+],
+"grammar": {
+"title": "関係副詞 where「（その場所で）〜する」",
+"body": "場所を表す名詞のあとに where ＋ 主語 ＋ 動詞 を続けると、その場所の説明を足せます。he walked to the lake alone, where he saw a stegosaurus は「ひとりで湖まで歩いていき、そこでステゴサウルスを見た」。コンマのあとの where は and there（そしてそこで）の意味です。",
+"ex": [
+{
+"en": "We went to Kyoto, where we visited many temples.",
+"ja": "私たちは京都に行き、そこでたくさんのお寺をたずねました。"
+},
+{
+"en": "He showed me the town where he was born.",
+"ja": "彼は、自分が生まれた町を見せてくれました。"
+}
+]
+},
+"quiz": [
+{
+"q": "マローンが夜の湖で見たものは？",
+"choices": [
+"翼竜の巣とたまご",
+"猿人の村",
+"ステゴサウルスと洞窟の火"
+],
+"a": 2,
+"why": "4文目に he saw a stegosaurus and fires in caves とあります。"
+},
+{
+"q": "came face to face with の意味は？",
+"choices": [
+"〜とばったり顔を合わせた",
+"〜から顔をそむけた",
+"〜の顔を描いた"
+],
+"a": 0,
+"why": "face to face は「顔と顔を向かい合わせて」。come face to face with で「〜とばったり出会う」です。"
+},
+{
+"q": "He walked to the lake, ___ he saw a stegosaurus.（湖まで歩いていき、そこでステゴサウルスを見た）",
+"choices": [
+"which",
+"where",
+"who"
+],
+"a": 1,
+"why": "場所（the lake）のあとで「そこで〜した」と続けるときは where です。"
+}
+],
+"talk": {
+"q": "Would you walk to the lake alone at night like Malone?",
+"ja": "マローンのように、夜ひとりで湖まで歩いていきますか？",
+"hint": "Yes, I would, because ___. / No, I wouldn't, because ___."
+},
+"grad": [
+{
+"q1": "ある夜、{meat-eating dinosaur} が {camp} にやってきましたが、{Lord John} が {fire} で追いはらいました。",
+"q2": "ある夜、{a meat-eating dinosaur came to their camp}、でも {Lord John} が {fire} で追いはらいました。",
+"q3": "{One night, a meat-eating dinosaur came to their camp, but Lord John} 追いはらった {with fire.}"
+},
+{
+"q1": "{Malone} は {a giant tree} に登り、その途中で、{an ape-man} とばったり顔を合わせました。",
+"q2": "{Malone climbed a giant tree}、その途中で、{an ape-man} とばったり顔を合わせました。",
+"q3": "{Malone climbed a giant tree, and on the} 途中 {up, he came face to face with an ape-man.}"
+},
+{
+"q1": "てっぺんからは {a big lake} が見え、マローンはあとで、愛する {woman} にちなんで、それを {Lake Gladys} と名づけました。",
+"q2": "{From the top, he saw a big lake}、そしてマローンはあとで、愛する {woman} にちなんで、それを {Lake Gladys} と名づけました。",
+"q3": "{From the top, he saw a big lake, and later he} 名づけた {it Lake Gladys after the woman he loved.}"
+},
+{
+"q1": "その夜おそく、マローンはひとりで {the lake} まで歩いていき、そこで {a stegosaurus} と、{caves} の中の {fires} を見ました。",
+"q2": "その夜おそく、{he walked to the lake alone}、そこで {a stegosaurus} と、{caves} の中の {fires} を見ました。",
+"q3": "{Late that night, he walked to the lake alone, where he} 見た {a stegosaurus and fires in caves.}"
+},
+{
+"q1": "帰り道、{a huge dinosaur} に追いかけられたマローンは、{people} が作った {a trap} に落ちてしまいました。",
+"q2": "帰り道、{a huge dinosaur chased him}、マローンは {people} が作った {a trap} に落ちてしまいました。",
+"q3": "{On the way back, a huge dinosaur chased him, and he} 落ちた {into a trap made by people.}"
+},
+{
+"q1": "朝になって {camp} にもどると、{his friends} はいなくなっていました。",
+"q2": "{When he got back to camp}、朝に、{his friends} はいなくなっていました。",
+"q3": "{When he got back to camp in the morning, his friends} いなくなっていた。"
+}
+],
+"gloss": {
+"one": "ある（one nightで「ある夜」）",
+"night": "夜",
+"a": "ひとつの・1頭の",
+"meat-eating": "肉食の",
+"dinosaur": "恐竜",
+"came": "来た（comeの過去形）",
+"to": "〜へ・〜に",
+"their": "彼らの",
+"camp": "キャンプ・野営地",
+"but": "しかし",
+"lord": "卿（貴族の呼び名）",
+"john": "ジョン（人名）",
+"chased": "追った（chase awayで追いはらう）",
+"it": "それを",
+"away": "向こうへ・はなれて",
+"with": "〜を使って",
+"fire": "火",
+"malone": "マローン（人名）",
+"climbed": "登った（climbの過去形）",
+"giant": "巨大な",
+"tree": "木",
+"and": "そして",
+"on": "〜で（on the wayで途中で）",
+"the": "その",
+"way": "道（on the way upで登る途中）",
+"up": "上へ",
+"he": "彼は",
+"face": "顔（face to faceで向かい合って）",
+"an": "ひとりの（母音の前のa）",
+"ape-man": "猿人",
+"from": "〜から",
+"top": "てっぺん",
+"saw": "見た（seeの過去形）",
+"big": "大きな",
+"lake": "湖",
+"later": "あとで",
+"named": "名づけた（nameの過去形）",
+"gladys": "グラディス（人名）",
+"after": "〜にちなんで",
+"woman": "女性",
+"loved": "愛した（loveの過去形）",
+"late": "おそくに",
+"that": "その（that nightで「その夜」）",
+"walked": "歩いた（walkの過去形）",
+"alone": "ひとりで",
+"where": "そしてそこで（関係副詞）",
+"stegosaurus": "ステゴサウルス（恐竜）",
+"fires": "火（fireの複数形）",
+"in": "〜の中の・〜に",
+"caves": "洞窟（caveの複数形）",
+"back": "もどって",
+"huge": "巨大な",
+"him": "彼を",
+"fell": "落ちた（fallの過去形）",
+"into": "〜の中へ",
+"trap": "わな・落とし穴",
+"made": "作られた（makeの過去分詞）",
+"by": "〜によって",
+"people": "人々",
+"when": "〜すると・〜したとき",
+"got": "着いた（get backで帰り着く）",
+"morning": "朝",
+"his": "彼の",
+"friends": "仲間（friendの複数形）",
+"were": "〜だった（be動詞の過去）",
+"gone": "いなくなって（be goneで）",
+"meat-eating dinosaur": "肉食恐竜",
+"lord john": "ジョン卿（ジョン・ロクストン卿）",
+"a meat-eating dinosaur came to their camp": "肉食恐竜がキャンプに来た",
+"one night a meat-eating dinosaur came to their camp but lord john": "ある夜恐竜が来たが、ジョン卿が",
+"with fire": "火で",
+"a giant tree": "巨大な木",
+"an ape-man": "ひとりの猿人",
+"malone climbed a giant tree": "マローンは巨大な木に登った",
+"malone climbed a giant tree and on the": "マローンは大木に登り、その〜で",
+"up he came face to face with an ape-man": "登る〜で猿人とばったり顔を合わせた",
+"a big lake": "大きな湖",
+"lake gladys": "グラディス湖",
+"from the top he saw a big lake": "てっぺんから大きな湖が見えた",
+"from the top he saw a big lake and later he": "頂上から湖が見え、あとで彼は",
+"it lake gladys after the woman he loved": "それを愛する女性にちなみグラディス湖と",
+"the lake": "その湖",
+"a stegosaurus": "1頭のステゴサウルス",
+"he walked to the lake alone": "彼はひとりで湖まで歩いた",
+"late that night he walked to the lake alone where he": "その夜おそく湖まで歩き、そこで彼は",
+"a stegosaurus and fires in caves": "ステゴサウルスと洞窟の火",
+"a huge dinosaur": "巨大な恐竜",
+"a trap": "わな・落とし穴",
+"a huge dinosaur chased him": "巨大な恐竜が彼を追った",
+"on the way back a huge dinosaur chased him and he": "帰り道、恐竜に追われ、彼は",
+"into a trap made by people": "人が作ったわなの中へ",
+"his friends": "彼の仲間たち",
+"when he got back to camp": "キャンプにもどると",
+"when he got back to camp in the morning his friends": "朝キャンプにもどると、仲間たちは"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-lostworld-07",
+"added": "2026-10-08T20:52",
+"cat": "story",
+"level": 3,
+"title": "『失われた世界』第7回　チャレンジャーそっくりの猿人の王",
+"summary": "夜明けにもどったジョン卿から、教授たちが猿人に捕まったと聞いたマローンは、銃を持って助けに向かいます。猿人の王はチャレンジャー教授にそっくりです。救い出したアッカラ族の人たちと力を合わせ、一行は猿人との戦いに勝ちます。",
+"book": {
+"title": "The Lost World",
+"titleJa": "失われた世界",
+"author": "Arthur Conan Doyle",
+"year": 1912,
+"url": "https://www.gutenberg.org/ebooks/139",
+"parts": 8,
+"part": 7
+},
+"orig": [
+{
+"en": "It was he--and yet it was not he.",
+"ja": "それは彼でした――けれども、彼ではないようでした。"
+},
+{
+"en": "In all things he was, as Lord John had said, the very image of our Professor, save that his coloring was red instead of black.",
+"ja": "ジョン卿が言ったとおり、王は何から何まで私たちの教授に生き写しでした。ちがうのは、色が黒ではなく赤いことだけでした。"
+}
+],
+"lines": [
+{
+"en": "At dawn, Lord John came back and said that ape-men had caught him and the two professors.",
+"ja": "夜明けにジョン卿がもどってきて、自分とふたりの教授が猿人に捕まっていたと話しました。",
+"mix": "夜明けにジョン卿がもどってきて、自分とふたりの {professors} が {ape-men} に捕まっていたと話しました。"
+},
+{
+"en": "The king of the ape-men looked just like Challenger, but his hair was red.",
+"ja": "猿人の王はチャレンジャー教授にそっくりでしたが、毛の色が赤でした。",
+"mix": "猿人の {king} はチャレンジャー教授にそっくりでしたが、{hair} の色が赤でした。"
+},
+{
+"en": "Lord John and Malone went back with guns and saved the two professors just in time.",
+"ja": "ジョン卿とマローンは銃を持ってもどり、間一髪でふたりの教授を助け出しました。",
+"mix": "ジョン卿とマローンは {guns} を持ってもどり、間一髪でふたりの {professors} を助け出しました。"
+},
+{
+"en": "Four Accala prisoners escaped with them, and one of them was Maretas, the son of their chief.",
+"ja": "アッカラ族の捕虜4人もいっしょに逃げ、そのひとりは族長の息子、マレタスでした。",
+"mix": "アッカラ族の {prisoners} 4人もいっしょに逃げ、そのひとりは族長の {son}、マレタスでした。"
+},
+{
+"en": "At the lake, they not only saw a plesiosaurus but also learned that the Accala kept iguanodons like cattle.",
+"ja": "湖では、首長竜のプレシオサウルスを見かけただけでなく、アッカラ族がイグアノドンを牛のように飼っていることも知りました。",
+"mix": "湖では、首長竜の {plesiosaurus} を見かけただけでなく、アッカラ族が {iguanodons} を牛のように飼っていることも知りました。"
+},
+{
+"en": "With the help of their guns, the Accala defeated the ape-men in a big battle.",
+"ja": "4人の銃の助けもあり、アッカラ族は大きな戦いで猿人に勝ちました。",
+"mix": "4人の {guns} の助けもあり、アッカラ族は大きな {battle} で猿人に勝ちました。"
+}
+],
+"words": [
+{
+"w": "dawn",
+"ja": "夜明け",
+"note": "at dawn ＝ 夜明けに。"
+},
+{
+"w": "just in time",
+"ja": "ぎりぎり間に合って・間一髪で",
+"note": "あと少しおそかったら間に合わなかった、という場面で使います。"
+},
+{
+"w": "prisoner",
+"ja": "捕虜・とらえられた人",
+"note": "Four Accala prisoners ＝ アッカラ族の捕虜4人。"
+},
+{
+"w": "cattle",
+"ja": "（まとめて）牛",
+"note": "牛の群れをまとめて言う語で、s をつけずに複数あつかいします。like cattle ＝ 牛のように。"
+},
+{
+"w": "defeat",
+"ja": "（相手）を負かす",
+"note": "defeated は過去形。win は「（戦い・試合）に勝つ」、defeat は「（相手）を負かす」です。"
+}
+],
+"grammar": {
+"title": "not only A but also B「AだけでなくBも」",
+"body": "not only A but also B で「AだけでなくBも」。they not only saw a plesiosaurus but also learned that ... は「プレシオサウルスを見ただけでなく、…ということも知った」。A と B には同じ形のもの（ここでは動詞の saw と learned）を並べます。",
+"ex": [
+{
+"en": "She not only sang but also danced.",
+"ja": "彼女は歌っただけでなく、踊りもしました。"
+},
+{
+"en": "The movie was not only funny but also moving.",
+"ja": "その映画はおもしろいだけでなく、感動的でもありました。"
+}
+]
+},
+"quiz": [
+{
+"q": "猿人の王がチャレンジャー教授とちがっていたところは？",
+"choices": [
+"毛の色が赤いところ",
+"背がとても高いところ",
+"ひげがないところ"
+],
+"a": 0,
+"why": "2文目に but his hair was red とあります。"
+},
+{
+"q": "like cattle の cattle の意味は？",
+"choices": [
+"馬",
+"ねずみ",
+"（まとめて）牛"
+],
+"a": 2,
+"why": "cattle は牛の群れをまとめて言う語です。"
+},
+{
+"q": "They not only saw a plesiosaurus ___ also learned about the iguanodons.（プレシオサウルスを見ただけでなく、イグアノドンのことも知った）",
+"choices": [
+"and",
+"but",
+"or"
+],
+"a": 1,
+"why": "「AだけでなくBも」は not only A but also B です。"
+}
+],
+"talk": {
+"q": "If you saw a plesiosaurus, what would you do?",
+"ja": "もしプレシオサウルスを見たら、どうしますか？",
+"hint": "I would ___."
+},
+"grad": [
+{
+"q1": "{dawn} にジョン卿がもどってきて、自分と {the two professors} が {ape-men} に捕まっていたと話しました。",
+"q2": "{At dawn, Lord John came back and said}、自分と {the two professors} が {ape-men} に捕まっていたと。",
+"q3": "{At dawn, Lord John came back and said that ape-men} 捕まえていた {him and the two professors.}"
+},
+{
+"q1": "{the ape-men} の {king} はチャレンジャー教授にそっくりでしたが、{his hair} の色が赤でした。",
+"q2": "{The king of the ape-men looked just like Challenger}、でも {his hair} の色は赤でした。",
+"q3": "{The king of the ape-men looked just like Challenger, but his hair was} 赤い。"
+},
+{
+"q1": "ジョン卿と {Malone} は {guns} を持ってもどり、間一髪で {the two professors} を助け出しました。",
+"q2": "{Lord John and Malone went back with guns}、間一髪で {the two professors} を助け出しました。",
+"q3": "{Lord John and Malone went back with guns and} 助け出した {the two professors just in time.}"
+},
+{
+"q1": "{Four Accala prisoners} もいっしょに逃げ、そのひとりは族長の {son}、{Maretas} でした。",
+"q2": "{Four Accala prisoners escaped with them}、そのひとりは族長の {son}、{Maretas} でした。",
+"q3": "{Four Accala prisoners escaped with them, and one of them was Maretas, the son of their} 族長。"
+},
+{
+"q1": "湖では、首長竜の {a plesiosaurus} を見かけただけでなく、{the Accala} が {iguanodons} を {cattle} のように飼っていることも知りました。",
+"q2": "湖では、{they not only saw a plesiosaurus but also learned}、{the Accala} が {iguanodons} を {cattle} のように飼っていることを。",
+"q3": "{At the lake, they not only saw a plesiosaurus but also learned that the Accala} 飼っていた {iguanodons like cattle.}"
+},
+{
+"q1": "4人の {guns} の助けもあり、{the Accala} は大きな {battle} で猿人に勝ちました。",
+"q2": "{With the help of their guns}、{the Accala} は大きな {battle} で猿人に勝ちました。",
+"q3": "{With the help of their guns, the Accala defeated the ape-men in a} 大きな {battle.}"
+}
+],
+"gloss": {
+"at": "〜に（時・場所）",
+"dawn": "夜明け",
+"lord": "卿（貴族の呼び名）",
+"john": "ジョン（人名）",
+"came": "来た（come backでもどる）",
+"back": "もどって",
+"and": "そして",
+"said": "言った（sayの過去形）",
+"that": "〜ということ（接続詞）",
+"ape-men": "猿人たち（ape-manの複数形）",
+"had": "〜していた（過去完了のhad）",
+"caught": "捕まえた（catchの過去分詞）",
+"him": "彼を",
+"the": "その",
+"two": "ふたりの",
+"professors": "教授（professorの複数形）",
+"king": "王",
+"of": "〜の",
+"looked": "見えた（look likeで似ている）",
+"just": "まさに（just likeでそっくり）",
+"like": "〜のような・〜のように",
+"challenger": "チャレンジャー（教授の名前）",
+"but": "しかし",
+"his": "彼の",
+"hair": "毛・髪",
+"was": "〜だった",
+"red": "赤い",
+"malone": "マローン（人名）",
+"went": "行った（go backでもどる）",
+"with": "〜を持って・〜とともに",
+"guns": "銃（gunの複数形）",
+"saved": "救った（saveの過去形）",
+"in": "〜に（in timeで間に合って）",
+"time": "時間（in timeで間に合って）",
+"four": "4人の",
+"accala": "アッカラ（部族の名前）",
+"prisoners": "捕虜（prisonerの複数形）",
+"escaped": "逃げた（escapeの過去形）",
+"them": "彼ら",
+"one": "ひとり（one of themで1人）",
+"maretas": "マレタス（人名）",
+"son": "息子",
+"their": "彼らの",
+"chief": "族長",
+"lake": "湖",
+"they": "彼らは",
+"not": "〜ない（not onlyで〜だけでなく）",
+"only": "〜だけ（not onlyで〜だけでなく）",
+"saw": "見た（seeの過去形）",
+"a": "1頭の・ひとつの",
+"plesiosaurus": "プレシオサウルス（首長竜）",
+"also": "〜も（but alsoで〜も）",
+"learned": "知った（learnの過去形）",
+"kept": "飼っていた（keepの過去形）",
+"iguanodons": "イグアノドン（複数形）",
+"cattle": "（まとめて）牛",
+"help": "助け",
+"defeated": "負かした（defeatの過去形）",
+"big": "大きな",
+"battle": "戦い",
+"the two professors": "ふたりの教授",
+"at dawn lord john came back and said": "夜明けに卿がもどって言った",
+"at dawn lord john came back and said that ape-men": "夜明けにもどった卿は、猿人が〜と言った",
+"him and the two professors": "彼とふたりの教授を",
+"the ape-men": "猿人たち",
+"his hair": "彼の毛",
+"the king of the ape-men looked just like challenger": "猿人の王は教授にそっくりだった",
+"the king of the ape-men looked just like challenger but his hair was": "王は教授そっくりだが、毛は〜だった",
+"lord john and malone went back with guns": "卿とマローンは銃を持ってもどった",
+"lord john and malone went back with guns and": "卿とマローンは銃を持ってもどり、",
+"the two professors just in time": "間一髪でふたりの教授を",
+"four accala prisoners": "アッカラ族の捕虜4人",
+"four accala prisoners escaped with them": "アッカラ族の捕虜4人も逃げた",
+"four accala prisoners escaped with them and one of them was maretas the son of their": "捕虜4人も逃げ、1人は〜の息子マレタス",
+"a plesiosaurus": "1頭のプレシオサウルス",
+"the accala": "アッカラ族",
+"they not only saw a plesiosaurus but also learned": "首長竜を見ただけでなく、〜も知った",
+"at the lake they not only saw a plesiosaurus but also learned that the accala": "湖で首長竜を見て、アッカラ族が〜とも知った",
+"iguanodons like cattle": "牛のようにイグアノドンを",
+"with the help of their guns": "彼らの銃の助けで",
+"with the help of their guns the accala defeated the ape-men in a": "銃の助けで、アッカラ族は〜で猿人に勝った"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
+"id": "20261008-lostworld-08",
+"added": "2026-10-08T20:51",
+"cat": "story",
+"level": 3,
+"title": "『失われた世界』第8回　報告会に本物の翼竜が現れる",
+"summary": "マレタスがくれた地図で抜け道を見つけ、一行はついに台地を下ります。ロンドンの報告会では、チャレンジャー教授が箱から生きた翼竜を出して会場をおどろかせ、最後にマローンは、ジョン卿ともう一度台地へ行きたいと話します。",
+"book": {
+"title": "The Lost World",
+"titleJa": "失われた世界",
+"author": "Arthur Conan Doyle",
+"year": 1912,
+"url": "https://www.gutenberg.org/ebooks/139",
+"parts": 8,
+"part": 8
+},
+"orig": [
+{
+"en": "Our eyes have seen great wonders and our souls are chastened by what we have endured.",
+"ja": "私たちの目はすばらしい驚異を見てきました。そして、たえてきたことによって、私たちの心はきたえられたのです。"
+},
+{
+"en": "Lord Roxton said nothing, but a brown hand was stretched out to me across the table.",
+"ja": "ロクストン卿は何も言いませんでしたが、日に焼けた手が、テーブルごしに私へさし出されました。"
+}
+],
+"lines": [
+{
+"en": "Thanks to a secret map from Maretas, they found a cave that led outside and climbed down.",
+"ja": "マレタスがこっそりくれた地図のおかげで、一行は外に通じる洞窟を見つけ、崖を下りました。",
+"mix": "マレタスがこっそりくれた {map} のおかげで、一行は外に通じる {cave} を見つけ、崖を下りました。"
+},
+{
+"en": "At a meeting in London, a scientist said that he would believe them only if he saw a real pterodactyl.",
+"ja": "ロンドンの報告会で、ある科学者が、本物の翼竜を見ないかぎり一行の話は信じないと言いました。",
+"mix": "ロンドンの報告会で、ある {scientist} が、本物の {pterodactyl} を見ないかぎり一行の話は信じないと言いました。"
+},
+{
+"en": "Then Challenger opened a box, and a live pterodactyl came out and flew around the hall.",
+"ja": "そこでチャレンジャー教授が箱を開けると、生きた翼竜が出てきて、会場を飛びまわりました。",
+"mix": "そこでチャレンジャー教授が {box} を開けると、生きた {pterodactyl} が出てきて、会場を飛びまわりました。"
+},
+{
+"en": "It escaped through a window, and the excited crowd carried the four heroes on their shoulders.",
+"ja": "翼竜は窓から逃げていき、興奮した観衆は4人の英雄を肩にかつぎ上げました。",
+"mix": "翼竜は {window} から逃げていき、興奮した観衆は4人の {heroes} を肩にかつぎ上げました。"
+},
+{
+"en": "When Malone visited Gladys, he found that she had married a lawyer's clerk.",
+"ja": "マローンがグラディスを訪ねると、彼女は法律事務所の事務員と結婚していました。",
+"mix": "マローンがグラディスを訪ねると、彼女は法律事務所の {clerk} と結婚していました。"
+},
+{
+"en": "Lord John had secretly collected diamonds at the pterodactyl swamp, and he shared them with his friends.",
+"ja": "ジョン卿は翼竜の沼でこっそりダイヤモンドを集めていて、それを仲間たちと分け合いました。",
+"mix": "ジョン卿は翼竜の {swamp} でこっそり {diamonds} を集めていて、それを仲間たちと分け合いました。"
+},
+{
+"en": "Malone said that he would rather go back to the plateau with Lord John than get married.",
+"ja": "マローンは、結婚するより、ジョン卿といっしょに台地へもどりたいと言いました。",
+"mix": "マローンは、結婚するより、ジョン卿といっしょに {the plateau} へもどりたいと言いました。"
+}
+],
+"words": [
+{
+"w": "lead",
+"ja": "（道などが）〜に通じる",
+"note": "led は lead の過去形。a cave that led outside ＝ 外に通じる洞窟。"
+},
+{
+"w": "live",
+"ja": "生きている",
+"note": "形容詞の live は「ライヴ」と発音します。a live pterodactyl ＝ 生きた翼竜。"
+},
+{
+"w": "crowd",
+"ja": "群衆・観衆",
+"note": "the excited crowd ＝ 興奮した観衆。原文では、会場の外にも10万人以上が集まっていました。"
+},
+{
+"w": "clerk",
+"ja": "事務員",
+"note": "原文では solicitor's clerk（事務弁護士の事務所の事務員）です。"
+},
+{
+"w": "share",
+"ja": "分け合う",
+"note": "share A with B ＝ A を B と分け合う。ダイヤモンドは4人で等しく分けることになりました。"
+}
+],
+"grammar": {
+"title": "would rather A than B「BするよりむしろAしたい」",
+"body": "would rather ＋ 動詞のもとの形 で「（どちらかと言えば）むしろ〜したい」。比べる相手は than ＋ 動詞のもとの形 で続けます。Malone said that he would rather go back to the plateau ... than get married. は「結婚するより、台地にもどりたいと言った」。過去の話の said that のあとでも would rather の形のままです。会話では I'd rather と短くなります。",
+"ex": [
+{
+"en": "He said that he would rather stay home than go out.",
+"ja": "彼は、出かけるより家にいたいと言いました。"
+},
+{
+"en": "She said she would rather walk than take a taxi.",
+"ja": "彼女は、タクシーに乗るより歩きたいと言いました。"
+}
+]
+},
+"quiz": [
+{
+"q": "報告会でチャレンジャー教授が箱から出したものは？",
+"choices": [
+"ダイヤモンド",
+"恐竜の骨",
+"生きた翼竜"
+],
+"a": 2,
+"why": "3文目に a live pterodactyl came out とあります。"
+},
+{
+"q": "a lawyer's clerk の clerk の意味は？",
+"choices": [
+"弁護士",
+"事務員",
+"店長"
+],
+"a": 1,
+"why": "clerk は「事務員」。lawyer が「弁護士」です。"
+},
+{
+"q": "He said that he would ___ go with them than stay home.（家にいるより、みんなと行きたいと言った）",
+"choices": [
+"rather",
+"better",
+"like"
+],
+"a": 0,
+"why": "「BよりむしろAしたい」は would rather A than B です。"
+}
+],
+"talk": {
+"q": "What was your favorite part of The Lost World?",
+"ja": "『失われた世界』で、いちばん好きな場面はどこでしたか？",
+"hint": "My favorite part was ___ because ___."
+},
+"grad": [
+{
+"q1": "{Maretas} がこっそりくれた {a map} のおかげで、一行は外に通じる {a cave} を見つけ、崖を下りました。",
+"q2": "{Thanks to a secret map from Maretas}、一行は外に通じる {a cave} を見つけ、崖を下りました。",
+"q3": "{Thanks to a secret map from Maretas, they found a cave that led outside and} 下りた。"
+},
+{
+"q1": "{London} の報告会で、{a scientist} が、{a real pterodactyl} を見ないかぎり一行の話は信じないと言いました。",
+"q2": "{At a meeting in London}、{a scientist said}、{a real pterodactyl} を見ないかぎり一行の話は信じないと。",
+"q3": "{At a meeting in London, a scientist said that he would believe them only if he} 見た {a real pterodactyl.}"
+},
+{
+"q1": "そこでチャレンジャー教授が {a box} を開けると、{a live pterodactyl} が出てきて、{hall} を飛びまわりました。",
+"q2": "{Then Challenger opened a box}、{a live pterodactyl came out}、そして {hall} を飛びまわりました。",
+"q3": "{Then Challenger opened a box, and a live pterodactyl came out and} 飛びまわった {the hall.}"
+},
+{
+"q1": "翼竜は {a window} から逃げていき、興奮した {crowd} は {the four heroes} を肩にかつぎ上げました。",
+"q2": "{It escaped through a window}、そして興奮した {crowd} は {the four heroes} を肩にかつぎ上げました。",
+"q3": "{It escaped through a window, and the} 興奮した {crowd carried the four heroes on their shoulders.}"
+},
+{
+"q1": "{Malone} が {Gladys} を訪ねると、彼女は {a lawyer's clerk} と結婚していました。",
+"q2": "{When Malone visited Gladys}、彼女は {a lawyer's clerk} と結婚していました。",
+"q3": "{When Malone visited Gladys, he found that she} 結婚していた {a lawyer's clerk.}"
+},
+{
+"q1": "ジョン卿は {the pterodactyl swamp} でこっそり {diamonds} を集めていて、それを {his friends} と分け合いました。",
+"q2": "{Lord John had secretly collected diamonds at the pterodactyl swamp}、そしてそれを {his friends} と分け合いました。",
+"q3": "{Lord John had secretly collected diamonds at the pterodactyl swamp, and he} 分け合った {them with his friends.}"
+},
+{
+"q1": "{Malone} は、結婚するより、{Lord John} といっしょに {the plateau} へもどりたいと言いました。",
+"q2": "{Malone said that he would rather go back}、結婚するより、{Lord John} といっしょに {the plateau} へ。",
+"q3": "{Malone said that he would rather go back to the plateau with Lord John than} 結婚する。"
+}
+],
+"gloss": {
+"thanks": "おかげ（thanks toで〜のおかげで）",
+"to": "〜に・〜へ",
+"a": "ひとつの・1頭の",
+"secret": "ひみつの",
+"map": "地図",
+"from": "〜からの",
+"maretas": "マレタス（人名）",
+"they": "彼らは",
+"found": "見つけた・わかった（findの過去形）",
+"cave": "洞窟",
+"that": "〜する（関係代名詞）・〜ということ",
+"led": "通じていた（leadの過去形）",
+"outside": "外へ",
+"and": "そして",
+"climbed": "登り下りした（climb downで下りた）",
+"down": "下へ",
+"at": "〜で",
+"meeting": "会・集まり",
+"in": "〜で・〜に",
+"london": "ロンドン",
+"scientist": "科学者",
+"said": "言った（sayの過去形）",
+"he": "彼は",
+"would": "〜するだろう・（would ratherで）〜したい",
+"believe": "信じる",
+"them": "彼らを・それらを",
+"only": "〜だけ",
+"if": "もし〜なら（only ifで〜のときだけ）",
+"saw": "見た（seeの過去形）",
+"real": "本物の",
+"pterodactyl": "翼竜（プテロダクティルス）",
+"then": "そこで・それから",
+"challenger": "チャレンジャー（教授の名前）",
+"opened": "開けた（openの過去形）",
+"box": "箱",
+"live": "生きている（ライヴと読む）",
+"came": "来た（come outで出てくる）",
+"out": "外へ",
+"flew": "飛んだ（flyの過去形）",
+"around": "〜じゅうを・〜のまわりを",
+"the": "その",
+"hall": "会場・ホール",
+"it": "それは",
+"escaped": "逃げた（escapeの過去形）",
+"through": "〜を通りぬけて",
+"window": "窓",
+"excited": "興奮した",
+"crowd": "群衆・観衆",
+"carried": "運んだ（carryの過去形）",
+"four": "4人の",
+"heroes": "英雄（heroの複数形）",
+"on": "〜の上に",
+"their": "彼らの",
+"shoulders": "肩（shoulderの複数形）",
+"when": "〜すると・〜するとき",
+"malone": "マローン（人名）",
+"visited": "訪ねた（visitの過去形）",
+"gladys": "グラディス（人名）",
+"she": "彼女は",
+"had": "〜していた（過去完了のhad）",
+"married": "結婚した（marryの過去分詞）",
+"lawyer's": "弁護士の・法律事務所の",
+"clerk": "事務員",
+"lord": "卿（貴族の呼び名）",
+"john": "ジョン（人名）",
+"secretly": "こっそり",
+"collected": "集めた（collectの過去分詞）",
+"diamonds": "ダイヤモンド（複数形）",
+"swamp": "沼地",
+"shared": "分け合った（shareの過去形）",
+"with": "〜と・〜といっしょに",
+"his": "彼の",
+"friends": "仲間（friendの複数形）",
+"rather": "むしろ（would ratherで）",
+"go": "行く（go backでもどる）",
+"back": "もどって",
+"plateau": "台地・高原",
+"than": "〜よりも",
+"get": "〜になる（get marriedで結婚する）",
+"the plateau": "その台地",
+"a map": "1枚の地図",
+"a cave": "ひとつの洞窟",
+"thanks to a secret map from maretas": "マレタスのひみつの地図のおかげで",
+"thanks to a secret map from maretas they found a cave that led outside and": "地図のおかげで外への洞窟を見つけ、",
+"a scientist": "ある科学者",
+"a real pterodactyl": "本物の翼竜",
+"at a meeting in london": "ロンドンの会で",
+"a scientist said": "ある科学者が言った",
+"at a meeting in london a scientist said that he would believe them only if he": "科学者は、〜したときだけ信じると言った",
+"a box": "ひとつの箱",
+"a live pterodactyl": "生きた翼竜",
+"then challenger opened a box": "そこで教授が箱を開けた",
+"a live pterodactyl came out": "生きた翼竜が出てきた",
+"then challenger opened a box and a live pterodactyl came out and": "教授が箱を開けると翼竜が出てきて",
+"the hall": "会場",
+"a window": "窓",
+"the four heroes": "4人の英雄",
+"it escaped through a window": "それは窓から逃げた",
+"it escaped through a window and the": "それは窓から逃げ、そして",
+"crowd carried the four heroes on their shoulders": "観衆が4人の英雄を肩にかついだ",
+"a lawyer's clerk": "法律事務所の事務員",
+"when malone visited gladys": "マローンがグラディスを訪ねると",
+"when malone visited gladys he found that she": "訪ねると、彼女が〜とわかった",
+"the pterodactyl swamp": "翼竜の沼",
+"his friends": "彼の仲間たち",
+"lord john had secretly collected diamonds at the pterodactyl swamp": "卿は翼竜の沼でこっそりダイヤを集めていた",
+"lord john had secretly collected diamonds at the pterodactyl swamp and he": "卿は沼でダイヤを集めていて、彼は",
+"them with his friends": "それを仲間たちと",
+"lord john": "ジョン卿（ジョン・ロクストン卿）",
+"malone said that he would rather go back": "マローンはむしろもどりたいと言った",
+"malone said that he would rather go back to the plateau with lord john than": "〜するより、卿と台地へもどりたいと"
+},
+"addedAt": "2026-10-08T17:30"
+},
+{
 "added": "2026-10-07T22:56",
 "addedAt": "2026-10-08T07:58",
 "cat": "movie",
@@ -291,7 +5055,12 @@ window.LESSONS = [
 "to": "〜に（負ける相手）",
 "to an illusion": "幻影に",
 "you": "あなたは",
-"you can": "あなたは〜できる"
+"you can": "あなたは〜できる",
+"how": "どんなふうに",
+"feels": "〜な感じがする（feelの三単現）",
+"how the sword feels": "剣の感触",
+"she says then you": "彼女は言う「じゃああなたは",
+"how the sword feels now right": "もう剣の感触も…よね"
 },
 "grad": [
 {
@@ -320,13 +5089,13 @@ window.LESSONS = [
 "q3": "{In the second picture, Frieren} 微笑む。"
 },
 {
-"q1": "彼女は「じゃあもう {the sword} の {feel} もわかるよね」と言っています。",
-"q2": "{She says,} 「もう {you can} 知る {the feel of the sword} よね」",
-"q3": "{She says, \"Then you can} 知る {the feel of the sword now, right?\"}"
+"q1": "{She} は「じゃあもう {the sword} の感触もわかるよね」と言っています。",
+"q2": "{She says,} 「じゃあもう {you} は {how the sword feels} もわかるよね」",
+"q3": "{She says, \"Then you} わかる {how the sword feels now, right?\"}"
 }
 ],
 "grammar": {
-"body": "「〜しなかった」は did not（短くして didn't）のあとに動詞のもとの形を置きます。lost や won のように -ed の形にはしません。",
+"body": "「〜しなかった」は did not（短くして didn't）のあとに動詞のもとの形を置きます。lost や won のような過去形にはせず、lose・win のようにもとの形にします。",
 "ex": [
 {
 "en": "I did not watch the movie.",
@@ -368,7 +5137,7 @@ window.LESSONS = [
 "mix": "2枚目の {picture} では、フリーレンが微笑んでいます。"
 },
 {
-"en": "She says, \"Then you can know the feel of the sword now, right?\"",
+"en": "She says, \"Then you know how the sword feels now, right?\"",
 "ja": "彼女は「じゃあもう剣の感触もわかるよね」と言っています。",
 "mix": "彼女は「じゃあもう {sword} の感触もわかるよね」と言っています。"
 }
@@ -484,7 +5253,11 @@ window.LESSONS = [
 "tomorrow": "明日",
 "us": "私たちを",
 "wait": "待つ",
-"will": "〜する予定"
+"will": "〜する予定",
+"stay": "〜のままでいる",
+"tuned": "（stay tunedで）続報を待つ",
+"follow us": "私たちをフォローして",
+"follow us and": "私たちをフォローして、そして"
 },
 "grad": [
 {
@@ -504,12 +5277,12 @@ window.LESSONS = [
 },
 {
 "q1": "{us} をフォローして待ってね。",
-"q2": "{Please follow us} 、待ってね。",
-"q3": "{Please follow us and} 待つ。"
+"q2": "{Follow us} 、待ってね。",
+"q3": "{Follow us and} 待っててね！"
 }
 ],
 "grammar": {
-"body": "for は「〜のための」という意味です。名詞のあとに for ＋ 名詞 を置くと、「〜用の・〜限定の」のように説明できます。",
+"body": "for は「〜のための」という意味です。名詞のあとに for ＋ 名詞 を置くと「〜用の・〜のための」という意味になります。「〜限定の」は only for 〜（made only for the cafe）で表します。",
 "ex": [
 {
 "en": "This is a gift for you.",
@@ -520,7 +5293,7 @@ window.LESSONS = [
 "ja": "子ども用の部屋があります。"
 }
 ],
-"title": "for「〜のための・〜限定の」"
+"title": "for「〜のための・〜用の」と only for「〜限定の」"
 },
 "id": "20261007-haikyu-andgallery-cafe",
 "level": 1,
@@ -541,7 +5314,7 @@ window.LESSONS = [
 "mix": "ビジュアルは {tomorrow} 公開されます。"
 },
 {
-"en": "Please follow us and wait.",
+"en": "Follow us and stay tuned!",
 "ja": "フォローして待ってね。",
 "mix": "{us} をフォローして待ってね。"
 }
@@ -582,7 +5355,7 @@ window.LESSONS = [
 "at"
 ],
 "q": "New art made only ___ the cafe will appear.（カフェ限定のビジュアル）",
-"why": "「〜限定の」は for ＋ 名詞で表します。"
+"why": "「〜のための」は for。only for 〜 で「〜限定の」になります。"
 }
 ],
 "series": "haikyu",
@@ -611,7 +5384,7 @@ window.LESSONS = [
 },
 {
 "ja": "フォローする",
-"note": "ポストの「フォローして待ってね」は follow us and wait。",
+"note": "ポストの「フォローして待ってね」は Follow us and stay tuned!（stay tuned ＝ 続きを楽しみに待っていて）。",
 "w": "follow"
 },
 {
@@ -1069,7 +5842,7 @@ window.LESSONS = [
 "adds": "加える（addの三単現）",
 "also": "〜も",
 "been": "〜されて（beenの形）",
-"before": "以前に・これまで",
+"before": "以前に・それまで",
 "by": "〜による・〜が書いた",
 "changed": "変更された（changeの過去分詞）",
 "complete": "完全な",
@@ -1103,7 +5876,10 @@ window.LESSONS = [
 "this": "この",
 "this edition": "この版",
 "this edition adds": "この版は加える",
-"this edition adds stories that had not": "この版が加える、〜されていなかった話"
+"this edition adds stories that had not": "この版が加える、〜されていなかった話",
+"added": "加えた（addの過去形）",
+"this edition added": "この版は〜を加えた",
+"this edition added stories that had not": "この版は〜されていなかった話を加えた"
 },
 "grad": [
 {
@@ -1117,9 +5893,9 @@ window.LESSONS = [
 "q3": "{Mad Men is a manga} による {Daijiro Morohoshi.}"
 },
 {
-"q1": "{This edition} では、これまで収録されていなかった {stories} が加えられています。",
-"q2": "{This edition adds} これまで収録されていなかった {stories}。",
-"q3": "{This edition adds stories that had not} 収録された {before.}"
+"q1": "{This edition} では、それまで収録されていなかった {stories} が加えられました。",
+"q2": "{This edition added} それまで収録されていなかった {stories}。",
+"q3": "{This edition added stories that had not} 収録された {before.}"
 },
 {
 "q1": "話の {the order} も変更されています。",
@@ -1155,9 +5931,9 @@ window.LESSONS = [
 "mix": "『マッドメン』は、諸星大二郎の {manga} です。"
 },
 {
-"en": "This edition adds stories that had not been included before.",
-"ja": "この版では、これまで収録されていなかった話が加えられています。",
-"mix": "この版では、これまで収録されていなかった {stories} が加えられています。"
+"en": "This edition added stories that had not been included before.",
+"ja": "この版では、それまで収録されていなかった話が加えられました。",
+"mix": "この版では、それまで収録されていなかった {stories} が加えられました。"
 },
 {
 "en": "The order of the stories has also been changed.",
@@ -1181,7 +5957,7 @@ window.LESSONS = [
 "絵がすべて新しくなった"
 ],
 "q": "この版で変わったことは？",
-"why": "3文目に adds stories、4文目に The order of the stories has also been changed. とあります。"
+"why": "3文目に added stories、4文目に The order of the stories has also been changed. とあります。"
 },
 {
 "a": 1,
@@ -1200,8 +5976,8 @@ window.LESSONS = [
 "have",
 "had"
 ],
-"q": "This edition adds stories that ___ not been included before.",
-"why": "それより前のことなので過去完了 had not been included にします。"
+"q": "The stories ___ not been included before this edition came out.（この版が出るまで収録されていなかった）",
+"why": "this edition came out（過去）より前のことなので、過去完了 had not been included にします。"
 }
 ],
 "summary": "諸星大二郎さんの『マッドメン』の原典完全版が発売されました。これまで収録されていなかった話が加えられ、収録順も変更されています。",
@@ -1503,7 +6279,7 @@ window.LESSONS = [
 "as": "〜として",
 "author": "作者",
 "avatar": "アバター・分身",
-"be": "〜になる",
+"be": "〜になる・〜される",
 "but": "でも・ただ",
 "but a 2025 exhibition had a photo spot from gapacho's view": "ただ2025年の展にはガパチョ目線のフォトスポットがあった",
 "but a 2025 exhibition had a photo spot from gapacho's view and the author": "ただ展にはフォトスポットがあり、作者も",
@@ -1586,7 +6362,10 @@ window.LESSONS = [
 "would": "〜だろう（過去から見た未来）",
 "writer": "書いた人・投稿者",
 "wrote": "書いた（writeの過去形）",
-"yamada": "山田（人名）"
+"yamada": "山田（人名）",
+"shown": "見せられる（showの過去分詞）",
+"gapacho's face": "ガパチョの顔",
+"that gapacho's face would never be shown": "ガパチョの顔は決して出てこないと"
 },
 "grad": [
 {
@@ -1595,9 +6374,9 @@ window.LESSONS = [
 "q3": "{After the final episode of Seihantai, a fan} 書いた {about the character Gapacho.}"
 },
 {
-"q1": "原作 {manga} の全 {volumes} を読んでいたので、{the writer} は {Gapacho} が {a face} を出さないと予想できました。",
-"q2": "{Having read all the volumes of the manga} 、{the writer} は {Gapacho} が {a face} を出さないと予想できました。",
-"q3": "{Having read all the volumes of the manga, the writer} 予想できた {that Gapacho would never show a face.}"
+"q1": "原作 {manga} の全 {volumes} を読んでいたので、{the writer} は {Gapacho's face} は出てこないと予想できました。",
+"q2": "{Having read all the volumes of the manga}、{the writer} は {Gapacho's face} は出てこないと予想できました。",
+"q3": "{Having read all the volumes of the manga, the writer} 予想できた {that Gapacho's face would never be shown.}"
 },
 {
 "q1": "{Volume 8} では、{the graduation ceremony} のあとに山田と西が写真を撮り、{phone} を構える {a hand} だけが描かれています。",
@@ -1648,9 +6427,9 @@ window.LESSONS = [
 "mix": "『正反対な君と僕』の最終回のあと、あるファンが {character} 「ガパチョ」について書きました。"
 },
 {
-"en": "Having read all the volumes of the manga, the writer could guess that Gapacho would never show a face.",
-"ja": "原作マンガを全巻読んでいたので、投稿者はガパチョが顔を出さないと予想できました。",
-"mix": "原作 {manga} を全巻読んでいたので、投稿者はガパチョが {face} を出さないと予想できました。"
+"en": "Having read all the volumes of the manga, the writer could guess that Gapacho's face would never be shown.",
+"ja": "原作マンガを全巻読んでいたので、投稿者はガパチョの顔は出てこないと予想できました。",
+"mix": "原作 {manga} を全巻読んでいたので、投稿者はガパチョの {face} は出てこないと予想できました。"
 },
 {
 "en": "In Volume 8, after the graduation ceremony, Yamada and Nishi take a photo, and only a hand with a phone is drawn.",
@@ -1820,7 +6599,18 @@ window.LESSONS = [
 "time": "時間",
 "to": "〜へ・〜する",
 "train": "電車",
-"who": "〜する（人）"
+"who": "〜する（人）",
+"will": "〜する（意志・必ず）",
+"there": "（There isで）〜がある",
+"that": "〜する（関係代名詞）",
+"moves": "移す・回す（moveの三単現）",
+"late-night": "夜おそくの",
+"showings": "上映回（showingの複数形）",
+"some movies have many regular fans who will": "固定客が多い映画があり、その人たちは",
+"at any time": "どの時間でも",
+"there is a system": "仕組みがある",
+"there is a system that": "〜する仕組みがある",
+"those movies to late-night showings": "そういう映画を夜おそくの回へ"
 },
 "grad": [
 {
@@ -1831,12 +6621,12 @@ window.LESSONS = [
 {
 "q1": "どの {time} でも必ず来る {regular fans} が多い {movies} があります。",
 "q2": "{Some movies have many regular fans who} どの {time} でも必ず来る。",
-"q3": "{Some movies have many regular fans who} 必ず {come at any time.}"
+"q3": "{Some movies have many regular fans who will} 来る {at any time.}"
 },
 {
-"q1": "それが、{those movies} を夜に回す {system} です。",
-"q2": "{It is a system} 、{those movies} を夜に回す。",
-"q3": "{It is a system to} 回す {those movies to the night.}"
+"q1": "{those movies} を夜おそくの回に回す {system} があります。",
+"q2": "{There is a system} 、{those movies} を夜おそくの回に回す。",
+"q3": "{There is a system that} 回す {those movies to late-night showings.}"
 },
 {
 "q1": "{The theaters} は、この {system} について知っています。",
@@ -1850,7 +6640,7 @@ window.LESSONS = [
 }
 ],
 "grammar": {
-"body": "「〜する人」と人をあとから説明するときは、名詞のあとに who ＋ 動詞を置きます。fans who always come は「いつも来るファン」。",
+"body": "「〜する人」と人をあとから説明するときは、名詞のあとに who ＋ 動詞を置きます。fans who will come at any time は「どの時間でも来るファン」。",
 "ex": [
 {
 "en": "I know a girl who loves anime.",
@@ -1872,14 +6662,14 @@ window.LESSONS = [
 "mix": "映画館では、昼に {long movie} が来ると、{sales} が減るので困ります。"
 },
 {
-"en": "Some movies have many regular fans who always come at any time.",
+"en": "Some movies have many regular fans who will come at any time.",
 "ja": "どの時間でも必ず来る固定客が多い映画があります。",
 "mix": "どの時間でも必ず来る {regular fans} が多い映画があります。"
 },
 {
-"en": "It is a system to move those movies to the night.",
-"ja": "それが、そういう映画を夜に回す仕組みです。",
-"mix": "それが、そういう映画を夜に回す {system} です。"
+"en": "There is a system that moves those movies to late-night showings.",
+"ja": "そういう映画を夜おそくの回に回す仕組みがあります。",
+"mix": "そういう映画を夜おそくの回に回す {system} があります。"
 },
 {
 "en": "The theaters know about this system.",
@@ -1908,7 +6698,7 @@ window.LESSONS = [
 "固定客が多い映画"
 ],
 "q": "映画館が夜に回すのはどんな映画？",
-"why": "2・3文目に、regular fans が多い映画を night に回す system とあります。"
+"why": "2・3文目に、regular fans が多い映画を late-night showings に回す system とあります。"
 },
 {
 "a": 0,
@@ -2025,7 +6815,13 @@ window.LESSONS = [
 "two": "2つの",
 "visitors": "来場者",
 "visual": "ビジュアル",
-"yen": "円"
+"yen": "円",
+"from": "〜から",
+"can": "〜できる",
+"get": "もらう",
+"from saturday october 10": "10月10日（土）から",
+"from saturday october 10 visitors": "10月10日（土）から来場者は",
+"the sixth gift": "第6弾の特典"
 },
 "grad": [
 {
@@ -2049,9 +6845,9 @@ window.LESSONS = [
 "q3": "{The second main visual is} 解禁 {now.}"
 },
 {
-"q1": "10月10日の {Saturday} から、入場者 {gift} の第6弾が始まります。",
-"q2": "{On Saturday, October 10,} 入場者 {gift} の第6弾が始まります。",
-"q3": "{On Saturday, October 10, the sixth gift for visitors} 始まります。"
+"q1": "10月10日の {Saturday} から、{visitors} は {gift} の第6弾がもらえます。",
+"q2": "{From Saturday, October 10,} {visitors} は第6弾の {gift} がもらえます。",
+"q3": "{From Saturday, October 10, visitors} もらえる {the sixth gift.}"
 },
 {
 "q1": "{charm figure} で、全部で2種類あります。",
@@ -2097,9 +6893,9 @@ window.LESSONS = [
 "mix": "第2弾のメイン {visual} が解禁されました。"
 },
 {
-"en": "On Saturday, October 10, the sixth gift for visitors starts.",
-"ja": "10月10日の土曜日から、入場者特典の第6弾が始まります。",
-"mix": "10月10日の土曜日から、入場者 {gift} の第6弾が始まります。"
+"en": "From Saturday, October 10, visitors can get the sixth gift.",
+"ja": "10月10日の土曜日から、入場者特典の第6弾がもらえます。",
+"mix": "10月10日の土曜日から、入場者 {gift} の第6弾がもらえます。"
 },
 {
 "en": "It is a charm figure, and there are two kinds.",
@@ -2123,7 +6919,7 @@ window.LESSONS = [
 "日曜日"
 ],
 "q": "入場者特典の第6弾は何曜日から始まる？",
-"why": "5文目に On Saturday, October 10 とあります。"
+"why": "5文目に From Saturday, October 10 とあります。"
 },
 {
 "a": 0,
@@ -2171,7 +6967,7 @@ window.LESSONS = [
 },
 {
 "ja": "特典・贈り物",
-"note": "ポストの「入場者特典」は a gift for visitors。",
+"note": "ポストの「入場者特典」は、来た人（visitors）がもらえる gift で表しました。",
 "w": "gift"
 },
 {
@@ -2430,7 +7226,7 @@ window.LESSONS = [
 "inarritu": "イニャリトゥ（人名）",
 "information": "情報",
 "is": "〜です",
-"it": "それは",
+"it": "それ（は・を）",
 "it is best": "いちばんよい",
 "it is best to see it with no information and it": "前情報なしで見るのがいちばんで、それは",
 "it was the third time": "3度目だった",
@@ -2490,7 +7286,13 @@ window.LESSONS = [
 "wild film": "怪作",
 "with": "〜のある",
 "with no information": "前情報なしで",
-"work": "仕事"
+"work": "仕事",
+"without": "〜なしで・〜しないで",
+"knowing": "知ること（knowの-ing形）",
+"anything": "何も・何か",
+"about": "〜について",
+"it is best to see it": "それを見るのがいちばんよい",
+"and it opens on october 9": "そして10月9日に公開される"
 },
 "grad": [
 {
@@ -2524,9 +7326,9 @@ window.LESSONS = [
 "q3": "{He was surprised by the acting and the story, and he} 笑った {in many scenes.}"
 },
 {
-"q1": "{no information} で見るのがいちばんで、{October 9} に公開されます。",
-"q2": "{It is best} 見る {with no information}、{on October 9}。",
-"q3": "{It is best to see it with no information, and it} 公開される {on October 9.}"
+"q1": "何も知らずに {it} を見るのが {best} で、{October 9} に公開されます。",
+"q2": "{It is best to see it} 何も知らずに、{October 9} に公開されます。",
+"q3": "{It is best to see it} 何も知らずに、{and it opens on October 9.}"
 }
 ],
 "grammar": {
@@ -2577,9 +7379,9 @@ window.LESSONS = [
 "mix": "{acting} にも話の作りにも驚かされ、たくさんの {scenes} で笑わされたそうです。"
 },
 {
-"en": "It is best to see it with no information, and it opens on October 9.",
-"ja": "情報なしで見るのがいちばんで、10月9日に公開されます。",
-"mix": "{no information} で見るのがいちばんで、10月9日に公開されます。"
+"en": "It is best to see it without knowing anything about it, and it opens on October 9.",
+"ja": "何も知らずに見るのがいちばんで、10月9日に公開されます。",
+"mix": "何も知らずに見るのが {best} で、10月9日に公開されます。"
 }
 ],
 "post": {
@@ -2625,7 +7427,7 @@ window.LESSONS = [
 "talk": {
 "hint": "Yes, I do because ___. / No, I don't because ___.",
 "ja": "前情報なしで映画を見たいですか？",
-"q": "Do you want to see a movie without any information?"
+"q": "Do you want to see a movie without knowing anything about it?"
 },
 "title": "『ディガー』MCのサッシャさん、トムと握手して感動",
 "words": [
@@ -2650,9 +7452,9 @@ window.LESSONS = [
 "w": "surprised"
 },
 {
-"ja": "情報",
-"note": "ポストの「前情報なし」は no information。数えられない名詞です。",
-"w": "information"
+"ja": "〜なしで・〜しないで",
+"note": "ポストの「前情報なし」は without knowing anything about it（何も知らずに）。without のあとの動詞は -ing の形です。",
+"w": "without"
 }
 ]
 },
@@ -2831,8 +7633,8 @@ window.LESSONS = [
 "summary": "映画『ゴジラ-0.0』は11月3日公開で、監督・脚本・VFXは山崎貴さんです。11月13日からは Dolby Cinema・4DX・MX4D の上映も始まり、咆哮や地響きを大スクリーンで体験してほしいと伝えています。",
 "talk": {
 "hint": "I want to see it in ___ because ___.",
-"ja": "Dolby Cinema、4DX、MX4D のどの劇場に行きたいですか？",
-"q": "Which theater do you want to go to: Dolby Cinema, 4DX, or MX4D?"
+"ja": "Dolby Cinema、4DX、MX4D のどの上映方式で見たいですか？",
+"q": "Which format do you want to see it in: Dolby Cinema, 4DX, or MX4D?"
 },
 "title": "『ゴジラ-0.0』11月3日公開、Dolby Cinema・4DX・MX4Dも",
 "words": [
@@ -3121,7 +7923,9 @@ window.LESSONS = [
 "very": "とても",
 "with": "〜が写った・〜といっしょの",
 "years": "年（yearの複数形）",
-"yen": "円"
+"yen": "円",
+"set": "〜を舞台にした",
+"a story set ten years after the movie": "映画の10年後を舞台にした物語"
 },
 "grad": [
 {
@@ -3137,7 +7941,7 @@ window.LESSONS = [
 {
 "q1": "そのスピンオフは、{movie} の {ten years} 後の {story} を描きます。",
 "q2": "{The spin-off} は、{the movie} の {ten years} 後の {a story} を描きます。",
-"q3": "{The spin-off} 描く {a story ten years after the movie.}"
+"q3": "{The spin-off} 描く {a story set ten years after the movie.}"
 },
 {
 "q1": "{bonus} では、二人のキャラクターが {sleepover} をしています。",
@@ -3183,7 +7987,7 @@ window.LESSONS = [
 "mix": "公式 {spin-off manga} の絵を、{color version} にしたものです。"
 },
 {
-"en": "The spin-off tells a story ten years after the movie.",
+"en": "The spin-off tells a story set ten years after the movie.",
 "ja": "そのスピンオフは、映画の10年後の物語を描きます。",
 "mix": "そのスピンオフは、{movie} の10年後の {story} を描きます。"
 },
@@ -3328,7 +8132,7 @@ window.LESSONS = [
 "the new": "新しい",
 "the new magic knight rayearth anime": "新しい『魔法騎士レイアース』のアニメ",
 "them": "彼ら",
-"there": "（There isで）〜がある",
+"there": "（there areで）〜がいる・ある",
 "there is an interview": "インタビューがある",
 "there is an interview with": "〜へのインタビューがある",
 "three": "3つの・3人",
@@ -3337,7 +8141,11 @@ window.LESSONS = [
 "we": "私たちは",
 "we are three": "3人である",
 "we can fight together": "いっしょに戦える",
-"with": "〜をこめて"
+"with": "〜をこめて",
+"us": "私たち",
+"we can fight": "私たちは戦える",
+"one line says we can fight": "ある言葉「私たちは戦える",
+"if there are three of us": "私たちが3人いれば"
 },
 "grad": [
 {
@@ -3357,8 +8165,8 @@ window.LESSONS = [
 },
 {
 "q1": "「3人なら一緒に戦える」という {one line} があります。",
-"q2": "{One line says,} 「{We can fight together} 、3人なら」",
-"q3": "{One line says, \"We can fight together} もし {we are three.\"}"
+"q2": "{One line says,} 「{We can fight} 一緒に、3人なら」",
+"q3": "{One line says, \"We can fight} 一緒に {if there are three of us.\"}"
 }
 ],
 "grammar": {
@@ -3394,7 +8202,7 @@ window.LESSONS = [
 "mix": "3人全員への {interview} があります。"
 },
 {
-"en": "One line says, \"We can fight together if we are three.\"",
+"en": "One line says, \"We can fight together if there are three of us.\"",
 "ja": "「3人なら一緒に戦える」という言葉があります。",
 "mix": "「3人なら一緒に戦える」という {line} があります。"
 }
@@ -3715,7 +8523,9 @@ window.LESSONS = [
 "yuki": "祐希（人名）",
 "yuki ishikawa": "石川祐希（人名）",
 "yuki ishikawa yuji nishida": "石川祐希と西田有志（人名）",
-"yuki ishikawa yuji nishida and ran takahashi": "石川祐希・西田有志・髙橋藍（人名）"
+"yuki ishikawa yuji nishida and ran takahashi": "石川祐希・西田有志・髙橋藍（人名）",
+"called": "呼ばれる（callの過去分詞）",
+"it is": "それは〜です"
 },
 "grad": [
 {
@@ -3725,8 +8535,8 @@ window.LESSONS = [
 },
 {
 "q1": "題名は {GRIT} です。",
-"q2": "{Its} 名前は {GRIT.}",
-"q3": "{Its} 名前 {is GRIT.}"
+"q2": "{It} は {GRIT} と呼ばれています。",
+"q3": "{It is} 呼ばれる {GRIT.}"
 },
 {
 "q1": "{2026} を通して、{team} に密着します。",
@@ -3767,7 +8577,7 @@ window.LESSONS = [
 "mix": "新しい {documentary movie} は、バレーボール男子日本代表についての作品です。"
 },
 {
-"en": "Its name is GRIT.",
+"en": "It is called GRIT.",
 "ja": "題名は『GRIT』です。",
 "mix": "題名は {GRIT} です。"
 },
@@ -3998,7 +8808,7 @@ window.LESSONS = [
 "by",
 "at"
 ],
-"q": "The song will play ___ Hibiya Station.",
+"q": "The song will play ___ Hibiya Station.（日比谷駅で流れます）",
 "why": "ある場所で、は at ＋ 場所 で表します。"
 }
 ],
@@ -4097,7 +8907,11 @@ window.LESSONS = [
 "were like a roller coaster": "ジェットコースターのようだった",
 "will": "〜するだろう（未来）",
 "will be shown from october 9": "10月9日から上映される",
-"you": "あなたを"
+"you": "あなたを",
+"characters": "登場人物（characterの複数形）",
+"the characters": "登場人物たち",
+"but the characters are always in big trouble": "でも登場人物はいつも大ピンチ",
+"but the characters are always in such big trouble that it makes you": "でも登場人物はいつも大ピンチすぎて"
 },
 "grad": [
 {
@@ -4111,9 +8925,9 @@ window.LESSONS = [
 "q3": "{Some} 場面 {are surprising and scary.}"
 },
 {
-"q1": "でも、{they} はいつも {big trouble} すぎて、笑ってしまう。",
-"q2": "{But they are always in big trouble} すぎて、笑ってしまう。",
-"q3": "{But they are always in such big trouble that it makes you} 笑う。"
+"q1": "でも、{the characters} はいつも {big trouble} すぎて、笑ってしまう。",
+"q2": "{But the characters are always in big trouble} すぎて、笑ってしまう。",
+"q3": "{But the characters are always in such big trouble that it makes you} 笑う。"
 },
 {
 "q1": "{Momose's} 気持ちは、{roller coaster} のようでした。",
@@ -4154,9 +8968,9 @@ window.LESSONS = [
 "mix": "{surprising} 場面も、{scary} 場面もあります。"
 },
 {
-"en": "But they are always in such big trouble that it makes you laugh.",
-"ja": "でも、いつも大ピンチすぎて、笑ってしまうところもあります。",
-"mix": "いつも {big trouble} すぎて、笑ってしまうところもあります。"
+"en": "But the characters are always in such big trouble that it makes you laugh.",
+"ja": "でも、登場人物がいつも大ピンチすぎて、笑ってしまうところもあります。",
+"mix": "でも、登場人物がいつも {big trouble} すぎて、笑ってしまうところもあります。"
 },
 {
 "en": "Momose's feelings were like a roller coaster.",
@@ -4478,7 +9292,7 @@ window.LESSONS = [
 "of madoka magica": "『まどか☆マギカ』の",
 "on": "〜について・〜に（日付）",
 "on october 6 2012": "2012年10月6日に",
-"out": "外へ",
+"out": "（came outで）公開された",
 "part": "部・前編",
 "post": "ポスト・投稿",
 "script": "脚本",
@@ -4494,13 +9308,15 @@ window.LESSONS = [
 "with": "〜で・〜から",
 "with a line from the story": "物語のセリフから",
 "writer": "ライター",
-"wrote": "書いた（writeの過去形）"
+"wrote": "書いた（writeの過去形）",
+"that": "〜した（関係代名詞）",
+"a movie that came out on this day": "この日に公開された映画"
 },
 "grad": [
 {
-"q1": "この {post} は、この {day} にちなんだ {movie} をふり返っています。",
-"q2": "{This post} は、{a movie} を、この {day} にちなんでふり返っています。",
-"q3": "{This post} ふり返っている {a movie from this day.}"
+"q1": "この {post} は、この {day} に公開された {movie} をふり返っています。",
+"q2": "{This post} は、この {day} に公開された {a movie} をふり返っています。",
+"q3": "{This post} ふり返っている {a movie that came out on this day.}"
 },
 {
 "q1": "{post} は、{story} の {line} から始まっています。",
@@ -4546,9 +9362,9 @@ window.LESSONS = [
 "level": 2,
 "lines": [
 {
-"en": "This post looks back on a movie from this day.",
-"ja": "このポストは、この日にちなんだ映画をふり返っています。",
-"mix": "このポストは、この日にちなんだ {movie} をふり返っています。"
+"en": "This post looks back on a movie that came out on this day.",
+"ja": "このポストは、この日に公開された映画をふり返っています。",
+"mix": "このポストは、この日に公開された {movie} をふり返っています。"
 },
 {
 "en": "The post begins with a line from the story.",
@@ -4699,7 +9515,9 @@ window.LESSONS = [
 "three actors": "3人の俳優",
 "toro": "トロ（人名の一部）",
 "will": "〜するだろう（未来）",
-"will make": "〜する（これから）"
+"will make": "〜する（これから）",
+"return": "戻る・戻ってくる",
+"all three actors will": "3人の俳優全員が〜する"
 },
 "grad": [
 {
@@ -4718,9 +9536,9 @@ window.LESSONS = [
 "q3": "{The} 出演者 {is Emily Blunt, Benicio del Toro, and Josh Brolin.}"
 },
 {
-"q1": "{All three actors} がカムバックします。",
-"q2": "{All three actors} が {will make} カムバック。",
-"q3": "{All three actors will make a} カムバック。"
+"q1": "{three actors} が全員、戻ってきます。",
+"q2": "{All three actors} が戻ってきます。",
+"q3": "{All three actors will} 戻る。"
 }
 ],
 "grammar": {
@@ -4756,9 +9574,9 @@ window.LESSONS = [
 "mix": "出演者は、{Emily Blunt}、ベニチオ・デル・トロ、ジョシュ・ブローリンです。"
 },
 {
-"en": "All three actors will make a comeback.",
-"ja": "3人の俳優がカムバックします。",
-"mix": "{three actors} がカムバックします。"
+"en": "All three actors will return.",
+"ja": "3人の俳優が全員、戻ってきます。",
+"mix": "3人の {actors} が全員、戻ってきます。"
 }
 ],
 "post": {
@@ -4824,9 +9642,9 @@ window.LESSONS = [
 "w": "series"
 },
 {
-"ja": "カムバック・復帰",
-"note": "ポストの「カムバック」は make a comeback。return（戻る）とも言えます。",
-"w": "comeback"
+"ja": "戻る・戻ってくる",
+"note": "ポストの「カムバック」。シリーズに戻ってくる出演者は return で言います（make a comeback は「返り咲く」の意味が強い言い方です）。",
+"w": "return"
 }
 ]
 },
@@ -5065,7 +9883,7 @@ window.LESSONS = [
 "anime": "アニメ",
 "anno": "庵野（人名）",
 "battleship": "戦艦（作品名）",
-"be": "〜である・務める",
+"be": "〜である・務める・される",
 "been": "〜された（be動詞の過去分詞）",
 "decided": "決まった（decideの過去分詞）",
 "director": "監督",
@@ -5102,13 +9920,20 @@ window.LESSONS = [
 "together": "いっしょに・共同で",
 "visual": "ビジュアル（絵）",
 "will": "〜するだろう（未来）",
-"yamato": "ヤマト（作品名）"
+"yamato": "ヤマト（作品名）",
+"it": "（that以下を指す）それ",
+"that": "〜ということ",
+"made": "作られた（makeの過去分詞）",
+"space battleship": "宇宙戦艦（作品名）",
+"space battleship yamato 2199": "宇宙戦艦ヤマト√2199（作品名）",
+"it has been decided that": "〜ということが決まった",
+"it has been decided that space battleship yamato 2199 will be": "ヤマト√2199が〜されると決まった"
 },
 "grad": [
 {
-"q1": "{Space Battleship Yamato} √2199 の {production} が決まりました。",
-"q2": "{The production of Space Battleship Yamato √2199} が決まりました。",
-"q3": "{The production of Space Battleship Yamato √2199 has been} 決定。"
+"q1": "{Space Battleship Yamato √2199} が作られることが決まりました。",
+"q2": "{It has been decided that} {Space Battleship Yamato √2199} が作られる。",
+"q3": "{It has been decided that Space Battleship Yamato √2199 will be} 作られる。"
 },
 {
 "q1": "庵野秀明さんが、企画・{executive producer}・{director} を務めます。",
@@ -5144,9 +9969,9 @@ window.LESSONS = [
 "level": 3,
 "lines": [
 {
-"en": "The production of Space Battleship Yamato √2199 has been decided.",
-"ja": "『宇宙戦艦ヤマト√2199』の制作が決まりました。",
-"mix": "『宇宙戦艦ヤマト√2199』の {production} が決まりました。"
+"en": "It has been decided that Space Battleship Yamato √2199 will be made.",
+"ja": "『宇宙戦艦ヤマト√2199』が作られることが決まりました。",
+"mix": "{Space Battleship} ヤマト√2199 が作られることが決まりました。"
 },
 {
 "en": "Hideaki Anno will be the planner, executive producer, and director.",
@@ -5212,9 +10037,9 @@ window.LESSONS = [
 "title": "庵野秀明が『宇宙戦艦ヤマト√2199』を企画・監督",
 "words": [
 {
-"ja": "制作",
-"note": "ポストの「制作決定」は the production ... has been decided。",
-"w": "production"
+"ja": "作られる",
+"note": "ポストの「制作決定」は It has been decided that 〜 will be made（〜が作られることが決まった）と言います。",
+"w": "be made"
 },
 {
 "ja": "企画する人",
@@ -5233,7 +10058,7 @@ window.LESSONS = [
 },
 {
 "ja": "決める",
-"note": "「制作決定」は has been decided（決まった）で表せます。",
+"note": "It has been decided that 〜 で「〜と決まった」。ポストの「制作決定」の「決定」です。",
 "w": "decide"
 }
 ]
@@ -5540,7 +10365,7 @@ window.LESSONS = [
 "to him": "彼にとって",
 "to him watching the film": "彼にとって映画を観ること",
 "to him watching the film in a theater again is a great": "彼にとって映画館でもう一度観ることは最高の〜だ",
-"treasure": "宝物・財産",
+"treasure": "大切にする・宝物",
 "two": "2つの・2人の",
 "two heroes": "2人のヒーロー",
 "watched": "観た",
@@ -5564,7 +10389,12 @@ window.LESSONS = [
 "the avengers endgame encore screening": "『エンドゲーム』のアンコール上映",
 "tetsuya has finally": "てつやさんはやっと",
 "he says that no scene is more": "彼いわく、より〜なシーンはない",
-"than the assemble scene": "アッセンブルのシーンより"
+"than the assemble scene": "アッセンブルのシーンより",
+"something": "もの・何か",
+"always": "ずっと・いつも",
+"a theater": "映画館",
+"the film": "その映画",
+"to him watching the film in a theater again is something he will always": "彼にとって映画館で再び観るのはずっと"
 },
 "grad": [
 {
@@ -5578,9 +10408,9 @@ window.LESSONS = [
 "q3": "{He says that no scene is more} 熱い {than the Assemble scene.}"
 },
 {
-"q1": "彼にとって、{theater} でもう一度観られたことは {a great treasure} です。",
-"q2": "彼にとって、{watching the film in a theater again} は {a great treasure} です。",
-"q3": "彼にとって、{watching the film in a theater again is a great treasure.}"
+"q1": "彼にとって、{a theater} で {the film} をもう一度観られたことは、ずっと大切にしていく宝物です。",
+"q2": "{To him}、{watching the film in a theater again} は、ずっと大切にしていく宝物です。",
+"q3": "{To him, watching the film in a theater again is something he will always} 大切にする。"
 },
 {
 "q1": "彼の {photo} の {poster} には、{the team} が9月に映画館で再び集結する、と書かれています。",
@@ -5606,8 +10436,8 @@ window.LESSONS = [
 "ja": "やっとレポートを終えました。"
 },
 {
-"en": "She has bought a ticket that is for the encore.",
-"ja": "彼女はアンコール上映のチケットを買いました。"
+"en": "She has already bought a ticket for the encore screening.",
+"ja": "彼女はもう、アンコール上映のチケットを買いました。"
 }
 ],
 "title": "現在完了 have ＋ 過去分詞「やっと〜した」"
@@ -5626,9 +10456,9 @@ window.LESSONS = [
 "mix": "彼は、{Assemble scene} より熱いシーンはない、と言っています。"
 },
 {
-"en": "To him, watching the film in a theater again is a great treasure.",
-"ja": "彼にとって、映画館でもう一度観られたことは最高の財産です。",
-"mix": "彼にとって、映画館でもう一度観られたことは {great treasure} です。"
+"en": "To him, watching the film in a theater again is something he will always treasure.",
+"ja": "彼にとって、映画館でもう一度観られたことは、ずっと大切にしていく宝物です。",
+"mix": "彼にとって、{theater} でもう一度観られたことは、ずっと大切にしていく宝物です。"
 },
 {
 "en": "The poster in his photo says that the team will reassemble in cinemas in September.",
@@ -5704,8 +10534,8 @@ window.LESSONS = [
 "w": "screening"
 },
 {
-"ja": "宝物・財産",
-"note": "ポストの「最高の財産」は a great treasure。",
+"ja": "大切にする・宝物",
+"note": "ポストの「最高の財産」は something he will always treasure（ずっと大切にしていくもの）で表しました。treasure は「宝物」のほか、動詞で「大切にする」の意味もあります。",
 "w": "treasure"
 },
 {
@@ -6240,7 +11070,15 @@ window.LESSONS = [
 "precure all stars f the 20th anniversary movie has the": "20周年作『オールスターズF』は〜を持つ",
 "the new movie": "新作（新しい映画）",
 "all stars f": "オールスターズF",
-"the opening results of all stars f": "オールスターズFのオープニング成績"
+"the opening results of all stars f": "オールスターズFのオープニング成績",
+"did": "した（doの過去形）",
+"just": "たった・わずか",
+"its": "その（それの）",
+"to": "〜するのが",
+"do": "する",
+"it did this": "それはそれを達成した",
+"17 days after its release": "公開から17日で",
+"it is the fastest movie in the precure series": "プリキュアシリーズでいちばん速い映画だ"
 },
 "grad": [
 {
@@ -6249,14 +11087,14 @@ window.LESSONS = [
 "q3": "{The} 映画 {Detective Precure! made more than 1 billion yen.}"
 },
 {
-"q1": "公開から {only 17 days} で、そうなりました。",
-"q2": "{It made this}、公開から {only 17 days} で。",
-"q3": "{It made this in only 17 days after the} 公開。"
+"q1": "{release} からたった {17 days} で、そうなりました。",
+"q2": "{It did this}、{release} からたった {17 days} で。",
+"q3": "{It did this} たった {17 days after its release.}"
 },
 {
-"q1": "{the Precure series} でいちばん速い記録です。",
-"q2": "{It is} {the Precure series} でいちばん速い {movie}。",
-"q3": "{It is the} いちばん速い {movie in the Precure series.}"
+"q1": "{the Precure series} で、いちばん速くこれを達成した {movie} です。",
+"q2": "{It is the fastest movie}、{the Precure series} でこれを達成した。",
+"q3": "{It is the fastest movie in the Precure series} これを達成した。"
 },
 {
 "q1": "{20th anniversary} の『プリキュアオールスターズF』が、シリーズでいちばん良い {record} です。",
@@ -6292,14 +11130,14 @@ window.LESSONS = [
 "mix": "映画『名探偵プリキュア！』は、興行収入が {1 billion} 円を超えました。"
 },
 {
-"en": "It made this in only 17 days after the release.",
-"ja": "公開から17日間だけで、そうなりました。",
-"mix": "公開から {17 days} だけで、そうなりました。"
+"en": "It did this just 17 days after its release.",
+"ja": "公開からたった17日で、そうなりました。",
+"mix": "公開からたった {17 days} で、そうなりました。"
 },
 {
-"en": "It is the fastest movie in the Precure series.",
-"ja": "シリーズでいちばん速い記録です。",
-"mix": "{series} でいちばん速い記録です。"
+"en": "It is the fastest movie in the Precure series to do this.",
+"ja": "プリキュアシリーズで、いちばん速くこれを達成した映画です。",
+"mix": "プリキュア {series} で、いちばん速くこれを達成した映画です。"
 },
 {
 "en": "Precure All Stars F, the 20th anniversary movie, has the best record in the series.",
@@ -6328,7 +11166,7 @@ window.LESSONS = [
 "17日"
 ],
 "q": "何日で10億円を超えましたか？",
-"why": "2文目に in only 17 days とあります。"
+"why": "2文目に just 17 days after its release とあります。"
 },
 {
 "a": 0,
@@ -6347,7 +11185,7 @@ window.LESSONS = [
 "fastest",
 "fast"
 ],
-"q": "It is the ___ movie in the series.（いちばん速い）",
+"q": "It is the ___ movie in the series to reach 1 billion yen.（いちばん速い）",
 "why": "the のあとは最上級 fastest。"
 }
 ],
@@ -6366,7 +11204,7 @@ window.LESSONS = [
 },
 {
 "ja": "いちばん速い",
-"note": "ポストの「史上最速」は the fastest。",
+"note": "ポストの「史上最速」は the fastest。何が最速かを to 〜 で足して、the fastest movie to do this（これをいちばん速く達成した映画）のように言います。",
 "w": "fastest"
 },
 {
@@ -6717,13 +11555,18 @@ window.LESSONS = [
 "the poster watched": "ポストした人は観た",
 "in dolby atmos at baruto 9": "バルト9のDolby Atmosで",
 "the poster feels that new animation new structure and changed composition have made": "新作画・構成・構図が〜を生んだと感じる",
-"kaiten in dolby atmos at baruto 9": "『廻天』をバルト9のアトモス上映で"
+"kaiten in dolby atmos at baruto 9": "『廻天』をバルト9のアトモス上映で",
+"shinjuku": "新宿（地名）",
+"wald": "バルト（映画館の名前）",
+"wald 9": "バルト9（映画館）",
+"shinjuku wald 9": "新宿バルト9（映画館）",
+"kaiten in dolby atmos at shinjuku wald 9": "『廻天』を新宿バルト9のアトモス上映で"
 },
 "grad": [
 {
-"q1": "{The poster} は、{Baruto 9} のDolby Atmosで『廻天』を観ました。",
-"q2": "{The poster} は、{Baruto 9} の {Dolby Atmos} で『廻天』を観ました。",
-"q3": "{The poster} 観た {Kaiten in Dolby Atmos at Baruto 9.}"
+"q1": "{The poster} は、新宿 {Wald 9} のDolby Atmosで『廻天』を観ました。",
+"q2": "{The poster} は、{Shinjuku Wald 9} の {Dolby Atmos} で『廻天』を観ました。",
+"q3": "{The poster} 観た {Kaiten in Dolby Atmos at Shinjuku Wald 9.}"
 },
 {
 "q1": "{The poster} は、{second half} がほとんど別の {movie} になったと感じています。",
@@ -6769,9 +11612,9 @@ window.LESSONS = [
 "level": 3,
 "lines": [
 {
-"en": "The poster watched Kaiten in Dolby Atmos at Baruto 9.",
-"ja": "ポストした人は、バルト9のDolby Atmosで『廻天』を観ました。",
-"mix": "{The poster} は、バルト9のDolby Atmosで『廻天』を観ました。"
+"en": "The poster watched Kaiten in Dolby Atmos at Shinjuku Wald 9.",
+"ja": "ポストした人は、新宿バルト9のDolby Atmosで『廻天』を観ました。",
+"mix": "{The poster} は、新宿バルト9のDolby Atmosで『廻天』を観ました。"
 },
 {
 "en": "The poster feels that the second half has become almost a different movie.",
@@ -7212,7 +12055,13 @@ window.LESSONS = [
 "honey and clover was shown again in theaters as a revival": "『ハチクロ』がリバイバルで再上映された",
 "the release": "公開",
 "according to the news article the release": "ニュース記事によると公開は",
-"due to good reviews": "好評のため"
+"due to good reviews": "好評のため",
+"confirmed": "確定した（confirmの過去分詞）",
+"on": "（decided on で）〜に決める",
+"starting": "〜から始まって",
+"stages": "段階（stageの複数形）",
+"starting in october": "10月から",
+"starting in october the movie will be shown in theaters across japan": "10月から映画は日本各地の映画館で上映"
 },
 "grad": [
 {
@@ -7241,9 +12090,9 @@ window.LESSONS = [
 "q3": "{According to the news article, the release} 決まった {due to good reviews.}"
 },
 {
-"q1": "{The movie} は {October} から、{Japan} 各地で順次上映される予定です。",
-"q2": "{The movie will be shown}、{Japan} 各地で、{from October}、順次。",
-"q3": "{The movie will be shown in many places across Japan from October,} 順次。"
+"q1": "{October} から、{the movie} は {Japan} 各地の {theaters} で順次上映される予定です。",
+"q2": "{Starting in October}、{the movie will be shown} {Japan} 各地の {theaters} で順次。",
+"q3": "{Starting in October, the movie will be shown in theaters across Japan} 順次。"
 },
 {
 "q1": "彼女は、{everyone} に近くの {town} の {theater} へ行ってほしいと呼びかけています。",
@@ -7252,7 +12101,7 @@ window.LESSONS = [
 }
 ],
 "grammar": {
-"body": "thanks to は良い理由（おかげで）、due to は理由（〜のため）を表します。あとには名詞が来ます。文では「〜された」の受け身（was decided など）といっしょによく出ます。",
+"body": "thanks to は良い理由（おかげで）、due to は理由（〜のため）を表します。あとには名詞が来ます。文では「〜された」の受け身（was decided on など）といっしょによく出ます。",
 "ex": [
 {
 "en": "Thanks to the fans, the event was extended.",
@@ -7284,19 +12133,19 @@ window.LESSONS = [
 "mix": "櫻井翔さんと蒼井優さんが、この {movie} に出演しています。"
 },
 {
-"en": "Thanks to the audience, a nationwide release has been decided.",
+"en": "Thanks to the audience, a nationwide release has been confirmed.",
 "ja": "観客のおかげで、全国公開が決まりました。",
 "mix": "観客のおかげで、{nationwide release} が決まりました。"
 },
 {
-"en": "According to the news article, the release was decided due to good reviews.",
+"en": "According to the news article, the release was decided on due to good reviews.",
 "ja": "ニュース記事によると、好評のため公開が決まりました。",
 "mix": "ニュース記事によると、{good reviews} のため公開が決まりました。"
 },
 {
-"en": "The movie will be shown in many places across Japan from October, one by one.",
-"ja": "映画は10月から、日本各地で順次上映される予定です。",
-"mix": "映画は {October} から、{Japan} 各地で順次上映される予定です。"
+"en": "Starting in October, the movie will be shown in theaters across Japan in stages.",
+"ja": "10月から、映画は日本各地の映画館で順次上映される予定です。",
+"mix": "{October} から、映画は {Japan} 各地の映画館で順次上映される予定です。"
 },
 {
 "en": "She invites everyone to visit a theater in their town.",
@@ -7320,7 +12169,7 @@ window.LESSONS = [
 "ＤＶＤが出る"
 ],
 "q": "このポストでは、10月以降どうなると言っていますか？",
-"why": "6文目に will be shown in many places across Japan とあります。"
+"why": "6文目に will be shown in theaters across Japan in stages（順次）とあります。"
 },
 {
 "a": 1,
@@ -7339,7 +12188,7 @@ window.LESSONS = [
 "so that",
 "because"
 ],
-"q": "The release was decided ___ good reviews.",
+"q": "The release was decided on ___ good reviews.",
 "why": "あとに名詞（good reviews）が来るので due to。"
 }
 ],
@@ -7476,7 +12325,7 @@ window.LESSONS = [
 }
 ],
 "grammar": {
-"body": "「〜番目・〜回目」と言うときは、数のうしろに th をつけます（26th ＝ twenty-sixth）。ふつう前に the をつけます。1st・2nd・3rd だけは形が変わります。",
+"body": "「〜番目・〜回目」と言うときは、数のうしろに th をつけます（26th ＝ twenty-sixth）。ふつう前に the をつけます。1・2・3 で終わる数は 1st・2nd・3rd（21st・22nd・23rd など）になります（11th・12th・13th は th）。つづりでは fifth・ninth・twelfth・twentieth のように形が変わるものもあります。",
 "ex": [
 {
 "en": "This is my tenth trip to Kyoto.",
@@ -7553,7 +12402,7 @@ window.LESSONS = [
 "twenty-sixes",
 "twenty-sixth"
 ],
-"q": "This is his ___ time to come to Japan.（26回目）",
+"q": "This is his ___ visit to Japan.（26回目の来日）",
 "why": "「〜回目」は序数にします。twenty-six に th をつけた形です。"
 }
 ],
@@ -7677,7 +12526,13 @@ window.LESSONS = [
 "people in": "〜の人たち",
 "a 3d version of pan's labyrinth": "『パンズ・ラビリンス』の3D版",
 "the release in japan": "日本での公開",
-"in japan will see the 3d version": "日本の〜は3D版を見られる"
+"in japan will see the 3d version": "日本の〜は3D版を見られる",
+"japanese": "日本の",
+"has": "〜した（現在完了のhave）",
+"been": "〜された（beの過去分詞）",
+"confirmed": "確定した（confirmの過去分詞）",
+"the japanese release": "日本での公開",
+"the japanese release has been": "日本での公開が〜された"
 },
 "grad": [
 {
@@ -7691,9 +12546,9 @@ window.LESSONS = [
 "q3": "{Guillermo del Toro made the 3D version} 自分で。"
 },
 {
-"q1": "{Japan} での {release} が決まりました。",
-"q2": "{The release in Japan} が決まりました。",
-"q3": "{The release in Japan is} 決まった。"
+"q1": "{Japanese} の {release} が決まりました。",
+"q2": "{The Japanese release} が決まりました。",
+"q3": "{The Japanese release has been} 決まった。"
 },
 {
 "q1": "日本の人たちは、{the 3D version} を見られます。",
@@ -7729,7 +12584,7 @@ window.LESSONS = [
 "mix": "ギレルモ・デル・トロ監督が、自分で {3D version} を作りました。"
 },
 {
-"en": "The release in Japan is decided.",
+"en": "The Japanese release has been confirmed.",
 "ja": "日本での公開が決まりました。",
 "mix": "日本での {release} が決まりました。"
 },
@@ -7798,13 +12653,13 @@ window.LESSONS = [
 },
 {
 "ja": "公開",
-"note": "ポストの「日本公開決定」は The release in Japan is decided。",
+"note": "ポストの「日本公開決定」は The Japanese release has been confirmed. のように言えます。",
 "w": "release"
 },
 {
-"ja": "決める",
-"note": "is decided ＝ 決まった。",
-"w": "decide"
+"ja": "確定する・正式に決める",
+"note": "has been confirmed で「（正式に）決まった」。ポストの「決定」にあたります。",
+"w": "confirm"
 }
 ]
 },
@@ -8485,9 +13340,9 @@ window.LESSONS = [
 ],
 "summary": "『アベンジャーズ／エンドゲーム』が全世界興行収入で再び歴代1位になりました。『アバター』を破って累計29億2500万ドルを記録したと海外メディアが報じていて、2021年に『アバター』が再上映で作った記録を更新したそうです。",
 "talk": {
-"hint": "I think ___ is the best because ___.",
+"hint": "I think ___ is the greatest hit because ___.",
 "ja": "歴代最高のヒット作はどの映画だと思いますか？ なぜですか？",
-"q": "Which movie do you think is the best hit of all time? Why?"
+"q": "Which movie do you think is the greatest hit of all time? Why?"
 },
 "title": "『エンドゲーム』が歴代興行収入1位に返り咲き",
 "words": [
@@ -8859,7 +13714,14 @@ window.LESSONS = [
 "the art": "作画",
 "is by": "〜による",
 "shikako": "鹿子（漫画家の名前）",
-"is by shikako": "鹿子さんによる"
+"is by shikako": "鹿子さんによる",
+"design": "デザイン",
+"drug": "薬（ここでは麻薬）",
+"original design": "原案（もとのデザイン）",
+"original design is by shikako": "原案は鹿子さんによる",
+"the original": "その、もとの",
+"design is by shikako": "デザインは鹿子さんによる",
+"he makes the": "彼は（その）〜を作る"
 },
 "grad": [
 {
@@ -8878,9 +13740,9 @@ window.LESSONS = [
 "q3": "{The} 漫画 {is by Tsurushima.}"
 },
 {
-"q1": "{The art} 原案は鹿子さんです。",
-"q2": "{The art} 原案 {is} 鹿子さん。",
-"q3": "{The art} 原案 {is by Shikako.}"
+"q1": "作画の {original design} は {Shikako} さんです。",
+"q2": "作画の {original design is by Shikako}。",
+"q3": "{The original} 作画 {design is by Shikako.}"
 },
 {
 "q1": "{This} は、ある男の {story} です。",
@@ -8888,9 +13750,9 @@ window.LESSONS = [
 "q3": "{This is a story of a} 男。"
 },
 {
-"q1": "{He} は「悪魔の {medicine}」を作ります。",
-"q2": "{He makes}「悪魔の {medicine}」。",
-"q3": "{He makes a} 悪魔の {medicine.}"
+"q1": "{He} は「悪魔の {drug}」を作ります。",
+"q2": "{He makes}「悪魔の {drug}」。",
+"q3": "{He makes the} 悪魔の {drug.}"
 }
 ],
 "grammar": {
@@ -8926,9 +13788,9 @@ window.LESSONS = [
 "mix": "漫画は {Tsurushima} さんです。"
 },
 {
-"en": "The art idea is by Shikako.",
+"en": "The original art design is by Shikako.",
 "ja": "作画原案は鹿子さんです。",
-"mix": "{art} 原案は鹿子さんです。"
+"mix": "作画の {original design} は鹿子さんです。"
 },
 {
 "en": "This is a story of a man.",
@@ -8936,9 +13798,9 @@ window.LESSONS = [
 "mix": "これはある男の {story} です。"
 },
 {
-"en": "He makes a devil's medicine.",
+"en": "He makes the devil's drug.",
 "ja": "彼は「悪魔の薬」を作ります。",
-"mix": "彼は「悪魔の {medicine}」を作ります。"
+"mix": "彼は「悪魔の {drug}」を作ります。"
 }
 ],
 "post": {
@@ -8966,8 +13828,8 @@ window.LESSONS = [
 "悪魔",
 "絵"
 ],
-"q": "medicine の意味は？",
-"why": "medicine は「薬」。devil が「悪魔」です。"
+"q": "drug の意味は？",
+"why": "drug は「薬」（ここではアヘンのような薬物）。devil が「悪魔」です。"
 },
 {
 "a": 2,
@@ -9000,18 +13862,18 @@ window.LESSONS = [
 },
 {
 "ja": "絵・作画",
-"note": "ポストの「作画原案」の「作画」は art で表せます。",
+"note": "ポストの「作画原案」は original art design。「作画」の部分を art で表せます。",
 "w": "art"
 },
 {
 "ja": "悪魔",
-"note": "ポストの「悪魔の薬」は a devil's medicine です。",
+"note": "ポストの「悪魔の薬」は the devil's drug です。",
 "w": "devil"
 },
 {
-"ja": "薬",
-"note": "ポストの「薬」。",
-"w": "medicine"
+"ja": "薬・麻薬",
+"note": "ポストの「薬」。アヘンのような薬物は drug と言います。病気を治す薬は medicine です。",
+"w": "drug"
 }
 ]
 },
@@ -9080,13 +13942,16 @@ window.LESSONS = [
 "the gods": "神様",
 "who": "〜した人（関係代名詞）",
 "with": "〜から・〜で",
-"with a punishment from the gods": "神様からの罰から"
+"with a punishment from the gods": "神様からの罰から",
+"noro-noro": "のろのろ（作品名の一部）",
+"puku-puku": "ぷくぷく（作品名の一部）",
+"a new series noro-noro puku-puku": "新連載『のろのろぷくぷく』"
 },
 "grad": [
 {
 "q1": "少年ジャンプ＋で、{a new series}『のろのろぷくぷく』が始まりました。",
 "q2": "{Shonen Jump Plus} が {a new series}、『のろのろぷくぷく』を始めました。",
-"q3": "{Shonen Jump Plus} 持つ {a new series, Nororo Puku.}"
+"q3": "{Shonen Jump Plus} 持つ {a new series, Noro-Noro Puku-Puku.}"
 },
 {
 "q1": "{Sachi Roku} を描いた {Chanta} 先生が帰ってきました。",
@@ -9132,7 +13997,7 @@ window.LESSONS = [
 "level": 2,
 "lines": [
 {
-"en": "Shonen Jump Plus has a new series, Nororo Puku.",
+"en": "Shonen Jump Plus has a new series, Noro-Noro Puku-Puku.",
 "ja": "少年ジャンプ＋で、新連載『のろのろぷくぷく』が始まりました。",
 "mix": "少年ジャンプ＋で、{new series} 『のろのろぷくぷく』が始まりました。"
 },
@@ -9317,7 +14182,8 @@ window.LESSONS = [
 "however the poster thinks it is": "しかしこの人は〜だと考えている",
 "the poster believes every scene is on the": "この人はどの場面も〜にあると思う",
 "of a drawing reference": "作画資料の",
-"the poster just loves": "この人はとにかく大好き"
+"the poster just loves": "この人はとにかく大好き",
+"it is rare to see": "〜を見るのはめずらしい"
 },
 "grad": [
 {
@@ -9331,9 +14197,9 @@ window.LESSONS = [
 "q3": "{However, the poster thinks it is} まったく {the opposite.}"
 },
 {
-"q1": "簡略化した {level} で、あれほど {accurate shapes} で描かれた {hands} はめったにありません。",
-"q2": "{It is rare to see hands}、簡略化した {level} で、あれほど {accurate shapes} で描かれた。",
-"q3": "{It is rare to see hands drawn with such accurate shapes at a} 簡略化した {level.}"
+"q1": "簡略化した {hands} が、あれほど {accurate shapes} で描かれているのはめったにありません。",
+"q2": "{It is rare to see} 簡略化した {hands}、あれほど {accurate shapes} で描かれた。",
+"q3": "{It is rare to see} 簡略化した {hands drawn with such accurate shapes.}"
 },
 {
 "q1": "この人は、{every scene} が {drawing reference} レベルだと思っています。",
@@ -9374,9 +14240,9 @@ window.LESSONS = [
 "mix": "しかしこの人は、まったく {opposite} だと考えています。"
 },
 {
-"en": "It is rare to see hands drawn with such accurate shapes at a simplified level.",
-"ja": "簡略化したレベルで、あれほど正確な形で描かれた手はめったにありません。",
-"mix": "簡略化したレベルで、あれほど {accurate} な形で描かれた手はめったにありません。"
+"en": "It is rare to see simplified hands drawn with such accurate shapes.",
+"ja": "簡略化した手が、あれほど正確な形で描かれているのはめったにありません。",
+"mix": "簡略化した手が、あれほど {accurate} な形で描かれているのはめったにありません。"
 },
 {
 "en": "The poster believes every scene is on the level of a drawing reference.",
@@ -9438,7 +14304,7 @@ window.LESSONS = [
 "words": [
 {
 "ja": "簡略化された",
-"note": "ポストの「デフォルメされた」を simplified と言いかえました。deformed でも通じます。",
+"note": "ポストの「デフォルメされた」を simplified と言いかえました（deformed は「ゆがんだ・奇形の」という意味になるので、ここでは使いません）。",
 "w": "simplified"
 },
 {
@@ -9540,13 +14406,16 @@ window.LESSONS = [
 "you can watch": "見ることができる",
 "by wreck-it ralph is held in twisted wonderland": "シュガー・ラッシュに〜、ツイステで開催",
 "you can": "あなたは〜できる",
-"it on disney plus": "それをディズニープラスで"
+"it on disney plus": "それをディズニープラスで",
+"be": "〜される",
+"event will be held in twisted wonderland": "イベントがツイステで開催される",
+"by wreck-it ralph will be held in twisted wonderland": "シュガー・ラッシュに〜、ツイステで開催予定"
 },
 "grad": [
 {
 "q1": "『シュガー・ラッシュ』にインスパイアされた {event} が、{Twisted Wonderland} で開催されます。",
-"q2": "『シュガー・ラッシュ』にインスパイアされた {event is held in Twisted Wonderland}。",
-"q3": "{An event} インスパイアされた {by Wreck-It Ralph is held in Twisted Wonderland.}"
+"q2": "『シュガー・ラッシュ』にインスパイアされた {event will be held in Twisted Wonderland}。",
+"q3": "{An event} インスパイアされた {by Wreck-It Ralph will be held in Twisted Wonderland.}"
 },
 {
 "q1": "日本の {game fans} は、その {movie} の多くの {scenes} を楽しめます。",
@@ -9592,7 +14461,7 @@ window.LESSONS = [
 "level": 2,
 "lines": [
 {
-"en": "An event inspired by Wreck-It Ralph is held in Twisted Wonderland.",
+"en": "An event inspired by Wreck-It Ralph will be held in Twisted Wonderland.",
 "ja": "『シュガー・ラッシュ』にインスパイアされたイベントが、ツイステで開催されます。",
 "mix": "『シュガー・ラッシュ』にインスパイアされた {event} が、ツイステで開催されます。"
 },
@@ -9676,7 +14545,7 @@ window.LESSONS = [
 },
 {
 "ja": "イベント",
-"note": "ポストの「イベントが開催」は an event is held。",
+"note": "ポストの「イベントが開催」は an event will be held（開催される）。",
 "w": "event"
 },
 {
@@ -9785,7 +14654,20 @@ window.LESSONS = [
 "lam also": "LAMさんは〜も",
 "the original story and the script": "原作と脚本",
 "the director of the original short anime demvamps": "オリジナルのショートアニメ「DemVAMPS」の監督",
-"is a new challenge for lam": "LAMにとって新しい挑戦だ"
+"is a new challenge for lam": "LAMにとって新しい挑戦だ",
+"designs": "デザイン（designの複数形）",
+"are": "〜している（be動詞）",
+"filling": "詰め込んでいる（fillの-ing形）",
+"they": "彼ら",
+"love": "大好きだ・愛する",
+"character designs": "キャラクターデザイン",
+"original character designs": "キャラクター原案",
+"lam also does the original character designs": "LAMはキャラクター原案も担当する",
+"lam also does the original character designs and the": "LAMはキャラクター原案と〜も担当する",
+"lam and friends": "LAMと仲間たち",
+"the things they love": "彼らの好きなもの",
+"lam and friends are": "LAMと仲間たちは",
+"it with the things they love": "作品を、好きなもので"
 },
 "grad": [
 {
@@ -9804,9 +14686,9 @@ window.LESSONS = [
 "q3": "{LAM also} 担当する {the original story and the script.}"
 },
 {
-"q1": "{LAM} は {character ideas} と総作画監督も担当します。",
-"q2": "{LAM also does the character ideas}、総作画監督も。",
-"q3": "{LAM also does the character ideas and the} 総作画監督。"
+"q1": "{LAM} は {original character designs} と総作画監督も担当します。",
+"q2": "{LAM also does the original character designs}、総作画監督も。",
+"q3": "{LAM also does the original character designs and the} 総作画監督。"
 },
 {
 "q1": "{LAM} にとって、{new challenge} ばかりです。",
@@ -9814,9 +14696,9 @@ window.LESSONS = [
 "q3": "すべて {is a new challenge for LAM.}"
 },
 {
-"q1": "LAMさんは {friends} と「{favorite things}」を作品に詰め込んでいます。",
-"q2": "{LAM is putting favorite things}、作品に、{friends} と。",
-"q3": "{LAM is putting favorite things} 作品に {with friends.}"
+"q1": "{LAM and friends} が、「好き」を作品に詰め込んでいます。",
+"q2": "{LAM and friends} が、作品に {the things they love} を詰め込んでいます。",
+"q3": "{LAM and friends are} 詰め込んでいる {it with the things they love.}"
 },
 {
 "q1": "{slowly} かもしれませんが、{DemVAMPS} を楽しみにしていてください。",
@@ -9857,9 +14739,9 @@ window.LESSONS = [
 "mix": "LAMさんは {original story} と脚本も担当します。"
 },
 {
-"en": "LAM also does the character ideas and the chief animation direction.",
+"en": "LAM also does the original character designs and the chief animation direction.",
 "ja": "キャラクター原案と総作画監督も担当します。",
-"mix": "{character ideas} と総作画監督も担当します。"
+"mix": "{character designs} の原案と総作画監督も担当します。"
 },
 {
 "en": "Everything is a new challenge for LAM.",
@@ -9867,9 +14749,9 @@ window.LESSONS = [
 "mix": "LAMさんにとって、{new challenge} ばかりです。"
 },
 {
-"en": "LAM is putting favorite things into it with friends.",
-"ja": "LAMさんは仲間たちと「好き」を作品に詰め込んでいます。",
-"mix": "LAMさんは仲間たちと「{favorite things}」を作品に詰め込んでいます。"
+"en": "LAM and friends are filling it with the things they love.",
+"ja": "LAMさんと仲間たちが、「好き」を作品に詰め込んでいます。",
+"mix": "LAMさんと {friends} が、「好き」を作品に詰め込んでいます。"
 },
 {
 "en": "It may grow slowly, but please look forward to DemVAMPS.",
@@ -10025,7 +14907,11 @@ window.LESSONS = [
 "the film is": "この映画は〜だ",
 "it is mozart's": "モーツァルトの〜にあたる",
 "mozart is a genius loved by": "モーツァルトは〜に愛された天才",
-"a story": "物語"
+"a story": "物語",
+"to": "〜するために",
+"mark": "記念する・祝う",
+"face": "顔（in the face of で「〜を前に」）",
+"in the face of mozart's talent": "モーツァルトの才能を前に"
 },
 "grad": [
 {
@@ -10046,7 +14932,7 @@ window.LESSONS = [
 {
 "q1": "サリエリは {Mozart's talent} を前に葛藤する {court musician} です。",
 "q2": "{Salieri is a court musician}、{Mozart's talent} を前に葛藤する。",
-"q3": "{Salieri is a court musician} 葛藤する {in front of Mozart's talent.}"
+"q3": "{Salieri is a court musician} 葛藤する {in the face of Mozart's talent.}"
 },
 {
 "q1": "{The film} は、2人の関係を描いた {a story} です。",
@@ -10077,7 +14963,7 @@ window.LESSONS = [
 "mix": "モーツァルトの生誕 {270th anniversary} にあたります。"
 },
 {
-"en": "For this occasion, the 4K restored version of Amadeus will be released in theaters.",
+"en": "To mark the occasion, the 4K restored version of Amadeus will be released in theaters.",
 "ja": "これを機に、『アマデウス』の4Kレストア版が劇場で公開されます。",
 "mix": "これを機に、『アマデウス』の4K {restored version} が劇場で公開されます。"
 },
@@ -10087,7 +14973,7 @@ window.LESSONS = [
 "mix": "モーツァルトは神に愛された {genius} です。"
 },
 {
-"en": "Salieri is a court musician struggling in front of Mozart's talent.",
+"en": "Salieri is a court musician struggling in the face of Mozart's talent.",
 "ja": "サリエリはモーツァルトの才能を前に葛藤する宮廷音楽家です。",
 "mix": "サリエリはモーツァルトの才能を前に葛藤する {court musician} です。"
 },
@@ -10132,7 +15018,7 @@ window.LESSONS = [
 "struggled",
 "struggles"
 ],
-"q": "Salieri is a court musician ___ in front of Mozart's talent.",
+"q": "Salieri is a court musician ___ in the face of Mozart's talent.",
 "why": "名詞のあとに現在分詞を置いて「〜している音楽家」と説明します。"
 }
 ],
@@ -10146,7 +15032,7 @@ window.LESSONS = [
 "words": [
 {
 "ja": "〜周年・記念日",
-"note": "ポストの「生誕270周年」は the 270th anniversary of birth。",
+"note": "ポストの「生誕270周年」は the 270th anniversary of Mozart's birth。birth の前に、だれの誕生か（Mozart's・his）を入れます。",
 "w": "anniversary"
 },
 {
@@ -10276,7 +15162,20 @@ window.LESSONS = [
 "the picture contains a large amount of information": "絵の情報量がとても多い",
 "the whole picture": "絵の全体",
 "keep the whole picture": "全体が〜しないようにする",
-"the design": "そのデザイン"
+"the design": "そのデザイン",
+"levels": "段階（levelの複数形）",
+"drawings": "絵（drawingの複数形）",
+"packed": "ぎっしり詰まった",
+"detail": "細かい部分・描きこみ",
+"simplified": "簡略化した（デフォルメ）",
+"truly": "本当に",
+"the drawings": "絵",
+"the drawings are": "絵は〜だ",
+"as a result the drawings are": "その結果、絵は〜だ",
+"with detail": "細かな描きこみで",
+"is truly unique": "本当に独特だ",
+"the design which mixes realism and a": "リアルと〜を混ぜたデザインは",
+"style is truly unique": "スタイル（で）、本当に独特だ"
 },
 "grad": [
 {
@@ -10295,9 +15194,9 @@ window.LESSONS = [
 "q3": "{These bumps are shown with} 多段階の {shading than in ordinary anime.}"
 },
 {
-"q1": "その結果、{the picture} の {information} 量はとても多くなります。",
-"q2": "その結果、{the picture contains} とても多くの {information}。",
-"q3": "その結果、{the picture contains a large amount of information.}"
+"q1": "その結果、{the drawings} は細かな {detail} でぎっしりです。",
+"q2": "{As a result}、{the drawings are} 細かな {detail} でぎっしり。",
+"q3": "{As a result, the drawings are} ぎっしり {with detail.}"
 },
 {
 "q1": "しかし色トレスのおかげで、{the whole picture} は重たく見えません。",
@@ -10305,9 +15204,9 @@ window.LESSONS = [
 "q3": "{However,} 色トレス {keep the whole picture from looking heavy.}"
 },
 {
-"q1": "{realism} とデフォルメが同居したこの {design} は、とても独特です。",
-"q2": "{The design}、{realism} とデフォルメが同居した、{is very unique}。",
-"q3": "{The design, which mixes realism and} デフォルメ{, is very unique.}"
+"q1": "{realism} とデフォルメが同居したこの {design} は、本当に独特です。",
+"q2": "{The design}、{realism} とデフォルメが同居した、{is truly unique}。",
+"q3": "{The design, which mixes realism and a} デフォルメ {style, is truly unique.}"
 }
 ],
 "grammar": {
@@ -10338,14 +15237,14 @@ window.LESSONS = [
 "mix": "{bones} や {muscles} が、体に細かな凹凸を作ります。"
 },
 {
-"en": "These bumps are shown with more steps of shading than in ordinary anime.",
+"en": "These bumps are shown with more levels of shading than in ordinary anime.",
 "ja": "その凹凸は、一般的なアニメより多段階の影付けで表現されます。",
 "mix": "その凹凸は、一般的なアニメより多段階の {shading} で表現されます。"
 },
 {
-"en": "As a result, the picture contains a large amount of information.",
-"ja": "その結果、絵の情報量はとても多くなります。",
-"mix": "その結果、絵の {information} 量はとても多くなります。"
+"en": "As a result, the drawings are packed with detail.",
+"ja": "その結果、絵は細かな描きこみでぎっしりです。",
+"mix": "その結果、絵は細かな {detail} でぎっしりです。"
 },
 {
 "en": "However, colored outlines keep the whole picture from looking heavy.",
@@ -10353,9 +15252,9 @@ window.LESSONS = [
 "mix": "しかし色トレスのおかげで、{whole picture} は重たく見えません。"
 },
 {
-"en": "The design, which mixes realism and deformed style, is very unique.",
-"ja": "リアルとデフォルメが同居したこのデザインは、とても独特です。",
-"mix": "リアルとデフォルメが同居したこの {design} は、とても独特です。"
+"en": "The design, which mixes realism and a simplified style, is truly unique.",
+"ja": "リアルとデフォルメが同居したこのデザインは、本当に独特です。",
+"mix": "リアルとデフォルメが同居したこの {design} は、本当に独特です。"
 }
 ],
 "post": {
@@ -10393,7 +15292,7 @@ window.LESSONS = [
 "which",
 "where"
 ],
-"q": "The design, ___ mixes realism and deformed style, is unique.",
+"q": "The design, ___ mixes realism and a simplified style, is unique.",
 "why": "物（design）を説明するので which を使います。"
 }
 ],
@@ -10401,7 +15300,7 @@ window.LESSONS = [
 "talk": {
 "hint": "I like ___ more because ___.",
 "ja": "リアルな絵とデフォルメした絵では、どちらが好きですか？",
-"q": "Do you like realistic drawings or deformed drawings more?"
+"q": "Which do you like more, realistic drawings or simplified drawings?"
 },
 "title": "『生徒会にも穴はある！』の作画、リアルとデフォルメの同居",
 "words": [
@@ -10421,13 +15320,13 @@ window.LESSONS = [
 "w": "outline"
 },
 {
-"ja": "デフォルメした",
-"note": "アニメ用語の「デフォルメ」は deformed や simplified と言います。",
-"w": "deformed"
+"ja": "簡略化した・デフォルメした",
+"note": "ポストの「デフォルメ」は a simplified style で表しました。アニメ用語の「デフォルメ」は英語では simplified や stylized と言います（deformed は「ゆがんだ・奇形の」という意味なので使いません）。",
+"w": "simplified"
 },
 {
 "ja": "独特の・ほかにない",
-"note": "ポストの「独特な」にあたる語です。",
+"note": "ポストの「独特な」にあたる語です。unique は「ほかにない」という意味なので、very ではなく truly unique（本当に独特）のように言います。",
 "w": "unique"
 }
 ]
@@ -10521,7 +15420,7 @@ window.LESSONS = [
 }
 ],
 "grammar": {
-"body": "過去のことを言うとき、I / he / she / it のあとの is は was になります。you / we / they のときは were です。",
+"body": "過去のことを言うとき、am / is は was になります（I / he / she / it など）。are は were になります（you / we / they）。",
 "ex": [
 {
 "en": "It was a great movie.",
@@ -10714,7 +15613,8 @@ window.LESSONS = [
 "this is": "これは〜です",
 "this is a": "これは（ひとつの）〜です",
 "from the tv anime seihantai na kimi to boku": "TVアニメ『正反対な君と僕』から",
-"an official website too": "公式サイトも"
+"an official website too": "公式サイトも",
+"first": "最初に・いちばん早く"
 },
 "grad": [
 {
@@ -10728,9 +15628,9 @@ window.LESSONS = [
 "q3": "{Thank you for} 見てくれて {to the end.}"
 },
 {
-"q1": "{ABEMA} と {Prime Video} で、最速 {streaming} が始まりました。",
+"q1": "ABEMAと {Prime Video} で、最速 {streaming} が始まりました。",
 "q2": "最速 {streaming has started}、{ABEMA} と {Prime Video} で。",
-"q3": "{The} 最速 {streaming has started on ABEMA and Prime Video.}"
+"q3": "{Streaming has started} いちばん早く {on ABEMA and Prime Video.}"
 },
 {
 "q1": "{official website} もあります。",
@@ -10771,7 +15671,7 @@ window.LESSONS = [
 "mix": "{end} まで見てくれて、ありがとうございます。"
 },
 {
-"en": "The fastest streaming has started on ABEMA and Prime Video.",
+"en": "Streaming has started first on ABEMA and Prime Video.",
 "ja": "ABEMAとPrime Videoで、最速配信が始まりました。",
 "mix": "ABEMAとPrime Videoで、最速 {streaming} が始まりました。"
 },
@@ -10840,13 +15740,13 @@ window.LESSONS = [
 },
 {
 "ja": "配信する",
-"note": "streaming は「配信」。ポストの「最速配信」は the fastest streaming。",
+"note": "streaming は「配信」。ポストの「最速配信が始まった」は「いちばん早く配信が始まった」ということなので、Streaming has started first. と言えます。",
 "w": "stream"
 },
 {
-"ja": "速い",
-"note": "最上級は the fastest「いちばん速い」。ポストの「最速」。",
-"w": "fast"
+"ja": "最初に・いちばん早く",
+"note": "ポストの「最速」は「ほかより先に」ということなので first で表せます。fastest（いちばん速い）は、スピードが速いという意味になります。",
+"w": "first"
 },
 {
 "ja": "公式の",
@@ -10947,7 +15847,13 @@ window.LESSONS = [
 "to keep his own character": "彼らしさを大切にするために",
 "blue box episode 26": "『アオのハコ』第26話",
 "episode 26 of blue box": "『アオのハコ』の第26話",
-"episode 26 of blue box is": "『アオのハコ』第26話は"
+"episode 26 of blue box is": "『アオのハコ』第26話は",
+"lines": "せりふ（lineの複数形）",
+"stay": "〜のままでいる",
+"true": "忠実な（stay true to で〜を大切にする）",
+"the english lines": "英語のせりふ",
+"including the english lines": "英語のせりふもふくめて",
+"i did my best including the english lines to stay true to": "英語のせりふもふくめ、〜を大切に頑張った"
 },
 "grad": [
 {
@@ -10976,9 +15882,9 @@ window.LESSONS = [
 "q3": "{I} は {Kazuma Matsuoka} の {voice} を担当しています。"
 },
 {
-"q1": "{his own character} を大切に、{English} もふくめて頑張りました。",
-"q2": "{his own character} を大切に、{English} もふくめて {I did my best}。",
-"q3": "{I did my best}、{the English} もふくめて、{to keep his own character.}"
+"q1": "彼らしさを大切に、{the English lines} もふくめて頑張りました。",
+"q2": "{I did my best}、{including the English lines}、彼らしさを大切に。",
+"q3": "{I did my best, including the English lines, to stay true to} 彼らしさ。"
 }
 ],
 "grammar": {
@@ -11024,9 +15930,9 @@ window.LESSONS = [
 "mix": "わたしは松岡一馬の {voice} を担当しています。"
 },
 {
-"en": "I did my best, including the English, to keep his own character.",
-"ja": "彼らしさを大切に、英語もふくめて頑張りました。",
-"mix": "彼らしさを大切に、{English} もふくめて頑張りました。"
+"en": "I did my best, including the English lines, to stay true to his character.",
+"ja": "彼らしさを大切に、英語のせりふもふくめて頑張りました。",
+"mix": "彼らしさを大切に、{English} のせりふもふくめて頑張りました。"
 }
 ],
 "post": {
@@ -11118,7 +16024,7 @@ window.LESSONS = [
 "and": "〜と",
 "and a strong face change everything": "そして強い表情がすべてを変える",
 "anime": "アニメ",
-"around": "ぐるっと",
+"around": "（turn 〜 around で）ひっくり返して",
 "at": "〜で",
 "attracted": "惹かれている",
 "beauty": "美しさ・美学",
@@ -11180,7 +16086,7 @@ window.LESSONS = [
 "things": "物事",
 "to": "〜に",
 "too": "〜も",
-"turn": "向く",
+"turn": "（turn 〜 around で）〜を逆転する",
 "turn around": "逆転する",
 "which": "それ（関係代名詞）",
 "will": "〜だろう",
@@ -11208,7 +16114,20 @@ window.LESSONS = [
 "the anime": "アニメ",
 "mood changes": "空気が変わる",
 "talk about the stand system": "スタンドシステムについて語る",
-"talk about the stand system in jojo": "ジョジョのスタンドシステムを語る"
+"talk about the stand system in jojo": "ジョジョのスタンドシステムを語る",
+"comeback": "逆転・巻き返し",
+"like": "〜のような",
+"we'll": "私たちは〜する（we will）",
+"this": "これ（この状況）",
+"determined": "決意した・覚悟を決めた",
+"look": "表情・顔つき",
+"theme": "テーマ曲",
+"plays": "流れる（playの三単現）",
+"a determined look": "決意の表情",
+"then a line like": "そして〜のようなせりふ",
+"and a determined look change everything": "と決意の表情が、すべてを変える",
+"theme plays too": "テーマ曲も流れる",
+"in the anime a": "アニメでは、（ひとつの）"
 },
 "grad": [
 {
@@ -11227,14 +16146,14 @@ window.LESSONS = [
 "q3": "{First, the story} 丁寧に {builds a mood in which defeat seems certain.}"
 },
 {
-"q1": "そして「ここから逆転する」という {line} と {strong face} が、{everything} を変えます。",
-"q2": "そして「ここから逆転する」という {a line} と {a strong face} が {change everything}。",
-"q3": "{Then a line}「ここから逆転する」、{and a strong face, change everything.}"
+"q1": "そして「ここから逆転する」という {line} と {a determined look} が、すべてを変えます。",
+"q2": "そして「ここから逆転する」という {a line} と {a determined look} が {change everything}。",
+"q3": "{Then a line like}「ここから逆転する」{and a determined look change everything.}"
 },
 {
-"q1": "{the anime} では、逆転の {music} も加わります。",
-"q2": "{In the anime}、逆転の {music} も加わります。",
-"q3": "{In the anime,} 逆転の {music is added too.}"
+"q1": "{the anime} では、逆転の {theme} も流れます。",
+"q2": "{In the anime}、逆転の {theme plays, too}。",
+"q3": "{In the anime, a} 逆転の {theme plays, too.}"
 },
 {
 "q1": "{the scene} の {mood} が一気に変わります。",
@@ -11265,7 +16184,7 @@ window.LESSONS = [
 "mix": "ジョジョでは、多くの人が {Stand system} について語ります。"
 },
 {
-"en": "However, the poster is more attracted to the beauty of reversal scenes.",
+"en": "However, the poster is more attracted to the beauty of comeback scenes.",
 "ja": "しかしこの人は、逆転シーンの美学にもっと惹かれています。",
 "mix": "しかしこの人は、逆転シーンの {beauty} にもっと惹かれています。"
 },
@@ -11275,14 +16194,14 @@ window.LESSONS = [
 "mix": "まず物語は、負けが確実に思える {mood} を丁寧に作ります。"
 },
 {
-"en": "Then a line saying things will turn around, and a strong face, change everything.",
-"ja": "そして「ここから逆転する」というせりふと表情が、すべてを変えます。",
-"mix": "そして「ここから逆転する」という {line} と表情が、すべてを変えます。"
+"en": "Then a line like \"We'll turn this around\" and a determined look change everything.",
+"ja": "そして「ここから逆転する」というせりふと決意の表情が、すべてを変えます。",
+"mix": "そして「ここから逆転する」という {line} と決意の {look} が、すべてを変えます。"
 },
 {
-"en": "In the anime, reversal music is added too.",
-"ja": "アニメでは、逆転のBGMも加わります。",
-"mix": "アニメでは、逆転の {music} も加わります。"
+"en": "In the anime, a comeback theme plays, too.",
+"ja": "アニメでは、逆転のBGMも流れます。",
+"mix": "アニメでは、逆転の {theme} も流れます。"
 },
 {
 "en": "The mood of the scene changes all at once.",
@@ -11306,7 +16225,7 @@ window.LESSONS = [
 "新しいキャラクター"
 ],
 "q": "このポストの人が惹かれているのは？",
-"why": "2文目に、attracted to the beauty of reversal scenes とあります。"
+"why": "2文目に、attracted to the beauty of comeback scenes とあります。"
 },
 {
 "a": 0,
@@ -11338,9 +16257,9 @@ window.LESSONS = [
 "title": "ジョジョの魅力は「スタンド」より「逆転演出の美学」",
 "words": [
 {
-"ja": "逆転",
-"note": "ポストの「逆転演出」は reversal scenes（逆転シーン）で表しました。",
-"w": "reversal"
+"ja": "逆転・巻き返し",
+"note": "ポストの「逆転演出」は comeback scenes（逆転シーン）で表しました。試合や物語の「逆転」は comeback。reversal は「反対になること」で、この意味ではあまり使いません。",
+"w": "comeback"
 },
 {
 "ja": "美しさ・美学",
@@ -11560,9 +16479,9 @@ window.LESSONS = [
 "cat": "anime",
 "grad": [
 {
-"q1": "今になって、{Haikyu anime} を見始めました。",
-"q2": "{I started watching} {Haikyu anime}、今になって。",
-"q3": "{I started watching the Haikyu anime} 今になって。"
+"q1": "今になってやっと、{Haikyu anime} を見始めました。",
+"q2": "今になってやっと、{I started watching} {Haikyu anime}。",
+"q3": "{I} やっと {started watching the Haikyu anime.}"
 },
 {
 "q1": "{I} が {late} なのは、わかっています。",
@@ -11570,9 +16489,9 @@ window.LESSONS = [
 "q3": "{I know} 私が {late.}"
 },
 {
-"q1": "でも、{it} はすごく {interesting} です！",
-"q2": "でも、{it is} すごく {interesting}！",
-"q3": "{But it is} すごく {interesting!}"
+"q1": "でも、{it} はすごく {good} です！",
+"q2": "でも、{it is} すごく {good}！",
+"q3": "{But it is} すごく {good!}"
 },
 {
 "q1": "どうして今まで {I} は {it} を見なかったのでしょう？",
@@ -11598,9 +16517,9 @@ window.LESSONS = [
 "level": 1,
 "lines": [
 {
-"en": "I started watching the Haikyu anime now.",
-"ja": "今になって、ハイキューのアニメを見始めました。",
-"mix": "今になって、ハイキューの {anime} を見始めました。"
+"en": "I finally started watching the Haikyu anime.",
+"ja": "今になってやっと、ハイキューのアニメを見始めました。",
+"mix": "今になってやっと、ハイキューの {anime} を見始めました。"
 },
 {
 "en": "I know I am late.",
@@ -11608,9 +16527,9 @@ window.LESSONS = [
 "mix": "{late} なのはわかっています。"
 },
 {
-"en": "But it is so interesting!",
+"en": "But it is so good!",
 "ja": "でも、すごく面白いです！",
-"mix": "でも、すごく {interesting} です！"
+"mix": "でも、すごく {good} です！"
 },
 {
 "en": "Why didn't I watch it before?",
@@ -11634,17 +16553,17 @@ window.LESSONS = [
 "マンガを描くこと"
 ],
 "q": "この人はなにを始めましたか？",
-"why": "1文目に I started watching the Haikyu anime. とあります。"
+"why": "1文目に I finally started watching the Haikyu anime. とあります。"
 },
 {
 "a": 0,
 "choices": [
-"面白い",
+"面白い・いい",
 "むずかしい",
 "さびしい"
 ],
-"q": "interesting の意味は？",
-"why": "interesting は「面白い・興味をひく」です。"
+"q": "But it is so good! の good の意味は？",
+"why": "アニメや映画が so good は「すごく面白い・すごくいい」です。"
 },
 {
 "a": 1,
@@ -11677,9 +16596,9 @@ window.LESSONS = [
 "w": "late"
 },
 {
-"ja": "面白い・興味をひく",
-"note": "ポストの「面白い」。funny は「笑える」なので少し違います。",
-"w": "interesting"
+"ja": "よい・面白い",
+"note": "ポストの「面白い」。アニメや映画が面白いときは so good と言うのがふつうです。interesting は「興味深い」、funny は「笑える」で、少し違います。",
+"w": "good"
 },
 {
 "ja": "以前に・今までに",
@@ -11725,7 +16644,10 @@ window.LESSONS = [
 "but it is": "でも、それは〜だ",
 "didn't i watch it": "私はそれを見なかったのか",
 "haikyu anime": "ハイキューのアニメ",
-"it is": "それは〜です"
+"it is": "それは〜です",
+"finally": "やっと・ついに",
+"good": "よい・面白い",
+"started watching the haikyu anime": "ハイキューのアニメを見始めた"
 }
 },
 {
@@ -11764,7 +16686,7 @@ window.LESSONS = [
 }
 ],
 "grammar": {
-"body": "同じときに2つのことをするときは、while ＋ 〜ing で「〜しながら」と言えます。",
+"body": "同じときに2つのことをするときは、while ＋ 主語 ＋ 動詞（または while ＋ 〜ing）で「〜しながら」と言えます。",
 "ex": [
 {
 "en": "I listen to music while I walk.",
@@ -12854,7 +17776,7 @@ window.LESSONS = [
 "mix": "『踊る大捜査線』の新しい映画が {big hit} 上映中です。"
 },
 {
-"en": "It is a new story of Shunsaku Aoshima.",
+"en": "It is a new story about Shunsaku Aoshima.",
 "ja": "青島俊作の新しい物語です。",
 "mix": "青島俊作の新しい {story} です。"
 },
@@ -12966,7 +17888,7 @@ window.LESSONS = [
 {
 "q1": "{Shunsaku Aoshima} の新しい {story} です。",
 "q2": "{It is}、{Shunsaku Aoshima} の新しい {story}。",
-"q3": "{It is a} 新しい {story of Shunsaku Aoshima.}"
+"q3": "{It is a} 新しい {story about Shunsaku Aoshima.}"
 },
 {
 "q1": "{Yuji Oda} さんが、主人公を演じます。",
@@ -13058,7 +17980,9 @@ window.LESSONS = [
 "on youtube": "YouTubeで",
 "bayside shakedown movie is a big hit": "『踊る大捜査線』の映画が大ヒット",
 "it is a": "それは（ひとつの）〜です",
-"story of shunsaku aoshima": "青島俊作の物語"
+"story of shunsaku aoshima": "青島俊作の物語",
+"about": "〜についての",
+"story about shunsaku aoshima": "青島俊作の物語"
 }
 },
 {
@@ -13081,7 +18005,7 @@ window.LESSONS = [
 "but the magician is still a": "でも魔法使いはまだ〜",
 "buy": "買う",
 "can": "〜できる",
-"decided": "決まった",
+"decided": "決められた（decideの過去分詞）",
 "friday": "金曜日",
 "from": "〜から・〜の",
 "from type-moon and ufotable": "TYPE-MOONとufotableの",
@@ -13149,7 +18073,10 @@ window.LESSONS = [
 "is a": "〜は（ひとつの）…です",
 "witch on the holy night is a": "『魔法使いの夜』は〜です",
 "it is a movie that will": "それは〜する映画です",
-"on friday november 20": "11月20日（金）に"
+"on friday november 20": "11月20日（金）に",
+"have": "〜した・〜された（現在完了）",
+"been": "（have beenで）〜された",
+"the theaters that will show it have now been": "それを上映する劇場がいま〜された"
 },
 "grad": [
 {
@@ -13169,8 +18096,8 @@ window.LESSONS = [
 },
 {
 "q1": "上映する {the theaters} が決まりました。",
-"q2": "上映する {the theaters are now} 決定。",
-"q3": "{The theaters that will show it are now} 決定。"
+"q2": "{The theaters that will show it} が決まりました。",
+"q3": "{The theaters that will show it have now been} 決定。"
 },
 {
 "q1": "{advance tickets} が、いま買えます。",
@@ -13192,8 +18119,8 @@ window.LESSONS = [
 "body": "名詞のあとに that ＋ 動詞を置くと、その名詞をくわしく説明できます。人にも物にも使えます。a movie that will open なら「公開される映画」です。",
 "ex": [
 {
-"en": "This is a book that I like.",
-"ja": "これは私が好きな本です。"
+"en": "This is a book that makes me happy.",
+"ja": "これは私を幸せな気持ちにしてくれる本です。"
 },
 {
 "en": "She has a bag that is very old.",
@@ -13221,7 +18148,7 @@ window.LESSONS = [
 "mix": "11月20日（金）に公開される {movie} です。"
 },
 {
-"en": "The theaters that will show it are now decided.",
+"en": "The theaters that will show it have now been decided.",
 "ja": "上映する劇場が決まりました。",
 "mix": "上映する {theaters} が決まりました。"
 },
@@ -13282,7 +18209,7 @@ window.LESSONS = [
 ],
 "summary": "TYPE-MOONとufotableの最新作、劇場アニメ『魔法使いの夜』が11月20日（金）に公開されます。上映劇場が決まり、ムビチケ前売券も発売中です。「現代に生きる魔法使い。ただし見習い。」という言葉が添えられています。",
 "talk": {
-"hint": "I like a movie that ___ .",
+"hint": "I like movies that ___.",
 "ja": "どんなアニメ映画が好きですか？",
 "q": "What kind of anime movie do you like?"
 },
@@ -13850,7 +18777,7 @@ window.LESSONS = [
 {
 "w": "daily",
 "ja": "毎日の・日ごとの",
-"note": "ポストの「今日の映画TOP10」は毎日変わるランキングなので daily Top 10 としました。day ＋ ly です。"
+"note": "ポストの「今日の映画TOP10」は毎日変わるランキングなので daily Top 10 としました。day ＋ ly ですが、つづりは daily（dayly ではありません）。"
 },
 {
 "w": "enter",
@@ -14326,7 +19253,7 @@ window.LESSONS = [
 "mix": "夫は「なるほど…この映画は、{end credits} のあとにも続きがあるね」と言いました。"
 },
 {
-"en": "Then he said, “I understood. Deep… and there were no bad people…”",
+"en": "Then he said, “I get it. Deep… and there were no bad people…”",
 "ja": "それから「わかった。深い…そして悪い人はいなかった…」と言いました。",
 "mix": "それから「わかった。深い…そして {bad people} はいなかった…」と言いました。"
 },
@@ -14534,7 +19461,9 @@ window.LESSONS = [
 "about her husband": "彼女の夫について",
 "this movie has more after the end credits": "エンドロールのあとにも続きがある",
 "i understood deep and": "わかった。深い…そして",
-"deep and there were no bad people": "深い…そして悪い人はいなかった…"
+"deep and there were no bad people": "深い…そして悪い人はいなかった…",
+"get": "わかる（I get itで）",
+"it": "それ（I get it＝わかった）"
 }
 },
 {
@@ -14578,7 +19507,7 @@ window.LESSONS = [
 "mix": "まるで、できたばかりの {movie} のようだそうです。"
 },
 {
-"en": "It opens in theaters on October 16 for two weeks.",
+"en": "It opens in theaters on October 16 and runs for two weeks.",
 "ja": "10月16日から2週間だけ、映画館で公開されます。",
 "mix": "10月16日から {two weeks} だけ、映画館で公開されます。"
 }
@@ -14607,7 +19536,7 @@ window.LESSONS = [
 {
 "w": "for two weeks",
 "ja": "2週間",
-"note": "公開は「2週間限定」です。"
+"note": "公開は「2週間限定」です。runs for two weeks ＝ 2週間上映される。"
 }
 ],
 "grammar": {
@@ -14690,7 +19619,7 @@ window.LESSONS = [
 {
 "q1": "{October 16} から {two weeks} だけ、映画館で公開されます。",
 "q2": "{It opens} 映画館で、{October 16} から {two weeks}。",
-"q3": "{It opens} 映画館で {on October 16 for two weeks.}"
+"q3": "{It opens} 映画館で {on October 16 and runs for two weeks.}"
 }
 ],
 "gloss": {
@@ -14775,7 +19704,10 @@ window.LESSONS = [
 "is a japanese": "日本の〜である",
 "from 1979": "1979年の",
 "the man who stole the sun is a japanese": "『太陽を盗んだ男』は日本の〜",
-"on october 16 for two weeks": "10月16日から2週間"
+"on october 16 for two weeks": "10月16日から2週間",
+"and": "そして",
+"runs": "上映される（runの3単現）",
+"on october 16 and runs for two weeks": "10月16日から2週間上映される"
 }
 },
 {
@@ -14809,7 +19741,7 @@ window.LESSONS = [
 "mix": "第3期の {first episode} は、第49話「蝗（いなご）」です。"
 },
 {
-"en": "The story and some new pictures are out now.",
+"en": "The story summary and some new pictures are out now.",
 "ja": "あらすじと新しい場面カットが公開されました。",
 "mix": "あらすじと {new pictures} が公開されました。"
 },
@@ -14955,7 +19887,7 @@ window.LESSONS = [
 "first": "最初の",
 "episode": "話・エピソード",
 "locusts": "イナゴ・蝗（locustの複数形）",
-"story": "あらすじ・物語",
+"story": "物語・お話",
 "and": "〜と",
 "some": "いくつかの",
 "new": "新しい",
@@ -15015,7 +19947,8 @@ window.LESSONS = [
 "season 3 of the apothecary diaries": "『薬屋のひとりごと』第3期",
 "on october 2": "10月2日に",
 "maomao and chou-u get cooked locusts for breakfast": "猫猫と趙迂に朝食でイナゴの煮つけが出る",
-"friday at 11 p m": "金曜の夜11時に"
+"friday at 11 p m": "金曜の夜11時に",
+"summary": "まとめ・あらすじ"
 }
 },
 {
@@ -15473,7 +20406,7 @@ window.LESSONS = [
 "mix": "たくさんの {characters} の物語と「ナイトシティ」が、ぴったり合っていたそうです。"
 },
 {
-"en": "Trigger's style was at full power, too.",
+"en": "Trigger's style was on full display, too.",
 "ja": "トリガーらしさも全開だったそうです。",
 "mix": "トリガーらしい {style} も全開だったそうです。"
 },
@@ -15483,7 +20416,7 @@ window.LESSONS = [
 "mix": "最初から、ものすごい {shock} だったそうです。"
 },
 {
-"en": "They can't wait to watch it from October 20.",
+"en": "They can't wait to watch it when it starts on October 20.",
 "ja": "10月20日からの配信が待ちきれないそうです。",
 "mix": "{October 20} からの配信が待ちきれないそうです。"
 }
@@ -15538,7 +20471,7 @@ window.LESSONS = [
 "10月30日"
 ],
 "a": 1,
-"why": "5文目に from October 20 とあります。"
+"why": "5文目に when it starts on October 20 とあります。"
 },
 {
 "q": "shock の意味は？",
@@ -15578,9 +20511,9 @@ window.LESSONS = [
 "q3": "{They said} たくさんの {characters and Night City fit together perfectly.}"
 },
 {
-"q1": "トリガーらしい {style} も {full power} だったそうです。",
-"q2": "トリガーらしい {style was at full power}、とのことです。",
-"q3": "トリガーらしい {style was at full power, too.}"
+"q1": "トリガーらしい {style} も {full display} だったそうです。",
+"q2": "トリガーらしい {style was on full display}、とのことです。",
+"q3": "トリガーらしい {style was on full display, too.}"
 },
 {
 "q1": "最初から、{a big shock} だったそうです。",
@@ -15589,8 +20522,8 @@ window.LESSONS = [
 },
 {
 "q1": "{They} は {October 20} からの配信が待ちきれないそうです。",
-"q2": "{They} は、{October 20} から {it} を見るのが待ちきれないそうです。",
-"q3": "{They} 待ちきれない {to watch it from October 20.}"
+"q2": "{They can't wait to watch it}、{October 20} に始まったら。",
+"q3": "{They can't wait to watch it when it} 始まる {on October 20.}"
 }
 ],
 "gloss": {
@@ -15618,10 +20551,10 @@ window.LESSONS = [
 "trigger's": "トリガーの（制作会社名）",
 "style": "作風・らしさ",
 "at": "（at full power で）全開で",
-"full": "いっぱいの",
+"full": "いっぱいの・完全な",
 "power": "力",
 "too": "〜も",
-"it": "それは",
+"it": "それ（その作品）",
 "big": "大きな・ものすごい",
 "shock": "衝撃",
 "from": "〜から",
@@ -15664,7 +20597,16 @@ window.LESSONS = [
 "cyberpunk edgerunners 2": "『サイバーパンク エッジランナーズ2』",
 "otsuichi was": "おついちさんは（〜された）",
 "to a preview screening of cyberpunk edgerunners 2": "『エッジランナーズ2』の試写会に",
-"to watch it from october 20": "10月20日から見るのを"
+"to watch it from october 20": "10月20日から見るのを",
+"on": "〜に（日付）・示されて",
+"display": "見せること・展示",
+"when": "〜するとき",
+"starts": "始まる（startの3単現）",
+"full display": "全開（すべて見せている）",
+"style was on full display": "らしさが全開だった",
+"style was on full display too": "作風も全開だった",
+"they can't wait to watch it when it": "始まったら見るのが待ちきれない",
+"on october 20": "10月20日に"
 }
 },
 {
@@ -16173,7 +21115,7 @@ window.LESSONS = [
 "mix": "{Beerus} は破壊神です。"
 },
 {
-"en": "Beerus and Frieza stand in front of Goku and his friends.",
+"en": "Beerus and Frieza stand in the way of Goku and his friends.",
 "ja": "ビルスとフリーザが、悟空たちの前に立ちはだかります。",
 "mix": "{Beerus} と {Frieza} が、悟空たちの前に立ちはだかります。"
 },
@@ -16200,9 +21142,9 @@ window.LESSONS = [
 "note": "ポストの「破壊神ビルス」。destruction は「破壊」です。"
 },
 {
-"w": "in front of",
-"ja": "〜の前に",
-"note": "ポストの「立ちはだかる」を stand in front of 〜 で表しました。"
+"w": "in the way of",
+"ja": "〜の行く手をふさいで",
+"note": "ポストの「立ちはだかる」を stand in the way of 〜 で表しました。way は「道」です。"
 },
 {
 "w": "danger",
@@ -16279,8 +21221,8 @@ window.LESSONS = [
 },
 {
 "q1": "{Beerus and Frieza} が、悟空たちの前に立ちはだかります。",
-"q2": "{Beerus and Frieza stand}、悟空たちの前に。",
-"q3": "{Beerus and Frieza stand in front of} 悟空たち。"
+"q2": "{Beerus and Frieza stand}、{Goku and his friends} の行く手に。",
+"q3": "{Beerus and Frieza stand in the} 行く手 {of Goku and his friends.}"
 },
 {
 "q1": "そして、{a new danger} が地球にせまってきます！",
@@ -16314,7 +21256,7 @@ window.LESSONS = [
 "and": "〜と・そして",
 "frieza": "フリーザ（人名）",
 "stand": "立つ",
-"in": "（in front of で）〜の前に",
+"in": "（in the way ofで）行く手に",
 "front": "前",
 "goku": "悟空（人名）",
 "his": "彼の",
@@ -16352,7 +21294,10 @@ window.LESSONS = [
 "the anime dragon ball super beerus is": "アニメ『ドラゴンボール超 ビルス』が",
 "to netflix japan": "Netflix Japanに",
 "if you have netflix you can": "Netflixに入っていれば〜できる",
-"it from october 15": "10月15日からそれを"
+"it from october 15": "10月15日からそれを",
+"way": "道・行く手",
+"beerus and frieza stand in the": "ビルスとフリーザが〜に立つ",
+"of goku and his friends": "悟空たちの"
 }
 },
 {
@@ -16392,7 +21337,7 @@ window.LESSONS = [
 "mix": "そこで、たくさんの新しい {goods} が売られます。"
 },
 {
-"en": "The goods use newly drawn pictures.",
+"en": "The goods have newly drawn pictures on them.",
 "ja": "グッズには、描き下ろしのイラストが使われます。",
 "mix": "グッズには、描き下ろしの {pictures} が使われます。"
 }
@@ -16498,8 +21443,8 @@ window.LESSONS = [
 },
 {
 "q1": "{goods} には、描き下ろしの {pictures} が使われます。",
-"q2": "{The goods} には、描き下ろしの {pictures} が使われます。",
-"q3": "{The goods use} 描き下ろしの {pictures.}"
+"q2": "{The goods have} 描き下ろしの {pictures}。",
+"q3": "{The goods have} 描き下ろしの {pictures on them.}"
 }
 ],
 "gloss": {
@@ -16557,7 +21502,12 @@ window.LESSONS = [
 "new goods": "新しいグッズ",
 "new goods will be sold": "新しいグッズが売られる",
 "many new goods will be sold": "たくさんの新グッズが売られる",
-"a new haikyu fair is": "ハイキュー!!の新しいフェアが"
+"a new haikyu fair is": "ハイキュー!!の新しいフェアが",
+"have": "持っている・〜がある",
+"on": "〜の上に・〜に",
+"them": "それら（グッズ）",
+"the goods have": "グッズには〜がある",
+"pictures on them": "グッズにのっているイラスト"
 }
 },
 {
@@ -16596,7 +21546,7 @@ window.LESSONS = [
 "mix": "芥見さんが描いたのは、バンドの {bass player}・幸山厘です。"
 },
 {
-"en": "Rin planned to show it with the new Jujutsu Kaisen anime.",
+"en": "Rin planned to show it when the new Jujutsu Kaisen anime started.",
 "ja": "厘は、呪術廻戦の新しいアニメに合わせて公開するつもりでした。",
 "mix": "厘は、呪術廻戦の {new anime} に合わせて公開するつもりでした。"
 },
@@ -16707,8 +21657,8 @@ window.LESSONS = [
 },
 {
 "q1": "{Rin} は、呪術廻戦の {new anime} に合わせて公開するつもりでした。",
-"q2": "{Rin planned to} 公開する、呪術廻戦の {new anime} に合わせて。",
-"q3": "{Rin planned to} 公開する {it with the new Jujutsu Kaisen anime.}"
+"q2": "{Rin planned to} 公開する、呪術廻戦の {new anime} が始まるときに。",
+"q3": "{Rin planned to} 公開する {it when the new Jujutsu Kaisen anime started.}"
 },
 {
 "q1": "でも {Akutami} さんは「{I} はもう描いたよ」と言いました。",
@@ -16795,7 +21745,10 @@ window.LESSONS = [
 "rin kouyama the band's bass player": "バンドのベース担当・幸山厘",
 "the new jujutsu kaisen anime": "呪術廻戦の新しいアニメ",
 "rin planned to": "厘は〜するつもりだった",
-"it with the new jujutsu kaisen anime": "それを呪術廻戦の新アニメに合わせて"
+"it with the new jujutsu kaisen anime": "それを呪術廻戦の新アニメに合わせて",
+"when": "〜するとき",
+"started": "始まった（startの過去形）",
+"it when the new jujutsu kaisen anime started": "呪術廻戦の新アニメが始まるときにそれを"
 }
 },
 {
@@ -17522,7 +22475,7 @@ window.LESSONS = [
 "mix": "このアニメは、インドでとても {popular} です。"
 },
 {
-"en": "Fans in India helped this comeback.",
+"en": "Fans in India helped make this comeback happen.",
 "ja": "インドのファンが、今回の復活を後押ししました。",
 "mix": "インドの {fans} が、今回の {comeback} を後押ししました。"
 }
@@ -17629,7 +22582,7 @@ window.LESSONS = [
 {
 "q1": "インドの {fans} が、{this comeback} を後押ししました。",
 "q2": "{India} の {fans} が、{this comeback} を後押ししました。",
-"q3": "{Fans in India} 後押しした {this comeback.}"
+"q3": "{Fans in India} 後押しした {make this comeback happen.}"
 }
 ],
 "gloss": {
@@ -17688,7 +22641,10 @@ window.LESSONS = [
 "on tv asahi in 2027": "2027年にテレビ朝日で",
 "chie kamishiro will voice chama": "神代知衣さんが茶魔の声を担当する",
 "the anime is": "このアニメは",
-"popular in india": "インドで人気"
+"popular in india": "インドで人気",
+"make": "（〜を）させる",
+"happen": "起こる・実現する",
+"make this comeback happen": "今回の復活を実現させる"
 }
 },
 {
@@ -18005,7 +22961,7 @@ window.LESSONS = [
 "why": "on sale は「セール中」。売り切れは sold out です。"
 },
 {
-"q": "___ is a new story on Young Jump+.",
+"q": "___ is a new story on Young Jump+.（ヤンジャン＋に新しいお話があります）",
 "choices": [
 "There",
 "It",
@@ -18359,14 +23315,14 @@ window.LESSONS = [
 "mix": "上映するのは、名古屋や福岡など5つの {cities} の映画館です。"
 },
 {
-"en": "In the last week, four other movies change every day.",
+"en": "In the last week, they show four other movies, a different one each day.",
 "ja": "最後の週は、ほかの4作品を日替わりで上映します。",
 "mix": "最後の {week} は、ほかの4作品を日替わりで上映します。"
 },
 {
-"en": "The event celebrates the hit of the new Odoru movie.",
+"en": "The event celebrates the success of the new Odoru movie.",
 "ja": "公開中の新作のヒットを記念したイベントです。",
-"mix": "公開中の新作の {hit} を記念したイベントです。"
+"mix": "公開中の新作の {success} を記念したイベントです。"
 }
 ],
 "words": [
@@ -18391,9 +23347,9 @@ window.LESSONS = [
 "note": "記事の「全国5都市」は five cities。複数形は cities。"
 },
 {
-"w": "hit",
-"ja": "ヒット作・大当たり",
-"note": "日本語の「ヒット」と同じ意味で使えます。"
+"w": "success",
+"ja": "成功・ヒット",
+"note": "ポストの「ヒット」。映画などの「〜のヒット」は the success of 〜 と言います。"
 }
 ],
 "grammar": {
@@ -18469,14 +23425,14 @@ window.LESSONS = [
 "q3": "{The theaters} ある {in five cities, like Nagoya and Fukuoka.}"
 },
 {
-"q1": "{the last week} は、ほかの4作品を日替わりで上映します。",
-"q2": "{In the last week}、ほかの4作品が {change every day}。",
-"q3": "{In the last week, four other} 作品が {change every day.}"
+"q1": "{the last week} は、ほかの4本の {movies} を日替わりで上映します。",
+"q2": "{In the last week}、{they show four other movies}、日替わりで。",
+"q3": "{In the last week, they show four other movies, a} 違う {one each day.}"
 },
 {
-"q1": "公開中の新作の {hit} を記念した {event} です。",
-"q2": "{The event celebrates} 公開中の新作の {hit}。",
-"q3": "{The event celebrates the hit of the} 公開中の新作。"
+"q1": "公開中の新作の {success} を記念した {event} です。",
+"q2": "{The event celebrates} 公開中の新作の {success}。",
+"q3": "{The event celebrates the success of the} 公開中の新作。"
 }
 ],
 "gloss": {
@@ -18549,7 +23505,15 @@ window.LESSONS = [
 "in the last week four other": "最後の週に、ほかの4つの",
 "the event": "そのイベント",
 "the last week": "最後の週",
-"in five cities like nagoya and fukuoka": "名古屋や福岡など5つの都市に"
+"in five cities like nagoya and fukuoka": "名古屋や福岡など5つの都市に",
+"different": "違う・別の",
+"one": "1本（の映画）",
+"each": "それぞれの・〜ごとに",
+"success": "成功・ヒット",
+"they show four other movies": "ほかの4作を上映する",
+"in the last week they show four other movies a": "最後の週はほかの4作を上映し、〜",
+"one each day": "毎日1本ずつ",
+"the event celebrates the success of the": "イベントは〜のヒットを記念する"
 }
 },
 {
@@ -18832,7 +23796,7 @@ window.LESSONS = [
 "mix": "{Blu-ray box} は、2027年1月27日に発売されます。"
 },
 {
-"en": "This is the first 4K for the Lupin III TV series.",
+"en": "This is the first 4K release of a Lupin III TV series.",
 "ja": "『ルパン三世』のTVシリーズが4Kになるのは、これが初めてです。",
 "mix": "『ルパン三世』の {TV series} が4Kになるのは、これが初めてです。"
 },
@@ -18900,14 +23864,14 @@ window.LESSONS = [
 "why": "1文目に started in 1971 とあります。"
 },
 {
-"q": "go on sale の意味は？",
+"q": "この文の go on sale の意味は？ “The Blu-ray box goes on sale on January 27, 2027.”",
 "choices": [
 "発売される",
-"安くなる",
+"値上がりする",
 "売り切れる"
 ],
 "a": 0,
-"why": "go on sale は「発売される」です。"
+"why": "新しいBOXの話なので、go on sale は「発売される」です。"
 },
 {
 "q": "PART1 is going ___ out in 4K.",
@@ -18943,8 +23907,8 @@ window.LESSONS = [
 },
 {
 "q1": "『ルパン三世』の {TV series} が {4K} になるのは、これが初めてです。",
-"q2": "{This is the} 初めての {4K for}『ルパン三世』の {TV series}。",
-"q3": "{This is the} 初めての {4K for the Lupin III TV series.}"
+"q2": "{This is the} 初めての『ルパン三世』の {TV series} の {4K release}。",
+"q3": "{This is the} 初めての {4K release of a Lupin III TV series.}"
 },
 {
 "q1": "宮崎駿さんや高畑勲さんも、{the directing team} に参加しました。",
@@ -19034,7 +23998,12 @@ window.LESSONS = [
 "for the 55th anniversary part1 is going to": "55周年にPART1が〜される",
 "in 4k": "4K（リマスター版）で",
 "january 27 2027": "2027年1月27日",
-"on january 27 2027": "2027年1月27日に"
+"on january 27 2027": "2027年1月27日に",
+"release": "発売・発売された版",
+"of": "〜の",
+"a": "ひとつの",
+"4k release": "4K版",
+"4k release of a lupin iii tv series": "『ルパン三世』TVシリーズの4K版"
 }
 },
 {
@@ -19309,7 +24278,7 @@ window.LESSONS = [
 "mix": "Netflixの日本の {weekly} TOP10〈映画〉で1位です。"
 },
 {
-"en": "The Detective Conan TV anime has its 30th anniversary.",
+"en": "The Detective Conan TV anime is celebrating its 30th anniversary.",
 "ja": "TVアニメ『名探偵コナン』は30周年です。",
 "mix": "TV {anime}『名探偵コナン』は30周年です。"
 },
@@ -19420,8 +24389,8 @@ window.LESSONS = [
 },
 {
 "q1": "TV {anime}『名探偵コナン』は {30th anniversary} です。",
-"q2": "TV {anime}『名探偵コナン』は、{its 30th anniversary} を迎えます。",
-"q3": "{The Detective Conan TV anime} 迎える {its 30th anniversary.}"
+"q2": "TV {anime}『名探偵コナン』は、{its 30th anniversary} を迎えています。",
+"q3": "{The Detective Conan TV anime} 迎えている {its 30th anniversary.}"
 },
 {
 "q1": "それを記念して、{Netflix} では30種類の {special selections} も見られます。",
@@ -19514,7 +24483,8 @@ window.LESSONS = [
 "its 30th anniversary": "30周年",
 "it is no 1 in netflix japan's weekly top 10 for": "Netflix日本週間TOP10〜で1位",
 "selection is about": "セレクションは〜について",
-"selection is about one character": "セレクションは1人のキャラについて"
+"selection is about one character": "セレクションは1人のキャラについて",
+"celebrating": "迎えている・祝っている"
 }
 },
 {
@@ -19739,7 +24709,7 @@ window.LESSONS = [
 "talk": {
 "hint": "I like the ___ part better because ___.",
 "ja": "物語の中で、学生時代と大人の時代のどちらが好きですか？",
-"q": "Which part of a story do you like better, the school days or the adult days?"
+"q": "Which part of a story do you like better, the school days or the adult years?"
 },
 "title": "『我々は宇宙人』社会人編はなぜ微妙？批判的な感想",
 "words": [
@@ -20461,7 +25431,7 @@ window.LESSONS = [
 },
 "lines": [
 {
-"en": "The Little Prince becomes a live-action movie again.",
+"en": "The Little Prince will become a live-action movie again.",
 "ja": "「星の王子さま」が、ふたたび実写映画になります。",
 "mix": "「星の王子さま」が、ふたたび {live-action} 映画になります。"
 },
@@ -20676,7 +25646,9 @@ window.LESSONS = [
 "the movie is live-action but the prince": "映画は実写だが、王子さまは",
 "with vfx": "VFXで",
 "morten tyldum": "モルテン・ティルドゥム（監督の名前）",
-"a live-action movie again": "ふたたび実写映画に"
+"a live-action movie again": "ふたたび実写映画に",
+"will": "〜だろう（これから先）",
+"become": "〜になる"
 }
 },
 {
@@ -20939,9 +25911,9 @@ window.LESSONS = [
 "mix": "新しい {characters} がたくさん登場します。"
 },
 {
-"en": "It is a fighting love comedy.",
+"en": "It is a martial arts romantic comedy.",
 "ja": "格闘ラブコメディーです。",
-"mix": "格闘 {love comedy} です。"
+"mix": "格闘 {romantic comedy} です。"
 },
 {
 "en": "The fun is not over yet!",
@@ -20966,9 +25938,9 @@ window.LESSONS = [
 "note": "ポストの「続々登場」。"
 },
 {
-"w": "fighting",
-"ja": "格闘の・戦う",
-"note": "fight（戦う）に ing。"
+"w": "martial arts",
+"ja": "武術・格闘技",
+"note": "ポストの「格闘ラブコメ」は martial arts romantic comedy。「ラブコメ」は英語で romantic comedy（love comedy は和製英語）です。"
 },
 {
 "w": "not ~ yet",
@@ -21044,9 +26016,9 @@ window.LESSONS = [
 "q3": "たくさんの {new characters will appear.}"
 },
 {
-"q1": "{It} は、格闘 {love comedy} です。",
-"q2": "{It is} 格闘 {love comedy}。",
-"q3": "{It is a} 格闘 {love comedy.}"
+"q1": "{It} は、格闘 {romantic comedy} です。",
+"q2": "{It is} 格闘 {romantic comedy}。",
+"q3": "{It is a} 格闘 {romantic comedy.}"
 },
 {
 "q1": "{The fun} は、まだまだ {over} じゃありません！",
@@ -21114,7 +26086,11 @@ window.LESSONS = [
 "after the tv broadcast": "テレビ放送のあとに",
 "it is": "それは〜です",
 "on october 4": "10月4日に",
-"season 3 of ranma 1 2": "『らんま1/2』の第3期"
+"season 3 of ranma 1 2": "『らんま1/2』の第3期",
+"martial": "武術の・格闘の",
+"arts": "技（martial arts＝武術）",
+"romantic": "恋愛の・ロマンチックな",
+"romantic comedy": "ラブコメディー"
 }
 },
 {
@@ -21432,7 +26408,7 @@ window.LESSONS = [
 ],
 "grammar": {
 "title": "work as / work at",
-"body": "work as ＋職業 は「〜として働く」、work at ＋場所 は「〜で働く」です。前の言葉が「人の役割」か「場所」かで使い分けます。",
+"body": "work as ＋職業 は「〜として働く」、work at ＋場所 は「〜で働く」です。あとに続く言葉が「人の役割・職業」か「場所」かで使い分けます。",
 "ex": [
 {
 "en": "I work as a nurse.",
@@ -21864,7 +26840,7 @@ window.LESSONS = [
 "mix": "TOKYO MXでは、{October 1}（木）の夜10時に始まります。"
 },
 {
-"en": "On BS Asahi, it starts late at night on Saturday, October 3.",
+"en": "On BS Asahi, it starts late at night on Saturday, October 3 (2:30 a.m. Sunday).",
 "ja": "BS朝日では、10月3日（土）の深夜（26時30分）に始まります。",
 "mix": "BS朝日では、{October 3}（土）の深夜（26時30分）に始まります。"
 },
@@ -21893,7 +26869,7 @@ window.LESSONS = [
 {
 "w": "late at night",
 "ja": "深夜に",
-"note": "ポストの「26:30」は日本のテレビの書き方で、10月4日の午前2時30分のこと。英語では 2:30 a.m. と言います。"
+"note": "ポストの「26:30」は日本のテレビの書き方で、10月4日（日）の午前2時30分のこと。英語では 2:30 a.m. Sunday のように言います。"
 },
 {
 "w": "look back on",
@@ -21971,7 +26947,7 @@ window.LESSONS = [
 {
 "q1": "{BS Asahi} では、{October 3}（土）の深夜（26時30分）に始まります。",
 "q2": "{On BS Asahi, it starts}、{October 3}（土）の深夜（26時30分）に。",
-"q3": "{On BS Asahi, it starts} 深夜（26時30分）{on Saturday, October 3.}"
+"q3": "{On BS Asahi, it starts} 深夜に {on Saturday, October 3 (2:30 a.m. Sunday).}"
 },
 {
 "q1": "劇場版『{Medalist}』は、{February 2027} に公開されます。",
@@ -21997,7 +26973,7 @@ window.LESSONS = [
 "comes": "来る（comeの3単現）",
 "back": "戻って",
 "as": "〜として",
-"a": "ひとつの",
+"a": "ひとつの（a.m.のaは午前）",
 "rerun": "再放送",
 "on": "〜で（放送局）・〜に（日付）",
 "tokyo": "TOKYO（局名の一部）",
@@ -22008,7 +26984,7 @@ window.LESSONS = [
 "october": "10月",
 "at": "〜に（時刻）",
 "p": "p（p.m.＝午後・夜）",
-"m": "m（p.m.＝午後・夜）",
+"m": "m（a.m.＝午前・p.m.＝午後）",
 "bs": "BS（局名の一部）",
 "asahi": "朝日（局名の一部）",
 "late": "遅く",
@@ -22064,7 +27040,9 @@ window.LESSONS = [
 "opens in february 2027": "2027年2月に公開される",
 "the medalist": "『メダリスト』",
 "the movie": "映画",
-"as a rerun": "再放送として"
+"as a rerun": "再放送として",
+"sunday": "日曜日",
+"on saturday october 3 2 30 a m sunday": "10月3日（土）（日曜の午前2時30分）"
 }
 },
 {
@@ -22351,7 +27329,7 @@ window.LESSONS = [
 "mix": "いろいろな {projects} が予定されています。"
 },
 {
-"en": "Please look forward to them!",
+"en": "Please stay tuned for them!",
 "ja": "どうぞお楽しみに！",
 "mix": "{Please}、お楽しみに！"
 }
@@ -22378,9 +27356,9 @@ window.LESSONS = [
 "note": "ポストの「描き下ろし」は newly drawn art とも言います。"
 },
 {
-"w": "look forward to",
-"ja": "〜を楽しみに待つ",
-"note": "ポストの「お楽しみに」は Look forward to it! です。"
+"w": "stay tuned",
+"ja": "お楽しみに・楽しみに待つ",
+"note": "ポストの「お楽しみに」は英語では Stay tuned! がふつう。もとは「チャンネルをそのままに」という意味です。look forward to は I'm looking forward to it.（楽しみにしています）のように使います。"
 }
 ],
 "grammar": {
@@ -22462,8 +27440,8 @@ window.LESSONS = [
 },
 {
 "q1": "{Please}、{them} をお楽しみに！",
-"q2": "{Please}、{them} を楽しみにしてね！",
-"q3": "{Please} 楽しみにして {them!}"
+"q2": "{Please}、{them} を楽しみに待っていてね！",
+"q3": "{Please} 楽しみに待っていて {for them!}"
 }
 ],
 "gloss": {
@@ -22526,7 +27504,10 @@ window.LESSONS = [
 "rilakkuma and haikyu will": "リラックマと「ハイキュー!!」が〜する",
 "the anime": "そのアニメ",
 "production i g makes the anime": "制作会社I.Gがアニメを作る",
-"different projects": "いろいろな企画"
+"different projects": "いろいろな企画",
+"stay": "〜のままでいる",
+"tuned": "（チャンネルを）合わせた",
+"for them": "それら（の企画）を"
 }
 },
 {
@@ -23482,12 +28463,12 @@ window.LESSONS = [
 "mix": "脚本と {VFX} も担当しました。"
 },
 {
-"en": "The catchphrase is \"Two years after that despair.\"",
+"en": "The tagline is \"Two years after that despair.\"",
 "ja": "キャッチコピーは「あの絶望から2年」です。",
 "mix": "キャッチコピーは「あの {despair} から2年」です。"
 },
 {
-"en": "A new despair is coming.",
+"en": "A new wave of despair is coming.",
 "ja": "新たな絶望が、また迫ってきます。",
 "mix": "新たな {despair} が、また迫ってきます。"
 }
@@ -23511,12 +28492,12 @@ window.LESSONS = [
 {
 "w": "despair",
 "ja": "絶望",
-"note": "少しむずかしい単語。hope（希望）の反対です。"
+"note": "少しむずかしい単語。hope（希望）の反対です。数えられない名詞なので a despair とは言わず、a wave of despair（絶望の波）のように言います。"
 },
 {
-"w": "catchphrase",
+"w": "tagline",
 "ja": "キャッチコピー",
-"note": "「キャッチコピー」は和製英語です。"
+"note": "「キャッチコピー」は和製英語。映画のポスターの短い文句は tagline と言います。"
 }
 ],
 "grammar": {
@@ -23592,14 +28573,14 @@ window.LESSONS = [
 "q3": "{He also wrote} 脚本 {and made the VFX.}"
 },
 {
-"q1": "{The catchphrase} は「あの {despair} から2年」です。",
-"q2": "{The catchphrase is}「あの {despair} から2年」。",
-"q3": "{The catchphrase is}「{Two years after} あの {despair}」。"
+"q1": "{The tagline} は「あの {despair} から2年」です。",
+"q2": "{The tagline is}「あの {despair} から2年」。",
+"q3": "{The tagline is}「{Two years after} あの {despair}」。"
 },
 {
-"q1": "{A new despair} が、また迫ってきます。",
-"q2": "また、{a new despair is coming}。",
-"q3": "{A new despair is} また {coming.}"
+"q1": "新たな {wave of despair} が、また迫ってきます。",
+"q2": "新たな {wave of despair} が、また {is coming}。",
+"q3": "{A} 新たな {wave of despair is coming.}"
 }
 ],
 "gloss": {
@@ -23662,7 +28643,15 @@ window.LESSONS = [
 "november 3 is a": "11月3日は（ひとつの）〜です",
 "in japan": "日本で・日本の",
 "takashi yamazaki is": "山崎貴さんは〜です",
-"takashi yamazaki is the": "山崎貴さんがその〜です"
+"takashi yamazaki is the": "山崎貴さんがその〜です",
+"tagline": "キャッチコピー（宣伝の短い文句）",
+"wave": "波",
+"of": "〜の",
+"the tagline": "そのキャッチコピー",
+"the tagline is": "キャッチコピーは〜だ",
+"wave of despair": "絶望の波",
+"is coming": "迫ってきている",
+"wave of despair is coming": "絶望の波が迫ってきている"
 }
 },
 {
@@ -24116,9 +29105,9 @@ window.LESSONS = [
 },
 "lines": [
 {
-"en": "The third character art for the movie shows Hikaru Kamisaki.",
+"en": "The third character visual for the movie shows Hikaru Kamisaki.",
 "ja": "劇場版のキャラクタービジュアル第3弾には、狼嵜光が描かれています。",
-"mix": "劇場版の {character art} 第3弾には、狼嵜光が描かれています。"
+"mix": "劇場版の {character visual} 第3弾には、狼嵜光が描かれています。"
 },
 {
 "en": "Kana Ichinose is the voice of Hikaru.",
@@ -24226,9 +29215,9 @@ window.LESSONS = [
 },
 "grad": [
 {
-"q1": "劇場版の {character art} 第3弾には、{Hikaru Kamisaki} が描かれています。",
-"q2": "劇場版の {third character art} には、{Hikaru Kamisaki} が描かれています。",
-"q3": "{The third character art for the movie} 描いている {Hikaru Kamisaki.}"
+"q1": "劇場版の {character visual} 第3弾には、{Hikaru Kamisaki} が描かれています。",
+"q2": "劇場版の {third character visual} には、{Hikaru Kamisaki} が描かれています。",
+"q3": "{The third character visual for the movie} 描いている {Hikaru Kamisaki.}"
 },
 {
 "q1": "光の {voice} を担当するのは、{Kana Ichinose} さんです。",
@@ -24334,7 +29323,11 @@ window.LESSONS = [
 "kana ichinose is": "市ノ瀬加那さんは〜です",
 "calls her": "彼女を〜と呼ぶ",
 "calls her a genius girl": "彼女を「天才少女」と呼ぶ",
-"inori as her rival": "いのりを自分のライバルとして"
+"inori as her rival": "いのりを自分のライバルとして",
+"visual": "絵・ビジュアル",
+"character visual": "キャラクタービジュアル",
+"third character visual": "キャラクタービジュアル第3弾",
+"the third character visual for the movie": "劇場版のキャラビジュアル第3弾"
 }
 },
 {
@@ -24354,9 +29347,9 @@ window.LESSONS = [
 },
 "lines": [
 {
-"en": "The second character art for the movie shows Tsukasa Akeuraji.",
+"en": "The second character visual for the movie shows Tsukasa Akeuraji.",
 "ja": "劇場版のキャラクタービジュアル第2弾には、明浦路司が描かれています。",
-"mix": "劇場版の {character art} 第2弾には、明浦路司が描かれています。"
+"mix": "劇場版の {character visual} 第2弾には、明浦路司が描かれています。"
 },
 {
 "en": "Takeo Otsuka plays Tsukasa.",
@@ -24464,9 +29457,9 @@ window.LESSONS = [
 },
 "grad": [
 {
-"q1": "{the movie} の {character art} 第2弾には、明浦路司が描かれています。",
-"q2": "{the movie} の {character art} 第2弾 {shows Tsukasa Akeuraji}。",
-"q3": "{The character art for the movie} 第2弾 {shows Tsukasa Akeuraji.}"
+"q1": "{the movie} の {character visual} 第2弾には、明浦路司が描かれています。",
+"q2": "{the movie} の {character visual} 第2弾 {shows Tsukasa Akeuraji}。",
+"q3": "{The character visual for the movie} 第2弾 {shows Tsukasa Akeuraji.}"
 },
 {
 "q1": "{Tsukasa} を演じるのは、{Takeo Otsuka} さんです。",
@@ -24576,7 +29569,10 @@ window.LESSONS = [
 "he started skating in junior high school so he understands": "中学でスケートを始めたのでわかる",
 "lux higashiyama fsc": "ルクス東山FSC（クラブの名前）",
 "tsukasa is an assistant": "司はアシスタント（の〜）です",
-"at lux higashiyama fsc": "ルクス東山FSCの"
+"at lux higashiyama fsc": "ルクス東山FSCの",
+"visual": "絵・ビジュアル",
+"character visual": "キャラクタービジュアル",
+"the character visual for the movie": "劇場版のキャラクタービジュアル"
 }
 },
 {
@@ -24596,9 +29592,9 @@ window.LESSONS = [
 },
 "lines": [
 {
-"en": "The first character art for the movie shows Inori Yuitsuka.",
+"en": "The first character visual for the movie shows Inori Yuitsuka.",
 "ja": "劇場版のキャラクタービジュアル第1弾には、結束いのりが描かれています。",
-"mix": "劇場版の {character art} 第1弾には、結束いのりが描かれています。"
+"mix": "劇場版の {character visual} 第1弾には、結束いのりが描かれています。"
 },
 {
 "en": "Her voice actor is Natsumi Haruse.",
@@ -24706,9 +29702,9 @@ window.LESSONS = [
 },
 "grad": [
 {
-"q1": "{movie} の {first character art} には、結束いのりが描かれています。",
-"q2": "{movie} の {first character art shows} 結束いのり。",
-"q3": "{The first character art for the movie shows} 結束いのり。"
+"q1": "{movie} の {first character visual} には、結束いのりが描かれています。",
+"q2": "{movie} の {first character visual shows} 結束いのり。",
+"q3": "{The first character visual for the movie shows} 結束いのり。"
 },
 {
 "q1": "{Her voice actor} は春瀬なつみさんです。",
@@ -24806,7 +29802,12 @@ window.LESSONS = [
 "she wants to": "彼女は〜したい",
 "an olympic gold medalist": "オリンピックの金メダリスト",
 "the chubu block competition": "中部ブロック大会",
-"at the all-japan novice": "全日本ノービス（大会）で"
+"at the all-japan novice": "全日本ノービス（大会）で",
+"visual": "絵・ビジュアル",
+"character visual": "キャラクタービジュアル",
+"first character visual": "キャラクタービジュアル第1弾",
+"first character visual shows": "キャラビジュアル第1弾が描く",
+"the first character visual for the movie shows": "劇場版のキャラビジュアル第1弾が描く"
 }
 },
 {
@@ -24841,9 +29842,9 @@ window.LESSONS = [
 "mix": "製作 {producer} の齋藤響さんもいっしょに登壇しました。"
 },
 {
-"en": "They told old stories about \"The Dumpster Battle.\"",
-"ja": "2人は「ゴミ捨て場の決戦」のなつかしい話をしました。",
-"mix": "2人は「ゴミ捨て場の決戦」のなつかしい {stories} をしました。"
+"en": "They shared memories of \"The Dumpster Battle.\"",
+"ja": "2人は「ゴミ捨て場の決戦」のなつかしい思い出を語り合いました。",
+"mix": "2人は「ゴミ捨て場の決戦」のなつかしい {memories} を語り合いました。"
 },
 {
 "en": "Fans also heard rare live voice acting.",
@@ -24951,9 +29952,9 @@ window.LESSONS = [
 "q3": "{Producer Hibiki Saito came} 彼といっしょに。"
 },
 {
-"q1": "{They} は「ゴミ捨て場の決戦」の {old stories} をしました。",
-"q2": "{They told}「ゴミ捨て場の決戦」の {old stories}。",
-"q3": "{They told old stories about}「ゴミ捨て場の決戦」。"
+"q1": "{They} は「ゴミ捨て場の決戦」のなつかしい {memories} を語り合いました。",
+"q2": "{They} は「{The Dumpster Battle}」のなつかしい {memories} を語り合いました。",
+"q3": "{They} 語り合った {memories of \"The Dumpster Battle.\"}"
 },
 {
 "q1": "{Fans} は、{rare} な生アフレコも聞くことができました。",
@@ -25038,7 +30039,11 @@ window.LESSONS = [
 "in english made the crowd very excited": "英語での〜が会場を大いに盛り上げた",
 "at animenyc in new york": "ニューヨークのAnimeNYCで",
 "kenma kozume": "孤爪研磨（キャラクター名）",
-"the voice of kenma kozume": "孤爪研磨の声"
+"the voice of kenma kozume": "孤爪研磨の声",
+"shared": "語り合った（shareの過去形）",
+"memories": "思い出（memoryの複数形）",
+"the dumpster battle": "「ゴミ捨て場の決戦」",
+"memories of the dumpster battle": "「ゴミ捨て場の決戦」の思い出"
 }
 },
 {
@@ -26038,7 +31043,7 @@ window.LESSONS = [
 ],
 "grammar": {
 "title": "現在進行形「〜している」",
-"body": "be動詞（am / is / are）＋ 動詞の ing 形で「（いま）〜している」を表します。主語が1つなら is、2つ以上なら are を使います。many mascots are gathering で「たくさんのマスコットが集まっている」です。",
+"body": "be動詞（am / is / are）＋ 動詞の ing 形で「（いま）〜している」を表します。主語が I なら am、he / she / it や1つのものなら is、you や2つ以上なら are を使います。many mascots are gathering で「たくさんのマスコットが集まっている」です。",
 "ex": [
 {
 "en": "I am watching Haikyu!! now.",
@@ -26074,8 +31079,8 @@ window.LESSONS = [
 {
 "q": "Many mascots are ___ together.（集まっています）",
 "choices": [
-"gathered",
 "gather",
+"gathers",
 "gathering"
 ],
 "a": 2,

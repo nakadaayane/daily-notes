@@ -801,6 +801,16 @@ html.static .ai-only{display:none!important}
 /* 書き取りのまとめ：とばした文は1行で（書いた文が主役） */
 .dc-sum li.skip{padding:7px 0}
 .dc-sum li.skip .se{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:var(--fs-s);min-width:0}
+/* 物語の「原文から」：本からの引用らしく、左に細い線・英文は英文の書体 */
+.orig{margin:0;border-left:2px solid var(--line);padding:2px 0 2px 14px;display:flex;flex-direction:column;gap:4px}
+.orig .o-en{margin:0;font-family:var(--serif);font-size:var(--fs-l);line-height:1.7;font-style:italic}
+.orig .o-en .say{display:inline-grid;vertical-align:-8px;margin-left:2px;font-style:normal}
+.orig .o-ja{margin:0;font-family:var(--ui);font-size:var(--fs-s);color:var(--muted);line-height:1.7}
+/* 辞書へのリンク（Cambridge 英和・Oxford）：控えめな文字だけ */
+.dict{display:inline-flex;gap:12px;flex-wrap:wrap}
+.dict a{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.dict a:hover{color:var(--fg);text-decoration-color:var(--faint)}
+.pop .p-link{display:flex;gap:8px;flex-wrap:wrap;align-items:baseline;margin:6px 0 0}
 /* 書き取りのまとめの下：今日ぜんぶの記録 */
 .dc-today{margin:0;font-size:var(--fs-xs);color:var(--muted);font-variant-numeric:tabular-nums}
 #flBox .dc-big{background:color-mix(in srgb,var(--fg) 82%,var(--card))}
@@ -860,6 +870,7 @@ html.static .ai-only{display:none!important}
       <button class="chip" data-f="movie" aria-pressed="false">映画</button>
       <button class="chip" data-f="manga" aria-pressed="false">漫画</button>
       <button class="chip" data-f="art" aria-pressed="false">美術</button>
+      <button class="chip" data-f="story" aria-pressed="false" title="Project Gutenberg の物語（やさしい英語の連載＋原文）">物語</button>
       <button class="chip ai-only" data-f="own" aria-pressed="false">自分で追加</button>
     </div>
     <div class="filters lv-filters" id="lvFilters" role="group" aria-label="むずかしさでしぼりこむ（もう一度押すと解除）">
@@ -989,7 +1000,7 @@ const jstStamp = () => jstNow().toISOString().slice(0, 16);
 const dayDiff = (a, b) => Math.round((Date.parse(a) - Date.parse(b)) / 864e5);
 const jpDate = d => { if(!d) return ''; const [, m, dd] = d.slice(0, 10).split('-'); return `${+m}月${+dd}日`; };
 const typing = el => el && (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA' || el.isContentEditable);
-const CAT = {anime:'アニメ', movie:'映画', manga:'漫画', art:'美術', own:'自分で追加'};
+const CAT = {anime:'アニメ', movie:'映画', manga:'漫画', art:'美術', story:'物語', own:'自分で追加'};
 const LEVEL = {1:'やさしい', 2:'ふつう', 3:'ちょっとむずい'};
 const SERIES = {haikyu:'ハイキュー!!', medalist:'メダリスト', frieren:'フリーレン', worldtrigger:'ワールドトリガー'};
 const HOT = 5000; /* 「人気」= この数以上いいねされたポスト */
@@ -1327,12 +1338,14 @@ function storyLine(L, i){
 }
 const isSaved = w => S.state.saved.some(s => s.w === w);
 const isLiked = id => !!S.state.likes[id];
+/* 持ち主のいつもの辞書（2026-10-08）：Cambridge（英和・発音）と Oxford Learner's（英英・発音・CEFR） */
+const dictLinks = w => { const q = encodeURIComponent(String(w).trim().replace(/‑/g, '-')); return `<span class="dict"><a href="https://dictionary.cambridge.org/search/direct/?datasetsearch=english-japanese&q=${q}" target="_blank" rel="noopener">Cambridge 英和</a><a href="https://www.oxfordlearnersdictionaries.com/search/english/?q=${q}" target="_blank" rel="noopener">Oxford</a></span>`; };
 function wordRow(wd, lessonId, opts = {}){
   const on = isSaved(wd.w);
   let from = opts.from && S.byId[opts.from] ? `<span class="n">${wd.note ? enRuns(wd.note) + '　' : ''}<button data-open="${esc(opts.from)}">${esc(S.byId[opts.from].title)}</button></span>` : (wd.note ? `<span class="n">${enRuns(wd.note)}</span>` : '');
   if(opts.book){ const sv = S.state.saved.find(s => s.w === wd.w); if(sv){ const due = isDue(sv); from += `<span class="n"><span class="lv${due ? ' due-now' : ''}">${due ? '今日の復習' : `次の復習 ${jpDate(sv.due)}`}</span></span>`; } }
   return `<li><button class="say" data-say="${esc(wd.w)}" aria-label="${esc(wd.w)} を読み上げ">${ICON.say}</button>
-    <div class="wtxt"><span class="w">${esc(wd.w)}</span><span class="m">${esc(wd.ja)}</span>${from}</div>
+    <div class="wtxt"><span class="w">${esc(wd.w)}</span><span class="m">${esc(wd.ja)}</span>${from}<span class="n">${dictLinks(wd.w)}</span></div>
     <button class="star" data-star="${esc(wd.w)}" data-from="${esc(lessonId || '')}" aria-pressed="${on}" aria-label="単語帳に入れる">${ICON.star}</button></li>`;
 }
 const blankHtml = t => esc(t).replace(/_{2,}/g, '<span class="blank" aria-label="空欄"></span>');
@@ -1378,7 +1391,11 @@ function renderLesson(){
   setNav(); syncLikeBtn();
   const p = L.post || {};
   const who = p.name ? `${esc(p.name)}${p.account ? `（@${esc(p.account)}）` : ''}` : '';
-  const userMsg = L.own
+  const bk = L.book;   /* 物語（Project Gutenberg の本をやさしい英語で連載） */
+  const extIco = '<svg class="ico-inline" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>';
+  const userMsg = bk
+    ? `『${esc(bk.titleJa || bk.title)}』（${esc(bk.author)}）第${bk.part}回、やさしい英語で読みたい<span class="src"><a href="${esc(bk.url)}" target="_blank" rel="noopener">原文を開く（Project Gutenberg）${extIco}</a></span>`
+    : L.own
     ? `${esc(L.ask || 'これを英語で読みたい')}${p.url ? `<span class="src"><a href="${esc(p.url)}" target="_blank" rel="noopener">元のポストを開く</a></span>` : ''}`
     : `${who ? who + 'のポスト、' : ''}英語で読みたい${p.url ? `<span class="src"><a href="${esc(p.url)}" target="_blank" rel="noopener">元のポストを開く <svg class="ico-inline" viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a></span>` : ''}`;
   const g = L.grammar;
@@ -1394,7 +1411,7 @@ function renderLesson(){
     <div class="a-block">
       <h1 class="l-title">${esc(L.title)}</h1>
       <p class="lead">${esc(L.summary)}</p>
-      <div class="meta-line">${L.series && SERIES[L.series] ? `<span>${SERIES[L.series]}</span>` : ''}<span>${esc(L.own ? CAT.own : (CAT[L.cat] || ''))}</span>${lvlHtml(L.level)}<span>英文 ${nWords}語</span>${p.date ? `<span>${esc(jpDate(p.date))}のポスト</span>` : ''}</div>
+      <div class="meta-line">${L.series && SERIES[L.series] ? `<span>${SERIES[L.series]}</span>` : ''}<span>${esc(L.own ? CAT.own : (CAT[L.cat] || ''))}</span>${lvlHtml(L.level)}<span>英文 ${nWords}語</span>${bk ? `<span>第${bk.part}回／全${bk.parts}回</span>` : p.date ? `<span>${esc(jpDate(p.date))}のポスト</span>` : ''}</div>
 
       <section class="blk" aria-label="読んでみよう">
         <div class="blk-h"><h2>読んでみよう</h2><span class="sp"></span>
@@ -1407,6 +1424,11 @@ function renderLesson(){
         <ol class="story" id="story" data-mix="${S.amount >= 1 && S.amount <= 4 ? 1 : 0}" data-stage="${S.amount}">${L.lines.map((_, i) => storyLine(L, i)).join('')}</ol>
         <div id="storyNext"></div>
       </section>
+
+      ${bk && (L.orig || []).length ? `<section class="blk" aria-label="原文から">
+        <div class="blk-h"><h2>原文から</h2><span class="sp"></span><span class="note">${esc(bk.title)}（${esc(bk.year || '')}）のままの一文</span></div>
+        ${L.orig.map(o => `<blockquote class="orig"><p class="o-en" lang="en">${esc(o.en)}<button class="say" data-say="${esc(o.en)}" aria-label="原文を読み上げ">${ICON.say}</button></p><p class="o-ja">${esc(o.ja)}</p></blockquote>`).join('')}
+      </section>` : ''}
 
       <section class="blk" aria-label="単語">
         <div class="blk-h"><h2>単語</h2><span class="sp"></span><span class="note">${ICON.star.replace('width="16" height="16"', 'width="12" height="12" class="ico-inline"')} で単語帳へ</span></div>
@@ -2207,7 +2229,7 @@ function openPop(el){
   const li = el.closest('li'); const sent = li && L.lines[+li.dataset.i] ? L.lines[+li.dataset.i].en : '';
   const busy = !ja && !kw && !!S.sample;
   pop.innerHTML = `<div class="p-w"><b>${esc(w)}</b><button class="say" data-say="${esc(w)}" aria-label="読み上げ">${ICON.say}</button><button class="star" data-star="${esc(w)}" data-from="${esc(L.id)}" aria-pressed="${on}" aria-label="単語帳に入れる">${ICON.star}</button></div>
-    <p class="p-m${busy ? ' p-busy' : ''}">${ja ? esc(ja) : busy ? '意味を調べています…' : 'この単語の意味はまだ入っていません。'}</p>${note ? `<p class="p-n">${enRuns(note)}</p>` : ''}${kw ? '' : `<a class="p-link" href="https://ejje.weblio.jp/content/${encodeURIComponent(w)}" target="_blank" rel="noopener">辞書でくわしく見る</a>`}`;
+    <p class="p-m${busy ? ' p-busy' : ''}">${ja ? esc(ja) : busy ? '意味を調べています…' : 'この単語の意味はまだ入っていません。'}</p>${note ? `<p class="p-n">${enRuns(note)}</p>` : ''}<p class="p-link">辞書で発音と訳：${dictLinks(w)}</p>`;
   if(busy) fetchGloss(L, gkey(w), w, sent).then(v => { if(v && popFor === el) openPop(el); else if(!v && popFor === el){ const m = $('#pop .p-m'); if(m){ m.classList.remove('p-busy'); m.textContent = '意味を調べられませんでした。下の辞書で見てください。'; } } });
   pop.hidden = false;
   const r = el.getBoundingClientRect(); const pw = pop.offsetWidth, ph = pop.offsetHeight;
