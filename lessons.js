@@ -1,5 +1,2408 @@
 window.LESSONS = [
 {
+"added": "2026-10-14T21:00",
+"addedAt": "2026-10-15T08:02",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"i": "俺は",
+"i will": "俺は〜します",
+"in": "〜で",
+"in the japanese version": "日本語版で",
+"in theaters": "映画館で",
+"in theaters on october 16": "10月16日に映画館で",
+"in theaters too": "映画館でも",
+"it": "それ（映画）を",
+"it in theaters too": "映画館でもそれを",
+"japanese": "日本語の",
+"just": "ほんの",
+"just a little of my scenes": "俺のシーンのほんの少し",
+"little": "少し",
+"marvin": "マービン（役名）",
+"marvin in the japanese version": "日本語版のマービン",
+"movie": "映画",
+"my": "俺の",
+"my scenes": "俺のシーン",
+"october": "10月",
+"october 16": "10月16日",
+"of": "〜の",
+"on": "〜に（日付）",
+"opens": "公開される",
+"please": "〜してください",
+"scenes": "シーン（sceneの複数形）",
+"show": "見せる",
+"the": "その",
+"the movie": "その映画",
+"theaters": "映画館",
+"too": "〜も",
+"version": "版",
+"voiced": "声をあてた（voiceの過去形）",
+"watch": "見る",
+"will": "〜します（これから）",
+"you": "あなたに",
+"you just a little of my scenes": "あなたに俺のシーンをほんの少し"
+},
+"grad": [
+{
+"q1": "映画『ストリートファイター ザ・ムービー』は、{October 16} に {theaters} で公開されます。",
+"q2": "映画『ストリートファイター ザ・ムービー』は、{in theaters on October 16} 公開されます。",
+"q3": "{The movie} 公開される {in theaters on October 16.}"
+},
+{
+"q1": "俺は日本語 {version} で、{Marvin} の声を担当しました。",
+"q2": "俺は {in the Japanese version}、{Marvin} の声を担当しました。",
+"q3": "{I} 担当した {Marvin in the Japanese version.}"
+},
+{
+"q1": "{my scenes} を、ほんのちょっとだけお見せします。",
+"q2": "{just a little of my scenes} を、お見せします。",
+"q3": "{I will} お見せします {you just a little of my scenes.}"
+},
+{
+"q1": "{in theaters} でもぜひ見てください。",
+"q2": "{in theaters, too}、ぜひ見てください。",
+"q3": "{Please} 見て {it in theaters, too.}"
+}
+],
+"grammar": {
+"body": "just a little で「ほんの少しだけ」の意味になります。just は「ほんの・ちょうど」というように、ことばの意味をしぼる小さな単語です。",
+"ex": [
+{
+"en": "I have just a little time.",
+"ja": "ほんの少ししか時間がありません。"
+},
+{
+"en": "Just a minute, please.",
+"ja": "少しだけ待ってください。"
+}
+],
+"title": "just「ほんの〜だけ」"
+},
+"id": "20261014-sf-kuzu-marvin",
+"level": 1,
+"lines": [
+{
+"en": "The movie opens in theaters on October 16.",
+"ja": "映画『ストリートファイター ザ・ムービー』は、10月16日に劇場で公開されます。",
+"mix": "映画『ストリートファイター ザ・ムービー』は、{October 16} に劇場で公開されます。"
+},
+{
+"en": "I voiced Marvin in the Japanese version.",
+"ja": "俺は日本語版で、マービンの声を担当しました。",
+"mix": "俺は日本語版で、{Marvin} の声を担当しました。"
+},
+{
+"en": "I will show you just a little of my scenes.",
+"ja": "俺の出演シーンを、ほんのちょっとだけお見せします。",
+"mix": "俺の出演 {scenes} を、ほんのちょっとだけお見せします。"
+},
+{
+"en": "Please watch it in theaters, too.",
+"ja": "映画館でもぜひ見てください。",
+"mix": "{theaters} でもぜひ見てください。"
+}
+],
+"post": {
+"account": "Vamp_Kuzu",
+"date": "2026-10-14",
+"likes": 29354,
+"name": "葛葉",
+"url": "https://x.com/Vamp_Kuzu/status/2110339853518823648"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"リュウ",
+"ケン",
+"マービン"
+],
+"q": "葛葉さんが吹替で担当したキャラクターは？",
+"why": "2文目に I voiced Marvin とあります。"
+},
+{
+"a": 1,
+"choices": [
+"切符",
+"映画館",
+"予告編"
+],
+"q": "theater の意味は？",
+"why": "theater は「映画館・劇場」。ポストの「映画館」です。"
+},
+{
+"a": 0,
+"choices": [
+"just",
+"very much",
+"many"
+],
+"q": "I will show you ___ a little of my scenes.（ほんのちょっとだけ）",
+"why": "just a little で「ほんの少しだけ」。"
+}
+],
+"summary": "『ストリートファイター ザ・ムービー』は10月16日に公開されます。吹替で「マービン」を担当した葛葉さんが、出演シーンをほんの少しだけ公開し、映画館でも見てほしいと呼びかけました（ポストには #PR とあります）。",
+"talk": {
+"hint": "I want to see it because ___.",
+"ja": "『ストリートファイター ザ・ムービー』を映画館で見たいですか？",
+"q": "Do you want to see Street Fighter: The Movie in theaters?"
+},
+"title": "葛葉さんが『ストリートファイター』吹替のマービンを少しだけ公開",
+"words": [
+{
+"ja": "公開される・始まる",
+"note": "ポストの「公開です」は The movie opens。映画館で公開されるときによく使います。",
+"w": "open"
+},
+{
+"ja": "（声を）あてる",
+"note": "ポストの「吹替を担当した」は I voiced Marvin と言えます。名詞なら「声」。",
+"w": "voice"
+},
+{
+"ja": "場面・シーン",
+"note": "ポストの「出演シーン」は my scenes。",
+"w": "scene"
+},
+{
+"ja": "映画館",
+"note": "ポストの「映画館」。in theaters で「映画館で」。",
+"w": "theater"
+}
+]
+},
+{
+"added": "2026-10-14T19:00",
+"addedAt": "2026-10-15T08:02",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a theater": "劇場",
+"again": "もう一度",
+"anime": "アニメ",
+"anime fans": "アニメファン",
+"anime fans loved the special preview screening of": "アニメファンが〜の特別試写会を絶賛した",
+"anime fans loved the special preview screening of the": "アニメファンがその（映画）の特別試写会を絶賛した",
+"at": "〜で",
+"come": "来る",
+"cry": "泣く",
+"early": "早い・最初の",
+"early hints": "早めの伏線",
+"end": "終わり・終盤",
+"fans": "ファン",
+"hints": "伏線・ヒント",
+"how": "〜というところ",
+"in": "〜で",
+"it": "それ（この映画）",
+"lot": "たくさん",
+"love": "大好きだ",
+"loved": "絶賛した・大好きだった",
+"many": "たくさんの",
+"many people": "たくさんの人",
+"many people want to see": "たくさんの人が観たい",
+"many people want to see it": "たくさんの人がそれを観たい",
+"movie": "映画",
+"of": "〜の",
+"others": "ほかの人たち",
+"others love how early hints come together": "ほかの人は、伏線がうまくつながる様子が好き",
+"others love how early hints come together at the": "ほかの人は、伏線が（終盤）にうまくつながる様子が好き",
+"people": "人びと",
+"percent": "パーセント",
+"please": "ぜひ・どうぞ",
+"preview": "試写（公開前の上映）",
+"rate": "割合・度",
+"satisfaction": "満足",
+"satisfaction rate": "満足度",
+"say": "言う",
+"screening": "上映（会）",
+"see": "観る",
+"see it in a theater": "劇場で観る",
+"some": "〜もいる",
+"some fans": "一部のファン",
+"some fans say you will": "一部のファンは〜するだろうと言う",
+"some fans say you will cry": "一部のファンは泣くだろうと言う",
+"special": "特別な",
+"the": "その",
+"the satisfaction rate": "満足度",
+"the satisfaction rate was": "満足度は〜でした",
+"the satisfaction rate was 96 7": "満足度は96.7（%）でした",
+"theater": "劇場・映画館",
+"to": "〜すること",
+"together": "ひとつに",
+"want": "〜したい",
+"was": "〜でした",
+"will": "〜するだろう",
+"you": "（見る）人は"
+},
+"grad": [
+{
+"q1": "{Anime fans} が、この映画の特別 {screening} を絶賛しました。",
+"q2": "{Anime fans loved the special preview screening of} この映画。",
+"q3": "{Anime fans loved the special preview screening of the} 映画。"
+},
+{
+"q1": "{The satisfaction rate} は96.7%でした。",
+"q2": "{The satisfaction rate was} 96.7%。",
+"q3": "{The satisfaction rate was 96.7} パーセント。"
+},
+{
+"q1": "{Many people} が、もう一度観たいと思っています。",
+"q2": "{Many people want to see} それをもう一度。",
+"q3": "{Many people want to see it} もう一度。"
+},
+{
+"q1": "{Some fans} が「涙腺崩壊注意」と言っています。",
+"q2": "{Some fans say you will} たくさん泣く。",
+"q3": "{Some fans say you will cry} たくさん。"
+},
+{
+"q1": "{Others} は、{early hints} が終盤にうまくつながる展開が好きです。",
+"q2": "{Others love how early hints come together} 終盤に。",
+"q3": "{Others love how early hints come together at the} 終盤。"
+},
+{
+"q1": "ぜひ {a theater} でご覧ください。",
+"q2": "ぜひ {see it in a theater.}",
+"q3": "ぜひ {see it in a theater.}"
+}
+],
+"grammar": {
+"body": "小数点は point と読み、点のあとの数字は1つずつ読みます。ポストの「96.7%」は ninety-six point seven percent。% は percent と読み、percent に s は付けません。",
+"ex": [
+{
+"en": "3.5 is three point five.",
+"ja": "3.5は「スリー・ポイント・ファイブ」です。"
+},
+{
+"en": "The rate was 0.5 percent.",
+"ja": "割合は0.5パーセントでした。（zero point five percent と読みます）"
+}
+],
+"title": "小数の読み方 96.7 ＝ ninety-six point seven"
+},
+"id": "20261014-dokokimi-screening",
+"level": 2,
+"lines": [
+{
+"en": "Anime fans loved the special preview screening of the movie.",
+"ja": "アニメファンが、この映画の特別試写会を絶賛しました。",
+"mix": "{Anime fans} が、この映画の特別試写会を絶賛しました。"
+},
+{
+"en": "The satisfaction rate was 96.7 percent.",
+"ja": "満足度は96.7%でした。",
+"mix": "{satisfaction rate} は96.7%でした。"
+},
+{
+"en": "Many people want to see it again.",
+"ja": "たくさんの人が、もう一度観たいと思っています。",
+"mix": "たくさんの {people} が、もう一度観たいと思っています。"
+},
+{
+"en": "Some fans say you will cry a lot.",
+"ja": "「涙腺崩壊注意」と言うファンもいます。",
+"mix": "「涙腺崩壊注意」と言う {fans} もいます。"
+},
+{
+"en": "Others love how early hints come together at the end.",
+"ja": "伏線が終盤にうまくつながる展開が好き、という人もいます。",
+"mix": "{hints} が終盤にうまくつながる展開が好き、という人もいます。"
+},
+{
+"en": "Please see it in a theater.",
+"ja": "ぜひ劇場でご覧ください。",
+"mix": "ぜひ {theater} でご覧ください。"
+}
+],
+"post": {
+"account": "dokokimi_movie",
+"date": "2026-10-14",
+"likes": 3958,
+"name": "映画『どこよりも遠い場所にいる君へ』公式",
+"url": "https://x.com/dokokimi_movie/status/2110309646208508406"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"96.7%",
+"69.7%",
+"79.6%"
+],
+"q": "特別試写会の満足度は？",
+"why": "2文目に The satisfaction rate was 96.7 percent. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"ポスター",
+"上映（会）",
+"感想"
+],
+"q": "screening の意味に近いのは？",
+"why": "preview screening は、公開前に見せる「試写会」です。"
+},
+{
+"a": 2,
+"choices": [
+"dot",
+"comma",
+"point"
+],
+"q": "96.7 は何と読む？ ninety-six ___ seven.",
+"why": "小数点は point と読みます。"
+}
+],
+"summary": "映画『どこよりも遠い場所にいる君へ』の公式が、特別試写会の満足度が96.7%だったと発表しました。「もう一度観たい」という声が続出し、「涙腺崩壊注意」「伏線が終盤にしっかり回収される」といった感想も届いています。",
+"talk": {
+"hint": "Yes, I do. / No, I don't, because ___.",
+"ja": "泣ける映画は好きですか？",
+"q": "Do you like movies that make you cry?"
+},
+"title": "『どこきみ』特別試写会の満足度96.7%",
+"words": [
+{
+"ja": "上映（会）",
+"note": "ポストの「試写会」は preview screening（公開前の上映）と言います。",
+"w": "screening"
+},
+{
+"ja": "満足",
+"note": "ポストの「満足度」は satisfaction rate。動詞は satisfy。",
+"w": "satisfaction"
+},
+{
+"ja": "泣く",
+"note": "ポストの「涙腺崩壊」は、たくさん泣くことなので cry a lot と表せます。",
+"w": "cry"
+},
+{
+"ja": "ヒント・手がかり",
+"note": "ポストの「伏線」は、あとの展開を知らせる early hints と言えます。",
+"w": "hint"
+},
+{
+"ja": "うまくひとつにまとまる",
+"note": "ポストの「回収される」は、ばらばらの話がつながる come together で表しました。",
+"w": "come together"
+}
+]
+},
+{
+"added": "2026-10-14T18:00",
+"addedAt": "2026-10-15T08:02",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a new character video": "新しいキャラクターPV",
+"a new character video for medalist": "『メダリスト』の新しいキャラクターPV",
+"about": "〜についての",
+"about jun yodaka": "夜鷹純について",
+"actor": "俳優（voice actorで声優）",
+"again": "もう一度",
+"again now": "今また",
+"airing": "放送中",
+"and": "そして",
+"anime": "アニメ",
+"at": "〜を",
+"back": "後ろ（look backで振り返る）",
+"character": "キャラクター",
+"character video": "キャラクターPV",
+"everything": "すべて",
+"everything so far": "これまでのすべて",
+"everything so far for the movie": "劇場版にむけたこれまでのすべて",
+"far": "ここまで",
+"february": "2月",
+"february 19": "2月19日",
+"for": "〜のための",
+"for the movie": "劇場版にむけて",
+"friday": "金曜日",
+"his": "彼の",
+"his voice actor": "彼の声優",
+"is": "〜です",
+"is about jun yodaka and his voice actor is yuma uchida": "夜鷹純編で、声優は内田雄馬さん",
+"it": "これ（PV）は",
+"jun": "純（人名）",
+"jun yodaka": "夜鷹純",
+"looks": "見る",
+"medalist": "メダリスト（作品名）",
+"movie": "映画",
+"new": "新しい",
+"new character video": "新しいキャラクターPV",
+"now": "今",
+"on": "〜に（日付）",
+"on friday february 19 2027": "2027年2月19日（金）に",
+"opens": "公開される",
+"out": "公開された",
+"so": "これまで（so farで）",
+"so far": "これまで",
+"the": "その",
+"the movie": "その映画（劇場版）",
+"the tv anime": "そのTVアニメ",
+"the tv anime is": "TVアニメは〜です",
+"this": "この",
+"tv": "テレビ",
+"tv anime": "TVアニメ",
+"uchida": "内田（人名）",
+"video": "動画（PV）",
+"voice": "声",
+"voice actor": "声優",
+"yodaka": "夜鷹（人名）",
+"yuma": "雄馬（人名）"
+},
+"grad": [
+{
+"q1": "『メダリスト』の {new character video} が公開されました。",
+"q2": "『メダリスト』の {a new character video} が公開されました。",
+"q3": "{A new character video for Medalist} 公開された。"
+},
+{
+"q1": "{the movie} にむけて、{so far} を振り返ります。",
+"q2": "{for the movie}、{everything so far} を振り返ります。",
+"q3": "{It} 振り返ります {everything so far for the movie.}"
+},
+{
+"q1": "この動画は {Jun Yodaka} 編で、{his voice actor} は内田雄馬さんです。",
+"q2": "{This} 動画は {about Jun Yodaka}、{his voice actor} は内田雄馬さんです。",
+"q3": "{This} 動画 {is about Jun Yodaka, and his voice actor is Yuma Uchida.}"
+},
+{
+"q1": "映画は2027年 {February 19} （{Friday}）に公開されます。",
+"q2": "映画は {on Friday, February 19, 2027} 公開されます。",
+"q3": "{The movie} 公開される {on Friday, February 19, 2027.}"
+},
+{
+"q1": "{TV anime} は {now}、また放送されています。",
+"q2": "{The TV anime} は、{again now} 放送されています。",
+"q3": "{The TV anime is} 放送中 {again now.}"
+}
+],
+"grammar": {
+"body": "look（見る）と back（後ろ）で「後ろを見る」、つまり「振り返る」になります。at のあとに振り返る内容を置きます。",
+"ex": [
+{
+"en": "Let's look back at last year.",
+"ja": "去年を振り返りましょう。"
+},
+{
+"en": "I looked back at my old photos.",
+"ja": "わたしは昔の写真を振り返って見ました。"
+}
+],
+"title": "句動詞 look back at「〜を振り返る」"
+},
+"id": "20261014-medalist-yodaka-pv",
+"level": 1,
+"lines": [
+{
+"en": "A new character video for Medalist is out.",
+"ja": "『メダリスト』の新しいキャラクターPVが公開されました。",
+"mix": "『メダリスト』の新しい {character video} が公開されました。"
+},
+{
+"en": "It looks back at everything so far for the movie.",
+"ja": "劇場版にむけて、これまでを振り返ります。",
+"mix": "{the movie} にむけて、これまでを振り返ります。"
+},
+{
+"en": "This video is about Jun Yodaka, and his voice actor is Yuma Uchida.",
+"ja": "この動画は夜鷹純編で、声優は内田雄馬さんです。",
+"mix": "この動画は {Jun Yodaka} 編で、{voice actor} は内田雄馬さんです。"
+},
+{
+"en": "The movie opens on Friday, February 19, 2027.",
+"ja": "映画は2027年2月19日（金）に公開されます。",
+"mix": "映画は2027年 {February 19} （金）に公開されます。"
+},
+{
+"en": "The TV anime is airing again now.",
+"ja": "TVアニメは今、また放送されています。",
+"mix": "{TV anime} は今、また放送されています。"
+}
+],
+"post": {
+"account": "medalist_PR",
+"date": "2026-10-14",
+"likes": 1231,
+"name": "劇場版『メダリスト』公式",
+"url": "https://x.com/medalist_PR/status/2110294547372949582"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"2月9日",
+"12月19日",
+"2月19日"
+],
+"q": "劇場版『メダリスト』の公開日は？",
+"why": "4文目に February 19, 2027 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"これまで",
+"これから",
+"もうすぐ"
+],
+"q": "so far の意味は？",
+"why": "so far は「これまで」。ポストの「これまでを振り返る」です。"
+},
+{
+"a": 1,
+"choices": [
+"up",
+"back",
+"out"
+],
+"q": "It looks ___ at everything so far.（振り返る）",
+"why": "look back at で「〜を振り返る」です。"
+}
+],
+"series": "medalist",
+"summary": "劇場版に向けて、これまでを振り返るキャラクターPVが公開されました。今回は夜鷹純編で、声は内田雄馬さんです。映画は2027年2月19日（金）に公開され、TVアニメは再放送中です。",
+"talk": {
+"hint": "I like ___ because ___.",
+"ja": "『メダリスト』で、どのキャラクターが好きですか？",
+"q": "Which character do you like in Medalist?"
+},
+"title": "『メダリスト』劇場版へ向けて夜鷹純のキャラクターPV",
+"words": [
+{
+"ja": "キャラクター・登場人物",
+"note": "ポストの「キャラクターPV」は character video。",
+"w": "character"
+},
+{
+"ja": "これまで",
+"note": "ポストの「これまでを振り返る」の「これまで」。",
+"w": "so far"
+},
+{
+"ja": "声優",
+"note": "ポストの CV（キャラクターの声）。voice actor と言います。",
+"w": "voice actor"
+},
+{
+"ja": "放送する・放送される",
+"note": "ポストの「再放送中」を airing again と表しました。",
+"w": "air"
+}
+]
+},
+{
+"added": "2026-10-14T16:37",
+"addedAt": "2026-10-15T08:02",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a review by maiko seo": "瀬尾まいこさんのレビュー",
+"actor": "俳優",
+"afterglow": "余韻",
+"also": "〜も",
+"and": "〜と",
+"at": "〜に",
+"beautiful": "美しい",
+"by": "〜による",
+"care": "心づかい・丁寧さ",
+"design": "装幀・デザイン",
+"each": "それぞれの",
+"each actor": "俳優一人ひとり",
+"enjoy": "楽しむ",
+"explains": "解説する",
+"for": "〜の",
+"gotoku": "ごとく（作品名の一部）",
+"hand": "手元",
+"has": "〜がある（haveの3人称）",
+"her": "彼女の",
+"her novels": "彼女の小説",
+"her warm": "彼女のあたたかな",
+"hoshi": "星（作品名の一部）",
+"in": "〜の中の",
+"is": "〜です",
+"is like the one in her novels": "彼女の小説のもののようだ",
+"it": "それを",
+"keep": "置いておく",
+"keep it at hand and": "手元に置いて、そして",
+"like": "〜のような",
+"like the one in her novels": "彼女の小説の中のもののような",
+"maiko": "まいこ（人名）",
+"maiko seo": "瀬尾まいこ",
+"movie": "映画",
+"nagi": "汝（作品名の一部）",
+"no": "の（作品名の一部）",
+"novels": "小説（novelの複数形）",
+"of": "〜の",
+"one": "もの（the one で『そのもの』）",
+"pamphlet": "パンフレット",
+"please": "どうぞ・ぜひ",
+"please keep it at hand and": "ぜひ手元に置いて、そして",
+"point": "点",
+"review": "レビュー",
+"seo": "瀬尾（人名）",
+"she": "彼女は",
+"she explains the movie": "瀬尾さんは映画を解説する",
+"she explains the movie and each actor": "瀬尾さんは映画と俳優一人ひとりを解説する",
+"the": "その",
+"the afterglow of the movie": "映画の余韻",
+"the design of the pamphlet": "パンフレットの装幀",
+"the design of the pamphlet is also": "パンフレットの装幀も〜",
+"the movie": "その映画",
+"the theater pamphlet for the movie nagi hoshi no gotoku": "映画『汝、星のごとく』の劇場パンフレット",
+"theater": "劇場",
+"theater pamphlet": "劇場パンフレット",
+"very": "とても",
+"view": "見方",
+"warm": "あたたかい",
+"with": "〜をこめて"
+},
+"grad": [
+{
+"q1": "映画『汝、星のごとく』の {theater pamphlet} に、{Maiko Seo} さんの {review} がのっています。",
+"q2": "{The theater pamphlet for the movie Nagi, Hoshi no Gotoku} に、{Maiko Seo} さんの {review} がのっています。",
+"q3": "{The theater pamphlet for the movie Nagi, Hoshi no Gotoku} のっている {a review by Maiko Seo.}"
+},
+{
+"q1": "瀬尾さんは、{movie} と {each actor} を丁寧に解説しています。",
+"q2": "{She explains the movie} と {each actor} を丁寧に。",
+"q3": "{She explains the movie and each actor} 丁寧に。"
+},
+{
+"q1": "その {warm} 眼差しは、{her novels} のものに似ています。",
+"q2": "{Her warm} 眼差しは、{like the one in her novels.}",
+"q3": "{Her warm} 眼差し {is like the one in her novels.}"
+},
+{
+"q1": "{pamphlet} は、{design} もとても {beautiful} です。",
+"q2": "{The design of the pamphlet} も、とても {beautiful} です。",
+"q3": "{The design of the pamphlet is also} とても {beautiful.}"
+},
+{
+"q1": "ぜひ手元に置いて、{the movie} の {afterglow} を楽しんでください。",
+"q2": "ぜひ {keep it at hand and}、{the afterglow of the movie} を楽しんでください。",
+"q3": "{Please keep it at hand and} 楽しんで {the afterglow of the movie.}"
+}
+],
+"grammar": {
+"body": "like は動詞「好き」のほかに、「〜のような」という前置詞にもなります。like のあとには名詞やかたまりが来ます。",
+"ex": [
+{
+"en": "This song is like a warm hug.",
+"ja": "この歌はあたたかいハグのようです。"
+},
+{
+"en": "He sings like a bird.",
+"ja": "彼は鳥のように歌います。"
+}
+],
+"title": "前置詞 like「〜のような・〜みたいに」"
+},
+"id": "20261014-nagi-pamphlet",
+"level": 3,
+"lines": [
+{
+"en": "The theater pamphlet for the movie Nagi, Hoshi no Gotoku has a review by Maiko Seo.",
+"ja": "映画『汝、星のごとく』の劇場パンフレットに、瀬尾まいこさんのレビューがのっています。",
+"mix": "映画『汝、星のごとく』の劇場 {pamphlet} に、瀬尾まいこさんの {review} がのっています。"
+},
+{
+"en": "She explains the movie and each actor with care.",
+"ja": "瀬尾さんは、映画と俳優さん一人ひとりを丁寧に解説しています。",
+"mix": "瀬尾さんは、{movie} と {actor} 一人ひとりを丁寧に解説しています。"
+},
+{
+"en": "Her warm point of view is like the one in her novels.",
+"ja": "そのあたたかな眼差しは、瀬尾さんの小説のものに似ています。",
+"mix": "その {warm} 眼差しは、瀬尾さんの {novels} のものに似ています。"
+},
+{
+"en": "The design of the pamphlet is also very beautiful.",
+"ja": "パンフレットは、装幀もとても美しいです。",
+"mix": "{pamphlet} は、装幀もとても {beautiful} です。"
+},
+{
+"en": "Please keep it at hand and enjoy the afterglow of the movie.",
+"ja": "ぜひ手元に置いて、映画の余韻を楽しんでください。",
+"mix": "ぜひ手元に置いて、映画の {afterglow} を楽しんでください。"
+}
+],
+"post": {
+"account": "nagira_yuu",
+"date": "2026-10-14",
+"likes": 1840,
+"name": "凪良ゆう",
+"url": "https://x.com/nagira_yuu/status/2110273877024899324"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"小説",
+"劇場パンフレット",
+"ポスター"
+],
+"q": "瀬尾まいこさんのレビューがのっているのは？",
+"why": "1文目に The theater pamphlet ... has a review by Maiko Seo とあります。"
+},
+{
+"a": 0,
+"choices": [
+"余韻",
+"宿題",
+"広告"
+],
+"q": "afterglow の意味は？",
+"why": "afterglow は映画のあとに残る「余韻」。"
+},
+{
+"a": 2,
+"choices": [
+"likes",
+"liking",
+"like"
+],
+"q": "Her view is warm, ___ the one in her novels.",
+"why": "「〜のような」は前置詞 like。likes や liking は使いません。"
+}
+],
+"summary": "凪良ゆうさんが、映画『汝、星のごとく』の劇場パンフレットに瀬尾まいこさんのレビューがのっていると紹介しました。作品と俳優さんを丁寧に紐解いた内容で、装幀も美しいので手元に置いて余韻にひたってほしいとのことです。",
+"talk": {
+"hint": "I buy / do not buy a pamphlet because ___.",
+"ja": "映画を見るとき、パンフレットを買いますか？",
+"q": "Do you buy a pamphlet when you watch a movie?"
+},
+"title": "『汝、星のごとく』パンフに瀬尾まいこさんのレビュー",
+"words": [
+{
+"ja": "パンフレット",
+"note": "ポストの「劇場パンフレット」は the theater pamphlet。",
+"w": "pamphlet"
+},
+{
+"ja": "レビュー・批評",
+"note": "ポストの「レビュー」。a review by Maiko Seo ＝ 瀬尾さんのレビュー。",
+"w": "review"
+},
+{
+"ja": "丁寧に",
+"note": "ポストの「丁寧に紐解く」を explain ... with care と表しました。",
+"w": "with care"
+},
+{
+"ja": "手元に",
+"note": "ポストの「お手元に置いて」は keep it at hand。",
+"w": "at hand"
+},
+{
+"ja": "余韻",
+"note": "映画を見たあとに残る気持ち。ポストの「余韻に浸る」にあたります。",
+"w": "afterglow"
+}
+]
+},
+{
+"added": "2026-10-14T15:28",
+"addedAt": "2026-10-15T08:02",
+"cat": "manga",
+"gloss": {
+"15 years": "15年",
+"a": "ひとつの",
+"a movie script": "映画の脚本",
+"a movie script 15 years ago": "15年前の映画の脚本",
+"a tragedy": "ひとつの悲劇",
+"about": "〜について",
+"after": "〜のあとに",
+"ago": "〜前に",
+"and": "〜と",
+"become": "〜になった",
+"black": "闇の・黒い",
+"black markets": "闇市",
+"calls": "呼ぶ",
+"country": "国",
+"cover": "表紙",
+"date": "日付",
+"days": "日（dayの複数形）",
+"defeat": "敗戦",
+"episode": "話",
+"episode 11": "11話",
+"finished": "書き終えた",
+"half": "半分・後編",
+"has": "〜した（have の3人称）",
+"he": "彼が",
+"he calls this tragedy": "彼はこの悲劇を〜と呼ぶ",
+"he calls this tragedy the second": "彼はこの悲劇を第2の〜と呼ぶ",
+"hit": "襲った",
+"in": "〜で",
+"in the black markets after the war": "戦後の闇市で",
+"is": "〜です",
+"it": "それを",
+"january": "1月",
+"january 5": "1月5日",
+"jiro": "二朗（人名）",
+"jiro sato": "佐藤二朗",
+"killer": "殺し屋",
+"manga": "漫画",
+"markets": "市（marketの複数形）",
+"months": "か月（monthの複数形）",
+"movie": "映画",
+"now": "いま",
+"now the script has": "いま、その脚本は〜になった",
+"of": "〜の",
+"on": "〜の上の・〜に",
+"on the cover of the script was january 5": "脚本の表紙の日付は1月5日だった",
+"out": "公開されて",
+"sato": "佐藤（人名）",
+"script": "脚本",
+"second": "第2の",
+"six": "6",
+"story": "お話",
+"the": "その",
+"the country": "この国を",
+"the cover of the script": "脚本の表紙",
+"the script": "その脚本",
+"the second half of episode 11": "11話の後編",
+"the second half of episode 11 is": "11話の後編は〜",
+"the story is about yamanami a killer": "お話は殺し屋ヤマナミについて",
+"the story is about yamanami a killer who": "お話は、〜した殺し屋ヤマナミについて",
+"this": "この",
+"tragedy": "悲劇",
+"two": "2つの",
+"two months and six days after he finished it": "書き上げた日の2か月と6日後に",
+"two months and six days after he finished it a tragedy": "書き上げた2か月と6日後に、悲劇が",
+"war": "戦争",
+"was": "〜だった",
+"who": "〜する（人）",
+"worked": "活動した（workの過去形）",
+"wrote": "書いた（writeの過去形）",
+"yamanami": "ヤマナミ（役名）",
+"years": "年（yearの複数形）"
+},
+"grad": [
+{
+"q1": "{Jiro Sato} さんは15年前に、映画の {script} を書きました。",
+"q2": "{Jiro Sato} さんは {15 years} 前に、{a movie script} を書きました。",
+"q3": "{Jiro Sato} 書いた {a movie script 15 years ago.}"
+},
+{
+"q1": "いま、{the script} が {manga} になりました。",
+"q2": "{Now}、{the script} が {manga} になりました。",
+"q3": "{Now the script has} なった {manga.}"
+},
+{
+"q1": "{script} の {cover} の日付は、{January 5} でした。",
+"q2": "{The cover of the script} の日付は、{January 5} でした。",
+"q3": "{The} 日付 {on the cover of the script was January 5.}"
+},
+{
+"q1": "書き上げた日の2か月と6日後に、この {country} を {tragedy} が襲いました。",
+"q2": "{Two months and six days after he finished it,} この {country} を {a tragedy} が襲いました。",
+"q3": "{Two months and six days after he finished it, a tragedy} 襲った {the country.}"
+},
+{
+"q1": "{He} はこの {tragedy} を「第2の敗戦」と呼んでいます。",
+"q2": "{He calls this tragedy}、「第2の敗戦」と。",
+"q3": "{He calls this tragedy the second} 敗戦."
+},
+{
+"q1": "お話は、戦後の {black markets} で暗躍した {killer}「{Yamanami}」についてです。",
+"q2": "{The story is about Yamanami, a killer}、戦後の {black markets} で暗躍した。",
+"q3": "{The story is about Yamanami, a killer who} 暗躍した {in the black markets after the war.}"
+},
+{
+"q1": "{episode 11} の後編が、{now} 公開されました。",
+"q2": "{The second half of episode 11} が、{now} 公開されました。",
+"q3": "{The second half of episode 11 is} 公開された {now.}"
+}
+],
+"grammar": {
+"body": "「2か月後に」のように、時間の長さのあとに after をつけ、そのあとに文を続けます。「〜してから○○後に」と言うときに使います。",
+"ex": [
+{
+"en": "Two days after the show, she called me.",
+"ja": "ショーの2日後に、彼女は私に電話をくれました。"
+},
+{
+"en": "Three weeks after he moved, he made a new friend.",
+"ja": "引っこしの3週間後に、彼は新しい友だちができました。"
+}
+],
+"title": "期間 ＋ after ＋ 文「〜の（期間）あとに」"
+},
+"id": "20261014-yamanami-manga",
+"level": 3,
+"lines": [
+{
+"en": "Jiro Sato wrote a movie script 15 years ago.",
+"ja": "佐藤二朗さんは15年前に、映画の脚本を書きました。",
+"mix": "佐藤二朗さんは15年前に、映画の {script} を書きました。"
+},
+{
+"en": "Now the script has become manga.",
+"ja": "いま、その脚本が漫画になりました。",
+"mix": "いま、その脚本が {manga} になりました。"
+},
+{
+"en": "The date on the cover of the script was January 5.",
+"ja": "脚本の表紙の日付は、1月5日でした。",
+"mix": "{script} の表紙の日付は、{January 5} でした。"
+},
+{
+"en": "Two months and six days after he finished it, a tragedy hit the country.",
+"ja": "書き上げた日の2か月と6日後に、この国を悲劇が襲いました。",
+"mix": "書き上げた日の2か月と6日後に、この国を {tragedy} が襲いました。"
+},
+{
+"en": "He calls this tragedy the second defeat.",
+"ja": "彼はこの悲劇を「第2の敗戦」と呼んでいます。",
+"mix": "彼はこの {tragedy} を「第2の敗戦」と呼んでいます。"
+},
+{
+"en": "The story is about Yamanami, a killer who worked in the black markets after the war.",
+"ja": "お話は、戦後の闇市で暗躍した殺し屋「ヤマナミ」についてです。",
+"mix": "お話は、戦後の {black markets} で暗躍した {killer}「ヤマナミ」についてです。"
+},
+{
+"en": "The second half of episode 11 is out now.",
+"ja": "11話の後編が、いま公開されました。",
+"mix": "{episode 11} の後編が、いま公開されました。"
+}
+],
+"post": {
+"account": "actor_satojiro",
+"date": "2026-10-14",
+"likes": 6607,
+"name": "佐藤二朗",
+"url": "https://x.com/actor_satojiro/status/2110256509158609177"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"1月5日",
+"2月6日",
+"11月5日"
+],
+"q": "脚本の表紙の日付は？",
+"why": "3文目に The date on the cover of the script was January 5. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"喜劇",
+"悲劇",
+"映画"
+],
+"q": "tragedy の意味は？",
+"why": "tragedy は「悲劇」。"
+},
+{
+"a": 2,
+"choices": [
+"for",
+"since",
+"after"
+],
+"q": "Two months ___ he finished it, a tragedy hit the country.",
+"why": "「書き上げた日の2か月後に」は Two months after he finished it。"
+}
+],
+"summary": "佐藤二朗さんが15年前に書いた映画脚本が漫画になり、11話後編が公開されました。主人公は戦後の闇市で暗躍した殺し屋「ヤマナミ」で、脚本を書き上げた日の2か月と6日後に、この国を「第2の敗戦」の悲劇が襲ったと書いています。",
+"talk": {
+"hint": "I want to read it because ___. / I do not want to read it because ___.",
+"ja": "この漫画を読みたいですか？ どうしてですか？",
+"q": "Do you want to read this manga? Why or why not?"
+},
+"title": "佐藤二朗さん、15年前の脚本が漫画に",
+"words": [
+{
+"ja": "脚本",
+"note": "ポストの「映画脚本」は a movie script。",
+"w": "script"
+},
+{
+"ja": "悲劇",
+"note": "ポストの「悲劇が襲う」は a tragedy hit the country。",
+"w": "tragedy"
+},
+{
+"ja": "殺し屋",
+"note": "ポストの「殺し屋」。kill（殺す）＋ er で「殺す人」。",
+"w": "killer"
+},
+{
+"ja": "闇市",
+"note": "ポストの「戦後の闇市」は the black markets after the war。",
+"w": "black market"
+},
+{
+"ja": "後編",
+"note": "ポストの「11話後編」は the second half of episode 11。",
+"w": "second half"
+}
+]
+},
+{
+"added": "2026-10-14T15:00",
+"addedAt": "2026-10-15T08:02",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"also": "〜も",
+"and": "〜と",
+"at": "〜で",
+"at toho cinemas roppongi hills": "TOHOシネマズ六本木ヒルズで",
+"be": "〜になる",
+"before": "〜の前に",
+"cast": "出演者",
+"cast members": "出演者たち",
+"cast members and the director will be on stage": "出演者と監督が舞台に立つ",
+"cast members and the director will be on stage before the": "出演者と監督が、その（映画）の前に舞台に立つ",
+"charisma": "カリスマ（名前の一部）",
+"cinemas": "シネマズ（映画館）",
+"come": "来る・登場する",
+"dance": "ダンス",
+"dance supervisor": "ダンス総監修",
+"dance supervisor charisma kantaro will also": "ダンス総監修のカリスマカンタローさんも〜する",
+"dance supervisor charisma kantaro will also come on": "ダンス総監修のカリスマカンタローさんも（舞台）に上がる",
+"director": "監督",
+"early": "先行の・早い",
+"early lottery": "先行抽選",
+"for": "〜の",
+"friday": "金曜日",
+"friday november 27": "11月27日（金）",
+"have": "〜を開く",
+"hills": "ヒルズ",
+"it": "それ",
+"it will be": "（それは）〜になる",
+"it will be the 9 50": "（それは）9時50分の〜になる",
+"japan": "日本",
+"kantaro": "カンタロー（名前の一部）",
+"lottery": "抽選",
+"members": "メンバー・人たち",
+"movie": "映画",
+"november": "11月",
+"october": "10月",
+"october 15": "10月15日",
+"october 31": "10月31日",
+"on": "〜に",
+"on friday november 27": "11月27日（金）に",
+"on october 15": "10月15日に",
+"on saturday october 31": "10月31日（土）に",
+"opens": "公開される",
+"premiere": "プレミア上映",
+"roppongi": "六本木",
+"saturday": "土曜日",
+"show": "（上映の）回",
+"shown": "上映される（showの過去分詞）",
+"stage": "舞台",
+"starts": "始まる",
+"supervisor": "監修する人",
+"the": "その",
+"the director": "監督",
+"the early lottery for tickets": "チケットの先行抽選",
+"the movie": "映画",
+"the movie wandance": "映画『ワンダンス』",
+"the movie wandance will have": "映画『ワンダンス』は〜を開く",
+"the movie wandance will have a japan": "映画『ワンダンス』は、ジャパン（プレミア）を開く",
+"tickets": "チケット",
+"toho": "TOHO（映画館の名前）",
+"toho cinemas": "TOHOシネマズ",
+"wandance": "ワンダンス（作品名）",
+"will": "〜するだろう"
+},
+"grad": [
+{
+"q1": "{The movie Wandance} のジャパンプレミアが開催されます。",
+"q2": "{The movie Wandance will have} ジャパンプレミア。",
+"q3": "{The movie Wandance will have a Japan} プレミア。"
+},
+{
+"q1": "{October 31}（{Saturday}）の9時50分の回です。",
+"q2": "{It will be} 9時50分の回 {on Saturday, October 31.}",
+"q3": "{It will be the 9:50} 回 {on Saturday, October 31.}"
+},
+{
+"q1": "{TOHO Cinemas} 六本木ヒルズで上映されます。",
+"q2": "{It} は {TOHO Cinemas} 六本木ヒルズで上映されます。",
+"q3": "{It will be} 上映 {at TOHO Cinemas Roppongi Hills.}"
+},
+{
+"q1": "上映前に、{Cast members} と {the director} が舞台に立ちます。",
+"q2": "{Cast members and the director will be on stage} 上映前に。",
+"q3": "{Cast members and the director will be on stage before the} 映画。"
+},
+{
+"q1": "{Dance supervisor} のカリスマカンタローさんも登壇予定です。",
+"q2": "{Dance supervisor Charisma Kantaro will also} 登壇予定。",
+"q3": "{Dance supervisor Charisma Kantaro will also come on} 舞台。"
+},
+{
+"q1": "{Tickets} の {early lottery} は、10月15日に始まります。",
+"q2": "{The early lottery for tickets} は、{October 15} に始まります。",
+"q3": "{The early lottery for tickets} 始まる {on October 15.}"
+},
+{
+"q1": "{The movie} の公開は、11月27日（金）です。",
+"q2": "{The movie} は、{Friday, November 27} に公開されます。",
+"q3": "{The movie} 公開 {on Friday, November 27.}"
+}
+],
+"grammar": {
+"body": "have は「持っている」だけでなく、パーティーやイベントを「開く」ときにも使います。ポストの「ジャパンプレミア開催」は have a Japan Premiere で表せます。未来のことは will have です。",
+"ex": [
+{
+"en": "We have a party on Sunday.",
+"ja": "私たちは日曜日にパーティーを開きます。"
+},
+{
+"en": "The school will have a festival in November.",
+"ja": "その学校は11月にお祭りを開きます。"
+}
+],
+"title": "have「〜を開く・行う」"
+},
+"id": "20261014-wandance-premiere",
+"level": 1,
+"lines": [
+{
+"en": "The movie Wandance will have a Japan Premiere.",
+"ja": "映画『ワンダンス』のジャパンプレミアが開催されます。",
+"mix": "{movie}『ワンダンス』のジャパンプレミアが開催されます。"
+},
+{
+"en": "It will be the 9:50 show on Saturday, October 31.",
+"ja": "10月31日（土）の9時50分の回です。",
+"mix": "{October 31}（土）の9時50分の回です。"
+},
+{
+"en": "It will be shown at TOHO Cinemas Roppongi Hills.",
+"ja": "TOHOシネマズ六本木ヒルズで上映されます。",
+"mix": "{TOHO} シネマズ六本木ヒルズで上映されます。"
+},
+{
+"en": "Cast members and the director will be on stage before the movie.",
+"ja": "上映前に、キャストと監督が舞台に立ちます。",
+"mix": "上映前に、{cast members} と監督が舞台に立ちます。"
+},
+{
+"en": "Dance supervisor Charisma Kantaro will also come on stage.",
+"ja": "ダンス総監修のカリスマカンタローさんも登壇予定です。",
+"mix": "ダンス {supervisor} のカリスマカンタローさんも登壇予定です。"
+},
+{
+"en": "The early lottery for tickets starts on October 15.",
+"ja": "チケットの先行抽選は、10月15日に始まります。",
+"mix": "{tickets} の先行抽選は、10月15日に始まります。"
+},
+{
+"en": "The movie opens on Friday, November 27.",
+"ja": "映画の公開は、11月27日（金）です。",
+"mix": "{movie} の公開は、11月27日（金）です。"
+}
+],
+"post": {
+"account": "wandance_movie",
+"date": "2026-10-14",
+"likes": 4660,
+"name": "映画『ワンダンス』公式",
+"url": "https://x.com/wandance_movie/status/2110249246050120020"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"10月31日",
+"11月27日",
+"10月15日"
+],
+"q": "映画の公開日は？",
+"why": "7文目に The movie opens on Friday, November 27. とあります。10月31日はジャパンプレミアの日です。"
+},
+{
+"a": 2,
+"choices": [
+"割引",
+"予告",
+"抽選"
+],
+"q": "lottery の意味は？",
+"why": "early lottery は「先行抽選」です。"
+},
+{
+"a": 1,
+"choices": [
+"make",
+"have",
+"go"
+],
+"q": "The movie will ___ a Japan Premiere.（ジャパンプレミアを開く）",
+"why": "イベントを「開く」ときは have を使います。"
+}
+],
+"summary": "映画『ワンダンス』のジャパンプレミアが、10月31日（土）9時50分の回、TOHOシネマズ六本木ヒルズで開催されます。上映前に舞台挨拶があります。チケットの先行抽選は10月15日の12時から。映画の公開は11月27日（金）です。",
+"talk": {
+"hint": "Yes, I do. / No, I don't, because ___.",
+"ja": "ダンスの映画は好きですか？",
+"q": "Do you like dance movies?"
+},
+"title": "映画『ワンダンス』10月31日にジャパンプレミア",
+"words": [
+{
+"ja": "プレミア上映・初上映",
+"note": "ポストの「ジャパンプレミア」は Japan Premiere。日本で最初に見せる上映のことです。",
+"w": "premiere"
+},
+{
+"ja": "舞台に（立って）",
+"note": "ポストの「舞台挨拶」「登壇」は、舞台に立つので on stage で表しました。",
+"w": "on stage"
+},
+{
+"ja": "監修する人",
+"note": "ポストの「ダンス総監修」は dance supervisor。",
+"w": "supervisor"
+},
+{
+"ja": "抽選",
+"note": "ポストの「先行抽選」は early lottery。先に申し込める抽選です。",
+"w": "lottery"
+},
+{
+"ja": "（映画の）上映回",
+"note": "ポストの「9:50の回」は the 9:50 show。",
+"w": "show"
+}
+]
+},
+{
+"added": "2026-10-14T14:03",
+"addedAt": "2026-10-15T08:02",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a digger": "ディガー（掘る道具）",
+"a long time": "長い間",
+"a tool for digging deep into the future": "未来を深く掘り進む道具",
+"and": "そして",
+"article": "記事",
+"back": "控える（held backで）",
+"body": "身体",
+"calls": "呼ぶ",
+"deep": "深く",
+"digest": "咀嚼する",
+"digger": "ディガー（作品名）",
+"digging": "掘り進むこと",
+"film": "映画",
+"for": "〜のための",
+"from": "〜するのを",
+"from posting my thoughts on digger until the interview article was released": "対談記事の公開まで感想の投稿を控えた",
+"future": "未来",
+"gives": "与える",
+"grow": "芽生える",
+"he": "彼（小島さん）",
+"held": "控えた（holdの過去形）",
+"i": "私は",
+"if": "もし〜なら",
+"if you digest this film and live with it": "この映画を咀嚼し共に生きれば",
+"if you digest this film and live with it a tool for digging deep into the future will": "この映画を咀嚼し共に生きれば、未来を掘る道具が〜するはず",
+"in": "〜の中で",
+"inarritu's": "イニャリトゥ監督の",
+"inarritu's digger": "イニャリトゥ監督の『ディガー』",
+"inarritu's digger is a film that we living in today's world should": "現代を生きる私たちが観るべき映画『ディガー』",
+"inside": "〜の中に",
+"inside the viewer's body": "観客の身体の中に",
+"inside the viewer's body and": "観客の身体の中に、そして",
+"inside you": "あなたの中に",
+"insights": "気づき",
+"interview": "対談",
+"interview article": "対談記事",
+"into": "〜の中へ",
+"is": "〜です",
+"it": "それ",
+"it is a film": "それは映画です",
+"it is a film that will": "それは〜することになる映画です",
+"live": "生きる",
+"living": "生きている",
+"long": "長い",
+"many": "たくさんの",
+"many insights and warnings": "たくさんの気づきと警鐘",
+"my": "私の",
+"on": "〜について",
+"posting": "投稿すること",
+"released": "公開された",
+"see": "観る",
+"should": "〜すべき",
+"stay": "寄り添う",
+"stays": "残る",
+"that": "〜するところの",
+"that tool": "その道具",
+"that tool a digger": "その道具をディガーと",
+"the": "その",
+"the future": "未来",
+"them": "彼ら（観客）に",
+"this": "この",
+"thoughts": "感想",
+"time": "間",
+"today's": "現代の",
+"today's world": "現代",
+"tool": "道具",
+"until": "〜まで",
+"until the interview article was released": "対談記事が公開されるまで",
+"viewer's": "観客の",
+"viewer's body": "観客の身体",
+"warnings": "警鐘",
+"was": "〜された（was releasedで）",
+"we": "私たち",
+"will": "〜するはず",
+"with": "〜と共に",
+"with you for a long time": "長くあなたと共に",
+"world": "世界",
+"you": "あなた"
+},
+"grad": [
+{
+"q1": "{interview article} が公開されるまで、{Digger} の {thoughts} を投稿するのを控えていました。",
+"q2": "{until the interview article was released}、{Digger} の {thoughts} を投稿するのを控えていました。",
+"q3": "{I} 控えた {from posting my thoughts on Digger until the interview article was released.}"
+},
+{
+"q1": "{Digger} は、{today's world} を生き抜く私たちが観るべき {film} です。",
+"q2": "{Inarritu's Digger} は、{today's world} を生き抜く私たちが観るべき {film} です。",
+"q3": "{Inarritu's Digger is a film that we living in today's world should} 観る。"
+},
+{
+"q1": "この作品は {viewer's body} の中に残り続け、さまざまな {insights} や {warnings} を与えてくれます。",
+"q2": "この作品は {inside the viewer's body}、{many insights and warnings} を与えてくれます。",
+"q3": "{It} 残り続け {inside the viewer's body and} 与える {many insights and warnings.}"
+},
+{
+"q1": "この {film} を咀嚼し、共に生きれば、{the future} を深く掘り進むための {tool} が、{you} の中に芽生えるはずです。",
+"q2": "{If you digest this film and live with it}、{inside you}、{a tool for digging deep into the future} が芽生えるはずです。",
+"q3": "{If you digest this film and live with it, a tool for digging deep into the future will} 芽生える {inside you.}"
+},
+{
+"q1": "小島さんは、その {tool} を {digger} と呼んでいます。",
+"q2": "小島さんは、{that tool} を {a digger} と呼んでいます。",
+"q3": "{He} 呼んでいます {that tool a digger.}"
+},
+{
+"q1": "{a long time} あなたに寄り添うことになる {film} です。",
+"q2": "{It is a film} で、{with you for a long time} 寄り添うことになります。",
+"q3": "{It is a film that will} 寄り添う {with you for a long time.}"
+}
+],
+"grammar": {
+"body": "should のあとに動詞の原形を置くと、「〜したほうがいい・〜すべきだ」というすすめや義務を表します。ポストの「観るべき作品」は a film that we should see です。",
+"ex": [
+{
+"en": "You should see this movie.",
+"ja": "あなたはこの映画を観るべきです。"
+},
+{
+"en": "We should help each other.",
+"ja": "私たちは助け合うべきです。"
+}
+],
+"title": "should ＋ 動詞「〜すべきだ」"
+},
+"id": "20261014-digger-kojima",
+"level": 3,
+"lines": [
+{
+"en": "I held back from posting my thoughts on Digger until the interview article was released.",
+"ja": "対談記事が公開されるまで、『ディガー』の感想を投稿するのを控えていました。",
+"mix": "{interview article} が公開されるまで、『ディガー』の感想を投稿するのを控えていました。"
+},
+{
+"en": "Inarritu's Digger is a film that we living in today's world should see.",
+"ja": "イニャリトゥ監督の『ディガー』は、現代を生き抜く私たちが観るべき作品です。",
+"mix": "イニャリトゥ監督の『ディガー』は、現代を生き抜く私たちが観るべき {film} です。"
+},
+{
+"en": "It stays inside the viewer's body and gives them many insights and warnings.",
+"ja": "この作品は観客の身体の中に残り続け、さまざまな気づきや警鐘を与えてくれます。",
+"mix": "この作品は観客の身体の中に残り続け、さまざまな {insights} や {warnings} を与えてくれます。"
+},
+{
+"en": "If you digest this film and live with it, a tool for digging deep into the future will grow inside you.",
+"ja": "この映画を咀嚼し、共に生きれば、未来を深く掘り進むための道具が、あなたの中に芽生えるはずです。",
+"mix": "この映画を咀嚼し、共に生きれば、{future} を深く掘り進むための {tool} が、あなたの中に芽生えるはずです。"
+},
+{
+"en": "He calls that tool a digger.",
+"ja": "小島さんは、その道具を「ディガー」と呼んでいます。",
+"mix": "小島さんは、その {tool} を「ディガー」と呼んでいます。"
+},
+{
+"en": "It is a film that will stay with you for a long time.",
+"ja": "長くあなたに寄り添うことになる映画です。",
+"mix": "あなたに長く寄り添うことになる {film} です。"
+}
+],
+"post": {
+"account": "Kojima_Hideo",
+"date": "2026-10-14",
+"likes": 6448,
+"name": "小島秀夫",
+"url": "https://x.com/Kojima_Hideo/status/2110235048280797624"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"映画をまだ見ていなかった",
+"対談記事が公開されるまで待っていた",
+"監督に止められた"
+],
+"q": "小島さんが感想ポストを控えていた理由は？",
+"why": "1文目に until the interview article was released（対談記事が公開されるまで）とあります。"
+},
+{
+"a": 2,
+"choices": [
+"捨てる",
+"運ぶ",
+"じっくり消化して理解する"
+],
+"q": "digest this film の digest に近い意味は？",
+"why": "digest は食べ物を消化することから「じっくり理解する」の意味にも使います。"
+},
+{
+"a": 0,
+"choices": [
+"should",
+"did",
+"are"
+],
+"q": "We ___ see this film.（観るべきだ）",
+"why": "「〜すべきだ」は should ＋ 動詞の原形です。"
+}
+],
+"summary": "対談記事の公開まで感想を控えていた小島秀夫さんが、イニャリトゥ監督の『DIGGER／ディガー』は現代を生き抜く私たちが観るべき作品だと語りました。観客の身体の中に残って気づきや警鐘を与え、咀嚼して共に生きれば、未来を深く掘り進む「道具（ディガー）」が芽生えると言います。",
+"talk": {
+"hint": "It is ___. It stays with me because ___.",
+"ja": "長く心に残っている映画はありますか？",
+"q": "Do you have a movie that stays with you for a long time?"
+},
+"title": "小島秀夫さん、『DIGGER／ディガー』は観客の中に残り続ける映画",
+"words": [
+{
+"ja": "咀嚼する・じっくり理解する",
+"note": "ポストの「咀嚼し」は digest。もとは「食べ物を消化する」という意味です。",
+"w": "digest"
+},
+{
+"ja": "気づき・深い理解",
+"note": "ポストの「気づき」。insights と複数形で使っています。",
+"w": "insight"
+},
+{
+"ja": "警鐘・警告",
+"note": "ポストの「警鐘」は warnings で表せます。",
+"w": "warning"
+},
+{
+"ja": "対談・インタビュー",
+"note": "ポストの「対談記事」は interview article。",
+"w": "interview"
+},
+{
+"ja": "公開する・発表する",
+"note": "ポストの「リリースされる」は was released（受け身）。",
+"w": "release"
+}
+]
+},
+{
+"added": "2026-10-14T13:30",
+"addedAt": "2026-10-15T08:02",
+"cat": "art",
+"gloss": {
+"100 works": "100点",
+"a": "ひとつの",
+"a cat": "猫",
+"a cat and a small blue butterfly": "猫と小さな青い蝶",
+"about": "約",
+"about 100 works": "約100点",
+"and": "と",
+"art": "美術",
+"at": "〜で",
+"at the national museum of modern art tokyo": "東京国立近代美術館で",
+"blue": "青い",
+"blue butterfly": "青い蝶",
+"butterfly": "蝶",
+"cat": "猫",
+"drawing": "描写",
+"drawing skill": "描写力",
+"exhibition": "展覧会",
+"gyoshu": "御舟（人名）",
+"hayami": "速水（人名）",
+"hayami gyoshu": "速水御舟",
+"he": "彼（速水御舟）は",
+"include": "含む",
+"incredible": "超絶の",
+"incredible drawing skill": "超絶の描写力",
+"innovative": "斬新な",
+"is": "〜です",
+"it": "それ（展覧会）は",
+"modern": "近代の",
+"museum": "美術館",
+"national": "国立の",
+"of": "〜の",
+"one": "ひとつの",
+"one picture": "画像のひとつ",
+"other": "その他の",
+"painted": "描いた",
+"paintings": "絵画",
+"picture": "画像",
+"realistic": "写実的な",
+"realistic paintings": "写実的な絵画",
+"realistic paintings and other works": "写実画などの作品",
+"shows": "見せる",
+"skill": "力",
+"small": "小さな",
+"the": "その",
+"the exhibition innovative hayami gyoshu": "展覧会「斬新！ 速水御舟」",
+"them": "それらを",
+"them with incredible drawing skill": "超絶の描写力でそれらを",
+"they": "それら（作品）は",
+"tokyo": "東京",
+"with": "〜で",
+"with incredible drawing skill": "超絶の描写力で",
+"works": "作品"
+},
+"grad": [
+{
+"q1": "{exhibition}「斬新！ {Hayami Gyoshu}」が、東京国立近代美術館で開催されます。",
+"q2": "{The exhibition Innovative! Hayami Gyoshu} が、{Tokyo} 国立近代美術館で開催されます。",
+"q3": "{The exhibition Innovative! Hayami Gyoshu} 開催される {at the National Museum of Modern Art, Tokyo.}"
+},
+{
+"q1": "{about 100 works} が並びます。",
+"q2": "{about 100 works} が並びます。",
+"q3": "{It} 展示する {about 100 works.}"
+},
+{
+"q1": "{realistic paintings} やその他の {works} が含まれています。",
+"q2": "{realistic paintings and other works} が含まれています。",
+"q3": "{They} 含みます {realistic paintings and other works.}"
+},
+{
+"q1": "彼は {incredible drawing skill} でそれらを描きました。",
+"q2": "彼は {with incredible drawing skill} それらを描きました。",
+"q3": "{He} 描いた {them with incredible drawing skill.}"
+},
+{
+"q1": "{One picture} には、{cat} と小さな青い {butterfly} が描かれています。",
+"q2": "{One picture} には、{a cat} と小さな {blue butterfly} が描かれています。",
+"q3": "{One picture} 描いている {a cat and a small blue butterfly.}"
+}
+],
+"grammar": {
+"body": "about は数の前に置くと「約・およそ」の意味になります。ポストの「約100点」は about 100 works です。",
+"ex": [
+{
+"en": "There are about 30 students in my class.",
+"ja": "わたしのクラスには約30人の生徒がいます。"
+},
+{
+"en": "It takes about an hour to get there.",
+"ja": "そこへ行くのに約1時間かかります。"
+}
+],
+"title": "about ＋ 数「約〜」"
+},
+"id": "20261014-art-hayami-gyoshu",
+"level": 2,
+"lines": [
+{
+"en": "The exhibition Innovative! Hayami Gyoshu is at the National Museum of Modern Art, Tokyo.",
+"ja": "展覧会「斬新！ 速水御舟」が、東京国立近代美術館で開催されます。",
+"mix": "{exhibition}「斬新！ 速水御舟」が、東京国立近代美術館で開催されます。"
+},
+{
+"en": "It shows about 100 works.",
+"ja": "約100点が並びます。",
+"mix": "約 {100 works} が並びます。"
+},
+{
+"en": "They include realistic paintings and other works.",
+"ja": "写実的な絵画やその他の作品が含まれています。",
+"mix": "{realistic paintings} やその他の作品が含まれています。"
+},
+{
+"en": "He painted them with incredible drawing skill.",
+"ja": "彼は「超絶の描写力」でそれらを描きました。",
+"mix": "彼は超絶の {drawing skill} でそれらを描きました。"
+},
+{
+"en": "One picture shows a cat and a small blue butterfly.",
+"ja": "画像のひとつには、猫と小さな青い蝶が描かれています。",
+"mix": "画像のひとつには、{cat} と小さな青い {butterfly} が描かれています。"
+}
+],
+"post": {
+"account": "fashionpressnet",
+"date": "2026-10-14",
+"likes": 552,
+"name": "Fashion Press",
+"url": "https://x.com/fashionpressnet/status/2110226617763242046"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"約10点",
+"約1000点",
+"約100点"
+],
+"q": "この展覧会に並ぶ作品は約何点？",
+"why": "2文目に about 100 works とあります。"
+},
+{
+"a": 0,
+"choices": [
+"蝶",
+"蜂",
+"鳥"
+],
+"q": "butterfly の意味は？",
+"why": "butterfly は「蝶」。画像の絵に描かれています。"
+},
+{
+"a": 1,
+"choices": [
+"at",
+"about",
+"by"
+],
+"q": "It shows ___ 100 works.（約100点）",
+"why": "数の前の about で「約」の意味になります。"
+}
+],
+"summary": "東京国立近代美術館で、展覧会「斬新！ 速水御舟」が開かれます。「超絶の描写力」で描いた写実画など約100点が並びます。ポストの画像には、猫と小さな青い蝶の作品があります。",
+"talk": {
+"hint": "I like them because ___. / I don't like them because ___.",
+"ja": "写実的な絵は好きですか？",
+"q": "Do you like realistic paintings?"
+},
+"title": "展覧会「斬新！ 速水御舟」東京国立近代美術館で約100点",
+"words": [
+{
+"ja": "展覧会",
+"note": "ポストの「展覧会」。",
+"w": "exhibition"
+},
+{
+"ja": "作品",
+"note": "ポストの「約100点」の「点」は works（作品）で表せます。",
+"w": "work"
+},
+{
+"ja": "写実的な・本物そっくりの",
+"note": "ポストの「写実画」は realistic paintings。",
+"w": "realistic"
+},
+{
+"ja": "技術・腕前",
+"note": "ポストの「描写力」を drawing skill と表しました。",
+"w": "skill"
+},
+{
+"ja": "蝶",
+"note": "画像の絵に描かれているもの。",
+"w": "butterfly"
+}
+]
+},
+{
+"added": "2026-10-14T11:45",
+"addedAt": "2026-10-15T08:02",
+"cat": "movie",
+"gloss": {
+"500 dollars": "500ドル",
+"70 000 yen": "7万円",
+"a": "ひとりの・ひとつの",
+"a genius": "天才",
+"a tip of 500 dollars": "500ドルのチップ",
+"about": "約",
+"airplane": "飛行機",
+"airport": "空港",
+"airport worker": "空港の係員",
+"an": "ひとつの",
+"an airplane": "飛行機",
+"an airport worker": "空港の係員",
+"an airport worker found": "空港の係員が見つけた",
+"an airport worker found it": "空港の係員がそれを見つけた",
+"avengers": "アベンジャーズ",
+"avengers infinity war": "アベンジャーズ/インフィニティ・ウォー",
+"bettany": "ベタニー（人名）",
+"bettany said": "ベタニーさんは言った",
+"bettany said the": "ベタニーさんは、その〜と言った",
+"dollars": "ドル",
+"for": "〜で・〜のために",
+"found": "見つけた（findの過去形）",
+"from": "〜から",
+"gave": "渡した（giveの過去形）",
+"genius": "天才",
+"he": "彼は",
+"he says": "彼は〜と話す",
+"he says he": "彼は、自分が〜と話す",
+"in": "〜で・〜に",
+"infinity": "インフィニティ",
+"it": "それを",
+"left": "置き忘れた（leaveの過去形）",
+"like": "〜のような",
+"like a genius": "天才のように",
+"of": "〜の",
+"on": "〜に（乗り物の上）",
+"paul": "ポール（人名）",
+"paul bettany": "ポール・ベタニー",
+"played": "演じた（playの過去形）",
+"post": "ポスト",
+"quickly": "すぐに",
+"said": "言った（sayの過去形）",
+"saved": "救った（saveの過去形）",
+"says": "話している",
+"script": "脚本",
+"spoilers": "ネタバレ（spoilerの複数形）",
+"the": "その",
+"the post says": "ポストは〜と言う",
+"the post says he": "ポストは、彼が〜と言う",
+"the script": "その脚本",
+"the script on an airplane": "飛行機の中の脚本",
+"the worker": "その係員",
+"the worker a tip of 500 dollars about 70 000 yen": "係員に500ドル（約7万円）のチップを",
+"the world": "世界",
+"the world from spoilers for 500 dollars": "500ドルでネタバレから世界を",
+"tip": "チップ",
+"vision": "ヴィジョン（役名）",
+"vision in avengers infinity war": "『インフィニティ・ウォー』のヴィジョン",
+"war": "ウォー（戦い）・戦争",
+"was": "〜だった",
+"was like a genius": "天才のようだった",
+"worker": "係員・働く人",
+"world": "世界",
+"yen": "円"
+},
+"grad": [
+{
+"q1": "{Paul Bettany} さんは『アベンジャーズ/インフィニティ・ウォー』で {Vision} を演じました。",
+"q2": "{Paul Bettany} さんは『{Avengers: Infinity War}』で {Vision} を演じました。",
+"q3": "{Paul Bettany} 演じた {Vision in Avengers: Infinity War.}"
+},
+{
+"q1": "{He} は、{script} を {airplane} に置き忘れたと話しています。",
+"q2": "{He says}、{the script} を {an airplane} に置き忘れたと。",
+"q3": "{He says he} 置き忘れた {the script on an airplane.}"
+},
+{
+"q1": "{An airport worker} が、すぐに見つけてくれました。",
+"q2": "{An airport worker found} それをすぐに。",
+"q3": "{An airport worker found it} すぐに。"
+},
+{
+"q1": "{Bettany} さんは、その係員を {a genius} のようだと言いました。",
+"q2": "{Bettany said}、その係員は {like a genius}。",
+"q3": "{Bettany said the} 係員 {was like a genius.}"
+},
+{
+"q1": "{He} は、係員にお礼の {tip} として {500 dollars}（約7万円）を渡しました。",
+"q2": "{He} は、{the worker} に {a tip of 500 dollars}、約 {70,000 yen} 渡しました。",
+"q3": "{He} 渡した {the worker a tip of 500 dollars, about 70,000 yen.}"
+},
+{
+"q1": "ポストには「{500 dollars} で {spoilers} から世界を救った人」とあります。",
+"q2": "{The post says}、「{500 dollars} で {spoilers} から {the world} を救った」と。",
+"q3": "{The post says he} 救った {the world from spoilers for 500 dollars.}"
+}
+],
+"grammar": {
+"body": "形容詞に -ly をつけると、「どのように」を表す副詞になります（quick → quickly）。ふつうは動詞や文のあとに置きます。",
+"ex": [
+{
+"en": "She answered the question quickly.",
+"ja": "彼女はその質問にすぐ答えました。"
+},
+{
+"en": "He walks slowly.",
+"ja": "彼はゆっくり歩きます。"
+}
+],
+"title": "副詞 quickly「すばやく・すぐに」"
+},
+"id": "20261014-bettany-script",
+"level": 2,
+"lines": [
+{
+"en": "Paul Bettany played Vision in Avengers: Infinity War.",
+"ja": "ポール・ベタニーさんは『アベンジャーズ/インフィニティ・ウォー』でヴィジョンを演じました。",
+"mix": "ポール・ベタニーさんは『アベンジャーズ/インフィニティ・ウォー』で {Vision} を演じました。"
+},
+{
+"en": "He says he left the script on an airplane.",
+"ja": "彼は、脚本を飛行機に置き忘れたと話しています。",
+"mix": "彼は、{script} を {airplane} に置き忘れたと話しています。"
+},
+{
+"en": "An airport worker found it quickly.",
+"ja": "空港の係員が、すぐに見つけてくれました。",
+"mix": "{airport worker} が、すぐに見つけてくれました。"
+},
+{
+"en": "Bettany said the worker was like a genius.",
+"ja": "ベタニーさんは、その係員を天才のようだと言いました。",
+"mix": "ベタニーさんは、その係員を {genius} のようだと言いました。"
+},
+{
+"en": "He gave the worker a tip of 500 dollars, about 70,000 yen.",
+"ja": "彼は、係員にお礼のチップとして500ドル（約7万円）を渡しました。",
+"mix": "彼は、係員にお礼の {tip} として {500 dollars}（約7万円）を渡しました。"
+},
+{
+"en": "The post says he saved the world from spoilers for 500 dollars.",
+"ja": "ポストには「500ドルでネタバレから世界を救った人」とあります。",
+"mix": "ポストには「500ドルで {spoilers} から世界を救った人」とあります。"
+}
+],
+"post": {
+"account": "MCUFANLIFE",
+"date": "2026-10-14",
+"likes": 1156,
+"name": "MCU FAN LIFE【マーベル映画ドラマ情報】",
+"url": "https://x.com/MCUFANLIFE/status/2110200167362146619"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"50ドル",
+"5000円",
+"500ドル"
+],
+"q": "ベタニーさんが渡したチップはいくら？",
+"why": "5文目に a tip of 500 dollars とあります。"
+},
+{
+"a": 0,
+"choices": [
+"ネタバレ",
+"天気",
+"計画"
+],
+"q": "spoiler の意味は？",
+"why": "spoiler は「ネタバレ」。"
+},
+{
+"a": 1,
+"choices": [
+"quick",
+"quickly",
+"quicker"
+],
+"q": "An airport worker found it ___.（すぐに）",
+"why": "動詞 found を説明するので、副詞 quickly を使います。"
+}
+],
+"summary": "ヴィジョン役のポール・ベタニーさんが、『アベンジャーズ/インフィニティ・ウォー』の脚本を飛行機に置き忘れたと話しました。空港の係員がすぐ見つけてくれ、お礼に500ドル（約7万円）のチップを渡したそうです。",
+"talk": {
+"hint": "I like / do not like spoilers because ___.",
+"ja": "ネタバレは好きですか？",
+"q": "Do you like spoilers?"
+},
+"title": "ポール・ベタニー、IWの脚本を飛行機に置き忘れる",
+"words": [
+{
+"ja": "脚本",
+"note": "ポストの「脚本」。映画やドラマの台本のことです。",
+"w": "script"
+},
+{
+"ja": "置き忘れる（過去形は left）",
+"note": "ポストの「置き忘れた」は left the script on an airplane。",
+"w": "leave"
+},
+{
+"ja": "チップ",
+"note": "ポストの「チップで500ドル」は a tip of 500 dollars。",
+"w": "tip"
+},
+{
+"ja": "天才",
+"note": "like a genius ＝ 天才みたいに。",
+"w": "genius"
+},
+{
+"ja": "ネタバレ",
+"note": "ポストの「ネタバレ」。複数形の spoilers でも使います。",
+"w": "spoiler"
+}
+]
+},
+{
+"added": "2026-10-14T10:00",
+"addedAt": "2026-10-15T08:02",
+"cat": "art",
+"gloss": {
+"a": "ひとつの",
+"a discount": "割引",
+"an": "ひとつの",
+"are": "〜です・〜されている",
+"at": "〜で・〜に",
+"at the daitokuji show you can see the bowl": "大徳寺展で、その碗が見られる",
+"at the daitokuji show you can see the bowl only in the": "大徳寺展でその碗が見られるのは、（前期）だけ",
+"both": "どちらも",
+"bowl": "碗（曜変天目）",
+"bowls": "碗・茶碗（bowlの複数形）",
+"bowls are national treasures": "碗は国宝です",
+"can": "〜できる",
+"daitokuji": "大徳寺",
+"daitokuji show": "大徳寺展",
+"discount": "割引",
+"discounts": "割引（discountの複数形）",
+"display": "展示",
+"each": "それぞれ",
+"first": "最初の",
+"from": "〜から",
+"get": "受ける・得る",
+"half": "半分・前半",
+"in": "〜で",
+"is": "〜です",
+"is from october 14": "10月14日からです",
+"is from october 14 to november 8": "10月14日から11月8日までです",
+"museum": "美術館",
+"museums": "美術館（museumの複数形）",
+"national": "国の",
+"national treasures": "国宝",
+"november": "11月",
+"november 8": "11月8日",
+"october": "10月",
+"october 14": "10月14日",
+"offer": "提供する",
+"on": "〜に（on displayで展示中）",
+"only": "〜だけ",
+"or": "または・〜か",
+"other": "もう一方の",
+"other's": "相手の",
+"price": "料金",
+"regular": "一般の・通常の",
+"same": "同じ",
+"see": "見る",
+"show": "見せる・展覧会",
+"show an unused ticket or a ticket stub": "未使用のチケットか半券を見せて",
+"show an unused ticket or a ticket stub at the other": "未使用のチケットか半券を、もう一方の（美術館で）見せて",
+"stub": "半券",
+"tenmoku": "天目（茶碗の名前の一部）",
+"the": "その",
+"the bowl": "その碗（曜変天目）",
+"the two museums offer discounts": "2つの美術館が割引を出している",
+"the two museums offer discounts to each other's": "2つの美術館が、たがいの（来館者に）割引を出す",
+"ticket": "チケット",
+"ticket stub": "半券",
+"time": "時・時期",
+"to": "〜に・〜まで",
+"tokyo": "東京",
+"treasures": "宝（treasureの複数形）",
+"two": "2つの",
+"two yohen tenmoku bowls": "曜変天目の2碗",
+"two yohen tenmoku bowls are on display in tokyo": "曜変天目の2碗が東京で展示されている",
+"two yohen tenmoku bowls are on display in tokyo at the same": "曜変天目の2碗が東京で同じ（時期に公開）",
+"unused": "未使用の",
+"visitors": "来館者",
+"will": "〜するだろう",
+"yohen": "曜変（茶碗の名前の一部）",
+"you": "あなたは",
+"you will get a discount": "割引が受けられます",
+"you will get a discount from the regular": "一般の（料金）から割引が受けられます"
+},
+"grad": [
+{
+"q1": "{Two Yohen Tenmoku bowls} が、{Tokyo} で同じ時期に公開されます。",
+"q2": "{Two Yohen Tenmoku bowls are on display in Tokyo} 同じ時期に。",
+"q3": "{Two Yohen Tenmoku bowls are on display in Tokyo at the same} 時期。"
+},
+{
+"q1": "どちらの {bowls} も {national treasures} です。",
+"q2": "どちらの {bowls are national treasures} です。",
+"q3": "どちらの {bowls are national treasures.}"
+},
+{
+"q1": "2つの {museums} が、たがいの来館者に {discounts} をしています。",
+"q2": "{The two museums offer discounts} たがいの来館者に。",
+"q3": "{The two museums offer discounts to each other's} 来館者。"
+},
+{
+"q1": "もう一方の美術館で、未使用の {ticket} か {ticket stub} を見せてください。",
+"q2": "{Show an unused ticket or a ticket stub} もう一方の美術館で。",
+"q3": "{Show an unused ticket or a ticket stub at the other} 美術館。"
+},
+{
+"q1": "一般料金から {a discount} が受けられます。",
+"q2": "{You will get a discount} 一般料金から。",
+"q3": "{You will get a discount from the regular} 料金。"
+},
+{
+"q1": "{Daitokuji show} で {the bowl} が見られるのは、前期だけです。",
+"q2": "{At the Daitokuji show, you can see the bowl} 前期だけ。",
+"q3": "{At the Daitokuji show, you can see the bowl only in the} 前期。"
+},
+{
+"q1": "前期は、{October 14} から {November 8} までです。",
+"q2": "前期 {is from October 14} から {November 8} まで。",
+"q3": "前期 {is from October 14 to November 8.}"
+}
+],
+"grammar": {
+"body": "「AかB」「AまたはB」と言うときは、A or B と or でつなぎます。ポストの「未使用チケットまたは半券」も、an unused ticket or a ticket stub です。and は「AとB」、or は「AかB」と覚えましょう。",
+"ex": [
+{
+"en": "Do you want tea or coffee?",
+"ja": "紅茶とコーヒー、どちらがいいですか？"
+},
+{
+"en": "We can go by train or by bus.",
+"ja": "電車かバスで行けます。"
+}
+],
+"title": "or「AかB」"
+},
+"id": "20261014-art-seikado-youhen",
+"level": 2,
+"lines": [
+{
+"en": "Two Yohen Tenmoku bowls are on display in Tokyo at the same time.",
+"ja": "曜変天目の2碗が、東京で同じ時期に公開されます。",
+"mix": "曜変天目の2碗が、{Tokyo} で同じ時期に公開されます。"
+},
+{
+"en": "Both bowls are national treasures.",
+"ja": "どちらの碗も国宝です。",
+"mix": "どちらの碗も {national treasures} です。"
+},
+{
+"en": "The two museums offer discounts to each other's visitors.",
+"ja": "2つの美術館が、たがいの来館者に割引をしています。",
+"mix": "2つの美術館が、たがいの来館者に {discounts} をしています。"
+},
+{
+"en": "Show an unused ticket or a ticket stub at the other museum.",
+"ja": "もう一方の美術館で、未使用のチケットか半券を見せてください。",
+"mix": "もう一方の美術館で、未使用の {ticket} か半券を見せてください。"
+},
+{
+"en": "You will get a discount from the regular price.",
+"ja": "一般料金から割引が受けられます。",
+"mix": "一般料金から {discount} が受けられます。"
+},
+{
+"en": "At the Daitokuji show, you can see the bowl only in the first half.",
+"ja": "大徳寺展で曜変天目が見られるのは、前期だけです。",
+"mix": "{Daitokuji show} で曜変天目が見られるのは、前期だけです。"
+},
+{
+"en": "The first half is from October 14 to November 8.",
+"ja": "前期は、10月14日から11月8日までです。",
+"mix": "前期は、{October 14} から11月8日までです。"
+}
+],
+"post": {
+"account": "seikadomuseum",
+"date": "2026-10-14",
+"likes": 361,
+"name": "静嘉堂文庫美術館",
+"url": "https://x.com/seikadomuseum/status/2110173747613192528"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"後期だけ",
+"前期の11月8日まで",
+"会期のあいだずっと"
+],
+"q": "大徳寺展で曜変天目が見られるのは、いつまで？",
+"why": "6文目と7文目に、見られるのは the first half だけ、10月14日から11月8日までとあります。"
+},
+{
+"a": 2,
+"choices": [
+"入館料",
+"招待券",
+"半券"
+],
+"q": "ticket stub の意味は？",
+"why": "ticket stub は、ちぎったあとに手元に残る「半券」です。"
+},
+{
+"a": 0,
+"choices": [
+"or",
+"and",
+"but"
+],
+"q": "Show an unused ticket ___ a ticket stub.（未使用のチケットか半券）",
+"why": "「AかB」は A or B。and だと「AとB」になります。"
+}
+],
+"summary": "静嘉堂文庫美術館が、東京国立博物館の「大徳寺展」との相互割引を案内しました。国宝・曜変天目の2碗が東京で同じ時期に公開されます。大徳寺展で曜変天目が見られるのは前期（10月14日〜11月8日）だけです。",
+"talk": {
+"hint": "I want to see ___ because ___.",
+"ja": "この秋、東京でどの展覧会を見たいですか？",
+"q": "Which exhibition do you want to see in Tokyo this fall?"
+},
+"title": "曜変天目2碗が東京で同時期に公開、相互割引も",
+"words": [
+{
+"ja": "国宝",
+"note": "ポストの「国宝」は national treasure。",
+"w": "national treasure"
+},
+{
+"ja": "（チケットの）半券",
+"note": "ポストの「半券」は ticket stub と言います。",
+"w": "ticket stub"
+},
+{
+"ja": "割引",
+"note": "ポストの「相互割引」は、おたがいに discount を出す、ということです。",
+"w": "discount"
+},
+{
+"ja": "未使用の",
+"note": "ポストの「未使用チケット」は an unused ticket。use の反対の形です。",
+"w": "unused"
+},
+{
+"ja": "前半・前期",
+"note": "ポストの「前期」は first half。「後期」は second half。",
+"w": "first half"
+}
+]
+},
+{
+"added": "2026-10-14T09:00",
+"addedAt": "2026-10-15T08:02",
+"cat": "movie",
+"gloss": {
+"720 000 yen": "72万円",
+"a": "ひとつの",
+"adults": "大人",
+"akaso": "赤楚（人名）",
+"all": "すべての",
+"all over the world": "世界中で",
+"and": "〜と",
+"can": "〜できる",
+"cinderella": "シンデレラ",
+"comes": "来る（comeの3人称）",
+"contract": "契約",
+"eiji": "衛二（人名）",
+"eiji akaso": "赤楚衛二",
+"for": "〜の・〜のための",
+"for 720 000 yen": "72万円の",
+"for adults": "大人向けの",
+"in": "〜に",
+"in the movie": "この映画で",
+"is": "〜です",
+"isshukan": "一年（作品名の一部）",
+"it": "それを",
+"it is a surprising cinderella": "予想外のシンデレラ〜",
+"it only on netflix all over the world": "世界中でNetflixだけで〜を",
+"kau": "かう（作品名の一部）",
+"kou": "コウ（人名）",
+"kou shibasaki": "柴咲コウ",
+"kou shibasaki and eiji akaso": "柴咲コウと赤楚衛二",
+"kou shibasaki plays yui": "柴咲コウが唯を演じる",
+"kou shibasaki plays yui and eiji akaso": "柴咲コウが唯、赤楚衛二が〜",
+"movie": "映画",
+"netflix": "ネットフリックス",
+"netflix movie": "Netflix映画",
+"november": "11月",
+"november 5": "11月5日",
+"on": "〜に（日付）・〜で",
+"on november 5": "11月5日に",
+"only": "〜だけ",
+"only on netflix": "Netflixでだけ",
+"otoko": "男（作品名の一部）",
+"out": "出る・配信される",
+"over": "〜じゅうで",
+"plays": "演じる",
+"sena": "瀬名（役名）",
+"shibasaki": "柴咲（人名）",
+"star": "主演する",
+"starts": "始まる",
+"story": "お話",
+"surprising": "予想外の",
+"the": "その",
+"the movie": "この映画",
+"the netflix movie yomei isshukan otoko wo kau": "Netflix映画『余命一年、男をかう』",
+"the story starts with": "お話は〜から始まる",
+"the story starts with a": "お話は〜から始まる",
+"the world": "世界",
+"watch": "見る",
+"with": "〜から",
+"wo": "を（作品名の一部）",
+"world": "世界",
+"yen": "円",
+"yomei": "余命（作品名の一部）",
+"you": "あなたは",
+"you can": "〜できます",
+"yui": "唯（役名）"
+},
+"grad": [
+{
+"q1": "{Netflix movie} 『余命一年、男をかう』が、{November 5} に配信開始です。",
+"q2": "{The Netflix movie Yomei Isshukan, Otoko wo Kau} が、{November 5} に配信開始です。",
+"q3": "{The Netflix movie Yomei Isshukan, Otoko wo Kau} 配信開始 {on November 5.}"
+},
+{
+"q1": "{Netflix} でだけ、{the world} 中で見られます。",
+"q2": "{only on Netflix}、{all over the world} 見られます。",
+"q3": "{You can} 見る {it only on Netflix, all over the world.}"
+},
+{
+"q1": "{Kou Shibasaki} さんと赤楚衛二さんが、この {movie} にW主演します。",
+"q2": "{Kou Shibasaki and Eiji Akaso} が、{the movie} にW主演します。",
+"q3": "{Kou Shibasaki and Eiji Akaso} W主演 {in the movie.}"
+},
+{
+"q1": "{Yui} は柴咲コウさん、{Sena} は赤楚衛二さんが演じます。",
+"q2": "{Kou Shibasaki plays Yui,} {Sena} は {Eiji Akaso} さんが演じます。",
+"q3": "{Kou Shibasaki plays Yui, and Eiji Akaso} 演じる {Sena.}"
+},
+{
+"q1": "{story} は、{720,000 yen} の契約から始まります。",
+"q2": "{The story starts with}、{720,000 yen} の契約。",
+"q3": "{The story starts with a} 契約 {for 720,000 yen.}"
+},
+{
+"q1": "{surprising}、{adults} の {Cinderella} ストーリーです。",
+"q2": "{It is a surprising Cinderella} ストーリーは、{adults} 向けです。",
+"q3": "{It is a surprising Cinderella} ストーリー {for adults.}"
+}
+],
+"grammar": {
+"body": "「〜から始まる」は start with 〜。主語が he / she / it や The story のときは、starts と s をつけます。",
+"ex": [
+{
+"en": "My day starts with a cup of tea.",
+"ja": "私の一日は、お茶1杯から始まります。"
+},
+{
+"en": "The class starts with a song.",
+"ja": "授業は歌から始まります。"
+}
+],
+"title": "start with 〜「〜から始まる」"
+},
+"id": "20261014-yomei-netflix",
+"level": 2,
+"lines": [
+{
+"en": "The Netflix movie Yomei Isshukan, Otoko wo Kau comes out on November 5.",
+"ja": "Netflix映画『余命一年、男をかう』が、11月5日に配信開始です。",
+"mix": "{Netflix} 映画『余命一年、男をかう』が、{November 5} に配信開始です。"
+},
+{
+"en": "You can watch it only on Netflix, all over the world.",
+"ja": "Netflixでだけ、世界中で見られます。",
+"mix": "{Netflix} でだけ、世界中で見られます。"
+},
+{
+"en": "Kou Shibasaki and Eiji Akaso star in the movie.",
+"ja": "柴咲コウさんと赤楚衛二さんが、この映画にW主演します。",
+"mix": "柴咲コウさんと赤楚衛二さんが、この {movie} にW主演します。"
+},
+{
+"en": "Kou Shibasaki plays Yui, and Eiji Akaso plays Sena.",
+"ja": "唯は柴咲コウさん、瀬名は赤楚衛二さんが演じます。",
+"mix": "{Yui} は柴咲コウさん、瀬名は赤楚衛二さんが演じます。"
+},
+{
+"en": "The story starts with a contract for 720,000 yen.",
+"ja": "お話は、72万円の契約から始まります。",
+"mix": "{story} は、72万円の契約から始まります。"
+},
+{
+"en": "It is a surprising Cinderella story for adults.",
+"ja": "予想外の、大人のシンデレラストーリーです。",
+"mix": "{surprising}、{adults} のシンデレラストーリーです。"
+}
+],
+"post": {
+"account": "NetflixJP",
+"date": "2026-10-14",
+"likes": 1231,
+"name": "Netflix Japan",
+"url": "https://x.com/NetflixJP/status/2110158646957015305"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"10月16日",
+"11月5日",
+"11月27日"
+],
+"q": "配信が始まるのはいつ？",
+"why": "1文目に comes out on November 5 とあります。"
+},
+{
+"a": 2,
+"choices": [
+"ふるい",
+"たいくつな",
+"予想外の・おどろくような"
+],
+"q": "surprising の意味は？",
+"why": "surprising は「おどろくような」。ポストの「予想外の」にあたります。"
+},
+{
+"a": 0,
+"choices": [
+"starts",
+"start",
+"starting"
+],
+"q": "The story ___ with a contract.（お話は契約から始まる）",
+"why": "主語 The story は3人称・単数なので starts です。"
+}
+],
+"summary": "柴咲コウさんと赤楚衛二さんがW主演するNetflix映画『余命一年、男をかう』が、11月5日に世界独占で配信されます。72万円の契約から始まる、予想外の大人のシンデレラストーリーです。",
+"talk": {
+"hint": "I want to watch it because ___.",
+"ja": "この映画を見たいですか？ どうしてですか？",
+"q": "Do you want to watch this movie? Why?"
+},
+"title": "Netflix映画『余命一年、男をかう』11月5日配信",
+"words": [
+{
+"ja": "契約",
+"note": "ポストの「72万円の契約」は a contract for 720,000 yen。",
+"w": "contract"
+},
+{
+"ja": "予想外の・おどろくような",
+"note": "ポストの「予想外の」を surprising で表しました。",
+"w": "surprising"
+},
+{
+"ja": "〜に主演する",
+"note": "「W主演」は、ふたりが star in the movie と言います。",
+"w": "star in"
+},
+{
+"ja": "世界中で",
+"note": "ポストの「世界独占配信」は、only on Netflix, all over the world。",
+"w": "all over the world"
+},
+{
+"ja": "大人",
+"note": "for adults ＝ 大人向けの。複数形は adults。",
+"w": "adult"
+}
+]
+},
+{
 "added": "2026-10-13T21:35",
 "addedAt": "2026-10-14T08:01",
 "cat": "movie",
@@ -1118,6 +3521,282 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-10-13T19:06",
+"addedAt": "2026-10-15T08:02",
+"cat": "art",
+"gloss": {
+"13 years ago": "13年前",
+"a": "ひとつの",
+"a new encounter": "新しい出会い",
+"ago": "前",
+"also": "〜も",
+"am": "〜です（Iのとき）",
+"and": "そして",
+"are": "〜です",
+"art": "美術",
+"at": "〜で",
+"because": "〜だから",
+"because i am older": "歳を重ねたから",
+"borrowed": "借りられた",
+"can": "〜できる",
+"day": "日",
+"did": "〜した（touchの代わり）",
+"different": "違う",
+"encounter": "出会い",
+"even": "さらに",
+"every": "毎〜",
+"every day more masterpieces": "毎日、さらに多くの名作が",
+"every day more masterpieces are": "毎日、さらに多くの名作が〜される",
+"exhibition": "展覧会",
+"exhibition rooms": "展示室",
+"experience": "経験",
+"face": "向き合う",
+"first": "初めての",
+"first time": "初めて",
+"for": "〜の間（for the first time で初めて）",
+"for the first time": "初めて",
+"from": "〜から",
+"from the tate": "テートから",
+"going": "進んで（going onで）",
+"have": "持つ",
+"heart": "心",
+"him": "ターナー",
+"him for the first time": "ターナーを初めて",
+"hung": "掛けられた（hangの過去分詞）",
+"i": "私は",
+"in": "〜の（年・場所）",
+"in 2013 i also worked on a turner exhibition": "2013年にも私はターナー展を担当した",
+"in 2013 i also worked on a turner exhibition with works": "2013年にも作品によるターナー展を担当した",
+"is": "〜です",
+"is it because it is my second time working on it": "2回目だからでしょうか",
+"is it because it is my second time working on it or because i am older and": "2回目だから、それとも歳を重ねて",
+"it": "それは",
+"life": "人生",
+"life experience": "人生経験",
+"masterpieces": "名作（masterpieceの複数形）",
+"more": "さらに多くの",
+"more life experience": "より多くの人生経験",
+"more masterpieces": "さらに多くの名作",
+"museum": "美術館",
+"my": "私の",
+"national": "国立の",
+"new": "新しい",
+"october": "10月",
+"october 24": "10月24日",
+"of": "〜の",
+"older": "歳を重ねた",
+"on": "〜に（日付）",
+"on the walls of the exhibition rooms": "展示室の壁に",
+"opens": "開幕する",
+"or": "それとも",
+"please": "〜してください",
+"please visit the exhibition": "展覧会にいらしてください",
+"please visit the exhibition whether you saw turner 13 years ago or": "13年前にターナーを見た方も、あるいは〜も展覧会に",
+"point": "タイミング",
+"preparations": "準備（preparationの複数形）",
+"rooms": "部屋",
+"saw": "見た",
+"second": "2番目の",
+"second time": "2回目",
+"seeing": "見ること",
+"tate": "テート（美術館）",
+"than": "〜より",
+"than they did 13 years ago": "13年前よりも",
+"the": "その",
+"the turner exhibition opens on october 24 at the national museum of western art": "10月24日に国立西洋美術館でターナー展が開幕する",
+"the turner exhibition opens on october 24 at the national museum of western art and preparations are": "ターナー展が開幕し、準備が〜",
+"they": "それら（作品）は",
+"this": "この",
+"this time": "今回",
+"this time turner's works touch my heart": "今回はターナーの作品が心にしみる",
+"time": "回",
+"touch": "心に触れる",
+"turner": "ターナー（画家）",
+"turner exhibition": "ターナー展",
+"turner's": "ターナーの",
+"turner's works": "ターナーの作品",
+"visit": "訪れる",
+"walls": "壁（wallの複数形）",
+"we": "私たち",
+"western": "西洋の",
+"when": "〜するとき",
+"when we face a work at a different point in life": "人生の違うタイミングで作品に向き合うと",
+"when we face a work at a different point in life we can": "人生の違うタイミングで作品に向き合うと〜できる",
+"whether": "〜でも",
+"with": "〜による",
+"work": "作品",
+"worked": "担当した（worked onで）",
+"working": "関わること",
+"works": "作品",
+"years": "年",
+"you": "あなた",
+"you saw turner 13 years ago": "13年前にターナーを見た"
+},
+"grad": [
+{
+"q1": "{Turner exhibition} は {October 24} に国立西洋美術館で開幕し、{preparations} が進んでいます。",
+"q2": "{The Turner exhibition opens on October 24 at the National Museum of Western Art}、{preparations} が進んでいます。",
+"q3": "{The Turner exhibition opens on October 24 at the National Museum of Western Art, and preparations are} 進んでいます。"
+},
+{
+"q1": "毎日、{more masterpieces} が次々と {exhibition rooms} の {walls} に掛けられています。",
+"q2": "{Every day, more masterpieces} が次々と、{on the walls of the exhibition rooms} 掛けられています。",
+"q3": "{Every day, more masterpieces are} 掛けられて {on the walls of the exhibition rooms.}"
+},
+{
+"q1": "2013年にも、私は {Tate} から借りた {works} による {Turner exhibition} を担当しました。",
+"q2": "{In 2013, I also worked on a Turner exhibition}、{Tate} から借りた {works} によるものです。",
+"q3": "{In 2013, I also worked on a Turner exhibition with works} 借りた {from the Tate.}"
+},
+{
+"q1": "{This time}、{Turner's works} が13年前よりもさらに {heart} にしみます。",
+"q2": "{This time, Turner's works touch my heart}、{13 years ago} よりもさらに。",
+"q3": "{This time, Turner's works touch my heart} さらに {than they did 13 years ago.}"
+},
+{
+"q1": "それは、仕事として深く関わるのが {second time} だからでしょうか。それとも、{older} になって {life experience} を積んだからでしょうか。",
+"q2": "{Is it because it is my second time working on it}、それとも {because I am older}、{life experience} を積んだからでしょうか。",
+"q3": "{Is it because it is my second time working on it, or because I am older and} 積んだ {more life experience?}"
+},
+{
+"q1": "{life} の違う {point} で {work} に向き合うと、また新しい {encounter} があります。",
+"q2": "{When we face a work at a different point in life}、また新しい {encounter} があります。",
+"q3": "{When we face a work at a different point in life, we can} 経験する {a new encounter.}"
+},
+{
+"q1": "{13 years ago} に {Turner} を見た方も、{first time} で見る方も、ぜひ {exhibition} にいらしてください。",
+"q2": "{Please visit the exhibition}、{you saw Turner 13 years ago} 人も、{for the first time} 見る人も。",
+"q3": "{Please visit the exhibition, whether you saw Turner 13 years ago or} 見ている {him for the first time.}"
+}
+],
+"grammar": {
+"body": "理由を2つならべて「〜だからでしょうか、それとも〜だからでしょうか」とたずねる言い方です。because のあとには「主語 ＋ 動詞」を続けます。",
+"ex": [
+{
+"en": "Is it because you are tired, or because you are hungry?",
+"ja": "疲れているからですか、それともおなかがすいているからですか。"
+},
+{
+"en": "Is it because he is shy, or because he is busy?",
+"ja": "彼は恥ずかしがりやだからですか、それとも忙しいからですか。"
+}
+],
+"title": "Is it because ～, or because ～?「〜だからか、それとも〜だからか」"
+},
+"id": "20261014-art-turner",
+"level": 3,
+"lines": [
+{
+"en": "The Turner exhibition opens on October 24 at the National Museum of Western Art, and preparations are going on.",
+"ja": "ターナー展は10月24日に国立西洋美術館で開幕し、準備が進んでいます。",
+"mix": "ターナー展は {October 24} に国立西洋美術館で開幕し、{preparations} が進んでいます。"
+},
+{
+"en": "Every day, more masterpieces are hung on the walls of the exhibition rooms.",
+"ja": "毎日、名作が次々と展示室の壁に掛けられています。",
+"mix": "毎日、{masterpieces} が次々と展示室の {walls} に掛けられています。"
+},
+{
+"en": "In 2013, I also worked on a Turner exhibition with works borrowed from the Tate.",
+"ja": "2013年にも、私はテートから借りた作品によるターナー展を担当しました。",
+"mix": "2013年にも、私は {Tate} から借りた {works} によるターナー展を担当しました。"
+},
+{
+"en": "This time, Turner's works touch my heart even more than they did 13 years ago.",
+"ja": "今回は、13年前よりもさらに、ターナーの作品が心にしみます。",
+"mix": "今回は、ターナーの {works} が13年前よりもさらに {heart} にしみます。"
+},
+{
+"en": "Is it because it is my second time working on it, or because I am older and have more life experience?",
+"ja": "それは、仕事として深く関わるのが2回目だからでしょうか。それとも、歳を重ねて人生経験を積んだからでしょうか。",
+"mix": "それは、仕事として深く関わるのが {second time} だからでしょうか。それとも、歳を重ねて {life experience} を積んだからでしょうか。"
+},
+{
+"en": "When we face a work at a different point in life, we can have a new encounter.",
+"ja": "人生の違うタイミングで作品に向き合うと、また新しい出会いがあります。",
+"mix": "人生の違う {point} で作品に向き合うと、また新しい {encounter} があります。"
+},
+{
+"en": "Please visit the exhibition, whether you saw Turner 13 years ago or are seeing him for the first time.",
+"ja": "13年前にターナーを見た方も、今回初めて見る方も、ぜひ展覧会にいらしてください。",
+"mix": "13年前にターナーを見た方も、今回 {first time} で見る方も、ぜひ {exhibition} にいらしてください。"
+}
+],
+"post": {
+"account": "TomoeTKG",
+"date": "2026-10-13",
+"likes": 569,
+"name": "高木友絵 Tomoe Takagi",
+"url": "https://x.com/TomoeTKG/status/2109948845220401470"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"上海でのターナー展",
+"テートから借りたターナー展",
+"別の画家の展覧会"
+],
+"q": "投稿者が13年前に担当した展覧会は？",
+"why": "3文目に In 2013, I also worked on a Turner exhibition with works borrowed from the Tate とあります。"
+},
+{
+"a": 2,
+"choices": [
+"貸す",
+"返す",
+"借りる"
+],
+"q": "borrow の意味は？",
+"why": "borrow は「借りる」。borrowed from the Tate は「テートから借りた」です。"
+},
+{
+"a": 0,
+"choices": [
+"because",
+"so",
+"but"
+],
+"q": "Is it ___ I am older, or because it is my second time?",
+"why": "理由をたずねる Is it because ～? の形です。"
+}
+],
+"summary": "10月24日に国立西洋美術館でターナー展が開幕します。準備中の投稿者は、13年前の2013年にもテートから借りたターナー展を担当しました。今回のほうが作品の良さが心にしみる理由を、2回目だから？歳を重ねたから？と考えています。写真は2年前に上海の浦東美術館に巡回したときのものです。",
+"talk": {
+"hint": "___'s works touch my heart because ___.",
+"ja": "あなたの心にしみるのは、どの画家の作品ですか？",
+"q": "Which artist's works touch your heart?"
+},
+"title": "ターナー展の準備中、13年前の担当展より心にしみる理由",
+"words": [
+{
+"ja": "準備",
+"note": "ポストの「準備が進んでいます」は preparations are going on。複数形でよく使います。",
+"w": "preparation"
+},
+{
+"ja": "（壁に）掛ける",
+"note": "ポストの「壁に掛かっていっています」。hung は過去分詞で、are hung は「掛けられている」。",
+"w": "hang"
+},
+{
+"ja": "借りる",
+"note": "ポストの「借用した」は borrowed from the Tate（テートから借りた）。",
+"w": "borrow"
+},
+{
+"ja": "心を動かす・触れる",
+"note": "ポストの「心に沁みる」を touch my heart と表しました。",
+"w": "touch"
+},
+{
+"ja": "出会い",
+"note": "ポストの「出会い」。人や作品との出会いに使えます。",
+"w": "encounter"
+}
+]
+},
+{
 "added": "2026-10-13T18:00",
 "addedAt": "2026-10-14T08:01",
 "cat": "anime",
@@ -2138,6 +4817,241 @@ window.LESSONS = [
 "ja": "発表する・公開する",
 "note": "ポストの「公開」は announce（発表する）で表しました。",
 "w": "announce"
+}
+]
+},
+{
+"added": "2026-10-13T13:10",
+"addedAt": "2026-10-15T08:02",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"ad": "広告",
+"also": "〜も",
+"and": "〜と",
+"are": "〜です・〜にいる",
+"ayano": "綾野（人名）",
+"calls": "〜と呼ぶ",
+"cast": "出演者",
+"completely": "完全に・とことん",
+"crazy": "狂っている・ぶっ飛んだ",
+"director": "監督",
+"director keisuke yoshida": "吉田恵輔監督",
+"films": "映画（filmの複数形）",
+"friday": "金曜日",
+"go": "剛（人名）",
+"good": "良い",
+"hayato": "勇斗（人名）",
+"hayato isomura": "磯村勇斗",
+"hayato isomura seiya suezawa and go ayano are": "磯村勇斗さん、末澤誠也さん、綾野剛さんは〜です",
+"hayato isomura seiya suezawa and go ayano are in the": "磯村勇斗さん、末澤誠也さん、綾野剛さんは〜の中にいる",
+"in": "〜で",
+"is": "〜です",
+"isomura": "磯村（人名）",
+"it": "それ（この映画）",
+"it is one of": "それは〜のうちのひとつです",
+"it is one of the most sensational": "それは最もセンセーショナルな〜のひとつです",
+"keisuke": "恵輔（人名）",
+"keisuke yoshida": "吉田恵輔",
+"made": "作った（makeの過去形）",
+"masterpiece": "傑作",
+"mentor": "『mentor』（作品名）",
+"mentor opens": "『mentor』は公開される",
+"mentor opens in": "『mentor』は〜で公開される",
+"most": "もっとも",
+"movie": "映画",
+"nonstop": "ノンストップの",
+"october": "10月",
+"october 16": "10月16日",
+"of": "〜のうちの",
+"on": "〜に（日付・曜日）",
+"on friday october 16": "10月16日（金）に",
+"one": "ひとつ",
+"opens": "公開される",
+"post": "ポスト（投稿）",
+"pr": "PR（宣伝）",
+"says": "言っている",
+"seiya": "誠也（人名）",
+"seiya suezawa": "末澤誠也",
+"sensational": "センセーショナルな",
+"suezawa": "末澤（人名）",
+"the": "その",
+"the ad": "その広告",
+"the ad also calls it a masterpiece": "広告はそれを傑作とも呼んでいる",
+"the ad also calls it a masterpiece with nonstop": "広告はそれを、ノンストップの（ヤバさ）の傑作とも呼ぶ",
+"the ad says": "広告は〜と言っている",
+"the ad says a good movie is": "広告は、良い映画は〜だと言っている",
+"theaters": "劇場（theaterの複数形）",
+"this": "この・今",
+"this post": "このポスト",
+"this post is a pr": "このポストはPR（広告）です",
+"this year": "今年",
+"wildness": "ヤバさ・激しさ",
+"with": "〜のある",
+"year": "年",
+"yoshida": "吉田（人名）"
+},
+"grad": [
+{
+"q1": "{Mentor} は、{October 16}（金）に劇場で公開されます。",
+"q2": "{Mentor opens} 劇場で {on Friday, October 16.}",
+"q3": "{Mentor opens in} 劇場 {on Friday, October 16.}"
+},
+{
+"q1": "{Director Keisuke Yoshida} が、この映画を作りました。",
+"q2": "{Director Keisuke Yoshida} が {it} を作りました。",
+"q3": "{Director Keisuke Yoshida} 作った {it.}"
+},
+{
+"q1": "出演は、{Hayato Isomura} さん、{Seiya Suezawa} さん、綾野剛さんです。",
+"q2": "{Hayato Isomura, Seiya Suezawa, and Go Ayano are} 出演者の中に。",
+"q3": "{Hayato Isomura, Seiya Suezawa, and Go Ayano are in the} 出演者。"
+},
+{
+"q1": "{The ad} は「良い映画はとことん {crazy}」と言っています。",
+"q2": "{The ad says} 「良い映画はとことん {crazy}」と。",
+"q3": "{The ad says a good movie is} 完全に {crazy.}"
+},
+{
+"q1": "{The ad} は、ヤバさノンストップの {masterpiece} とも呼んでいます。",
+"q2": "{The ad also calls it a masterpiece} ヤバさノンストップ。",
+"q3": "{The ad also calls it a masterpiece with nonstop} ヤバさ。"
+},
+{
+"q1": "{This year} 最大級に {sensational} な一本です。",
+"q2": "{It is one of} 最も {sensational} 映画 {this year.}",
+"q3": "{It is one of the most sensational} 映画 {this year.}"
+},
+{
+"q1": "{This post} は {PR} 広告です。",
+"q2": "{This post is a PR} 広告です。",
+"q3": "{This post is a PR} 広告。"
+}
+],
+"grammar": {
+"body": "映画の公開日や電車の時刻のように、決まっている予定は、未来のことでも現在形で言えます。ポストの「10月16日公開」も、Mentor opens ... on Friday で表せます。三単現の s を忘れずに。",
+"ex": [
+{
+"en": "The store opens at ten.",
+"ja": "その店は10時に開きます。"
+},
+{
+"en": "The train leaves at 8:30.",
+"ja": "電車は8時30分に出ます。"
+}
+],
+"title": "決まった予定は現在形で言える"
+},
+"id": "20261014-mentor-eigacom",
+"level": 2,
+"lines": [
+{
+"en": "Mentor opens in theaters on Friday, October 16.",
+"ja": "『mentor』は、10月16日（金）に劇場で公開されます。",
+"mix": "『mentor』は、{October 16}（金）に劇場で公開されます。"
+},
+{
+"en": "Director Keisuke Yoshida made it.",
+"ja": "吉田恵輔監督が、この映画を作りました。",
+"mix": "{Keisuke Yoshida} 監督が、この映画を作りました。"
+},
+{
+"en": "Hayato Isomura, Seiya Suezawa, and Go Ayano are in the cast.",
+"ja": "磯村勇斗さん、末澤誠也さん、綾野剛さんが出演者です。",
+"mix": "{Hayato Isomura} さん、末澤誠也さん、綾野剛さんが出演者です。"
+},
+{
+"en": "The ad says a good movie is completely crazy.",
+"ja": "広告は「良い映画はとことん狂っている」と言っています。",
+"mix": "広告は「良い映画はとことん {crazy}」と言っています。"
+},
+{
+"en": "The ad also calls it a masterpiece with nonstop wildness.",
+"ja": "広告は、ヤバさノンストップの傑作とも呼んでいます。",
+"mix": "広告は、ヤバさノンストップの {masterpiece} とも呼んでいます。"
+},
+{
+"en": "It is one of the most sensational films this year.",
+"ja": "今年最大級にセンセーショナルな一本です。",
+"mix": "今年最大級に {sensational} な一本です。"
+},
+{
+"en": "This post is a PR ad.",
+"ja": "このポストはPR広告です。",
+"mix": "このポストは {PR} 広告です。"
+}
+],
+"post": {
+"account": "eigacom",
+"date": "2026-10-13",
+"likes": 1073,
+"name": "映画.com",
+"url": "https://x.com/eigacom/status/2109859170639900849"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"10月13日",
+"10月31日",
+"10月16日"
+],
+"q": "『mentor』の公開日は？",
+"why": "1文目に Mentor opens in theaters on Friday, October 16. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"傑作",
+"予告編",
+"監督"
+],
+"q": "masterpiece の意味は？",
+"why": "master（名人）＋ piece（作品）で「傑作」です。"
+},
+{
+"a": 1,
+"choices": [
+"open",
+"opens",
+"opening"
+],
+"q": "The movie ___ on Friday.（その映画は金曜日に公開されます）",
+"why": "決まった予定は現在形で言えます。主語が The movie（3人称・単数）なので opens です。"
+}
+],
+"summary": "映画.comが、吉田恵輔監督の新作『mentor』を紹介しました。磯村勇斗さん、末澤誠也さん、綾野剛さんの共演で、「今年最大級にセンセーショナルな一本」と宣伝されています。公開は10月16日（金）です（PRのポスト）。",
+"talk": {
+"hint": "I like ___ movies because ___.",
+"ja": "ぶっ飛んだ映画と、静かな映画、どちらが好きですか？",
+"q": "Do you like a wild movie or a quiet movie?"
+},
+"title": "映画『mentor』10月16日公開、「ヤバさノンストップ」",
+"words": [
+{
+"ja": "センセーショナルな・世間をさわがせる",
+"note": "ポストの「センセーショナル」は、そのまま sensational です。",
+"w": "sensational"
+},
+{
+"ja": "傑作",
+"note": "ポストの「傑作」は masterpiece。",
+"w": "masterpiece"
+},
+{
+"ja": "狂った・ぶっ飛んだ",
+"note": "ポストの「狂っている」は crazy。ここでは良い意味のほめことばです。",
+"w": "crazy"
+},
+{
+"ja": "出演者・キャスト",
+"note": "ポストの「共演」の顔ぶれは the cast と言います。",
+"w": "cast"
+},
+{
+"ja": "広告",
+"note": "advertisement の短い形。ポストの「#PR」は広告ということです。",
+"w": "ad"
 }
 ]
 },
