@@ -832,36 +832,59 @@ html.static .ai-only{display:none!important}
   #flBox .fl-text{justify-content:flex-start;padding-top:8vh}
   #flBox .dc-big{width:48px;height:48px}
 }
-/* スマホの一覧（2026-10-16 持ち主「一度に2行ぐらいしか読めない。単語・ジャンル・復習に幅を取られすぎ」）：
+/* 一覧（2026-10-16 スマホで持ち主「一度に2行ぐらいしか読めない。単語・ジャンル・復習に幅を取られすぎ」、
+   2026-10-22「パソコンでもスマホと同じように」）：
    ボタン5つは横1列のアイコンに、絞り込みは「しぼりこみ」で開け閉め、
    さらにサイドバー全体を1枚でスクロールして、上の部分も一緒に流れていくように（速さ・声は一覧のいちばん下） */
-.search-row{display:flex;align-items:center;gap:6px}
-.search-row .search{flex:1;min-width:0}
-.nb-short{display:none}
-.flt-btn{display:none}
+.side{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:transparent transparent}
+.side:hover,.side:focus-within{scrollbar-color:var(--line) transparent}
+.side > *{flex:none}
+.list{flex:none;overflow:visible;min-height:auto;padding-bottom:8px}
+.side-top{padding:8px 8px 2px 16px}
+.fresh{margin:-2px 16px 4px}
+.search-row{display:flex;align-items:center;gap:6px;padding-right:10px}
+.search-row .search{flex:1;min-width:0;margin:2px 0 4px 10px}
+.flt-btn{display:inline-flex;align-items:center;gap:5px;flex:none;height:30px;margin-bottom:2px;padding:0 10px;border:1px solid var(--line);border-radius:9px;background:var(--card);font-size:var(--fs-xs);color:var(--muted);white-space:nowrap;max-width:46%;touch-action:manipulation}
+.flt-btn:hover{color:var(--fg);border-color:var(--faint)}
+.flt-btn span{overflow:hidden;text-overflow:ellipsis}
+.flt-btn.on{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 28%,transparent);background:var(--accent-soft)}
+.flt-btn[aria-expanded="true"]{color:var(--fg);border-color:var(--faint)}
+#side:not(.flt-open) #filters,#side:not(.flt-open) #lvFilters{display:none}
+#lvFilters{padding-bottom:6px}
+.side-actions{flex-direction:row;gap:2px;padding:2px 6px 4px}
+.side-actions .nav-btn{position:relative;flex:1 1 0;min-width:0;flex-direction:column;justify-content:center;gap:2px;padding:6px 2px 5px;font-size:.6875rem;line-height:1.3;text-align:center;white-space:nowrap}
+.nb-long{display:none}
+.side-actions .nav-btn .cnt,.side-actions .nav-btn .due{position:absolute;top:2px;left:calc(50% + 9px);margin:0;font-size:.625rem;line-height:1.5}
+.side-actions .nav-btn .due{padding:0 5px}
+.side-actions .nav-btn .due:not([hidden]) + .cnt{display:none}
+.side-foot{margin-top:auto;border-top:1px solid var(--line);padding-bottom:calc(14px + env(safe-area-inset-bottom,0px))}
 @media (max-width: 820px){
-  .side{overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
+  .side{scrollbar-width:none}
   .side::-webkit-scrollbar{display:none}
-  .side > *{flex:none}
-  .list{flex:none;overflow:visible;min-height:auto;padding-bottom:8px}
-  .side-top{padding:8px 8px 2px 16px}
-  .fresh{margin:-2px 16px 4px}
-  .search-row{padding-right:10px}
-  .search-row .search{margin:2px 0 4px 10px}
-  .flt-btn{display:inline-flex;align-items:center;gap:5px;flex:none;height:30px;margin-bottom:2px;padding:0 10px;border:1px solid var(--line);border-radius:9px;background:var(--card);font-size:var(--fs-xs);color:var(--muted);white-space:nowrap;max-width:46%;touch-action:manipulation}
-  .flt-btn span{overflow:hidden;text-overflow:ellipsis}
-  .flt-btn.on{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 28%,transparent);background:var(--accent-soft)}
-  .flt-btn[aria-expanded="true"]{color:var(--fg);border-color:var(--faint)}
-  #side:not(.flt-open) #filters,#side:not(.flt-open) #lvFilters{display:none}
-  #lvFilters{padding-bottom:6px}
-  .side-actions{flex-direction:row;gap:2px;padding:2px 6px 4px}
-  .side-actions .nav-btn{position:relative;flex:1 1 0;min-width:0;flex-direction:column;justify-content:center;gap:2px;padding:6px 2px 5px;font-size:.6875rem;line-height:1.3;text-align:center;white-space:nowrap}
-  .nb-long{display:none}
-  .nb-short{display:inline}
-  .side-actions .nav-btn .cnt,.side-actions .nav-btn .due{position:absolute;top:2px;left:calc(50% + 9px);margin:0;font-size:.625rem;line-height:1.5}
-  .side-actions .nav-btn .due{padding:0 5px}
-  .side-actions .nav-btn .due:not([hidden]) + .cnt{display:none}
-  .side-foot{border-top:1px solid var(--line);padding-bottom:calc(14px + env(safe-area-inset-bottom,0px))}
+}
+/* パソコンの一覧（2026-10-22 持ち主「記事リストを閉まったり幅を変えられるように」）：
+   右の境目をドラッグで幅を変える（ダブルクリックでもとの幅、左へ寄せきると閉じる）、
+   上のバーのボタンか B キーで閉じる・開く。幅と開け閉めはこの端末のブラウザに残す */
+.side-grip,#sideBtn{display:none}
+@media (min-width: 821px){
+  .app{position:relative;grid-template-columns:var(--side-w,272px) minmax(0,1fr);transition:grid-template-columns .22s var(--ease)}
+  .side > *{transition:opacity .16s var(--ease)}
+  .app.side-off{grid-template-columns:0 minmax(0,1fr)}
+  .app.side-off .side{visibility:hidden;border-right-color:transparent;transition:visibility 0s .22s}
+  .app.side-off .side > *{opacity:0}
+  #sideBtn{display:grid;margin:0 4px 0 -8px}
+  #sideBtn[aria-expanded="false"]{color:var(--fg)}
+  .side-grip{display:block;position:absolute;top:0;bottom:0;left:calc(var(--side-w,272px) - 3px);width:8px;z-index:5;cursor:col-resize;touch-action:none}
+  .side-grip::after{content:"";position:absolute;top:0;bottom:0;left:2px;width:2px;background:transparent;transition:background-color .15s}
+  .side-grip:hover::after,.side-grip:focus-visible::after,.app.resizing .side-grip::after{background:var(--faint)}
+  .side-grip:focus-visible{outline:0}
+  .app.side-off .side-grip{display:none}
+  .app.resizing,.app.no-anim,.app.no-anim .side,.app.no-anim .side > *{transition:none}
+  .app.resizing{cursor:col-resize;user-select:none}
+  .app.resizing *{cursor:col-resize!important}
+  .app.will-off .side > *{opacity:.4}
+  /* 記事もスマホのように横幅を広く使う（行が長くなりすぎないよう 1040px まで） */
+  .thread,.comp-box{max-width:1040px}
 }
 </style>
 <script src="lessons.js"></script>
@@ -882,7 +905,7 @@ html.static .ai-only{display:none!important}
       <input id="q" type="search" placeholder="さがす" aria-label="話題をさがす" autocomplete="off">
       <kbd>/</kbd>
     </label>
-    <button class="flt-btn only-mobile" id="fltBtn" aria-expanded="false" aria-controls="filters lvFilters"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span id="fltLbl">しぼりこみ</span></button>
+    <button class="flt-btn" id="fltBtn" aria-expanded="false" aria-controls="filters lvFilters"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span id="fltLbl">しぼりこみ</span></button>
     </div>
     <div class="side-actions">
       <button class="nav-btn ai-only" id="newBtn">
@@ -942,10 +965,14 @@ html.static .ai-only{display:none!important}
       <div class="foot-row"><select class="voice-sel" id="voiceSel" aria-label="読み上げの声" hidden></select></div>
     </div>
   </aside>
+  <div class="side-grip" id="sideGrip" role="separator" aria-orientation="vertical" aria-controls="side" aria-label="一覧の幅" aria-valuemin="240" aria-valuemax="560" aria-valuenow="272" tabindex="0" title="ドラッグで一覧の幅を変える（ダブルクリックでもとの幅）"></div>
   <div class="scrim" id="scrim"></div>
 
   <main class="main">
     <header class="topbar" id="topbar">
+      <button class="icon-btn" id="sideBtn" aria-controls="side" aria-expanded="true" aria-label="一覧を閉じる（B）" title="一覧を閉じる（B）">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"><rect x="3.5" y="4.5" width="17" height="15" rx="2.5"/><path d="M9.5 4.5v15"/></svg>
+      </button>
       <button class="icon-btn only-mobile" id="openSide" aria-label="一覧を開く">
         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
       </button>
@@ -987,6 +1014,7 @@ html.static .ai-only{display:none!important}
       <dt><kbd>P</kbd></dt><dd>通して読む ／ 止める</dd>
       <dt><kbd>0</kbd>〜<kbd>6</kbd></dt><dd>英語の量（0＝ぜんぶ日本語・6＝ぜんぶ英語）</dd>
       <dt><kbd>/</kbd></dt><dd>さがす</dd>
+      <dt><kbd>B</kbd></dt><dd>一覧を閉じる ／ 開く（境目のドラッグで幅も変えられます）</dd>
       <dt><kbd>Enter</kbd></dt><dd>書き取り：答え合わせ ／ 次の文へ</dd>
       <dt><kbd>Tab</kbd></dt><dd>書き取り：もう一度聞く（Shift＋Tab でゆっくり）</dd>
       <dt><kbd>Space</kbd></dt><dd>流し聞き：流す ／ 止める（<kbd>←</kbd><kbd>→</kbd> 前後の文）</dd>
@@ -2298,6 +2326,27 @@ function step(d){
 }
 function openSide(){ $('#side').classList.add('open'); $('#scrim').classList.add('open'); }
 function closeSide(){ $('#side').classList.remove('open'); $('#scrim').classList.remove('open'); }
+/* パソコンの一覧：閉じる・開く（sideOff）と幅（sideW）。スマホ幅では今までどおり引き出し */
+const SIDE_DEF = 272, SIDE_MIN = 240, SIDE_OFF_AT = 150;   /* 境目を SIDE_OFF_AT より左まで寄せて離すと閉じる */
+const isNarrow = () => matchMedia('(max-width: 820px)').matches;
+const sideMax = () => Math.max(SIDE_MIN, Math.min(560, Math.round(window.innerWidth * .5)));
+let sideW = SIDE_DEF;
+function setSideW(w, save){
+  sideW = Math.round(Math.max(SIDE_MIN, Math.min(sideMax(), +w || SIDE_DEF)));
+  $('.app').style.setProperty('--side-w', sideW + 'px');
+  const g = $('#sideGrip'); g.setAttribute('aria-valuenow', sideW); g.setAttribute('aria-valuemax', sideMax());
+  if(save) LS.set('sideW', sideW);
+}
+const sideOff = () => $('.app').classList.contains('side-off');
+function setSideOff(off){
+  $('.app').classList.toggle('side-off', off); LS.set('sideOff', off);
+  const b = $('#sideBtn'), t = off ? '一覧を開く（B）' : '一覧を閉じる（B）';
+  b.setAttribute('aria-expanded', !off); b.setAttribute('aria-label', t); b.title = t;
+}
+function toggleSide(){
+  if(isNarrow()){ $('#side').classList.contains('open') ? closeSide() : openSide(); return; }
+  setSideOff(!sideOff());
+}
 
 /* ---------- word popover ---------- */
 let popFor = null;
@@ -2546,7 +2595,8 @@ document.addEventListener('keydown', e => {
   const k = e.key;
   if(k === '?'){ e.preventDefault(); toggleKeys(); return; }
   if(!$('#keys').hidden){ toggleKeys(false); }
-  if(k === '/'){ e.preventDefault(); $('#q').focus(); $('#q').select(); }
+  if(k === '/'){ e.preventDefault(); if(!isNarrow() && sideOff()) setSideOff(false); $('#q').focus(); $('#q').select(); }
+  else if(k === 'b' || k === 'B'){ toggleSide(); }
   else if(k === 'j' || k === 'J'){ step(1); }
   else if(k === 'k' || k === 'K'){ step(-1); }
   else if((k === 'l' || k === 'L') && S.view === 'lesson'){ toggleLike(S.cur); }
@@ -2574,6 +2624,45 @@ $('#likeBtn').addEventListener('click', () => toggleLike(S.cur));
 $('#openSide').addEventListener('click', openSide);
 $('#closeSide').addEventListener('click', closeSide);
 $('#scrim').addEventListener('click', closeSide);
+$('#sideBtn').addEventListener('click', toggleSide);
+/* 一覧の境目：ドラッグで幅、ダブルクリックでもとの幅、←→ でも変えられる */
+(() => {
+  const g = $('#sideGrip'), app = $('.app');
+  let drag = null;
+  g.addEventListener('pointerdown', e => {
+    if(e.button !== 0) return;
+    e.preventDefault(); g.setPointerCapture(e.pointerId);
+    drag = {x: e.clientX, w: sideW, raw: sideW};
+    app.classList.add('resizing');
+  });
+  g.addEventListener('pointermove', e => {
+    if(!drag) return;
+    drag.raw = drag.w + e.clientX - drag.x;
+    setSideW(drag.raw, false);
+    app.classList.toggle('will-off', drag.raw < SIDE_OFF_AT);
+  });
+  const end = () => {
+    if(!drag) return;
+    const off = drag.raw < SIDE_OFF_AT, w0 = drag.w; drag = null;
+    app.classList.remove('resizing', 'will-off');
+    if(off){ setSideW(w0, false); setSideOff(true); toast('一覧を閉じました。左上のボタンか B キーで開きます'); }
+    else setSideW(sideW, true);
+  };
+  g.addEventListener('pointerup', end);
+  g.addEventListener('pointercancel', end);
+  g.addEventListener('dblclick', () => { setSideW(SIDE_DEF, true); toast('一覧の幅をもとに戻しました'); });
+  g.addEventListener('keydown', e => {
+    const d = e.key === 'ArrowLeft' ? -16 : e.key === 'ArrowRight' ? 16 : 0; if(!d) return;
+    e.preventDefault(); e.stopPropagation(); setSideW(sideW + d, true);
+  });
+  let rz = 0;
+  window.addEventListener('resize', () => { if(rz) return; rz = requestAnimationFrame(() => { rz = 0; if(!isNarrow()) setSideW(LS.get('sideW', SIDE_DEF), false); }); });
+  /* 開いたときは前の幅・開け閉めのまま（動きはつけない） */
+  app.classList.add('no-anim');
+  setSideW(LS.get('sideW', SIDE_DEF), false);
+  if(LS.get('sideOff', false)) setSideOff(true);
+  void app.offsetWidth; app.classList.remove('no-anim');
+})();
 $('#newBtn').addEventListener('click', () => { renderNew(); closeSide(); });
 $('#wordsBtn').addEventListener('click', () => { renderWords(); closeSide(); });
 $('#likesBtn').addEventListener('click', () => { renderLikes(); closeSide(); });
