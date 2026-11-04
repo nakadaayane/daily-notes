@@ -990,6 +990,10 @@ html.static .ai-only{display:none!important}
 .tq-script .en{display:block;font-family:var(--serif);font-size:var(--fs-l);line-height:1.6}
 .tq-script .ja{display:block;font-size:var(--fs-xs);color:var(--muted)}
 .tq-script li.ans .en{color:var(--good)}
+.tq-s34 li{grid-template-columns:3.2em minmax(0,1fr) 30px}
+.tq-s34.one li{grid-template-columns:minmax(0,1fr) 30px}
+.tq-s34.one .lab{display:none}
+.tq-s34 .en{font-size:var(--fs-m)}
 .tq-script li.pick:not(.ans) .en{color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
 .tq-passage{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-family:var(--serif);font-size:var(--fs-l);line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
 .tq-passage.ja{font-family:var(--ui);font-size:var(--fs-m);color:var(--muted);background:transparent}
@@ -1043,6 +1047,31 @@ html.static .ai-only{display:none!important}
 .tq-b6.fill.ng{color:var(--bad);border-color:var(--bad);background:var(--bad-soft)}
 .tq-b6.given{border:0;color:inherit;background:var(--bubble);border-radius:3px;font-family:var(--serif);font-size:inherit;font-weight:400;text-align:left;min-width:0}
 .tq-p6q .qt .note{font-family:var(--ui)}
+/* ヒント（2026-11-04）：押すたびに1つずつ。消した選択肢はうすく線で消す */
+.tq-hints{display:flex;flex-direction:column;gap:8px}
+.tq-hints:empty{display:none}
+.tq-qhint:not(:empty){margin:2px 0 4px}
+.tq-h{background:color-mix(in srgb,var(--hl) 75%,var(--card));border-radius:10px;padding:8px 12px 10px;font-size:var(--fs-s);line-height:1.8;animation:rise .2s var(--ease);font-family:var(--ui)}
+.tq-h .n{display:block;font-size:var(--fs-xs);font-weight:600;color:var(--accent);letter-spacing:.04em}
+.tq-h p{margin:0}
+.tq-h .tq-around{font-family:var(--serif);font-size:var(--fs-l);margin:2px 0 4px}
+.tq-h .tq-ex{font-family:var(--serif);font-size:var(--fs-m)}
+.tq-hmean{list-style:none;margin:2px 0 0;padding:0;display:flex;flex-direction:column;gap:1px}
+.tq-hmean .k{font-family:var(--ui);color:var(--muted);margin-right:6px;font-size:var(--fs-xs)}
+.tq-hbtn{margin-left:auto}
+.tq-p7q .qt .tq-hbtn,.tq-p7q .note .tq-hbtn{margin-left:8px;vertical-align:1px}
+.choice.cut{opacity:.3;text-decoration:line-through;text-decoration-thickness:1px}
+.tq-blank.sent{min-width:6em}
+/* 品詞の見分け方 */
+.tq-guide summary{list-style:none;cursor:pointer;display:inline-flex}
+.tq-guide summary::-webkit-details-marker{display:none}
+.tq-guide-in{display:flex;flex-direction:column;gap:6px;font-size:var(--fs-s);line-height:1.8;margin-top:6px}
+.tq-guide-in p{margin:0}
+.tq-h .tq-guide-in{margin-top:6px;padding-top:6px;border-top:1px dashed var(--line)}
+.tq-gt{border-collapse:collapse;font-size:var(--fs-s);width:100%;max-width:560px}
+.tq-gt th,.tq-gt td{border-bottom:1px solid var(--line);padding:3px 8px;text-align:left;vertical-align:top}
+.tq-gt th{font-size:var(--fs-xs);color:var(--muted);font-weight:600}
+.tq-gt td:last-child{white-space:nowrap;font-weight:600}
 </style>
 <script src="lessons.js"></script>
 </head>
@@ -2654,7 +2683,7 @@ function tqExists(id){   /* 話題の問題は、その話題がまだあると�
   const m6 = /^(.+)#s6#(\d+)$/.exec(id); if(m6){ const p = tqLessonP6(S.byId[m6[1]]); return !!(p && p.qs[+m6[2]]); }
   const m = /^(.+)#t\d+$/.exec(id); return !m || tqLessonQs(S.byId[m[1]]).some(q => q.id === id);
 }
-const tqItemN = it => it.t === 'p7' ? it.d.qs.length : it.t === 'p6' ? (it.d._act ? it.d._act.length : it.d.qs.length) : 1;
+const tqItemN = it => it.t === 'p7' ? it.d.qs.length : it.t === 'p6' || it.t === 'p34' ? (it.d._act ? it.d._act.length : it.d.qs.length) : 1;
 function tqDueIds(){
   const t = jstToday(), tq = (S.state && S.state.tq) || {};
   return Object.keys(tq).filter(id => { const r = tq[id]; return r && r.bad && (r.box || 0) < 3 && (r.due || '') <= t && tqExists(id); });
@@ -2668,7 +2697,7 @@ function tqLoad(){
   if(TQ.bank) return Promise.resolve(TQ.bank);
   if(!TQ.loading) TQ.loading = fetch('toeic.json').then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(async d => {
     const arr = x => Array.isArray(x) ? x : [];
-    TQ.bank = {p5: arr(d.p5), p7: arr(d.p7), vocab: arr(d.vocab), p2: arr(d.p2), p6: arr(d.p6)}; TQ.err = '';
+    TQ.bank = {p5: arr(d.p5), p7: arr(d.p7), vocab: arr(d.vocab), p2: arr(d.p2), p6: arr(d.p6), p3: arr(d.p3), p4: arr(d.p4)}; TQ.err = '';
     await tqLoadExtra();
     return TQ.bank;
   }).catch(() => { TQ.loading = null; TQ.err = '問題集を読み込めませんでした。ページを開きなおすと、もう一度読みます。（話題からの問題は解けます）'; return null; });
@@ -2682,12 +2711,13 @@ async function tqLoadExtra(){
 }
 function tqAddExtra(days){
   const B = TQ.bank; if(!B) return;
-  const have = new Set([...B.p5.map(q => q.id), ...B.p7.map(p => p.id), ...B.p6.map(p => p.id), ...B.vocab.map(v => 'v:' + v.w)]);
+  const have = new Set([...B.p5.map(q => q.id), ...B.p7.map(p => p.id), ...B.p6.map(p => p.id), ...B.p3.map(p => p.id), ...B.p4.map(p => p.id), ...B.vocab.map(v => 'v:' + v.w)]);
   days.forEach(d => {
     const tag = x => Object.assign({}, x, x.added ? {} : {added: d.date || ''});
     (Array.isArray(d.p5) ? d.p5 : []).forEach(q => { if(q && q.id && !have.has(q.id) && typeof q.q === 'string' && Array.isArray(q.ch)){ B.p5.push(tag(q)); have.add(q.id); } });
     (Array.isArray(d.p7) ? d.p7 : []).forEach(p => { if(p && p.id && !have.has(p.id) && Array.isArray(p.qs)){ B.p7.push(tag(p)); have.add(p.id); } });
     (Array.isArray(d.p6) ? d.p6 : []).forEach(p => { if(p && p.id && !have.has(p.id) && Array.isArray(p.qs) && typeof p.text === 'string'){ B.p6.push(tag(p)); have.add(p.id); } });
+    ['p3', 'p4'].forEach(n => (Array.isArray(d[n]) ? d[n] : []).forEach(p => { if(p && p.id && !have.has(p.id) && Array.isArray(p.qs) && Array.isArray(p.lines)){ B[n].push(tag(p)); have.add(p.id); } }));
     (Array.isArray(d.vocab) ? d.vocab : []).forEach(v => { if(v && v.w && !have.has('v:' + v.w)){ B.vocab.push(tag(v)); have.add('v:' + v.w); } });
   });
 }
@@ -2697,6 +2727,7 @@ function tqWeakCats(){ const st = tqCatStats(); return TQ_CATS.filter(c => st[c]
 function tqNoteEntry(id){
   const b = TQ.byId[id]; if(!b) return null;
   if(b.t === 'p7q') return {id, t: 'p7', item: {t: 'p7', d: Object.assign({}, b.p, {qs: [b.p.qs[b.k]], _ids: [id]})}, label: b.p.qs[b.k].q, sub: 'Part 7 · ' + b.p.title, q: b.p.qs[b.k]};
+  if(b.t === 'p34q'){ const q = b.p.qs[b.k]; return {id, t: 'p34', item: {t: 'p34', d: Object.assign({}, b.p, {_act: [b.k]})}, label: q.q, sub: `Part ${b.p.part} · ${b.p.title}`, q}; }
   if(b.t === 'p6q'){ const q = b.p.qs[b.k]; return {id, t: 'p6', item: {t: 'p6', d: Object.assign({}, b.p, {_act: [b.k]})}, label: `(${b.k + 1}) ${q.ch[q.a]}`, sub: (b.p.from ? '話題から · ' : '') + 'Part 6 · ' + b.p.title + (q.type ? ' · ' + q.type : ''), q}; }
   if(b.t === 'w') return {id, t: 'w', item: {t: 'w', d: b.d}, label: b.d.w, sub: '単語 · ' + b.d.m};
   if(b.t === 'p2') return {id, t: 'p2', item: {t: 'p2', d: b.d}, label: b.d.q, sub: 'Part 2 · ' + (b.d.type || '')};
@@ -2708,7 +2739,7 @@ function tqNoteBody(id){
   const d = e.item.d;
   if(e.t === 'w') return `${d.alt ? `<p class="ja">よく使う形：<span class="en-run" lang="en">${esc(d.alt)}</span></p>` : ''}${d.ex ? `<p class="tq-ex" lang="en">${esc(d.ex)} <button class="say" data-tq="say" data-text="${esc(d.ex)}" aria-label="例文を聞く">${ICON.say}</button></p>` : ''}${d.exJa ? `<p class="ja">${esc(d.exJa)}</p>` : ''}`;
   if(e.t === 'p2') return `<ul class="tq-script"><li class="ans"><span class="lab">Q</span><span><span class="en" lang="en">${esc(d.q)}</span><span class="ja">${esc(d.qJa || '')}</span></span><button class="say" data-tq="say" data-text="${esc(d.q)}" aria-label="聞く">${ICON.say}</button></li><li class="ans"><span class="lab">(${TQ_KEYS[d.a]})</span><span><span class="en" lang="en">${esc(d.ch[d.a])}</span><span class="ja">${esc((d.chJa || [])[d.a] || '')}</span></span><button class="say" data-tq="say" data-text="${esc(d.ch[d.a])}" aria-label="聞く">${ICON.say}</button></li></ul>${d.why ? `<p>${enRuns(d.why)}</p>` : ''}`;
-  if(e.t === 'p7'){ const q = e.q; return `<p>正解：(${TQ_KEYS[q.a]}) <span lang="en">${esc(q.ch[q.a])}</span></p>${q.why ? `<p>${enRuns(q.why)}</p>` : ''}${q.where ? `<p class="tq-where">${enRuns(q.where)}</p>` : ''}`; }
+  if(e.t === 'p7' || e.t === 'p34'){ const q = e.q; return `<p>正解：(${TQ_KEYS[q.a]}) <span lang="en">${esc(q.ch[q.a])}</span></p>${q.why ? `<p>${enRuns(q.why)}</p>` : ''}${q.where ? `<p class="tq-where">${enRuns(q.where)}</p>` : ''}`; }
   if(e.t === 'p6'){ const q = e.q; return `<p>正解：(${TQ_KEYS[q.a]}) <span lang="en">${esc(q.ch[q.a])}</span></p>${q.why ? `<p>${enRuns(q.why)}</p>` : ''}${q.chx ? `<ul class="tq-chx">${q.chx.map((c, i) => `<li class="${i === q.a ? 'ok' : ''}">${enRuns(c)}</li>`).join('')}</ul>` : ''}`; }
   const L = d.from && S.byId[d.from];
   return `<p class="ja">${esc(d.ja || '')}</p>${d.why ? `<p>${enRuns(d.why)}</p>` : ''}${d.tip ? `<span class="tq-tip">${enRuns(d.tip)}</span>` : ''}${tqXp(d)}${L ? `<span class="dc-from">出てきた話題：<button data-open="${esc(L.id)}">${esc(L.title)}</button></span>` : ''}`;
@@ -2724,7 +2755,7 @@ async function renderTqNote(){
   const grad = Object.keys(tq).filter(id => tq[id].bad && (tq[id].box || 0) >= 3).length;
   const rows = ids.map(id => {
     const e = tqNoteEntry(id), r = tq[id], today = (r.due || '') <= t, miss = (r.n || 0) - (r.c || 0);
-    return `<li><details class="tq-nd" data-nid="${esc(id)}"><summary><i class="r${today ? '' : ' later'}"></i><span class="t"><span${e.t === 'w' || e.t === 'p5' || e.t === 'p7' || e.t === 'p2' ? ' lang="en"' : ''}>${esc(e.label)}</span><small>${esc(e.sub)}</small><small class="st">${today ? '今日の復習' : `次は ${esc(jpDate(r.due))}`}・まちがい ${miss}回・卒業まであと ${Math.max(1, 3 - (r.box || 0))}回</small></span></summary><div class="tq-nb"></div></details><button class="btn ghost tq-one" data-tq="one" data-id="${esc(id)}">解く</button></li>`;
+    return `<li><details class="tq-nd" data-nid="${esc(id)}"><summary><i class="r${today ? '' : ' later'}"></i><span class="t"><span${e.t === 'w' || e.t === 'p5' || e.t === 'p7' || e.t === 'p2' || e.t === 'p34' ? ' lang="en"' : ''}>${esc(e.label)}</span><small>${esc(e.sub)}</small><small class="st">${today ? '今日の復習' : `次は ${esc(jpDate(r.due))}`}・まちがい ${miss}回・卒業まであと ${Math.max(1, 3 - (r.box || 0))}回</small></span></summary><div class="tq-nb"></div></details><button class="btn ghost tq-one" data-tq="one" data-id="${esc(id)}">解く</button></li>`;
   }).join('');
   const head = `<div class="view-head"><h1 class="view-h">まちがいノート<span class="c">${ids.length ? ids.length + '問' : ''}</span></h1>
     <p class="view-p">まちがえた問題が集まります。翌日また出て、3回続けて正解すると卒業です。問題を押すと解説、「解く」でいつでも解き直せます。${grad ? `卒業した問題は ${grad}問。` : ''}</p></div>`;
@@ -2739,6 +2770,7 @@ function tqIndex(){
     B.p5.forEach(d => { m[d.id] = {t: 'p5', d}; });
     B.p2.forEach(d => { m[d.id] = {t: 'p2', d}; });
     (B.p6 || []).forEach(p => (p.qs || []).forEach((q, k) => { m[p.id + '#' + k] = {t: 'p6q', p, k}; }));
+    [...(B.p3 || []), ...(B.p4 || [])].forEach(p => (p.qs || []).forEach((q, k) => { m[p.id + '#' + k] = {t: 'p34q', p, k}; }));
     B.p7.forEach(p => (p.qs || []).forEach((q, k) => { m[p.id + '#' + k] = {t: 'p7q', p, k}; }));
     B.vocab.forEach(d => { m['v:' + d.w] = {t: 'w', d}; });
   }
@@ -2789,12 +2821,27 @@ function tqSeq(parts, onStep){
       if(i >= parts.length){ if(onStep) onStep(-1); res(true); return; }
       const p = parts[i]; if(onStep) onStep(i);
       const u = new SpeechSynthesisUtterance(p.text); u.lang = 'en-US'; u.rate = S.rate;
-      const v = p.voice === 'B' ? tqVoiceB() : voice; if(v) u.voice = v;
+      const v = p.v || (p.voice === 'B' ? tqVoiceB() : voice); if(v) u.voice = v; if(p.pitch) u.pitch = p.pitch;
       u.onend = u.onerror = () => { if(tok !== tqTok){ res(false); return; } i++; setTimeout(next, p.gap || 300); };
       speechSynthesis.speak(u);
     };
     setTimeout(next, 60);
   });
+}
+/* Part 3・4：設問が「the man」「the woman」と聞くので、声の名前から男女を見分けて当てる。同じ声しかないときは高さを変える */
+const TQ_FEM = /female|zira|aria|jenny|michelle|\bana\b|emma|sonia|libby|natasha|clara|samantha|karen|moira|tessa|victoria|allison|\bava\b|susan|hazel|serena|kate|fiona|veena|nancy|amber|ashley|cora|elizabeth|jane|monica|sara|heera|neerja|catherine|linda|joanna|salli|kimberly|\bivy\b|kendra|aurora|emily|google us english/i;
+const TQ_MAL = /\bmale|david|mark|\bguy\b|christopher|eric|roger|steffan|ryan|thomas|william|daniel|\balex\b|george|james|brian|andrew|brandon|davis|jason|tony|liam|oliver|arthur|aaron|evan|ravi|prabhat|matthew|justin|joey|russell|rishi|\blee\b|gordon/i;
+function tqP34Voices(){
+  const out = {M: {}, W: {}, M2: {}, W2: {}};
+  if(!('speechSynthesis' in window)) return out;
+  const vs = speechSynthesis.getVoices().filter(v => /^en(-|_)/i.test(v.lang) && !BAD_VOICE.test(v.name));
+  const us = a => [...a.filter(v => /^en[-_]us/i.test(v.lang)), ...a.filter(v => !/^en[-_]us/i.test(v.lang))];
+  const fem = us(vs.filter(v => TQ_FEM.test(v.name))), mal = us(vs.filter(v => !TQ_FEM.test(v.name) && TQ_MAL.test(v.name)));
+  const M = mal[0] || voice || vs[0] || null, W = fem[0] || tqVoiceB() || M;
+  const M2 = mal[1] || M, W2 = fem[1] || W, same = (a, b) => a && b && a.name === b.name;
+  out.M = {v: M, pitch: same(M, W) ? .8 : 0}; out.W = {v: W, pitch: same(M, W) ? 1.25 : 0};
+  out.M2 = {v: M2, pitch: same(M2, M) ? (out.M.pitch || 1) * .88 : 0}; out.W2 = {v: W2, pitch: same(W2, W) ? (out.W.pitch || 1) * 1.1 : 0};
+  return out;
 }
 const tqNoEnVoice = () => { if(!('speechSynthesis' in window)) return true; const vs = speechSynthesis.getVoices(); return vs.length > 0 && !vs.some(v => /^en(-|_)/i.test(v.lang)); };
 
@@ -2845,14 +2892,15 @@ function tqItem(){
   $('#composer').hidden = true; $('#topTitle').textContent = s.title;
   const it = s.items[s.i];
   if(!it){ tqSummary(); return; }
-  s.answered = false; s.ctx = '';
-  if(it.t === 'p5') tqP5(it.d); else if(it.t === 'w') tqWord(it.d); else if(it.t === 'p2') tqP2(it.d); else if(it.t === 'p7') tqP7(it.d); else if(it.t === 'p6') tqP6(it.d);
+  s.answered = false; s.ctx = ''; s.hint = {};
+  if(it.t === 'p5') tqP5(it.d); else if(it.t === 'w') tqWord(it.d); else if(it.t === 'p2') tqP2(it.d); else if(it.t === 'p7') tqP7(it.d); else if(it.t === 'p6') tqP6(it.d); else if(it.t === 'p34') tqP34(it.d);
 }
 function tqP5(q){
   const L = q.from && S.byId[q.from];
   tqPaint(`${tqHead('Part 5 · ' + esc(q.cat || '') + (L ? ' · 話題から' : ''), q.lv, TQ_TARGET.p5)}
     <p class="tq-q" id="tqQ" lang="en">${tqBlank(q.q)}</p>
-    <div class="row tq-tools"><button class="txt-btn" id="tqSay" data-tq="say" data-text="${esc(q.q.replace('-------', ', blank, '))}">${ICON.say} 英文を聞く <kbd>R</kbd></button></div>
+    <div class="row tq-tools"><button class="txt-btn" id="tqSay" data-tq="say" data-text="${esc(q.q.replace('-------', ', blank, '))}">${ICON.say} 英文を聞く <kbd>R</kbd></button>${tqHintBtn()}</div>
+    <div class="tq-hints" id="tqHint"></div>
     ${tqChoices(q.ch, true)}
     <div id="tqFb"></div>`);
   tqTimer(TQ_TARGET.p5);
@@ -2864,7 +2912,7 @@ function tqAnsP5(q, pick){
   tqMarkCh($('#tqCh'), pick, q.a);
   const qq = $('#tqQ'); if(qq) qq.innerHTML = tqBlank(q.q, q.ch[q.a], ok);
   tqMark(q.id, ok);
-  s.res.push({ok, label: q.q.replace('-------', '[' + q.ch[q.a] + ']'), sub: (q.from ? '話題から · ' : 'Part 5 · ') + (q.cat || ''), ms});
+  s.res.push({ok, label: q.q.replace('-------', '[' + q.ch[q.a] + ']'), sub: (q.from ? '話題から · ' : 'Part 5 · ') + (q.cat || ''), ms, h: tqHintFlag(-1)}); tqHintDone(-1);
   const sb = $('#tqSay'); if(sb) sb.dataset.text = q.q.replace('-------', q.ch[q.a]);
   const L = q.from && S.byId[q.from];
   const fb = $('#tqFb'); if(fb) fb.outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}" aria-live="polite">
@@ -2889,7 +2937,8 @@ function tqWord(v){
     <div class="tq-word"><span class="w" lang="en">${esc(v.w)}</span><span class="pos">${esc(v.pos || '')}</span><button class="say" data-tq="say" data-text="${esc(v.w)}" aria-label="発音を聞く">${ICON.say}</button></div>
     <p class="note" style="margin-top:-14px">${r ? `これまで ${r.c}/${r.n}回正解` : 'はじめての単語'}</p>
     ${tqChoices(ch.map(x => x.m), false)}
-    <div class="row" id="tqDunno"><button class="txt-btn" data-tq="pick" data-i="-1">わからない</button></div>
+    <div class="row" id="tqDunno"><button class="txt-btn" data-tq="pick" data-i="-1">わからない</button>${tqHintBtn()}</div>
+    <div class="tq-hints" id="tqHint"></div>
     <div id="tqFb"></div>`);
   speak(v.w); tqTimer(TQ_TARGET.w);
 }
@@ -2898,7 +2947,7 @@ function tqAnsWord(v, pick){
   const ms = tqElapsed(); tqStopTimer();
   const ans = s.wch.indexOf(v), ok = pick === ans;
   tqMarkCh($('#tqCh'), pick, ans); tqMark('v:' + v.w, ok);
-  s.res.push({ok, label: v.w, sub: v.m, ms});
+  s.res.push({ok, label: v.w, sub: v.m, ms, h: tqHintFlag(-1)}); tqHintDone(-1);
   const dn = $('#tqDunno'); if(dn) dn.remove();
   const re = new RegExp('\\b(' + v.w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/e$/, '') + '\\w*)', 'i');
   const fb = $('#tqFb'); if(fb) fb.outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}" aria-live="polite">
@@ -2915,7 +2964,8 @@ function tqP2(q){
   tqPaint(`${tqHead('Part 2 · ' + esc(q.type || ''), q.lv)}
     <div class="tq-p2"><button class="dc-big on" id="tqP2Play" data-tq="p2play" aria-label="止める">${ICON.pause}</button><div id="tqP2Now"><b>問いかけ</b>を聞いています…</div></div>
     <div class="choices tq-ch3" id="tqCh">${q.ch.map((_, i) => `<button class="choice" data-tq="pick" data-i="${i}">(${TQ_KEYS[i]})</button>`).join('')}</div>
-    <div class="row tq-tools"><button class="txt-btn" data-tq="p2play">${ICON.say} もう一度聞く <kbd>R</kbd></button></div>
+    <div class="row tq-tools"><button class="txt-btn" data-tq="p2play">${ICON.say} もう一度聞く <kbd>R</kbd></button>${tqHintBtn()}</div>
+    <div class="tq-hints" id="tqHint"></div>
     <div id="tqFb"></div>`);
   tqPlayP2(q);
 }
@@ -2929,7 +2979,7 @@ function tqAnsP2(q, pick){
   const s = TQ.sess; if(!s || s.answered) return; s.answered = true;
   stopSpeak(); tqP2Btn(false); const n = $('#tqP2Now'); if(n) n.textContent = '答え合わせ';
   const ok = pick === q.a; tqMarkCh($('#tqCh'), pick, q.a); tqMark(q.id, ok);
-  s.res.push({ok, label: q.q, sub: 'Part 2 · ' + (q.type || '')});
+  s.res.push({ok, label: q.q, sub: 'Part 2 · ' + (q.type || ''), h: tqHintFlag(-1)}); tqHintDone(-1);
   const li = (lab, en, ja, cls) => `<li class="${cls || ''}"><span class="lab">${lab}</span><span><span class="en" lang="en">${esc(en)}</span><span class="ja">${esc(ja || '')}</span></span><button class="say" data-tq="say" data-text="${esc(en)}" aria-label="聞く">${ICON.say}</button></li>`;
   const fb = $('#tqFb'); if(fb) fb.outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}" aria-live="polite"><div class="tq-fb-h">${ok ? '正解' : `不正解 — 正解は (${TQ_KEYS[q.a]})`}</div>
     <ul class="tq-script">${li('Q', q.q, q.qJa)}${q.ch.map((c, i) => li(`(${TQ_KEYS[i]})`, c, (q.chJa || [])[i], `${i === q.a ? 'ans' : ''} ${i === pick ? 'pick' : ''}`)).join('')}</ul>
@@ -2945,7 +2995,7 @@ function tqP7(p){
     <div class="row tq-tools">${p.sents ? '<button class="txt-btn" data-tq="p7x">一文ずつ訳と単語</button>' : ''}<button class="txt-btn" data-tq="p7ja">全訳を見る</button><button class="txt-btn" id="tqP7Read" data-tq="p7read">${ICON.say} <span>本文を聞く</span> <kbd>R</kbd></button></div>
     <pre class="tq-passage ja" id="tqP7Ja" hidden>${esc(p.ja || '')}</pre>
     ${p.sents ? `<div class="tq-sents" id="tqP7X" hidden>${p.sents.map(x => `<div class="tq-sent"><p class="en" lang="en">${esc(x.en)} <button class="say" data-tq="say" data-text="${esc(x.en)}" aria-label="この文を聞く">${ICON.say}</button></p><p class="ja">${esc(x.ja)}</p>${tqChips(x.words)}</div>`).join('')}</div>` : ''}
-    ${p.qs.map((q, k) => `<div class="tq-p7q" data-k="${k}" data-id="${esc(ids[k])}"><p class="qt"><span class="n">Q${k + 1}</span><span lang="en">${esc(q.q)}</span> <button class="say" data-tq="say" data-text="${esc(q.q)}" aria-label="設問を聞く">${ICON.say}</button></p>${q.qJa ? `<p class="note">${esc(q.qJa)}</p>` : ''}<div class="choices tq-ch tq-one">${q.ch.map((c, i) => `<button class="choice en" lang="en" data-tq="p7pick" data-k="${k}" data-i="${i}"><span class="k">(${TQ_KEYS[i]})</span><span>${esc(c)}</span></button>`).join('')}</div><div class="tq-p7fb"></div></div>`).join('')}
+    ${p.qs.map((q, k) => `<div class="tq-p7q" data-k="${k}" data-id="${esc(ids[k])}"><p class="qt"><span class="n">Q${k + 1}</span><span lang="en">${esc(q.q)}</span> <button class="say" data-tq="say" data-text="${esc(q.q)}" aria-label="設問を聞く">${ICON.say}</button></p>${q.qJa ? `<p class="note">${esc(q.qJa)}${tqHintBtn(k)}</p>` : `<p class="note">${tqHintBtn(k)}</p>`}<div class="tq-hints tq-qhint"></div><div class="choices tq-ch tq-one">${q.ch.map((c, i) => `<button class="choice en" lang="en" data-tq="p7pick" data-k="${k}" data-i="${i}"><span class="k">(${TQ_KEYS[i]})</span><span>${esc(c)}</span></button>`).join('')}</div><div class="tq-p7fb"></div></div>`).join('')}
     <div id="tqP7Next"></div>`);
   tqTimer(p.qs.length * 60);
 }
@@ -2954,7 +3004,7 @@ function tqAnsP7(p, k, pick){
   box.dataset.done = '1';
   const q = p.qs[k], ok = pick === q.a;
   tqMarkCh(box.querySelector('.choices'), pick, q.a); tqMark(box.dataset.id, ok);
-  s.res.push({ok, label: q.q, sub: p.title});
+  s.res.push({ok, label: q.q, sub: p.title, h: tqHintFlag(k)}); tqHintDone(k);
   const xp = q.where || q.chx || (q.words && q.words.length) ? `<div class="tq-xp">${q.where ? `<div><h3>答えの場所</h3><p class="tq-where">${enRuns(q.where)}</p></div>` : ''}${q.chx ? `<div><h3>選択肢を1つずつ</h3><ul class="tq-chx">${q.chx.map((c, i) => `<li class="${i === q.a ? 'ok' : ''}">${enRuns(c)}</li>`).join('')}</ul></div>` : ''}${q.words && q.words.length ? `<div><h3>設問と選択肢の単語</h3>${tqChips(q.words)}</div>` : ''}</div>` : '';
   box.querySelector('.tq-p7fb').outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}"><div class="tq-fb-h">${ok ? '正解' : `不正解 — 正解は (${TQ_KEYS[q.a]})`}</div>${q.why ? `<p>${enRuns(q.why)}</p>` : ''}${xp}</div>`;
   s.p7.done++; tqDots();
@@ -2992,7 +3042,7 @@ function tqP6(p){
   tqPaint(`${tqHead('Part 6 · ' + esc(p.title) + (p.from ? ' · 話題から' : ''), p.lv, act.length * 45)}
     <pre class="tq-passage" id="tqP6Text" lang="en">${tqP6Text(p, act, {})}</pre>
     <p class="note" style="margin-top:-12px">空欄に入るものを、下の設問で選びます${act.length > 1 ? '（上から順に）' : ''}。1〜4 のキーでも選べます。</p>
-    ${act.map(k => { const q = p.qs[k], one = q.type === '文を選ぶ'; return `<div class="tq-p7q tq-p6q" data-k="${k}" data-id="${esc(p.id + '#' + k)}"><p class="qt"><span class="n">(${k + 1})</span><span class="note" style="display:inline">${esc(q.type === '文を選ぶ' ? '空欄に入る文を選ぶ' : '空欄に入る語句を選ぶ')}</span></p><div class="choices tq-ch${one ? ' tq-one' : ''}">${q.ch.map((c, i) => `<button class="choice en" lang="en" data-tq="p6pick" data-k="${k}" data-i="${i}"><span class="k">(${TQ_KEYS[i]})</span><span>${esc(c)}</span></button>`).join('')}</div><div class="tq-p7fb"></div></div>`; }).join('')}
+    ${act.map(k => { const q = p.qs[k], one = q.type === '文を選ぶ'; return `<div class="tq-p7q tq-p6q" data-k="${k}" data-id="${esc(p.id + '#' + k)}"><p class="qt"><span class="n">(${k + 1})</span><span class="note" style="display:inline">${esc(q.type === '文を選ぶ' ? '空欄に入る文を選ぶ' : '空欄に入る語句を選ぶ')}</span>${tqHintBtn(k)}</p><div class="tq-hints tq-qhint"></div><div class="choices tq-ch${one ? ' tq-one' : ''}">${q.ch.map((c, i) => `<button class="choice en" lang="en" data-tq="p6pick" data-k="${k}" data-i="${i}"><span class="k">(${TQ_KEYS[i]})</span><span>${esc(c)}</span></button>`).join('')}</div><div class="tq-p7fb"></div></div>`; }).join('')}
     <div id="tqP6Next"></div>`);
   tqTimer(act.length * 45);
 }
@@ -3002,7 +3052,7 @@ function tqAnsP6(p, k, pick){
   const act = p._act || p.qs.map((_, j) => j), q = p.qs[k], ok = pick === q.a;
   tqMarkCh(box.querySelector('.choices'), pick, q.a); tqMark(box.dataset.id, ok);
   s.p6.f[k] = {ok}; const tx = $('#tqP6Text'); if(tx) tx.innerHTML = tqP6Text(p, act, s.p6.f);
-  s.res.push({ok, k, label: `(${k + 1}) ${q.ch[q.a]}`, sub: 'Part 6 · ' + p.title});
+  s.res.push({ok, k, label: `(${k + 1}) ${q.ch[q.a]}`, sub: 'Part 6 · ' + p.title, h: tqHintFlag(k)}); tqHintDone(k);
   box.querySelector('.tq-p7fb').outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}"><div class="tq-fb-h">${ok ? '正解' : `不正解 — 正解は (${TQ_KEYS[q.a]})`}</div>${q.why ? `<p>${enRuns(q.why)}</p>` : ''}<div class="tq-xp">${q.chx ? `<div><h3>選択肢を1つずつ</h3><ul class="tq-chx">${q.chx.map((c, i) => `<li class="${i === q.a ? 'ok' : ''}">${enRuns(c)}</li>`).join('')}</ul></div>` : ''}${q.words && q.words.length ? `<div><h3>大事な語</h3>${tqChips(q.words)}</div>` : ''}</div></div>`;
   s.p6.done++; tqDots();
   if(s.p6.done >= act.length){
@@ -3016,10 +3066,171 @@ function tqAnsP6(p, k, pick){
     const nx = $('#tqP6Next'); if(nx) nx.outerHTML = `<div class="tq-fb"><div class="tq-fb-h">${act.length}問で ${Math.floor(sec / 60)}分${sec % 60}秒<span class="sec">本番の目安 ${Math.round(act.length * 45 / 60 * 10) / 10}分</span></div>${tools}${L ? `<span class="dc-from">出てきた話題：<button data-open="${esc(L.id)}">${esc(L.title)}</button></span>` : ''}${tqAskHtml()}</div>${tqNextRow()}`;
   }
 }
+/* Part 3・4（聞き取り。2026-11-04 持ち主「Part 3・4も作ってみて」）：会話や1人の話を聞いて、設問3つに答える。
+   話し手ごとに声を変えて読み上げる。設問と選択肢は文字で出し（本物と同じ）、台本と訳は全部答えたあとに出す。
+   まちがいノートから1問だけ解くときは _act（解く設問の番号）だけ出す */
+const TQ_SP = {M: '男性', W: '女性', M2: '男性2', W2: '女性2'};
+const TQ_P4KIND = {announcement: 'announcement', voicemail: 'telephone message', talk: 'talk', advertisement: 'advertisement', news: 'news report', tour: 'talk', meeting: 'excerpt from a meeting'};
+function tqP34Btn(on){ const b = $('#tqP34Play'); if(b){ b.classList.toggle('on', on); b.innerHTML = on ? ICON.pause : ICON.playL; b.setAttribute('aria-label', on ? '止める' : 'もう一度聞く'); } }
+function tqP34(p){
+  const s = TQ.sess, act = p._act || p.qs.map((_, k) => k);
+  s.p34 = {done: 0};
+  tqPaint(`${tqHead((p.part === 4 ? 'Part 4（1人の話）' : 'Part 3（会話）') + ' · ' + esc(p.title), p.lv)}
+    <div class="tq-p2"><button class="dc-big on" id="tqP34Play" data-tq="p34play" aria-label="止める">${ICON.pause}</button><div id="tqP34Now">はじまります…</div></div>
+    <p class="note" style="margin-top:-8px">${p.part === 4 ? '1人の話' : '会話'}を聞いて、下の設問に答えます。設問を先に読んでおくと聞きやすくなります。もう一度聞くときは ▶ か <kbd>R</kbd>。</p>
+    ${act.map(k => { const q = p.qs[k]; return `<div class="tq-p7q tq-p34q" data-k="${k}" data-id="${esc(p.id + '#' + k)}"><p class="qt"><span class="n">Q${k + 1}</span><span lang="en">${esc(q.q)}</span></p>${q.qJa ? `<p class="note">${esc(q.qJa)}${tqHintBtn(k)}</p>` : `<p class="note">${tqHintBtn(k)}</p>`}<div class="tq-hints tq-qhint"></div><div class="choices tq-ch tq-one">${q.ch.map((c, i) => `<button class="choice en" lang="en" data-tq="p34pick" data-k="${k}" data-i="${i}"><span class="k">(${TQ_KEYS[i]})</span><span>${esc(c)}</span></button>`).join('')}</div><div class="tq-p7fb"></div></div>`; }).join('')}
+    <div id="tqP34Next"></div>`);
+  tqPlayP34(p);
+}
+function tqPlayP34(p){
+  const now = t => { const n = $('#tqP34Now'); if(n) n.innerHTML = t; };
+  if(tqNoEnVoice()){ now('この画面では英語の声が使えません。Chrome か Edge で開くと聞けます。'); tqP34Btn(false); return; }
+  tqP34Btn(true);
+  const act = p._act || p.qs.map((_, k) => k), V = tqP34Voices(), what = p.part === 4 ? TQ_P4KIND[p.kind] || 'talk' : 'conversation';
+  const intro = act.length > 1 ? `Questions ${act[0] + 1} through ${act[act.length - 1] + 1} refer to the following ${what}.` : `Question ${act[0] + 1} refers to the following ${what}.`;
+  const lines = (p.lines || []).filter(l => l && l.en);
+  const parts = [{text: intro, voice: 'A', gap: 900}, ...lines.map(l => Object.assign({text: l.en, gap: 420}, V[l.sp] || V.M))];
+  tqSeq(parts, i => {
+    if(i < 0){ now(TQ.sess && TQ.sess.answered ? '答え合わせ' : '答えを選んでください（▶ でもう一度）'); return; }
+    if(i === 0){ now('案内を聞いています…'); return; }
+    const l = lines[i - 1]; now(`<b>${p.part === 4 ? '話し手' : TQ_SP[l.sp] || ''}</b>が話しています…<span class="sec" style="margin-left:8px">${i} / ${lines.length}</span>`);
+  }).then(() => tqP34Btn(false));
+}
+function tqAnsP34(p, k, pick){
+  const s = TQ.sess, box = $(`.tq-p34q[data-k="${k}"]`); if(!s || !box || box.dataset.done) return;
+  box.dataset.done = '1';
+  const act = p._act || p.qs.map((_, j) => j), q = p.qs[k], ok = pick === q.a;
+  tqMarkCh(box.querySelector('.choices'), pick, q.a); tqMark(box.dataset.id, ok);
+  s.res.push({ok, k, label: q.q, sub: `Part ${p.part} · ${p.title}`, h: tqHintFlag(k)}); tqHintDone(k);
+  const xp = q.where || q.chx ? `<div class="tq-xp">${q.where ? `<div><h3>答えの場所</h3><p class="tq-where">${enRuns(q.where)}</p></div>` : ''}${q.chx ? `<div><h3>選択肢を1つずつ</h3><ul class="tq-chx">${q.chx.map((c, i) => `<li class="${i === q.a ? 'ok' : ''}">${enRuns(c)}</li>`).join('')}</ul></div>` : ''}</div>` : '';
+  box.querySelector('.tq-p7fb').outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}"><div class="tq-fb-h">${ok ? '正解' : `不正解 — 正解は (${TQ_KEYS[q.a]})`}</div>${q.why ? `<p>${enRuns(q.why)}</p>` : ''}${xp}</div>`;
+  s.p34.done++; tqDots();
+  if(s.p34.done >= act.length){
+    s.answered = true; stopSpeak(); tqP34Btn(false);
+    const n = $('#tqP34Now'); if(n) n.textContent = '答え合わせ。下に台本と訳があります';
+    const lab = l => p.part === 4 ? '' : TQ_SP[l.sp] || '';
+    s.ctx = `Part ${p.part} 台本：\n${(p.lines || []).map(l => (lab(l) ? lab(l) + '：' : '') + l.en).join('\n')}\n設問：\n${act.map(j => { const x = p.qs[j]; return `Q${j + 1} ${x.q} ${x.ch.map((c, m) => `(${TQ_KEYS[m]}) ${c}`).join(' ')} 正解(${TQ_KEYS[x.a]})`; }).join('\n')}`;
+    const nx = $('#tqP34Next'); if(nx) nx.outerHTML = `<div class="tq-fb"><div class="tq-fb-h">台本と訳<span class="sec">押すと1文ずつ聞けます</span></div>
+      <ul class="tq-script tq-s34${p.part === 4 ? ' one' : ''}">${(p.lines || []).map(l => `<li><span class="lab">${esc(lab(l))}</span><span><span class="en" lang="en">${esc(l.en)}</span><span class="ja">${esc(l.ja || '')}</span></span><button class="say" data-tq="say" data-text="${esc(l.en)}" aria-label="この文を聞く">${ICON.say}</button></li>`).join('')}</ul>${tqAskHtml()}</div>${tqNextRow()}`;
+  }
+}
+/* 聞き取りのヒント：設問の型ごとに、どこで何を聞くか */
+function tqP34Tip(q){
+  const s = String(q || '').toLowerCase();
+  if(/mean when|imply|when (he|she) says|why does the (speaker|man|woman) say/.test(s)) return '引用された言い方の前後の流れから、話し手の気持ちや意図を考えます。言葉そのままの意味ではないことが多いです。';
+  if(/purpose|why is the (speaker|man|woman) calling|mainly (about|discussing)|main topic|what is the (talk|announcement|message|broadcast) about/.test(s)) return '目的や話題は、最初の1〜2文で言われることがほとんどです。';
+  if(/\bnext\b|will .* do|plan to do|going to do/.test(s)) return '「次にすること」は、終わりのほうの I\'ll… / Let me… / I\'m going to… で言われます。';
+  if(/suggest|recommend|advise|offer|ask .* to|request|encourage|remind/.test(s)) return '提案や依頼は Why don\'t you… / You should… / Could you… / Please… / I recommend… のあとに来ます。';
+  if(/\bwhere\b/.test(s)) return '場所は、そこにしかない物や人（受付・搭乗口・メニュー・患者など）の言葉から分かります。';
+  if(/\bwho\b|occupation|profession|job|work (in|for|at)|industry|business/.test(s)) return '仕事や立場は、話の中に出てくる仕事の言葉（注文・締め切り・お客さまなど）から考えます。';
+  if(/\bwhen\b|what time|what day|how long|how many|how much|how often|date/.test(s)) return '数字や日時は、いくつか出てきて取り違えやすいので、どれが聞かれているかを確かめながら聞きます。';
+  if(/problem|concern|worried|wrong|issue|delay/.test(s)) return '問題は but / unfortunately / I\'m afraid / The problem is のあとに来やすいです。';
+  return '設問の大事な語を先に読んでおき、その語（や言いかえ）が聞こえたところに集中します。';
+}
+/* ヒント（2026-11-04 持ち主「全部の問題共通でヒントボタンを用意してほしい」）：押すたびに1つずつ増える。
+   ヒント1＝見るところと考え方、ヒント2＝選択肢の意味（解説の chx から、◯✕ は見せずに意味だけ）、最後＝まちがいの選択肢を消して2つにしぼる */
+const TQ_TIP = {
+  '品詞': '選択肢が同じ単語のなかま（語尾だけちがう）なら、意味は考えず、空欄の前後だけで決まります。',
+  '動詞の形': '主語が1つか複数か、時を表す語（yesterday・since・next week など）、「〜される」の受け身かを見ます。',
+  '前置詞・接続詞': '空欄の後ろが「主語＋動詞」なら接続詞、名詞のかたまりだけなら前置詞。それから意味を考えます。',
+  '代名詞': '空欄が「〜は（主語）」「〜を（動詞や前置詞のあと）」「〜の（後ろに名詞）」のどれかと、指している名詞が1つか複数かを見ます。',
+  '関係詞': '空欄の前の名詞が人か物かと、空欄のすぐ後ろが動詞か（who・which）、名詞か（whose）を見ます。',
+  '分詞': '説明される名詞が「する側」なら -ing、「される側」なら -ed（過去分詞）です。',
+  '比較': 'than があれば比較級（-er・more）、the と in / of があれば最上級（-est・most）、as 〜 as なら元の形です。',
+  '慣用表現': '空欄の前後の語とセットになる決まった言い方（be responsible for、a wide range of など）を探します。',
+  '語彙': '選択肢の意味がちがう問題です。文全体の意味と、空欄の前後の語とのつながり（後ろの前置詞・目的語）を見ます。',
+  'つなぎ言葉': '前の文と後ろの文の関係を見ます。反対→However、結果→As a result・Therefore、つけ足し→In addition・Also、例→For example。',
+  '文を選ぶ': '空欄の前後の文を読み、次の文の this・they・also・the 〜 などが何を受けているかを見ます。本文と食い違う文は外します。'
+};
+const TQ_P2TIP = {
+  'WH疑問文': '最初の語（Where・When・Who・Why・How など）が聞いていることに合う応答を選びます。Where なら場所、When なら時。Yes / No では答えません。',
+  'Yes/No疑問文': 'Yes / No のあとの内容が問いかけに合っているかを見ます。Yes / No を言わずに答える応答が正解のこともあります。',
+  '依頼・提案': '「〜してくれますか」「〜しませんか」への返事です。引き受ける・断る・代わりの案を出す応答を選びます。',
+  '否定・付加疑問': '「〜ではないのですか」「〜ですよね」でも、ふつうの疑問文と同じように中身で答えます。',
+  '平叙文': '質問ではない文への返事です。会話として自然につながる応答を選びます。',
+  '選択疑問文': '「A ですか、B ですか」への返事です。どちらかを選ぶか、どちらでもない答えが正解になりやすいです。'
+};
+const TQ_POS = {'名': '名詞', '動': '動詞', '形': '形容詞', '副': '副詞', '前': '前置詞', '接': '接続詞', '句': '決まった言い方'};
+const TQ_BULB = '<svg class="ico-inline" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.4 1 1.1 1 1.8V16h5v-.3c0-.7.4-1.4 1-1.8A6 6 0 0 0 12 3z"/></svg>';
+function tqHintBtn(k){ return `<button class="txt-btn tq-hbtn" data-tq="hint"${k != null ? ` data-k="${k}"` : ' id="tqHintBtn"'}>${TQ_BULB} ヒント${k == null ? ' <kbd>H</kbd>' : ''}</button>`; }
+function tqHintFlag(k){ return !!(TQ.sess && TQ.sess.hint && TQ.sess.hint['h' + k]); }
+function tqHintDone(k){ const b = k >= 0 ? $(`.tq-p7q[data-k="${k}"] .tq-hbtn`) : $('#tqHintBtn'); if(b) b.remove(); }
+/* 品詞の見分け方（2026-11-04 持ち主「形容詞・副詞・名詞みたいな、どこで使うかわかんない系の問題の解き方がわからない」） */
+function tqPosGuideHtml(compact){
+  return `<div class="tq-guide-in">
+    <p><b>① 選択肢が同じ単語のなかま</b>（probable / probably / probability のように語尾だけちがう）なら品詞の問題。意味は考えなくて大丈夫です。</p>
+    <p><b>② 語尾で見分ける</b>：名詞 <span class="en-run" lang="en">-tion -ity -ment -ness -ance</span>／形容詞 <span class="en-run" lang="en">-able -ible -ful -ous -ive -al</span>／副詞 <span class="en-run" lang="en">-ly</span></p>
+    <p><b>③ 空欄の前後で、入る品詞を決める</b></p>
+    <table class="tq-gt"><tr><th>空欄のまわり</th><th>入るもの</th></tr>
+      <tr><td><span class="en-run" lang="en">a / the / my</span> のあと（後ろに名詞なし）</td><td>名詞</td></tr>
+      <tr><td><span class="en-run" lang="en">in / of / for</span> などのあと</td><td>名詞</td></tr>
+      <tr><td><span class="en-run" lang="en">a / the</span> と名詞のあいだ</td><td>形容詞</td></tr>
+      <tr><td><span class="en-run" lang="en">is / are / was</span> のあと（後ろに名詞なし）</td><td>形容詞</td></tr>
+      <tr><td>動詞の前後・文のはじめ・形容詞の前</td><td>副詞</td></tr></table>
+    <p><b>コツ</b>：空欄を消しても文が成り立つなら副詞。</p>
+    ${compact ? '' : `<p class="ja">例：<span class="en-run" lang="en">It is ___ that he ran at night.</span> → 前が is、後ろが that（名詞ではない）→ 形容詞 <span class="en-run" lang="en">probable</span>／<span class="en-run" lang="en">The ___ is high.</span> → the のあとで後ろに名詞なし → 名詞 <span class="en-run" lang="en">probability</span>／<span class="en-run" lang="en">He will ___ come.</span> → 消しても文になる → 副詞 <span class="en-run" lang="en">probably</span></p>`}
+  </div>`;
+}
+const tqWords = s => String(s || '').replace(/\[\[\d+\]\]/g, '___').trim().split(/\s+/).filter(Boolean);
+function tqAroundHtml(pre, post){ return `<p class="tq-around" lang="en">… ${esc(tqWords(pre).slice(-4).join(' '))} <span class="tq-blank">&nbsp;</span> ${esc(tqWords(post).slice(0, 4).join(' '))} …</p>`; }
+function tqSentAround(pre, post){
+  const sp = s => String(s || '').replace(/\[\[\d+\]\]/g, '___').trim().split(/(?<=[.!?])\s+/).filter(Boolean);
+  const b = sp(pre).slice(-1)[0] || '', a = sp(post)[0] || '';
+  return `<p class="tq-around" lang="en">${esc(b)} <span class="tq-blank sent">&nbsp;</span> ${esc(a)}</p>`;
+}
+const tqChoiceMean = c => {
+  let x = String(c).replace(/^\([A-D]\)\s*/, '');
+  x = x.includes('」') ? x.slice(0, x.indexOf('」') + 1) : x.split(/[。→◯✕]/)[0].slice(0, 40);
+  x = x.replace(/[◯✕]/g, '').trim();
+  return x + '）'.repeat(Math.max(0, (x.match(/（/g) || []).length - (x.match(/）/g) || []).length));
+};
+const tqMeanHtml = chx => Array.isArray(chx) && chx.length ? `<p><b>選択肢の意味</b></p><ul class="tq-hmean">${chx.map((c, i) => `<li><span class="k">(${TQ_KEYS[i]})</span>${enRuns(tqChoiceMean(c))}</li>`).join('')}</ul>` : '';
+function tqHintParts(it, k){
+  const d = it.d;
+  if(it.t === 'p5'){ const [pre, post] = String(d.q).split('-------'); return [`<p><b>見るところ</b></p>${tqAroundHtml(pre, post)}<p>${esc(TQ_TIP[d.cat] || TQ_TIP['語彙'])}</p>${d.cat === '品詞' ? tqPosGuideHtml(true) : ''}`, tqMeanHtml(d.chx)]; }
+  if(it.t === 'p6'){
+    const q = d.qs[k], parts = String(d.text).split(`[[${k + 1}]]`), sent = q.type === '文を選ぶ';
+    return [`<p><b>見るところ</b></p>${sent ? tqSentAround(parts[0], parts[1]) : tqAroundHtml(parts[0], parts[1])}<p>${esc(TQ_TIP[q.type] || TQ_TIP['語彙'])}</p>${q.type === '品詞' ? tqPosGuideHtml(true) : ''}`, tqMeanHtml(q.chx)];
+  }
+  if(it.t === 'p7'){ const q = d.qs[k]; return [q.where ? `<p><b>答えの場所</b>：${enRuns(q.where)}</p>` : '<p>設問の大事な語を、本文の中で探します。</p>', tqMeanHtml(q.chx)]; }
+  if(it.t === 'w') return [d.ex ? `<p><b>この単語を使った文</b></p><p class="tq-ex" lang="en">${esc(d.ex)}</p><p class="note">この文の中で、どんな意味になりそうか考えます。</p>` : '', d.alt ? `<p><b>よく使う形</b>：<span class="en-run" lang="en">${esc(d.alt)}</span>（${esc(TQ_POS[d.pos] || '')}）</p>` : ''];
+  if(it.t === 'p2') return [`<p><b>${esc(d.type || '')}</b>：${esc(TQ_P2TIP[d.type] || '問いかけの最初の語をよく聞きます。')}</p>`, `<p><b>問いかけ</b></p><p class="tq-ex" lang="en">${esc(d.q)}</p><p class="ja">${esc(d.qJa || '')}</p>`];
+  if(it.t === 'p34'){ const q = d.qs[k]; return [`<p><b>聞きどころ</b>：${esc(tqP34Tip(q.q))}</p><p class="note">答えは設問の順に出てきます。この設問は、だいたい話の${['前半', '中ほど', '後半'][k] || '後半'}です。</p>`, tqMeanHtml(q.chx), q.where ? `<p><b>答えの場所</b>：${enRuns(q.where)}</p>` : '']; }
+  return [];
+}
+/* まちがいの選択肢を消して2つにしぼる（Part 2 は3択なので1つ消す） */
+function tqCut(box, ans){
+  if(!box) return;
+  const bs = [...box.querySelectorAll('.choice')], wrong = tqShuffle(bs.map((_, i) => i).filter(i => i !== ans && !bs[i].classList.contains('cut')));
+  wrong.slice(0, Math.max(0, bs.length - 2)).forEach(i => { bs[i].classList.add('cut'); bs[i].disabled = true; });
+}
+function tqHint(kAttr){
+  const s = TQ.sess, it = s && s.items[s.i]; if(!it || s.done) return;
+  let k = kAttr == null || kAttr === '' ? -1 : +kAttr;
+  const multi = it.t === 'p6' || it.t === 'p7' || it.t === 'p34';
+  if(multi && k < 0){ const box = $$('.tq-p7q').find(b => !b.dataset.done); if(!box) return; k = +box.dataset.k; }
+  if(!multi && s.answered) return;
+  const box = multi ? $(`.tq-p7q[data-k="${k}"]`) : null; if(multi && (!box || box.dataset.done)) return;
+  const parts = tqHintParts(it, k).filter(Boolean), max = parts.length + 1;
+  s.hint = s.hint || {}; const lv = Math.min(max, (s.hint['h' + k] || 0) + 1); s.hint['h' + k] = lv;
+  const area = multi ? box.querySelector('.tq-qhint') : $('#tqHint'); if(!area) return;
+  area.innerHTML = parts.slice(0, Math.min(lv, parts.length)).map((h, i) => `<div class="tq-h"><span class="n">ヒント ${i + 1}</span>${h}</div>`).join('')
+    + (lv >= max ? `<div class="tq-h"><span class="n">ヒント ${max}</span><p>まちがいの選択肢を消して、2つにしぼりました。</p></div>` : '');
+  if(lv >= max){
+    const chBox = multi ? box.querySelector('.choices') : $('#tqCh');
+    const ans = it.t === 'w' ? s.wch.indexOf(it.d) : multi ? it.d.qs[k].a : it.d.a;
+    tqCut(chBox, ans);
+  }
+  const btn = multi ? box.querySelector('.tq-hbtn') : $('#tqHintBtn');
+  if(btn){ if(lv >= max) btn.remove(); else btn.innerHTML = `${TQ_BULB} もう少しヒント（${lv}/${max}）`; }
+}
 function tqPick(i){
   const s = TQ.sess, it = s && s.items[s.i]; if(!it || s.done) return;
+  { const multi = it.t === 'p6' || it.t === 'p7' || it.t === 'p34', box = multi ? $$('.tq-p7q').find(b => !b.dataset.done) : null;   /* ヒントで消した選択肢はキーでも選べない */
+    const btn = i >= 0 ? (multi ? box && box.querySelectorAll('.choice')[i] : $$('#tqCh .choice')[i]) : null; if(btn && btn.classList.contains('cut')) return; }
   if(it.t === 'p7'){ const k = $$('.tq-p7q').findIndex(b => !b.dataset.done); if(k >= 0 && i >= 0 && i < it.d.qs[k].ch.length) tqAnsP7(it.d, k, i); return; }
   if(it.t === 'p6'){ const b = $$('.tq-p6q').find(x => !x.dataset.done); if(b && i >= 0 && i < 4) tqAnsP6(it.d, +b.dataset.k, i); return; }
+  if(it.t === 'p34'){ const b = $$('.tq-p34q').find(x => !x.dataset.done); if(b && i >= 0 && i < 4) tqAnsP34(it.d, +b.dataset.k, i); return; }
   if(s.answered) return;
   if(it.t === 'p5'){ if(i >= 0 && i < it.d.ch.length) tqAnsP5(it.d, i); }
   else if(it.t === 'w'){ if(i < 4) tqAnsWord(it.d, i); }
@@ -3033,6 +3244,7 @@ function tqReadKey(){
   else if(it.t === 'p2'){ const b = $('#tqP2Play'); if(b && b.classList.contains('on')){ stopSpeak(); tqP2Btn(false); } else tqPlayP2(it.d); }
   else if(it.t === 'p7') tqReadP7(it.d);
   else if(it.t === 'p6'){ if(s.answered) tqReadP7(it.d); else toast('答え合わせのあとに読み上げます'); }   /* 先に読むと答えが分かってしまう */
+  else if(it.t === 'p34'){ const b = $('#tqP34Play'); if(b && b.classList.contains('on')){ stopSpeak(); tqP34Btn(false); } else tqPlayP34(it.d); }
 }
 function tqSummary(){
   tqStopTimer(); stopSpeak();
@@ -3041,7 +3253,7 @@ function tqSummary(){
   const wrong = []; let k = 0;
   s.items.forEach(it => {   /* Part 6 は、まちがえた空欄だけをもう一度（ほかの空欄は正解で埋めておく） */
     const m = tqItemN(it), sl = s.res.slice(k, k + m);
-    if(sl.some(r => !r.ok)) wrong.push(it.t === 'p6' ? {t: 'p6', d: Object.assign({}, it.d, {_act: sl.filter(r => !r.ok).map(r => r.k).sort((x, y) => x - y)})} : it);
+    if(sl.some(r => !r.ok)) wrong.push(it.t === 'p6' || it.t === 'p34' ? {t: it.t, d: Object.assign({}, it.d, {_act: sl.filter(r => !r.ok).map(r => r.k).sort((x, y) => x - y)})} : it);
     k += m;
   });
   s.wrong = wrong;
@@ -3049,7 +3261,7 @@ function tqSummary(){
   $('#topTitle').textContent = s.title + ' の結果';
   tqPaint(`<div class="view-head"><h1 class="view-h">${esc(s.title)} の結果</h1></div>
     <div class="tq-score"><b>${c}<small> / ${n}</small></b><span>正答率 ${n ? Math.round(c / n * 100) : 0}%${avg ? `・1問あたり ${avg.toFixed(1)}秒` : ''}・今日 ${td.n}問</span></div>
-    <ul class="tq-res">${s.res.map(r => `<li><i class="r${r.ok ? ' ok' : ''}"></i><span class="t" lang="en">${esc(r.label)}<small lang="ja">${esc(r.sub || '')}</small></span><span class="m">${r.ms ? (r.ms / 1000).toFixed(1) + '秒' : ''}</span></li>`).join('')}</ul>
+    <ul class="tq-res">${s.res.map(r => `<li><i class="r${r.ok ? ' ok' : ''}"></i><span class="t" lang="en">${esc(r.label)}<small lang="ja">${esc(r.sub || '')}${r.h ? '・ヒントあり' : ''}</small></span><span class="m">${r.ms ? (r.ms / 1000).toFixed(1) + '秒' : ''}</span></li>`).join('')}</ul>
     <div class="row">${wrong.length ? `<button class="btn" data-tq="again" data-how="wrong">まちがえた ${wrong.reduce((a, it) => a + tqItemN(it), 0)}問をもう一度</button>` : ''}${lid && S.byId[lid] ? `<button class="btn${wrong.length ? ' ghost' : ''}" data-open="${esc(lid)}">話題にもどる</button>` : fromNote ? `<button class="btn${wrong.length ? ' ghost' : ''}" data-tq="note">まちがいノートにもどる</button>` : `<button class="btn${wrong.length ? ' ghost' : ''}" data-tq="again" data-how="more">続けてもう1セット</button>`}<button class="btn ghost" data-tq="home">TOEIC のはじめへ</button></div>
     ${wrong.length ? `<p class="note">まちがえた問題は「まちがいノート」に入り、明日もう一度出ます。3回続けて正解すると卒業です。<button class="txt-btn" data-tq="note" style="display:inline-flex;padding:0 4px">まちがいノートを見る</button></p>` : ''}`);
 }
@@ -3066,7 +3278,7 @@ async function tqMix(){ if(!await tqNeedBank()) return; const p5 = tqFresh(TQ.ba
 async function tqReview(){
   if(!await tqNeedBank()) return;
   const items = [];
-  tqShuffle(tqDueIds()).slice(0, 10).forEach(id => { const b = TQ.byId[id]; if(!b) return; items.push(b.t === 'p7q' ? {t: 'p7', d: Object.assign({}, b.p, {qs: [b.p.qs[b.k]], _ids: [id]})} : {t: b.t, d: b.d}); });
+  tqShuffle(tqDueIds()).slice(0, 10).forEach(id => { const e = tqNoteEntry(id); if(e) items.push(e.item); });   /* Part 6・3・4 も1問ずつ（tqNoteEntry と同じ形） */
   tqStart('まちがいノート', items, 'review');
 }
 function tqP6Fresh(sets){ const tq = S.state.tq || {}, rest = sets.filter(p => !p.qs.some((_, k) => tq[p.id + '#' + k])); return (rest.length ? rest : tqShuffle(sets))[0]; }
@@ -3083,6 +3295,13 @@ async function tqP6Start(id){
 async function tqP5Start(cat){ if(!await tqNeedBank()) return; tqStart('Part 5' + (cat ? `（${cat}）` : ''), tqFresh(TQ.bank.p5.concat(tqTopicQs()).filter(q => !cat || q.cat === cat), 10).map(d => ({t: 'p5', d})), cat ? 'cat:' + cat : 'p5'); }
 async function tqVocab(){ if(!await tqNeedBank()) return; tqStart('単語10問', tqVocabPick(10).map(d => ({t: 'w', d})), 'vocab'); }
 async function tqP2Start(){ if(!await tqNeedBank()) return; tqStart('Part 2（聞き取り）', tqFresh(TQ.bank.p2, 5).map(d => ({t: 'p2', d})), 'p2'); }
+async function tqP34Start(part, id){
+  if(!await tqNeedBank()) return;
+  const sets = TQ.bank['p' + part] || [], tq = S.state.tq || {};
+  let p = id && sets.find(x => x.id === id);
+  if(!p){ const rest = sets.filter(x => !x.qs.some((_, k) => tq[x.id + '#' + k])); p = (rest.length ? rest : tqShuffle(sets))[0]; }
+  if(p) tqStart(p.title, [{t: 'p34', d: p}], 'p' + part); else toast(`Part ${part} の問題はまだありません`);
+}
 async function tqP7Start(id){
   if(!await tqNeedBank()) return;
   const tq = S.state.tq || {};
@@ -3101,7 +3320,7 @@ function tqAgain(how){
   const f = s.from;
   if(f === 'mix') tqMix(); else if(f === 'review'){ if(tqDueIds().length) tqReview(); else renderTqNote(); }
   else if(f === 'note') renderTqNote(); else if(f === 'noteall'){ if(tqNoteIds().length) tqNoteAll(); else renderTqNote(); } else if(f === 'weak') tqWeak();
-  else if(f === 'topics') tqTopics(); else if(f === 'vocab') tqVocab(); else if(f === 'p2') tqP2Start(); else if(f === 'p7') tqP7Start(); else if(f === 'p6') tqP6Start();
+  else if(f === 'topics') tqTopics(); else if(f === 'vocab') tqVocab(); else if(f === 'p2') tqP2Start(); else if(f === 'p7') tqP7Start(); else if(f === 'p6') tqP6Start(); else if(f === 'p3' || f === 'p4') tqP34Start(+f.slice(1));
   else if(f.startsWith('cat:')) tqP5Start(f.slice(4)); else if(f === 'p5') tqP5Start(); else renderToeic();
 }
 async function tqAsk(){
@@ -3130,6 +3349,9 @@ function tqAction(b){
   else if(a === 'p7') tqP7Start(b.dataset.id);
   else if(a === 'p6') tqP6Start(b.dataset.id);
   else if(a === 'p6pick'){ if(it && it.t === 'p6') tqAnsP6(it.d, +b.dataset.k, +b.dataset.i); }
+  else if(a === 'p3' || a === 'p4') tqP34Start(+a.slice(1), b.dataset.id);
+  else if(a === 'p34pick'){ if(it && it.t === 'p34' && !b.classList.contains('cut')) tqAnsP34(it.d, +b.dataset.k, +b.dataset.i); }
+  else if(a === 'p34play'){ if(it && it.t === 'p34'){ const pb = $('#tqP34Play'); if(pb && pb.classList.contains('on')){ stopSpeak(); tqP34Btn(false); } else tqPlayP34(it.d); } }
   else if(a === 'vocab') tqVocab();
   else if(a === 'p2') tqP2Start();
   else if(a === 'lesson') tqLessonStart(b.dataset.id, b.dataset.only6 === '1');
@@ -3140,6 +3362,7 @@ function tqAction(b){
   else if(a === 'one'){ const e0 = tqNoteEntry(b.dataset.id); if(e0) tqStart('まちがいノート', [e0.item], 'note'); }
   else if(a === 'weak') tqWeak();
   else if(a === 'ask') tqAsk();
+  else if(a === 'hint') tqHint(b.dataset.k);
 }
 
 /* TOEIC のはじめの画面 */
@@ -3158,7 +3381,7 @@ async function renderToeic(){
   const st = tqCatStats(), allN = Object.values(st).reduce((a, x) => a + x.n, 0), allC = Object.values(st).reduce((a, x) => a + x.c, 0);
   const vSeen = B ? B.vocab.filter(v => tq['v:' + v.w]).length : 0, vGood = B ? B.vocab.filter(v => ((tq['v:' + v.w] || {}).box || 0) >= 3).length : 0;
   const head = `<div class="view-head"><h1 class="view-h">TOEIC<span class="c">${td.n ? `今日 ${td.n}問・正答率 ${Math.round(td.c / td.n * 100)}%` : ''}</span></h1>
-    <p class="view-p">Part 5（文法・語彙）・Part 6（長文の穴うめ）・Part 7（長文）・単語・Part 2（聞き取り）。毎朝の話題からも問題がふえます。答えると解説が出ます。</p></div>`;
+    <p class="view-p">Part 5（文法・語彙）・Part 6（長文の穴うめ）・Part 7（長文）・単語・Part 2〜4（聞き取り）。毎朝の話題からも問題がふえます。答えると解説が出ます。</p></div>`;
   const err = TQ.err ? `<p class="note status">${esc(TQ.err)}</p>` : '';
   /* 復習しやすく（2026-11-04 持ち主）：今日の復習があるときは、いちばん上の大きなカードを「今日の復習」に */
   const grad = Object.keys(tq).filter(id => tq[id].bad && (tq[id].box || 0) >= 3).length;
@@ -3170,7 +3393,8 @@ async function renderToeic(){
     <button class="tq-card" data-tq="topics"${topics.length || topic6.length ? '' : ' disabled'}><b>話題から${topicNew ? `<span class="num">${topicNew}</span>` : ''}</b><span>${topics.length || topic6.length ? `毎朝の話題の英文で作った Part 5（${topics.length}問）と Part 6（${topic6.length}セット）。まだ解いていない ${topicNew}` : '毎朝の話題から Part 5・Part 6 の問題がふえていきます。'}</span></button>
   </div>`;
   const p5 = B ? `<section class="blk" aria-label="Part 5"><div class="blk-h"><h2>Part 5（文法・語彙）</h2><span class="sp"></span><span class="note">${allN ? `これまでの正答率 ${Math.round(allC / allN * 100)}%` : `${B.p5.length + topics.length}問`}</span></div>
-      <p class="note">分野を選ぶと、その分野から10問出します。正答率の低い分野から練習すると効きます。</p>
+      <p class="note">分野を選ぶと、その分野から10問出します。正答率の低い分野から練習すると効きます。わからないときは、問題の「ヒント」（H キー）を押すと、見るところ → 選択肢の意味 → 2つにしぼる、の順に手がかりが出ます。</p>
+      <details class="tq-guide"><summary class="txt-btn">品詞の見分け方（形容詞・副詞・名詞のどれが入るか）</summary>${tqPosGuideHtml(false)}</details>
       ${(() => { const w = tqWeakCats(); return w.length ? `<div class="row"><button class="btn ghost" data-tq="weak">苦手な分野から10問</button><span class="note">いま苦手：${w.map(esc).join('・')}</span></div>` : ''; })()}
       <div class="tq-chips"><button class="chip" data-tq="p5">ぜんぶから10問</button>${TQ_CATS.map(c => { const x = st[c]; return `<button class="chip" data-tq="cat" data-cat="${esc(c)}">${esc(c)}${x.n ? `<small>${Math.round(x.c / x.n * 100)}%</small>` : ''}</button>`; }).join('')}</div></section>` : '';
   const setRow = (p, part) => { const rs = p.qs.map((_, i) => tq[p.id + '#' + i]), done = rs.filter(Boolean).length, ok = rs.filter(r => r && r.last).length; return `<button class="tq-set" data-tq="${part}" data-id="${esc(p.id)}">${tqLvHtml(p.lv, true)}<span class="t">${esc(p.title)}</span><span class="m${done === p.qs.length ? ' done' : ''}">${done ? `${ok}/${p.qs.length}正解` : `${p.qs.length}問`}</span></button>`; };
@@ -3185,7 +3409,10 @@ async function renderToeic(){
   const p2 = B ? `<section class="blk" aria-label="Part 2"><div class="blk-h"><h2>Part 2（聞き取り）</h2><span class="sp"></span><span class="note">音を出せるときに</span></div>
       <p class="note">問いかけと3つの応答を聞いて、合う応答を選びます。文字は答えたあとに出ます。Claude のアプリの中では英語の声が無いことがあり、そのときは Chrome で開くと聞けます。</p>
       <div class="row"><button class="btn ghost" data-tq="p2">5問を聞く</button></div></section>` : '';
-  tqPaint(head + err + cards + `<div class="a-block tq-home">${p5}${p6}${p7}${w}${p2}</div>`);
+  const p34 = B ? [3, 4].map(n => { const sets = B['p' + n] || []; return `<section class="blk" aria-label="Part ${n}"><div class="blk-h"><h2>Part ${n}（${n === 3 ? '会話' : '1人の話'}）</h2><span class="sp"></span><span class="note">1セット3問・音を出せるときに</span></div>
+      <p class="note">${n === 3 ? '2〜3人の会話' : 'お知らせ・留守電・広告などの1人の話'}を聞いて、設問3つに答えます。設問と選択肢は文字で出て、台本と訳は答えたあとに出ます。${n === 3 ? '男性と女性で声を変えて読みます。' : ''}</p>
+      ${sets.length ? `<div class="row"><button class="btn ghost" data-tq="p${n}">まだ聞いていないセットを聞く</button></div><div class="tq-sets">${sets.map(p => setRow(p, 'p' + n)).join('')}</div>` : '<p class="note">まだありません。</p>'}</section>`; }).join('') : '';
+  tqPaint(head + err + cards + `<div class="a-block tq-home">${p5}${p6}${p7}${w}${p2}${p34}</div>`);
 }
 /* 話題ページの「この話題で TOEIC」 */
 function tqLessonHtml(L){
@@ -3388,6 +3615,7 @@ document.addEventListener('keydown', e => {
     if(/^[1-4]$/.test(k)){ e.preventDefault(); tqPick(+k - 1); return; }
     if(k === 'Enter' && TQ.sess.answered && !(document.activeElement && document.activeElement.tagName === 'BUTTON')){ e.preventDefault(); tqNext(); return; }
     if(k === 'r' || k === 'R'){ e.preventDefault(); tqReadKey(); return; }
+    if(k === 'h' || k === 'H'){ e.preventDefault(); tqHint(); return; }
   }
   if(k === '/'){ e.preventDefault(); if(!isNarrow() && sideOff()) setSideOff(false); $('#q').focus(); $('#q').select(); }
   else if(k === 'b' || k === 'B'){ toggleSide(); }
