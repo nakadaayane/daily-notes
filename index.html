@@ -887,6 +887,18 @@ html.static .ai-only{display:none!important}
   /* 記事もスマホのように横幅を広く使う（行が長くなりすぎないよう 1040px まで） */
   .thread,.comp-box{max-width:1040px}
 }
+/* 文法のいいね（2026-11-04 持ち主「文法にも♡つけて見返したい」）：
+   文法の見出しの右に ♡、「いいね」の「文法」タブに集まる。一覧から開くと文法の所までとんで光る */
+.blk-h .say.heart{margin:-2px -6px -2px 0}
+.gram{padding-right:8px;border-radius:0 8px 8px 0;transition:background-color .6s var(--ease)}
+.gram.flash{background:color-mix(in srgb,var(--hl) 70%,transparent)}
+.gram-likes{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.gram-likes li{display:grid;grid-template-columns:minmax(0,1fr) 28px;gap:4px 8px;align-items:start;padding:14px 0;border-bottom:1px solid var(--line)}
+.gram-likes .gt{margin:0 0 8px;font-size:var(--fs-m);font-weight:600;font-feature-settings:"palt"}
+.gram-likes .ex .en{font-family:var(--serif);font-size:var(--fs-l)}
+.gram-likes .sf{display:block;font-size:var(--fs-xs);color:var(--muted);margin-top:8px}
+.gram-likes .sf button{color:var(--muted);text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px;font-size:inherit}
+@media (pointer:coarse){ .gram-likes li{grid-template-columns:minmax(0,1fr) 36px} .gram-likes .say,.blk-h .say.heart{width:36px;height:36px} }
 </style>
 <script src="lessons.js"></script>
 </head>
@@ -1141,7 +1153,9 @@ const normState = d => ({
   likesOff: Object.assign({}, d && d.likesOff || {}),
   savedOff: Object.assign({}, d && d.savedOff || {}),
   sents: Object.assign({}, d && d.sents || {}),        /* 文のいいね {"<話題id>#<文の番号>": 日時} */
-  sentsOff: Object.assign({}, d && d.sentsOff || {})
+  sentsOff: Object.assign({}, d && d.sentsOff || {}),
+  grams: Object.assign({}, d && d.grams || {}),        /* 文法のいいね {"<話題id>": 日時}（1つの話題に文法は1つ） */
+  gramsOff: Object.assign({}, d && d.gramsOff || {})
 });
 S.lvf = String(LS.get('lvf', '') || '');                 /* むずかしさの絞りこみ（'' = すべて） */
 S.likesTab = LS.get('likesTab', 'topics');
@@ -1150,6 +1164,8 @@ const sentKey = (id, i) => id + '#' + i;
 const splitKey = k => { const p = String(k).lastIndexOf('#'); return [k.slice(0, p), +k.slice(p + 1)]; };
 const isSentLiked = (id, i) => !!(S.state.sents || {})[sentKey(id, i)];
 const likedSents = () => Object.entries(S.state.sents || {}).filter(([k]) => { const [id, i] = splitKey(k); return S.byId[id] && S.byId[id].lines && S.byId[id].lines[i]; }).sort((a, b) => a[1] < b[1] ? 1 : -1);
+const isGramLiked = id => !!(S.state.grams || {})[id];
+const likedGrams = () => Object.entries(S.state.grams || {}).filter(([id]) => S.byId[id] && S.byId[id].grammar).sort((a, b) => a[1] < b[1] ? 1 : -1).map(([id]) => id);
 const jstStampS = () => jstNow().toISOString().slice(0, 19);
 /* ---------- review schedule (spaced) ---------- */
 const GAPS = [1, 2, 4, 7, 14, 30];
@@ -1378,7 +1394,7 @@ function renderCounts(){
   const st = streakDays(); const sk = $('#streak');
   sk.hidden = !st; sk.textContent = st ? `${st}日連続` : '';
   sk.title = st ? `${st}日続けて読んでいます` : '';
-  $('#likeCnt').textContent = (Object.keys(S.state.likes).filter(id => S.byId[id]).length + likedSents().length) || '';
+  $('#likeCnt').textContent = (Object.keys(S.state.likes).filter(id => S.byId[id]).length + likedSents().length + likedGrams().length) || '';
   const dn2 = dcStats('listen').n + dcStats('write').n; $('#dictCnt').textContent = dn2 ? `今日 ${dn2}` : '';
   renderFresh();
 }
@@ -1546,8 +1562,8 @@ function renderLesson(){
         <ul class="words">${(L.words || []).map(w => wordRow(w, L.id)).join('')}</ul>
       </section>
 
-      ${g ? `<section class="blk" aria-label="文法">
-        <div class="blk-h"><h2>文法：${esc(g.title)}</h2></div>
+      ${g ? `<section class="blk" id="gramSec" aria-label="文法">
+        <div class="blk-h"><h2>文法：${esc(g.title)}</h2><span class="sp"></span>${S.cur !== '__draft' ? gramHeart(L.id) : ''}</div>
         <div class="gram"><div class="g-body">${enRuns(g.body)}</div>
           ${(g.ex || []).map(e => `<p class="ex"><span class="en">${esc(e.en)}</span><span class="ja">${esc(e.ja)}</span></p>`).join('')}
         </div>
@@ -1793,18 +1809,54 @@ function toggleSentLike(k){
   if(S.view === 'likes' && S.likesTab === 'sents') renderLikes(true);
   toast(on ? '文にいいねしました。「いいね」の「文」から見返せます' : '文のいいねを外しました');
 }
+/* 文法のいいね：話題の「文法」の見出しの右の ♡。「いいね」の「文法」タブに集まる（キーは話題の id） */
+const gramHeart = id => { const on = isGramLiked(id); return `<button class="say heart" data-gram="${esc(id)}" aria-pressed="${on}" aria-label="${on ? 'この文法のいいねを外す' : 'この文法にいいね'}" title="この文法にいいね">${ICON.heart}</button>`; };
+function toggleGramLike(id){
+  if(!id || id === '__draft' || !S.byId[id] || !S.byId[id].grammar) return;
+  const G = S.state.grams || (S.state.grams = {}), GO = S.state.gramsOff || (S.state.gramsOff = {});
+  const on = !G[id];
+  if(on){ G[id] = jstStampS(); delete GO[id]; }
+  else { delete G[id]; GO[id] = jstStampS(); }
+  saveState(); renderCounts();
+  $$(`[data-gram="${CSS.escape(id)}"]`).forEach(x => {
+    x.setAttribute('aria-pressed', on); x.setAttribute('aria-label', on ? 'この文法のいいねを外す' : 'この文法にいいね');
+    if(on){ x.classList.remove('pop'); void x.offsetWidth; x.classList.add('pop'); setTimeout(() => x.classList.remove('pop'), 600); }
+  });
+  if(S.view === 'likes' && S.likesTab === 'grams') renderLikes(true);
+  toast(on ? '文法にいいねしました。「いいね」の「文法」から見返せます' : '文法のいいねを外しました');
+}
+/* いいねの「文法」から話題を開いたとき：文法の所までとんで、少し光らせる */
+function flashGram(){
+  const s = $('#gramSec'); if(!s) return;
+  s.scrollIntoView({block: 'start'});
+  const g = s.querySelector('.gram'); if(!g) return;
+  g.classList.add('flash'); setTimeout(() => g.classList.remove('flash'), 1600);
+}
 function renderLikes(keep){
   S.view = 'likes'; setNav(); renderList(); stopSpeak(); closePop();
   $('#topTitle').textContent = 'いいね';
   $('#composer').hidden = true;
-  const ids = likedIds(), ss = likedSents();
-  const tab = S.likesTab === 'sents' ? 'sents' : 'topics';
+  const ids = likedIds(), ss = likedSents(), gs = likedGrams();
+  const tab = ['sents', 'grams'].includes(S.likesTab) ? S.likesTab : 'topics';
+  const lead = tab === 'sents' ? (ss.length ? 'いいねした文を、新しい順に並べています。題を押すと、その文の話題が開きます。' : '')
+    : tab === 'grams' ? (gs.length ? 'いいねした文法を、新しい順に並べています。題を押すと、その話題の文法の所が開きます。' : '')
+    : (ids.length ? 'いいねした話題を、新しい順に並べています。' : '');
   const head = `<div class="view-head"><h1 class="view-h">いいね</h1>
-    <p class="view-p">${tab === 'sents' ? (ss.length ? 'いいねした文を、新しい順に並べています。題を押すと、その文の話題が開きます。' : '') : (ids.length ? 'いいねした話題を、新しい順に並べています。' : '')}</p></div>
-    <div class="likes-bar"><span class="seg" id="likesTabs"><button data-ltab="topics" aria-pressed="${tab === 'topics'}">話題 ${ids.length}</button><button data-ltab="sents" aria-pressed="${tab === 'sents'}">文 ${ss.length}</button></span>
+    <p class="view-p">${lead}</p></div>
+    <div class="likes-bar"><span class="seg" id="likesTabs"><button data-ltab="topics" aria-pressed="${tab === 'topics'}">話題 ${ids.length}</button><button data-ltab="sents" aria-pressed="${tab === 'sents'}">文 ${ss.length}</button><button data-ltab="grams" aria-pressed="${tab === 'grams'}">文法 ${gs.length}</button></span>
     ${tab === 'sents' && ss.length ? '<span class="sp"></span><button class="btn" data-act="flow-liked">ランダムに流す</button><button class="btn ghost" data-act="dict-liked">いいねした文で書き取り</button>' : ''}</div>`;
   let body;
-  if(tab === 'sents'){
+  if(tab === 'grams'){
+    body = gs.length ? `<ul class="gram-likes">${gs.map(id => {
+      const L = S.byId[id], g = L.grammar;
+      return `<li><div><p class="gt">${esc(g.title)}</p>
+        <div class="gram"><div class="g-body">${enRuns(g.body)}</div>
+          ${(g.ex || []).map(e => `<p class="ex"><span class="en" lang="en">${esc(e.en)}</span><span class="ja">${esc(e.ja)}</span></p>`).join('')}
+        </div>
+        <span class="sf"><button data-open="${esc(id)}" data-to="gram">${esc(L.title)}</button></span></div>
+        ${gramHeart(id)}</li>`;
+    }).join('')}</ul>` : emptyMain('まだいいねした文法はありません。<br>話題の「文法」の見出しの右の ♡ を押すと、ここに集まります。', ICON.heartL);
+  }else if(tab === 'sents'){
     body = ss.length ? `<ul class="sent-likes">${ss.map(([k]) => {
       const [id, i] = splitKey(k); const L = S.byId[id]; const ln = L.lines[i];
       return `<li><div><span class="se" lang="en">${esc(ln.en)}</span><span class="sj">${esc(ln.ja)}</span><span class="sf"><button data-open="${esc(id)}" data-line="${i}">${esc(L.title)}</button></span></div>
@@ -2410,7 +2462,10 @@ function flashLine(i){
   const li = $(`#story li[data-i="${i}"]`); if(!li) return;
   li.scrollIntoView({block: 'center'}); li.classList.add('flash'); setTimeout(() => li.classList.remove('flash'), 1600);
 }
-function syncSentHearts(){ $$('[data-sent]').forEach(b => b.setAttribute('aria-pressed', !!(S.state.sents || {})[b.dataset.sent])); }
+function syncSentHearts(){
+  $$('[data-sent]').forEach(b => b.setAttribute('aria-pressed', !!(S.state.sents || {})[b.dataset.sent]));
+  $$('[data-gram]').forEach(b => b.setAttribute('aria-pressed', isGramLiked(b.dataset.gram)));   /* 文法の ♡ も */
+}
 
 /* ---------- toast / keys ---------- */
 let toastTimer = 0;
@@ -2738,6 +2793,7 @@ function onAction(e){
   const t = e.target;
   const kw = t.closest('.tk.kw'); if(kw){ e.stopPropagation(); popFor === kw ? closePop() : openPop(kw); return; }
   const sl = t.closest('[data-sent]'); if(sl){ toggleSentLike(sl.dataset.sent); return; }
+  const gl = t.closest('[data-gram]'); if(gl){ toggleGramLike(gl.dataset.gram); return; }
   const rb = t.closest('.rate-seg [data-r]'); if(rb){ setRate(+rb.dataset.r, false); return; }
   const tr = t.closest('[data-tr-line]'); if(tr){ const L = S.byId[S.cur]; if(L){ const i = +tr.dataset.trLine; nextTap(L, i); redrawLine(L, i); } return; }
   const chunk = t.closest('#story .mw[data-k]'); if(chunk){ e.stopPropagation(); toggleChunk(chunk); return; }
@@ -2746,7 +2802,7 @@ function onAction(e){
   const say = t.closest('[data-say]'); if(say){ stopSpeak(); speak(say.dataset.say); return; }
   const star = t.closest('[data-star]'); if(star){ toggleWord(star.dataset.star, star.dataset.from); return; }
   const like = t.closest('[data-like]'); if(like){ toggleLike(like.dataset.like); return; }
-  const open = t.closest('[data-open]'); if(open){ openLesson(open.dataset.open, open.dataset.seq || (open.closest('.pager') ? undefined : null)); if(open.dataset.line != null) flashLine(+open.dataset.line); return; }
+  const open = t.closest('[data-open]'); if(open){ openLesson(open.dataset.open, open.dataset.seq || (open.closest('.pager') ? undefined : null)); if(open.dataset.line != null) flashLine(+open.dataset.line); else if(open.dataset.to === 'gram') flashGram(); return; }
   const lt = t.closest('[data-ltab]'); if(lt){ S.likesTab = lt.dataset.ltab; LS.set('likesTab', S.likesTab); renderLikes(true); return; }
   const ds = t.closest('[data-dcsrc]'); if(ds){ const v = ds.dataset.dcsrc; if(v.startsWith('lesson:')){ dcStartLesson(v.slice(7)); return; } DC.src = v; LS.set('dcSrc', v); DC.recent = []; DC.cur = null; dcNew(false); return; }
   const dm = t.closest('[data-dcmode]'); if(dm){ const m = dm.dataset.dcmode; if(m !== DC.mode){ DC.mode = m; LS.set('dcMode', m); const lid = dcLessonId(); if(lid){ dcStartLesson(lid); return; } else { DC.cur = null; dcNew(false); } } return; }
@@ -2840,7 +2896,7 @@ const Sync = (() => {
       const on = latest(a[ON][id], b[ON][id]), off = latest(a[OFF][id], b[OFF][id]);
       if(on && on >= off) o[ON][id] = on; else if(off) o[OFF][id] = off;
     });
-    onOff('likes', 'likesOff'); onOff('sents', 'sentsOff');
+    onOff('likes', 'likesOff'); onOff('sents', 'sentsOff'); onOff('grams', 'gramsOff');
     const words = {};
     [...b.saved, ...a.saved].forEach(w => { const c = words[w.w]; if(!c || (w.t || 0) > (c.t || 0)) words[w.w] = w; });
     const offW = {};
@@ -2855,7 +2911,7 @@ const Sync = (() => {
   const sortObj = m => Object.fromEntries(Object.keys(m).sort().map(k => [k, m[k]]));
   function canon(x){
     const o = normState(x);
-    ['likes', 'likesOff', 'savedOff', 'done', 'seen', 'sents', 'sentsOff'].forEach(k => { o[k] = sortObj(o[k]); });
+    ['likes', 'likesOff', 'savedOff', 'done', 'seen', 'sents', 'sentsOff', 'grams', 'gramsOff'].forEach(k => { o[k] = sortObj(o[k]); });
     o.saved = o.saved.slice().sort((p, q) => (q.t || 0) - (p.t || 0) || (p.w < q.w ? -1 : p.w > q.w ? 1 : 0));
     o.days = [...new Set(o.days)].sort();
     return o;
