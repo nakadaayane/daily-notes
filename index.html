@@ -902,6 +902,124 @@ html.static .ai-only{display:none!important}
 /* 同期の画面：スマホで端にくっつき、合言葉の欄の右が切れていたのを直す */
 .sync-in{box-sizing:border-box;width:min(380px,calc(100vw - 32px));min-width:0}
 .sync-in .field{box-sizing:border-box}
+/* TOEIC（2026-11-04 Drill Notes から引っ越し。持ち主「メインで使うのは英語ノートが良い」） */
+.tq-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:10px}
+.tq-card{display:flex;flex-direction:column;align-items:flex-start;gap:5px;padding:14px 16px;border:1px solid var(--line);border-radius:14px;background:var(--card);text-align:left;min-width:0;touch-action:manipulation}
+.tq-card:hover:not(:disabled){border-color:var(--faint)}
+.tq-card:active:not(:disabled){transform:scale(.98)}
+.tq-card:disabled{opacity:.5;cursor:default}
+.tq-card b{font-size:var(--fs-m);font-weight:600;font-feature-settings:"palt"}
+.tq-card span{font-size:var(--fs-xs);color:var(--muted);line-height:1.6}
+.tq-card.main{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.tq-card.main span{color:color-mix(in srgb,var(--bg) 72%,transparent)}
+.tq-card .num{color:var(--accent);font-weight:600;font-variant-numeric:tabular-nums}
+.tq-card b .num{font-size:inherit;margin-left:6px}
+.tq-card.main b .num{color:inherit}
+.a-block.tq-home{font-family:var(--ui);font-size:var(--fs-m)}
+.tq-chips{display:flex;flex-wrap:wrap;gap:6px}
+.tq-chips .chip{border-color:var(--line);display:inline-flex;gap:6px;align-items:baseline}
+.tq-chips .chip small{color:var(--faint);font-variant-numeric:tabular-nums;font-size:inherit}
+.tq-sets{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,250px),1fr));gap:6px}
+.tq-set{display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;text-align:left;font-size:var(--fs-s);min-width:0}
+.tq-set:hover{border-color:var(--faint);background:var(--card)}
+.tq-set .t{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tq-set .m{font-size:var(--fs-xs);color:var(--faint);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tq-set .m.done{color:var(--good)}
+.tq-meta{display:flex;align-items:center;gap:6px 12px;flex-wrap:wrap;font-size:var(--fs-xs);color:var(--muted);margin-top:-8px}
+.tq-meta .sp{flex:1}
+.tq-timer{display:inline-flex;align-items:center;gap:6px;font-variant-numeric:tabular-nums}
+.tq-timer .tb{width:44px;height:3px;border-radius:2px;background:var(--line);overflow:hidden}
+.tq-timer .tb i{display:block;height:100%;background:var(--muted);width:0}
+.tq-timer.over{color:var(--bad)}
+.tq-timer.over .tb i{background:var(--bad)}
+.tq-dots{display:flex;gap:4px;flex-wrap:wrap}
+.tq-dots i{width:7px;height:7px;border-radius:50%;background:var(--line)}
+.tq-dots i.r{background:var(--good)}.tq-dots i.w{background:var(--bad)}.tq-dots i.cur{background:var(--fg)}
+.tq-q{font-family:var(--serif);font-size:var(--fs-xl);line-height:1.85;margin:0;text-wrap:pretty;overflow-wrap:anywhere}
+.tq-blank{display:inline-block;min-width:3.4em;border-bottom:1.5px solid currentColor;margin-inline:.15em;text-align:center;line-height:1.2}
+.tq-blank.fill{border-color:var(--good);color:var(--good);padding-inline:.15em}
+.tq-blank.fill.ng{border-color:var(--bad);color:var(--bad)}
+.tq-tools{margin-top:-12px}
+.choices.tq-ch{grid-template-columns:repeat(auto-fit,minmax(min(100%,11em),1fr))}
+.tq-ch .choice{justify-content:flex-start;text-align:left;gap:8px}
+.tq-ch .choice .k{font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted);flex:none}
+.tq-ch .choice.right .k,.tq-ch .choice.wrong .k{color:inherit}
+.choices.tq-one{grid-template-columns:1fr}
+.choices.tq-ch3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.tq-fb{display:flex;flex-direction:column;gap:10px;border-left:2px solid var(--line);padding:2px 0 2px 16px;animation:rise .25s var(--ease);font-size:var(--fs-m);line-height:1.8}
+.tq-fb.ok{border-color:var(--good)}
+.tq-fb.ng{border-color:var(--bad)}
+.tq-fb p{margin:0}
+.tq-fb .ja{color:var(--muted);font-size:var(--fs-s)}
+.tq-fb-h{font-weight:600;display:flex;align-items:baseline;gap:4px 10px;flex-wrap:wrap}
+.tq-fb.ok .tq-fb-h{color:var(--good)}
+.tq-fb.ng .tq-fb-h{color:var(--bad)}
+.tq-fb-h .sec{font-weight:400;color:var(--muted);font-size:var(--fs-xs);font-variant-numeric:tabular-nums}
+.tq-tip{display:inline-block;background:var(--hl);border-radius:6px;padding:2px 10px;font-size:var(--fs-s);align-self:flex-start}
+.tq-xp{display:flex;flex-direction:column;gap:16px;margin-top:4px}
+.tq-xp h3{margin:0 0 7px;font-size:var(--fs-xs);font-weight:600;color:var(--muted);letter-spacing:.04em}
+.tq-xp p{margin:0;font-size:var(--fs-s);line-height:1.9}
+.tq-il{display:flex;flex-wrap:wrap;gap:6px 4px}
+.tq-il button{display:flex;flex-direction:column;align-items:flex-start;padding:3px 8px 4px;border-radius:8px;background:var(--card);border:1px solid var(--line);max-width:100%;line-height:1.45;text-align:left}
+.tq-il button:hover{border-color:var(--faint)}
+.tq-il button.ans{background:var(--good-soft);border-color:color-mix(in srgb,var(--good) 40%,transparent)}
+.tq-il .w{font-family:var(--serif);font-size:var(--fs-m);font-weight:600}
+.tq-il .m{font-size:var(--fs-xs)}
+.tq-il .r{font-size:.65625rem;color:var(--muted)}
+.tq-chx{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;font-size:var(--fs-s);line-height:1.75}
+.tq-chx li{padding:5px 10px;border-radius:8px;border:1px solid var(--line)}
+.tq-chx li.ok{background:var(--good-soft);border-color:color-mix(in srgb,var(--good) 35%,transparent)}
+.tq-wg{display:flex;flex-wrap:wrap;gap:4px 6px;margin-top:4px}
+.tq-wg span{font-size:var(--fs-xs);border:1px solid var(--line);border-radius:6px;padding:0 7px;background:var(--card)}
+.tq-wg b{font-family:var(--serif);font-weight:600;margin-right:4px}
+.tq-next{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.tq-next .sp{flex:1}
+.tq-next kbd{background:transparent;border-color:color-mix(in srgb,var(--bg) 40%,transparent);color:inherit;opacity:.7}
+.tq-word{display:flex;align-items:center;gap:6px}
+.tq-word .w{font-family:var(--serif);font-size:1.75rem;font-weight:600;line-height:1.3;overflow-wrap:anywhere}
+.tq-word .pos{font-size:var(--fs-xs);color:var(--muted);margin-left:4px}
+.tq-ex{font-family:var(--serif);font-size:var(--fs-l)}
+.tq-ex b{font-weight:600;background:var(--hl);border-radius:3px;padding:0 2px}
+.tq-ex .say,.tq-sent .en .say,.tq-p7q .qt .say{display:inline-grid;vertical-align:-8px}
+.tq-save{display:flex;align-items:center;gap:4px;font-size:var(--fs-xs);color:var(--muted)}
+.tq-p2{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px;font-size:var(--fs-s);color:var(--muted)}
+.tq-p2 b{color:var(--fg)}
+.tq-script{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px}
+.tq-script li{display:grid;grid-template-columns:2.2em minmax(0,1fr) 30px;gap:8px;align-items:start}
+.tq-script .lab{font-size:var(--fs-xs);color:var(--muted);padding-top:3px}
+.tq-script .en{display:block;font-family:var(--serif);font-size:var(--fs-l);line-height:1.6}
+.tq-script .ja{display:block;font-size:var(--fs-xs);color:var(--muted)}
+.tq-script li.ans .en{color:var(--good)}
+.tq-script li.pick:not(.ans) .en{color:var(--bad);text-decoration:line-through;text-decoration-thickness:1px}
+.tq-passage{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;font-family:var(--serif);font-size:var(--fs-l);line-height:1.75;white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+.tq-passage.ja{font-family:var(--ui);font-size:var(--fs-m);color:var(--muted);background:transparent}
+.tq-sents{display:flex;flex-direction:column;gap:12px;border-left:2px solid var(--line);padding-left:14px}
+.tq-sent p{margin:0}
+.tq-sent .en{font-family:var(--serif);font-size:var(--fs-l)}
+.tq-sent .ja{font-size:var(--fs-s);color:var(--muted)}
+.tq-p7q{display:flex;flex-direction:column;gap:8px}
+.tq-p7q + .tq-p7q{border-top:1px solid var(--line);padding-top:18px}
+.tq-p7q .qt{margin:0;font-family:var(--serif);font-size:var(--fs-l)}
+.tq-p7q .qt .n{font-family:var(--ui);font-size:var(--fs-xs);font-weight:600;color:var(--accent);margin-right:8px}
+.tq-where{font-size:var(--fs-s);background:var(--hl);border-radius:8px;padding:6px 10px;margin:0}
+.tq-score{display:flex;align-items:baseline;gap:6px 12px;flex-wrap:wrap}
+.tq-score b{font-family:var(--serif);font-size:2.25rem;font-weight:600;font-variant-numeric:tabular-nums;line-height:1}
+.tq-score b small{font-size:1rem;color:var(--muted);font-weight:400}
+.tq-score span{color:var(--muted);font-size:var(--fs-s)}
+.tq-res{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.tq-res li{display:grid;grid-template-columns:10px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:9px 0;border-bottom:1px solid var(--line)}
+.tq-res .r{width:8px;height:8px;border-radius:50%;background:var(--bad);transform:translateY(-1px)}
+.tq-res .r.ok{background:var(--good)}
+.tq-res .t{min-width:0;font-family:var(--serif);font-size:var(--fs-m);overflow-wrap:anywhere}
+.tq-res .t small{display:block;font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted)}
+.tq-res .m{font-size:var(--fs-xs);color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.tq-ask summary{list-style:none;cursor:pointer;display:inline-flex}
+.tq-ask summary::-webkit-details-marker{display:none}
+.tq-ask .row{margin-top:6px;flex-wrap:nowrap}
+.tq-ask .field{box-sizing:border-box;flex:1;min-width:0;padding:6px 10px}
+.tq-ask-out{margin:6px 0 0;font-size:var(--fs-s);line-height:1.8;white-space:pre-wrap}
+.tq-ask-out.wait{color:var(--faint)}
+@media (pointer:coarse){ .tq-il button{padding:5px 10px 6px} }
 </style>
 <script src="lessons.js"></script>
 </head>
@@ -943,6 +1061,10 @@ html.static .ai-only{display:none!important}
       <button class="nav-btn" id="flowBtn">
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 7h3c2 0 3.1.9 4.3 2.7l2.4 3.6C14.4 15.1 15.5 16 17.5 16h3"/><path d="M3.5 16h3c1.5 0 2.5-.5 3.4-1.6M14.1 8.6C15 7.5 16 7 17.5 7h3"/><path d="m18.5 4.8 2.2 2.2-2.2 2.2M18.5 13.8l2.2 2.2-2.2 2.2"/></svg>
         流し聞き
+      </button>
+      <button class="nav-btn" id="toeicBtn">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6.5h10M10 12h10M10 17.5h10"/><path d="m3.5 6.5 1.4 1.4L7.5 5.2M3.5 12l1.4 1.4 2.6-2.7M3.5 17.5l1.4 1.4 2.6-2.7"/></svg>
+        TOEIC <span class="due" id="tqDue" hidden></span>
       </button>
     </div>
     <div class="filters" id="filters" role="group" aria-label="しぼりこみ">
@@ -1034,6 +1156,7 @@ html.static .ai-only{display:none!important}
       <dt><kbd>Enter</kbd></dt><dd>書き取り：答え合わせ ／ 次の文へ</dd>
       <dt><kbd>Tab</kbd></dt><dd>書き取り：もう一度聞く（Shift＋Tab でゆっくり）</dd>
       <dt><kbd>Space</kbd></dt><dd>流し聞き：流す ／ 止める（<kbd>←</kbd><kbd>→</kbd> 前後の文）</dd>
+      <dt><kbd>1</kbd>〜<kbd>4</kbd></dt><dd>TOEIC：選ぶ（<kbd>Enter</kbd> 次へ・<kbd>R</kbd> 英文を聞く）</dd>
       <dt><kbd>Esc</kbd></dt><dd>メモ画面でかくす ／ もどす</dd>
     </dl>
   </div>
@@ -1158,7 +1281,9 @@ const normState = d => ({
   sents: Object.assign({}, d && d.sents || {}),        /* 文のいいね {"<話題id>#<文の番号>": 日時} */
   sentsOff: Object.assign({}, d && d.sentsOff || {}),
   grams: Object.assign({}, d && d.grams || {}),        /* 文法のいいね {"<話題id>": 日時}（1つの話題に文法は1つ） */
-  gramsOff: Object.assign({}, d && d.gramsOff || {})
+  gramsOff: Object.assign({}, d && d.gramsOff || {}),
+  tq: Object.assign({}, d && d.tq || {}),              /* TOEIC の記録 {"<問題id>": {n, c, box, due, last, bad, at}}（単語は "v:<語>"） */
+  tdays: Object.assign({}, d && d.tdays || {})         /* TOEIC を解いた数 {"yyyy-mm-dd": {n, c}} */
 });
 S.lvf = String(LS.get('lvf', '') || '');                 /* むずかしさの絞りこみ（'' = すべて） */
 S.likesTab = LS.get('likesTab', 'topics');
@@ -1213,7 +1338,7 @@ function pickVoice(){
   }
 }
 if('speechSynthesis' in window){ pickVoice(); speechSynthesis.onvoiceschanged = pickVoice; }
-let speakToken = 0, speakTimer = 0;
+let speakToken = 0, speakTimer = 0, tqTok = 0;   /* tqTok：TOEIC の続けて読む（Part 2・Part 7）を止める合図 */
 function speak(text, opt = {}){
   if(!('speechSynthesis' in window) || !text) return;
   speechSynthesis.cancel(); clearTimeout(speakTimer);
@@ -1226,7 +1351,7 @@ function speak(text, opt = {}){
 }
 function clearSpeakMarks(){ $$('.story li.speaking').forEach(li => li.classList.remove('speaking')); $$('.tk.now').forEach(t => t.classList.remove('now')); }
 function stopSpeak(){
-  speakToken++; clearTimeout(speakTimer);
+  speakToken++; tqTok++; clearTimeout(speakTimer);
   if('speechSynthesis' in window) speechSynthesis.cancel();
   clearSpeakMarks();
   const b = $('[data-act="playall"]'); if(b){ b.dataset.on = ''; b.innerHTML = ICON.play + ' 通して読む'; }
@@ -1399,6 +1524,7 @@ function renderCounts(){
   sk.title = st ? `${st}日続けて読んでいます` : '';
   $('#likeCnt').textContent = (Object.keys(S.state.likes).filter(id => S.byId[id]).length + likedSents().length + likedGrams().length) || '';
   const dn2 = dcStats('listen').n + dcStats('write').n; $('#dictCnt').textContent = dn2 ? `今日 ${dn2}` : '';
+  const tqd = tqDueIds().length, te = $('#tqDue'); if(te){ te.hidden = !tqd; te.textContent = tqd ? `復習 ${tqd}` : ''; te.title = tqd ? `まちがいノートの今日の復習 ${tqd}問` : ''; }
   renderFresh();
 }
 /* 「最終追加」: 話題を足した日時（addedAt・日本時間）のいちばん新しいもの */
@@ -1422,7 +1548,9 @@ function setNav(){
   $('#newBtn').setAttribute('aria-current', S.view === 'new');
   $('#dictBtn').setAttribute('aria-current', S.view === 'dict');
   $('#flowBtn').setAttribute('aria-current', S.view === 'flow');
+  $('#toeicBtn').setAttribute('aria-current', S.view === 'toeic');
   if(S.view !== 'flow') flStop();
+  if(S.view !== 'toeic') tqStopTimer();
   $('#topTitle').classList.add('dim'); requestAnimationFrame(syncTopTitle);
   if(S.view !== 'lesson'){ $('#amtMini').hidden = true; closeAmtMenu(); }
   $('#likeBtn').hidden = !(S.view === 'lesson' && S.byId[S.cur] && S.cur !== '__draft');
@@ -1576,6 +1704,8 @@ function renderLesson(){
         <div class="blk-h"><h2>クイズ</h2><span class="sp"></span><span class="note" id="score">${scoreText(L)}</span></div>
         <div class="quiz" id="quiz">${quizHtml(L)}</div>
       </section>` : ''}
+
+      ${S.cur !== '__draft' && tqLessonQs(L).length ? tqLessonHtml(L) : ''}
 
       ${S.cur !== '__draft' ? dcLessonHtml(L) : ''}
 
@@ -1894,14 +2024,14 @@ async function saveState(){
   writing = false;
   if(again){ again = false; saveState(); }
 }
-function toggleWord(w, from){
+function toggleWord(w, from, ja0, note0){
   const i = S.state.saved.findIndex(s => s.w === w);
   if(i >= 0){ S.state.saved.splice(i, 1); S.state.savedOff[w] = Date.now(); }
   else {
     delete S.state.savedOff[w];
-    const L = S.byId[from] || S.byId[S.cur];
+    const L = S.byId[from] || (ja0 ? null : S.byId[S.cur]);   /* TOEIC の単語（ja0 あり）は話題に結びつけない */
     const wd = L && (L.words || []).find(x => x.w === w);
-    S.state.saved.unshift({w, ja: wd ? wd.ja : glossOf(L, w), note: wd && wd.note ? wd.note : '', from: L && L.id !== '__draft' ? L.id : '', t: Date.now()});
+    S.state.saved.unshift({w, ja: wd ? wd.ja : (ja0 || glossOf(L, w)), note: wd && wd.note ? wd.note : (note0 || ''), from: L && L.id !== '__draft' ? L.id : '', t: Date.now()});
   }
   saveState(); renderCounts(); refreshStars();
   toast(i >= 0 ? '単語帳から外しました' : `「${w}」を単語帳に入れました`);
@@ -2373,7 +2503,7 @@ function openLesson(id, seq){
   const it = $(`#list [data-id="${CSS.escape(id)}"]`); if(it) it.scrollIntoView({block: 'nearest'});
 }
 function step(d){
-  if(S.view === 'dict' || S.view === 'flow') return;
+  if(S.view === 'dict' || S.view === 'flow' || S.view === 'toeic') return;
   const list = S.view === 'likes' ? likedIds().map(id => S.byId[id]) : seqList(); if(!list.length) return;
   if(S.view === 'likes') S.seq = 'likes';
   const i = list.findIndex(x => x.id === S.cur);
@@ -2468,6 +2598,430 @@ function flashLine(i){
 function syncSentHearts(){
   $$('[data-sent]').forEach(b => b.setAttribute('aria-pressed', !!(S.state.sents || {})[b.dataset.sent]));
   $$('[data-gram]').forEach(b => b.setAttribute('aria-pressed', isGramLiked(b.dataset.gram)));   /* 文法の ♡ も */
+}
+
+/* ---------- TOEIC（2026-11-04 Drill Notes から引っ越し。持ち主「メインで使うのは英語ノートが良い」） ---------- */
+/* 問題集は toeic.json（Claude版は Artifact の supporting file、公開版は同じフォルダ）。TOEIC を最初に開いたときに読む。
+   毎朝ふえる問題は教材の toeic 欄（Part 5 と同じ形。id は "<話題id>#t<番号>"）。
+   記録は state の tq（{id: {n, c, box, due, last, bad, at}}。単語は "v:<語>"、Part 7 は "<セットid>#<設問番号>"）と tdays（{日付: {n, c}}）。
+   まちがえた問題は「まちがいノート」に入って翌日また出る。3回続けて正解すると卒業（Drill Notes と同じ決まり）。 */
+const TQ_KEYS = ['A', 'B', 'C', 'D'];
+const TQ_BOX = [1, 1, 3, 7, 14, 30];          /* 箱の番号 → 次に出すまでの日数 */
+const TQ_TARGET = {p5: 20, w: 10};            /* 本番の目安（秒） */
+const TQ_CATS = ['品詞', '動詞の形', '前置詞・接続詞', '代名詞', '関係詞', '分詞', '比較', '慣用表現', '語彙'];
+const TQ_LV = {1: '600点', 2: '730点', 3: '860点'};
+const TQ_ICON = '<svg class="ico-inline" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 6.5h10M10 12h10M10 17.5h10"/><path d="m3.5 6.5 1.4 1.4L7.5 5.2M3.5 12l1.4 1.4 2.6-2.7M3.5 17.5l1.4 1.4 2.6-2.7"/></svg>';
+var TQ = {bank: null, loading: null, err: '', byId: {}, sess: null, timer: 0, askCtl: null};
+const tqShuffle = a => { a = a.slice(); for(let i = a.length - 1; i > 0; i--){ const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+/* 話題の問題（教材の toeic 欄） */
+function tqLessonQs(L){
+  if(!L || !Array.isArray(L.toeic)) return [];
+  return L.toeic.map((q, k) => q && typeof q.q === 'string' && q.q.includes('-------') && Array.isArray(q.ch) && q.ch.length === 4 && Number.isInteger(q.a) && q.a >= 0 && q.a < 4
+    ? Object.assign({cat: '語彙', lv: 2}, q, {id: L.id + '#t' + k, from: L.id}) : null).filter(Boolean);
+}
+function tqTopicQs(){ return S.lessons.flatMap(tqLessonQs); }
+function tqExists(id){   /* 話題の問題は、その話題がまだあるときだけ数える（問題集の問題は読み込む前でも数える） */
+  const m = /^(.+)#t\d+$/.exec(id); return !m || tqLessonQs(S.byId[m[1]]).some(q => q.id === id);
+}
+function tqDueIds(){
+  const t = jstToday(), tq = (S.state && S.state.tq) || {};
+  return Object.keys(tq).filter(id => { const r = tq[id]; return r && r.bad && (r.box || 0) < 3 && (r.due || '') <= t && tqExists(id); });
+}
+function tqNoteIds(){
+  const tq = (S.state && S.state.tq) || {};
+  return Object.keys(tq).filter(id => { const r = tq[id]; return r && r.bad && (r.box || 0) < 3 && tqExists(id); });
+}
+function tqToday(){ return (S.state.tdays || {})[jstToday()] || {n: 0, c: 0}; }
+function tqLoad(){
+  if(TQ.bank) return Promise.resolve(TQ.bank);
+  if(!TQ.loading) TQ.loading = fetch('toeic.json').then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(d => {
+    const arr = x => Array.isArray(x) ? x : [];
+    TQ.bank = {p5: arr(d.p5), p7: arr(d.p7), vocab: arr(d.vocab), p2: arr(d.p2)}; TQ.err = ''; return TQ.bank;
+  }).catch(() => { TQ.loading = null; TQ.err = '問題集を読み込めませんでした。ページを開きなおすと、もう一度読みます。（話題からの問題は解けます）'; return null; });
+  return TQ.loading;
+}
+function tqIndex(){
+  const m = {}, B = TQ.bank;
+  if(B){
+    B.p5.forEach(d => { m[d.id] = {t: 'p5', d}; });
+    B.p2.forEach(d => { m[d.id] = {t: 'p2', d}; });
+    B.p7.forEach(p => (p.qs || []).forEach((q, k) => { m[p.id + '#' + k] = {t: 'p7q', p, k}; }));
+    B.vocab.forEach(d => { m['v:' + d.w] = {t: 'w', d}; });
+  }
+  tqTopicQs().forEach(d => { m[d.id] = {t: 'p5', d}; });
+  TQ.byId = m;
+}
+/* まだ解いていない問題 → 前回まちがえた問題 → 残り、の順に出す */
+function tqFresh(pool, n){
+  const tq = S.state.tq || {};
+  const a = tqShuffle(pool.filter(d => !tq[d.id])), b = tqShuffle(pool.filter(d => tq[d.id] && !tq[d.id].last)), c = tqShuffle(pool.filter(d => tq[d.id] && tq[d.id].last));
+  return [...a, ...b, ...c].slice(0, n);
+}
+function tqVocabPick(n){
+  const V = TQ.bank ? TQ.bank.vocab : [], t = jstToday(), tq = S.state.tq || {};
+  const due = tqShuffle(V.filter(v => { const r = tq['v:' + v.w]; return r && (r.box || 0) < 5 && (r.due || '') <= t; }));
+  const fresh = [1, 2, 3].flatMap(l => tqShuffle(V.filter(v => !tq['v:' + v.w] && v.lv === l)));
+  return [...new Set([...due, ...fresh, ...tqShuffle(V)])].slice(0, n);
+}
+function tqMark(id, ok){
+  const t = jstToday(), tq = S.state.tq || (S.state.tq = {}), td = S.state.tdays || (S.state.tdays = {});
+  const d = td[t] = Object.assign({n: 0, c: 0}, td[t]); d.n++; if(ok) d.c++;
+  const r = Object.assign({n: 0, c: 0, box: 0}, tq[id]);
+  r.n++; if(ok) r.c++; r.last = ok ? 1 : 0;
+  if(ok) r.box = Math.min((r.box || 0) + 1, 5); else { r.box = 0; r.bad = 1; }
+  r.due = addDays(t, ok ? TQ_BOX[r.box] : 1); r.at = jstStampS();
+  tq[id] = r;
+  markToday(); saveState(); renderCounts();
+}
+function tqCatStats(){
+  const st = {}; TQ_CATS.forEach(c => { st[c] = {n: 0, c: 0}; });
+  Object.entries(S.state.tq || {}).forEach(([id, r]) => { const b = TQ.byId[id], cat = b && b.t === 'p5' && b.d.cat; if(cat && st[cat]){ st[cat].n += r.n || 0; st[cat].c += r.c || 0; } });
+  return st;
+}
+/* 読み上げ：Part 2 は問いかけと応答を別の声で、Part 7 は1文ずつ（長い文を1回で読むと止まるブラウザがある） */
+function tqVoiceB(){
+  if(!('speechSynthesis' in window)) return null;
+  const vs = speechSynthesis.getVoices().filter(v => /^en(-|_)/i.test(v.lang) && !BAD_VOICE.test(v.name)), other = v => !voice || v.name !== voice.name;
+  return vs.find(v => other(v) && /^en[-_]us/i.test(v.lang)) || vs.find(other) || voice;
+}
+function tqSeq(parts, onStep){
+  stopSpeak(); const tok = ++tqTok;
+  return new Promise(res => {
+    if(!('speechSynthesis' in window)){ res(false); return; }
+    let i = 0;
+    const next = () => {
+      if(tok !== tqTok){ res(false); return; }
+      if(i >= parts.length){ if(onStep) onStep(-1); res(true); return; }
+      const p = parts[i]; if(onStep) onStep(i);
+      const u = new SpeechSynthesisUtterance(p.text); u.lang = 'en-US'; u.rate = S.rate;
+      const v = p.voice === 'B' ? tqVoiceB() : voice; if(v) u.voice = v;
+      u.onend = u.onerror = () => { if(tok !== tqTok){ res(false); return; } i++; setTimeout(next, p.gap || 300); };
+      speechSynthesis.speak(u);
+    };
+    setTimeout(next, 60);
+  });
+}
+const tqNoEnVoice = () => { if(!('speechSynthesis' in window)) return true; const vs = speechSynthesis.getVoices(); return vs.length > 0 && !vs.some(v => /^en(-|_)/i.test(v.lang)); };
+
+/* 画面の部品 */
+function tqPaint(html, keep){ $('#thread').innerHTML = html; if(!keep){ $('#scroll').scrollTop = 0; enterAnim(); } syncTopTitle(); }
+const tqLvHtml = (lv, short) => TQ_LV[lv] ? `<span class="lvl" title="むずかしさ：${TQ_LV[lv]}レベル"><span class="bars" aria-hidden="true">${[1, 2, 3].map(n => `<i${n <= lv ? ' class="on"' : ''}></i>`).join('')}</span>${short ? '' : TQ_LV[lv] + 'レベル'}</span>` : '';
+function tqDotsHtml(){ const s = TQ.sess; let h = ''; for(let k = 0; k < s.n; k++){ const r = s.res[k]; h += `<i class="${r ? (r.ok ? 'r' : 'w') : k === s.res.length ? 'cur' : ''}"></i>`; } return h; }
+function tqDots(){ const el = $('.tq-dots'); if(TQ.sess && el) el.innerHTML = tqDotsHtml(); }
+function tqHead(label, lv, target){
+  const s = TQ.sess;
+  return `<div class="view-head"><h1 class="view-h">${esc(s.title)}<span class="c">${Math.min(s.i + 1, s.items.length)} / ${s.items.length}</span></h1></div>
+    <div class="tq-meta"><span>${label}</span>${lv ? tqLvHtml(lv) : ''}${target ? `<span class="tq-timer" id="tqTimer"><span class="tb"><i></i></span><b>0秒</b></span>` : ''}<span class="sp"></span><span class="tq-dots" aria-hidden="true">${tqDotsHtml()}</span></div>`;
+}
+function tqTimer(target){
+  tqStopTimer(); const s = TQ.sess; if(!s) return; s.t0 = performance.now();
+  const tick = () => {
+    const e = $('#tqTimer'); if(!e || !TQ.sess || S.view !== 'toeic'){ tqStopTimer(); return; }
+    const sec = (performance.now() - TQ.sess.t0) / 1000;
+    e.querySelector('b').textContent = Math.floor(sec) + '秒'; e.querySelector('i').style.width = Math.min(100, sec / target * 100) + '%'; e.classList.toggle('over', sec > target);
+  };
+  tick(); TQ.timer = setInterval(tick, 250);
+}
+function tqStopTimer(){ if(!TQ) return; clearInterval(TQ.timer); TQ.timer = 0; }
+const tqElapsed = () => TQ.sess && TQ.sess.t0 ? performance.now() - TQ.sess.t0 : 0;
+const tqBlank = (q, fill, ok) => { const p = esc(q).split('-------'); return nbh(p[0]) + (fill == null ? '<span class="tq-blank" aria-label="空欄">&nbsp;</span>' : `<span class="tq-blank fill${ok ? '' : ' ng'}">${esc(fill)}</span>`) + nbh(p[1] || ''); };
+const tqChoices = (ch, en) => `<div class="choices tq-ch" id="tqCh">${ch.map((c, i) => `<button class="choice${en ? ' en' : ''}" data-tq="pick" data-i="${i}"${en ? ' lang="en"' : ''}><span class="k">(${TQ_KEYS[i]})</span><span>${esc(c)}</span></button>`).join('')}</div>`;
+function tqMarkCh(box, pick, ans){
+  if(!box) return;
+  box.querySelectorAll('.choice').forEach((b, i) => { b.disabled = true; if(i === ans){ b.classList.add('right'); b.insertAdjacentHTML('afterbegin', ICON.ok); if(i === pick) b.classList.add('picked'); } else if(i === pick){ b.classList.add('wrong'); b.insertAdjacentHTML('afterbegin', ICON.ng); } else b.classList.add('dim'); });
+}
+function tqNextRow(){ const s = TQ.sess, last = s.i >= s.items.length - 1; return `<div class="tq-next"><span class="sp"></span><button class="btn" data-tq="next">${last ? '結果を見る' : '次へ'} <kbd>Enter</kbd></button></div>`; }
+const tqAskHtml = () => S.sample ? `<details class="tq-ask ai-only"><summary class="txt-btn">AIに質問する</summary><div class="row"><input class="field" id="tqAskIn" placeholder="例：なぜ (B) はだめ？" autocomplete="off"><button class="btn ghost" data-tq="ask">聞く</button></div><p class="tq-ask-out" id="tqAskOut" hidden></p></details>` : '';
+const tqChips = ws => ws && ws.length ? `<div class="tq-wg">${ws.map(w => `<span><b lang="en">${esc(w.w)}</b>${esc(w.m)}</span>`).join('')}</div>` : '';
+function tqXp(q){
+  if(!q.words && !q.chx && !q.struct && !q.steps) return '';
+  return `<div class="tq-xp">
+    ${q.words ? `<div><h3>一語ずつ（押すと発音）</h3><div class="tq-il">${q.words.map(w => `<button class="${w.ans ? 'ans' : ''}" data-tq="say" data-text="${esc(w.w)}" title="発音を聞く"><span class="w" lang="en">${esc(w.w)}</span><span class="m">${esc(w.m)}</span>${w.r ? `<span class="r">${esc(w.r)}</span>` : ''}</button>`).join('')}</div></div>` : ''}
+    ${q.struct ? `<div><h3>文の骨組み</h3><p>${enRuns(q.struct)}</p></div>` : ''}
+    ${q.steps ? `<div><h3>解き方</h3><p>${enRuns(q.steps)}</p></div>` : ''}
+    ${q.chx ? `<div><h3>選択肢を1つずつ</h3><ul class="tq-chx">${q.chx.map((c, i) => `<li class="${i === q.a ? 'ok' : ''}">${enRuns(c)}</li>`).join('')}</ul></div>` : ''}
+  </div>`;
+}
+
+/* 1問ずつ */
+function tqItem(){
+  const s = TQ.sess; if(!s){ renderToeic(); return; }
+  S.view = 'toeic'; setNav(); closePop(); stopSpeak();
+  $('#composer').hidden = true; $('#topTitle').textContent = s.title;
+  const it = s.items[s.i];
+  if(!it){ tqSummary(); return; }
+  s.answered = false; s.ctx = '';
+  if(it.t === 'p5') tqP5(it.d); else if(it.t === 'w') tqWord(it.d); else if(it.t === 'p2') tqP2(it.d); else if(it.t === 'p7') tqP7(it.d);
+}
+function tqP5(q){
+  const L = q.from && S.byId[q.from];
+  tqPaint(`${tqHead('Part 5 · ' + esc(q.cat || '') + (L ? ' · 話題から' : ''), q.lv, TQ_TARGET.p5)}
+    <p class="tq-q" id="tqQ" lang="en">${tqBlank(q.q)}</p>
+    <div class="row tq-tools"><button class="txt-btn" id="tqSay" data-tq="say" data-text="${esc(q.q.replace('-------', ', blank, '))}">${ICON.say} 英文を聞く <kbd>R</kbd></button></div>
+    ${tqChoices(q.ch, true)}
+    <div id="tqFb"></div>`);
+  tqTimer(TQ_TARGET.p5);
+}
+function tqAnsP5(q, pick){
+  const s = TQ.sess; if(!s || s.answered) return; s.answered = true;
+  const ms = tqElapsed(); tqStopTimer();
+  const ok = pick === q.a;
+  tqMarkCh($('#tqCh'), pick, q.a);
+  const qq = $('#tqQ'); if(qq) qq.innerHTML = tqBlank(q.q, q.ch[q.a], ok);
+  tqMark(q.id, ok);
+  s.res.push({ok, label: q.q.replace('-------', '[' + q.ch[q.a] + ']'), sub: (q.from ? '話題から · ' : 'Part 5 · ') + (q.cat || ''), ms});
+  const sb = $('#tqSay'); if(sb) sb.dataset.text = q.q.replace('-------', q.ch[q.a]);
+  const L = q.from && S.byId[q.from];
+  const fb = $('#tqFb'); if(fb) fb.outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}" aria-live="polite">
+    <div class="tq-fb-h">${ok ? '正解' : `不正解 — 正解は (${TQ_KEYS[q.a]}) <span lang="en">${esc(q.ch[q.a])}</span>`}<span class="sec">${(ms / 1000).toFixed(1)}秒</span></div>
+    ${q.ja ? `<p class="ja">${esc(q.ja)}</p>` : ''}
+    ${q.why ? `<p>${enRuns(q.why)}</p>` : ''}
+    ${q.tip ? `<span class="tq-tip">${enRuns(q.tip)}</span>` : ''}
+    ${tqXp(q)}
+    ${L ? `<span class="dc-from">出てきた話題：<button data-open="${esc(L.id)}">${esc(L.title)}</button></span>` : ''}
+    ${tqAskHtml()}
+  </div>${tqNextRow()}`;
+  s.ctx = `問題文：${q.q}\n選択肢：${q.ch.map((c, i) => `(${TQ_KEYS[i]}) ${c}`).join(' ')}\n正解：(${TQ_KEYS[q.a]}) ${q.ch[q.a]}\n学習者の答え：(${TQ_KEYS[pick]}) ${q.ch[pick]}\n和訳：${q.ja || ''}\n解説：${q.why || ''}`;
+  tqDots();
+}
+function tqWord(v){
+  const V = TQ.bank ? TQ.bank.vocab : [v];
+  const others = tqShuffle(V.filter(x => x.w !== v.w && x.pos === v.pos && x.m !== v.m)).slice(0, 3);
+  for(let g = 0; others.length < 3 && g < 50; g++){ const x = V[Math.floor(Math.random() * V.length)]; if(x && x.w !== v.w && x.m !== v.m && !others.includes(x)) others.push(x); }
+  const ch = tqShuffle([v, ...others]); TQ.sess.wch = ch;
+  const r = (S.state.tq || {})['v:' + v.w];
+  tqPaint(`${tqHead('単語', v.lv, TQ_TARGET.w)}
+    <div class="tq-word"><span class="w" lang="en">${esc(v.w)}</span><span class="pos">${esc(v.pos || '')}</span><button class="say" data-tq="say" data-text="${esc(v.w)}" aria-label="発音を聞く">${ICON.say}</button></div>
+    <p class="note" style="margin-top:-14px">${r ? `これまで ${r.c}/${r.n}回正解` : 'はじめての単語'}</p>
+    ${tqChoices(ch.map(x => x.m), false)}
+    <div class="row" id="tqDunno"><button class="txt-btn" data-tq="pick" data-i="-1">わからない</button></div>
+    <div id="tqFb"></div>`);
+  speak(v.w); tqTimer(TQ_TARGET.w);
+}
+function tqAnsWord(v, pick){
+  const s = TQ.sess; if(!s || s.answered) return; s.answered = true;
+  const ms = tqElapsed(); tqStopTimer();
+  const ans = s.wch.indexOf(v), ok = pick === ans;
+  tqMarkCh($('#tqCh'), pick, ans); tqMark('v:' + v.w, ok);
+  s.res.push({ok, label: v.w, sub: v.m, ms});
+  const dn = $('#tqDunno'); if(dn) dn.remove();
+  const re = new RegExp('\\b(' + v.w.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/e$/, '') + '\\w*)', 'i');
+  const fb = $('#tqFb'); if(fb) fb.outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}" aria-live="polite">
+    <div class="tq-fb-h">${ok ? '正解' : pick < 0 ? '答え' : '不正解'} — ${esc(v.m)}<span class="sec">${(ms / 1000).toFixed(1)}秒</span></div>
+    ${v.alt ? `<p class="ja">よく使う形：<span class="en-run" lang="en">${esc(v.alt)}</span></p>` : ''}
+    ${v.ex ? `<p class="tq-ex" lang="en">${esc(v.ex).replace(re, '<b>$1</b>')} <button class="say" data-tq="say" data-text="${esc(v.ex)}" aria-label="例文を聞く">${ICON.say}</button></p>` : ''}
+    ${v.exJa ? `<p class="ja">${esc(v.exJa)}</p>` : ''}
+    <span class="tq-save"><button class="star" data-star="${esc(v.w)}" data-from="" data-ja="${esc(v.m)}" data-note="${esc(v.alt ? 'よく使う形：' + v.alt : '')}" aria-pressed="${isSaved(v.w)}" aria-label="単語帳に入れる">${ICON.star}</button>単語帳に入れる</span>
+  </div>${tqNextRow()}`;
+  tqDots();
+}
+function tqP2Btn(on){ const b = $('#tqP2Play'); if(b){ b.classList.toggle('on', on); b.innerHTML = on ? ICON.pause : ICON.playL; b.setAttribute('aria-label', on ? '止める' : 'もう一度聞く'); } }
+function tqP2(q){
+  tqPaint(`${tqHead('Part 2 · ' + esc(q.type || ''), q.lv)}
+    <div class="tq-p2"><button class="dc-big on" id="tqP2Play" data-tq="p2play" aria-label="止める">${ICON.pause}</button><div id="tqP2Now"><b>問いかけ</b>を聞いています…</div></div>
+    <div class="choices tq-ch3" id="tqCh">${q.ch.map((_, i) => `<button class="choice" data-tq="pick" data-i="${i}">(${TQ_KEYS[i]})</button>`).join('')}</div>
+    <div class="row tq-tools"><button class="txt-btn" data-tq="p2play">${ICON.say} もう一度聞く <kbd>R</kbd></button></div>
+    <div id="tqFb"></div>`);
+  tqPlayP2(q);
+}
+function tqPlayP2(q){
+  if(tqNoEnVoice()){ const n = $('#tqP2Now'); if(n) n.textContent = 'この画面では英語の声が使えません。Chrome か Edge で開くと聞けます。'; tqP2Btn(false); return; }
+  tqP2Btn(true);
+  const parts = [{text: q.q, voice: 'A', gap: 900}, ...q.ch.map((c, i) => ({text: TQ_KEYS[i] + '.  ' + c, voice: 'B', gap: 700}))];
+  tqSeq(parts, i => { const n = $('#tqP2Now'); if(n) n.innerHTML = i < 0 ? (TQ.sess && TQ.sess.answered ? '答え合わせ' : '答えを選んでください') : i === 0 ? '<b>問いかけ</b>を聞いています…' : `<b>(${TQ_KEYS[i - 1]})</b> を聞いています…`; }).then(() => tqP2Btn(false));
+}
+function tqAnsP2(q, pick){
+  const s = TQ.sess; if(!s || s.answered) return; s.answered = true;
+  stopSpeak(); tqP2Btn(false); const n = $('#tqP2Now'); if(n) n.textContent = '答え合わせ';
+  const ok = pick === q.a; tqMarkCh($('#tqCh'), pick, q.a); tqMark(q.id, ok);
+  s.res.push({ok, label: q.q, sub: 'Part 2 · ' + (q.type || '')});
+  const li = (lab, en, ja, cls) => `<li class="${cls || ''}"><span class="lab">${lab}</span><span><span class="en" lang="en">${esc(en)}</span><span class="ja">${esc(ja || '')}</span></span><button class="say" data-tq="say" data-text="${esc(en)}" aria-label="聞く">${ICON.say}</button></li>`;
+  const fb = $('#tqFb'); if(fb) fb.outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}" aria-live="polite"><div class="tq-fb-h">${ok ? '正解' : `不正解 — 正解は (${TQ_KEYS[q.a]})`}</div>
+    <ul class="tq-script">${li('Q', q.q, q.qJa)}${q.ch.map((c, i) => li(`(${TQ_KEYS[i]})`, c, (q.chJa || [])[i], `${i === q.a ? 'ans' : ''} ${i === pick ? 'pick' : ''}`)).join('')}</ul>
+    ${q.why ? `<p>${enRuns(q.why)}</p>` : ''}${tqAskHtml()}</div>${tqNextRow()}`;
+  s.ctx = `Part 2 問いかけ：${q.q}\n応答：${q.ch.map((c, i) => `(${TQ_KEYS[i]}) ${c}`).join(' ')}\n正解：(${TQ_KEYS[q.a]})\n学習者の答え：(${TQ_KEYS[pick]})\n解説：${q.why || ''}`;
+  tqDots();
+}
+function tqP7(p){
+  const s = TQ.sess; s.p7 = {done: 0, t0: performance.now()};
+  const ids = p._ids || p.qs.map((_, k) => p.id + '#' + k);
+  tqPaint(`${tqHead('Part 7 · ' + esc(p.title), p.lv, p.qs.length * 60)}
+    <pre class="tq-passage" lang="en">${esc(p.text)}</pre>
+    <div class="row tq-tools">${p.sents ? '<button class="txt-btn" data-tq="p7x">一文ずつ訳と単語</button>' : ''}<button class="txt-btn" data-tq="p7ja">全訳を見る</button><button class="txt-btn" id="tqP7Read" data-tq="p7read">${ICON.say} <span>本文を聞く</span> <kbd>R</kbd></button></div>
+    <pre class="tq-passage ja" id="tqP7Ja" hidden>${esc(p.ja || '')}</pre>
+    ${p.sents ? `<div class="tq-sents" id="tqP7X" hidden>${p.sents.map(x => `<div class="tq-sent"><p class="en" lang="en">${esc(x.en)} <button class="say" data-tq="say" data-text="${esc(x.en)}" aria-label="この文を聞く">${ICON.say}</button></p><p class="ja">${esc(x.ja)}</p>${tqChips(x.words)}</div>`).join('')}</div>` : ''}
+    ${p.qs.map((q, k) => `<div class="tq-p7q" data-k="${k}" data-id="${esc(ids[k])}"><p class="qt"><span class="n">Q${k + 1}</span><span lang="en">${esc(q.q)}</span> <button class="say" data-tq="say" data-text="${esc(q.q)}" aria-label="設問を聞く">${ICON.say}</button></p>${q.qJa ? `<p class="note">${esc(q.qJa)}</p>` : ''}<div class="choices tq-ch tq-one">${q.ch.map((c, i) => `<button class="choice en" lang="en" data-tq="p7pick" data-k="${k}" data-i="${i}"><span class="k">(${TQ_KEYS[i]})</span><span>${esc(c)}</span></button>`).join('')}</div><div class="tq-p7fb"></div></div>`).join('')}
+    <div id="tqP7Next"></div>`);
+  tqTimer(p.qs.length * 60);
+}
+function tqAnsP7(p, k, pick){
+  const s = TQ.sess, box = $(`.tq-p7q[data-k="${k}"]`); if(!s || !box || box.dataset.done) return;
+  box.dataset.done = '1';
+  const q = p.qs[k], ok = pick === q.a;
+  tqMarkCh(box.querySelector('.choices'), pick, q.a); tqMark(box.dataset.id, ok);
+  s.res.push({ok, label: q.q, sub: p.title});
+  const xp = q.where || q.chx || (q.words && q.words.length) ? `<div class="tq-xp">${q.where ? `<div><h3>答えの場所</h3><p class="tq-where">${enRuns(q.where)}</p></div>` : ''}${q.chx ? `<div><h3>選択肢を1つずつ</h3><ul class="tq-chx">${q.chx.map((c, i) => `<li class="${i === q.a ? 'ok' : ''}">${enRuns(c)}</li>`).join('')}</ul></div>` : ''}${q.words && q.words.length ? `<div><h3>設問と選択肢の単語</h3>${tqChips(q.words)}</div>` : ''}</div>` : '';
+  box.querySelector('.tq-p7fb').outerHTML = `<div class="tq-fb ${ok ? 'ok' : 'ng'}"><div class="tq-fb-h">${ok ? '正解' : `不正解 — 正解は (${TQ_KEYS[q.a]})`}</div>${q.why ? `<p>${enRuns(q.why)}</p>` : ''}${xp}</div>`;
+  s.p7.done++; tqDots();
+  if(s.p7.done >= p.qs.length){
+    tqStopTimer(); s.answered = true;
+    const sec = Math.round((performance.now() - s.p7.t0) / 1000);
+    s.ctx = `Part 7 本文：\n${p.text}\n設問：\n${p.qs.map((x, i) => `Q${i + 1} ${x.q} ${x.ch.map((c, j) => `(${TQ_KEYS[j]}) ${c}`).join(' ')} 正解(${TQ_KEYS[x.a]})`).join('\n')}`;
+    const nx = $('#tqP7Next'); if(nx) nx.outerHTML = `<div class="tq-fb"><div class="tq-fb-h">${p.qs.length}問で ${Math.floor(sec / 60)}分${sec % 60}秒<span class="sec">本番の目安 ${p.qs.length}分</span></div>${tqAskHtml()}</div>${tqNextRow()}`;
+  }
+}
+function tqReadP7(p){
+  const b = $('#tqP7Read'); if(!b) return;
+  const label = t => { const x = $('#tqP7Read'); if(x) x.querySelector('span').textContent = t; };
+  if(b.dataset.on){ stopSpeak(); delete b.dataset.on; label('本文を聞く'); return; }
+  if(tqNoEnVoice()){ toast('この画面では英語の声が使えません（Chrome か Edge で開くと聞けます）'); return; }
+  const lines = (p.sents ? p.sents.map(x => x.en) : String(p.text).split(/\n+/)).map(t => t.replace(/^\s*-\s*/, '').trim()).filter(Boolean);
+  tqSeq(lines.map(text => ({text, voice: 'A', gap: 250}))).then(() => { const x = $('#tqP7Read'); if(x) delete x.dataset.on; label('本文を聞く'); });
+  b.dataset.on = '1'; label('とめる');
+}
+function tqPick(i){
+  const s = TQ.sess, it = s && s.items[s.i]; if(!it || s.done) return;
+  if(it.t === 'p7'){ const k = $$('.tq-p7q').findIndex(b => !b.dataset.done); if(k >= 0 && i >= 0 && i < it.d.qs[k].ch.length) tqAnsP7(it.d, k, i); return; }
+  if(s.answered) return;
+  if(it.t === 'p5'){ if(i >= 0 && i < it.d.ch.length) tqAnsP5(it.d, i); }
+  else if(it.t === 'w'){ if(i < 4) tqAnsWord(it.d, i); }
+  else if(it.t === 'p2'){ if(i >= 0 && i < it.d.ch.length) tqAnsP2(it.d, i); }
+}
+function tqNext(){ const s = TQ.sess; if(!s || !s.answered || s.done) return; stopSpeak(); s.i++; tqItem(); }
+function tqReadKey(){
+  const s = TQ.sess, it = s && s.items[s.i]; if(!it) return;
+  if(it.t === 'p5'){ const b = $('#tqSay'); if(b){ stopSpeak(); speak(b.dataset.text); } }
+  else if(it.t === 'w'){ stopSpeak(); speak(it.d.w); }
+  else if(it.t === 'p2'){ const b = $('#tqP2Play'); if(b && b.classList.contains('on')){ stopSpeak(); tqP2Btn(false); } else tqPlayP2(it.d); }
+  else if(it.t === 'p7') tqReadP7(it.d);
+}
+function tqSummary(){
+  tqStopTimer(); stopSpeak();
+  const s = TQ.sess; s.done = true;
+  const n = s.res.length, c = s.res.filter(r => r.ok).length, tm = s.res.filter(r => r.ms), avg = tm.length ? tm.reduce((a, r) => a + r.ms, 0) / tm.length / 1000 : 0;
+  const wrong = []; let k = 0;
+  s.items.forEach(it => { const m = it.t === 'p7' ? it.d.qs.length : 1; if(s.res.slice(k, k + m).some(r => !r.ok)) wrong.push(it); k += m; });
+  s.wrong = wrong;
+  const td = tqToday(), lid = s.from.startsWith('lesson:') ? s.from.slice(7) : '';
+  $('#topTitle').textContent = s.title + ' の結果';
+  tqPaint(`<div class="view-head"><h1 class="view-h">${esc(s.title)} の結果</h1></div>
+    <div class="tq-score"><b>${c}<small> / ${n}</small></b><span>正答率 ${n ? Math.round(c / n * 100) : 0}%${avg ? `・1問あたり ${avg.toFixed(1)}秒` : ''}・今日 ${td.n}問</span></div>
+    <ul class="tq-res">${s.res.map(r => `<li><i class="r${r.ok ? ' ok' : ''}"></i><span class="t" lang="en">${esc(r.label)}<small lang="ja">${esc(r.sub || '')}</small></span><span class="m">${r.ms ? (r.ms / 1000).toFixed(1) + '秒' : ''}</span></li>`).join('')}</ul>
+    <div class="row">${wrong.length ? `<button class="btn" data-tq="again" data-how="wrong">まちがえた ${wrong.length}問をもう一度</button>` : ''}${lid && S.byId[lid] ? `<button class="btn${wrong.length ? ' ghost' : ''}" data-open="${esc(lid)}">話題にもどる</button>` : `<button class="btn${wrong.length ? ' ghost' : ''}" data-tq="again" data-how="more">続けてもう1セット</button>`}<button class="btn ghost" data-tq="home">TOEIC のはじめへ</button></div>
+    ${wrong.length ? '<p class="note">まちがえた問題は「まちがいノート」に入り、明日もう一度出ます。3回続けて正解すると卒業です。</p>' : ''}`);
+}
+
+/* はじめかた */
+function tqStart(title, items, from){
+  items = (items || []).filter(Boolean);
+  if(!items.length){ toast('出せる問題がありません'); return; }
+  TQ.sess = {title, items, from: from || 'home', i: 0, res: [], n: items.reduce((a, it) => a + (it.t === 'p7' ? it.d.qs.length : 1), 0), answered: false, t0: 0};
+  S.view = 'toeic'; renderList(); tqItem();
+}
+async function tqNeedBank(){ const B = await tqLoad(); if(!B){ toast('問題集を読み込めませんでした'); renderToeic(); return null; } tqIndex(); return B; }
+async function tqMix(){ if(!await tqNeedBank()) return; const p5 = tqFresh(TQ.bank.p5.concat(tqTopicQs()), 7).map(d => ({t: 'p5', d})), w = tqVocabPick(3).map(d => ({t: 'w', d})); tqStart('ミックス10問', [p5[0], p5[1], w[0], p5[2], p5[3], w[1], p5[4], p5[5], w[2], p5[6]], 'mix'); }
+async function tqReview(){
+  if(!await tqNeedBank()) return;
+  const items = [];
+  tqShuffle(tqDueIds()).slice(0, 10).forEach(id => { const b = TQ.byId[id]; if(!b) return; items.push(b.t === 'p7q' ? {t: 'p7', d: Object.assign({}, b.p, {qs: [b.p.qs[b.k]], _ids: [id]})} : {t: b.t, d: b.d}); });
+  tqStart('まちがいノート', items, 'review');
+}
+function tqTopics(){ tqIndex(); tqStart('話題から', tqFresh(tqTopicQs(), 10).map(d => ({t: 'p5', d})), 'topics'); }
+async function tqP5Start(cat){ if(!await tqNeedBank()) return; tqStart('Part 5' + (cat ? `（${cat}）` : ''), tqFresh(TQ.bank.p5.concat(tqTopicQs()).filter(q => !cat || q.cat === cat), 10).map(d => ({t: 'p5', d})), cat ? 'cat:' + cat : 'p5'); }
+async function tqVocab(){ if(!await tqNeedBank()) return; tqStart('単語10問', tqVocabPick(10).map(d => ({t: 'w', d})), 'vocab'); }
+async function tqP2Start(){ if(!await tqNeedBank()) return; tqStart('Part 2（聞き取り）', tqFresh(TQ.bank.p2, 5).map(d => ({t: 'p2', d})), 'p2'); }
+async function tqP7Start(id){
+  if(!await tqNeedBank()) return;
+  const tq = S.state.tq || {};
+  let p = id && TQ.bank.p7.find(x => x.id === id);
+  if(!p){ const rest = TQ.bank.p7.filter(x => !x.qs.some((_, k) => tq[x.id + '#' + k])); p = (rest.length ? rest : tqShuffle(TQ.bank.p7))[0]; }
+  if(p) tqStart(p.title, [{t: 'p7', d: p}], 'p7');
+}
+function tqLessonStart(id){ const qs = tqLessonQs(S.byId[id]); if(qs.length) tqStart('この話題で TOEIC', qs.map(d => ({t: 'p5', d})), 'lesson:' + id); }
+function tqAgain(how){
+  const s = TQ.sess; if(!s){ renderToeic(); return; }
+  if(how === 'wrong'){ tqStart(s.title, s.wrong || [], s.from); return; }
+  const f = s.from;
+  if(f === 'mix') tqMix(); else if(f === 'review'){ if(tqDueIds().length) tqReview(); else renderToeic(); }
+  else if(f === 'topics') tqTopics(); else if(f === 'vocab') tqVocab(); else if(f === 'p2') tqP2Start(); else if(f === 'p7') tqP7Start();
+  else if(f.startsWith('cat:')) tqP5Start(f.slice(4)); else if(f === 'p5') tqP5Start(); else renderToeic();
+}
+async function tqAsk(){
+  const inp = $('#tqAskIn'), out = $('#tqAskOut'); if(!inp || !out || !S.sample) return;
+  const qt = inp.value.trim(); if(!qt) return;
+  out.hidden = false; out.className = 'tq-ask-out wait'; out.textContent = '考えています…';
+  if(TQ.askCtl) TQ.askCtl.abort(); TQ.askCtl = new AbortController();
+  const prompt = `あなたは TOEIC の先生です。学習者（TOEIC 500点前後の日本人の社会人）の質問に、やさしい日本語（ですます調）で短く（200字前後）答えてください。英語の例は短く。\n--- 問題 ---\n${(TQ.sess && TQ.sess.ctx) || ''}\n--- 質問 ---\n${qt}`;
+  try{ const r = await S.sample(prompt, {modelTier: 'quick', cache: false, signal: TQ.askCtl.signal, onText: ({text}) => { out.className = 'tq-ask-out'; out.textContent = text; }}); out.className = 'tq-ask-out'; out.textContent = r.text; }
+  catch(e){ if(e && e.code === 'cancelled') return; out.className = 'tq-ask-out'; out.textContent = (e && e.text) || errText(e); }
+}
+function tqAction(b){
+  const a = b.dataset.tq, s = TQ.sess, it = s && s.items[s.i];
+  if(a === 'pick') tqPick(+b.dataset.i);
+  else if(a === 'p7pick'){ if(it && it.t === 'p7') tqAnsP7(it.d, +b.dataset.k, +b.dataset.i); }
+  else if(a === 'next') tqNext();
+  else if(a === 'say'){ const p7 = $('#tqP7Read'); if(p7 && p7.dataset.on){ delete p7.dataset.on; p7.querySelector('span').textContent = '本文を聞く'; } stopSpeak(); speak(b.dataset.text); }
+  else if(a === 'p2play'){ if(it && it.t === 'p2'){ const pb = $('#tqP2Play'); if(pb && pb.classList.contains('on')){ stopSpeak(); tqP2Btn(false); } else tqPlayP2(it.d); } }
+  else if(a === 'p7x' || a === 'p7ja'){ const box = $(a === 'p7x' ? '#tqP7X' : '#tqP7Ja'); if(box){ box.hidden = !box.hidden; b.textContent = a === 'p7x' ? (box.hidden ? '一文ずつ訳と単語' : '一文ずつ訳をとじる') : (box.hidden ? '全訳を見る' : '全訳をとじる'); } }
+  else if(a === 'p7read'){ if(it && it.t === 'p7') tqReadP7(it.d); }
+  else if(a === 'mix') tqMix();
+  else if(a === 'review') tqReview();
+  else if(a === 'topics') tqTopics();
+  else if(a === 'p5') tqP5Start();
+  else if(a === 'cat') tqP5Start(b.dataset.cat);
+  else if(a === 'p7') tqP7Start(b.dataset.id);
+  else if(a === 'vocab') tqVocab();
+  else if(a === 'p2') tqP2Start();
+  else if(a === 'lesson') tqLessonStart(b.dataset.id);
+  else if(a === 'again') tqAgain(b.dataset.how);
+  else if(a === 'home') renderToeic();
+  else if(a === 'ask') tqAsk();
+}
+
+/* TOEIC のはじめの画面 */
+async function renderToeic(){
+  S.view = 'toeic'; TQ.sess = null; setNav(); renderList(); stopSpeak(); closePop();
+  $('#topTitle').textContent = 'TOEIC'; $('#composer').hidden = true;
+  if(!TQ.bank && !TQ.err){
+    tqPaint(`<div class="view-head"><h1 class="view-h">TOEIC</h1></div>${emptyMain('問題を読み込んでいます…')}`);
+    await tqLoad();
+    if(S.view !== 'toeic' || TQ.sess) return;
+  }
+  tqIndex();
+  const B = TQ.bank, tq = S.state.tq || {}, td = tqToday();
+  const due = tqDueIds().length, note = tqNoteIds().length, topics = tqTopicQs(), topicNew = topics.filter(q => !tq[q.id]).length;
+  const st = tqCatStats(), allN = Object.values(st).reduce((a, x) => a + x.n, 0), allC = Object.values(st).reduce((a, x) => a + x.c, 0);
+  const vSeen = B ? B.vocab.filter(v => tq['v:' + v.w]).length : 0, vGood = B ? B.vocab.filter(v => ((tq['v:' + v.w] || {}).box || 0) >= 3).length : 0;
+  const head = `<div class="view-head"><h1 class="view-h">TOEIC<span class="c">${td.n ? `今日 ${td.n}問・正答率 ${Math.round(td.c / td.n * 100)}%` : ''}</span></h1>
+    <p class="view-p">Part 5（文法・語彙）・Part 7（長文）・単語・Part 2（聞き取り）。毎朝の話題からも問題がふえます。答えると、一語ずつの解説が出ます。</p></div>`;
+  const err = TQ.err ? `<p class="note status">${esc(TQ.err)}</p>` : '';
+  const cards = `<div class="tq-cards">
+    <button class="tq-card main" data-tq="mix"${B ? '' : ' disabled'}><b>ミックス10問</b><span>Part 5 を7問と単語を3問。まだ解いていない問題から出します。</span></button>
+    <button class="tq-card" data-tq="review"${due ? '' : ' disabled'}><b>まちがいノート${due ? `<span class="num">${due}</span>` : ''}</b><span>${note ? (due ? `今日の復習 ${due}問・ノート全体 ${note}問` : `今日の分はおわりです・ノート全体 ${note}問`) : 'まちがえた問題がここに入り、翌日また出ます。'}</span></button>
+    <button class="tq-card" data-tq="topics"${topics.length ? '' : ' disabled'}><b>話題から${topicNew ? `<span class="num">${topicNew}</span>` : ''}</b><span>${topics.length ? `毎朝の話題の英文で作った Part 5（${topics.length}問・まだ解いていない ${topicNew}問）` : '毎朝の話題から Part 5 の問題がふえていきます。'}</span></button>
+  </div>`;
+  const p5 = B ? `<section class="blk" aria-label="Part 5"><div class="blk-h"><h2>Part 5（文法・語彙）</h2><span class="sp"></span><span class="note">${allN ? `これまでの正答率 ${Math.round(allC / allN * 100)}%` : `${B.p5.length + topics.length}問`}</span></div>
+      <p class="note">分野を選ぶと、その分野から10問出します。正答率の低い分野から練習すると効きます。</p>
+      <div class="tq-chips"><button class="chip" data-tq="p5">ぜんぶから10問</button>${TQ_CATS.map(c => { const x = st[c]; return `<button class="chip" data-tq="cat" data-cat="${esc(c)}">${esc(c)}${x.n ? `<small>${Math.round(x.c / x.n * 100)}%</small>` : ''}</button>`; }).join('')}</div></section>` : '';
+  const p7 = B ? `<section class="blk" aria-label="Part 7"><div class="blk-h"><h2>Part 7（長文）</h2><span class="sp"></span><span class="note">1セット2〜3問・目安は1問1分</span></div>
+      <div class="tq-sets">${B.p7.map(p => { const rs = p.qs.map((_, i) => tq[p.id + '#' + i]), done = rs.filter(Boolean).length, ok = rs.filter(r => r && r.last).length; return `<button class="tq-set" data-tq="p7" data-id="${esc(p.id)}">${tqLvHtml(p.lv, true)}<span class="t">${esc(p.title)}</span><span class="m${done === p.qs.length ? ' done' : ''}">${done ? `${ok}/${p.qs.length}正解` : `${p.qs.length}問`}</span></button>`; }).join('')}</div></section>` : '';
+  const w = B ? `<section class="blk" aria-label="単語"><div class="blk-h"><h2>単語</h2><span class="sp"></span><span class="note">${B.vocab.length}語のうち ${vSeen}語を練習・${vGood}語はしっかり</span></div>
+      <p class="note">TOEIC によく出る単語の意味を4つから選びます。まちがえた単語は翌日また出ます。☆ で単語帳にも入れられます。</p>
+      <div class="row"><button class="btn ghost" data-tq="vocab">単語を10問</button></div></section>` : '';
+  const p2 = B ? `<section class="blk" aria-label="Part 2"><div class="blk-h"><h2>Part 2（聞き取り）</h2><span class="sp"></span><span class="note">音を出せるときに</span></div>
+      <p class="note">問いかけと3つの応答を聞いて、合う応答を選びます。文字は答えたあとに出ます。Claude のアプリの中では英語の声が無いことがあり、そのときは Chrome で開くと聞けます。</p>
+      <div class="row"><button class="btn ghost" data-tq="p2">5問を聞く</button></div></section>` : '';
+  tqPaint(head + err + cards + `<div class="a-block tq-home">${p5}${p7}${w}${p2}</div>`);
+}
+/* 話題ページの「この話題で TOEIC」 */
+function tqLessonHtml(L){
+  const qs = tqLessonQs(L), tq = S.state.tq || {};
+  const done = qs.filter(q => tq[q.id]).length, ok = qs.filter(q => tq[q.id] && tq[q.id].last).length;
+  return `<section class="blk" aria-label="この話題で TOEIC">
+        <div class="blk-h"><h2>この話題で TOEIC</h2><span class="sp"></span>${done === qs.length ? `<span class="note">前回 ${ok}/${qs.length}問 正解</span>` : done ? `<span class="note">${done}/${qs.length}問 解いた</span>` : ''}</div>
+        <p class="note">この話題の英文や単語を使った、TOEIC Part 5 形式の${qs.length}問です。答えると、一語ずつの解説が出ます。</p>
+        <div class="row"><button class="btn ghost" data-tq="lesson" data-id="${esc(L.id)}">${TQ_ICON} ${qs.length}問を解く</button></div>
+      </section>`;
 }
 
 /* ---------- toast / keys ---------- */
@@ -2654,6 +3208,11 @@ document.addEventListener('keydown', e => {
   const k = e.key;
   if(k === '?'){ e.preventDefault(); toggleKeys(); return; }
   if(!$('#keys').hidden){ toggleKeys(false); }
+  if(S.view === 'toeic' && TQ.sess && !TQ.sess.done){   /* TOEIC：1〜4 で選ぶ・Enter で次へ・R で英文を聞く */
+    if(/^[1-4]$/.test(k)){ e.preventDefault(); tqPick(+k - 1); return; }
+    if(k === 'Enter' && TQ.sess.answered && !(document.activeElement && document.activeElement.tagName === 'BUTTON')){ e.preventDefault(); tqNext(); return; }
+    if(k === 'r' || k === 'R'){ e.preventDefault(); tqReadKey(); return; }
+  }
   if(k === '/'){ e.preventDefault(); if(!isNarrow() && sideOff()) setSideOff(false); $('#q').focus(); $('#q').select(); }
   else if(k === 'b' || k === 'B'){ toggleSide(); }
   else if(k === 'j' || k === 'J'){ step(1); }
@@ -2727,6 +3286,7 @@ $('#wordsBtn').addEventListener('click', () => { renderWords(); closeSide(); });
 $('#likesBtn').addEventListener('click', () => { renderLikes(); closeSide(); });
 $('#dictBtn').addEventListener('click', () => { renderDict(); closeSide(); });
 $('#flowBtn').addEventListener('click', () => { renderFlow(); closeSide(); });
+$('#toeicBtn').addEventListener('click', () => { renderToeic(); closeSide(); });
 $('#coverBack').addEventListener('click', () => toggleCover(false));
 $('#amtMini').addEventListener('click', e => { e.stopPropagation(); openAmtMenu(); });
 document.addEventListener('click', e => {
@@ -2794,6 +3354,7 @@ $('#scroll').addEventListener('scroll', () => {
 
 function onAction(e){
   const t = e.target;
+  const tqb = t.closest('[data-tq]'); if(tqb){ e.stopPropagation(); tqAction(tqb); return; }   /* TOEIC の操作は先に（.choice をクイズの答えと取り違えない） */
   const kw = t.closest('.tk.kw'); if(kw){ e.stopPropagation(); popFor === kw ? closePop() : openPop(kw); return; }
   const sl = t.closest('[data-sent]'); if(sl){ toggleSentLike(sl.dataset.sent); return; }
   const gl = t.closest('[data-gram]'); if(gl){ toggleGramLike(gl.dataset.gram); return; }
@@ -2803,7 +3364,7 @@ function onAction(e){
   const wtk = t.closest('#story .tk'); if(wtk && !(window.getSelection && String(window.getSelection()).length)){ e.stopPropagation(); popFor === wtk ? closePop() : openPop(wtk); return; }
   const sayLine = t.closest('[data-say-line]'); if(sayLine){ stopSpeak(); speakLine(+sayLine.dataset.sayLine); return; }
   const say = t.closest('[data-say]'); if(say){ stopSpeak(); speak(say.dataset.say); return; }
-  const star = t.closest('[data-star]'); if(star){ toggleWord(star.dataset.star, star.dataset.from); return; }
+  const star = t.closest('[data-star]'); if(star){ toggleWord(star.dataset.star, star.dataset.from, star.dataset.ja, star.dataset.note); return; }
   const like = t.closest('[data-like]'); if(like){ toggleLike(like.dataset.like); return; }
   const open = t.closest('[data-open]'); if(open){ openLesson(open.dataset.open, open.dataset.seq || (open.closest('.pager') ? undefined : null)); if(open.dataset.line != null) flashLine(+open.dataset.line); else if(open.dataset.to === 'gram') flashGram(); return; }
   const lt = t.closest('[data-ltab]'); if(lt){ S.likesTab = lt.dataset.ltab; LS.set('likesTab', S.likesTab); renderLikes(true); return; }
@@ -2865,6 +3426,7 @@ $('#thread').addEventListener('input', e => {
   else if(e.target.id === 'dcIn') DC.typed = e.target.value;
 });
 $('#thread').addEventListener('keydown', e => {
+  if(e.target.id === 'tqAskIn'){ if(e.key === 'Enter' && !e.isComposing && e.keyCode !== 229){ e.preventDefault(); tqAsk(); } return; }
   if(e.target.id !== 'dcIn') return;
   if(e.key === 'Enter' && !e.shiftKey && !e.isComposing && e.keyCode !== 229){ e.preventDefault(); dcCheck(false); }
   else if(e.key === 'Tab' && DC.mode === 'listen'){ e.preventDefault(); dcPlay(e.shiftKey); }
@@ -2900,6 +3462,9 @@ const Sync = (() => {
       if(on && on >= off) o[ON][id] = on; else if(off) o[OFF][id] = off;
     });
     onOff('likes', 'likesOff'); onOff('sents', 'sentsOff'); onOff('grams', 'gramsOff');
+    /* TOEIC：問題ごとに新しく解いたほう、日ごとの数は多いほう */
+    [b.tq, a.tq].forEach(m => Object.entries(m).forEach(([id, r]) => { const c = o.tq[id]; if(!c || ((r && r.at) || '') >= ((c && c.at) || '')) o.tq[id] = r; }));
+    [b.tdays, a.tdays].forEach(m => Object.entries(m).forEach(([d, v]) => { const c = o.tdays[d]; if(!c || ((v && v.n) || 0) >= ((c && c.n) || 0)) o.tdays[d] = v; }));
     const words = {};
     [...b.saved, ...a.saved].forEach(w => { const c = words[w.w]; if(!c || (w.t || 0) > (c.t || 0)) words[w.w] = w; });
     const offW = {};
@@ -2914,7 +3479,7 @@ const Sync = (() => {
   const sortObj = m => Object.fromEntries(Object.keys(m).sort().map(k => [k, m[k]]));
   function canon(x){
     const o = normState(x);
-    ['likes', 'likesOff', 'savedOff', 'done', 'seen', 'sents', 'sentsOff', 'grams', 'gramsOff'].forEach(k => { o[k] = sortObj(o[k]); });
+    ['likes', 'likesOff', 'savedOff', 'done', 'seen', 'sents', 'sentsOff', 'grams', 'gramsOff', 'tq', 'tdays'].forEach(k => { o[k] = sortObj(o[k]); });
     o.saved = o.saved.slice().sort((p, q) => (q.t || 0) - (p.t || 0) || (p.w < q.w ? -1 : p.w > q.w ? 1 : 0));
     o.days = [...new Set(o.days)].sort();
     return o;
@@ -2996,6 +3561,7 @@ function openInitial(){
   const hash = decodeURIComponent((location.hash || '').slice(1));
   if(hash === 'dict'){ renderDict(); return; }
   if(hash === 'flow'){ renderFlow(); return; }
+  if(hash === 'toeic'){ renderToeic(); return; }
   const last = LS.get('last', '');
   const top = visible()[0] || S.lessons[0];   /* 物語は一覧の最後なので、はじめはいちばん新しい話題 */
   const want = S.byId[hash] ? hash : (S.byId[last] ? last : (top && top.id));

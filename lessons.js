@@ -437,6 +437,99 @@ window.LESSONS = [
 "note": "ポストの「TOP10」。my top ten movies of this year は「今年のベスト10映画」。",
 "w": "top ten"
 }
+],
+"toeic": [
+{
+"cat": "前置詞・接続詞",
+"lv": 2,
+"q": "I watched the Sakamoto Days movie ------- I knew nothing about the original manga.",
+"ch": [
+"even though",
+"despite",
+"because of",
+"unless"
+],
+"a": 0,
+"ja": "原作のマンガは全く知りませんでしたが、『SAKAMOTO DAYS』の映画を見ました。",
+"why": "空欄のあとに I knew nothing（主語＋動詞）が続くので、文と文をつなぐ接続詞が入ります。「〜だけれども」の意味の even though が正解です。despite と because of は前置詞なので、後ろに主語＋動詞の文は続けられません。unless（〜しない限り）は意味が合いません。",
+"tip": "後ろが「主語＋動詞」→ 接続詞 even though／名詞だけ → 前置詞 despite",
+"struct": "主語 I（私は）／ 動詞 watched（見た）／ 目的語 the Sakamoto Days movie（『SAKAMOTO DAYS』の映画）／ even though I knew nothing about the original manga（原作のマンガは全く知らなかったけれど）",
+"words": [
+{
+"w": "I",
+"m": "私は",
+"r": "代名詞（主語）"
+},
+{
+"w": "watched",
+"m": "見た",
+"r": "動詞（watch の過去形）"
+},
+{
+"w": "the",
+"m": "その",
+"r": "冠詞"
+},
+{
+"w": "Sakamoto Days",
+"m": "『SAKAMOTO DAYS』",
+"r": "作品名"
+},
+{
+"w": "movie",
+"m": "映画",
+"r": "名詞（目的語）"
+},
+{
+"w": "even though",
+"m": "〜だけれども",
+"r": "接続詞（← 空欄・正解）",
+"ans": 1
+},
+{
+"w": "I",
+"m": "私は",
+"r": "代名詞（後半の主語）"
+},
+{
+"w": "knew",
+"m": "知っていた",
+"r": "動詞（know の過去形）"
+},
+{
+"w": "nothing",
+"m": "何も〜ない",
+"r": "代名詞（knew の目的語）"
+},
+{
+"w": "about",
+"m": "〜について",
+"r": "前置詞"
+},
+{
+"w": "the",
+"m": "その",
+"r": "冠詞"
+},
+{
+"w": "original",
+"m": "もとの・原作の",
+"r": "形容詞（manga を説明）"
+},
+{
+"w": "manga",
+"m": "マンガ",
+"r": "名詞"
+}
+],
+"steps": "① 空欄の後ろを見る：I knew nothing about the original manga。② I（主語）＋ knew（動詞）があるので、後ろは「文」。③ 文と文をつなぐのは接続詞。4つのうち接続詞は even though と unless。④「知らなかった（のに）映画を見た」の意味になるのは even though。",
+"chx": [
+"(A) even though＝接続詞「〜だけれども」。後ろの文（I knew nothing…）とつなげられて、意味も合う ◯",
+"(B) despite＝前置詞「〜にもかかわらず」。意味は近いが、前置詞の後ろは名詞だけで、主語＋動詞の文は続けられない ✕",
+"(C) because of＝前置詞「〜のせいで」。前置詞なので文が続けられず、意味も合わない ✕",
+"(D) unless＝接続詞「〜しない限り」。形は合うが「知らない限り見た」となり、意味が合わない ✕"
+]
+}
 ]
 },
 {
@@ -1094,6 +1187,109 @@ window.LESSONS = [
 "ja": "範囲・幅",
 "note": "ポストの「幅広い」は a wide range of 〜。",
 "w": "range"
+}
+],
+"toeic": [
+{
+"cat": "慣用表現",
+"lv": 1,
+"q": "The exhibition shows a wide ------- of works, from interpretations of stage plays to portraits of favorite actresses.",
+"ch": [
+"range",
+"ranged",
+"ranging",
+"ranges"
+],
+"a": 0,
+"ja": "展示は、舞台の解釈絵から推し女優の絵まで、幅広い作品を見せています。",
+"why": "a wide ___ of works は「幅広い作品」という決まった言い方 a wide range of（幅広い〜）です。a（1つの）と形容詞 wide のあとなので、単数の名詞 range が入ります。ranges は複数なので a と合わず、ranged・ranging は動詞の形なので a wide の後ろには置けません。",
+"tip": "a wide range of 〜＝幅広い〜（a のあとは単数の名詞）",
+"struct": "主語 The exhibition（展示は）／ 動詞 shows（見せている）／ 目的語 a wide range of works（幅広い作品）／ from interpretations of stage plays to portraits of favorite actresses（舞台の解釈絵から推し女優の絵まで）",
+"words": [
+{
+"w": "The",
+"m": "その",
+"r": "冠詞"
+},
+{
+"w": "exhibition",
+"m": "展示・展覧会",
+"r": "名詞（主語）"
+},
+{
+"w": "shows",
+"m": "見せる",
+"r": "動詞（主語が1つなので s）"
+},
+{
+"w": "a",
+"m": "1つの",
+"r": "冠詞（単数の名詞につく）"
+},
+{
+"w": "wide",
+"m": "幅広い",
+"r": "形容詞（range を説明）"
+},
+{
+"w": "range",
+"m": "範囲・幅",
+"r": "名詞（← 空欄・正解）",
+"ans": 1
+},
+{
+"w": "of",
+"m": "〜の",
+"r": "前置詞"
+},
+{
+"w": "works",
+"m": "作品",
+"r": "名詞（複数）"
+},
+{
+"w": "from",
+"m": "〜から",
+"r": "前置詞（from A to B＝A から B まで）"
+},
+{
+"w": "interpretations",
+"m": "解釈（を描いた絵）",
+"r": "名詞（複数）"
+},
+{
+"w": "stage plays",
+"m": "舞台・演劇",
+"r": "名詞（複数）"
+},
+{
+"w": "to",
+"m": "〜まで",
+"r": "前置詞（from A to B）"
+},
+{
+"w": "portraits",
+"m": "肖像画",
+"r": "名詞（複数）"
+},
+{
+"w": "favorite",
+"m": "お気に入りの・推しの",
+"r": "形容詞（actresses を説明）"
+},
+{
+"w": "actresses",
+"m": "女優",
+"r": "名詞（複数）"
+}
+],
+"steps": "① 空欄の前後を見る：a wide ___ of works。② a（1つの）＋ wide（形容詞）のあとには名詞が入る。③ 名詞は range と ranges。a があるので単数の range。④ a wide range of 〜（幅広い〜）は TOEIC によく出る言い方。",
+"chx": [
+"(A) range＝名詞「範囲・幅」の単数。a wide range of で「幅広い〜」◯",
+"(B) ranged＝動詞 range の過去形・過去分詞「（範囲が）及んだ」。a wide の後ろに動詞は置けない ✕",
+"(C) ranging＝動詞の -ing 形「及んでいる」。ここは名詞の場所なので ✕",
+"(D) ranges＝名詞の複数形。a（1つの）と合わない ✕"
+]
 }
 ]
 },
@@ -1792,6 +1988,94 @@ window.LESSONS = [
 "ja": "発表する",
 "note": "ポストの「発表されたら」は when ... are announced（受け身）。",
 "w": "announce"
+}
+],
+"toeic": [
+{
+"cat": "動詞の形",
+"lv": 2,
+"q": "The poster will go to Mos Burger again when the details ------- announced.",
+"ch": [
+"will be",
+"are",
+"is",
+"being"
+],
+"a": 1,
+"ja": "詳細が発表されたら、投稿者はまたモスバーガーに行くことになりそうです。",
+"why": "when（〜するとき）で始まる「時」を表すかたまりの中では、これからのことでも現在形を使います。details は複数なので are announced（発表される）が正解です。will be は「時」のかたまりの中では使いません。is は1つのもの用、being だけでは動詞になりません。",
+"tip": "when・if のかたまりの中は、未来のことでも現在形",
+"struct": "主語 The poster（投稿者は）／ 動詞 will go（行くだろう）／ to Mos Burger（モスバーガーに）／ again（また）／ when the details are announced（詳細が発表されたら）",
+"words": [
+{
+"w": "The",
+"m": "その",
+"r": "冠詞"
+},
+{
+"w": "poster",
+"m": "投稿者",
+"r": "名詞（主語。ポストを書いた人。ここではポスターではない）"
+},
+{
+"w": "will",
+"m": "〜だろう",
+"r": "助動詞（未来）"
+},
+{
+"w": "go",
+"m": "行く",
+"r": "動詞の原形"
+},
+{
+"w": "to",
+"m": "〜へ",
+"r": "前置詞"
+},
+{
+"w": "Mos Burger",
+"m": "モスバーガー",
+"r": "店の名前"
+},
+{
+"w": "again",
+"m": "また",
+"r": "副詞"
+},
+{
+"w": "when",
+"m": "〜するとき",
+"r": "接続詞（時を表すかたまりの始まり）"
+},
+{
+"w": "the",
+"m": "その",
+"r": "冠詞"
+},
+{
+"w": "details",
+"m": "詳細",
+"r": "名詞（複数・後半の主語）"
+},
+{
+"w": "are",
+"m": "〜される",
+"r": "be動詞（受け身・複数・現在）（← 空欄・正解）",
+"ans": 1
+},
+{
+"w": "announced",
+"m": "発表された",
+"r": "過去分詞（are announced で受け身）"
+}
+],
+"steps": "① 空欄の前に when the details、後ろに announced（発表された）。② 「詳細が発表される」なので be動詞＋過去分詞の受け身。③ when のかたまりは「時」を表すので、未来のことでも現在形 → will be は ✕。④ details は複数なので is ではなく are。",
+"chx": [
+"(A) will be＝未来の形。when のかたまり（時を表す）の中では、未来のことでも現在形にするので ✕",
+"(B) are＝be動詞の現在形（複数）。details（複数）に合い、are announced で「発表される」◯",
+"(C) is＝be動詞の現在形（1つのもの）。details は複数なので ✕",
+"(D) being＝-ing 形。これだけでは動詞にならず、文が成り立たない ✕"
+]
 }
 ]
 },
