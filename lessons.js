@@ -530,7 +530,348 @@ window.LESSONS = [
 "(D) unless＝接続詞「〜しない限り」。形は合うが「知らない限り見た」となり、意味が合わない ✕"
 ]
 }
+],
+"toeic6": {
+"kind": "post",
+"lv": 2,
+"title": "『SAKAMOTO DAYS』映画、原作を知らなくても大傑作",
+"text": "I watched the Sakamoto Days movie even though I knew nothing about the original manga. It was so much fun that I think it will easily [[1]] my top ten movies of this year. The action and the direction were at a [[2]] high level, and I loved the characters, the setting, and the world. [[3]] Every actor was charming, so I want to watch [[4]] again and I am looking forward to a sequel.",
+"ja": "原作のマンガは全く知りませんでしたが、『SAKAMOTO DAYS』の映画を見ました。とても面白かったので、今年のベスト10映画に余裕で入ると思います。アクションと演出は驚くほど高いレベルで、キャラクターも設定も世界観も大好きでした。特殊メイクに挑んだ目黒蓮は、この映画のMVPでした。出演者全員が魅力的だったので、もう一度見たいし、続編も楽しみです。",
+"qs": [
+{
+"type": "動詞の形",
+"ch": [
+"makes",
+"make",
+"made",
+"making"
+],
+"a": 1,
+"why": "空欄の少し前に will（〜だろう）があります。あいだに easily（余裕で）がはさまっていますが、will のあとの動詞はいつも原形です。だから原形の make が正解です。will easily make my top ten movies で「余裕で私のベスト10の映画に入るだろう」という意味になります。",
+"chx": [
+"(A) makes＝3人称単数の形。will のあとの動詞に s はつけない ✕",
+"(B) make＝動詞の原形「（リスト・順位に）入る」。will easily make で「余裕で入るだろう」◯",
+"(C) made＝過去形・過去分詞。will のあとに過去形は置けない ✕",
+"(D) making＝-ing 形。will のあとに -ing 形だけを置くことはできない ✕"
+],
+"words": [
+{
+"w": "will",
+"m": "〜だろう（あとの動詞は原形）"
+},
+{
+"w": "easily",
+"m": "余裕で・簡単に"
+},
+{
+"w": "make",
+"m": "（リスト・順位に）入る"
+},
+{
+"w": "makes",
+"m": "make の3人称単数の形"
+},
+{
+"w": "made",
+"m": "make の過去形・過去分詞"
+},
+{
+"w": "making",
+"m": "make の -ing 形"
+},
+{
+"w": "top ten movies",
+"m": "ベスト10の映画"
+}
 ]
+},
+{
+"type": "品詞",
+"ch": [
+"surprise",
+"surprising",
+"surprisingly",
+"surprised"
+],
+"a": 2,
+"why": "空欄のあとの high（高い）は形容詞で、そのあとに名詞 level（レベル）が続きます。形容詞 high を「どのくらい高いか」と説明できるのは副詞です。-ly で終わる副詞 surprisingly（驚くほど）が正解で、at a surprisingly high level で「驚くほど高いレベルで」になります。",
+"chx": [
+"(A) surprise＝名詞・動詞「驚き・驚かせる」。high の前に置いても、形容詞 high を説明できない ✕",
+"(B) surprising＝形容詞「驚くべき」。形容詞の high を説明するのは形容詞ではなく副詞 ✕",
+"(C) surprisingly＝副詞「驚くほど」。形容詞 high を説明して「驚くほど高いレベル」◯",
+"(D) surprised＝形容詞「（人が）驚いた」。人の気持ちを表す語で、high を説明できない ✕"
+],
+"words": [
+{
+"w": "surprisingly",
+"m": "驚くほど（副詞）"
+},
+{
+"w": "surprising",
+"m": "驚くべき（形容詞）"
+},
+{
+"w": "surprised",
+"m": "（人が）驚いた"
+},
+{
+"w": "surprise",
+"m": "驚き・驚かせる"
+},
+{
+"w": "high",
+"m": "高い（形容詞）"
+},
+{
+"w": "at a high level",
+"m": "高いレベルで"
+},
+{
+"w": "direction",
+"m": "演出"
+}
+]
+},
+{
+"type": "文を選ぶ",
+"ch": [
+"I had read every volume of the manga before I saw the movie.",
+"The movie was too long, so I left before the end.",
+"Unfortunately, most of the actors were not very good.",
+"Ren Meguro, who took on the challenge with special makeup, was the MVP of the film."
+],
+"a": 3,
+"why": "空欄の前の文は「アクションと演出が高いレベルで、キャラクターや設定も大好き」と映画をほめています。あとの文は Every actor was charming（出演者全員が魅力的だった）と、役者をほめる話です。その間に、役者の目黒蓮さんをほめる (D) が入ると自然につながります。ほかの3つは、本文のほかの文と合いません。",
+"chx": [
+"(A) 「マンガを全巻読んでから映画を見た」。1文目の knew nothing about the original manga（原作は全く知らなかった）と合わない ✕",
+"(B) 「長すぎて、終わる前に出た」。2文目の so much fun（とても面白い）や、最後の want to watch it again（もう一度見たい）と合わない ✕",
+"(C) 「残念ながら、役者のほとんどはあまりよくなかった」。あとの文の Every actor was charming（出演者全員が魅力的）と合わない ✕",
+"(D) 「特殊メイクに挑んだ目黒蓮が、この映画のMVPだった」。役者をほめる文で、あとの Every actor was charming に自然につながる ◯"
+],
+"words": [
+{
+"w": "took on the challenge",
+"m": "挑戦を引き受けた・挑んだ"
+},
+{
+"w": "special makeup",
+"m": "特殊メイク"
+},
+{
+"w": "MVP",
+"m": "最優秀選手・一番の功労者"
+},
+{
+"w": "volume",
+"m": "（本の）巻"
+},
+{
+"w": "left",
+"m": "出た・帰った（leave の過去形）"
+},
+{
+"w": "unfortunately",
+"m": "残念ながら"
+},
+{
+"w": "charming",
+"m": "魅力的な"
+}
+]
+},
+{
+"type": "代名詞",
+"ch": [
+"it",
+"its",
+"itself",
+"they"
+],
+"a": 0,
+"why": "watch（見る）のあとには「何を」にあたる目的語が入ります。もう一度見たいのは、1文目の映画（the Sakamoto Days movie）です。物1つを指す目的語の形は it なので、it が正解です。",
+"chx": [
+"(A) it＝「それを」。目的語の形で、1文目の映画を指す ◯",
+"(B) its＝「その・それの」。後ろに名詞が必要だが、ここには名詞がない ✕",
+"(C) itself＝「それ自身」。主語と同じものを指すときに使う。主語は I なので合わない ✕",
+"(D) they＝「彼らは・それらは」。主語の形なので、watch の目的語にはなれない ✕"
+],
+"words": [
+{
+"w": "it",
+"m": "それを（目的語）"
+},
+{
+"w": "its",
+"m": "その・それの"
+},
+{
+"w": "itself",
+"m": "それ自身"
+},
+{
+"w": "they",
+"m": "彼らは・それらは（主語）"
+},
+{
+"w": "watch",
+"m": "見る"
+},
+{
+"w": "again",
+"m": "もう一度"
+},
+{
+"w": "every actor",
+"m": "出演者全員"
+}
+]
+}
+],
+"sents": [
+{
+"en": "I watched the Sakamoto Days movie even though I knew nothing about the original manga.",
+"ja": "原作のマンガは全く知りませんでしたが、『SAKAMOTO DAYS』の映画を見ました。",
+"words": [
+{
+"w": "watched",
+"m": "見た（watch の過去形）"
+},
+{
+"w": "even though",
+"m": "〜だけれども"
+},
+{
+"w": "knew nothing about",
+"m": "〜について何も知らなかった"
+},
+{
+"w": "original",
+"m": "原作の・もとの"
+},
+{
+"w": "manga",
+"m": "マンガ"
+}
+]
+},
+{
+"en": "It was so much fun that I think it will easily make my top ten movies of this year.",
+"ja": "とても面白かったので、今年のベスト10映画に余裕で入ると思います。",
+"words": [
+{
+"w": "so much fun that",
+"m": "とても面白いので〜"
+},
+{
+"w": "easily",
+"m": "余裕で・簡単に"
+},
+{
+"w": "make",
+"m": "（リスト・順位に）入る"
+},
+{
+"w": "top ten movies",
+"m": "ベスト10の映画"
+},
+{
+"w": "this year",
+"m": "今年"
+}
+]
+},
+{
+"en": "The action and the direction were at a surprisingly high level, and I loved the characters, the setting, and the world.",
+"ja": "アクションと演出は驚くほど高いレベルで、キャラクターも設定も世界観も大好きでした。",
+"words": [
+{
+"w": "action",
+"m": "アクション"
+},
+{
+"w": "direction",
+"m": "演出"
+},
+{
+"w": "surprisingly",
+"m": "驚くほど"
+},
+{
+"w": "at a high level",
+"m": "高いレベルで"
+},
+{
+"w": "loved",
+"m": "大好きだった"
+},
+{
+"w": "setting",
+"m": "設定"
+},
+{
+"w": "world",
+"m": "世界観"
+}
+]
+},
+{
+"en": "Ren Meguro, who took on the challenge with special makeup, was the MVP of the film.",
+"ja": "特殊メイクに挑んだ目黒蓮は、この映画のMVPでした。",
+"words": [
+{
+"w": "who",
+"m": "〜する（人）（関係代名詞）"
+},
+{
+"w": "took on the challenge",
+"m": "挑戦を引き受けた・挑んだ"
+},
+{
+"w": "special makeup",
+"m": "特殊メイク"
+},
+{
+"w": "MVP",
+"m": "最優秀選手・一番の功労者"
+},
+{
+"w": "film",
+"m": "映画"
+}
+]
+},
+{
+"en": "Every actor was charming, so I want to watch it again and I am looking forward to a sequel.",
+"ja": "出演者全員が魅力的だったので、もう一度見たいし、続編も楽しみです。",
+"words": [
+{
+"w": "every actor",
+"m": "出演者全員"
+},
+{
+"w": "charming",
+"m": "魅力的な"
+},
+{
+"w": "so",
+"m": "だから"
+},
+{
+"w": "watch it again",
+"m": "それをもう一度見る"
+},
+{
+"w": "look forward to",
+"m": "〜を楽しみにする"
+},
+{
+"w": "sequel",
+"m": "続編"
+}
+]
+}
+]
+}
 },
 {
 "added": "2026-11-03T19:01",
@@ -1291,7 +1632,364 @@ window.LESSONS = [
 "(D) ranges＝名詞の複数形。a（1つの）と合わない ✕"
 ]
 }
+],
+"toeic6": {
+"kind": "post",
+"lv": 2,
+"title": "国立西洋美術館「劇場をめぐるイメージ」を見てきた",
+"text": "I visited the [[1]] special exhibition about images of the theater at the National Museum of Western Art. It was interesting, and I think people who love stage plays should go and see it. The exhibition shows a wide range of works, from interpretations of stage plays that have charmed people [[2]] portraits of favorite actresses. [[3]] draw funny pictures about things that theatergoers often experience, and some are painters of stage posters and programs. I was also excited that the captions are [[4]] in the style of a stage play.",
+"ja": "国立西洋美術館で開催中の、劇場をめぐるイメージを扱った企画展を見てきました。面白かったです。舞台が好きな人には、ぜひ見に行ってほしいと思います。展示は、舞台に魅了された人の解釈絵から、推し女優の絵まで、幅広い作品を見せています。観劇あるあるを描くおもしろい絵もあれば、舞台のポスターやプログラムを手がける画家もいます。キャプションが舞台風に書かれているのも、わくわくしました。",
+"qs": [
+{
+"type": "語彙",
+"ch": [
+"upcoming",
+"ongoing",
+"previous",
+"outgoing"
+],
+"a": 1,
+"why": "2文目に people who love stage plays should go and see it（舞台が好きな人は見に行くべき）とあります。これから見に行けるのは、今やっている展示です。また1文目の visited（訪れた）から、もう始まっている展示だとわかります。だから「開催中の」の ongoing が正解です。",
+"chx": [
+"(A) upcoming＝「これから始まる」。まだ始まっていない展示は visited（訪れた）とは言えない ✕",
+"(B) ongoing＝「開催中の」。もう見に行けて、これからも見に行ける展示なので、visited とも should go and see it とも合う ◯",
+"(C) previous＝「前の」。もう終わった展示だと、2文目の should go and see it（見に行くべき）と合わない ✕",
+"(D) outgoing＝「社交的な・出ていく」。展示を説明する語ではない ✕"
+],
+"words": [
+{
+"w": "ongoing",
+"m": "開催中の・進行中の"
+},
+{
+"w": "upcoming",
+"m": "これから始まる・近く行われる"
+},
+{
+"w": "previous",
+"m": "前の"
+},
+{
+"w": "outgoing",
+"m": "社交的な・出ていく"
+},
+{
+"w": "special exhibition",
+"m": "企画展・特別展"
+},
+{
+"w": "visited",
+"m": "訪れた"
+},
+{
+"w": "should go and see it",
+"m": "見に行くべきだ"
+}
 ]
+},
+{
+"type": "前置詞・接続詞",
+"ch": [
+"at",
+"for",
+"to",
+"on"
+],
+"a": 2,
+"why": "空欄より前に from interpretations of stage plays（舞台の解釈の絵から）と from があります。from A to B で「A から B まで」です。幅広い作品の「はし」と「はし」を示して「舞台の解釈の絵から推し女優の絵まで」となるので、to が正解です。",
+"chx": [
+"(A) at＝「〜で（場所・時点）」。from と組まず、意味も合わない ✕",
+"(B) for＝「〜のために」。from と組まず、意味も合わない ✕",
+"(C) to＝「〜まで」。from A to B で「A から B まで」◯",
+"(D) on＝「〜の上に・〜について」。from と組まず、意味も合わない ✕"
+],
+"words": [
+{
+"w": "from A to B",
+"m": "A から B まで"
+},
+{
+"w": "a wide range of",
+"m": "幅広い〜"
+},
+{
+"w": "interpretations",
+"m": "解釈（を描いた絵）"
+},
+{
+"w": "charmed",
+"m": "魅了した（charm の過去分詞）"
+},
+{
+"w": "portraits",
+"m": "肖像画・人物画"
+},
+{
+"w": "favorite actresses",
+"m": "お気に入りの女優・推し女優"
+}
+]
+},
+{
+"type": "代名詞",
+"ch": [
+"Another",
+"Others",
+"The other",
+"Other"
+],
+"a": 1,
+"why": "空欄のあとの動詞は draw で、s がついていません。だから主語は複数です。「ほかの人たち」を表す複数の代名詞 Others が正解です。前の文の作品に続けて、「ほかの人たちは観劇あるあるのおもしろい絵を描く」と別の作品を紹介しています。",
+"chx": [
+"(A) Another＝「もう1人・もう1つ」。単数なので、動詞は draws になるはず ✕",
+"(B) Others＝「ほかの人たち」。複数なので draw（s なし）と合う ◯",
+"(C) The other＝「（2つのうちの）もう一方」。単数なので draw と合わない ✕",
+"(D) Other＝「ほかの〜」。後ろに名詞が必要で、これだけでは主語になれない ✕"
+],
+"words": [
+{
+"w": "others",
+"m": "ほかの人たち（複数）"
+},
+{
+"w": "another",
+"m": "もう1人・もう1つ（単数）"
+},
+{
+"w": "the other",
+"m": "（2つのうちの）もう一方"
+},
+{
+"w": "other",
+"m": "ほかの〜（後ろに名詞）"
+},
+{
+"w": "draw",
+"m": "描く"
+},
+{
+"w": "funny pictures",
+"m": "おもしろい絵"
+},
+{
+"w": "theatergoers",
+"m": "観劇に行く人たち"
+}
+]
+},
+{
+"type": "動詞の形",
+"ch": [
+"write",
+"wrote",
+"writing",
+"written"
+],
+"a": 3,
+"why": "主語は the captions（キャプション・説明文）で、空欄の前に are があります。キャプションは自分で書くのではなく、「書かれる」ものです。「be動詞＋過去分詞」で「〜される」の形にするので、過去分詞の written が正解です。are written in the style of a stage play で「舞台風に書かれている」になります。",
+"chx": [
+"(A) write＝原形。are のあとに原形は置けない ✕",
+"(B) wrote＝過去形。are のあとに過去形は置けない ✕",
+"(C) writing＝-ing 形。are writing だと「キャプションが書いている」になり、意味が合わない ✕",
+"(D) written＝過去分詞。are written で「書かれている」◯"
+],
+"words": [
+{
+"w": "captions",
+"m": "キャプション・説明文"
+},
+{
+"w": "are written",
+"m": "書かれている"
+},
+{
+"w": "write",
+"m": "書く（原形）"
+},
+{
+"w": "wrote",
+"m": "書いた（過去形）"
+},
+{
+"w": "writing",
+"m": "書いている（-ing 形）"
+},
+{
+"w": "in the style of",
+"m": "〜風に・〜のスタイルで"
+},
+{
+"w": "excited",
+"m": "わくわくした"
+}
+]
+}
+],
+"sents": [
+{
+"en": "I visited the ongoing special exhibition about images of the theater at the National Museum of Western Art.",
+"ja": "国立西洋美術館で開催中の、劇場をめぐるイメージを扱った企画展を見てきました。",
+"words": [
+{
+"w": "visited",
+"m": "訪れた"
+},
+{
+"w": "ongoing",
+"m": "開催中の"
+},
+{
+"w": "special exhibition",
+"m": "企画展・特別展"
+},
+{
+"w": "images",
+"m": "イメージ・絵"
+},
+{
+"w": "theater",
+"m": "劇場・舞台"
+},
+{
+"w": "National Museum of Western Art",
+"m": "国立西洋美術館"
+}
+]
+},
+{
+"en": "It was interesting, and I think people who love stage plays should go and see it.",
+"ja": "面白かったです。舞台が好きな人には、ぜひ見に行ってほしいと思います。",
+"words": [
+{
+"w": "interesting",
+"m": "面白い"
+},
+{
+"w": "people who love stage plays",
+"m": "舞台が好きな人"
+},
+{
+"w": "should",
+"m": "〜したほうがいい"
+},
+{
+"w": "go and see",
+"m": "見に行く"
+}
+]
+},
+{
+"en": "The exhibition shows a wide range of works, from interpretations of stage plays that have charmed people to portraits of favorite actresses.",
+"ja": "展示は、舞台に魅了された人の解釈絵から、推し女優の絵まで、幅広い作品を見せています。",
+"words": [
+{
+"w": "exhibition",
+"m": "展示・展覧会"
+},
+{
+"w": "shows",
+"m": "見せる"
+},
+{
+"w": "a wide range of",
+"m": "幅広い〜"
+},
+{
+"w": "works",
+"m": "作品"
+},
+{
+"w": "interpretations",
+"m": "解釈（を描いた絵）"
+},
+{
+"w": "charmed",
+"m": "魅了した"
+},
+{
+"w": "from A to B",
+"m": "A から B まで"
+},
+{
+"w": "portraits",
+"m": "肖像画・人物画"
+},
+{
+"w": "favorite actresses",
+"m": "推し女優"
+}
+]
+},
+{
+"en": "Others draw funny pictures about things that theatergoers often experience, and some are painters of stage posters and programs.",
+"ja": "観劇あるあるを描くおもしろい絵もあれば、舞台のポスターやプログラムを手がける画家もいます。",
+"words": [
+{
+"w": "others",
+"m": "ほかの人たち"
+},
+{
+"w": "draw",
+"m": "描く"
+},
+{
+"w": "funny pictures",
+"m": "おもしろい絵"
+},
+{
+"w": "theatergoers",
+"m": "観劇に行く人たち"
+},
+{
+"w": "often",
+"m": "よく"
+},
+{
+"w": "experience",
+"m": "経験する"
+},
+{
+"w": "painters",
+"m": "画家"
+},
+{
+"w": "stage posters",
+"m": "舞台ポスター"
+}
+]
+},
+{
+"en": "I was also excited that the captions are written in the style of a stage play.",
+"ja": "キャプションが舞台風に書かれているのも、わくわくしました。",
+"words": [
+{
+"w": "also",
+"m": "〜も"
+},
+{
+"w": "excited",
+"m": "わくわくした"
+},
+{
+"w": "captions",
+"m": "キャプション・説明文"
+},
+{
+"w": "are written",
+"m": "書かれている"
+},
+{
+"w": "in the style of",
+"m": "〜風に・〜のスタイルで"
+},
+{
+"w": "stage play",
+"m": "舞台（演劇）"
+}
+]
+}
+]
+}
 },
 {
 "added": "2026-11-03T17:16",
