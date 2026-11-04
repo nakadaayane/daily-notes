@@ -1020,6 +1020,22 @@ html.static .ai-only{display:none!important}
 .tq-ask-out{margin:6px 0 0;font-size:var(--fs-s);line-height:1.8;white-space:pre-wrap}
 .tq-ask-out.wait{color:var(--faint)}
 @media (pointer:coarse){ .tq-il button{padding:5px 10px 6px} }
+/* まちがいノートの一覧（2026-11-04 持ち主「間違えた問題を復習しやすく」）：押すと解説、「解く」でその1問だけ解き直す */
+.tq-note{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.tq-note > li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 12px;align-items:start;padding:10px 0;border-bottom:1px solid var(--line)}
+.tq-nd summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:10px minmax(0,1fr);gap:12px;align-items:baseline;border-radius:8px}
+.tq-nd summary::-webkit-details-marker{display:none}
+.tq-nd summary:hover .t > span:first-child{text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.tq-nd summary > .r{width:8px;height:8px;border-radius:50%;background:var(--accent);transform:translateY(-1px)}
+.tq-nd summary > .r.later{background:var(--line)}
+.tq-nd summary > .t{min-width:0;font-family:var(--serif);font-size:var(--fs-m);line-height:1.65;overflow-wrap:anywhere}
+.tq-nd summary > .t small{display:block;font-family:var(--ui);font-size:var(--fs-xs);color:var(--muted)}
+.tq-nd summary > .t small.st{color:var(--faint);font-variant-numeric:tabular-nums}
+.tq-nd[open] summary > .t > span:first-child{color:var(--accent)}
+.tq-nb{display:flex;flex-direction:column;gap:10px;margin:10px 0 4px 22px;padding-left:14px;border-left:2px solid var(--line);font-size:var(--fs-m);line-height:1.8}
+.tq-nb p{margin:0}
+.tq-nb .ja{color:var(--muted);font-size:var(--fs-s)}
+.tq-note .tq-one{padding:4px 14px}
 </style>
 <script src="lessons.js"></script>
 </head>
@@ -2634,12 +2650,70 @@ function tqNoteIds(){
 function tqToday(){ return (S.state.tdays || {})[jstToday()] || {n: 0, c: 0}; }
 function tqLoad(){
   if(TQ.bank) return Promise.resolve(TQ.bank);
-  if(!TQ.loading) TQ.loading = fetch('toeic.json').then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(d => {
+  if(!TQ.loading) TQ.loading = fetch('toeic.json').then(r => { if(!r.ok) throw new Error('HTTP ' + r.status); return r.json(); }).then(async d => {
     const arr = x => Array.isArray(x) ? x : [];
-    TQ.bank = {p5: arr(d.p5), p7: arr(d.p7), vocab: arr(d.vocab), p2: arr(d.p2)}; TQ.err = ''; return TQ.bank;
+    TQ.bank = {p5: arr(d.p5), p7: arr(d.p7), vocab: arr(d.vocab), p2: arr(d.p2)}; TQ.err = '';
+    await tqLoadExtra();
+    return TQ.bank;
   }).catch(() => { TQ.loading = null; TQ.err = '問題集を読み込めませんでした。ページを開きなおすと、もう一度読みます。（話題からの問題は解けます）'; return null; });
   return TQ.loading;
 }
+/* 毎朝クラウドが足す問題（2026-11-05〜。db の toeic コレクション、1日1ドキュメント {date, p5, p7, vocab}）。
+   公開版は toeic.json に入っている（PC の予約タスクが db から取り込む）。同じ id は1つにまとめる */
+async function tqLoadExtra(){
+  if(!S.db) return;
+  try{ const snap = await S.db.collection('toeic').limit(1000).get(); tqAddExtra(snap.docs.map(x => x.data() || {})); }catch(e){}
+}
+function tqAddExtra(days){
+  const B = TQ.bank; if(!B) return;
+  const have = new Set([...B.p5.map(q => q.id), ...B.p7.map(p => p.id), ...B.vocab.map(v => 'v:' + v.w)]);
+  days.forEach(d => {
+    const tag = x => Object.assign({}, x, x.added ? {} : {added: d.date || ''});
+    (Array.isArray(d.p5) ? d.p5 : []).forEach(q => { if(q && q.id && !have.has(q.id) && typeof q.q === 'string' && Array.isArray(q.ch)){ B.p5.push(tag(q)); have.add(q.id); } });
+    (Array.isArray(d.p7) ? d.p7 : []).forEach(p => { if(p && p.id && !have.has(p.id) && Array.isArray(p.qs)){ B.p7.push(tag(p)); have.add(p.id); } });
+    (Array.isArray(d.vocab) ? d.vocab : []).forEach(v => { if(v && v.w && !have.has('v:' + v.w)){ B.vocab.push(tag(v)); have.add('v:' + v.w); } });
+  });
+}
+/* 苦手な分野（2問以上解いて正答率 8割未満の分野を、低い順に3つまで） */
+function tqWeakCats(){ const st = tqCatStats(); return TQ_CATS.filter(c => st[c].n >= 2 && st[c].c / st[c].n < .8).sort((a, b) => st[a].c / st[a].n - st[b].c / st[b].n).slice(0, 3); }
+/* まちがいノートの1問を、一覧と解き直し用の形に */
+function tqNoteEntry(id){
+  const b = TQ.byId[id]; if(!b) return null;
+  if(b.t === 'p7q') return {id, t: 'p7', item: {t: 'p7', d: Object.assign({}, b.p, {qs: [b.p.qs[b.k]], _ids: [id]})}, label: b.p.qs[b.k].q, sub: 'Part 7 · ' + b.p.title, q: b.p.qs[b.k]};
+  if(b.t === 'w') return {id, t: 'w', item: {t: 'w', d: b.d}, label: b.d.w, sub: '単語 · ' + b.d.m};
+  if(b.t === 'p2') return {id, t: 'p2', item: {t: 'p2', d: b.d}, label: b.d.q, sub: 'Part 2 · ' + (b.d.type || '')};
+  return {id, t: 'p5', item: {t: 'p5', d: b.d}, label: b.d.q.replace('-------', '[' + b.d.ch[b.d.a] + ']'), sub: (b.d.from ? '話題から · ' : 'Part 5 · ') + (b.d.cat || '')};
+}
+/* 一覧で開いたときの解説（開いたときに作る） */
+function tqNoteBody(id){
+  const e = tqNoteEntry(id); if(!e) return '';
+  const d = e.item.d;
+  if(e.t === 'w') return `${d.alt ? `<p class="ja">よく使う形：<span class="en-run" lang="en">${esc(d.alt)}</span></p>` : ''}${d.ex ? `<p class="tq-ex" lang="en">${esc(d.ex)} <button class="say" data-tq="say" data-text="${esc(d.ex)}" aria-label="例文を聞く">${ICON.say}</button></p>` : ''}${d.exJa ? `<p class="ja">${esc(d.exJa)}</p>` : ''}`;
+  if(e.t === 'p2') return `<ul class="tq-script"><li class="ans"><span class="lab">Q</span><span><span class="en" lang="en">${esc(d.q)}</span><span class="ja">${esc(d.qJa || '')}</span></span><button class="say" data-tq="say" data-text="${esc(d.q)}" aria-label="聞く">${ICON.say}</button></li><li class="ans"><span class="lab">(${TQ_KEYS[d.a]})</span><span><span class="en" lang="en">${esc(d.ch[d.a])}</span><span class="ja">${esc((d.chJa || [])[d.a] || '')}</span></span><button class="say" data-tq="say" data-text="${esc(d.ch[d.a])}" aria-label="聞く">${ICON.say}</button></li></ul>${d.why ? `<p>${enRuns(d.why)}</p>` : ''}`;
+  if(e.t === 'p7'){ const q = e.q; return `<p>正解：(${TQ_KEYS[q.a]}) <span lang="en">${esc(q.ch[q.a])}</span></p>${q.why ? `<p>${enRuns(q.why)}</p>` : ''}${q.where ? `<p class="tq-where">${enRuns(q.where)}</p>` : ''}`; }
+  const L = d.from && S.byId[d.from];
+  return `<p class="ja">${esc(d.ja || '')}</p>${d.why ? `<p>${enRuns(d.why)}</p>` : ''}${d.tip ? `<span class="tq-tip">${enRuns(d.tip)}</span>` : ''}${tqXp(d)}${L ? `<span class="dc-from">出てきた話題：<button data-open="${esc(L.id)}">${esc(L.title)}</button></span>` : ''}`;
+}
+async function renderTqNote(){
+  S.view = 'toeic'; TQ.sess = null; setNav(); renderList(); stopSpeak(); closePop();
+  $('#topTitle').textContent = 'まちがいノート'; $('#composer').hidden = true;
+  if(!TQ.bank && !TQ.err){ tqPaint(`<div class="view-head"><h1 class="view-h">まちがいノート</h1></div>${emptyMain('読み込んでいます…')}`); await tqLoad(); if(S.view !== 'toeic' || TQ.sess) return; }
+  tqIndex();
+  const t = jstToday(), tq = S.state.tq || {};
+  const ids = tqNoteIds().filter(id => TQ.byId[id]).sort((a, b) => ((tq[a].due || '') + (tq[a].at || '')) < ((tq[b].due || '') + (tq[b].at || '')) ? -1 : 1);
+  const due = ids.filter(id => (tq[id].due || '') <= t).length;
+  const grad = Object.keys(tq).filter(id => tq[id].bad && (tq[id].box || 0) >= 3).length;
+  const rows = ids.map(id => {
+    const e = tqNoteEntry(id), r = tq[id], today = (r.due || '') <= t, miss = (r.n || 0) - (r.c || 0);
+    return `<li><details class="tq-nd" data-nid="${esc(id)}"><summary><i class="r${today ? '' : ' later'}"></i><span class="t"><span${e.t === 'w' || e.t === 'p5' || e.t === 'p7' || e.t === 'p2' ? ' lang="en"' : ''}>${esc(e.label)}</span><small>${esc(e.sub)}</small><small class="st">${today ? '今日の復習' : `次は ${esc(jpDate(r.due))}`}・まちがい ${miss}回・卒業まであと ${Math.max(1, 3 - (r.box || 0))}回</small></span></summary><div class="tq-nb"></div></details><button class="btn ghost tq-one" data-tq="one" data-id="${esc(id)}">解く</button></li>`;
+  }).join('');
+  const head = `<div class="view-head"><h1 class="view-h">まちがいノート<span class="c">${ids.length ? ids.length + '問' : ''}</span></h1>
+    <p class="view-p">まちがえた問題が集まります。翌日また出て、3回続けて正解すると卒業です。問題を押すと解説、「解く」でいつでも解き直せます。${grad ? `卒業した問題は ${grad}問。` : ''}</p></div>`;
+  const acts = ids.length ? `<div class="row">${due ? `<button class="btn" data-tq="review">今日の復習 ${due}問</button>` : ''}<button class="btn${due ? ' ghost' : ''}" data-tq="noteall">ノートから${Math.min(10, ids.length)}問 解き直す</button><button class="btn ghost" data-tq="home">TOEIC のはじめへ</button></div>` : '';
+  tqPaint(head + acts + (ids.length ? `<ul class="tq-note">${rows}</ul>` : emptyMain('まちがえた問題はまだありません。<br>TOEIC の問題でまちがえると、ここに集まります。', ICON.heartL.replace(HEART, '<path d="M10 6.5h10M10 12h10M10 17.5h10"/><path d="m3.5 6.5 1.4 1.4L7.5 5.2M3.5 12l1.4 1.4 2.6-2.7M3.5 17.5l1.4 1.4 2.6-2.7"/>')) + `<div class="row"><button class="btn ghost" data-tq="home">TOEIC のはじめへ</button></div>`));
+}
+async function tqNoteAll(){ if(!await tqNeedBank()) return; const items = tqShuffle(tqNoteIds()).map(tqNoteEntry).filter(Boolean).slice(0, 10).map(e => e.item); tqStart('まちがいノート', items, 'noteall'); }
+async function tqWeak(){ if(!await tqNeedBank()) return; const w = tqWeakCats(); tqStart('苦手な分野から10問', tqFresh(TQ.bank.p5.concat(tqTopicQs()).filter(q => !w.length || w.includes(q.cat)), 10).map(d => ({t: 'p5', d})), 'weak'); }
 function tqIndex(){
   const m = {}, B = TQ.bank;
   if(B){
@@ -2902,13 +2976,13 @@ function tqSummary(){
   const wrong = []; let k = 0;
   s.items.forEach(it => { const m = it.t === 'p7' ? it.d.qs.length : 1; if(s.res.slice(k, k + m).some(r => !r.ok)) wrong.push(it); k += m; });
   s.wrong = wrong;
-  const td = tqToday(), lid = s.from.startsWith('lesson:') ? s.from.slice(7) : '';
+  const td = tqToday(), lid = s.from.startsWith('lesson:') ? s.from.slice(7) : '', fromNote = ['review', 'note', 'noteall'].includes(s.from);
   $('#topTitle').textContent = s.title + ' の結果';
   tqPaint(`<div class="view-head"><h1 class="view-h">${esc(s.title)} の結果</h1></div>
     <div class="tq-score"><b>${c}<small> / ${n}</small></b><span>正答率 ${n ? Math.round(c / n * 100) : 0}%${avg ? `・1問あたり ${avg.toFixed(1)}秒` : ''}・今日 ${td.n}問</span></div>
     <ul class="tq-res">${s.res.map(r => `<li><i class="r${r.ok ? ' ok' : ''}"></i><span class="t" lang="en">${esc(r.label)}<small lang="ja">${esc(r.sub || '')}</small></span><span class="m">${r.ms ? (r.ms / 1000).toFixed(1) + '秒' : ''}</span></li>`).join('')}</ul>
-    <div class="row">${wrong.length ? `<button class="btn" data-tq="again" data-how="wrong">まちがえた ${wrong.length}問をもう一度</button>` : ''}${lid && S.byId[lid] ? `<button class="btn${wrong.length ? ' ghost' : ''}" data-open="${esc(lid)}">話題にもどる</button>` : `<button class="btn${wrong.length ? ' ghost' : ''}" data-tq="again" data-how="more">続けてもう1セット</button>`}<button class="btn ghost" data-tq="home">TOEIC のはじめへ</button></div>
-    ${wrong.length ? '<p class="note">まちがえた問題は「まちがいノート」に入り、明日もう一度出ます。3回続けて正解すると卒業です。</p>' : ''}`);
+    <div class="row">${wrong.length ? `<button class="btn" data-tq="again" data-how="wrong">まちがえた ${wrong.length}問をもう一度</button>` : ''}${lid && S.byId[lid] ? `<button class="btn${wrong.length ? ' ghost' : ''}" data-open="${esc(lid)}">話題にもどる</button>` : fromNote ? `<button class="btn${wrong.length ? ' ghost' : ''}" data-tq="note">まちがいノートにもどる</button>` : `<button class="btn${wrong.length ? ' ghost' : ''}" data-tq="again" data-how="more">続けてもう1セット</button>`}<button class="btn ghost" data-tq="home">TOEIC のはじめへ</button></div>
+    ${wrong.length ? `<p class="note">まちがえた問題は「まちがいノート」に入り、明日もう一度出ます。3回続けて正解すると卒業です。<button class="txt-btn" data-tq="note" style="display:inline-flex;padding:0 4px">まちがいノートを見る</button></p>` : ''}`);
 }
 
 /* はじめかた */
@@ -2942,7 +3016,8 @@ function tqAgain(how){
   const s = TQ.sess; if(!s){ renderToeic(); return; }
   if(how === 'wrong'){ tqStart(s.title, s.wrong || [], s.from); return; }
   const f = s.from;
-  if(f === 'mix') tqMix(); else if(f === 'review'){ if(tqDueIds().length) tqReview(); else renderToeic(); }
+  if(f === 'mix') tqMix(); else if(f === 'review'){ if(tqDueIds().length) tqReview(); else renderTqNote(); }
+  else if(f === 'note') renderTqNote(); else if(f === 'noteall'){ if(tqNoteIds().length) tqNoteAll(); else renderTqNote(); } else if(f === 'weak') tqWeak();
   else if(f === 'topics') tqTopics(); else if(f === 'vocab') tqVocab(); else if(f === 'p2') tqP2Start(); else if(f === 'p7') tqP7Start();
   else if(f.startsWith('cat:')) tqP5Start(f.slice(4)); else if(f === 'p5') tqP5Start(); else renderToeic();
 }
@@ -2975,6 +3050,10 @@ function tqAction(b){
   else if(a === 'lesson') tqLessonStart(b.dataset.id);
   else if(a === 'again') tqAgain(b.dataset.how);
   else if(a === 'home') renderToeic();
+  else if(a === 'note') renderTqNote();
+  else if(a === 'noteall') tqNoteAll();
+  else if(a === 'one'){ const e0 = tqNoteEntry(b.dataset.id); if(e0) tqStart('まちがいノート', [e0.item], 'note'); }
+  else if(a === 'weak') tqWeak();
   else if(a === 'ask') tqAsk();
 }
 
@@ -2995,13 +3074,18 @@ async function renderToeic(){
   const head = `<div class="view-head"><h1 class="view-h">TOEIC<span class="c">${td.n ? `今日 ${td.n}問・正答率 ${Math.round(td.c / td.n * 100)}%` : ''}</span></h1>
     <p class="view-p">Part 5（文法・語彙）・Part 7（長文）・単語・Part 2（聞き取り）。毎朝の話題からも問題がふえます。答えると、一語ずつの解説が出ます。</p></div>`;
   const err = TQ.err ? `<p class="note status">${esc(TQ.err)}</p>` : '';
+  /* 復習しやすく（2026-11-04 持ち主）：今日の復習があるときは、いちばん上の大きなカードを「今日の復習」に */
+  const grad = Object.keys(tq).filter(id => tq[id].bad && (tq[id].box || 0) >= 3).length;
+  const newToday = B ? [...B.p5, ...B.p7, ...B.vocab].filter(x => x.added === jstToday()).length : 0;
   const cards = `<div class="tq-cards">
-    <button class="tq-card main" data-tq="mix"${B ? '' : ' disabled'}><b>ミックス10問</b><span>Part 5 を7問と単語を3問。まだ解いていない問題から出します。</span></button>
-    <button class="tq-card" data-tq="review"${due ? '' : ' disabled'}><b>まちがいノート${due ? `<span class="num">${due}</span>` : ''}</b><span>${note ? (due ? `今日の復習 ${due}問・ノート全体 ${note}問` : `今日の分はおわりです・ノート全体 ${note}問`) : 'まちがえた問題がここに入り、翌日また出ます。'}</span></button>
+    ${due ? `<button class="tq-card main" data-tq="review"><b>今日の復習<span class="num">${due}</span></b><span>まちがいノートから${due}問。3回続けて正解すると卒業です。</span></button>` : ''}
+    <button class="tq-card${due ? '' : ' main'}" data-tq="mix"${B ? '' : ' disabled'}><b>ミックス10問</b><span>Part 5 を7問と単語を3問。まだ解いていない問題から出します。${newToday ? `今日ふえた問題 ${newToday}。` : ''}</span></button>
+    <button class="tq-card" data-tq="note"${note || grad ? '' : ' disabled'}><b>まちがいノート${note ? `<span class="num">${note}</span>` : ''}</b><span>${note ? `まちがえた${note}問を一覧で見返す・いつでも解き直す${due ? '' : '（今日の復習はおわり）'}` : grad ? `いまは空です（卒業 ${grad}問）` : 'まちがえた問題がここに入り、翌日また出ます。'}</span></button>
     <button class="tq-card" data-tq="topics"${topics.length ? '' : ' disabled'}><b>話題から${topicNew ? `<span class="num">${topicNew}</span>` : ''}</b><span>${topics.length ? `毎朝の話題の英文で作った Part 5（${topics.length}問・まだ解いていない ${topicNew}問）` : '毎朝の話題から Part 5 の問題がふえていきます。'}</span></button>
   </div>`;
   const p5 = B ? `<section class="blk" aria-label="Part 5"><div class="blk-h"><h2>Part 5（文法・語彙）</h2><span class="sp"></span><span class="note">${allN ? `これまでの正答率 ${Math.round(allC / allN * 100)}%` : `${B.p5.length + topics.length}問`}</span></div>
       <p class="note">分野を選ぶと、その分野から10問出します。正答率の低い分野から練習すると効きます。</p>
+      ${(() => { const w = tqWeakCats(); return w.length ? `<div class="row"><button class="btn ghost" data-tq="weak">苦手な分野から10問</button><span class="note">いま苦手：${w.map(esc).join('・')}</span></div>` : ''; })()}
       <div class="tq-chips"><button class="chip" data-tq="p5">ぜんぶから10問</button>${TQ_CATS.map(c => { const x = st[c]; return `<button class="chip" data-tq="cat" data-cat="${esc(c)}">${esc(c)}${x.n ? `<small>${Math.round(x.c / x.n * 100)}%</small>` : ''}</button>`; }).join('')}</div></section>` : '';
   const p7 = B ? `<section class="blk" aria-label="Part 7"><div class="blk-h"><h2>Part 7（長文）</h2><span class="sp"></span><span class="note">1セット2〜3問・目安は1問1分</span></div>
       <div class="tq-sets">${B.p7.map(p => { const rs = p.qs.map((_, i) => tq[p.id + '#' + i]), done = rs.filter(Boolean).length, ok = rs.filter(r => r && r.last).length; return `<button class="tq-set" data-tq="p7" data-id="${esc(p.id)}">${tqLvHtml(p.lv, true)}<span class="t">${esc(p.title)}</span><span class="m${done === p.qs.length ? ' done' : ''}">${done ? `${ok}/${p.qs.length}正解` : `${p.qs.length}問`}</span></button>`; }).join('')}</div></section>` : '';
@@ -3432,7 +3516,12 @@ $('#thread').addEventListener('keydown', e => {
   else if(e.key === 'Tab' && DC.mode === 'listen'){ e.preventDefault(); dcPlay(e.shiftKey); }
 });
 $('#thread').addEventListener('click', e => { if(e.target.id === 'makeBtn') makeNote(); });
-$('#thread').addEventListener('toggle', e => { if(e.target.id === 'tip') LS.set('tipOpen', e.target.open); }, true);
+$('#thread').addEventListener('toggle', e => {
+  if(e.target.id === 'tip') LS.set('tipOpen', e.target.open);
+  else if(e.target.classList && e.target.classList.contains('tq-nd') && e.target.open){   /* まちがいノート：開いたときに解説を作る */
+    const nb = e.target.querySelector('.tq-nb'); if(nb && !nb.dataset.f){ nb.innerHTML = tqNoteBody(e.target.dataset.nid); nb.dataset.f = '1'; }
+  }
+}, true);
 
 /* ---------- public copy: share likes etc. across devices via a private GitHub repo ---------- */
 const Sync = (() => {
@@ -3614,7 +3703,7 @@ setCompMode('ask');
       }, () => { S.stateRef = null; S.stateReady = true; });
     }catch(e){ S.stateRef = null; }
   }
-  db.collection('lessons').orderBy('added', 'desc').limit(500).onSnapshot(snap => {
+  db.collection('lessons').orderBy('added', 'desc').limit(1000).onSnapshot(snap => {   /* 1000 は db の上限（2026-11-04 に 500 から。話題が500件をこえて古い話題が出ていなかった） */
     S.lessons = snap.docs.map(d => Object.assign({}, d.data(), {id: d.id})).filter(L => Array.isArray(L.lines) && L.lines.length).sort(byArrival);
     const draft = S.byId.__draft;
     S.byId = {}; S.lessons.forEach(L => { S.byId[L.id] = L; });
