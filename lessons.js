@@ -1,5 +1,707 @@
 window.LESSONS = [
 {
+"added": "2026-11-05T11:05",
+"addedAt": "2026-11-05T14:50",
+"cat": "movie",
+"gloss": {
+"2 400 yen": "2,400円",
+"aichi": "愛知",
+"all": "すべての",
+"all seats are reserved": "全席指定",
+"all seats are reserved and tickets are 2 400 yen": "全席指定で、チケットは2,400円",
+"also": "〜も",
+"and": "〜と・そして",
+"ando": "安藤（人名）",
+"appear": "登場する・登壇する",
+"are": "〜です（複数）",
+"been": "〜された（have beenで）",
+"confirmed": "決まった・確定した",
+"director": "監督",
+"for": "〜のための・〜に向けて",
+"for november 20 through 22": "11月20日から22日までで",
+"greetings": "挨拶（greetingの複数形）",
+"hara": "原（人名）",
+"hara and sakuma will": "原さんと作間さんが〜する",
+"have": "〜した（have＋過去分詞）",
+"hiroshi": "尋（人名）",
+"hiroshi ando will appear in tokyo": "安藤尋さんが東京に登壇する",
+"in": "〜に・〜で",
+"in aichi": "愛知で",
+"in kanagawa": "神奈川で",
+"in osaka and aichi": "大阪と愛知で",
+"kanagawa": "神奈川",
+"movie": "映画",
+"movie's": "映画の（movieの所有格）",
+"nanoka": "菜乃華（人名）",
+"nanoka hara": "原菜乃華さん",
+"nanoka hara ryuto sakuma": "原菜乃華さんと作間龍斗さん",
+"nationwide": "全国で",
+"natsue": "夏衛（人名）",
+"natsue shiomi": "汐見夏衛さん",
+"natsue shiomi who wrote the original story": "原作を書いた汐見夏衛さん",
+"natsue shiomi who wrote the original story will also": "原作を書いた汐見夏衛さんも〜する",
+"november": "11月",
+"on": "〜に（日付）",
+"on november 20": "11月20日に",
+"on november 20 nanoka hara ryuto sakuma and": "11月20日、原菜乃華さん、作間龍斗さん、そして〜",
+"on november 21 hara and sakuma will": "11月21日、原さんと作間さんが〜する",
+"on november 22 sakuma will": "11月22日、作間さんが〜する",
+"opens": "公開される（openの三単現）",
+"original": "原作の・もとの",
+"original story": "原作",
+"osaka": "大阪",
+"release": "公開",
+"reserved": "指定の・予約された",
+"ryuto": "龍斗（人名）",
+"ryuto sakuma": "作間龍斗さん",
+"sakuma": "作間（人名）",
+"seats": "席（seatの複数形）",
+"shiomi": "汐見（人名）",
+"stage": "舞台",
+"stage greetings": "舞台挨拶",
+"stage greetings for the movie's release have been": "映画の公開記念の舞台挨拶が〜になった",
+"story": "物語",
+"tax": "税",
+"the": "その",
+"the movie": "その映画",
+"the movie opens": "映画が公開される",
+"through": "〜まで（含む）",
+"tickets": "チケット（ticketの複数形）",
+"tokyo": "東京",
+"who": "〜した（人）",
+"will": "〜するだろう（未来）",
+"will appear in tokyo": "東京に登壇する",
+"with": "〜込みで・〜つきで",
+"wrote": "書いた（writeの過去形）",
+"yen": "円"
+},
+"grad": [
+{
+"q1": "映画の {release} を記念した {stage greetings} が、11月20日から22日にかけて開催決定しました。",
+"q2": "{Stage greetings for the movie's release have been} 開催決定、11月20日から22日にかけて。",
+"q3": "{Stage greetings for the movie's release have been} 開催決定 {for November 20 through 22.}"
+},
+{
+"q1": "{The movie} は、11月20日に全国で公開されます。",
+"q2": "{The movie opens} 、11月20日に全国で。",
+"q3": "{The movie opens} 全国で {on November 20.}"
+},
+{
+"q1": "11月20日、{Tokyo} には {Nanoka Hara} さん、{Ryuto Sakuma} さん、安藤尋監督が登壇します。",
+"q2": "11月20日、{Nanoka Hara, Ryuto Sakuma} と、安藤尋監督が {will appear in Tokyo}。",
+"q3": "{On November 20, Nanoka Hara, Ryuto Sakuma, and} 監督 {Hiroshi Ando will appear in Tokyo.}"
+},
+{
+"q1": "11月21日は、{Hara} さんと {Sakuma} さんが、{Osaka} と {Aichi} に登壇します。",
+"q2": "11月21日は、{Hara and Sakuma will}、{Osaka} と {Aichi} に登壇します。",
+"q3": "{On November 21, Hara and Sakuma will} 登壇 {in Osaka and Aichi.}"
+},
+{
+"q1": "{original story} を書いた {Natsue Shiomi} さんも、愛知に登壇します。",
+"q2": "{Natsue Shiomi, who wrote the original story} 、愛知に登壇します。",
+"q3": "{Natsue Shiomi, who wrote the original story, will also} 登壇 {in Aichi.}"
+},
+{
+"q1": "11月22日は、{Sakuma} さんが {Kanagawa} に登壇します。",
+"q2": "{On November 22, Sakuma will} 、{Kanagawa} に登壇します。",
+"q3": "{On November 22, Sakuma will} 登壇 {in Kanagawa.}"
+},
+{
+"q1": "全席指定で、{tickets} は税込 {2,400 yen} です。",
+"q2": "{All seats are reserved}、{tickets} は {2,400 yen} 税込。",
+"q3": "{All seats are reserved, and tickets are 2,400 yen} 税込み。"
+}
+],
+"grammar": {
+"body": "all は「すべての」。all ＋ 複数名詞 ＋ are の形で使います（All seats are reserved.）。every や each は単数名詞のあとに置くので、動詞は is になります。",
+"ex": [
+{
+"en": "All students are in the hall.",
+"ja": "生徒はみんなホールにいます。"
+},
+{
+"en": "All tickets are sold out.",
+"ja": "チケットはすべて売り切れです。"
+}
+],
+"title": "all ＋ 複数名詞「すべての〜」"
+},
+"id": "20261105-naihana-greeting",
+"level": 2,
+"lines": [
+{
+"en": "Stage greetings for the movie's release have been confirmed for November 20 through 22.",
+"ja": "映画の公開を記念した舞台挨拶が、11月20日から22日にかけて開催決定しました。",
+"mix": "映画の公開を記念した {stage greetings} が、11月20日から22日にかけて開催決定しました。"
+},
+{
+"en": "The movie opens nationwide on November 20.",
+"ja": "映画は、11月20日に全国で公開されます。",
+"mix": "{movie} は、11月20日に全国で公開されます。"
+},
+{
+"en": "On November 20, Nanoka Hara, Ryuto Sakuma, and director Hiroshi Ando will appear in Tokyo.",
+"ja": "11月20日、東京には原菜乃華さん、作間龍斗さん、安藤尋監督が登壇します。",
+"mix": "11月20日、{Tokyo} には原菜乃華さん、作間龍斗さん、安藤尋監督が登壇します。"
+},
+{
+"en": "On November 21, Hara and Sakuma will appear in Osaka and Aichi.",
+"ja": "11月21日は、原さんと作間さんが、大阪と愛知に登壇します。",
+"mix": "11月21日は、原さんと作間さんが、{Osaka} と {Aichi} に登壇します。"
+},
+{
+"en": "Natsue Shiomi, who wrote the original story, will also appear in Aichi.",
+"ja": "原作を書いた汐見夏衛さんも、愛知に登壇します。",
+"mix": "{original story} を書いた汐見夏衛さんも、愛知に登壇します。"
+},
+{
+"en": "On November 22, Sakuma will appear in Kanagawa.",
+"ja": "11月22日は、作間さんが神奈川に登壇します。",
+"mix": "11月22日は、作間さんが {Kanagawa} に登壇します。"
+},
+{
+"en": "All seats are reserved, and tickets are 2,400 yen with tax.",
+"ja": "全席指定で、チケットは税込2,400円です。",
+"mix": "全席指定で、{tickets} は税込2,400円です。"
+}
+],
+"post": {
+"account": "naihanamovie",
+"date": "2026-11-05",
+"likes": 3985,
+"name": "映画『ないものねだりの君に光の花束を』公式",
+"url": "https://x.com/naihanamovie/status/2118162635292107207"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"東京と神奈川",
+"神奈川だけ",
+"大阪と愛知"
+],
+"q": "11月21日の舞台挨拶があるのは、どこですか？",
+"why": "4文目に On November 21, Hara and Sakuma will appear in Osaka and Aichi. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"指定された",
+"売り切れの",
+"安い"
+],
+"q": "All seats are reserved. の reserved の意味は？",
+"why": "reserved は「予約された・指定された」。ポストの「全席指定」にあたります。"
+},
+{
+"a": 1,
+"choices": [
+"Every",
+"All",
+"Each"
+],
+"q": "___ seats are reserved.（すべての席が指定席です）",
+"why": "seats は複数なので、複数名詞の前に置ける All を使います。Every と Each は単数名詞のあとに置きます。"
+}
+],
+"summary": "映画『ないものねだりの君に光の花束を』の公開記念舞台挨拶が、11月20日(金)〜22日(日)の3日間、東京・大阪・愛知・神奈川で開かれます。全席指定で2,400円（税込）です。映画は11月20日(金)に全国で公開されます。",
+"talk": {
+"hint": "I want to see ___ because ___.",
+"ja": "舞台でだれに会いたいですか？",
+"q": "Who do you want to see on stage?"
+},
+"title": "『ないものねだりの君に光の花束を』公開記念舞台挨拶",
+"words": [
+{
+"ja": "舞台挨拶",
+"note": "ポストの「舞台挨拶」は stage greeting。公開日に出演者が劇場で話すイベントです。",
+"w": "stage greeting"
+},
+{
+"ja": "決まった・確定した",
+"note": "ポストの「開催決定」は have been confirmed（decided とは言いません）。",
+"w": "confirmed"
+},
+{
+"ja": "全国で",
+"note": "ポストの「全国公開」は opens nationwide。",
+"w": "nationwide"
+},
+{
+"ja": "登場する・登壇する",
+"note": "ポストの舞台挨拶への「登壇」は will appear で表せます。",
+"w": "appear"
+},
+{
+"ja": "指定の・予約された",
+"note": "ポストの「全席指定」は All seats are reserved。",
+"w": "reserved"
+}
+]
+},
+{
+"added": "2026-11-05T09:44",
+"addedAt": "2026-11-05T14:50",
+"cat": "art",
+"gloss": {
+"a": "ひとつの",
+"and": "〜と",
+"and see it": "そして見てみる",
+"art": "美術",
+"asks": "頼んでいる（askの三単現）",
+"at": "〜で",
+"at the mori art museum": "森美術館で",
+"be": "〜される（be captivatedで）",
+"being": "〜されている（be heldで）",
+"by": "〜に（心を奪われる）",
+"by it": "それに（心を奪われる）",
+"captivated": "心を奪われた",
+"endlessly": "どこまでも",
+"especially": "とくに",
+"exhibition": "展覧会",
+"flexible": "しなやかな",
+"go": "行く",
+"held": "開催される（holdの過去分詞）",
+"in": "〜に（興味がある）",
+"in science or philosophy": "科学や哲学に（興味がある）",
+"interested": "興味がある",
+"is": "〜です",
+"it": "それ",
+"it is a world": "それは世界です",
+"it is a world that is endlessly white vivid strong and": "それはどこまでも白く、鮮やかで、強く、〜な世界です",
+"light": "光",
+"love": "大好きである",
+"loved": "大好きだった（loveの過去形）",
+"mariko": "万里子（人名）",
+"mariko mori's exhibition": "森万里子さんの展覧会",
+"mariko mori's exhibition sansan is": "森万里子さんの展覧会『燦燦』は〜です",
+"mariko mori's exhibition sansan is being": "森万里子さんの展覧会『燦燦』は〜されている",
+"mori": "森（美術館名・人名）",
+"mori's": "森さんの",
+"museum": "美術館",
+"or": "または",
+"people": "人々",
+"philosophy": "哲学",
+"readers": "読んだ人たち",
+"really": "本当に・とても",
+"recommends": "すすめている（recommendの三単現）",
+"sansan": "燦燦（展覧会の題）",
+"science": "科学",
+"see": "見る",
+"strong": "強い",
+"that": "〜という（関係詞）",
+"that is endlessly white vivid": "どこまでも白く鮮やかな",
+"the": "その",
+"the mori art museum": "森美術館",
+"the writer": "投稿者",
+"the writer asks readers": "投稿者は読んだ人に頼んでいる",
+"the writer asks readers to": "投稿者は読んだ人に〜するよう頼んでいる",
+"the writer especially recommends it": "投稿者はそれをとくにすすめている",
+"the writer especially recommends it to people": "投稿者はそれを人々にとくにすすめている",
+"the writer really": "投稿者は本当に〜",
+"the writer thinks people who love light": "投稿者は、光が好きな人は〜と考えている",
+"the writer thinks people who love light will be": "投稿者は、光が好きな人は〜されると考えている",
+"thinks": "考えている（thinkの三単現）",
+"to": "〜に",
+"vivid": "鮮やかな",
+"white": "白い",
+"who": "〜する（人）",
+"will": "〜だろう",
+"world": "世界",
+"writer": "投稿者"
+},
+"grad": [
+{
+"q1": "{Mariko Mori's exhibition} 『燦燦』が、森美術館で開催されています。",
+"q2": "{Mariko Mori's exhibition Sansan is} 、{the Mori Art Museum} で開催。",
+"q3": "{Mariko Mori's exhibition Sansan is being} 開催される {at the Mori Art Museum.}"
+},
+{
+"q1": "{The writer} は、それが {really} 好きでした。",
+"q2": "{The writer} は、それが {really} 好きでした。",
+"q3": "{The writer really} 愛した {it.}"
+},
+{
+"q1": "{The writer} は、{light} が好きな {people} はそれに心を奪われると考えています。",
+"q2": "{The writer thinks people who love light} は、それに心を奪われると。",
+"q3": "{The writer thinks people who love light will be} 心を奪われる {by it.}"
+},
+{
+"q1": "それは、どこまでも {white} 、{vivid} で、強く、しなやかな {world} です。",
+"q2": "{It is a world} {that is endlessly white, vivid,} 強く、しなやか。",
+"q3": "{It is a world that is endlessly white, vivid, strong, and} しなやか。"
+},
+{
+"q1": "{The writer} は、{science} や哲学に興味がある {people} に、とくにすすめています。",
+"q2": "{The writer especially recommends it} 、{science} や {philosophy} に興味がある {people} に。",
+"q3": "{The writer especially recommends it to people} 興味がある {in science or philosophy.}"
+},
+{
+"q1": "{The writer} は、{readers} に、行ってみてほしいと伝えています。",
+"q2": "{The writer asks readers} 、行ってみてほしいと。",
+"q3": "{The writer asks readers to} 行く {and see it.}"
+}
+],
+"grammar": {
+"body": "especially は「とくに」と強めたいところの前に置きます。動詞の前（especially recommends）や、名詞・文の前でも使えます。",
+"ex": [
+{
+"en": "I like all colors, but I especially like white.",
+"ja": "私はどの色も好きですが、とくに白が好きです。"
+},
+{
+"en": "This museum is popular, especially with young people.",
+"ja": "この美術館は、とくに若い人に人気があります。"
+}
+],
+"title": "especially「とくに〜・なおさら」"
+},
+"id": "20261105-art-mori-sansan",
+"level": 3,
+"lines": [
+{
+"en": "Mariko Mori's exhibition Sansan is being held at the Mori Art Museum.",
+"ja": "森万里子さんの展覧会『燦燦』が、森美術館で開催されています。",
+"mix": "森万里子さんの {exhibition} 『燦燦』が、森美術館で開催されています。"
+},
+{
+"en": "The writer really loved it.",
+"ja": "投稿者は、それがとても好きでした。",
+"mix": "投稿者は、それが {really} 好きでした。"
+},
+{
+"en": "The writer thinks people who love light will be captivated by it.",
+"ja": "投稿者は、光が好きな人はそれに心を奪われると考えています。",
+"mix": "投稿者は、{light} が好きな人はそれに心を奪われると考えています。"
+},
+{
+"en": "It is a world that is endlessly white, vivid, strong, and flexible.",
+"ja": "それは、どこまでも白く、鮮やかで、強く、しなやかな世界です。",
+"mix": "それは、どこまでも {white} 、{vivid} で、強く、しなやかな世界です。"
+},
+{
+"en": "The writer especially recommends it to people interested in science or philosophy.",
+"ja": "投稿者は、科学や哲学に興味がある人に、とくにすすめています。",
+"mix": "投稿者は、{science} や哲学に興味がある人に、とくにすすめています。"
+},
+{
+"en": "The writer asks readers to go and see it.",
+"ja": "投稿者は、読んだ人に、行ってみてほしいと伝えています。",
+"mix": "投稿者は、{readers} に、行ってみてほしいと伝えています。"
+}
+],
+"post": {
+"account": "hisui_leaves",
+"date": "2026-11-05",
+"likes": 2144,
+"name": "灯翠",
+"url": "https://x.com/hisui_leaves/status/2118142379748368805"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"スポーツが好きな人",
+"古い絵を集めている人",
+"科学や哲学に興味がある人"
+],
+"q": "投稿者がとくにすすめているのは、どんな人ですか？",
+"why": "5文目に especially recommends it to people interested in science or philosophy とあります。"
+},
+{
+"a": 0,
+"choices": [
+"鮮やかな",
+"暗い",
+"やわらかい"
+],
+"q": "vivid の意味は？",
+"why": "vivid は色や光がはっきりして鮮やかなようすを表します。"
+},
+{
+"a": 1,
+"choices": [
+"special",
+"especially",
+"especial"
+],
+"q": "I like all colors, but I ___ like white.",
+"why": "動詞 like を強める「とくに」は副詞の especially です。"
+}
+],
+"summary": "灯翠さんが、森美術館で開催中の森万里子さんの『燦燦』がとても好きだったと投稿しました。どこまでも白く鮮やかで強くしなやかな世界で、光が好きな人や科学・哲学に興味がある人におすすめだそうです。",
+"talk": {
+"hint": "I want to visit ___ because ___.",
+"ja": "どんな展覧会に行ってみたいですか？",
+"q": "What kind of exhibition do you want to visit?"
+},
+"title": "森美術館『燦燦』、光が好きな人におすすめ",
+"words": [
+{
+"ja": "鮮やかな",
+"note": "ポストの「鮮やか」は vivid。色や光が強く、はっきりしているようすです。",
+"w": "vivid"
+},
+{
+"ja": "心を奪われた",
+"note": "ポストの「心を奪われる」は be captivated by 〜。",
+"w": "captivated"
+},
+{
+"ja": "しなやかな・柔軟な",
+"note": "ポストの「しなやか」を flexible で表しました。",
+"w": "flexible"
+},
+{
+"ja": "哲学",
+"note": "ポストの「科学や哲学」は science or philosophy です。",
+"w": "philosophy"
+},
+{
+"ja": "どこまでも・果てしなく",
+"note": "ポストの「どこまでも」を endlessly で表しました。",
+"w": "endlessly"
+}
+]
+},
+{
+"added": "2026-11-05T08:24",
+"addedAt": "2026-11-05T14:50",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"about": "〜について",
+"and": "〜と・そして",
+"as": "〜として",
+"as a part-time worker": "フリーターとして",
+"be": "〜される（will beで）",
+"been": "〜された（has been chosen で）",
+"bittersweet": "切ない・ほろ苦い",
+"chosen": "選ばれた（chooseの過去分詞）",
+"connect": "つながる",
+"describes": "言い表す（describeの三単現）",
+"e": "へ（題名の一部）",
+"film": "映画",
+"form": "形",
+"has": "〜した（has＋過去分詞）",
+"her": "彼女の",
+"heroine": "ヒロイン",
+"hokuto": "北斗（人名）",
+"hokuto matsumura of sixtones has been chosen": "SixTONESの松村北斗さんが選ばれた",
+"hokuto matsumura of sixtones has been chosen to": "SixTONESの松村北斗さんが〜することに選ばれた",
+"horita": "堀田（人名）",
+"in": "〜に・〜で",
+"in a new love story film": "新作のラブストーリー映画で",
+"is": "〜です",
+"it": "それは",
+"it is a love story about people": "それは人たちを描いたラブストーリー",
+"it is a love story about people who connect through": "それは〜を通じてつながる人たちのラブストーリー",
+"its": "その（itの所有格）",
+"kimi": "君（題名の一部）",
+"lives": "暮らす（liveの三単現）",
+"lost": "失った（loseの過去分詞）",
+"love": "愛・恋",
+"love story": "ラブストーリー",
+"love story film": "ラブストーリー映画",
+"mada": "まだ（題名の一部）",
+"matsumura": "松村（人名）",
+"matsumura plays yosuke": "松村さんが陽介を演じる",
+"matsumura plays yosuke a shut-in who": "松村さんが、〜する、ひきこもりの陽介を演じる",
+"mayu": "真由（人名）",
+"mayu horita plays nozomi": "堀田真由さんが望海を演じる",
+"mayu horita plays nozomi the heroine who has lost her": "堀田真由さんが、〜を失ったヒロイン望海を演じる",
+"minu": "見ぬ（題名の一部）",
+"moving": "心を打つ",
+"new": "新しい",
+"next": "次の・来〜",
+"next year": "来年",
+"nozomi": "望海（人名）",
+"of": "〜の",
+"part-time": "パートタイムの",
+"part-time worker": "フリーター・パートで働く人",
+"people": "人たち",
+"plays": "演じる（playの三単現）",
+"post": "ポスト（投稿）",
+"purest": "いちばん純粋な",
+"released": "公開される（releaseの過去分詞）",
+"shut-in": "ひきこもりの人",
+"sight": "視力・見る力",
+"sixtones": "SixTONES（グループ名）",
+"star": "主演する",
+"story": "物語",
+"the": "その",
+"the film": "その映画",
+"the film is titled": "映画のタイトルは〜です",
+"the film is titled mada minu kimi e and will be": "映画の題は「まだ見ぬ君へ」で、〜される予定",
+"the heroine": "そのヒロイン",
+"the post": "そのポスト",
+"the post describes it as": "ポストはそれを〜と紹介している",
+"the post describes it as a bittersweet and moving love story in its": "ポストは切なくて心を打つラブストーリーと紹介し、その〜",
+"through": "〜を通じて",
+"titled": "題名がついた",
+"to": "〜することに・〜する",
+"voices": "声（voiceの複数形）",
+"who": "〜する（人）",
+"will": "〜するだろう（未来）",
+"worker": "働く人",
+"year": "年",
+"yosuke": "陽介（人名）"
+},
+"grad": [
+{
+"q1": "{SixTONES} の松村北斗さんが、新作の {love story film} の主演に決まりました。",
+"q2": "{Hokuto Matsumura of SixTONES has been chosen} 、新作の {love story film} の主演に。",
+"q3": "{Hokuto Matsumura of SixTONES has been chosen to} 主演する {in a new love story film.}"
+},
+{
+"q1": "{The film} のタイトルは「まだ見ぬ君へ」で、{next year} 公開されます。",
+"q2": "{The film is titled} 「まだ見ぬ君へ」で、{next year} 公開されます。",
+"q3": "{The film is titled Mada Minu Kimi e and will be} 公開 {next year.}"
+},
+{
+"q1": "声を通じてつながる {people} の、{love story} です。",
+"q2": "{It is a love story about people} 、声を通じてつながります。",
+"q3": "{It is a love story about people who connect through} 声。"
+},
+{
+"q1": "松村さんは、{shut-in} の {part-time worker} として暮らす陽介を演じます。",
+"q2": "{Matsumura plays Yosuke}、{shut-in} の {part-time worker} として暮らす人。",
+"q3": "{Matsumura plays Yosuke, a shut-in who} 暮らす {as a part-time worker.}"
+},
+{
+"q1": "堀田真由さんが演じるのは、光を失った {heroine} の {Nozomi} です。",
+"q2": "{Mayu Horita plays Nozomi}、光を失った {the heroine}。",
+"q3": "{Mayu Horita plays Nozomi, the heroine who has lost her} 光。"
+},
+{
+"q1": "{The post} では、切なくて {moving}、最高純度の {love story} だと紹介されています。",
+"q2": "{The post describes it as} 切なくて {moving}、最高純度の {love story}。",
+"q3": "{The post describes it as a bittersweet and moving love story in its} 最高純度 {form.}"
+}
+],
+"grammar": {
+"body": "「be chosen to ＋ 動詞」は「〜する役に選ばれた・〜することに決まった」という意味です。has been chosen（現在完了の受け身）なら「選ばれたところだ」と、いまの話として伝えられます。",
+"ex": [
+{
+"en": "She was chosen to lead the team.",
+"ja": "彼女はチームを引っぱる役に選ばれました。"
+},
+{
+"en": "He has been chosen to sing the theme song.",
+"ja": "彼は主題歌を歌うことに決まりました。"
+}
+],
+"title": "be chosen to ＋ 動詞「〜することに選ばれた」"
+},
+"id": "20261105-matsumura-madamikimi",
+"level": 3,
+"lines": [
+{
+"en": "Hokuto Matsumura of SixTONES has been chosen to star in a new love story film.",
+"ja": "SixTONES の松村北斗さんが、新作のラブストーリー映画の主演に決まりました。",
+"mix": "SixTONES の松村北斗さんが、新作の {love story} 映画の主演に決まりました。"
+},
+{
+"en": "The film is titled Mada Minu Kimi e and will be released next year.",
+"ja": "映画のタイトルは「まだ見ぬ君へ」で、来年公開されます。",
+"mix": "映画のタイトルは「まだ見ぬ君へ」で、{next year} 公開されます。"
+},
+{
+"en": "It is a love story about people who connect through voices.",
+"ja": "声を通じてつながる人たちの、ラブストーリーです。",
+"mix": "声を通じてつながる人たちの、{love story} です。"
+},
+{
+"en": "Matsumura plays Yosuke, a shut-in who lives as a part-time worker.",
+"ja": "松村さんは、ひきこもりのフリーターとして暮らす陽介を演じます。",
+"mix": "松村さんは、ひきこもりの {part-time worker} として暮らす陽介を演じます。"
+},
+{
+"en": "Mayu Horita plays Nozomi, the heroine who has lost her sight.",
+"ja": "堀田真由さんが演じるのは、光を失ったヒロインの望海です。",
+"mix": "堀田真由さんが演じるのは、光を失った {heroine} の望海です。"
+},
+{
+"en": "The post describes it as a bittersweet and moving love story in its purest form.",
+"ja": "ポストでは、切なくて心を打つ、最高純度のラブストーリーだと紹介されています。",
+"mix": "ポストでは、切なくて {moving}、最高純度のラブストーリーだと紹介されています。"
+}
+],
+"post": {
+"account": "livedoornews",
+"date": "2026-11-05",
+"likes": 2176,
+"name": "ライブドアニュース",
+"url": "https://x.com/livedoornews/status/2118122312990175306"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"光を失った女性",
+"ひきこもりで、フリーターとして暮らす男性",
+"映画の監督"
+],
+"q": "陽介はどんな人物ですか？",
+"why": "4文目に Yosuke, a shut-in who lives as a part-time worker とあります。"
+},
+{
+"a": 2,
+"choices": [
+"悪役",
+"脚本家",
+"ヒロイン"
+],
+"q": "heroine の意味は？",
+"why": "heroine は物語の女性の主役（ヒロイン）です。"
+},
+{
+"a": 0,
+"choices": [
+"to",
+"in",
+"by"
+],
+"q": "He has been chosen ___ star in the film.（彼は映画に主演することに決まった）",
+"why": "「選ばれて〜する」は be chosen to ＋ 動詞。star の前には to が入ります。"
+}
+],
+"summary": "SixTONES の松村北斗さんが、来年公開の映画「まだ見ぬ君へ」で主演を務めます。ひきこもりのフリーター・陽介を松村さんが、光を失ったヒロイン・望海を堀田真由さんが演じます。",
+"talk": {
+"hint": "I like love stories with ___.",
+"ja": "どんなラブストーリーが好きですか？",
+"q": "What kind of love story do you like?"
+},
+"title": "松村北斗さん、映画「まだ見ぬ君へ」で主演に",
+"words": [
+{
+"ja": "主演する",
+"note": "ポストの「主演に決定」は has been chosen to star in ～ で表せます。名詞なら「星・スター」。",
+"w": "star"
+},
+{
+"ja": "ヒロイン",
+"note": "ポストの「ヒロイン・望海」は the heroine。男性の主役は hero。",
+"w": "heroine"
+},
+{
+"ja": "ひきこもりの人",
+"note": "ポストの「ひきこもり」は a shut-in（家にこもる人）で表しました。",
+"w": "shut-in"
+},
+{
+"ja": "切ない・ほろ苦い",
+"note": "ポストの「切なくも」を bittersweet で表しました。",
+"w": "bittersweet"
+},
+{
+"ja": "心を打つ・感動的な",
+"note": "ポストの「心打たれる」は moving で表せます。",
+"w": "moving"
+}
+]
+},
+{
 "added": "2026-11-05T07:07",
 "addedAt": "2026-11-05T09:00",
 "cat": "movie",
@@ -571,6 +1273,501 @@ window.LESSONS = [
 "ja": "（出演の）オファー・申し出",
 "note": "ポストの「オファー」はそのまま offer。",
 "w": "offer"
+}
+]
+},
+{
+"added": "2026-11-05T00:05",
+"addedAt": "2026-11-05T14:50",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a class a": "A級の",
+"an": "ひとりの",
+"and": "〜と・そして",
+"attacker": "アタッカー（攻める人）",
+"better": "よりよく",
+"birthday": "誕生日",
+"chief": "チーフ",
+"chief engineer": "チーフエンジニア",
+"class": "級",
+"class a": "A級",
+"developer": "開発者",
+"does": "（知って）いる",
+"engineer": "エンジニア",
+"fighting": "戦うための",
+"fighting skill": "戦う力",
+"fights": "戦う（fightの三単現）",
+"he": "彼は",
+"he is a reserve member": "彼は補充要員です",
+"he is a reserve member of the": "彼は〜の補充要員です",
+"he is an attacker on": "彼は〜のアタッカーです",
+"he is an attacker on kazama squad a class a": "彼はA級の風間隊のアタッカーです",
+"he is the chief engineer and": "彼はチーフエンジニアで、",
+"he is the chief engineer and the": "彼はチーフエンジニアで、〜の",
+"he uses his fighting skill": "彼は戦う力を生かす",
+"he uses his fighting skill and": "彼は戦う力を生かして、",
+"he was once a top-class": "彼はかつてトップクラスの",
+"he was once a top-class kogetsu": "彼はかつてトップクラスの弧月の",
+"his": "彼の",
+"how": "どうやって",
+"is": "〜です",
+"kazama": "風間（人名）",
+"knows": "知っている",
+"kogetsu": "弧月（武器の名前）",
+"member": "メンバー",
+"no": "〜はひとりもいない",
+"no one knows how to use raygust": "レイガストの扱い方を知る人はいない",
+"november": "11月",
+"november 5": "11月5日",
+"november 5 is the birthday of": "11月5日は〜の誕生日です",
+"of": "〜の",
+"of raygust": "レイガストの",
+"on": "〜に所属して",
+"once": "かつて",
+"one": "人",
+"raizo": "雷蔵（人名）",
+"raizo terajima": "寺島雷蔵（人名）",
+"raygust": "レイガスト（武器の名前）",
+"raygusts": "レイガスト（複数）",
+"reserve": "予備の・補充の",
+"reserve member": "補充要員",
+"skill": "うでまえ",
+"squad": "隊・チーム",
+"team": "チーム",
+"terajima": "寺島（人名）",
+"than": "〜よりも",
+"than he does": "彼よりも",
+"the": "その",
+"to": "〜する",
+"top-class": "トップクラスの",
+"two": "2つの",
+"two raygusts": "2本のレイガスト",
+"use": "使う",
+"user": "使う人",
+"uses": "使う（useの三単現）",
+"was": "〜だった",
+"with": "〜を使って",
+"with two raygusts": "2本のレイガストで"
+},
+"grad": [
+{
+"q1": "{November 5} は、寺島雷蔵チーフの {birthday} です。",
+"q2": "{November 5 is the birthday of} 寺島雷蔵チーフ。",
+"q3": "{November 5 is the birthday of} チーフ {Raizo Terajima.}"
+},
+{
+"q1": "{He} は、{Class A} チーム「風間隊」の {attacker} です。",
+"q2": "{He is an attacker on} 「風間隊」、{a Class A} チーム。",
+"q3": "{He is an attacker on Kazama Squad, a Class A} チーム。"
+},
+{
+"q1": "{He} は、隊の {reserve member} です。",
+"q2": "{He is a reserve member} 、隊の。",
+"q3": "{He is a reserve member of the} 隊。"
+},
+{
+"q1": "彼は {chief engineer} で、{Raygust} の開発者です。",
+"q2": "{He is the chief engineer and} 、{Raygust} の開発者。",
+"q3": "{He is the chief engineer and the} 開発者 {of Raygust.}"
+},
+{
+"q1": "{He} はかつて、{top-class} の弧月使いでした。",
+"q2": "{He was once a top-class} 、弧月使い。",
+"q3": "{He was once a top-class Kogetsu} 使い手。"
+},
+{
+"q1": "{He} は {fighting skill} を生かして、2本のレイガストで戦います。",
+"q2": "{He uses his fighting skill} 、{two Raygusts} で戦います。",
+"q3": "{He uses his fighting skill and} 戦う {with two Raygusts.}"
+},
+{
+"q1": "{Raygust} の扱い方を、{he} ほどよく知る人はいません。",
+"q2": "{No one knows how to use Raygust} 、{he} ほどよく。",
+"q3": "{No one knows how to use Raygust} よりよく {than he does.}"
+}
+],
+"grammar": {
+"body": "how to のあとに動詞を置くと「〜のしかた・〜する方法」になります。know how to ＋ 動詞 で「〜のしかたを知っている」と言えます。",
+"ex": [
+{
+"en": "I know how to make curry.",
+"ja": "私はカレーの作り方を知っています。"
+},
+{
+"en": "Can you show me how to use this?",
+"ja": "これの使い方を教えてくれますか？"
+}
+],
+"title": "how to ＋ 動詞「〜のしかた」"
+},
+"id": "20261105-wtrigger-terajima-birthday",
+"level": 1,
+"lines": [
+{
+"en": "November 5 is the birthday of Chief Raizo Terajima.",
+"ja": "11月5日は、寺島雷蔵チーフの誕生日です。",
+"mix": "11月5日は、寺島雷蔵チーフの {birthday} です。"
+},
+{
+"en": "He is an attacker on Kazama Squad, a Class A team.",
+"ja": "彼は、A級チーム「風間隊」のアタッカーです。",
+"mix": "彼は、A級チーム「風間隊」の {attacker} です。"
+},
+{
+"en": "He is a reserve member of the squad.",
+"ja": "彼は、隊の補充要員です。",
+"mix": "彼は、隊の {reserve member} です。"
+},
+{
+"en": "He is the chief engineer and the developer of Raygust.",
+"ja": "彼はチーフエンジニアで、レイガストの開発者です。",
+"mix": "彼は {chief engineer} で、レイガストの開発者です。"
+},
+{
+"en": "He was once a top-class Kogetsu user.",
+"ja": "彼はかつて、トップクラスの弧月使いでした。",
+"mix": "彼はかつて、{top-class} の弧月使いでした。"
+},
+{
+"en": "He uses his fighting skill and fights with two Raygusts.",
+"ja": "彼は戦う力を生かして、2本のレイガストで戦います。",
+"mix": "彼は {fighting skill} を生かして、2本のレイガストで戦います。"
+},
+{
+"en": "No one knows how to use Raygust better than he does.",
+"ja": "レイガストの扱い方を、彼ほどよく知る人はいません。",
+"mix": "{Raygust} の扱い方を、彼ほどよく知る人はいません。"
+}
+],
+"post": {
+"account": "W_Trigger_off",
+"date": "2026-11-05",
+"likes": 7497,
+"name": "ワールドトリガー公式",
+"url": "https://x.com/W_Trigger_off/status/2117996541633835285"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"11月5日",
+"10月5日",
+"11月15日"
+],
+"q": "寺島雷蔵チーフの誕生日はいつですか？",
+"why": "1文目に November 5 is the birthday of Chief Raizo Terajima. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"使う人",
+"開発者",
+"売る人"
+],
+"q": "developer の意味は？",
+"why": "develop は「開発する」、developer は「開発した人」です。"
+},
+{
+"a": 1,
+"choices": [
+"what",
+"how",
+"where"
+],
+"q": "I know ___ to cook rice.（ごはんの炊き方）",
+"why": "「〜のしかた」は how to ＋ 動詞 です。"
+}
+],
+"series": "worldtrigger",
+"summary": "11月5日は、ワールドトリガーの寺島雷蔵チーフの誕生日です。A級「風間隊」のアタッカーで、チーフエンジニアとしてレイガストを開発した人物だと公式アカウントが紹介しています。",
+"talk": {
+"hint": "My favorite character is ___ because ___.",
+"ja": "ワールドトリガーで好きなキャラクターはいますか？",
+"q": "Do you have a favorite character from World Trigger?"
+},
+"title": "寺島雷蔵チーフの誕生日（ワールドトリガー）",
+"words": [
+{
+"ja": "チーフ・長",
+"note": "ポストの「チーフ」は chief。人の名前の前につけて Chief Terajima のように言えます。",
+"w": "chief"
+},
+{
+"ja": "技術者・エンジニア",
+"note": "ポストの「チーフエンジニア」は chief engineer です。",
+"w": "engineer"
+},
+{
+"ja": "開発した人・開発者",
+"note": "ポストの「開発者」は developer。develop（開発する）に -er がついた形です。",
+"w": "developer"
+},
+{
+"ja": "アタッカー（攻める役）",
+"note": "ポストの「アタッカー」は、そのまま attacker と言えます。",
+"w": "attacker"
+},
+{
+"ja": "補充要員",
+"note": "ポストの「補充要員」は、必要なときに加わる人なので reserve member と表しました。",
+"w": "reserve member"
+}
+]
+},
+{
+"added": "2026-11-04T21:59",
+"addedAt": "2026-11-05T14:50",
+"cat": "manga",
+"gloss": {
+"a": "ひとりの",
+"a god": "神",
+"about": "〜について",
+"about it with great excitement": "そのことを大興奮で",
+"all": "すべて",
+"and": "〜と",
+"art": "美術",
+"art textbook": "美術の教科書",
+"artist": "作者・描いた人",
+"at": "〜で",
+"at home": "家で",
+"at home she told the writer": "家で彼女は投稿者に話した",
+"ball": "ボール",
+"born": "生まれた",
+"caption": "説明文・キャプション",
+"chapter": "〜話",
+"daughter": "娘（長女）",
+"drawing": "描くこと（drawのing形）",
+"eldest": "いちばん年上の",
+"excitement": "興奮",
+"focus": "集中する",
+"found": "見つけた（findの過去形）",
+"from": "〜から・〜の",
+"from iwate": "岩手県出身で",
+"furudate": "古舘（人名）",
+"furudate-sensei": "古舘先生（人名＋敬称）",
+"god": "神",
+"great": "大きな",
+"great excitement": "大興奮",
+"haikyu": "ハイキュー!!（作品名）",
+"haruichi": "春一（人名）",
+"her": "彼女の",
+"home": "家",
+"in": "〜の中に・〜に",
+"in 1983": "1983年に",
+"in 2020": "2020年に",
+"is": "〜です",
+"it": "それ",
+"iwate": "岩手（県）",
+"lesson": "授業",
+"many": "たくさんの",
+"many times": "何度も",
+"movement": "動き",
+"on": "〜に（集中する）",
+"on the lesson": "授業に（集中する）",
+"one": "1人の・ひとつの",
+"one person and the ball": "1人の人物とボール",
+"page": "ページ",
+"person": "人物",
+"published": "発表された",
+"says": "〜と書いてある（sayの三単現）",
+"school": "学校",
+"she": "彼女は",
+"she was too thrilled": "彼女はうれしすぎた",
+"she was too thrilled to": "彼女はうれしすぎて〜できない",
+"shows": "表している（showの三単現）",
+"superstar": "スーパースター（話の題）",
+"textbook": "教科書",
+"the": "その",
+"the artist": "作者",
+"the artist is haruichi furudate": "作者は古舘春一さん",
+"the artist is haruichi furudate from iwate": "作者は岩手県出身の古舘春一さん",
+"the ball": "そのボール",
+"the caption": "キャプション",
+"the caption says": "キャプションには〜とある",
+"the caption says drawing one person and the ball many times": "キャプションには、人物とボールを何度も描くと〜とある",
+"the lesson": "その授業",
+"the page": "そのページ",
+"the page is from haikyu chapter 383": "そのページはハイキュー!!第383話のもの",
+"the page is from haikyu chapter 383 superstar": "そのページはハイキュー!!第383話「スーパースター」のもの",
+"the writer": "投稿者",
+"the writer says": "投稿者は〜と言っている",
+"the writer says furudate-sensei is": "投稿者は古舘先生は〜だと言っている",
+"the writer's eldest daughter found haikyu": "投稿者の長女がハイキュー!!を見つけた",
+"the writer's eldest daughter found haikyu in her": "投稿者の長女がハイキュー!!を、彼女の〜の中に見つけた",
+"thrilled": "ぞくぞくするほどうれしい",
+"times": "回（timeの複数形）",
+"to": "〜するには",
+"told": "話した（tellの過去形）",
+"too": "〜すぎて",
+"truly": "本当に",
+"was": "〜だった",
+"with": "〜とともに",
+"writer": "投稿者",
+"writer's": "投稿者の"
+},
+"grad": [
+{
+"q1": "投稿者の長女が、学校の {art textbook} に {Haikyu!!} を見つけました。",
+"q2": "{The writer's eldest daughter found Haikyu!!} 、学校の {art textbook.}",
+"q3": "{The writer's eldest daughter found Haikyu!! in her} 学校の {art textbook.}"
+},
+{
+"q1": "{She} はうれしすぎて、{the lesson} に集中できませんでした。",
+"q2": "{She was too thrilled} 、{the lesson} に集中できません。",
+"q3": "{She was too thrilled to} 集中する {on the lesson.}"
+},
+{
+"q1": "{At home}、彼女は {great excitement} で、そのことを投稿者にすべて話しました。",
+"q2": "{At home, she told the writer} そのことをすべて、{great excitement} で。",
+"q3": "{At home, she told the writer} すべて {about it with great excitement.}"
+},
+{
+"q1": "{The page} は、{2020} に発表された {Haikyu!!} 第383話「スーパースター」のものです。",
+"q2": "{The page is from Haikyu!! Chapter 383,} 「スーパースター」、{2020} に発表。",
+"q3": "{The page is from Haikyu!! Chapter 383, Superstar,} 発表された {in 2020.}"
+},
+{
+"q1": "{The artist} は、{Iwate} 出身で、1983年生まれの古舘春一さんです。",
+"q2": "{The artist is Haruichi Furudate,} {from Iwate,} {1983} 生まれ。",
+"q3": "{The artist is Haruichi Furudate, from Iwate,} 生まれた {in 1983.}"
+},
+{
+"q1": "{The caption} には、同じ人物と {the ball} を何度も描くことで {movement} を表せる、と書かれています。",
+"q2": "{The caption says} {one person and the ball} を {many times} 描くと、{movement} を表せる、と。",
+"q3": "{The caption says drawing one person and the ball many times} 表す {movement.}"
+},
+{
+"q1": "{The writer} は、{Furudate-sensei} は「本当に神」だと言っています。",
+"q2": "{The writer says} {Furudate-sensei} は、本当に {a god.}",
+"q3": "{The writer says Furudate-sensei is} 本当に {a god.}"
+}
+],
+"grammar": {
+"body": "find は「見つける」。find ＋ 見つけたもの ＋ in ＋ 場所 で「〜の中に…を見つける」と言えます。過去形は不規則で found になります（finded とは言いません）。",
+"ex": [
+{
+"en": "I found an old photo in my bag.",
+"ja": "私はかばんの中に古い写真を見つけました。"
+},
+{
+"en": "She finds a cute cat in the garden.",
+"ja": "彼女は庭でかわいい猫を見つけます。"
+}
+],
+"title": "find A in B「AをBの中に見つける」"
+},
+"id": "20261104-haikyu-textbook",
+"level": 2,
+"lines": [
+{
+"en": "The writer's eldest daughter found Haikyu!! in her school art textbook.",
+"ja": "投稿者の長女が、学校の美術の教科書に『ハイキュー!!』を見つけました。",
+"mix": "投稿者の長女が、学校の {art textbook} に『ハイキュー!!』を見つけました。"
+},
+{
+"en": "She was too thrilled to focus on the lesson.",
+"ja": "彼女はうれしすぎて、授業に集中できませんでした。",
+"mix": "彼女はうれしすぎて、{the lesson} に集中できませんでした。"
+},
+{
+"en": "At home, she told the writer all about it with great excitement.",
+"ja": "家に帰ると、彼女は大興奮で、そのことを投稿者にすべて話しました。",
+"mix": "家に帰ると、彼女は {great excitement} で、そのことを投稿者にすべて話しました。"
+},
+{
+"en": "The page is from Haikyu!! Chapter 383, Superstar, published in 2020.",
+"ja": "そのページは、2020年に発表された『ハイキュー!!』第383話「スーパースター」のものです。",
+"mix": "その {page} は、2020年に発表された『ハイキュー!!』第383話「スーパースター」のものです。"
+},
+{
+"en": "The artist is Haruichi Furudate, from Iwate, born in 1983.",
+"ja": "作者は、岩手県出身で、1983年生まれの古舘春一さんです。",
+"mix": "{The artist} は、岩手県出身で、1983年生まれの古舘春一さんです。"
+},
+{
+"en": "The caption says drawing one person and the ball many times shows movement.",
+"ja": "キャプションには、同じ人物とボールを何度も描くことで動きを表せる、と書かれています。",
+"mix": "{The caption} には、同じ人物とボールを何度も描くことで {movement} を表せる、と書かれています。"
+},
+{
+"en": "The writer says Furudate-sensei is truly a god.",
+"ja": "投稿者は、古舘先生は「本当に神」だと言っています。",
+"mix": "{The writer} は、古舘先生は「本当に神」だと言っています。"
+}
+],
+"post": {
+"account": "namahageBBA",
+"date": "2026-11-04",
+"likes": 1363,
+"name": "ままはげ",
+"url": "https://x.com/namahageBBA/status/2117965078326866002"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"学校の廊下のポスター",
+"美術の教科書",
+"図書館の本"
+],
+"q": "長女が『ハイキュー!!』を見つけた場所は？",
+"why": "1文目に found Haikyu!! in her school art textbook とあります。"
+},
+{
+"a": 2,
+"choices": [
+"作者の名前",
+"作品の題名",
+"写真の説明文"
+],
+"q": "caption の意味は？",
+"why": "caption は写真や絵につける説明文のこと。6文目に出てくるキャプションのことです。"
+},
+{
+"a": 0,
+"choices": [
+"found",
+"finded",
+"finds"
+],
+"q": "She ___ a letter in her desk yesterday.（見つけました）",
+"why": "find の過去形は不規則で found です。"
+}
+],
+"series": "haikyu",
+"summary": "ままはげさんの長女が、学校の美術の教科書に『ハイキュー!!』が載っているのを授業中に見つけ、授業どころではなくなったそうです。帰宅後に大興奮でその話を聞かされた、という投稿です。",
+"talk": {
+"hint": "I want to see ___ in a textbook because ___.",
+"ja": "学校の教科書に載っていたらうれしいマンガやアニメは何ですか？",
+"q": "Which manga or anime do you want to see in a school textbook?"
+},
+"title": "美術の教科書に『ハイキュー!!』が載っていた！",
+"words": [
+{
+"ja": "教科書",
+"note": "ポストの「美術の教科書」は art textbook です。",
+"w": "textbook"
+},
+{
+"ja": "ぞくぞくするほどうれしい",
+"note": "ポストの「悶絶」は、うれしくてじっとしていられないようすなので thrilled で表しました。",
+"w": "thrilled"
+},
+{
+"ja": "写真の説明文・キャプション",
+"note": "ポストの「キャプション」は、そのまま caption です。",
+"w": "caption"
+},
+{
+"ja": "（絵を）描く",
+"note": "ポストの「複数描く」は draw ... many times。drawing は draw の -ing 形です。",
+"w": "draw"
+},
+{
+"ja": "神さま（すごい人のたとえ）",
+"note": "ポストの「神」は、すごい人をほめる言い方で、英語でも a god と言えます。",
+"w": "a god"
 }
 ]
 },
@@ -1780,6 +2977,265 @@ window.LESSONS = [
 "ja": "シリーズ",
 "note": "ポストの「映画シリーズ」。単数も複数も同じ形です。",
 "w": "series"
+}
+]
+},
+{
+"added": "2026-11-04T17:00",
+"addedAt": "2026-11-05T14:50",
+"cat": "movie",
+"gloss": {
+"a": "ひとりの",
+"also": "〜も",
+"and": "〜と",
+"announcer": "アナウンサー",
+"baseball": "野球",
+"even": "〜でも",
+"even with three outs": "3アウトになっても",
+"film": "映画",
+"former": "元の",
+"former japan national soccer player tsuyoshi kitazawa and freelance announcer kazuo tokumitsu": "元サッカー日本代表の北澤豪さんとフリーアナウンサーの徳光和夫さん",
+"freelance": "フリーの",
+"freelance announcer": "フリーアナウンサー",
+"friday": "金曜日",
+"gives": "〜する（giveの三単現）",
+"iguchi": "井口（人名）",
+"is": "〜です",
+"it": "それは",
+"it is a moving film": "それは心を揺さぶる映画だ",
+"it is a moving film and it": "それは感動作で、〜",
+"japan": "日本",
+"japan national soccer player": "サッカー日本代表の選手",
+"kazuo": "和夫（人名）",
+"kazuo tokumitsu": "徳光和夫さん",
+"kitazawa": "北澤（人名）",
+"kunieda": "国枝（人名）",
+"league": "リーグ",
+"legends": "レジェンド（legendの複数形）",
+"major": "メジャーの",
+"major league": "メジャーリーグ",
+"manager": "監督",
+"masataka": "正尚（人名）",
+"masataka yoshida a major league player": "メジャーリーガーの吉田正尚さん",
+"masataka yoshida a major league player is also": "メジャーリーガーの吉田正尚さんも〜です",
+"medalist": "メダリスト",
+"messages": "メッセージ（messageの複数形）",
+"messages to the movie 4 out": "映画『4アウト』へのメッセージ",
+"messages too": "メッセージも",
+"movie": "映画",
+"moving": "心を揺さぶる",
+"moving film": "心を揺さぶる映画",
+"national": "代表の・国の",
+"never": "決して〜ない",
+"november": "11月",
+"of": "〜のうち",
+"of them": "その中の",
+"on": "〜に（日付・曜日）",
+"on friday november 6": "11月6日の金曜日に",
+"one": "ひとり・1つ",
+"opens": "公開される（openの三単現）",
+"out": "アウト（作品名『4 Out』）",
+"outs": "アウト（outの複数形）",
+"para": "パラ（障害者スポーツの）",
+"player": "選手",
+"sent": "送った（sendの過去形）",
+"shingo": "慎吾（人名）",
+"shingo kunieda": "国枝慎吾さん",
+"shingo kunieda and para swimming medalist uchu tomita also sent messages": "国枝慎吾さんとパラ競泳メダリストの富田宇宙さんもメッセージを送った",
+"shows": "描く・見せる（showの三単現）",
+"soccer": "サッカー",
+"sports": "スポーツ",
+"sports legends": "スポーツ界のレジェンド",
+"sports legends sent": "スポーツ界のレジェンドが送った",
+"swimming": "水泳・競泳",
+"tadahito": "資仁（人名）",
+"tadahito iguchi": "井口資仁さん",
+"tadahito iguchi the japan baseball team manager": "野球日本代表の監督、井口資仁さん",
+"tadahito iguchi the japan baseball team manager is": "野球日本代表の監督、井口資仁さんは〜です",
+"team": "チーム",
+"tennis": "テニス",
+"that": "〜する（チーム）",
+"the": "その",
+"the film shows a team": "映画はチームの姿を描く",
+"the film shows a team that": "映画は〜するチームを描く",
+"them": "彼ら",
+"three": "3つの",
+"three outs": "3アウト",
+"to": "〜に（相手）",
+"tokumitsu": "徳光（人名）",
+"tomita": "富田（人名）",
+"too": "〜も（文の最後）",
+"tsuyoshi": "豪（人名）",
+"uchu": "宇宙（人名）",
+"uchu tomita": "富田宇宙さん",
+"up": "up（give upで「あきらめる」）",
+"warm": "あたたかい・熱い",
+"wheelchair": "車いす",
+"wheelchair tennis": "車いすテニス",
+"with": "〜があっても",
+"yoshida": "吉田（人名）"
+},
+"grad": [
+{
+"q1": "{Sports legends} たちが、映画『4アウト』に熱い応援 {messages} を送りました。",
+"q2": "{Sports legends sent} 熱い応援 {messages}、映画『4アウト』に。",
+"q3": "{Sports legends sent} 熱い {messages to the movie 4 Out.}"
+},
+{
+"q1": "野球日本代表の {manager}、{Tadahito Iguchi} さんもその一人です。",
+"q2": "{Tadahito Iguchi, the Japan baseball team manager,} は、その一人です。",
+"q3": "{Tadahito Iguchi, the Japan baseball team manager, is} 一人 {of them.}"
+},
+{
+"q1": "{Major League} の {player}、吉田正尚さんも、その一人です。",
+"q2": "{Masataka Yoshida, a Major League player,} も、その一人です。",
+"q3": "{Masataka Yoshida, a Major League player, is also} 一人 {of them.}"
+},
+{
+"q1": "{Wheelchair tennis} の国枝慎吾さんと、パラ競泳の {medalist}、富田宇宙さんも、{messages} を送りました。",
+"q2": "{Wheelchair tennis} 選手の {Shingo Kunieda} さんと、パラ競泳の {medalist}、{Uchu Tomita} さんも、{messages} を送りました。",
+"q3": "{Wheelchair tennis} 選手 {Shingo Kunieda and Para swimming medalist Uchu Tomita also sent messages.}"
+},
+{
+"q1": "元サッカー日本代表の北澤豪さんと、{freelance announcer} の {Kazuo Tokumitsu} さんも、{messages} を送りました。",
+"q2": "元 {Japan national soccer player} の北澤豪さんと、{freelance announcer} の {Kazuo Tokumitsu} さんも、{messages} を送りました。",
+"q3": "{Former Japan national soccer player Tsuyoshi Kitazawa and freelance announcer Kazuo Tokumitsu} 送った {messages too.}"
+},
+{
+"q1": "映画は、{three outs} になっても決してあきらめない {team} の姿を描いています。",
+"q2": "{The film shows a team} が、{three outs} になっても決してあきらめない姿。",
+"q3": "{The film shows a team that} 決してあきらめない {even with three outs.}"
+},
+{
+"q1": "{moving film} で、11月6日の {Friday} に公開されます。",
+"q2": "{It is a moving film} で、11月6日の {Friday} に公開されます。",
+"q3": "{It is a moving film, and it} 公開される {on Friday, November 6.}"
+}
+],
+"grammar": {
+"body": "send は「送る」。send ＋ 人 ＋ もの、または send ＋ もの ＋ to ＋ 人 の形で使います。過去形は sent です。主語が複数（Fans など）のときは、現在形でも s をつけません。",
+"ex": [
+{
+"en": "Fans send messages to the team.",
+"ja": "ファンはチームにメッセージを送ります。"
+},
+{
+"en": "He sent me a photo.",
+"ja": "彼は私に写真を送ってくれました。"
+}
+],
+"title": "send A B「AにBを送る」（send B to A）"
+},
+"id": "20261104-4out-legends",
+"level": 1,
+"lines": [
+{
+"en": "Sports legends sent warm messages to the movie 4 Out.",
+"ja": "スポーツ界のレジェンドたちが、映画『4アウト』に熱い応援メッセージを送りました。",
+"mix": "スポーツ界の {legends} たちが、映画『4アウト』に熱い応援 {messages} を送りました。"
+},
+{
+"en": "Tadahito Iguchi, the Japan baseball team manager, is one of them.",
+"ja": "野球日本代表の監督、井口資仁さんもその一人です。",
+"mix": "野球日本代表の {manager}、井口資仁さんもその一人です。"
+},
+{
+"en": "Masataka Yoshida, a Major League player, is also one of them.",
+"ja": "メジャーリーグの選手、吉田正尚さんも、その一人です。",
+"mix": "{Major League} の選手、吉田正尚さんも、その一人です。"
+},
+{
+"en": "Wheelchair tennis player Shingo Kunieda and Para swimming medalist Uchu Tomita also sent messages.",
+"ja": "車いすテニスの国枝慎吾さんと、パラ競泳メダリストの富田宇宙さんも、メッセージを送りました。",
+"mix": "車いすテニスの国枝慎吾さんと、パラ競泳の {medalist}、富田宇宙さんも、{messages} を送りました。"
+},
+{
+"en": "Former Japan national soccer player Tsuyoshi Kitazawa and freelance announcer Kazuo Tokumitsu sent messages too.",
+"ja": "元サッカー日本代表の北澤豪さんと、フリーアナウンサーの徳光和夫さんも、メッセージを送りました。",
+"mix": "元サッカー日本代表の北澤豪さんと、フリー {announcer} の徳光和夫さんも、{messages} を送りました。"
+},
+{
+"en": "The film shows a team that never gives up, even with three outs.",
+"ja": "映画は、3アウトになっても決してあきらめないチームの姿を描いています。",
+"mix": "映画は、{three outs} になっても決してあきらめないチームの姿を描いています。"
+},
+{
+"en": "It is a moving film, and it opens on Friday, November 6.",
+"ja": "心を揺さぶる感動作で、11月6日の金曜日に公開されます。",
+"mix": "心を揺さぶる {film} で、11月6日の金曜日に公開されます。"
+}
+],
+"post": {
+"account": "4out_movie",
+"date": "2026-11-04",
+"likes": 2732,
+"name": "映画『4アウト ─もう一度、プレイボール─』公式",
+"url": "https://x.com/4out_movie/status/2117889586412273976"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"スポーツ界のレジェンドたち",
+"映画の監督たち",
+"声優さんたち"
+],
+"q": "メッセージを送ったのは、どんな人たちですか？",
+"why": "1文目に Sports legends sent warm messages とあります。"
+},
+{
+"a": 1,
+"choices": [
+"がんばる",
+"あきらめる",
+"勝つ"
+],
+"q": "give up の意味は？",
+"why": "give up は「あきらめる」。never gives up なら「決してあきらめない」です。"
+},
+{
+"a": 2,
+"choices": [
+"sends",
+"sending",
+"send"
+],
+"q": "Fans ___ messages to the team.（ファンはチームにメッセージを送ります）",
+"why": "主語 Fans は複数なので、動詞は s のない send です。"
+}
+],
+"summary": "映画『4アウト ─もう一度、プレイボール─』に、井口資仁さん、吉田正尚さん、国枝慎吾さんなどスポーツ界のレジェンドから熱い応援メッセージが届きました。映画は11月6日(金)に公開されます。",
+"talk": {
+"hint": "I like to watch ___ because ___.",
+"ja": "どのスポーツを見るのが好きですか？",
+"q": "Which sport do you like to watch?"
+},
+"title": "映画『4アウト』にスポーツ界のレジェンドが応援",
+"words": [
+{
+"ja": "レジェンド・伝説的な人",
+"note": "ポストの「レジェンド」はそのまま legend。スポーツ界の大物を指します。",
+"w": "legend"
+},
+{
+"ja": "メッセージ",
+"note": "ポストの「応援メッセージ」は messages of support とも言えますが、ここでは warm messages としました。",
+"w": "message"
+},
+{
+"ja": "あきらめる",
+"note": "ポストの「諦めない」は never give up。",
+"w": "give up"
+},
+{
+"ja": "メダリスト",
+"note": "ポストの「パラ競泳メダリスト」は Para swimming medalist。",
+"w": "medalist"
+},
+{
+"ja": "公開される",
+"note": "ポストの「公開」は、映画なら opens on ～ と言えます。",
+"w": "open"
 }
 ]
 },
