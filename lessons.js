@@ -1,5 +1,844 @@
 window.LESSONS = [
 {
+"added": "2026-11-06T11:56",
+"addedAt": "2026-11-06T14:43",
+"cat": "movie",
+"gloss": {
+"38 students": "生徒38人",
+"a": "ひとつの",
+"a survival game for one chair": "1つの椅子をめぐる生き残りゲーム",
+"all": "すべての",
+"all 38 students": "生徒38人全員",
+"all 38 students in the movie": "映画の生徒38人全員",
+"all 38 students in the movie were": "映画の生徒38人全員が〜された",
+"and": "〜と・そして",
+"and natsuki deguchi is the heroine": "そして出口夏希はヒロインです",
+"and who is the traitor": "そして裏切り者は誰か",
+"are": "〜（の状態）である",
+"are left": "取り残されている",
+"chair": "椅子",
+"deguchi": "出口（人名）",
+"february": "2月",
+"february 11": "2月11日",
+"february 11 2027": "2027年2月11日",
+"for": "〜をめぐる・〜のための",
+"game": "ゲーム",
+"heroine": "ヒロイン",
+"in": "〜の中の",
+"is": "〜です",
+"left": "取り残された（leaveの過去分詞）",
+"leviathan": "リバイアサン（作品名）",
+"michieda": "道枝（人名）",
+"movie": "映画",
+"natsuki": "夏希（人名）",
+"natsuki deguchi": "出口夏希（人名）",
+"of": "〜の",
+"on": "〜に（日付）",
+"on february 11 2027": "2027年2月11日に",
+"one": "1つの・1人の",
+"one chair": "1つの椅子",
+"one student": "生徒1人",
+"only": "〜だけ",
+"only one student": "生徒1人だけ",
+"only one student out of 38": "38人のうち1人だけ",
+"only one student out of 38 will": "38人のうち1人だけが〜する",
+"open": "公開される",
+"out": "外・（out ofで）〜のうち",
+"play": "（ゲームを）する",
+"revealed": "明らかにされた・発表された",
+"shunsuke": "駿佑（人名）",
+"shunsuke michieda": "道枝駿佑（人名）",
+"shunsuke michieda is the": "道枝駿佑は〜（の役）です",
+"spaceship": "宇宙船",
+"star": "主演・スター",
+"student": "生徒",
+"students": "生徒たち（studentの複数形）",
+"survival": "生き残り",
+"survive": "生き残る",
+"the": "その",
+"the heroine": "そのヒロイン",
+"the movie leviathan will": "映画『リバイアサン』は〜する",
+"the students": "その生徒たち",
+"the students are left on a": "生徒たちは〜の上に取り残されている",
+"the traitor": "その裏切り者",
+"they": "彼ら・生徒たち",
+"today": "今日",
+"traitor": "裏切り者",
+"trust": "信じる",
+"were": "〜された（beの過去形）",
+"who": "誰が・誰を",
+"who is the traitor": "裏切り者は誰か",
+"who will": "誰が〜するか",
+"who will they": "生徒たちは誰を〜するか",
+"will": "〜するだろう（未来）",
+"wrecked": "難破した"
+},
+"grad": [
+{
+"q1": "映画『リバイアサン』は、{February 11, 2027} に公開されます。",
+"q2": "{The movie Leviathan will} 公開する、{February 11, 2027} に。",
+"q3": "{The movie Leviathan will} 公開する {on February 11, 2027.}"
+},
+{
+"q1": "主演は道枝駿佑さん、{the heroine} は {Natsuki Deguchi} です。",
+"q2": "{Shunsuke Michieda} は主演、{the heroine} は {Natsuki Deguchi}。",
+"q3": "{Shunsuke Michieda is the} 主演 {and Natsuki Deguchi is the heroine.}"
+},
+{
+"q1": "今日、映画の {all 38 students} が発表されました。",
+"q2": "今日、{all 38 students in the movie} が発表されました。",
+"q3": "今日 {, all 38 students in the movie were} 発表 {.}"
+},
+{
+"q1": "{students} は、難破した {spaceship} に取り残されています。",
+"q2": "{The students} は、難破した {spaceship} に {are left}。",
+"q3": "{The students are left on a} 難破した {spaceship.}"
+},
+{
+"q1": "生徒たちは、{one chair} をめぐる生き残り {game} をします。",
+"q2": "生徒たちは、{a survival game for one chair} をします。",
+"q3": "{They} 行う {a survival game for one chair.}"
+},
+{
+"q1": "38人のうち、生き残るのは {only one student} です。",
+"q2": "{Only one student out of 38} が生き残ります。",
+"q3": "{Only one student out of 38 will} 生き残る。"
+},
+{
+"q1": "{Who} を信じるのか、そして {the traitor} は誰なのでしょうか。",
+"q2": "{Who will} 信じる、そして {who is the traitor}?",
+"q3": "{Who will they} 信じる {, and who is the traitor?}"
+}
+],
+"grammar": {
+"body": "全体の中の一部を言うときは、数や人の後ろに out of ＋ 全体 を置きます。「38人のうち1人」は one student out of 38 です。",
+"ex": [
+{
+"en": "Two students out of ten are absent.",
+"ja": "10人のうち2人が休んでいます。"
+},
+{
+"en": "One out of five books is mine.",
+"ja": "5冊のうち1冊は私のです。"
+}
+],
+"title": "out of ～「〜のうち」"
+},
+"id": "20261106-leviathan-38students",
+"level": 2,
+"lines": [
+{
+"en": "The movie Leviathan will open on February 11, 2027.",
+"ja": "映画『リバイアサン』は、2027年2月11日に公開されます。",
+"mix": "映画『リバイアサン』は、2027年の {February 11} に公開されます。"
+},
+{
+"en": "Shunsuke Michieda is the star, and Natsuki Deguchi is the heroine.",
+"ja": "主演は道枝駿佑さん、ヒロインは出口夏希さんです。",
+"mix": "主演は道枝駿佑さん、{heroine} は出口夏希さんです。"
+},
+{
+"en": "Today, all 38 students in the movie were revealed.",
+"ja": "今日、映画の生徒38人が全員発表されました。",
+"mix": "今日、映画の {38 students} が全員発表されました。"
+},
+{
+"en": "The students are left on a wrecked spaceship.",
+"ja": "生徒たちは、難破した宇宙船に取り残されています。",
+"mix": "{students} は、難破した宇宙船に取り残されています。"
+},
+{
+"en": "They play a survival game for one chair.",
+"ja": "生徒たちは、1つの椅子をめぐる生き残りゲームをします。",
+"mix": "生徒たちは、1つの {chair} をめぐる生き残りゲームをします。"
+},
+{
+"en": "Only one student out of 38 will survive.",
+"ja": "38人のうち、生き残るのは1人だけです。",
+"mix": "38人のうち、生き残るのは {one student} だけです。"
+},
+{
+"en": "Who will they trust, and who is the traitor?",
+"ja": "生徒たちは誰を信じるのか、そして裏切り者は誰なのでしょうか。",
+"mix": "生徒たちは誰を信じるのか、そして {traitor} は誰なのでしょうか。"
+}
+],
+"post": {
+"account": "toho_movie",
+"date": "2026-11-06",
+"likes": 3186,
+"name": "東宝映画情報【公式】",
+"url": "https://x.com/toho_movie/status/2118538077383934357"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"38人",
+"1人",
+"10人"
+],
+"q": "この映画で、生き残れるのは何人？",
+"why": "6文目に Only one student out of 38 will survive. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"先生",
+"友だち",
+"裏切り者"
+],
+"q": "traitor の意味は？",
+"why": "traitor は「裏切り者」。who is the traitor? で「裏切り者は誰？」です。"
+},
+{
+"a": 0,
+"choices": [
+"out of",
+"in at",
+"by with"
+],
+"q": "Only one student ___ 38 will survive.（38人のうち1人）",
+"why": "「〜のうち」は out of を使います。"
+}
+],
+"summary": "2027年2月11日公開の映画『リバイアサン』で、出演する生徒38人が一挙に発表されました。難破した宇宙船に残された生徒たちが、1つの椅子をめぐる生き残りゲームをする物語です。",
+"talk": {
+"hint": "I think ___ will survive because ___.",
+"ja": "この映画では、誰が生き残ると思いますか？",
+"q": "Who do you think will survive in this movie?"
+},
+"title": "映画『リバイアサン』、生徒38人が一挙解禁",
+"words": [
+{
+"ja": "明らかにする・発表する",
+"note": "ポストの「一挙解禁」は、生徒がまとめて明らかになったということで were revealed と表せます。",
+"w": "reveal"
+},
+{
+"ja": "難破した・こわれた",
+"note": "ポストの「難破した」宇宙船は a wrecked spaceship。",
+"w": "wrecked"
+},
+{
+"ja": "生き残る",
+"note": "ポストの「生き残りゲーム」は survival game、「生き残る」は survive。",
+"w": "survive"
+},
+{
+"ja": "信じる・信用する",
+"note": "ポストの「誰を信じ」は Who will they trust。",
+"w": "trust"
+},
+{
+"ja": "裏切り者",
+"note": "ポストの「裏切り者は誰なのか」は who is the traitor。",
+"w": "traitor"
+}
+]
+},
+{
+"added": "2026-11-06T10:00",
+"addedAt": "2026-11-06T14:43",
+"cat": "movie",
+"gloss": {
+"4k": "4K（高画質の映像）",
+"a": "ひとつの",
+"a digitally remastered": "デジタルリマスターされた",
+"again": "もう一度",
+"be": "〜される（be shownで）",
+"celebrate": "記念する・祝う",
+"december": "12月",
+"december 4": "12月4日",
+"digitally": "デジタルで",
+"digitally remastered": "デジタルリマスターされた",
+"fall": "落下（作品名『The Fall』）",
+"for": "〜のために・〜のあいだ",
+"in": "〜で・〜の中で",
+"in 4k": "4Kで",
+"in theaters": "劇場で",
+"is": "〜です",
+"it": "それは",
+"it is": "それは〜です",
+"it is to": "それは〜するためです",
+"it will be shown": "それは上映される",
+"it will be shown for one week": "それは1週間上映される",
+"on": "〜に（日付）",
+"on december 4": "12月4日に",
+"one": "1つの",
+"one week": "1週間",
+"one year": "1年",
+"one year since the release": "公開から1年",
+"only": "〜だけ",
+"re-release": "再上映・再公開",
+"release": "公開",
+"remastered": "リマスターされた（きれいに作り直した）",
+"shown": "上映される（showの過去分詞）",
+"since": "〜から（今まで）",
+"starts": "始まる（startの三単現）",
+"the": "その",
+"the fall": "『落下の王国』（作品名 The Fall）",
+"the fall will be shown": "『落下の王国』が上映される",
+"the re-release": "再上映",
+"theaters": "劇場・映画館（theaterの複数形）",
+"this": "これ・この",
+"this is a digitally remastered": "これはデジタルリマスターされた",
+"to": "〜する（不定詞）",
+"version": "版・バージョン",
+"week": "週・1週間",
+"will": "〜するだろう（未来）",
+"year": "年・1年"
+},
+"grad": [
+{
+"q1": "{The Fall} が、{theaters} でもう一度上映されます。",
+"q2": "{The Fall will be shown} もう一度、{theaters} で。",
+"q3": "{The Fall will be shown} もう一度 {in theaters.}"
+},
+{
+"q1": "これは、{4K} の {digitally remastered} 版です。",
+"q2": "これは {a digitally remastered} 版、{in 4K}。",
+"q3": "{This is a digitally remastered} 版 {in 4K.}"
+},
+{
+"q1": "{It} は {one week} 限定で上映されます。",
+"q2": "{It will be shown} {one week} 限定で。",
+"q3": "{It will be shown for one week} 限定。"
+},
+{
+"q1": "{re-release} は、{December 4} から始まります。",
+"q2": "{The re-release} は、{on December 4} 始まる。",
+"q3": "{The re-release} 始まる {on December 4.}"
+},
+{
+"q1": "{release} から {one year} になるのを記念しています。",
+"q2": "{It is} {one year since the release} を記念して。",
+"q3": "{It is to} 記念する {one year since the release.}"
+}
+],
+"grammar": {
+"body": "for のあとに「1週間」「2時間」のような期間を置くと、「〜のあいだ」という意味になります。「1週間だけ上映される」は shown for one week です。",
+"ex": [
+{
+"en": "I studied English for two hours.",
+"ja": "私は2時間、英語を勉強しました。"
+},
+{
+"en": "She lived in Osaka for three years.",
+"ja": "彼女は3年間、大阪に住んでいました。"
+}
+],
+"title": "for ＋ 期間「〜のあいだ」"
+},
+"id": "20261106-fallingdown-kingdom-4k",
+"level": 2,
+"lines": [
+{
+"en": "The Fall will be shown again in theaters.",
+"ja": "『落下の王国』が、劇場でもう一度上映されます。",
+"mix": "『落下の王国』が、{theaters} でもう一度上映されます。"
+},
+{
+"en": "This is a digitally remastered version in 4K.",
+"ja": "これは、4Kのデジタルリマスター版です。",
+"mix": "これは、4Kの {digitally remastered} 版です。"
+},
+{
+"en": "It will be shown for one week only.",
+"ja": "1週間限定で上映されます。",
+"mix": "{one week} 限定で上映されます。"
+},
+{
+"en": "The re-release starts on December 4.",
+"ja": "再上映は、12月4日から始まります。",
+"mix": "{re-release} は、12月4日から始まります。"
+},
+{
+"en": "It is to celebrate one year since the release.",
+"ja": "公開から1年になるのを記念しています。",
+"mix": "{release} から1年になるのを記念しています。"
+}
+],
+"post": {
+"account": "eiga_natalie",
+"date": "2026-11-06",
+"likes": 175,
+"name": "映画ナタリー",
+"url": "https://x.com/eiga_natalie/status/2118508725908783455"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"11月6日",
+"12月4日",
+"1月4日"
+],
+"q": "再上映はいつから始まりますか？",
+"why": "4文目に The re-release starts on December 4. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"新しく作った映画",
+"映画のポスター",
+"古い映画の映像をきれいに作り直したもの"
+],
+"q": "remaster の意味は？",
+"why": "remaster は、すでにある作品の映像や音をきれいに作り直すことです。"
+},
+{
+"a": 0,
+"choices": [
+"for",
+"at",
+"in"
+],
+"q": "It will be shown ___ one week only.（1週間のあいだ）",
+"why": "期間を表すときは for を使います。"
+}
+],
+"summary": "『落下の王国』の4Kデジタルリマスター版が、公開1周年を記念して1週間だけ上映されます。映画.comによると、再上映は12月4日から始まります。",
+"talk": {
+"hint": "Yes, I do. I like ___. / No, I don't. I like ___.",
+"ja": "古い映画を映画館で見るのは好きですか？",
+"q": "Do you like to see old movies in theaters?"
+},
+"title": "『落下の王国』4Kリマスター、1週間限定で再上映",
+"words": [
+{
+"ja": "古い映画の映像・音をきれいに作り直す",
+"note": "ポストの「4Kデジタルリマスター」は digitally remastered version in 4K と言えます。",
+"w": "remaster"
+},
+{
+"ja": "お祝いする・記念する",
+"note": "ポストの「公開1周年を記念して」は to celebrate one year です。",
+"w": "celebrate"
+},
+{
+"ja": "映画館・劇場",
+"note": "アメリカ英語のつづり。in theaters で「劇場で」。",
+"w": "theater"
+},
+{
+"ja": "再上映・再公開",
+"note": "映画.comの「再上映」を re-release と表しました。",
+"w": "re-release"
+},
+{
+"ja": "〜だけ",
+"note": "ポストの「1週間限定」は for one week only です。",
+"w": "only"
+}
+]
+},
+{
+"added": "2026-11-06T10:00",
+"addedAt": "2026-11-06T14:43",
+"cat": "movie",
+"gloss": {
+"4k": "4K（高画質）",
+"4k digital": "4Kデジタル",
+"4k remastered versions": "4Kリマスター版",
+"a": "ひとつの",
+"a trailer": "予告編",
+"a trailer is available": "予告編が見られる",
+"a trailer is available to": "予告編は〜するために見られる",
+"and": "〜と",
+"available": "利用できる・見られる",
+"be": "〜される（be releasedで）",
+"digital": "デジタルの",
+"director": "監督",
+"director of hong kong": "香港の監督",
+"director of hong kong noir": "香港ノワールの監督",
+"drug": "麻薬（作品名の一部）",
+"films": "映画（filmの複数形）",
+"first": "最初の",
+"for": "〜のために",
+"from": "〜から",
+"from january 8": "1月8日から",
+"his": "彼の",
+"his films": "彼の映画",
+"his films ptu and drug war": "彼の映画『PTU』と『ドラッグ・ウォー』",
+"his films ptu and drug war will be": "彼の映画『PTU』と『ドラッグ・ウォー』は〜される",
+"hong": "香港（Hong Kong）",
+"hong kong": "香港",
+"in": "〜で・〜の形で",
+"in 4k remastered versions for the first time": "初めて4Kリマスター版で",
+"is": "〜です",
+"january": "1月",
+"january 8": "1月8日",
+"johnnie": "ジョニー（人名）",
+"johnnie to": "ジョニー・トー（人名）",
+"johnnie to is a": "ジョニー・トーは〜です",
+"kong": "香港（Hong Kong）",
+"master": "巨匠",
+"noir": "ノワール（暗い犯罪映画）",
+"of": "〜の",
+"ptu": "PTU（作品名）",
+"released": "公開される（releaseの過去分詞）",
+"remastered": "リマスターされた",
+"the": "その",
+"the 4k digital remastered versions": "4Kデジタルリマスター版",
+"the 4k digital remastered versions will be": "4Kデジタルリマスター版は〜される",
+"time": "回・とき",
+"to": "トー（人名）・〜するための",
+"trailer": "予告編",
+"versions": "版（versionの複数形）",
+"war": "戦争・戦い（作品名の一部）",
+"watch": "見る",
+"will": "〜するだろう（未来）"
+},
+"grad": [
+{
+"q1": "{Johnnie To} 監督は、{Hong Kong} ノワールの巨匠です。",
+"q2": "{Johnnie To is a} 巨匠、{director of Hong Kong} ノワール。",
+"q3": "{Johnnie To is a} 巨匠 {director of Hong Kong noir.}"
+},
+{
+"q1": "{His films} 『PTU』と『ドラッグ・ウォー 毒戦』が、初めて {4K remastered versions} で公開されます。",
+"q2": "{His films PTU and Drug War} が、初めて {4K remastered versions} で公開されます。",
+"q3": "{His films PTU and Drug War will be} 公開 {in 4K remastered versions for the first time.}"
+},
+{
+"q1": "{4K digital} リマスター版は、{January 8} から公開されます。",
+"q2": "{The 4K digital remastered versions} は、{January 8} から公開されます。",
+"q3": "{The 4K digital remastered versions will be} 公開 {from January 8.}"
+},
+{
+"q1": "{A trailer} を見ることができます。",
+"q2": "{A trailer is available}、見ることができます。",
+"q3": "{A trailer is available to} 見る。"
+}
+],
+"grammar": {
+"body": "「初めて」は for the first time と言います。the first time で「初回」、前に for をつけて「初めて〜する」を表します。",
+"ex": [
+{
+"en": "I saw the sea for the first time.",
+"ja": "私は初めて海を見ました。"
+},
+{
+"en": "She tried sushi for the first time.",
+"ja": "彼女は初めて寿司を食べてみました。"
+}
+],
+"title": "for the first time「初めて」"
+},
+"id": "20261106-ptu-drugwar-4k",
+"level": 3,
+"lines": [
+{
+"en": "Johnnie To is a master director of Hong Kong noir.",
+"ja": "ジョニー・トー監督は、香港ノワールの巨匠です。",
+"mix": "ジョニー・トー監督は、{Hong Kong} ノワールの巨匠です。"
+},
+{
+"en": "His films PTU and Drug War will be released in 4K remastered versions for the first time.",
+"ja": "彼の映画『PTU』と『ドラッグ・ウォー 毒戦』が、初めて4Kリマスター版で公開されます。",
+"mix": "彼の {films} 『PTU』と『ドラッグ・ウォー 毒戦』が、初めて4Kリマスター版で公開されます。"
+},
+{
+"en": "The 4K digital remastered versions will be released from January 8.",
+"ja": "4Kデジタルリマスター版は、1月8日から公開されます。",
+"mix": "4Kデジタルリマスター版は、{January 8} から公開されます。"
+},
+{
+"en": "A trailer is available to watch.",
+"ja": "予告編を見ることができます。",
+"mix": "{trailer} を見ることができます。"
+}
+],
+"post": {
+"account": "eiga_natalie",
+"date": "2026-11-06",
+"likes": 480,
+"name": "映画ナタリー",
+"url": "https://x.com/eiga_natalie/status/2118508707625799895"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"1月8日から",
+"11月6日から",
+"2月11日から"
+],
+"q": "4Kデジタルリマスター版はいつから公開される？",
+"why": "3文目に from January 8 とあります。"
+},
+{
+"a": 1,
+"choices": [
+"短くされた",
+"リマスターされた",
+"見えなくなった"
+],
+"q": "remastered の意味は？",
+"why": "remaster は古い映画を新しい技術で整え直すこと。"
+},
+{
+"a": 0,
+"choices": [
+"for",
+"in",
+"on"
+],
+"q": "They will be released ___ the first time.（初めて）",
+"why": "「初めて」は for the first time です。"
+}
+],
+"summary": "香港ノワールの巨匠ジョニー・トー監督の『PTU』と『ドラッグ・ウォー 毒戦』が、初めて4Kリマスター版で公開されます。映画.comの投稿によると、4Kデジタルリマスター版は1月8日から公開です。予告編も出ています。",
+"talk": {
+"hint": "Yes, I do. / No, I don't. I like ___ movies.",
+"ja": "犯罪映画は好きですか？",
+"q": "Do you like crime movies?"
+},
+"title": "ジョニー・トー監督『PTU』『ドラッグ・ウォー』4K版",
+"words": [
+{
+"ja": "巨匠・名人",
+"note": "ポストの「巨匠」は a master director。",
+"w": "master"
+},
+{
+"ja": "ノワール（暗い犯罪映画のジャンル）",
+"note": "ポストの「香港ノワール」は Hong Kong noir。",
+"w": "noir"
+},
+{
+"ja": "リマスターされた",
+"note": "ポストの「リマスター版」は remastered version。",
+"w": "remastered"
+},
+{
+"ja": "公開する・発売する",
+"note": "ポストの「公開」は be released で表します。",
+"w": "release"
+},
+{
+"ja": "予告編",
+"note": "ポストの「予告編あり」は A trailer is available（予告編を見られる）で表せます。",
+"w": "trailer"
+}
+]
+},
+{
+"added": "2026-11-05T21:06",
+"addedAt": "2026-11-06T14:43",
+"cat": "movie",
+"gloss": {
+"100 million yen": "1億円",
+"15 306 copies": "15,306部",
+"600-yen": "6600円の",
+"a": "ひとつの",
+"a hit": "ヒット",
+"a large 6 600-yen book": "6600円の大型本",
+"alone": "それだけで",
+"an": "ひとつの",
+"billion": "10億",
+"book": "本",
+"box": "（box officeで）興行",
+"box office": "興行収入",
+"call": "呼ぶ",
+"copies": "部・冊（copyの複数形）",
+"earned": "稼いだ（earnの過去分詞）",
+"enough": "十分な",
+"estimated": "推定の",
+"even": "〜でさえ",
+"few": "少しの",
+"guide": "ガイド（本）",
+"happening": "起きている",
+"has": "〜した（完了）",
+"hit": "ヒット",
+"huge": "とても大きな",
+"is": "〜です",
+"it": "それ",
+"large": "大きな",
+"million": "100万",
+"more": "より多く",
+"of": "〜の",
+"office": "（box officeで）収入",
+"official": "公式の",
+"one": "1つの",
+"one book": "1冊の本",
+"result": "結果",
+"says": "言っている（sayの三人称）",
+"selling": "売ること",
+"selling even a few thousand copies of a large 6 600-yen book": "6600円の大型本を数千部でも売ること",
+"selling even a few thousand copies of a large 6 600-yen book is": "6600円の大型本を数千部でも売ることは〜だ",
+"sold": "売れた（sellの過去分詞）",
+"something": "何か",
+"something huge": "大変なこと",
+"something huge is happening": "大変なことが起きている",
+"than": "〜より",
+"the": "その",
+"the box office": "その興行収入",
+"the official visual guide has sold": "公式ビジュアルガイドは売れた",
+"the visual guide": "そのビジュアルガイド",
+"the writer": "その投稿者",
+"the writer says the official visual guide has sold": "投稿者は公式ビジュアルガイドが売れたと言う",
+"this": "この",
+"this one book": "この1冊",
+"this one book alone has earned": "この1冊だけで稼いだ",
+"this one book has earned": "この1冊は稼いだ",
+"thousand": "千",
+"to": "〜するのに",
+"to call it a hit": "それをヒットと呼ぶのに",
+"visual": "ビジュアルの",
+"visual guide": "ビジュアルガイド",
+"was": "〜でした",
+"was 3 2 billion": "32億（円）だった",
+"was 3 2 billion yen": "32億円だった",
+"writer": "書いた人・投稿者",
+"yen": "円"
+},
+"grad": [
+{
+"q1": "投稿者は、公式 {the visual guide} が推定 {15,306 copies} 売れたと言っています。",
+"q2": "投稿者は、{the official visual guide has sold} 推定 {15,306 copies}。",
+"q3": "{The writer says the official visual guide has sold} 推定 {15,306 copies.}"
+},
+{
+"q1": "{A large 6,600-yen book} は、数千部でも売れれば十分 {a hit} といえます。",
+"q2": "{Selling even a few thousand copies of a large 6,600-yen book} は十分 {a hit}。",
+"q3": "{Selling even a few thousand copies of a large 6,600-yen book is} 十分 {to call it a hit.}"
+},
+{
+"q1": "{The box office} の結果は32億円でした。",
+"q2": "{The box office} の結果は、{was 3.2 billion} 円。",
+"q3": "{The box office} 結果 {was 3.2 billion yen.}"
+},
+{
+"q1": "{This one book} だけで、売上は1億円を超えています。",
+"q2": "{This one book has earned} 、{100 million yen} を超えます。",
+"q3": "{This one book alone has earned} 超える {100 million yen.}"
+},
+{
+"q1": "投稿者は、{something huge} が起きていると言っています。",
+"q2": "投稿者は {something huge is happening} と言っています。",
+"q3": "{The writer} 言う {something huge is happening.}"
+}
+],
+"grammar": {
+"body": "「〜すること」は動詞の ing 形で表せ、文の主語にできます。Selling ... is enough のように、あとの動詞は単数扱いです。",
+"ex": [
+{
+"en": "Reading comics is my hobby.",
+"ja": "マンガを読むことは私の趣味です。"
+},
+{
+"en": "Watching movies makes me happy.",
+"ja": "映画を見ることは私を幸せにします。"
+}
+],
+"title": "動名詞（～ing）が主語になる"
+},
+"id": "20261106-starwars-visualguide",
+"level": 3,
+"lines": [
+{
+"en": "The writer says the official visual guide has sold an estimated 15,306 copies.",
+"ja": "投稿者は、公式ビジュアルガイドが推定15306部売れたと言っています。",
+"mix": "投稿者は、公式 {visual guide} が推定15306部売れたと言っています。"
+},
+{
+"en": "Selling even a few thousand copies of a large 6,600-yen book is enough to call it a hit.",
+"ja": "6600円の大型本は、数千部でも売れれば十分ヒットといえます。",
+"mix": "6600円の大型本は、数千部でも売れれば十分 {a hit} といえます。"
+},
+{
+"en": "The box office result was 3.2 billion yen.",
+"ja": "興行収入の結果は32億円でした。",
+"mix": "{box office} の結果は32億円でした。"
+},
+{
+"en": "This one book alone has earned more than 100 million yen.",
+"ja": "この1冊だけで、売上は1億円を超えています。",
+"mix": "この {one book} だけで、売上は1億円を超えています。"
+},
+{
+"en": "The writer says something huge is happening.",
+"ja": "投稿者は、大変なことが起きていると言っています。",
+"mix": "投稿者は、{huge} なことが起きていると言っています。"
+}
+],
+"post": {
+"account": "yusuke_soundtrk",
+"date": "2026-11-05",
+"likes": 2257,
+"name": "∠Yusuke",
+"url": "https://x.com/yusuke_soundtrk/status/2118314115315945760"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"1,530部",
+"15,306部",
+"153,060部"
+],
+"q": "投稿者が書いている、この本の推定売上部数は？",
+"why": "1文目に an estimated 15,306 copies とあります。"
+},
+{
+"a": 0,
+"choices": [
+"稼ぐ・売り上げる",
+"失う",
+"返す"
+],
+"q": "earn の意味は？",
+"why": "has earned more than 100 million yen で「1億円以上を稼いだ」。"
+},
+{
+"a": 1,
+"choices": [
+"Sell",
+"Selling",
+"Sold"
+],
+"q": "___ a few thousand copies is a hit.（数千部売ること）",
+"why": "「〜すること」が主語のときは ing 形（動名詞）を使います。"
+}
+],
+"summary": "Xの投稿者が、スター・ウォーズの公式ビジュアルガイドの推定売上が15306部にのぼると紹介しています。6600円の大型本としては異例で、興行収入32億円なのにこの1冊だけで売上が1億円を超えていると、驚きを書いています。",
+"talk": {
+"hint": "Yes, I do. / No, I don't. I like ___.",
+"ja": "映画の大きな本を買いますか？",
+"q": "Do you buy big books about movies?"
+},
+"title": "スター・ウォーズ公式ビジュアルガイドが1億円超え",
+"words": [
+{
+"ja": "推定の・見積もりの",
+"note": "ポストの「推定売上部数」は an estimated 15,306 copies。",
+"w": "estimated"
+},
+{
+"ja": "（本の）部・冊",
+"note": "ポストの「〜部」は copies。本1冊が a copy です。",
+"w": "copy"
+},
+{
+"ja": "ヒット・当たり",
+"note": "ポストの「ヒット」は a hit。",
+"w": "hit"
+},
+{
+"ja": "興行収入",
+"note": "ポストの「興行収入」は the box office。",
+"w": "box office"
+},
+{
+"ja": "（お金を）稼ぐ・売り上げる",
+"note": "ポストの「売上が1億円を超えている」を has earned more than 100 million yen で表しました。",
+"w": "earn"
+}
+]
+},
+{
 "added": "2026-11-05T20:42",
 "addedAt": "2026-11-06T08:00",
 "cat": "manga",
@@ -282,6 +1121,232 @@ window.LESSONS = [
 "ja": "とろける・デレデレになる",
 "note": "ポストの「デレデレ」を melts（とろける）で表しました。",
 "w": "melt"
+}
+]
+},
+{
+"added": "2026-11-05T19:00",
+"addedAt": "2026-11-06T14:43",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"about": "〜について",
+"anime": "アニメ",
+"asks": "お願いする・呼びかける",
+"attention": "注目",
+"be": "〜される（be shownで）",
+"can": "〜できる",
+"care": "こだわり・気配り",
+"charm": "魅力",
+"culture": "カルチャー（アカウント名の一部）",
+"direction": "演出",
+"enjoyed": "楽しまれる（enjoyの過去分詞）",
+"even": "〜さえ・〜まで",
+"even the panel layout": "コマ割りまで",
+"feels": "感じる（feelの三単現）",
+"for": "〜のために・〜のあいだ",
+"full": "いっぱいの",
+"in": "〜で・〜の中で",
+"in the anime too": "アニメでも",
+"is": "〜です",
+"it": "それは",
+"it asks people": "それは人々に呼びかける",
+"it asks people to": "それは人々に〜するよう呼びかける",
+"it notices the care in a video": "それは映像のこだわりに注目する",
+"it notices the care in a video that": "それは〜という映像のこだわりに注目する",
+"it says the charm of the manga": "それは漫画の魅力を〜と言う",
+"it says the charm of the manga can be": "それは漫画の魅力は〜できると言う",
+"knight": "騎士",
+"layout": "配置・割り付け（panel layoutでコマ割り）",
+"magic": "魔法",
+"manga": "漫画",
+"notices": "気づく・注目する",
+"of": "〜の",
+"on": "〜に（日付）",
+"original": "原作・もとの作品",
+"original work": "原作",
+"oshi": "推し（好きな人・もの）",
+"oshi culture": "推しかるちゃー（アカウント名）",
+"oshi culture talks about the direction of": "推しかるちゃーは〜の演出について話す",
+"oshi culture talks about the direction of the magic knight rayearth": "推しかるちゃーは『魔法騎士レイアース』の演出について話す",
+"panel": "（漫画の）コマ",
+"panel layout": "コマ割り",
+"pay": "払う（pay attention toで注目する）",
+"people": "人々",
+"rayearth": "レイアース（作品名の一部）",
+"reproduces": "再現する（reproduceの三単現）",
+"respect": "敬意・リスペクト",
+"rest": "残り・続き",
+"says": "言う（sayの三単現）",
+"talks": "話す（talkの三単現）",
+"that": "その・あの",
+"the": "その",
+"the anime": "そのアニメ",
+"the direction is full of respect for the original work": "演出は原作へのリスペクトでいっぱいだ",
+"the rest": "続き",
+"the rest on tver": "続きはTVerで",
+"this": "これ・この",
+"to": "〜する（不定詞）",
+"to this direction": "この演出に",
+"too": "〜も",
+"tver": "TVer（動画配信サービス）",
+"video": "映像・動画",
+"watch": "見る",
+"work": "作品",
+"you": "あなたは・あなたが",
+"you can": "あなたは〜できる"
+},
+"grad": [
+{
+"q1": "{Oshi Culture} は、アニメ『魔法騎士レイアース』の {direction} について話しています。",
+"q2": "{Oshi Culture talks about the direction of} アニメ『魔法騎士レイアース』。",
+"q3": "{Oshi Culture talks about the direction of the Magic Knight Rayearth} アニメ。"
+},
+{
+"q1": "{It} は、漫画の {charm} が {the anime} でも楽しめると伝えています。",
+"q2": "{It says the charm of the manga} は {the anime} でも楽しめる。",
+"q3": "{It says the charm of the manga can be} 楽しまれる {in the anime too.}"
+},
+{
+"q1": "{panel layout} まで再現する、{video} の {care} に注目しています。",
+"q2": "{It notices the care in a video} 、{even the panel layout} まで再現する。",
+"q3": "{It notices the care in a video that} 再現する {even the panel layout.}"
+},
+{
+"q1": "{original work} への {respect} が詰まった {direction} だと感じています。",
+"q2": "{The direction is full of respect for the original work} と感じています。",
+"q3": "{It} 感じる {the direction is full of respect for the original work.}"
+},
+{
+"q1": "{People} に、この {direction} に注目してほしいと呼びかけています。",
+"q2": "{It asks people} 、この {direction} に注目してほしいと。",
+"q3": "{It asks people to} 注目する {to this direction.}"
+},
+{
+"q1": "{The rest} は、{TVer} で見られます。",
+"q2": "{You can} {the rest} は {TVer} で見られます。",
+"q3": "{You can} 見る {the rest on TVer.}"
+}
+],
+"grammar": {
+"body": "be full of 〜 は「〜がたくさん詰まっている」という意味です。ポストの「リスペクトが詰まった演出」は a direction full of respect と言えます。",
+"ex": [
+{
+"en": "The room is full of people.",
+"ja": "部屋は人でいっぱいです。"
+},
+{
+"en": "Her speech was full of hope.",
+"ja": "彼女のスピーチは希望にあふれていました。"
+}
+],
+"title": "be full of 〜「〜でいっぱい」"
+},
+"id": "20261106-rayearth-panel-direction",
+"level": 3,
+"lines": [
+{
+"en": "Oshi Culture talks about the direction of the Magic Knight Rayearth anime.",
+"ja": "推しかるちゃーは、アニメ『魔法騎士レイアース』の演出について話しています。",
+"mix": "推しかるちゃーは、アニメ『魔法騎士レイアース』の {direction} について話しています。"
+},
+{
+"en": "It says the charm of the manga can be enjoyed in the anime too.",
+"ja": "漫画の魅力は、アニメでも楽しめると伝えています。",
+"mix": "漫画の {charm} は、アニメでも楽しめると伝えています。"
+},
+{
+"en": "It notices the care in a video that reproduces even the panel layout.",
+"ja": "コマ割りまで再現する、映像のこだわりに注目しています。",
+"mix": "{panel layout} まで再現する、映像のこだわりに注目しています。"
+},
+{
+"en": "It feels the direction is full of respect for the original work.",
+"ja": "原作へのリスペクトが詰まった演出だと感じています。",
+"mix": "原作への {respect} が詰まった {direction} だと感じています。"
+},
+{
+"en": "It asks people to pay attention to this direction.",
+"ja": "見る人に、この演出に注目してほしいと呼びかけています。",
+"mix": "見る人に、この {direction} に注目してほしいと呼びかけています。"
+},
+{
+"en": "You can watch the rest on TVer.",
+"ja": "続きは、TVerで見られます。",
+"mix": "{the rest} は、TVerで見られます。"
+}
+],
+"post": {
+"account": "oshi_culture",
+"date": "2026-11-05",
+"likes": 1132,
+"name": "推しかるちゃー",
+"url": "https://x.com/oshi_culture/status/2118282177230377371"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"新しい主題歌",
+"コマ割りまで再現する映像のこだわり",
+"声優の演技"
+],
+"q": "ポストが注目している点は？",
+"why": "3文目に、コマ割り（panel layout）まで再現するこだわりに注目しているとあります。"
+},
+{
+"a": 0,
+"choices": [
+"コマ",
+"ふきだし",
+"表紙"
+],
+"q": "panel の意味（マンガの用語）は？",
+"why": "panel layout は「コマ割り」です。"
+},
+{
+"a": 2,
+"choices": [
+"fill of",
+"full with",
+"full of"
+],
+"q": "The room is ___ people.",
+"why": "be full of 〜 で「〜でいっぱい」。"
+}
+],
+"summary": "推しかるちゃーは、アニメ『魔法騎士レイアース』の演出に注目しています。漫画の魅力をアニメでも楽しめるように、コマ割りまで再現する映像のこだわりがあり、原作へのリスペクトが詰まっていると感じているようです。",
+"talk": {
+"hint": "I enjoy ___ more because ___.",
+"ja": "マンガを読むのとアニメを見るのでは、どちらが楽しいですか？",
+"q": "Which do you enjoy more, reading a manga or watching its anime?"
+},
+"title": "『魔法騎士レイアース』アニメ、コマ割りまで再現する演出",
+"words": [
+{
+"ja": "演出・監督のやり方",
+"note": "ポストの「演出」は direction。「方向」の意味もあります。",
+"w": "direction"
+},
+{
+"ja": "再現する",
+"note": "ポストの「コマ割りまで再現する」は reproduces even the panel layout。",
+"w": "reproduce"
+},
+{
+"ja": "（マンガの）コマ",
+"note": "panel layout で「コマ割り」。",
+"w": "panel"
+},
+{
+"ja": "尊敬・敬意（リスペクト）",
+"note": "ポストの「原作へのリスペクト」は respect for the original work。",
+"w": "respect"
+},
+{
+"ja": "〜に注目する",
+"note": "ポストの「注目！」は pay attention to 〜 で言えます。",
+"w": "pay attention to"
 }
 ]
 },
@@ -1100,6 +2165,260 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-05T17:05",
+"addedAt": "2026-11-06T14:43",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"action": "アクション・実写（live action）",
+"actors": "俳優（actorの複数形）",
+"an": "ひとつの",
+"an average rating of": "平均視聴率",
+"an average rating of 18 9": "平均視聴率18.9%",
+"and": "〜と・そして",
+"anime": "アニメ",
+"anime and live action": "アニメと実写",
+"as": "〜として",
+"at": "〜で（時）",
+"attention": "注目",
+"average": "平均の",
+"average rating": "平均視聴率",
+"big": "大きな",
+"both": "両方の",
+"broadcasting": "放送",
+"by": "〜によって・〜して",
+"cantabile": "カンタービレ（作品名の一部）",
+"close": "近い",
+"delinquents": "不良・ヤンキー（delinquentの複数形）",
+"everyone": "みんな・だれもが",
+"for": "〜のために・〜のあいだ",
+"fuji": "フジ（テレビ局名）",
+"fuji tv": "フジテレビ",
+"gintama": "銀魂（作品名）",
+"got": "得た（getの過去形）",
+"great": "すばらしい・豪華な",
+"had": "持っていた・記録した（haveの過去形）",
+"hearts": "心（heartの複数形）",
+"highest": "いちばん高い（highの最上級）",
+"hit": "ヒット作・大ヒット",
+"idea": "アイデア・発想",
+"idea of delinquents and time travel": "ヤンキーとタイムリープという発想",
+"it": "それは",
+"its": "その〜の",
+"late-night": "深夜の",
+"late-night rating": "深夜枠の視聴率",
+"liked": "好きだった・気に入った（likeの過去形）",
+"limits": "限界・ギリギリ（limitの複数形）",
+"live": "実写の（live action）",
+"live action": "実写",
+"many": "たくさんの",
+"new": "新しい",
+"nodame": "のだめ（作品名の一部）",
+"nodame cantabile anime": "『のだめカンタービレ』のアニメ",
+"of": "〜の",
+"on": "〜に（日付）",
+"original": "原作・もとの作品",
+"pushing": "押し進める（pushの-ing形）",
+"rating": "視聴率",
+"revengers": "リベンジャーズ（復讐者たち）",
+"so": "だから",
+"successful": "成功した",
+"that": "その・あの",
+"the": "その",
+"the gintama anime": "『銀魂』のアニメ",
+"the gintama anime won many hearts": "『銀魂』のアニメは多くの心をつかんだ",
+"the gintama anime won many hearts by": "『銀魂』のアニメは〜して多くの心をつかんだ",
+"the limits of broadcasting": "放送のギリギリのライン",
+"the live action": "実写",
+"the live action was a big hit": "実写は大ヒットした",
+"the live action was a big hit for its waste of": "実写は〜の無駄遣いで大ヒットした",
+"the live action was close to the original": "実写は原作に近かった",
+"the live action was close to the original so everyone": "実写は原作に近いので、みんな",
+"the nodame cantabile anime had": "『のだめカンタービレ』のアニメは持っていた",
+"the nodame cantabile anime had the highest late-night rating on fuji tv": "『のだめカンタービレ』のアニメはフジテレビでいちばん高い深夜の視聴率を記録した",
+"the tokyo revengers anime got attention": "『東京卍リベンジャーズ』のアニメは注目を集めた",
+"the tokyo revengers anime got attention for its": "『東京卍リベンジャーズ』のアニメは〜で注目を集めた",
+"three": "3つの",
+"three works were successful": "3つの作品が成功した",
+"three works were successful as": "3つの作品が〜として成功した",
+"time": "時間",
+"time travel": "タイムリープ・時間旅行",
+"to": "〜する（不定詞）",
+"tokyo": "東京",
+"tokyo revengers anime": "『東京卍リベンジャーズ』のアニメ",
+"travel": "旅・移動（time travelでタイムリープ）",
+"tv": "テレビ",
+"was": "〜でした",
+"waste": "無駄遣い",
+"were": "〜でした（beの過去形）",
+"won": "得た（winの過去形）",
+"works": "作品（workの複数形）"
+},
+"grad": [
+{
+"q1": "3つの {works} が、{anime} でも {live action} でも成功しました。",
+"q2": "{Three works were successful} 、{anime} でも {live action} でも。",
+"q3": "{Three works were successful as} 両方 {anime and live action.}"
+},
+{
+"q1": "{The Gintama anime} は、放送ギリギリを攻めて多くの {hearts} を引き寄せました。",
+"q2": "{The Gintama anime won many hearts} 、{the limits of broadcasting} を攻めて。",
+"q3": "{The Gintama anime won many hearts by} 攻める {the limits of broadcasting.}"
+},
+{
+"q1": "{The live action} は、豪華な俳優の {waste} が大ウケしました。",
+"q2": "{The live action was a big hit} 、豪華な俳優の {waste} で。",
+"q3": "{The live action was a big hit for its waste of} 豪華 {actors.}"
+},
+{
+"q1": "{Tokyo Revengers anime} は、ヤンキーと {time travel} という新しさが話題になりました。",
+"q2": "{The Tokyo Revengers anime got attention} 、{delinquents} と {time travel} という新しさで。",
+"q3": "{The Tokyo Revengers anime got attention for its} 新しい {idea of delinquents and time travel.}"
+},
+{
+"q1": "{live action} は {original} の再現度が高く、{everyone} に受け入れられました。",
+"q2": "{The live action was close to the original} ので、{everyone} が気に入りました。",
+"q3": "{The live action was close to the original, so everyone} 気に入った。"
+},
+{
+"q1": "{Nodame Cantabile anime} は、当時のフジテレビ系深夜枠で最高の {rating} を記録しました。",
+"q2": "{The Nodame Cantabile anime had} 最高の {late-night rating} 、{Fuji TV} で当時。",
+"q3": "{The Nodame Cantabile anime had the highest late-night rating on Fuji TV} 当時。"
+},
+{
+"q1": "実写は、{average rating} 18.9%を記録しました。",
+"q2": "{The live action} は {an average rating of} 18.9% を記録。",
+"q3": "{The live action} 記録した {an average rating of 18.9%.}"
+}
+],
+"grammar": {
+"body": "both A and B は「AもBも両方」という意味です。A と B には同じ種類のことばを置きます。ポストの「アニメも実写も」は both anime and live action です。",
+"ex": [
+{
+"en": "I like both manga and anime.",
+"ja": "私はマンガもアニメも好きです。"
+},
+{
+"en": "She can play both the piano and the guitar.",
+"ja": "彼女はピアノもギターも弾けます。"
+}
+],
+"title": "both A and B「AもBも」"
+},
+"id": "20261106-anime-live-compare",
+"level": 2,
+"lines": [
+{
+"en": "Three works were successful as both anime and live action.",
+"ja": "3つの作品が、アニメでも実写でも成功しました。",
+"mix": "3つの作品が、{anime} でも {live action} でも成功しました。"
+},
+{
+"en": "The Gintama anime won many hearts by pushing the limits of broadcasting.",
+"ja": "『銀魂』のアニメは、放送ギリギリを攻める内容で多くの心を引き寄せました。",
+"mix": "『銀魂』の {anime} は、放送ギリギリを攻めて多くの {hearts} を引き寄せました。"
+},
+{
+"en": "The live action was a big hit for its waste of great actors.",
+"ja": "実写は、豪華な俳優の無駄遣いが大ウケしました。",
+"mix": "実写は、豪華な俳優の {waste} が大ウケしました。"
+},
+{
+"en": "The Tokyo Revengers anime got attention for its new idea of delinquents and time travel.",
+"ja": "『東京卍リベンジャーズ』のアニメは、ヤンキーとタイムリープという新しさが話題になりました。",
+"mix": "『東京卍リベンジャーズ』の {anime} は、ヤンキーと {time travel} という新しさが話題になりました。"
+},
+{
+"en": "The live action was close to the original, so everyone liked it.",
+"ja": "実写は原作の再現度が高く、だれにでも受け入れられました。",
+"mix": "実写は {original} の再現度が高く、{everyone} に受け入れられました。"
+},
+{
+"en": "The Nodame Cantabile anime had the highest late-night rating on Fuji TV at that time.",
+"ja": "『のだめカンタービレ』のアニメは、当時のフジテレビ系深夜枠で最高視聴率を記録しました。",
+"mix": "『のだめカンタービレ』の {anime} は、当時のフジテレビ系深夜枠で最高の {rating} を記録しました。"
+},
+{
+"en": "The live action had an average rating of 18.9%.",
+"ja": "実写は、平均視聴率18.9%を記録しました。",
+"mix": "実写は、{average} 視聴率18.9%を記録しました。"
+}
+],
+"post": {
+"account": "Sakenmilove",
+"date": "2026-11-05",
+"likes": 20328,
+"name": "さけのみ🍺",
+"url": "https://x.com/Sakenmilove/status/2118253231730012405"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"銀魂",
+"東京卍リベンジャーズ",
+"のだめカンタービレ"
+],
+"q": "実写の平均視聴率が18.9%だった作品は？",
+"why": "最後の文に The live action had an average rating of 18.9%. とあり、これは『のだめカンタービレ』の実写です。"
+},
+{
+"a": 0,
+"choices": [
+"視聴率",
+"予告編",
+"声優"
+],
+"q": "rating の意味は？（ここでは）",
+"why": "TV番組の rating は「視聴率」です。"
+},
+{
+"a": 1,
+"choices": [
+"or",
+"and",
+"but"
+],
+"q": "She likes both cats ___ dogs.",
+"why": "both A and B で「AもBも」。"
+}
+],
+"summary": "アニメと実写の両方で成功した作品として、『銀魂』『東京卍リベンジャーズ』『のだめカンタービレ』を紹介する画像つきのポストです。それぞれ、アニメと実写で何が評価されたかが書かれています。",
+"talk": {
+"hint": "I like ___ better because ___.",
+"ja": "アニメと実写では、どちらが好きですか？",
+"q": "Which do you like better, the anime or the live action?"
+},
+"title": "アニメも実写も成功した3作品",
+"words": [
+{
+"ja": "実写（マンガやアニメを人が演じた映像）",
+"note": "ポストの「実写化」は live action と言えます。",
+"w": "live action"
+},
+{
+"ja": "大ヒット・人気作",
+"note": "a big hit で「大ウケした・大ヒットした」。",
+"w": "hit"
+},
+{
+"ja": "不良・ヤンキー",
+"note": "ポストの「ヤンキー」は delinquent（non-violent なら bad boy）。ここでは学校の不良を指します。",
+"w": "delinquent"
+},
+{
+"ja": "視聴率",
+"note": "TV番組を見た人の割合。ポストの「視聴率」です。",
+"w": "rating"
+},
+{
+"ja": "平均の",
+"note": "ポストの「平均視聴率」は average rating です。",
+"w": "average"
+}
+]
+},
+{
 "added": "2026-11-05T16:40",
 "addedAt": "2026-11-06T08:00",
 "cat": "art",
@@ -1340,6 +2659,186 @@ window.LESSONS = [
 "ja": "後期・後半",
 "note": "ポストの「後期展」は the second half of the show。",
 "w": "second half"
+}
+]
+},
+{
+"added": "2026-11-05T16:32",
+"addedAt": "2026-11-06T14:43",
+"cat": "anime",
+"gloss": {
+"are": "〜です（beの複数形）",
+"big": "大きな",
+"big fans": "大ファン・強火のファン",
+"bio": "プロフィール欄",
+"born": "産まれた（bearの過去分詞）",
+"daughter": "娘",
+"fan": "ファン",
+"fans": "ファン（fanの複数形）",
+"heart": "心",
+"in": "〜で・〜の中で",
+"in the bio": "プロフィール欄に",
+"inori": "いのり（キャラクター名）",
+"is": "〜です",
+"korea": "韓国",
+"korean": "韓国の",
+"korean fans of medalist": "韓国の『メダリスト』ファン",
+"korean fans of medalist are big fans of inori": "韓国の『メダリスト』ファンはいのりの大ファンだ",
+"likes": "好き（likeの三単現）",
+"medalist": "メダリスト（作品名）",
+"most": "ほとんどの・たいていの",
+"my": "私の",
+"of": "〜の",
+"one": "1つの",
+"one fan": "あるファン",
+"one fan wrote": "あるファンが書いた",
+"one fan wrote 'she is my daughter born in my": "あるファンが「彼女は私の心で産んだ娘」と書いた",
+"person": "人",
+"popular": "人気のある",
+"popular in korea": "韓国で人気がある",
+"really": "本当に・とても",
+"she": "彼女は",
+"she is my daughter": "彼女は私の娘だ",
+"the": "その",
+"the person": "その人（ポストの人）",
+"the person thinks": "その人は〜と思う",
+"the person thinks medalist is": "その人は『メダリスト』は〜だと思う",
+"thinks": "思う（thinkの三単現）",
+"this": "これ・この",
+"wrote": "書いた（writeの過去形）"
+},
+"grad": [
+{
+"q1": "{Korean} の『メダリスト』ファンは、たいてい、{Inori} の {big fans} です。",
+"q2": "{Korean fans of Medalist} は、たいてい、{Inori} の {big fans} です。",
+"q3": "たいてい {Korean fans of Medalist are big fans of Inori.}"
+},
+{
+"q1": "{The person} は、そこが好きだと書いています。",
+"q2": "{The person} は {this} が好きと書いています。",
+"q3": "{The person} 好き {this.}"
+},
+{
+"q1": "{One fan} が {bio} に「心で産んだ {daughter} です」と書いていました。",
+"q2": "{One fan wrote} 、{in the bio} 「{She is my daughter} 心で産んだ」と。",
+"q3": "{One fan wrote, 'She is my daughter born in my} 心{,' in the bio.}"
+},
+{
+"q1": "{The person} は、韓国でとても {popular} だと感じています。",
+"q2": "{The person thinks} 『メダリスト』は、{Korea} でとても {popular}。",
+"q3": "{The person thinks Medalist is} とても {popular in Korea.}"
+}
+],
+"grammar": {
+"body": "think のあとに文を続けると「〜と思う」になります。that は省いてもかまいません。主語が he / she / the person のときは thinks と s がつきます。",
+"ex": [
+{
+"en": "I think this movie is funny.",
+"ja": "私はこの映画はおもしろいと思います。"
+},
+{
+"en": "She thinks he is kind.",
+"ja": "彼女は彼が親切だと思っています。"
+}
+],
+"title": "think (that) ＋ 文「〜と思う」"
+},
+"id": "20261106-medalist-korean-fans",
+"level": 2,
+"lines": [
+{
+"en": "Most Korean fans of Medalist are big fans of Inori.",
+"ja": "韓国の『メダリスト』ファンは、たいてい、いのりちゃんの強火ファンです。",
+"mix": "韓国の『メダリスト』ファンは、たいてい、いのりちゃんの {big fans} です。"
+},
+{
+"en": "The person likes this.",
+"ja": "ポストの人は、そこが好きだと書いています。",
+"mix": "ポストの {person} は、そこが好きだと書いています。"
+},
+{
+"en": "One fan wrote, 'She is my daughter born in my heart,' in the bio.",
+"ja": "プロフィールに「心で産んだ娘です」と書いている人もいました。",
+"mix": "{bio} に「心で産んだ {daughter} です」と書いている人もいました。"
+},
+{
+"en": "The person thinks Medalist is really popular in Korea.",
+"ja": "ポストの人は、韓国でとても人気だと感じています。",
+"mix": "ポストの人は、韓国でとても {popular} だと感じています。"
+}
+],
+"post": {
+"account": "inorizle",
+"date": "2026-11-05",
+"likes": 1635,
+"name": "しらたぎ",
+"url": "https://x.com/inorizle/status/2118244950936854742"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"ツカサ",
+"いのり",
+"ヒカル"
+],
+"q": "ポストの人は、韓国のファンはたいてい何のファンだと書いていますか？",
+"why": "1文目に big fans of Inori とあります。"
+},
+{
+"a": 2,
+"choices": [
+"顔写真",
+"投稿",
+"プロフィール欄"
+],
+"q": "bio の意味は？",
+"why": "bio は SNS の自己紹介の欄です。"
+},
+{
+"a": 0,
+"choices": [
+"think",
+"thinks",
+"thinking"
+],
+"q": "I ___ this song is great.",
+"why": "主語が I のときは think。"
+}
+],
+"series": "medalist",
+"summary": "あるポストの人は、韓国の『メダリスト』ファンは、たいていいのりちゃんの強火ファンだと書いています。プロフィールに「心で産んだ娘」と書いている人もいて、韓国での人気がすごいと感じているそうです。",
+"talk": {
+"hint": "I like ___ because ___.",
+"ja": "『メダリスト』で好きなキャラクターはだれですか？",
+"q": "Which character in Medalist do you like?"
+},
+"title": "韓国の『メダリスト』ファンは、いのりちゃんの強火ファンが多い",
+"words": [
+{
+"ja": "ファン・応援する人",
+"note": "ポストの「ファン」。big fan で「大ファン」（ポストの「強火」）。",
+"w": "fan"
+},
+{
+"ja": "プロフィール欄（biography の短い形）",
+"note": "ポストの「bio」。SNSの自己紹介のこと。",
+"w": "bio"
+},
+{
+"ja": "人気がある",
+"note": "ポストの「人気すごい」は very popular で言えます。",
+"w": "popular"
+},
+{
+"ja": "ほとんどの・たいていの",
+"note": "ポストの「大体」は most で表しました。",
+"w": "most"
+},
+{
+"ja": "娘",
+"note": "ポストの「娘」。my daughter で「私の娘」。",
+"w": "daughter"
 }
 ]
 },
@@ -1719,6 +3218,190 @@ window.LESSONS = [
 "ja": "いつもの",
 "note": "ポストの「いつものトーク」は your usual chats。",
 "w": "usual"
+}
+]
+},
+{
+"added": "2026-11-05T15:00",
+"addedAt": "2026-11-06T14:43",
+"cat": "art",
+"gloss": {
+"a": "ひとつの",
+"a large exhibition": "大規模な展覧会",
+"a large exhibition by mika ninagawa with eim": "蜷川実花 with EiM の大規模な展覧会",
+"a large exhibition by mika ninagawa with eim will be": "蜷川実花 with EiM の大規模な展覧会が〜される",
+"about": "約",
+"at": "〜で（場所）",
+"at toranomon hills in tokyo": "東京の虎ノ門ヒルズで",
+"be": "〜される（be heldで）",
+"big": "大きな",
+"by": "〜による",
+"eim": "EiM（名前）",
+"exhibition": "展覧会",
+"first": "最初の・初めての",
+"held": "開かれる（holdの過去分詞）",
+"hills": "ヒルズ（地名）",
+"in": "〜で・〜の中で",
+"is": "〜です",
+"it": "それは",
+"it is the first": "それは初めての〜だ",
+"it will be": "それは〜される",
+"large": "大きな・大規模な",
+"large exhibition": "大規模な展覧会",
+"mika": "実花（人名）",
+"new": "新しい",
+"new works": "新作",
+"new works there": "そこで新作を",
+"ninagawa": "蜷川（人名）",
+"one": "もの（展覧会のこと）",
+"one in about three years": "約3年ぶりのもの",
+"show": "見せる・披露する",
+"the": "その",
+"there": "そこで・会場で",
+"they": "（主催者・会場）が",
+"they will": "〜が〜する",
+"three": "3つの",
+"three years": "3年",
+"tokyo": "東京",
+"toranomon": "虎ノ門（地名）",
+"toranomon hills": "虎ノ門ヒルズ",
+"toranomon hills in tokyo": "東京の虎ノ門ヒルズ",
+"will": "〜するだろう（未来）",
+"with": "〜と（共同の）",
+"works": "作品（workの複数形）",
+"years": "年（yearの複数形）"
+},
+"grad": [
+{
+"q1": "「蜷川実花 with EiM」の {a large exhibition} が開かれます。",
+"q2": "{A large exhibition by Mika Ninagawa with EiM} が開かれます。",
+"q3": "{A large exhibition by Mika Ninagawa with EiM will be} 開かれる。"
+},
+{
+"q1": "{Tokyo} の {Toranomon Hills} で開かれます。",
+"q2": "{It will be} 開かれる、{Toranomon Hills in Tokyo} で。",
+"q3": "{It will be} 開かれる {at Toranomon Hills in Tokyo.}"
+},
+{
+"q1": "{It} は約 {three years} ぶりの大規模な展覧会です。",
+"q2": "{It is the first} 大規模な {one}、約 {three years} ぶり。",
+"q3": "{It is the first} 大規模な {one in about three years.}"
+},
+{
+"q1": "{They} は会場で {new works} を披露します。",
+"q2": "{They will} 披露する、{new works} を会場で。",
+"q3": "{They will} 披露する {new works there.}"
+}
+],
+"grammar": {
+"body": "「久しぶり」は the first ＋ 名詞 ＋ in ＋ 期間 で表します。「約3年ぶり」は the first ... in about three years です。",
+"ex": [
+{
+"en": "This is the first trip in two years.",
+"ja": "これは2年ぶりの旅行です。"
+},
+{
+"en": "It is the first snow in ten years.",
+"ja": "10年ぶりの雪です。"
+}
+],
+"title": "the first ～ in ... years「〜ぶりの」"
+},
+"id": "20261106-art-ninagawa-eim",
+"level": 2,
+"lines": [
+{
+"en": "A large exhibition by Mika Ninagawa with EiM will be held.",
+"ja": "「蜷川実花 with EiM」の大規模な展覧会が開かれます。",
+"mix": "「蜷川実花 with EiM」の {large exhibition} が開かれます。"
+},
+{
+"en": "It will be held at Toranomon Hills in Tokyo.",
+"ja": "東京の虎ノ門ヒルズで開かれます。",
+"mix": "東京の {Toranomon Hills} で開かれます。"
+},
+{
+"en": "It is the first big one in about three years.",
+"ja": "約3年ぶりの大規模な展覧会です。",
+"mix": "約 {three years} ぶりの大規模な展覧会です。"
+},
+{
+"en": "They will show new works there.",
+"ja": "会場では、新作が披露されます。",
+"mix": "会場では、{new works} が披露されます。"
+}
+],
+"post": {
+"account": "fashionpressnet",
+"date": "2026-11-05",
+"likes": 2746,
+"name": "Fashion Press",
+"url": "https://x.com/fashionpressnet/status/2118221799184113920"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"Toranomon Hills",
+"Shibuya Station",
+"Osaka Castle"
+],
+"q": "展覧会はどこで開かれますか？",
+"why": "2文目に at Toranomon Hills in Tokyo とあります。"
+},
+{
+"a": 0,
+"choices": [
+"展覧会",
+"映画",
+"本"
+],
+"q": "exhibition の意味は？",
+"why": "exhibition は絵や作品を見せる「展覧会」です。"
+},
+{
+"a": 0,
+"choices": [
+"in",
+"at",
+"to"
+],
+"q": "It is the first big one ___ about three years.（約3年ぶり）",
+"why": "「〜ぶり」は in ＋ 期間 で表します。"
+}
+],
+"summary": "「蜷川実花 with EiM」の大規模な展覧会が、約3年ぶりに東京の虎ノ門ヒルズで開かれます。会場では新作が披露されます。",
+"talk": {
+"hint": "Yes, I do. I like ___.",
+"ja": "展覧会に行くのは好きですか？",
+"q": "Do you like to go to art exhibitions?"
+},
+"title": "蜷川実花 with EiM、虎ノ門ヒルズで展覧会",
+"words": [
+{
+"ja": "展覧会",
+"note": "ポストの「展覧会」は exhibition。",
+"w": "exhibition"
+},
+{
+"ja": "大きな・大規模な",
+"note": "ポストの「大規模な」を large で表しました。",
+"w": "large"
+},
+{
+"ja": "（会を）開く",
+"note": "展覧会が「開かれる」は be held。held は hold の過去分詞です。",
+"w": "hold"
+},
+{
+"ja": "作品",
+"note": "ポストの「新作」は new works。作品の意味では work は数えられます。",
+"w": "work"
+},
+{
+"ja": "見せる・披露する",
+"note": "ポストの「披露」は show で表せます。",
+"w": "show"
 }
 ]
 },
