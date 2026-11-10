@@ -1,5 +1,678 @@
 window.LESSONS = [
 {
+"added": "2026-11-10T11:38",
+"addedAt": "2026-11-10T14:47",
+"cat": "movie",
+"gloss": {
+"51st": "第51回の",
+"actor": "男優",
+"actress": "女優",
+"and": "〜と",
+"announced": "発表される（announceの過去分詞）",
+"are": "〜です（複数）",
+"at": "〜で",
+"awards": "賞（複数形）",
+"be": "〜される（be announcedで）",
+"best": "最優秀の",
+"best actor": "主演男優賞",
+"best actress": "主演女優賞",
+"best picture": "作品賞",
+"best supporting actor": "助演男優賞",
+"both": "両方とも",
+"both hiroki hasegawa and hokuto matsumura": "長谷川博己さんも松村北斗さんも両方",
+"both hiroki hasegawa and hokuto matsumura are": "長谷川博己さんも松村北斗さんも両方〜だ",
+"categories": "部門（複数形）",
+"director": "監督",
+"film": "映画",
+"for": "〜に（ノミネートされる）",
+"for best actress": "主演女優賞に（ノミネート）",
+"for best director": "監督賞に（ノミネート）",
+"for best supporting actor": "助演男優賞に（ノミネート）",
+"for best supporting actress": "助演女優賞に（ノミネート）",
+"fujii": "藤井（人名）",
+"gotoku": "ごとく（作品名の一部）",
+"hasegawa": "長谷川（人名）",
+"hiroki": "博己（人名）",
+"hirose": "広瀬（人名）",
+"hochi": "報知（賞の名前）",
+"hokuto": "北斗（人名）",
+"hoshi": "星（作品名の一部）",
+"in": "〜で・〜に",
+"is": "〜です",
+"itself": "それ自体",
+"japanese": "日本の",
+"late": "後半の・下旬の",
+"late november": "11月下旬",
+"later": "あとで",
+"machiko": "真千子（人名）",
+"machiko ono": "尾野真千子さん",
+"machiko ono is": "尾野真千子さんは〜だ",
+"matsumura": "松村（人名）",
+"michihito": "道人（人名）",
+"michihito fujii": "藤井道人さん",
+"michihito fujii is": "藤井道人さんは〜だ",
+"nanji": "汝（作品名の一部）",
+"nanji hoshi no gotoku is nominated in six categories": "『汝、星のごとく』は6部門でノミネートされた",
+"nanji hoshi no gotoku is nominated in six categories at the 51st hochi": "『汝、星のごとく』は第51回報知〜の6部門でノミネートされた",
+"no": "の（作品名の一部）",
+"nominated": "ノミネートされた",
+"november": "11月",
+"ono": "尾野（人名）",
+"or": "または",
+"picture": "作品",
+"results": "結果（複数形）",
+"ryusei": "流星（人名）",
+"ryusei yokohama is nominated for best actor": "横浜流星さんは主演男優賞にノミネートされている",
+"ryusei yokohama is nominated for best actor and suzu hirose is": "横浜流星さんは主演男優賞に、広瀬すずさんは〜",
+"six": "6つの",
+"six categories": "6部門",
+"supporting": "助演の",
+"supporting actor": "助演男優",
+"suzu": "すず（人名）",
+"the": "その",
+"the film": "その映画",
+"the film itself is": "映画そのものは〜だ",
+"the film itself is nominated for best picture": "映画そのものが作品賞にノミネートされている",
+"the results": "結果は",
+"the results will be announced": "結果は発表される予定だ",
+"the results will be announced in late november": "結果は11月下旬に発表される予定だ",
+"will": "〜だろう（未来）",
+"yokohama": "横浜（人名）"
+},
+"grad": [
+{
+"q1": "『汝、星のごとく』は、第 {51st} 報知映画賞の {six categories} にノミネートされました。",
+"q2": "{Nanji, Hoshi no Gotoku is nominated in six categories}、{51st} 報知映画賞で。",
+"q3": "{Nanji, Hoshi no Gotoku is nominated in six categories at the 51st Hochi} 映画賞。"
+},
+{
+"q1": "{The film} そのものも、{Best Picture}（邦画）にノミネートされています。",
+"q2": "{The film itself is} {Best Picture}（邦画）にノミネートされています。",
+"q3": "{The film itself is nominated for Best Picture,} 邦画。"
+},
+{
+"q1": "{Michihito Fujii} さんは、{Director} 賞にノミネートされています。",
+"q2": "{Michihito Fujii} さんは、{for Best Director} ノミネートされています。",
+"q3": "{Michihito Fujii is} ノミネート {for Best Director.}"
+},
+{
+"q1": "{Best Actor} に横浜流星さん、{Best Actress} に広瀬すずさんがノミネートされています。",
+"q2": "{Ryusei Yokohama is nominated for Best Actor,} 広瀬すずさんは {Best Actress} にノミネート。",
+"q3": "{Ryusei Yokohama is nominated for Best Actor, and Suzu Hirose is} ノミネート {for Best Actress.}"
+},
+{
+"q1": "{Best Supporting Actor} には、長谷川博己さんと松村北斗さんの2人がノミネートされています。",
+"q2": "{Both Hiroki Hasegawa and Hokuto Matsumura} が {Best Supporting Actor} にノミネートされています。",
+"q3": "{Both Hiroki Hasegawa and Hokuto Matsumura are} ノミネート {for Best Supporting Actor.}"
+},
+{
+"q1": "{Machiko Ono} さんは、助演 {Actress} 賞にノミネートされています。",
+"q2": "{Machiko Ono} さんは、{for Best Supporting Actress} ノミネートされています。",
+"q3": "{Machiko Ono is} ノミネート {for Best Supporting Actress.}"
+},
+{
+"q1": "{The results} は、{late November} 以降に発表される予定です。",
+"q2": "{The results will be announced}、{late November} 以降。",
+"q3": "{The results will be announced in late November} 以降。"
+}
+],
+"grammar": {
+"body": "both A and B は「AもBも両方」という意味です。A と B には、同じ種類のことば（名詞どうしなど）を並べます。主語になるときは、複数あつかいで are を使います。",
+"ex": [
+{
+"en": "Both my brother and I like movies.",
+"ja": "兄も私も、両方とも映画が好きです。"
+},
+{
+"en": "The film is both funny and sad.",
+"ja": "その映画は、おかしくて悲しくもあります。"
+}
+],
+"title": "both A and B「AもBも両方」"
+},
+"id": "20261110-nanji-hochi-nominee",
+"level": 3,
+"lines": [
+{
+"en": "Nanji, Hoshi no Gotoku is nominated in six categories at the 51st Hochi Film Awards.",
+"ja": "『汝、星のごとく』は、第51回報知映画賞の6部門にノミネートされました。",
+"mix": "『汝、星のごとく』は、第51回報知映画賞の {six categories} にノミネートされました。"
+},
+{
+"en": "The film itself is nominated for Best Picture, Japanese Film.",
+"ja": "映画そのものも、作品賞（邦画）にノミネートされています。",
+"mix": "映画そのものも、{Best Picture}（邦画）にノミネートされています。"
+},
+{
+"en": "Michihito Fujii is nominated for Best Director.",
+"ja": "藤井道人さんは、監督賞にノミネートされています。",
+"mix": "藤井道人さんは、{Director} 賞にノミネートされています。"
+},
+{
+"en": "Ryusei Yokohama is nominated for Best Actor, and Suzu Hirose is nominated for Best Actress.",
+"ja": "主演男優賞に横浜流星さん、主演女優賞に広瀬すずさんがノミネートされています。",
+"mix": "{Actor} 賞に横浜流星さん、{Actress} 賞に広瀬すずさんがノミネートされています。"
+},
+{
+"en": "Both Hiroki Hasegawa and Hokuto Matsumura are nominated for Best Supporting Actor.",
+"ja": "助演男優賞には、長谷川博己さんと松村北斗さんの2人がノミネートされています。",
+"mix": "{Supporting Actor} 賞には、長谷川博己さんと松村北斗さんの2人がノミネートされています。"
+},
+{
+"en": "Machiko Ono is nominated for Best Supporting Actress.",
+"ja": "尾野真千子さんは、助演女優賞にノミネートされています。",
+"mix": "{Machiko Ono} さんは、助演女優賞にノミネートされています。"
+},
+{
+"en": "The results will be announced in late November or later.",
+"ja": "結果は、11月下旬以降に発表される予定です。",
+"mix": "{results} は、11月下旬以降に発表される予定です。"
+}
+],
+"post": {
+"account": "nanji_movie",
+"date": "2026-11-10",
+"likes": 7056,
+"name": "『汝、星のごとく』映画公式アカウント",
+"url": "https://x.com/nanji_movie/status/2119983105549508903"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"6部門",
+"3部門",
+"7部門"
+],
+"q": "映画がノミネートされたのは何部門？",
+"why": "1文目に in six categories とあります。"
+},
+{
+"a": 1,
+"choices": [
+"決める",
+"発表する",
+"集める"
+],
+"q": "announce の意味は？",
+"why": "announce は「発表する」。will be announced は「発表される予定」です。"
+},
+{
+"a": 2,
+"choices": [
+"Either",
+"Also",
+"Both"
+],
+"q": "___ Hasegawa and Matsumura are nominated.（2人とも）",
+"why": "both A and B で「AもBも両方」。2人なので are が続きます。"
+}
+],
+"summary": "映画『汝、星のごとく』が、第51回報知映画賞の6部門でノミネートされました。作品賞（邦画）、監督賞、主演男優賞、主演女優賞、助演男優賞、助演女優賞です。受賞結果は11月下旬以降に発表される予定です。",
+"talk": {
+"hint": "I want ___ to win because ___.",
+"ja": "どの俳優さんに受賞してほしいですか？",
+"q": "Which actor or actress do you want to win?"
+},
+"title": "『汝、星のごとく』が報知映画賞で6部門ノミネート",
+"words": [
+{
+"ja": "候補にあげる・ノミネートする",
+"note": "be nominated for 〜 で「〜にノミネートされる」。",
+"w": "nominate"
+},
+{
+"ja": "部門・分類",
+"note": "ポストの「6部門」は six categories です。",
+"w": "category"
+},
+{
+"ja": "助演の・支える",
+"note": "ポストの「助演」は supporting。supporting actor ＝ 助演男優。",
+"w": "supporting"
+},
+{
+"ja": "発表する",
+"note": "ポストの「発表予定」は will be announced。",
+"w": "announce"
+},
+{
+"ja": "結果",
+"note": "ポストの「受賞結果」。ここでは受賞者が決まった結果のことです。",
+"w": "result"
+}
+]
+},
+{
+"added": "2026-11-10T00:05",
+"addedAt": "2026-11-10T14:47",
+"cat": "movie",
+"gloss": {
+"11 000 likes": "11,000のいいね",
+"a": "ひとりの",
+"a person": "ある人",
+"a person on x wrote about": "Xである人が〜について書いた",
+"a person on x wrote about the vivant": "Xである人が『VIVANT』について書いた",
+"about": "〜について",
+"aeon's": "イオンの",
+"aeon's movie theaters": "イオンの映画館",
+"at": "〜では",
+"at aeon's movie theaters": "イオンの映画館では",
+"at aeon's movie theaters the": "イオンの映画館では、その",
+"at toho cinemas": "TOHOシネマズでは",
+"at toho cinemas it is": "TOHOシネマズでは、それは〜だ",
+"at toho cinemas it is 148 minutes": "TOHOシネマズでは148分",
+"cinemas": "シネマズ（映画館）",
+"depends": "〜しだいだ（dependの三単現）",
+"got": "得た（getの過去形）",
+"hear": "聞く・聞いて知る",
+"i": "私は",
+"is": "〜です",
+"is 170 minutes long": "170分の長さだ",
+"it": "それは",
+"likes": "いいね",
+"long": "長さが〜の",
+"minutes": "分（複数形）",
+"more": "より多い",
+"movie": "映画",
+"movie theaters": "映画館",
+"on": "〜で（Xの上で）",
+"person": "人",
+"post": "ポスト",
+"running": "上映（running timeの一部）",
+"running time": "上映時間",
+"than": "〜より",
+"the": "その",
+"the post": "このポスト",
+"the post got": "このポストは〜を得た",
+"the running time": "上映時間は",
+"the running time depends on": "上映時間は〜で決まる",
+"the running time depends on the theater": "上映時間は映画館によってちがう",
+"theater": "映画館",
+"theaters": "映画館（複数）",
+"time": "時間",
+"toho": "TOHO（会社名）",
+"toho cinemas": "TOHOシネマズ",
+"vivant": "VIVANT（作品名）",
+"wrote": "書いた（writeの過去形）",
+"x": "X（旧Twitter）"
+},
+"grad": [
+{
+"q1": "{X} で、{a person} が『VIVANT』の映画について書きました。",
+"q2": "{A person on X wrote about} 『VIVANT』の映画。",
+"q3": "{A person on X wrote about the VIVANT} 映画。"
+},
+{
+"q1": "{The running time} は映画館によってちがうらしいです。",
+"q2": "{The running time depends on} 映画館、らしいです。",
+"q3": "聞いた話では {the running time depends on the theater.}"
+},
+{
+"q1": "{AEON's movie theaters} では、この映画は170分です。",
+"q2": "{At AEON's movie theaters}、映画 {is 170 minutes long}。",
+"q3": "{At AEON's movie theaters, the} 映画 {is 170 minutes long.}"
+},
+{
+"q1": "{At TOHO Cinemas}、148分です。",
+"q2": "{At TOHO Cinemas, it is} 148分です。",
+"q3": "{At TOHO Cinemas, it is 148 minutes} 長い。"
+},
+{
+"q1": "{The post} には、11,000を超える {likes} がつきました。",
+"q2": "{The post got} 11,000を超える {likes}。",
+"q3": "{The post got} 超える {11,000 likes.}"
+}
+],
+"grammar": {
+"body": "I hear (that) ＋ 文 で、人から聞いたことや、うわさを伝えます。「〜らしい」「〜だそうだ」の意味です。that は省いても大丈夫です。",
+"ex": [
+{
+"en": "I hear the movie is very good.",
+"ja": "その映画はとてもいいらしいです。"
+},
+{
+"en": "I hear the shop opens at ten.",
+"ja": "その店は10時に開くらしいです。"
+}
+],
+"title": "I hear (that) ～「〜らしい・〜だそうだ」"
+},
+"id": "20261110-vivant-runtime",
+"level": 2,
+"lines": [
+{
+"en": "A person on X wrote about the VIVANT movie.",
+"ja": "Xで、ある人が『VIVANT』の映画について書きました。",
+"mix": "Xで、ある {person} が『VIVANT』の映画について書きました。"
+},
+{
+"en": "I hear the running time depends on the theater.",
+"ja": "上映時間は映画館によってちがうらしいです。",
+"mix": "{running time} は映画館によってちがうらしいです。"
+},
+{
+"en": "At AEON's movie theaters, the movie is 170 minutes long.",
+"ja": "イオンの映画館では、この映画は170分です。",
+"mix": "イオンの {movie theaters} では、この映画は170分です。"
+},
+{
+"en": "At TOHO Cinemas, it is 148 minutes long.",
+"ja": "TOHOシネマズでは、148分です。",
+"mix": "{TOHO Cinemas} では、148分です。"
+},
+{
+"en": "The post got more than 11,000 likes.",
+"ja": "このポストには、11,000を超えるいいねがつきました。",
+"mix": "このポストには、11,000を超える {likes} がつきました。"
+}
+],
+"post": {
+"account": "marurururu64",
+"date": "2026-11-09",
+"likes": 11291,
+"name": "一般の人",
+"url": "https://x.com/marurururu64/status/2119808527896351084"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"170分",
+"148分",
+"120分"
+],
+"q": "TOHOシネマズでの上映時間は何分？",
+"why": "4文目に At TOHO Cinemas, it is 148 minutes long. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"入場料",
+"席の数",
+"上映時間"
+],
+"q": "running time の意味は？",
+"why": "running time は映画などの「上映時間」です。"
+},
+{
+"a": 0,
+"choices": [
+"hear",
+"hears",
+"hearing"
+],
+"q": "I ___ the running time is different.（ちがうらしい）",
+"why": "I のあとの動詞は hear。I hear 〜 で「〜らしい」です。"
+}
+],
+"summary": "Xで話題のポストによると、『VIVANT』の映画は映画館によって上映時間がちがうそうです。イオンの映画館は170分、TOHOシネマズは148分と書かれています。",
+"talk": {
+"hint": "I usually go to ___.",
+"ja": "ふだん、どの映画館に行きますか？",
+"q": "Which movie theater do you usually go to?"
+},
+"title": "『VIVANT』の映画、映画館で上映時間がちがう",
+"words": [
+{
+"ja": "上映時間",
+"note": "ポストの「上映時間」は running time です。",
+"w": "running time"
+},
+{
+"ja": "〜によって決まる",
+"note": "「映画館によってちがう」は depends on the theater と言えます。",
+"w": "depend on"
+},
+{
+"ja": "分",
+"note": "170 minutes のように、2つ以上では minutes です。",
+"w": "minute"
+},
+{
+"ja": "映画館",
+"note": "ポストの「映画館」。cinema とも言います。",
+"w": "movie theater"
+},
+{
+"ja": "聞く・聞いて知る",
+"note": "I hear 〜 で「〜らしい」。ポストの「らしい」を表します。",
+"w": "hear"
+}
+]
+},
+{
+"added": "2026-11-10T00:05",
+"addedAt": "2026-11-10T14:47",
+"cat": "manga",
+"gloss": {
+"a": "ひとつの",
+"about": "〜について",
+"about terrain battles": "地形戦について",
+"also": "〜も・また",
+"analyzing": "分析すること",
+"at": "〜が（good at）",
+"battles": "戦い（battleの複数形）",
+"birthday": "誕生日",
+"can": "〜できる",
+"can he lead": "彼は導けるか",
+"can he lead his": "彼は自分の〜を導けるか",
+"captain": "隊長",
+"close": "惜しい・接戦の",
+"closed": "閉ざされた",
+"closed environment test": "閉鎖環境試験",
+"combat": "戦闘",
+"combat test": "戦闘試験",
+"environment": "環境",
+"game": "試合",
+"game in the closed environment test": "閉鎖環境試験での試合",
+"good": "じょうず・得意な",
+"he": "彼は",
+"he is a": "彼はひとりの〜です",
+"he is also": "彼は〜でもある",
+"he is also good at": "彼は〜も得意です",
+"he is the captain of": "彼は〜の隊長です",
+"he is the captain of kotera team 6 a": "彼は古寺6番隊、ひとつの〜の隊長",
+"he knows": "彼は知っている",
+"he lost": "彼は負けた",
+"he lost a": "彼はひとつ負けた",
+"his": "彼の",
+"in": "〜で",
+"is": "〜です",
+"knows": "知っている",
+"kotera": "古寺（人名）",
+"kotera team 6": "古寺6番隊",
+"kotera's": "古寺の（人名＋'s）",
+"lead": "導く",
+"lost": "負けた（loseの過去形）",
+"lot": "たくさん（a lot）",
+"november": "11月",
+"november 10 is": "11月10日は",
+"november 10 is shohei kotera's": "11月10日は古寺章平の",
+"of": "〜の",
+"shohei": "章平（人名）",
+"shohei kotera's": "章平古寺の（隊員）",
+"situation": "状況",
+"smart": "頭がよい",
+"sniper": "スナイパー",
+"team": "チーム・部隊",
+"temporary": "臨時の",
+"terrain": "地形",
+"terrain battles": "地形戦",
+"test": "試験",
+"the": "その",
+"the situation": "その状況",
+"to": "〜へ",
+"to victory": "勝利へ",
+"to victory in the combat test": "戦闘試験で勝利へ",
+"victory": "勝利"
+},
+"grad": [
+{
+"q1": "11月10日は {Shohei Kotera's} 隊員の {birthday} です。",
+"q2": "{November 10 is} {Shohei Kotera's} 隊員の {birthday.}",
+"q3": "{November 10 is Shohei Kotera's} 隊員の {birthday.}"
+},
+{
+"q1": "彼は、臨時部隊「{Kotera Team 6}」の {captain} です。",
+"q2": "{He is the captain of} 臨時部隊「{Kotera Team 6}」。",
+"q3": "{He is the captain of Kotera Team 6, a} 臨時 {team.}"
+},
+{
+"q1": "{He} は頭脳派の {sniper} です。",
+"q2": "{He is a} 頭脳派の {sniper.}",
+"q3": "{He is a} 頭脳派 {sniper.}"
+},
+{
+"q1": "{He} は {terrain battles} についてたくさん知っています。",
+"q2": "{He knows} {terrain battles} についてたくさん。",
+"q3": "{He knows} たくさん {about terrain battles.}"
+},
+{
+"q1": "{He} は {the situation} を分析するのも得意です。",
+"q2": "{He is also} {the situation} を分析するのが得意。",
+"q3": "{He is also good at} 分析する {the situation.}"
+},
+{
+"q1": "彼は {closed environment test} で、惜しい {game} に負けました。",
+"q2": "{closed environment test} で、{He lost} 惜しい {game}。",
+"q3": "{He lost a} 惜しい {game in the closed environment test.}"
+},
+{
+"q1": "彼は {combat test} で、チームを {victory} に導けるでしょうか？",
+"q2": "{Can he lead} チームを {to victory}、{combat test} で。",
+"q3": "{Can he lead his} チーム {to victory in the combat test?}"
+}
+],
+"grammar": {
+"body": "「〜できますか」とたずねるときは、Can を文のはじめに置いて、Can ＋ 主語 ＋ 動詞のもとの形 の順にします。答えは Yes, he can. / No, he can't. のように言います。",
+"ex": [
+{
+"en": "Can you swim?",
+"ja": "あなたは泳げますか？"
+},
+{
+"en": "Can she play the piano?",
+"ja": "彼女はピアノをひけますか？"
+}
+],
+"title": "Can ＋ 主語 ＋ 動詞？「〜できますか」"
+},
+"id": "20261110-wtrigger-kotera-birthday",
+"level": 1,
+"lines": [
+{
+"en": "November 10 is Shohei Kotera's birthday.",
+"ja": "11月10日は古寺章平隊員の誕生日です。",
+"mix": "11月10日は古寺章平隊員の {birthday} です。"
+},
+{
+"en": "He is the captain of Kotera Team 6, a temporary team.",
+"ja": "彼は、臨時部隊「古寺6番隊」の隊長です。",
+"mix": "彼は、臨時部隊「古寺6番隊」の {captain} です。"
+},
+{
+"en": "He is a smart sniper.",
+"ja": "彼は頭脳派のスナイパーです。",
+"mix": "彼は頭脳派の {sniper} です。"
+},
+{
+"en": "He knows a lot about terrain battles.",
+"ja": "彼は地形戦についてたくさん知っています。",
+"mix": "彼は {terrain battles} についてたくさん知っています。"
+},
+{
+"en": "He is also good at analyzing the situation.",
+"ja": "彼は状況を分析するのも得意です。",
+"mix": "彼は {situation} を分析するのも得意です。"
+},
+{
+"en": "He lost a close game in the closed environment test.",
+"ja": "彼は閉鎖環境試験で、惜しい試合に負けました。",
+"mix": "彼は閉鎖環境 {test} で、惜しい試合に負けました。"
+},
+{
+"en": "Can he lead his team to victory in the combat test?",
+"ja": "彼は戦闘試験で、チームを勝利に導けるでしょうか？",
+"mix": "彼は戦闘試験で、チームを {victory} に導けるでしょうか？"
+}
+],
+"post": {
+"account": "W_Trigger_off",
+"date": "2026-11-10",
+"likes": 5200,
+"name": "ワールドトリガー公式",
+"url": "https://x.com/W_Trigger_off/status/2119808479841890390"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"玉狛第二",
+"影浦隊",
+"古寺6番隊"
+],
+"q": "古寺章平隊員が隊長をしているのは？",
+"why": "2文目に He is the captain of Kotera Team 6 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"地形",
+"勝利",
+"隊長"
+],
+"q": "terrain battles の terrain の意味は？",
+"why": "terrain は「地形」。terrain battles で「地形戦」です。"
+},
+{
+"a": 1,
+"choices": [
+"Cans",
+"Can",
+"Is"
+],
+"q": "___ he lead his team to victory?（導けるでしょうか）",
+"why": "「〜できますか」は Can ＋ 主語 ＋ 動詞のもとの形。Can he lead ...? です。"
+}
+],
+"series": "worldtrigger",
+"summary": "11月10日は『ワールドトリガー』の古寺章平隊員の誕生日です。臨時部隊「古寺6番隊」の隊長で、スナイパーです。閉鎖環境試験で惜しくも負けた反省を力にして、戦闘試験で臨時部隊を勝利へ導けるでしょうか、と公式が問いかけています。",
+"talk": {
+"hint": "Yes, I do. I like ___.",
+"ja": "スナイパーのキャラクターは好きですか？",
+"q": "Do you like sniper characters?"
+},
+"title": "古寺章平隊員の誕生日、勝利へ導けるか",
+"words": [
+{
+"ja": "隊長・キャプテン",
+"note": "ポストの「隊長」は captain で表せます。",
+"w": "captain"
+},
+{
+"ja": "スナイパー・狙撃手",
+"note": "ポストの「スナイパー」。日本語とほぼ同じ言い方です。",
+"w": "sniper"
+},
+{
+"ja": "地形",
+"note": "「地形戦」は terrain battles。terrain は地形のことです。",
+"w": "terrain"
+},
+{
+"ja": "分析する",
+"note": "ポストの「戦況の分析」を analyzing the situation と言いました。",
+"w": "analyze"
+},
+{
+"ja": "勝利",
+"note": "ポストの「勝利へ導く」は lead ... to victory です。",
+"w": "victory"
+}
+]
+},
+{
 "added": "2026-11-10T00:00",
 "addedAt": "2026-11-10T08:02",
 "cat": "movie",
@@ -204,6 +877,190 @@ window.LESSONS = [
 "ja": "上映",
 "note": "early screening ＝ 先行上映。",
 "w": "screening"
+}
+]
+},
+{
+"added": "2026-11-09T21:34",
+"addedAt": "2026-11-10T14:47",
+"cat": "movie",
+"gloss": {
+"a": "ひとりの",
+"a person on x": "Xのある人",
+"and": "〜と",
+"both": "どちらも",
+"both have a moment when things": "どちらにも、物事が〜する場面がある",
+"both have a moment when things go": "どちらにも、物事が〜へ行く場面がある",
+"center": "中心（作品名の一部）",
+"center of the earth": "センター・オブ・ジ・アース",
+"center of the earth and jurassic park the ride": "センター・オブ・ジ・アースとジュラシック・パーク・ザ・ライド",
+"earth": "地球（作品名の一部）",
+"go": "行く",
+"have": "持っている",
+"is": "〜です",
+"it": "それは",
+"it is not the route": "それはそのルートではない",
+"it is not the route they were supposed to": "それは〜するはずだったルートではない",
+"jurassic": "ジュラシック（作品名）",
+"jurassic park the ride": "ジュラシック・パーク・ザ・ライド",
+"kind": "種類",
+"loves": "大好き",
+"moment": "場面・瞬間",
+"not": "〜ではない",
+"of": "〜の",
+"off": "はずれて",
+"on": "〜の上の（on X＝X上の）",
+"park": "パーク（作品名の一部）",
+"person": "人",
+"ride": "ライド（作品名の一部）",
+"route": "ルート",
+"supposed": "〜することになっていた",
+"take": "通る・とる",
+"the": "その",
+"the route": "そのルート",
+"the writer": "書いた人",
+"they": "それらは",
+"they were": "それらは〜だった",
+"things": "物事",
+"this": "この",
+"this kind of moment": "こういう場面",
+"to": "〜する（to＋動詞）",
+"were": "〜だった",
+"when": "〜するとき",
+"writer": "書いた人",
+"x": "X（SNS）"
+},
+"grad": [
+{
+"q1": "Xのある {person} は、『{Center of the Earth}』と『ジュラシック・パーク・ザ・ライド』が大好きだと書いています。",
+"q2": "{A person on X} が、『{Center of the Earth}』と『{Jurassic Park: The Ride}』を大好きだと書いています。",
+"q3": "{A person on X} 大好き {Center of the Earth and Jurassic Park: The Ride.}"
+},
+{
+"q1": "{Both} に、{route} を逸れてしまう {moment} があります。",
+"q2": "{Both have a moment when things} {the route} を逸れてしまう。",
+"q3": "{Both have a moment when things go} 逸れる {the route.}"
+},
+{
+"q1": "{It} は、本来通るはずだった {route} ではありません。",
+"q2": "{It is not the route} 、{they were} 本来通るはずだった。",
+"q3": "{It is not the route they were supposed to} 通る。"
+},
+{
+"q1": "{writer} は、こういう {moment} が大好きだと書いています。",
+"q2": "{The writer} は、こういう {moment} が大好きだと書いています。",
+"q3": "{The writer} 大好き {this kind of moment.}"
+}
+],
+"grammar": {
+"body": "予定やルールで「〜することになっている・〜するはずだ」と言うときは be supposed to ＋ 動詞のもとの形 を使います。過去のときは was / were supposed to で、「本来は〜するはずだった」の意味になります。",
+"ex": [
+{
+"en": "The bus is supposed to come at ten.",
+"ja": "バスは10時に来るはずです。"
+},
+{
+"en": "You are supposed to wait here.",
+"ja": "あなたはここで待つことになっています。"
+}
+],
+"title": "be supposed to ～「〜するはずだ」"
+},
+"id": "20261109-jurassic-ride-detour",
+"level": 2,
+"lines": [
+{
+"en": "A person on X loves Center of the Earth and Jurassic Park: The Ride.",
+"ja": "Xのある人は、『センター・オブ・ジ・アース』と『ジュラシック・パーク・ザ・ライド』が大好きだと書いています。",
+"mix": "Xのある {person} は、『センター・オブ・ジ・アース』と『ジュラシック・パーク・ザ・ライド』が大好きだと書いています。"
+},
+{
+"en": "Both have a moment when things go off the route.",
+"ja": "どちらにも、ルートを逸れてしまう場面があります。",
+"mix": "どちらにも、{route} を逸れてしまう {moment} があります。"
+},
+{
+"en": "It is not the route they were supposed to take.",
+"ja": "それは、本来通るはずだったルートではありません。",
+"mix": "それは、本来通るはずだった {route} ではありません。"
+},
+{
+"en": "The writer loves this kind of moment.",
+"ja": "投稿した人は、こういう場面が大好きだと書いています。",
+"mix": "{writer} は、こういう場面が大好きだと書いています。"
+}
+],
+"post": {
+"account": "Shinoyama_wow",
+"date": "2026-11-09",
+"likes": 1400,
+"name": "Shinoyama_wow",
+"url": "https://x.com/Shinoyama_wow/status/2119770702681371132"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"音楽が大きくなる場面",
+"ルートを逸れてしまう場面",
+"最後に歌う場面"
+],
+"q": "ポストを書いた人が大好きだと書いているのは？",
+"why": "2文目と4文目に、ルートから外れる場面（a moment when things go off the route）が好きだとあります。"
+},
+{
+"a": 2,
+"choices": [
+"〜に戻る",
+"〜に入る",
+"〜からそれる"
+],
+"q": "go off the route の go off の意味は？",
+"why": "go off the route は「ルートからそれる」です。"
+},
+{
+"a": 0,
+"choices": [
+"supposed",
+"supposing",
+"suppose"
+],
+"q": "It is not the route they were ___ to take.（通るはずだった）",
+"why": "「〜するはずだった」は were supposed to ＋ 動詞。"
+}
+],
+"summary": "ポストを書いた人は、『センター・オブ・ジ・アース』と『ジュラシック・パーク・ザ・ライド』で見られる、本来通るはずだったルートを逸れてしまう演出が大好きだと書いています。",
+"talk": {
+"hint": "My favorite ride is ___.",
+"ja": "いちばん好きなライド（乗り物）は何ですか？",
+"q": "What is your favorite ride?"
+},
+"title": "ルートを逸れる演出が大好き",
+"words": [
+{
+"ja": "場面・瞬間",
+"note": "ポストの「演出」を、ここでは a moment（ある場面）と言いました。",
+"w": "moment"
+},
+{
+"ja": "ルート・道すじ",
+"note": "ポストの「ルート」は route。",
+"w": "route"
+},
+{
+"ja": "それる・はずれる",
+"note": "go off the route ＝ ルートからそれる。「逸れてしまう」の意味です。",
+"w": "go off"
+},
+{
+"ja": "〜するはずだ",
+"note": "「本来通るはずだった」は were supposed to take と言います。",
+"w": "be supposed to"
+},
+{
+"ja": "種類",
+"note": "this kind of ～ ＝ こういう種類の〜。",
+"w": "kind"
 }
 ]
 },
@@ -447,6 +1304,205 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-09T20:00",
+"addedAt": "2026-11-10T14:47",
+"cat": "movie",
+"gloss": {
+"4dx": "4DX（上映方式）",
+"also": "〜も",
+"and": "〜と",
+"are": "〜です（複数）",
+"are dolbycinema 4dx and mx4d": "DolbyCINEMA、4DX、MX4Dだ",
+"be": "〜される（be shownで）",
+"calls": "呼ぶ（callの三単現）",
+"calls them": "それらを呼ぶ",
+"calls them premium large formats": "それらをプレミアムラージフォーマットと呼ぶ",
+"can": "〜できる",
+"dolbycinema": "DolbyCINEMA（上映方式）",
+"dolbycinema 4dx and mx4d": "DolbyCINEMA、4DX、MX4D",
+"feel": "体感する",
+"formats": "フォーマット（複数形）",
+"friday": "金曜日",
+"godzilla": "ゴジラ",
+"godzilla minus zero will also": "『ゴジラ-0.0』は〜もする",
+"godzilla minus zero will also be": "『ゴジラ-0.0』は〜もされる",
+"in": "〜で",
+"in three kinds of premium formats": "3種類のプレミアムフォーマットで",
+"kinds": "種類（複数形）",
+"large": "大きな",
+"large formats": "ラージフォーマット",
+"minus": "マイナス",
+"mx4d": "MX4D（上映方式）",
+"november": "11月",
+"of": "〜の",
+"post": "ポスト",
+"premium": "プレミアムな・特別な",
+"premium formats": "プレミアムなフォーマット",
+"premium large formats": "プレミアムラージフォーマット",
+"says": "言う・書いてある（sayの三単現）",
+"says you can feel godzilla in these formats": "これらのフォーマットでゴジラを体感できると書いてある",
+"showings": "上映（複数形）",
+"shown": "上映される（showの過去分詞）",
+"start": "始まる",
+"the": "その",
+"them": "それらを",
+"these": "これらの",
+"these formats": "これらのフォーマット",
+"this": "今度の・この",
+"this friday": "今週の金曜日",
+"this friday november 13": "今週の金曜日、11月13日",
+"three": "3つの",
+"three kinds of premium formats": "3種類のプレミアムフォーマット",
+"will": "〜だろう（未来）",
+"you": "あなたは",
+"you can feel godzilla in these formats": "これらのフォーマットでゴジラを体感できる",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "『ゴジラ-0.0』は、{three kinds of premium formats} でも上映されます。",
+"q2": "{Godzilla Minus Zero will also} 上映される {in three kinds of premium formats}。",
+"q3": "{Godzilla Minus Zero will also be} 上映される {in three kinds of premium formats.}"
+},
+{
+"q1": "上映は、{this Friday}、11月13日からです。",
+"q2": "{Showings} は {this Friday}、11月13日から始まります。",
+"q3": "{Showings} 始まる {this Friday, November 13.}"
+},
+{
+"q1": "フォーマットは、{DolbyCINEMA}、{4DX}、{MX4D} です。",
+"q2": "フォーマットは、{DolbyCINEMA, 4DX and MX4D} です。",
+"q3": "{The} フォーマット {are DolbyCINEMA, 4DX and MX4D.}"
+},
+{
+"q1": "ポストでは、これらを「{premium large formats}」と呼んでいます。",
+"q2": "ポストは {calls them} 「{premium large formats}」。",
+"q3": "{The} ポスト {calls them premium large formats.}"
+},
+{
+"q1": "ポストには、{these formats} でゴジラを体感できる、とあります。",
+"q2": "ポストには、{you can feel Godzilla in these formats} とあります。",
+"q3": "{The} ポスト {says you can feel Godzilla in these formats.}"
+}
+],
+"grammar": {
+"body": "「3種類の〜」は three kinds of ＋ 名詞 と言います。kind は「種類」で、2つ以上のときは kinds です。名詞も複数形にします。",
+"ex": [
+{
+"en": "There are two kinds of tickets.",
+"ja": "チケットには2種類があります。"
+},
+{
+"en": "I like many kinds of movies.",
+"ja": "私はいろいろな種類の映画が好きです。"
+}
+],
+"title": "〜 kinds of ＋ 名詞「〜種類の…」"
+},
+"id": "20261109-godzilla0-premium-formats",
+"level": 2,
+"lines": [
+{
+"en": "Godzilla Minus Zero will also be shown in three kinds of premium formats.",
+"ja": "『ゴジラ-0.0』は、3種類のプレミアムなフォーマットでも上映されます。",
+"mix": "『ゴジラ-0.0』は、3種類の {premium formats} でも上映されます。"
+},
+{
+"en": "Showings start this Friday, November 13.",
+"ja": "上映は、今週の金曜日、11月13日からです。",
+"mix": "上映は、今週の {Friday}、11月13日からです。"
+},
+{
+"en": "The formats are DolbyCINEMA, 4DX and MX4D.",
+"ja": "フォーマットは、DolbyCINEMA、4DX、MX4Dです。",
+"mix": "フォーマットは、{DolbyCINEMA}、4DX、MX4Dです。"
+},
+{
+"en": "The post calls them premium large formats.",
+"ja": "ポストでは、これらを「プレミアムラージフォーマット」と呼んでいます。",
+"mix": "ポストでは、これらを「プレミアム {large formats}」と呼んでいます。"
+},
+{
+"en": "The post says you can feel Godzilla in these formats.",
+"ja": "ポストには、これらのフォーマットでゴジラを体感できる、とあります。",
+"mix": "ポストには、これらの {formats} でゴジラを体感できる、とあります。"
+}
+],
+"post": {
+"account": "g_minus_zero",
+"date": "2026-11-09",
+"likes": 3798,
+"name": "『ゴジラ-0.0』【公式】",
+"url": "https://x.com/g_minus_zero/status/2119746830346981793"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"11月9日",
+"11月13日",
+"11月20日"
+],
+"q": "上映が始まるのはいつ？",
+"why": "2文目に Showings start this Friday, November 13. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"形式・方式",
+"映画館",
+"値段"
+],
+"q": "format の意味は？",
+"why": "format は「形式・方式」。ここでは上映の方式です。"
+},
+{
+"a": 2,
+"choices": [
+"kind",
+"kinded",
+"kinds"
+],
+"q": "There are two ___ of tickets.（2種類）",
+"why": "2つ以上なので kinds。two kinds of 〜 で「2種類の〜」です。"
+}
+],
+"summary": "『ゴジラ-0.0』が、今週11月13日（金）から、DolbyCINEMA、4DX、MX4Dの3種類のプレミアムラージフォーマットでも上映されます。",
+"talk": {
+"hint": "I want to try ___.",
+"ja": "どのフォーマットで見てみたいですか？",
+"q": "Which format do you want to try?"
+},
+"title": "『ゴジラ-0.0』、3種のプレミアム上映も開始",
+"words": [
+{
+"ja": "特別な・上等な",
+"note": "ポストの「プレミアム」。ふつうより特別な、という意味です。",
+"w": "premium"
+},
+{
+"ja": "形式・方式",
+"note": "ここでは映画の上映方式のこと。formats と複数形になります。",
+"w": "format"
+},
+{
+"ja": "上映する",
+"note": "ポストの「上映」。showings ＝ 上映（回）。",
+"w": "show"
+},
+{
+"ja": "始まる",
+"note": "ポストの「上映開始」は Showings start 〜。",
+"w": "start"
+},
+{
+"ja": "感じる・体感する",
+"note": "ポストの「体感する」を feel で表します。",
+"w": "feel"
+}
+]
+},
+{
 "added": "2026-11-09T18:58",
 "addedAt": "2026-11-10T08:02",
 "cat": "art",
@@ -680,6 +1736,690 @@ window.LESSONS = [
 "ja": "かご",
 "note": "売店の「かご」は basket。",
 "w": "basket"
+}
+]
+},
+{
+"added": "2026-11-09T18:00",
+"addedAt": "2026-11-10T14:47",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"and": "〜と",
+"are": "〜です（複数）",
+"are thank-you events for the big hit": "大ヒットへのお礼のイベントだ",
+"big": "大きな",
+"big hit": "大ヒット",
+"come": "来る",
+"confirmed": "決まった",
+"events": "イベント（複数形）",
+"everyone": "みなさん",
+"first": "最初の",
+"for": "〜の（ための）",
+"greetings": "挨拶（複数形）",
+"hit": "ヒット",
+"holiday": "祝日",
+"in": "〜で",
+"in sapporo and osaka on november 23 a holiday": "11月23日（祝日）に札幌と大阪で",
+"in tokyo": "東京で",
+"in tokyo on monday november 16": "11月16日（月）に東京で",
+"is": "〜です",
+"monday": "月曜日",
+"monday november 16": "11月16日（月）",
+"movie": "映画",
+"next": "つぎの",
+"november": "11月",
+"november 23": "11月23日",
+"november 23 a holiday": "11月23日（祝日）",
+"now": "いま",
+"on": "〜に（日付）",
+"one": "もの・回",
+"ones": "もの・回（複数）",
+"osaka": "大阪",
+"out": "アウト（作品名の一部）",
+"please": "どうぞ",
+"sapporo": "札幌",
+"sapporo and osaka": "札幌と大阪",
+"stage": "舞台",
+"stage greetings": "舞台挨拶",
+"stage greetings for 4 out": "『4アウト』の舞台挨拶",
+"stage greetings for 4 out are": "『4アウト』の舞台挨拶は〜",
+"thank-you": "お礼の",
+"thank-you events for the big hit": "大ヒットへのお礼のイベント",
+"the": "その",
+"the first one": "1回目",
+"the movie": "その映画",
+"the movie is in theaters": "映画は映画館で上映中だ",
+"the next ones": "つぎの回",
+"theaters": "映画館（複数）",
+"they": "それらは",
+"tokyo": "東京"
+},
+"grad": [
+{
+"q1": "『4アウト』の {stage greetings} が決まりました。",
+"q2": "{Stage greetings for 4 Out} が決まりました。",
+"q3": "{Stage greetings for 4 Out are} 決まった。"
+},
+{
+"q1": "それらは、{big hit} への {thank-you} イベントです。",
+"q2": "それらは、{thank-you events for the big hit}。",
+"q3": "それらは {are thank-you events for the big hit.}"
+},
+{
+"q1": "1回目は、{Monday, November 16} に {Tokyo} であります。",
+"q2": "{The first one} は、{Monday, November 16} に {in Tokyo} あります。",
+"q3": "{The first one} あります {in Tokyo on Monday, November 16.}"
+},
+{
+"q1": "次は、{November 23}（月・{holiday}）に {Sapporo} と {Osaka} であります。",
+"q2": "{The next ones} は、{November 23, a holiday}、{Sapporo and Osaka} にあります。",
+"q3": "{The next ones} あります {in Sapporo and Osaka on November 23, a holiday.}"
+},
+{
+"q1": "{The movie} は、いま {theaters} で上映中です。",
+"q2": "{The movie is in theaters}、いま絶賛。",
+"q3": "{The movie is in theaters} いま。"
+},
+{
+"q1": "{Everyone}、ぜひお越しください！",
+"q2": "{Everyone}、{please} お越しください！",
+"q3": "{Please} 来て {everyone!}"
+}
+],
+"grammar": {
+"body": "同じ名詞をくり返したくないときは、one（1つ）か ones（2つ以上）を使います。the first one ＝ 最初のもの、the next ones ＝ つぎのいくつか、です。",
+"ex": [
+{
+"en": "I have a red pen and a blue one.",
+"ja": "赤いペンと青いペンを持っています。"
+},
+{
+"en": "These bags are big. Those ones are small.",
+"ja": "これらのかばんは大きいです。あれらは小さいです。"
+}
+],
+"title": "one / ones「（前に出た名詞の）それ」"
+},
+"id": "20261109-4out-greeting",
+"level": 1,
+"lines": [
+{
+"en": "Stage greetings for 4 Out are confirmed.",
+"ja": "『4アウト』の舞台挨拶が決まりました。",
+"mix": "『4アウト』の舞台 {greetings} が決まりました。"
+},
+{
+"en": "They are thank-you events for the big hit.",
+"ja": "それらは、大ヒットへの御礼のイベントです。",
+"mix": "それらは、{big hit} への御礼のイベントです。"
+},
+{
+"en": "The first one is in Tokyo on Monday, November 16.",
+"ja": "1回目は、11月16日（月）に東京であります。",
+"mix": "1回目は、11月16日（月）に {Tokyo} であります。"
+},
+{
+"en": "The next ones are in Sapporo and Osaka on November 23, a holiday.",
+"ja": "次は、11月23日（月・祝）に札幌と大阪であります。",
+"mix": "次は、{November 23}（月・祝）に札幌と大阪であります。"
+},
+{
+"en": "The movie is in theaters now.",
+"ja": "映画は、いま絶賛上映中です。",
+"mix": "{movie} は、いま絶賛上映中です。"
+},
+{
+"en": "Please come, everyone!",
+"ja": "みなさん、ぜひお越しください！",
+"mix": "{everyone}、ぜひお越しください！"
+}
+],
+"post": {
+"account": "4out_movie",
+"date": "2026-11-09",
+"likes": 4976,
+"name": "映画『4アウト ─もう一度、プレイボール─』公式",
+"url": "https://x.com/4out_movie/status/2119716645694242936"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"11月16日",
+"11月23日",
+"11月9日"
+],
+"q": "大阪で舞台挨拶があるのは？",
+"why": "4文目に Sapporo and Osaka on November 23 とあります。"
+},
+{
+"a": 2,
+"choices": [
+"平日",
+"学校",
+"祝日"
+],
+"q": "holiday の意味は？",
+"why": "holiday は「祝日・休日」です。"
+},
+{
+"a": 0,
+"choices": [
+"one",
+"ones",
+"them"
+],
+"q": "I have a red pen and a blue ___.（青いの）",
+"why": "pen は1本なので one。同じ名詞のくり返しをさけます。"
+}
+],
+"summary": "映画『4アウト』の大ヒット御礼舞台挨拶が決まりました。11月16日（月）は東京、11月23日（月・祝）は札幌と大阪で開かれます。映画は絶賛上映中です。",
+"talk": {
+"hint": "I want to go to ___.",
+"ja": "どの町の舞台挨拶に行きたいですか？",
+"q": "Which city do you want to go to?"
+},
+"title": "『4アウト』、大ヒット御礼の舞台挨拶が決定",
+"words": [
+{
+"ja": "舞台挨拶",
+"note": "映画館で出演者などがあいさつするイベント。",
+"w": "stage greeting"
+},
+{
+"ja": "お礼の・感謝の",
+"note": "ポストの「御礼」。thank-you event ＝ お礼のイベント。",
+"w": "thank-you"
+},
+{
+"ja": "決まった",
+"note": "ポストの「決定」は decided でなく confirmed。",
+"w": "confirmed"
+},
+{
+"ja": "祝日",
+"note": "ポストの「祝」。11月23日は祝日の月曜日です。",
+"w": "holiday"
+},
+{
+"ja": "映画館",
+"note": "in theaters ＝ 映画館で（上映中）。",
+"w": "theater"
+}
+]
+},
+{
+"added": "2026-11-09T18:00",
+"addedAt": "2026-11-10T14:47",
+"cat": "movie",
+"gloss": {
+"11 days": "11日",
+"a": "ひとつの",
+"a special collaboration visual with the madoka magica movie": "『まどか☆マギカ』の映画とのスペシャルコラボビジュアル",
+"a special collaboration visual with the madoka magica movie is": "『まどか☆マギカ』の映画とのコラボビジュアルが〜",
+"and": "〜と・そして",
+"applications": "申し込み（複数形）",
+"applications for stage greetings in tokyo and osaka": "東京と大阪の舞台挨拶の申し込み",
+"applications for stage greetings in tokyo and osaka are": "東京と大阪の舞台挨拶の申し込みは〜",
+"are": "〜です（複数）",
+"big": "大きな",
+"big hit": "大ヒット",
+"by": "〜のそばに",
+"collaboration": "コラボ",
+"days": "日（複数形）",
+"for": "〜の（ための）",
+"friday": "金曜日",
+"friday november 20": "11月20日（金）",
+"from": "〜の（〜から）",
+"girls": "少女たち",
+"girls from the two movies": "2つの映画の少女たち",
+"girls from the two movies are": "2つの映画の少女たちは〜",
+"greetings": "挨拶（複数形）",
+"hit": "ヒット",
+"in": "〜で・〜後に",
+"in 11 days": "11日後に",
+"in magical light": "魔法の光の中で",
+"in theaters 11 20": "11.20 劇場公開",
+"in theaters on friday november 20": "11月20日（金）に映画館で",
+"is": "〜です",
+"it": "それは",
+"light": "光",
+"madoka": "まどか（作品名）",
+"magica": "マギカ（作品名）",
+"magical": "魔法の",
+"magical light": "魔法の光",
+"mahoutsukai": "魔法使い（作品名の一部）",
+"mahoutsukai no yoru will open": "『魔法使いの夜』は公開される",
+"mahoutsukai no yoru will open in": "『魔法使いの夜』は〜で公開される",
+"movie": "映画",
+"movies": "映画（複数）",
+"no": "の（作品名の一部）",
+"november": "11月",
+"november 20": "11月20日",
+"now": "いま",
+"on": "〜に（日付）",
+"on friday november 20": "11月20日（金）に",
+"open": "公開される",
+"opens": "公開される（openの三単現）",
+"osaka": "大阪",
+"other": "もう片方の",
+"out": "公開されて",
+"says": "書いてある（sayの三単現）",
+"showing": "上映中",
+"side": "側・ほう",
+"special": "特別な",
+"special collaboration": "特別なコラボ",
+"special collaboration visual": "スペシャルコラボビジュアル",
+"stage": "舞台",
+"stage greetings": "舞台挨拶",
+"the": "その",
+"the madoka side": "まどかのほう",
+"the madoka side says big hit now showing": "まどかのほうには「大ヒット上映中」とある",
+"the madoka side says big hit now showing and the other": "まどかのほうには「大ヒット上映中」、もう片方は",
+"theaters": "映画館（複数）",
+"tokyo": "東京",
+"two": "2つの",
+"visual": "ビジュアル（絵）",
+"will": "〜だろう（未来）",
+"with": "〜との",
+"yoru": "夜（作品名の一部）"
+},
+"grad": [
+{
+"q1": "『魔法使いの夜』は、{in 11 days} 劇場公開されます。",
+"q2": "{Mahoutsukai no Yoru will open} 劇場で、{in 11 days}。",
+"q3": "{Mahoutsukai no Yoru will open in} 劇場 {in 11 days.}"
+},
+{
+"q1": "{Friday, November 20} に劇場公開されます。",
+"q2": "{It} 劇場で公開される {on Friday, November 20}。",
+"q3": "{It} 公開される {in theaters on Friday, November 20.}"
+},
+{
+"q1": "『まどか☆マギカ』の {movie} との {special collaboration visual} が公開されました。",
+"q2": "{A special collaboration visual with the Madoka Magica movie} が公開されました。",
+"q3": "{A special collaboration visual with the Madoka Magica movie is} 公開された。"
+},
+{
+"q1": "2つの映画の {girls} が、{magical light} の中に並んでいます。",
+"q2": "{Girls from the two movies} が {magical light} の中に並んでいます。",
+"q3": "{Girls from the two movies are} 並んで {in magical light.}"
+},
+{
+"q1": "{The Madoka side} には「{big hit} 上映中」、もう片方には「11.20 劇場公開」と書かれています。",
+"q2": "{The Madoka side says \"Big hit, now showing,\"} もう片方には「11.20 劇場公開」と書かれています。",
+"q3": "{The Madoka side says \"Big hit, now showing,\" and the other} 言う {\"In theaters 11.20.\"}"
+},
+{
+"q1": "{Tokyo} と {Osaka} の {stage greetings} の、申し込み受付中です。",
+"q2": "{Applications for stage greetings in Tokyo and Osaka} は受付中です。",
+"q3": "{Applications for stage greetings in Tokyo and Osaka are} 受付中 {now.}"
+}
+],
+"grammar": {
+"body": "with は名詞のあとに置いて、「〜との…」「〜がついた…」と説明できます。a visual with the movie は「その映画とのビジュアル」です。",
+"ex": [
+{
+"en": "I bought a ticket with a free gift.",
+"ja": "私は特典つきのチケットを買いました。"
+},
+{
+"en": "This is a poster with a cat.",
+"ja": "これは、ねこがいるポスターです。"
+}
+],
+"title": "名詞 ＋ with 〜「〜との・〜つきの…」"
+},
+"id": "20261109-mahoyo-madoka-collab",
+"level": 2,
+"lines": [
+{
+"en": "Mahoutsukai no Yoru will open in theaters in 11 days.",
+"ja": "『魔法使いの夜』は、あと11日で劇場公開されます。",
+"mix": "『魔法使いの夜』は、あと {11 days} で劇場公開されます。"
+},
+{
+"en": "It opens in theaters on Friday, November 20.",
+"ja": "11月20日（金）に劇場公開されます。",
+"mix": "{November 20}（金）に劇場公開されます。"
+},
+{
+"en": "A special collaboration visual with the Madoka Magica movie is out.",
+"ja": "『まどか☆マギカ』の映画とのスペシャルコラボビジュアルが公開されました。",
+"mix": "『まどか☆マギカ』の映画との {special collaboration} ビジュアルが公開されました。"
+},
+{
+"en": "Girls from the two movies are side by side in magical light.",
+"ja": "2つの映画の少女たちが、魔法の光の中に並んでいます。",
+"mix": "2つの映画の {girls} が、魔法の {light} の中に並んでいます。"
+},
+{
+"en": "The Madoka side says \"Big hit, now showing,\" and the other says \"In theaters 11.20.\"",
+"ja": "まどかのほうには「大ヒット上映中」、もう片方には「11.20 劇場公開」と書かれています。",
+"mix": "まどかのほうには「{big hit} 上映中」、もう片方には「11.20 劇場公開」と書かれています。"
+},
+{
+"en": "Applications for stage greetings in Tokyo and Osaka are open now.",
+"ja": "東京と大阪の舞台挨拶の、申し込み受付中です。",
+"mix": "東京と大阪の {stage greetings} の、申し込み受付中です。"
+}
+],
+"post": {
+"account": "mahoyo_movie",
+"date": "2026-11-09",
+"likes": 9764,
+"name": "映画『魔法使いの夜』公式",
+"url": "https://x.com/mahoyo_movie/status/2119716632926867891"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"11月13日",
+"11月16日",
+"11月20日"
+],
+"q": "『魔法使いの夜』の劇場公開日は？",
+"why": "2文目に on Friday, November 20 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"コラボ（いっしょに作ること）",
+"割引",
+"予告"
+],
+"q": "collaboration の意味は？",
+"why": "collaboration は協力して作ること。ポストの「コラボ」です。"
+},
+{
+"a": 1,
+"choices": [
+"on",
+"in",
+"at"
+],
+"q": "The movie opens ___ 11 days.（あと11日で）",
+"why": "「〜後に」は in ＋ 期間。in 11 days です。"
+}
+],
+"summary": "映画『魔法使いの夜』は11月20日（金）に劇場公開です。公開まであと11日となり、『劇場版 魔法少女まどか☆マギカ』とのスペシャルコラボビジュアルが公開されました。舞台挨拶（東京・大阪）の申し込みも受け付け中です。",
+"talk": {
+"hint": "I am going to see ___ first.",
+"ja": "どちらの映画を先に見ますか？",
+"q": "Which movie are you going to see first?"
+},
+"title": "『魔法使いの夜』、まどか☆マギカとのコラボ絵",
+"words": [
+{
+"ja": "コラボ・協力して作ること",
+"note": "ポストの「コラボ」。collab と短くも言います。",
+"w": "collaboration"
+},
+{
+"ja": "ビジュアル（絵・図柄）",
+"note": "ポストの「ビジュアル」。ここでは公開された1枚の絵のことです。",
+"w": "visual"
+},
+{
+"ja": "となりあって・並んで",
+"note": "ポストの絵の説明。少女たちが並んでいます。",
+"w": "side by side"
+},
+{
+"ja": "公開される・受付中の",
+"note": "映画なら「公開される」、申し込みなら「受付中」。",
+"w": "open"
+},
+{
+"ja": "舞台挨拶",
+"note": "映画館で出演者などがあいさつするイベント。",
+"w": "stage greeting"
+}
+]
+},
+{
+"added": "2026-11-09T15:40",
+"addedAt": "2026-11-10T14:47",
+"cat": "movie",
+"gloss": {
+"25 years": "25年",
+"a": "ひとりの",
+"about": "〜について",
+"above": "〜の上に",
+"above all the writer finds it amazing that the director": "何より書いた人はその監督が〜ことをすごいと思う",
+"above all the writer finds it amazing that the director has not": "何より書いた人はその監督が〜していないことをすごいと思う",
+"all": "すべて",
+"amazing": "すごい",
+"and": "〜と",
+"at": "〜で",
+"at all": "まったく",
+"bad": "悪い",
+"been": "〜されて（has beenで）",
+"called": "呼んだ（callの過去分詞）",
+"criticized": "批判された",
+"director": "映画監督",
+"even": "〜でさえ",
+"even so the director has been": "それでもその監督は〜してきた",
+"films": "映画（filmの複数形）",
+"finds": "〜だと思う",
+"for": "〜について・〜のあいだ",
+"harshly": "厳しく",
+"has": "〜してきた（現在完了）",
+"have": "〜してきた（現在完了）",
+"i": "私は",
+"improved": "上達した（improveの過去分詞）",
+"is": "〜です",
+"it": "それを",
+"keeps": "〜し続ける",
+"least": "少なくとも（at least）",
+"many": "たくさんの",
+"many times": "何度も",
+"many times for the scripts": "脚本のことで何度も",
+"more": "より多く",
+"new": "新しい",
+"new films": "新作映画",
+"new films regularly for more than 25 years": "25年以上コンスタントに新作映画を",
+"not": "〜ない",
+"of": "〜の",
+"of respect": "尊敬に値する",
+"own": "自分自身の",
+"people": "人々",
+"people have": "人々は〜してきた",
+"people have called the scripts bad and": "人々は脚本を悪いと〜と呼んできた",
+"poor": "お粗末な",
+"regularly": "コンスタントに",
+"releasing": "発表すること",
+"respect": "尊敬",
+"says": "言う・書く",
+"scripts": "脚本（scriptの複数形）",
+"so": "そう（even soで「それでも」）",
+"talks": "話す（talkの三単現）",
+"than": "〜より",
+"that": "〜ということ",
+"the": "その",
+"the director": "その監督",
+"the director has been": "その監督は〜されてきた",
+"the director has been harshly": "その監督は厳しく〜されてきた",
+"the scripts": "その脚本",
+"the writer": "書いた人",
+"the writer says at least": "書いた人は少なくともと言う",
+"the writer says at least i": "書いた人は少なくとも私はと言う",
+"the writer says this is amazing": "書いた人はこれはすごいと言う",
+"the writer says this is amazing and": "書いた人はこれはすごくて〜と言う",
+"the writer talks about a director who": "書いた人は〜する監督について話す",
+"their": "その人の",
+"their own scripts": "自分自身の脚本",
+"this": "これ",
+"times": "回",
+"who": "〜する（人）",
+"worthy": "値する",
+"writer": "書いた人",
+"writing": "書くこと",
+"years": "年（yearの複数形）"
+},
+"grad": [
+{
+"q1": "{The writer} は、自分で {scripts} を書き続けている {director} について話しています。",
+"q2": "{The writer talks about a director who} 自分の {scripts} を書き続けている。",
+"q3": "{The writer talks about a director who} 書き続けている {their own scripts.}"
+},
+{
+"q1": "その {director} は、{the scripts} のことで何度も厳しく批判されてきました。",
+"q2": "{The director has been} 厳しく批判された {many times}、{the scripts} について。",
+"q3": "{The director has been harshly} 批判された {many times for the scripts.}"
+},
+{
+"q1": "{People} は、{the scripts} を「悪い」「お粗末」と呼んできました。",
+"q2": "{People have} {the scripts} を「{bad}」「お粗末」と呼んできました。",
+"q3": "{People have called the scripts bad and} お粗末。"
+},
+{
+"q1": "それでもその {director} は、{25 years} 以上にわたって、コンスタントに {new films} を発表し続けています。",
+"q2": "{Even so, the director has been} {new films} を {regularly} 発表し続けている、{25 years} 以上にわたって。",
+"q3": "{Even so, the director has been} 発表している {new films regularly for more than 25 years.}"
+},
+{
+"q1": "{The writer} は、これは {amazing} で、{respect} に値すると書いています。",
+"q2": "{The writer says this is amazing} 、{respect} に値する。",
+"q3": "{The writer says this is amazing and} 値する {of respect.}"
+},
+{
+"q1": "{The writer} は「少なくとも自分はその {director} を尊敬する」と書いています。",
+"q2": "{The writer says, at least,} 「自分はその {director} を尊敬する」。",
+"q3": "{The writer says, at least, I} 尊敬する {the director.}"
+},
+{
+"q1": "何より、その {director} がまったく上達していないことを、{the writer} は {amazing} と感じています。",
+"q2": "{Above all, the writer finds it amazing that the director} が、まったく上達していません。",
+"q3": "{Above all, the writer finds it amazing that the director has not} 上達した {at all.}"
+}
+],
+"grammar": {
+"body": "have / has been ＋ 動詞ing の形で、「ずっと〜し続けている」と、過去から今まで続いている動きを表します。for ＋ 期間（for 25 years）や since ＋ 始まりの時（since 2000）といっしょによく使います。",
+"ex": [
+{
+"en": "She has been studying English for two years.",
+"ja": "彼女は2年間、英語を勉強し続けています。"
+},
+{
+"en": "It has been raining since morning.",
+"ja": "朝からずっと雨が降り続いています。"
+}
+],
+"title": "現在完了進行形「ずっと〜し続けている」"
+},
+"id": "20261109-director-own-scripts",
+"level": 3,
+"lines": [
+{
+"en": "The writer talks about a director who keeps writing their own scripts.",
+"ja": "投稿した人は、自分で脚本を書き続けている映画監督について話しています。",
+"mix": "投稿した人は、自分で {scripts} を書き続けている {director} について話しています。"
+},
+{
+"en": "The director has been harshly criticized many times for the scripts.",
+"ja": "その監督は、脚本のことで何度も厳しく批判されてきました。",
+"mix": "その {director} は、{scripts} のことで何度も厳しく批判されてきました。"
+},
+{
+"en": "People have called the scripts bad and poor.",
+"ja": "人々は、脚本を「悪い」「お粗末」と呼んできました。",
+"mix": "人々は、{scripts} を「悪い」「お粗末」と呼んできました。"
+},
+{
+"en": "Even so, the director has been releasing new films regularly for more than 25 years.",
+"ja": "それでもその監督は、25年以上にわたって、コンスタントに新作映画を発表し続けています。",
+"mix": "それでもその {director} は、25年以上にわたって、コンスタントに新作 {films} を発表し続けています。"
+},
+{
+"en": "The writer says this is amazing and worthy of respect.",
+"ja": "投稿した人は、これはすごいことで、尊敬に値すると書いています。",
+"mix": "投稿した人は、これは {amazing} で、尊敬に値すると書いています。"
+},
+{
+"en": "The writer says, at least, I respect the director.",
+"ja": "投稿した人は「少なくとも自分はその監督を尊敬する」と書いています。",
+"mix": "投稿した {writer} は「少なくとも自分はその監督を尊敬する」と書いています。"
+},
+{
+"en": "Above all, the writer finds it amazing that the director has not improved at all.",
+"ja": "何より、その監督がまったく上達していないことを、投稿した人はすごいと感じています。",
+"mix": "何より、その {director} がまったく上達していないことを、投稿した人は {amazing} と感じています。"
+}
+],
+"post": {
+"account": "ochichan",
+"date": "2026-11-09",
+"likes": 2000,
+"name": "ochichan",
+"url": "https://x.com/ochichan/status/2119681465420227060"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"批判されても、自分で脚本を書いて新作を発表し続けていること",
+"毎回ちがう人に脚本を頼んでいること",
+"脚本がどんどん上手になっていること"
+],
+"q": "投稿した人がすごいと考えていることは？",
+"why": "1文目から4文目に、批判されても脚本を書き続け、新作を発表し続けているとあります。"
+},
+{
+"a": 1,
+"choices": [
+"批判する",
+"上達する・よくなる",
+"発表する"
+],
+"q": "has not improved の improve の意味は？",
+"why": "improve は「上達する・よくなる」。has not improved at all で「まったく上達していない」です。"
+},
+{
+"a": 2,
+"choices": [
+"is releasing",
+"has release",
+"has been releasing"
+],
+"q": "The director ___ new films for more than 25 years.（25年以上、発表し続けている）",
+"why": "過去から今まで続く動きは has been ＋ 動詞ing（現在完了進行形）。for ＋ 期間といっしょに使います。"
+}
+],
+"summary": "ポストを書いた人は、脚本をたびたび厳しく批判されながらも、自分で脚本を書き続け、25年以上コンスタントに新作映画を発表している映画監督について、尊敬に値すると書いています。何よりまったく上達しないのがすごい、と考えています。監督の名前は書かれていません。",
+"talk": {
+"hint": "I respect ___ because ___.",
+"ja": "あなたが尊敬している監督はいますか？",
+"q": "Is there a director you respect?"
+},
+"title": "批判されても脚本を書き続ける監督",
+"words": [
+{
+"ja": "脚本",
+"note": "ポストの「脚本」は script。複数なら scripts。",
+"w": "script"
+},
+{
+"ja": "批判する",
+"note": "ポストの「袋叩きにされても」を、harshly criticized（厳しく批判された）と表しました。",
+"w": "criticize"
+},
+{
+"ja": "定期的に・コンスタントに",
+"note": "ポストの「コンスタントに」を regularly で表しました。",
+"w": "regularly"
+},
+{
+"ja": "〜に値する",
+"note": "ポストの「尊敬に値する」は worthy of respect。",
+"w": "worthy of"
+},
+{
+"ja": "上達する・よくなる",
+"note": "ポストの「上手くならない」は has not improved。",
+"w": "improve"
 }
 ]
 },
