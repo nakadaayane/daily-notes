@@ -1,5 +1,886 @@
 window.LESSONS = [
 {
+"added": "2026-11-11T07:32",
+"addedAt": "2026-11-11T14:44",
+"cat": "movie",
+"gloss": {
+"about": "〜について",
+"an": "ひとつの",
+"article": "記事",
+"behind": "〜の裏側にある",
+"cinematoday": "シネマトゥデイ（媒体名）",
+"cinematoday shared an article": "シネマトゥデイが記事を紹介した",
+"cinematoday shared an article about the": "シネマトゥデイがその〜についての記事を紹介した",
+"effects": "効果",
+"flapping": "はばたく（flapの-ing形）",
+"for": "〜のための",
+"ghidorah": "ギドラ",
+"godzilla": "ゴジラ",
+"godzilla minus zero": "ゴジラ-0.0（作品名）",
+"identity": "正体",
+"inoue": "井上（人名）",
+"is": "〜です",
+"it": "それは",
+"it is": "それは〜です",
+"it is about the": "それはその〜についてです",
+"king": "キング",
+"king ghidorah": "キングギドラ",
+"minus": "マイナス",
+"movie": "映画",
+"natsuko": "奈津子（人名）",
+"natsuko inoue works on sound effects": "井上奈津子は音響効果を担当している",
+"natsuko inoue works on sound effects for the": "井上奈津子はその〜の音響効果を担当している",
+"of": "〜の",
+"on": "〜を（work onで）",
+"revealed": "明かした（revealの過去形）",
+"shared": "紹介した（shareの過去形）",
+"she": "彼女は",
+"she revealed": "彼女は明かした",
+"she revealed the true identity of the": "彼女はその〜の本当の正体を明かした",
+"sound": "音",
+"sound effects": "音響効果",
+"sound of king ghidorah": "キングギドラの音",
+"story": "話",
+"tells": "伝える",
+"the": "その",
+"the article": "その記事",
+"the article tells the story": "その記事は話を伝える",
+"the article tells the story behind the": "その記事はその〜の裏側の話を伝える",
+"true": "本当の",
+"true identity": "本当の正体",
+"works": "担当している（work on）",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "{Cinematoday} が、映画『ゴジラ-0.0』についての {article} を紹介しました。",
+"q2": "{Cinematoday shared an article} 、映画『ゴジラ-0.0』について。",
+"q3": "{Cinematoday shared an article about the} 映画 {Godzilla Minus Zero.}"
+},
+{
+"q1": "{King Ghidorah} の“はばたき” {sound} についての記事です。",
+"q2": "{It is} について、はばたき {sound of King Ghidorah.}",
+"q3": "{It is about the} はばたき {sound of King Ghidorah.}"
+},
+{
+"q1": "{Inoue} さんは、この映画の {sound effects} を担当しています。",
+"q2": "{Natsuko Inoue works on sound effects} 、この映画の。",
+"q3": "{Natsuko Inoue works on sound effects for the} 映画。"
+},
+{
+"q1": "{She} は、その音の {true identity} を明かしました。",
+"q2": "{She revealed} その音の {true identity.}",
+"q3": "{She revealed the true identity of the} 音。"
+},
+{
+"q1": "{The article} は、その音の裏側にある {story} を伝えています。",
+"q2": "{The article tells the story} 、その音の裏側。",
+"q3": "{The article tells the story behind the} 音。"
+}
+],
+"grammar": {
+"body": "work on 〜 は「〜の仕事を担当する」という意味です。work の次に on を置き、そのあとに仕事の中身が来ます。三単現なので、主語が she / he のときは works on です。",
+"ex": [
+{
+"en": "He works on the music for the film.",
+"ja": "彼はその映画の音楽を担当しています。"
+},
+{
+"en": "They work on special effects.",
+"ja": "彼らは特殊効果に取り組んでいます。"
+}
+],
+"title": "work on 〜「〜を担当する・〜に取り組む」"
+},
+"id": "20261110-godzilla0-kinggidorah-wings",
+"level": 3,
+"lines": [
+{
+"en": "Cinematoday shared an article about the movie Godzilla Minus Zero.",
+"ja": "シネマトゥデイが、映画『ゴジラ-0.0』についての記事を紹介しました。",
+"mix": "シネマトゥデイが、映画『ゴジラ-0.0』についての {article} を紹介しました。"
+},
+{
+"en": "It is about the flapping sound of King Ghidorah.",
+"ja": "キングギドラの“はばたき”音についての記事です。",
+"mix": "キングギドラの“はばたき” {sound} についての記事です。"
+},
+{
+"en": "Natsuko Inoue works on sound effects for the movie.",
+"ja": "井上奈津子さんは、この映画の音響効果を担当しています。",
+"mix": "井上奈津子さんは、この映画の {sound effects} を担当しています。"
+},
+{
+"en": "She revealed the true identity of the sound.",
+"ja": "彼女は、その音の本当の正体を明かしました。",
+"mix": "彼女は、その音の {true identity} を明かしました。"
+},
+{
+"en": "The article tells the story behind the sound.",
+"ja": "記事は、その音の裏側にある話を伝えています。",
+"mix": "記事は、その音の裏側にある {story} を伝えています。"
+}
+],
+"post": {
+"account": "cinematoday",
+"date": "2026-11-11",
+"likes": 853,
+"name": "シネマトゥデイ",
+"url": "https://x.com/cinematoday/status/2120283360178364481"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"キングギドラの“はばたき”音の正体",
+"ゴジラの色の変え方",
+"映画の公開日"
+],
+"q": "この記事は何についてのものですか？",
+"why": "2文目と4文目に、キングギドラの flapping sound と true identity とあります。"
+},
+{
+"a": 2,
+"choices": [
+"かくす",
+"忘れる",
+"明かす"
+],
+"q": "reveal の意味は？",
+"why": "reveal は「明らかにする・明かす」。過去形は revealed です。"
+},
+{
+"a": 1,
+"choices": [
+"work",
+"works",
+"working"
+],
+"q": "Natsuko Inoue ___ on sound effects.（担当している）",
+"why": "主語が三人称単数（Natsuko Inoue）なので works です。"
+}
+],
+"summary": "シネマトゥデイが、『ゴジラ-0.0』のキングギドラの“はばたき”音の正体を、音響効果の井上奈津子さんが明かした記事を紹介しました。音の裏側が語られています。",
+"talk": {
+"hint": "I remember the sound of ___ in ___.",
+"ja": "映画で、どの音が印象に残っていますか？",
+"q": "Which sound do you remember from a movie?"
+},
+"title": "『ゴジラ-0.0』キングギドラの“はばたき”音の正体",
+"words": [
+{
+"ja": "明かす・明らかにする",
+"note": "ポストの「明かす」は reveal。過去形は revealed。",
+"w": "reveal"
+},
+{
+"ja": "正体",
+"note": "ポストの「正体」は the true identity。",
+"w": "identity"
+},
+{
+"ja": "音響効果（効果音）",
+"note": "ポストの「音響効果」は sound effects。",
+"w": "sound effects"
+},
+{
+"ja": "（翼を）はばたかせる",
+"note": "ポストの「はばたき」は flapping。",
+"w": "flap"
+},
+{
+"ja": "〜の裏側に",
+"note": "ポストの「裏側」は the story behind 〜 で表せます。",
+"w": "behind"
+}
+]
+},
+{
+"added": "2026-11-11T01:23",
+"addedAt": "2026-11-11T14:44",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"about": "〜について",
+"about it": "それについて",
+"also": "また",
+"amazed": "仰天した",
+"and": "そして・〜と",
+"can't": "〜できない（cannotの短縮）",
+"don't": "〜しない（do notの短縮）",
+"episode": "エピソード",
+"expo": "万博",
+"for": "〜のあいだ",
+"for now imax is": "今のところIMAXは〜だ",
+"has": "持っている",
+"he": "彼は",
+"he also said": "彼はまた言った",
+"he also said if we don't see the thing itself we can't": "彼は「そのものを見なければ〜できない」とも言った",
+"held": "開かれた（holdの過去分詞）",
+"huge": "とても大きい",
+"if": "もし〜なら",
+"if we don't see the thing itself": "そのものを見なければ",
+"imax": "IMAX（大画面の映画方式）",
+"imax screen": "IMAXのスクリーン",
+"in": "〜に・〜で",
+"in 1985 the tsukuba expo": "1985年のつくば万博",
+"in 1985 the tsukuba expo was": "1985年のつくば万博は〜だった",
+"in japan": "日本で",
+"is": "〜だ",
+"it": "それ",
+"itself": "それ自身",
+"japan": "日本",
+"kind": "種類",
+"novelty": "キワモノ・めずらしいもの",
+"now": "今",
+"of": "〜の",
+"of novelty": "キワモノの",
+"of the": "その〜の",
+"osamu": "治虫（人名）",
+"osamu tezuka": "手塚治虫",
+"osamu tezuka saw imax": "手塚治虫はIMAXを見た",
+"osamu tezuka saw imax there and was": "手塚治虫はそこでIMAXを見て〜だった",
+"picture": "絵",
+"post": "ポスト",
+"said": "言った（sayの過去形）",
+"saw": "見た（seeの過去形）",
+"screen": "スクリーン",
+"see": "見る",
+"shares": "紹介する",
+"talk": "話す",
+"tezuka": "手塚（人名）",
+"tezuka said": "手塚は言った",
+"tezuka said for now imax is a": "手塚は「今のところIMAXはひとつの〜」と言った",
+"the": "その",
+"the post": "そのポスト",
+"the post has a": "そのポストにはひとつの〜がある",
+"the post has a picture of the": "そのポストにはその〜の絵がある",
+"the post shares": "そのポストは紹介する",
+"the post shares this": "そのポストはこの〜を紹介する",
+"the thing itself": "そのもの",
+"the tsukuba expo": "つくば万博",
+"there": "そこで",
+"thing": "もの",
+"this": "この",
+"tsukuba": "つくば（地名）",
+"was": "〜だった・〜された",
+"we": "私たちは"
+},
+"grad": [
+{
+"q1": "1985年に、日本で {the Tsukuba Expo} が開かれました。",
+"q2": "{In 1985, the Tsukuba Expo} が日本で {was} 開催。",
+"q3": "{In 1985, the Tsukuba Expo was} 開催 {in Japan.}"
+},
+{
+"q1": "{Osamu Tezuka} 先生は、そこで {IMAX} を見て仰天しました。",
+"q2": "{Osamu Tezuka saw IMAX} そこで、仰天しました。",
+"q3": "{Osamu Tezuka saw IMAX there and was} 仰天。"
+},
+{
+"q1": "{The post} は、そのエピソードを紹介しています。",
+"q2": "{The post shares} そのエピソード。",
+"q3": "{The post shares this} エピソード。"
+},
+{
+"q1": "{Tezuka} 先生は「{IMAX} は現在のところ、{novelty} の一種だ」と言いました。",
+"q2": "{Tezuka said,}「{For now, IMAX is} 一種の {novelty.}」",
+"q3": "{Tezuka said, For now, IMAX is a} 種類 {of novelty.}"
+},
+{
+"q1": "{He} は、「とにかく {the thing itself} を観てみなければ話しにならない」と言いました。",
+"q2": "{He also said,}「{If we don't see the thing itself,} 話しにならない」",
+"q3": "{He also said, If we don't see the thing itself, we can't} 話す {about it.}"
+},
+{
+"q1": "{The post} には、{IMAX} の大きな {screen} の絵がついています。",
+"q2": "{The post has a} 絵 {of the} 大きな {IMAX screen.}",
+"q3": "{The post has a picture of the} 大きな {IMAX screen.}"
+}
+],
+"grammar": {
+"body": "a kind of 〜 は「〜の一種・〜のようなもの」という意味です。of のあとに名詞を置きます。いくつかの種類を言うときは kinds of 〜 になります。",
+"ex": [
+{
+"en": "A whale is a kind of mammal.",
+"ja": "クジラはほ乳類の一種です。"
+},
+{
+"en": "This is a kind of game.",
+"ja": "これはゲームの一種です。"
+}
+],
+"title": "a kind of 〜「〜の一種」"
+},
+"id": "20261110-tezuka-imax-1985",
+"level": 3,
+"lines": [
+{
+"en": "In 1985, the Tsukuba Expo was held in Japan.",
+"ja": "1985年に、日本でつくば万博が開かれました。",
+"mix": "1985年に、日本でつくば {Expo} が開かれました。"
+},
+{
+"en": "Osamu Tezuka saw IMAX there and was amazed.",
+"ja": "手塚治虫先生は、そこでIMAXを見て仰天しました。",
+"mix": "手塚治虫先生は、そこで {IMAX} を見て仰天しました。"
+},
+{
+"en": "The post shares this episode.",
+"ja": "このポストは、そのエピソードを紹介しています。",
+"mix": "この {post} は、そのエピソードを紹介しています。"
+},
+{
+"en": "Tezuka said, “For now, IMAX is a kind of novelty.”",
+"ja": "手塚先生は「IMAXは現在のところキワモノの一種だ」と言いました。",
+"mix": "手塚先生は「IMAXは現在のところ、{novelty} の一種だ」と言いました。"
+},
+{
+"en": "He also said, “If we don't see the thing itself, we can't talk about it.”",
+"ja": "また、「とにかくそのものを観てみなければ話しにならない」と言いました。",
+"mix": "また、「とにかく {the thing itself} を観てみなければ話しにならない」と言いました。"
+},
+{
+"en": "The post has a picture of the huge IMAX screen.",
+"ja": "ポストには、IMAXの大きなスクリーンの絵がついています。",
+"mix": "ポストには、IMAXの大きな {screen} の絵がついています。"
+}
+],
+"post": {
+"account": "chuckiekun",
+"date": "2026-11-11",
+"likes": 2817,
+"name": "チャッキーくん",
+"url": "https://x.com/chuckiekun/status/2120190567644799118"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"つくば万博",
+"映画館の試写会",
+"アメリカの博物館"
+],
+"q": "手塚治虫先生がIMAXを見たのはどこですか？",
+"why": "1文目と2文目に、1985年のつくば万博（Tsukuba Expo）で見たとあります。"
+},
+{
+"a": 1,
+"choices": [
+"こわかった",
+"仰天した・とても驚いた",
+"つかれた"
+],
+"q": "amazed の意味は？",
+"why": "amazed は「とても驚いた」。ポストの「仰天」にあたります。"
+},
+{
+"a": 2,
+"choices": [
+"to",
+"for",
+"of"
+],
+"q": "IMAX is a kind ___ novelty.（〜の一種）",
+"why": "「〜の一種」は a kind of 〜 です。"
+}
+],
+"summary": "1985年のつくば万博（科学万博）で、手塚治虫先生がIMAXを見て仰天したエピソードの紹介です。手塚先生は「IMAXは現在のところキワモノの一種だ。とにかくそのものを観てみなければ話しにならない。」と語っています。",
+"talk": {
+"hint": "Yes, I have. / No, I haven't, but I want to.",
+"ja": "IMAXのスクリーンで映画を見たことがありますか？",
+"q": "Have you ever seen a movie on an IMAX screen?"
+},
+"title": "手塚治虫、つくば万博でIMAXを見て仰天",
+"words": [
+{
+"ja": "万博・博覧会",
+"note": "ポストの「万博」は expo（world’s fair とも言います）。",
+"w": "expo"
+},
+{
+"ja": "仰天した・とても驚いた",
+"note": "ポストの「仰天した」は was amazed。",
+"w": "amazed"
+},
+{
+"ja": "めずらしいもの・変わりだね",
+"note": "ポストの「キワモノ」を novelty で表しました。",
+"w": "novelty"
+},
+{
+"ja": "今のところ",
+"note": "ポストの「現在のところ」は for now。",
+"w": "for now"
+},
+{
+"ja": "エピソード・できごと",
+"note": "ポストの「エピソード」は日本語と同じ episode。",
+"w": "episode"
+}
+]
+},
+{
+"added": "2026-11-10T21:45",
+"addedAt": "2026-11-11T14:44",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"about": "〜について",
+"angry": "怒っている",
+"are": "〜です（複数）",
+"be": "〜される（be releasedで）",
+"been": "ずっと〜だ（beの過去分詞）",
+"believes": "考えている（believeの三単現）",
+"days": "日々（dayの複数形）",
+"few": "少しの",
+"film": "映画",
+"films": "映画（filmの複数形）",
+"for": "〜のための",
+"for the past few days": "ここ数日の間",
+"hans": "ハンス（人名）",
+"hans zimmer wrote": "ハンス・ジマーが書いた",
+"hans zimmer wrote the music for this": "ハンス・ジマーがこの〜の音楽を書いた",
+"happy": "うれしい",
+"has": "〜している（has beenで）",
+"hopes": "願っている（hopeの三単現）",
+"imax": "IMAX（大画面の映画館）",
+"in": "〜で・〜に",
+"in imax": "IMAXで",
+"in imax in japan too": "日本のIMAXでも",
+"in japan": "日本で",
+"in scale should be shown in imax": "スケールが〜で、IMAXで上映されるべきだ",
+"india": "インド",
+"is": "〜です",
+"is number one in india": "インドで1位だ",
+"japan": "日本",
+"large": "大きい",
+"large-scale": "大規模な",
+"music": "音楽",
+"number": "番号・ナンバー",
+"number one": "1位",
+"one": "1",
+"past": "過去の・この前の",
+"popular": "人気がある",
+"poster": "投稿した人",
+"ramayana": "ラーマーヤナ（作品名）",
+"released": "公開される（releaseの過去分詞）",
+"says": "言っている（sayの三単現）",
+"scale": "規模・スケール",
+"should": "〜するべきだ",
+"should be shown in imax": "IMAXで上映されるべきだ",
+"shown": "上映される（showの過去分詞）",
+"so": "とても",
+"sony": "ソニー",
+"that": "〜ということ",
+"the": "その",
+"the poster": "投稿した人",
+"the poster believes": "投稿した人は考えている",
+"the poster believes that films which are": "投稿した人は、〜な映画はと考えている",
+"the poster has been angry": "投稿した人はずっと怒っている",
+"the poster hopes": "投稿した人は願っている",
+"the poster hopes that ramayana will be": "投稿した人は、ラーマーヤナが〜されるよう願っている",
+"the poster is happy that": "投稿した人は〜でうれしい",
+"the poster is happy that the film is so": "投稿した人は、その映画がとても〜でうれしい",
+"the poster says": "投稿した人は言っている",
+"the poster says that ramayana a sony india film is number one in india": "投稿した人は、ソニー・インディア映画のラーマーヤナがインドで1位だと言っている",
+"this": "この",
+"too": "〜も",
+"week": "週",
+"which": "〜するところの（もの）",
+"will": "〜だろう（未来）",
+"wrote": "書いた（writeの過去形）",
+"zimmer": "ジマー（人名）"
+},
+"grad": [
+{
+"q1": "{The poster} は、ソニー・インディアの {film} 『ラーマーヤナ』が今週インドで {number one} だと言っています。",
+"q2": "{The poster says} ソニー・インディアの {film} 『ラーマーヤナ』、{is number one in India} 今週。",
+"q3": "{The poster says that Ramayana, a Sony India film, is number one in India} 今週。"
+},
+{
+"q1": "ハンス・ジマーが、この大規模な {film} の {music} を書きました。",
+"q2": "{Hans Zimmer wrote} 、この大規模な {film} の {music}。",
+"q3": "{Hans Zimmer wrote the music for this} 大規模な {film.}"
+},
+{
+"q1": "{The poster} は、その映画がとても人気なので、{happy} です。",
+"q2": "{The poster is happy that} その {film} が人気。",
+"q3": "{The poster is happy that the film is so} 人気だ。"
+},
+{
+"q1": "{The poster} は、{Japan} でも『ラーマーヤナ』が {IMAX} で公開されることを願っています。",
+"q2": "{The poster hopes} 『ラーマーヤナ』が 公開される {in IMAX} {in Japan} でも。",
+"q3": "{The poster hopes that Ramayana will be} 公開 {in IMAX in Japan, too.}"
+},
+{
+"q1": "{The poster} は、{scale} の大きな {films} は {IMAX} で上映されるべきだと考えています。",
+"q2": "{The poster believes} {scale} の大きな {films} は {should be shown in IMAX} だと。",
+"q3": "{The poster believes that films which are} 大規模 {in scale should be shown in IMAX.}"
+},
+{
+"q1": "{The poster} は、ここ数日ずっと、このことに {angry} です。",
+"q2": "{The poster has been angry} このことに ここ数日。",
+"q3": "{The poster has been angry} このことに {for the past few days.}"
+}
+],
+"grammar": {
+"body": "名詞（もの）のあとに which ＋ 説明を置くと、その名詞をくわしく説明できます。films which are large in scale ＝「スケールの大きな作品」。人のときは who、ものには which（または that）を使います。",
+"ex": [
+{
+"en": "This is a movie which many people love.",
+"ja": "これは多くの人が愛している映画です。"
+},
+{
+"en": "I like films which have great music.",
+"ja": "私はすばらしい音楽のある映画が好きです。"
+}
+],
+"title": "関係代名詞 which「〜する・〜な（もの）」"
+},
+"id": "20261110-ramayana-imax-wish",
+"level": 3,
+"lines": [
+{
+"en": "The poster says that Ramayana, a Sony India film, is number one in India this week.",
+"ja": "投稿した人は、ソニー・インディアの映画『ラーマーヤナ』が今週インドで1位だと言っています。",
+"mix": "投稿した人は、ソニー・インディアの {film} 『ラーマーヤナ』が今週インドで {number one} だと言っています。"
+},
+{
+"en": "Hans Zimmer wrote the music for this large-scale film.",
+"ja": "ハンス・ジマーが、この大規模な映画の音楽を書きました。",
+"mix": "ハンス・ジマーが、この大規模な映画の {music} を書きました。"
+},
+{
+"en": "The poster is happy that the film is so popular.",
+"ja": "投稿した人は、その映画がとても人気なので、うれしいです。",
+"mix": "投稿した人は、その映画がとても人気なので、{happy} です。"
+},
+{
+"en": "The poster hopes that Ramayana will be released in IMAX in Japan, too.",
+"ja": "投稿した人は、日本でも『ラーマーヤナ』がIMAXで公開されることを願っています。",
+"mix": "投稿した人は、{Japan} でも『ラーマーヤナ』が {IMAX} で公開されることを願っています。"
+},
+{
+"en": "The poster believes that films which are large in scale should be shown in IMAX.",
+"ja": "投稿した人は、スケールの大きな作品はIMAXで上映されるべきだと考えています。",
+"mix": "投稿した人は、{scale} の大きな作品は {IMAX} で上映されるべきだと考えています。"
+},
+{
+"en": "The poster has been angry about this for the past few days.",
+"ja": "投稿した人は、ここ数日ずっと、このことに怒っています。",
+"mix": "投稿した人は、ここ数日ずっと、このことに {angry} です。"
+}
+],
+"post": {
+"account": "sakura___flute",
+"date": "2026-11-10",
+"likes": 2049,
+"name": "金子咲良(Flute长笛)",
+"url": "https://x.com/sakura___flute/status/2120135746560590003"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"映画の脚本",
+"映画の音楽",
+"映画の原作"
+],
+"q": "ハンス・ジマーが書いたのは？",
+"why": "2文目に Hans Zimmer wrote the music for this large-scale film. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"値段",
+"上映時間",
+"規模・スケール"
+],
+"q": "scale の意味は？",
+"why": "large in scale は「スケールが大きい」。scale は「規模」です。"
+},
+{
+"a": 0,
+"choices": [
+"which",
+"who",
+"what"
+],
+"q": "films ___ are large in scale（スケールの大きな作品）",
+"why": "「もの」（films）を説明するときは which を使います。who は人に使います。"
+}
+],
+"summary": "ポストした人（sakura___flute さん）は、ハンス・ジマーが音楽を書いたソニー・インディアの映画『ラーマーヤナ』がインドで1位になったことを喜び、日本のIMAXでも公開してほしいと考えています。スケールの大きな作品にはIMAXを使ってほしいと、ここ数日怒っているそうです。",
+"talk": {
+"hint": "I want to see ___ on an IMAX screen because ___.",
+"ja": "どの映画をIMAXの画面で見たいですか？",
+"q": "Which movie do you want to see on an IMAX screen?"
+},
+"title": "『ラーマーヤナ』インドで1位、日本のIMAXでも見たい",
+"words": [
+{
+"ja": "1位",
+"note": "ポストの「堂々の1位」は number one。",
+"w": "number one"
+},
+{
+"ja": "公開する",
+"note": "ポストの「公開して欲しい」は be released（公開される）で表せます。",
+"w": "release"
+},
+{
+"ja": "規模・スケール",
+"note": "ポストの「スケールの作品」は films that are large in scale。",
+"w": "scale"
+},
+{
+"ja": "怒っている",
+"note": "ポストの「怒ってますよ」を has been angry で表しました。",
+"w": "angry"
+},
+{
+"ja": "上映する",
+"note": "ポストの「IMAXで見るべき」は should be shown in IMAX（IMAXで上映されるべき）。",
+"w": "show"
+}
+]
+},
+{
+"added": "2026-11-10T20:14",
+"addedAt": "2026-11-11T14:44",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a premiere event": "完成披露イベント",
+"a premiere event for the": "その〜の完成披露イベント",
+"acting": "演技",
+"and": "〜と",
+"are": "〜です",
+"author": "作者",
+"beyond": "〜を超えて",
+"call": "呼ぶ",
+"close": "親しい",
+"each": "それぞれ",
+"event": "イベント",
+"for": "〜のための",
+"friends": "友だち",
+"gave": "あたえた（giveの過去形）",
+"he": "彼は",
+"he gave ohashi": "彼は大橋にあたえた",
+"he gave ohashi a": "彼は大橋にひとつあたえた",
+"held": "開かれた（holdの過去分詞）",
+"in": "〜で・〜の中で",
+"is": "〜です",
+"kacchan": "かっちゃん（あだ名）",
+"kazuya": "和也（人名）",
+"kazuya ohashi played the lead role": "大橋和也が主演を務めた",
+"kazuya ohashi played the lead role in the": "大橋和也がその〜で主演を務めた",
+"lead": "主な・主役の",
+"lead role": "主演（の役）",
+"lot": "たくさん（a lot of）",
+"maeda": "前田（人名）",
+"movie": "映画",
+"of": "〜の",
+"of praise": "称賛の",
+"ohashi": "大橋（人名）",
+"ohashi and oshiro maeda": "大橋と前田旺志郎",
+"ohashi and oshiro maeda are close": "大橋と前田旺志郎は親しい",
+"original": "もとの・原作の",
+"original author": "原作者",
+"oshiro": "旺志郎（人名）",
+"other": "ほかの人",
+"ou-chan": "おうちゃん（あだ名）",
+"ou-chan and kacchan": "おうちゃんとかっちゃん",
+"played": "演じた（playの過去形）",
+"praise": "称賛・ほめ言葉",
+"premiere": "完成披露・初公開",
+"premiere event": "完成披露イベント",
+"pro": "プロ",
+"role": "役",
+"said": "言った（sayの過去形）",
+"seiya": "せいや（人名）",
+"seiya is the original author": "せいやは原作者です",
+"seiya is the original author of this": "せいやはこの〜の原作者です",
+"seiya said": "せいやは言った",
+"seiya said your tsukkomi was beyond acting you are a": "せいやは「ツッコミは演技を超え、あなたは〜」と言った",
+"story": "物語",
+"the": "その",
+"they": "二人は",
+"they call": "二人は呼ぶ",
+"this": "この",
+"tsukkomi": "ツッコミ（相手の言葉に返す役）",
+"was": "〜された（受け身）",
+"was held": "開かれた",
+"you": "あなたは",
+"your": "あなたの",
+"your tsukkomi was beyond acting": "あなたのツッコミは演技を超えていた"
+},
+"grad": [
+{
+"q1": "映画の {premiere event} が開かれました。",
+"q2": "{A premiere event} 映画のために、{was held.}",
+"q3": "{A premiere event for the} 映画 {was held.}"
+},
+{
+"q1": "{Ohashi} さんが、映画で {lead role} を務めました。",
+"q2": "{Kazuya Ohashi played the lead role} 、映画で。",
+"q3": "{Kazuya Ohashi played the lead role in the} 映画。"
+},
+{
+"q1": "{Seiya} さんは、この物語の {original author} です。",
+"q2": "{Seiya is the original author} 、この物語の。",
+"q3": "{Seiya is the original author of this} 物語。"
+},
+{
+"q1": "{He} は {Ohashi} さんに、たくさんの {praise} を送りました。",
+"q2": "{He gave Ohashi} 、たくさんの {praise.}",
+"q3": "{He gave Ohashi a} たくさん {of praise.}"
+},
+{
+"q1": "{Seiya} さんは「{acting} の {tsukkomi} を超えていた！プロやな」と言いました。",
+"q2": "{Seiya said,}「{Your tsukkomi was beyond acting.} プロやな」",
+"q3": "{Seiya said, Your tsukkomi was beyond acting. You are a} プロ。"
+},
+{
+"q1": "{Ohashi} さんと前田旺志郎さんは、{close} 友だちです。",
+"q2": "{Ohashi and Oshiro Maeda} は {close} 友だち。",
+"q3": "{Ohashi and Oshiro Maeda are close} 友だち。"
+},
+{
+"q1": "{They} はおたがいを「{Ou-chan}」と「{Kacchan}」と呼び合います。",
+"q2": "{They call} おたがいを「{Ou-chan}」と「{Kacchan}」。",
+"q3": "{They call} おたがい {Ou-chan and Kacchan.}"
+}
+],
+"grammar": {
+"body": "each other は「おたがい（を・に）」という意味です。動詞のあとにそのまま置きます。「〜と呼び合う」は call each other 〜 と言います。",
+"ex": [
+{
+"en": "They help each other.",
+"ja": "彼らはおたがいを助け合います。"
+},
+{
+"en": "We know each other well.",
+"ja": "私たちはおたがいをよく知っています。"
+}
+],
+"title": "each other「おたがいを」"
+},
+"id": "20261110-konto-premiere-ohashi",
+"level": 2,
+"lines": [
+{
+"en": "A premiere event for the movie was held.",
+"ja": "映画の完成披露イベントが開かれました。",
+"mix": "映画の完成披露 {event} が開かれました。"
+},
+{
+"en": "Kazuya Ohashi played the lead role in the movie.",
+"ja": "大橋和也さんが、映画で主演を務めました。",
+"mix": "大橋和也さんが、映画で {lead role} を務めました。"
+},
+{
+"en": "Seiya is the original author of this story.",
+"ja": "せいやさんは、この物語の原作者です。",
+"mix": "せいやさんは、この物語の {original author} です。"
+},
+{
+"en": "He gave Ohashi a lot of praise.",
+"ja": "彼は大橋さんに、たくさんの称賛を送りました。",
+"mix": "彼は大橋さんに、たくさんの {praise} を送りました。"
+},
+{
+"en": "Seiya said, “Your tsukkomi was beyond acting. You are a pro!”",
+"ja": "せいやさんは「演技のツッコミを超えていた！プロやな」と言いました。",
+"mix": "せいやさんは「{acting} のツッコミを超えていた！プロやな」と言いました。"
+},
+{
+"en": "Ohashi and Oshiro Maeda are close friends.",
+"ja": "大橋さんと前田旺志郎さんは、親しい友だちです。",
+"mix": "大橋さんと前田旺志郎さんは、{close} 友だちです。"
+},
+{
+"en": "They call each other “Ou-chan” and “Kacchan.”",
+"ja": "二人はおたがいを「おうちゃん」と「かっちゃん」と呼び合います。",
+"mix": "二人はおたがいを「{Ou-chan}」と「{Kacchan}」と呼び合います。"
+}
+],
+"post": {
+"account": "oshiraku",
+"date": "2026-11-10",
+"likes": 2627,
+"name": "推し楽",
+"url": "https://x.com/oshiraku/status/2120112814908187125"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"とても元気だった",
+"演技のツッコミを超えていた",
+"セリフが少なかった"
+],
+"q": "せいやさんは大橋和也さんの演技をどうほめましたか？",
+"why": "5文目に Your tsukkomi was beyond acting. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"原作者",
+"主演",
+"完成披露・初公開"
+],
+"q": "premiere event の premiere の意味は？",
+"why": "premiere は映画などの「初公開・完成披露」です。"
+},
+{
+"a": 0,
+"choices": [
+"each other",
+"each others",
+"other each"
+],
+"q": "They call ___ “Ou-chan” and “Kacchan.”（おたがいを）",
+"why": "「おたがいを」は each other。each others とは言いません。"
+}
+],
+"summary": "映画『人生を変えたコント』の完成披露舞台挨拶で、原作者のせいやさんが主演の大橋和也さんの演技を「演技のツッコミを超えていた！プロやな」とほめました。大橋さんと前田旺志郎さんは「おうちゃん」「かっちゃん」と呼び合う仲だそうです。",
+"talk": {
+"hint": "Yes, I do. I want to see it because ___.",
+"ja": "この映画を見たいですか？",
+"q": "Do you want to see this movie?"
+},
+"title": "『人生を変えたコント』舞台挨拶で、せいやが大橋和也をべた褒め",
+"words": [
+{
+"ja": "（映画の）完成披露・初公開",
+"note": "ポストの「完成披露」は premiere event。",
+"w": "premiere"
+},
+{
+"ja": "主演（の役）",
+"note": "ポストの「主演」は the lead role。",
+"w": "lead role"
+},
+{
+"ja": "原作者",
+"note": "ポストの「原作者」は original author。",
+"w": "original author"
+},
+{
+"ja": "称賛・ほめること",
+"note": "ポストの「べた褒め」は a lot of praise で表せます。",
+"w": "praise"
+},
+{
+"ja": "プロ（専門家）",
+"note": "ポストの「プロやな」は You are a pro! です。",
+"w": "pro"
+}
+]
+},
+{
 "added": "2026-11-10T20:00",
 "addedAt": "2026-11-11T08:00",
 "cat": "art",
@@ -874,6 +1755,187 @@ window.LESSONS = [
 "ja": "約束",
 "note": "ポストの「約束の物語」は a story about a promise。",
 "w": "promise"
+}
+]
+},
+{
+"added": "2026-11-10T18:37",
+"addedAt": "2026-11-11T14:44",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a long trailer for the movie": "その映画のロング予告",
+"a long trailer for the movie is out": "その映画のロング予告が公開された",
+"also": "〜も",
+"and": "〜と",
+"brother": "兄弟・ブラザー",
+"called": "〜と呼ばれる",
+"came": "来た（comeの過去形）",
+"comments": "コメント（commentの複数形）",
+"comments from masatoshi nagase kohei kadowaki and others": "永瀬正敏さん、門脇康平さんたちからのコメント",
+"comments from masatoshi nagase kohei kadowaki and others also": "永瀬正敏さん、門脇康平さんたちからのコメントも",
+"father": "父・ファーザー",
+"father mother sister brother": "ファーザー、マザー、シスター、ブラザー（題名）",
+"for": "〜の",
+"from": "〜から",
+"has": "持っている",
+"in": "届いて（came inで）",
+"is": "〜です",
+"jarmusch": "ジャームッシュ（人名）",
+"jim": "ジム（人名）",
+"jim jarmusch": "ジム・ジャームッシュ",
+"jim jarmusch has a": "ジム・ジャームッシュは〜を持っている",
+"kadowaki": "門脇（人名）",
+"kohei": "康平（人名）",
+"long": "長い",
+"long trailer": "ロング予告",
+"masatoshi": "正敏（人名）",
+"masatoshi nagase": "永瀬正敏",
+"mother": "母・マザー",
+"movie": "映画",
+"nagase": "永瀬（人名）",
+"new": "新しい",
+"new movie": "新作の映画",
+"now": "いま",
+"others": "ほかの人たち",
+"out": "公開されて・出て",
+"sister": "姉妹・シスター",
+"the": "その",
+"the new movie": "その新作",
+"the new movie is": "その新作は〜です",
+"trailer": "予告編"
+},
+"grad": [
+{
+"q1": "ジム・ジャームッシュ監督に新しい {movie} があります。",
+"q2": "{Jim Jarmusch} は 新しい {movie} を持っています。",
+"q3": "{Jim Jarmusch has a} 新しい {movie.}"
+},
+{
+"q1": "{The new movie} は『ファーザー、マザー、シスター、ブラザー』という題名です。",
+"q2": "{The new movie is} 『ファーザー、マザー、シスター、ブラザー』という題名。",
+"q3": "{The new movie is} 呼ばれる {Father Mother Sister Brother.}"
+},
+{
+"q1": "その {movie} の {long trailer} が、いま公開されました。",
+"q2": "{A long trailer for the movie} が、いま公開されました。",
+"q3": "{A long trailer for the movie is out} 今。"
+},
+{
+"q1": "{Masatoshi Nagase} さん、門脇康平さん、{others} からの {comments} も届きました。",
+"q2": "{Comments from Masatoshi Nagase, Kohei Kadowaki, and others} も届きました。",
+"q3": "{Comments from Masatoshi Nagase, Kohei Kadowaki, and others also} 届きました。"
+}
+],
+"grammar": {
+"body": "also は「〜も」「そのうえ〜も」という意味です。ふつうの動詞（came, likes など）の前に置きます。is / are のときはあとに置きます。",
+"ex": [
+{
+"en": "She also likes anime.",
+"ja": "彼女はアニメも好きです。"
+},
+{
+"en": "He is also a movie fan.",
+"ja": "彼は映画ファンでもあります。"
+}
+],
+"title": "also「〜も」（ふつうの動詞の前に置く）"
+},
+"id": "20261110-jarmusch-long-trailer",
+"level": 2,
+"lines": [
+{
+"en": "Jim Jarmusch has a new movie.",
+"ja": "ジム・ジャームッシュ監督に新作があります。",
+"mix": "ジム・ジャームッシュ監督に新しい {movie} があります。"
+},
+{
+"en": "The new movie is called Father Mother Sister Brother.",
+"ja": "その新作は『ファーザー、マザー、シスター、ブラザー』という題名です。",
+"mix": "その {new movie} は『ファーザー、マザー、シスター、ブラザー』という題名です。"
+},
+{
+"en": "A long trailer for the movie is out now.",
+"ja": "その映画のロング予告が、いま公開されました。",
+"mix": "その映画の {long trailer} が、いま公開されました。"
+},
+{
+"en": "Comments from Masatoshi Nagase, Kohei Kadowaki, and others also came in.",
+"ja": "永瀬正敏さん、門脇康平さんたちからのコメントも届きました。",
+"mix": "永瀬正敏さん、門脇康平さん、{others} からの {comments} も届きました。"
+}
+],
+"post": {
+"account": "eiga_natalie",
+"date": "2026-11-10",
+"likes": 705,
+"name": "映画ナタリー",
+"url": "https://x.com/eiga_natalie/status/2120088379354394764"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"ポスター",
+"主題歌",
+"ロング予告"
+],
+"q": "公開されたのは何？",
+"why": "3文目に A long trailer for the movie is out now. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"予告編",
+"主題歌",
+"監督"
+],
+"q": "trailer の意味は？",
+"why": "trailer は映画の「予告編」です。"
+},
+{
+"a": 1,
+"choices": [
+"too",
+"also",
+"and"
+],
+"q": "They ___ sent comments.（彼らもコメントを送りました）",
+"why": "「〜も」の also は、ふつうの動詞 sent の前に置きます。too は文の最後です。"
+}
+],
+"summary": "ジム・ジャームッシュ監督の新作『ファーザー、マザー、シスター、ブラザー』のロング予告が解禁されました。永瀬正敏さん・門脇康平さんらのコメントも届いています。",
+"talk": {
+"hint": "Yes, I like ___. / No, I have not seen ___.",
+"ja": "ジム・ジャームッシュ監督の映画は好きですか？",
+"q": "Do you like Jim Jarmusch movies?"
+},
+"title": "ジャームッシュ監督の新作、ロング予告が解禁",
+"words": [
+{
+"ja": "予告編",
+"note": "ポストの「ロング予告」は long trailer。",
+"w": "trailer"
+},
+{
+"ja": "コメント",
+"note": "ポストの「コメントも到着」は comments came in。",
+"w": "comment"
+},
+{
+"ja": "届く",
+"note": "ポストの「到着」は came in（入ってきた）で表せます。",
+"w": "come in"
+},
+{
+"ja": "〜と呼ばれる・〜という名前だ",
+"note": "作品の題名を言うときは is called ＋ 題名。",
+"w": "be called"
+},
+{
+"ja": "〜も",
+"note": "ポストの「コメントも」は also came in。",
+"w": "also"
 }
 ]
 },
