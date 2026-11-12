@@ -1,5 +1,183 @@
 window.LESSONS = [
 {
+"added": "2026-11-12T10:07",
+"addedAt": "2026-11-12T14:43",
+"cat": "anime",
+"gloss": {
+"are": "〜している",
+"as": "〜につれて",
+"as the story goes on": "話が進むにつれて",
+"compares": "くらべている",
+"eyebrows": "眉毛（複数形）",
+"frieren's": "フリーレンの",
+"from": "〜のもの・〜から",
+"getting": "〜になっていく",
+"goes": "進む",
+"her": "彼女の",
+"her eyebrows": "彼女の眉毛",
+"her eyebrows are": "彼女の眉毛は〜している",
+"her eyebrows are getting": "彼女の眉毛は〜になっていく",
+"is": "〜です",
+"left": "左の",
+"manga": "漫画",
+"of": "〜の",
+"on": "（進み）続ける",
+"picture": "絵",
+"post": "ポスト（投稿）",
+"right": "右の",
+"rounder": "もっと丸い",
+"story": "話・物語",
+"the": "その",
+"the left picture": "左の絵",
+"the left picture is": "左の絵は〜です",
+"the left picture is from volume 1 of the": "左の絵は1巻の（漫画）",
+"the right picture": "右の絵",
+"the right picture is": "右の絵は〜です",
+"the right picture is from volume 15 of the": "右の絵は15巻の（漫画）",
+"the story": "話",
+"this": "この",
+"this post": "このポスト",
+"this post compares frieren's": "このポストはフリーレンの〜をくらべる",
+"volume": "〜巻",
+"volume 1": "1巻",
+"volume 15": "15巻"
+},
+"grad": [
+{
+"q1": "{This post} は、フリーレンの眉毛をくらべています。",
+"q2": "{This post} は、{Frieren's} 眉毛をくらべる。",
+"q3": "{This post compares Frieren's} 眉毛。"
+},
+{
+"q1": "{The left picture} は、漫画の1巻のものです。",
+"q2": "{The left picture is} 、漫画の {volume 1} のもの。",
+"q3": "{The left picture is from volume 1 of the} 漫画。"
+},
+{
+"q1": "{The right picture} は、漫画の15巻のものです。",
+"q2": "{The right picture is} 、漫画の {volume 15} のもの。",
+"q3": "{The right picture is from volume 15 of the} 漫画。"
+},
+{
+"q1": "{the story} が進むにつれて、{her eyebrows} は丸くなっています。",
+"q2": "{As the story goes on}、{her eyebrows are} 丸くなっている。",
+"q3": "{Her eyebrows are getting} 丸く {as the story goes on.}"
+}
+],
+"grammar": {
+"body": "as のあとに文を続けると、「〜するにつれて」「〜しながら」という意味になります。「話が進むにつれて」は as the story goes on です。",
+"ex": [
+{
+"en": "I get happier as the summer comes.",
+"ja": "夏が近づくにつれて、私はうれしくなります。"
+},
+{
+"en": "The song gets louder as it goes on.",
+"ja": "その曲は、進むにつれて大きくなります。"
+}
+],
+"title": "as ＋ 文「〜するにつれて」"
+},
+"id": "20261112-frieren-eyebrows",
+"level": 2,
+"lines": [
+{
+"en": "This post compares Frieren's eyebrows.",
+"ja": "このポストは、フリーレンの眉毛をくらべています。",
+"mix": "この {post} は、フリーレンの眉毛をくらべています。"
+},
+{
+"en": "The left picture is from volume 1 of the manga.",
+"ja": "左の絵は、漫画の1巻のものです。",
+"mix": "左の {picture} は、漫画の1巻のものです。"
+},
+{
+"en": "The right picture is from volume 15 of the manga.",
+"ja": "右の絵は、漫画の15巻のものです。",
+"mix": "右の {picture} は、漫画の15巻のものです。"
+},
+{
+"en": "Her eyebrows are getting rounder as the story goes on.",
+"ja": "話が進むにつれて、彼女の眉毛は丸くなっています。",
+"mix": "話が進むにつれて、彼女の {eyebrows} は丸くなっています。"
+}
+],
+"post": {
+"account": "frieren_lab",
+"date": "2026-11-12",
+"likes": 6802,
+"name": "フリーレン研究所",
+"url": "https://x.com/frieren_lab/status/2120684973724459141"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"1巻",
+"15巻",
+"5巻"
+],
+"q": "右の絵は何巻のものですか？",
+"why": "3文目に The right picture is from volume 15 of the manga. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"眉毛",
+"まつげ",
+"くちびる"
+],
+"q": "eyebrows の意味は？",
+"why": "eyebrow は「眉毛」。ふつう複数形で使います。"
+},
+{
+"a": 1,
+"choices": [
+"because",
+"as",
+"but"
+],
+"q": "Her eyebrows get rounder ___ the story goes on.（話が進むにつれて）",
+"why": "「〜するにつれて」は as ＋ 文です。"
+}
+],
+"series": "frieren",
+"summary": "フリーレン研究所が、漫画『葬送のフリーレン』の1巻と15巻でフリーレンの眉毛をくらべた絵を紹介しています。話が進むにつれて、眉毛は丸くなっているそうです。",
+"talk": {
+"hint": "I like her ___.",
+"ja": "フリーレンの顔は好きですか？",
+"q": "Do you like Frieren's face?"
+},
+"title": "フリーレンの眉毛、話が進むにつれて丸くなっている",
+"words": [
+{
+"ja": "眉毛",
+"note": "ポストの「眉毛」。ふつう2本あるので eyebrows と複数形で使います。",
+"w": "eyebrow"
+},
+{
+"ja": "くらべる",
+"note": "ポストの「1巻→15巻」の比較は compare で表せます。",
+"w": "compare"
+},
+{
+"ja": "（漫画の）〜巻",
+"note": "ポストの「1巻」「15巻」は volume 1、volume 15。",
+"w": "volume"
+},
+{
+"ja": "丸い",
+"note": "ポストの「丸くなってる」は get rounder（もっと丸くなる）。",
+"w": "round"
+},
+{
+"ja": "絵・写真",
+"note": "ポストの左右2つの絵は the left picture、the right picture。",
+"w": "picture"
+}
+]
+},
+{
 "added": "2026-11-11T21:10",
 "addedAt": "2026-11-12T08:03",
 "cat": "manga",
@@ -345,6 +523,726 @@ window.LESSONS = [
 "ja": "〜し続ける",
 "note": "ポストの「バレーを続け」は keeps playing volleyball。",
 "w": "keep ~ing"
+}
+]
+},
+{
+"added": "2026-11-11T20:30",
+"addedAt": "2026-11-12T14:43",
+"cat": "movie",
+"gloss": {
+"25th": "25番目の",
+"25th anniversary": "25周年",
+"a": "ひとつの",
+"a beautiful melody": "美しいメロディー",
+"also": "〜も",
+"anniversary": "〜周年・記念日",
+"be": "〜される（be onで）",
+"beautiful": "美しい",
+"beautiful melody": "美しいメロディー",
+"can": "〜できる",
+"celebrate": "お祝いする（曲名）",
+"celebrating": "お祝いしている",
+"colorful": "華やかな",
+"danshi": "男子（グループ名）",
+"debut": "デビュー",
+"dream": "ドリーム",
+"enjoy": "楽しむ",
+"fifth": "5番目の",
+"five": "5つの",
+"five years since their debut": "デビューから5年",
+"for": "〜のあいだ",
+"hollywood": "ハリウッド",
+"hollywood dream the ride": "ハリウッド・ドリーム・ザ・ライド",
+"is": "〜です・〜している",
+"its": "その（それの）",
+"its 25th anniversary": "その25周年",
+"japan": "ジャパン",
+"limited": "限られた",
+"limited time": "期間限定",
+"makes": "〜にする",
+"melody": "メロディー",
+"moonlit": "月明かりの（曲名）",
+"moonlit is": "「Moonlit」は〜です",
+"moonlit is a song": "「Moonlit」は曲です",
+"more": "より・もっと",
+"naniwa": "なにわ（グループ名）",
+"naniwa danshi": "なにわ男子",
+"naniwa danshi is": "なにわ男子は〜している",
+"november": "11月",
+"on": "〜に（搭載される）",
+"on hollywood dream the ride": "ハリウッド・ドリーム・ザ・ライドに",
+"ride": "ライド・乗り物",
+"ride starts tomorrow on november 12": "ライドは明日、11月12日に始まる",
+"since": "〜から",
+"song": "曲",
+"songs": "曲（songの複数形）",
+"special": "特別な",
+"starts": "始まる",
+"studios": "スタジオ",
+"the": "その",
+"the song celebrate": "「Celebrate」という曲",
+"the song celebrate makes": "「Celebrate」という曲が〜にする",
+"the song celebrate makes the fifth anniversary": "「Celebrate」が5周年を〜にする",
+"the songs for a limited time": "限られた期間だけその曲を",
+"their": "彼らの",
+"time": "期間・時間",
+"tomorrow": "明日",
+"tomorrow on november 12": "明日、11月12日に",
+"two": "2つの",
+"two songs": "2曲",
+"two songs will": "2曲が〜される予定",
+"universal": "ユニバーサル",
+"universal studios japan also": "ユニバーサル・スタジオ・ジャパンも",
+"universal studios japan is also": "ユニバーサル・スタジオ・ジャパンも〜している",
+"will": "〜する予定",
+"with": "〜を持つ",
+"years": "年（yearの複数形）",
+"you": "あなたは",
+"you can": "あなたは〜できる"
+},
+"grad": [
+{
+"q1": "{Naniwa Danshi} は、{debut} から5年をお祝いしています。",
+"q2": "{Naniwa Danshi} は、お祝いしている {five years since their debut}。",
+"q3": "{Naniwa Danshi is} お祝いしている {five years since their debut.}"
+},
+{
+"q1": "ユニバーサル・スタジオ・ジャパンも {its 25th anniversary} をお祝いしています。",
+"q2": "{Universal Studios Japan also} お祝いしている {its 25th anniversary}。",
+"q3": "{Universal Studios Japan is also} お祝いしている {its 25th anniversary.}"
+},
+{
+"q1": "ハリウッド・ドリーム・ザ・ライドに、{two songs} が搭載されます。",
+"q2": "{Two songs} が、{Hollywood Dream The Ride} に搭載されます。",
+"q3": "{Two songs will} 搭載される {on Hollywood Dream The Ride.}"
+},
+{
+"q1": "「Moonlit」は、{beautiful melody} を持つ曲です。",
+"q2": "{Moonlit is} 持つ曲、{a beautiful melody}。",
+"q3": "{Moonlit is a song} 持つ {a beautiful melody.}"
+},
+{
+"q1": "{The song Celebrate} は、5周年をより華やかにします。",
+"q2": "{The song Celebrate makes} 、5周年をより華やかに。",
+"q3": "{The song Celebrate makes the fifth anniversary} より華やかに。"
+},
+{
+"q1": "その {songs} を、{limited time} だけ楽しめます。",
+"q2": "{You} 楽しめる {the songs for a limited time}。",
+"q3": "{You can} 楽しむ {the songs for a limited time.}"
+},
+{
+"q1": "特別な {ride} は、{tomorrow}、11月12日から始まります。",
+"q2": "{The} 特別な {ride} が始まる、{tomorrow, on November 12}。",
+"q3": "{The} 特別な {ride starts tomorrow, on November 12.}"
+}
+],
+"grammar": {
+"body": "for のあとに期間（長さ）を置くと、「〜のあいだ」という意味になります。for a limited time は「限られた期間だけ」です。for two days（2日間）のようにも使います。",
+"ex": [
+{
+"en": "I stayed in Tokyo for three days.",
+"ja": "私は3日間、東京にいました。"
+},
+{
+"en": "We waited for an hour.",
+"ja": "私たちは1時間待ちました。"
+}
+],
+"title": "for ＋ 期間「〜のあいだ」"
+},
+"id": "20261111-usj-naniwa-moonlit",
+"level": 2,
+"lines": [
+{
+"en": "Naniwa Danshi is celebrating five years since their debut.",
+"ja": "なにわ男子は、デビューから5年をお祝いしています。",
+"mix": "なにわ男子は、{debut} から5年をお祝いしています。"
+},
+{
+"en": "Universal Studios Japan is also celebrating its 25th anniversary.",
+"ja": "ユニバーサル・スタジオ・ジャパンも25周年をお祝いしています。",
+"mix": "ユニバーサル・スタジオ・ジャパンも {25th anniversary} をお祝いしています。"
+},
+{
+"en": "Two songs will be on Hollywood Dream The Ride.",
+"ja": "ハリウッド・ドリーム・ザ・ライドに、2つの曲が搭載されます。",
+"mix": "ハリウッド・ドリーム・ザ・ライドに、2つの {songs} が搭載されます。"
+},
+{
+"en": "Moonlit is a song with a beautiful melody.",
+"ja": "「Moonlit」は、美しいメロディーを持つ曲です。",
+"mix": "「Moonlit」は、美しい {melody} を持つ曲です。"
+},
+{
+"en": "The song Celebrate makes the fifth anniversary more colorful.",
+"ja": "「Celebrate」という曲は、5周年をより華やかにします。",
+"mix": "「Celebrate」という {song} は、5周年をより華やかにします。"
+},
+{
+"en": "You can enjoy the songs for a limited time.",
+"ja": "その曲を、限られた期間だけ楽しめます。",
+"mix": "その {songs} を、限られた期間だけ楽しめます。"
+},
+{
+"en": "The special ride starts tomorrow, on November 12.",
+"ja": "特別なライドは、明日、11月12日から始まります。",
+"mix": "特別な {ride} は、明日、11月12日から始まります。"
+}
+],
+"post": {
+"account": "USJ_Official",
+"date": "2026-11-11",
+"likes": 28060,
+"name": "ユニバーサル・スタジオ・ジャパン公式",
+"url": "https://x.com/USJ_Official/status/2120479192018260477"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"ハリウッド・ドリーム・ザ・ライド",
+"映画館",
+"テレビ番組"
+],
+"q": "2曲が搭載されるのは？",
+"why": "3文目に Two songs will be on Hollywood Dream The Ride. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"デビュー",
+"〜周年",
+"期間限定"
+],
+"q": "anniversary の意味は？",
+"why": "the fifth anniversary は「5周年」です。"
+},
+{
+"a": 2,
+"choices": [
+"on",
+"at",
+"for"
+],
+"q": "You can enjoy the songs ___ a limited time.（限られた期間だけ）",
+"why": "「〜のあいだ」と期間を表すときは for を使います。"
+}
+],
+"summary": "なにわ男子のデビュー5周年とUSJの25周年を記念して、ハリウッド・ドリーム・ザ・ライドに「Moonlit」と「Celebrate」の2曲が期間限定で搭載されます。明日11月12日からです。",
+"talk": {
+"hint": "I want to listen to ___ because ___.",
+"ja": "「Moonlit」と「Celebrate」のどちらを聞きたいですか？",
+"q": "Which song do you want to listen to, Moonlit or Celebrate?"
+},
+"title": "USJのライドに、なにわ男子の2曲が期間限定で登場",
+"words": [
+{
+"ja": "デビュー",
+"note": "ポストの「デビュー5周年」は five years since their debut のように言えます。",
+"w": "debut"
+},
+{
+"ja": "〜周年・記念日",
+"note": "ポストの「25周年」は 25th anniversary。5周年は fifth anniversary です。",
+"w": "anniversary"
+},
+{
+"ja": "メロディー・旋律",
+"note": "ポストの「美しい旋律」は a beautiful melody。",
+"w": "melody"
+},
+{
+"ja": "華やかな・色あざやかな",
+"note": "ポストの「華やかに彩る」は make 〜 colorful で表せます。",
+"w": "colorful"
+},
+{
+"ja": "期間限定・限られた期間",
+"note": "ポストの「期間限定」は for a limited time。",
+"w": "limited time"
+}
+]
+},
+{
+"added": "2026-11-11T20:20",
+"addedAt": "2026-11-12T14:43",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"adult": "大人の",
+"adult movie fans": "大人の映画ファン",
+"after": "〜のあとで",
+"after the middle part": "中盤のあとで",
+"after the middle part the story": "中盤のあとで物語は",
+"an": "ひとつの",
+"an unexpected turn": "予想外の展開",
+"and": "そして・〜と",
+"at": "〜に（at firstで）",
+"at first it seems to be a first-love story of a high school girl": "最初は女子高生の初恋の物語に見える",
+"at first it seems to be a first-love story of a high school girl who": "最初は〜する女子高生の初恋の物語に見える",
+"be": "〜である",
+"boyfriend": "彼氏",
+"but": "でも",
+"but it is different from what the poster": "でも投稿者が〜したのとちがう",
+"calm": "落ち着いた",
+"calm direction": "落ち着いた演出",
+"can": "〜できる",
+"december": "12月",
+"different": "ちがう",
+"direction": "演出",
+"emotional": "エモい・心にくる",
+"enjoy": "楽しむ",
+"even": "〜でさえ",
+"expected": "思っていた（expectの過去形）",
+"fans": "ファン",
+"first": "最初（at firstで最初は）",
+"first-love": "初恋の",
+"first-love story": "初恋の物語",
+"friday": "金曜日",
+"from": "〜から・〜と",
+"girl": "女の子",
+"good": "よい",
+"good way": "いい意味",
+"her": "彼女の",
+"her sister's boyfriend": "お姉ちゃんの彼氏",
+"high": "高い（high schoolで高校）",
+"high school girl": "女子高生",
+"in": "〜で",
+"in a good way": "いい意味で",
+"is": "〜です",
+"it": "それは",
+"it is different from what the poster": "それは投稿者が〜したのとちがう",
+"it is emotional": "それはエモい",
+"loves": "好きになる・愛する",
+"middle": "中ごろ",
+"midori-kun": "翠くん",
+"movie": "映画",
+"movie fans": "映画ファン",
+"no": "の（作品名の一部）",
+"of": "〜の",
+"on": "〜に（日付）",
+"on friday december 4": "12月4日（金）に",
+"onee-chan": "お姉ちゃん",
+"part": "部分",
+"poster": "投稿者",
+"preview": "試写",
+"released": "公開される（releaseの過去分詞）",
+"saw": "見た（seeの過去形）",
+"says": "〜と言う",
+"school": "学校",
+"seems": "〜のようだ・〜に見える",
+"sister's": "お姉さんの",
+"story": "物語",
+"takes": "〜になる（take a turnで）",
+"the": "その",
+"the movie": "その映画",
+"the movie will be": "映画は〜される",
+"the poster": "投稿者",
+"the poster saw a preview": "投稿者は試写を見た",
+"the poster saw a preview of onee-chan no midori-kun and": "投稿者は『お姉ちゃんの翠くん』の試写を見て",
+"the story": "その物語",
+"to": "〜（to beで）",
+"turn": "展開・変化",
+"unexpected": "予想外の",
+"unexpected turn": "予想外の展開",
+"way": "意味・やり方",
+"what": "〜のもの",
+"who": "〜する（人）",
+"will": "〜されるだろう（未来）",
+"with": "〜で・〜があるので",
+"with the calm direction": "落ち着いた演出で",
+"with the calm direction even adult movie fans can": "落ち着いた演出で大人の映画ファンでも〜できる"
+},
+"grad": [
+{
+"q1": "{The poster} は『お姉ちゃんの翠くん』の {preview} を見て、{emotional} な作品だと言っています。",
+"q2": "{The poster saw a preview} 『お姉ちゃんの翠くん』の、{it is emotional} と言っています。",
+"q3": "{The poster saw a preview of Onee-chan no Midori-kun and} 言って {it is emotional.}"
+},
+{
+"q1": "最初は、お姉ちゃんの {boyfriend} を好きになる {high school girl} の {first-love story} に見えます。",
+"q2": "{At first it seems to be a first-love story of a high school girl} が、お姉ちゃんの {boyfriend} を好きになる。",
+"q3": "{At first it seems to be a first-love story of a high school girl who} 好きになる {her sister's boyfriend.}"
+},
+{
+"q1": "でも、{the poster} が思っていたのとは、{good way} で {different} です。",
+"q2": "でも、{it is different from what the poster} 思っていた、{in a good way.}",
+"q3": "{But it is different from what the poster} 思っていた {in a good way.}"
+},
+{
+"q1": "中盤を過ぎると、{story} は {unexpected} な {turn} になります。",
+"q2": "{After the middle part,} {the story} は {unexpected turn} を迎える。",
+"q3": "{After the middle part, the story} 迎える {an unexpected turn.}"
+},
+{
+"q1": "{calm direction} なので、大人の {movie fans} でも楽しめます。",
+"q2": "{With the calm direction,} {adult movie fans} でも楽しめる。",
+"q3": "{With the calm direction, even adult movie fans can} 楽しむ {it.}"
+},
+{
+"q1": "{The movie} は12月4日（{Friday}）に公開されます。",
+"q2": "{The movie will be} 12月4日（{Friday}）に公開される。",
+"q3": "{The movie will be} 公開される {on Friday, December 4.}"
+}
+],
+"grammar": {
+"body": "different のあとに from を置くと「〜とちがう」という意味になります。from のあとに what ＋ 文を置くと、「〜と思っていたものとはちがう」のように言えます。",
+"ex": [
+{
+"en": "This movie is different from the manga.",
+"ja": "この映画は原作の漫画とちがいます。"
+},
+{
+"en": "It was different from what I expected.",
+"ja": "それは私が思っていたのとはちがいました。"
+}
+],
+"title": "different from 〜「〜とちがう」"
+},
+"id": "20261111-midorikun-screening-review",
+"level": 3,
+"lines": [
+{
+"en": "The poster saw a preview of Onee-chan no Midori-kun and says it is emotional.",
+"ja": "投稿者は『お姉ちゃんの翠くん』の試写を見て、エモい作品だと言っています。",
+"mix": "投稿者は『お姉ちゃんの翠くん』の {preview} を見て、{emotional} な作品だと言っています。"
+},
+{
+"en": "At first it seems to be a first-love story of a high school girl who loves her sister's boyfriend.",
+"ja": "最初は、お姉ちゃんの彼氏を好きになる女子高生の初恋の物語に見えます。",
+"mix": "最初は、お姉ちゃんの彼氏を好きになる女子高生の {first-love story} に見えます。"
+},
+{
+"en": "But it is different from what the poster expected, in a good way.",
+"ja": "でも、投稿者が思っていたのとは、いい意味でちがいます。",
+"mix": "でも、{poster} が思っていたのとは、いい意味で {different} です。"
+},
+{
+"en": "After the middle part, the story takes an unexpected turn.",
+"ja": "中盤を過ぎると、物語は予想外の展開になります。",
+"mix": "中盤を過ぎると、{story} は {unexpected} な展開になります。"
+},
+{
+"en": "With the calm direction, even adult movie fans can enjoy it.",
+"ja": "落ち着いた演出なので、大人の映画ファンでも楽しめます。",
+"mix": "{calm} な演出なので、大人の {movie fans} でも楽しめます。"
+},
+{
+"en": "The movie will be released on Friday, December 4.",
+"ja": "映画は12月4日（金）に公開されます。",
+"mix": "{movie} は12月4日（{Friday}）に公開されます。"
+}
+],
+"post": {
+"account": "sebone_returns",
+"date": "2026-11-11",
+"likes": 1227,
+"name": "背骨",
+"url": "https://x.com/sebone_returns/status/2120476856596197493"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"ずっと同じ展開が続く",
+"終わってしまう",
+"予想外の展開になる"
+],
+"q": "投稿者は、映画の中盤以降はどうなると言っていますか？",
+"why": "4文目に the story takes an unexpected turn とあります。"
+},
+{
+"a": 0,
+"choices": [
+"心にくる・エモい",
+"さびしい",
+"おもしろい"
+],
+"q": "emotional の意味に近いのは？",
+"why": "投稿者は「エモい」と言っていて、emotional で表せます。"
+},
+{
+"a": 1,
+"choices": [
+"〜のあとで",
+"〜でさえ",
+"〜のために"
+],
+"q": "even adult movie fans can enjoy it の even の意味は？",
+"why": "even は「〜でさえ」。大人の映画ファンでも楽しめる、という意味です。"
+}
+],
+"summary": "『お姉ちゃんの翠くん』の試写を見た人の感想です。初恋物語に見えて、いい意味で思っていたのとちがい、中盤以降は予想外の展開になると書いています。落ち着いた演出で、大人の映画ファンでも楽しめるそうです。映画は12月4日（金）公開です。",
+"talk": {
+"hint": "Yes, I do. I like ___ because ___.",
+"ja": "予想外の話の映画は好きですか？",
+"q": "Do you like movies with unexpected stories?"
+},
+"title": "『お姉ちゃんの翠くん』試写の感想：思っていたのと違う",
+"words": [
+{
+"ja": "試写（会）",
+"note": "ポストの「試写」は preview（公開前に見ること）。",
+"w": "preview"
+},
+{
+"ja": "心にくる・エモい",
+"note": "ポストの「エモい」は emotional でおおよそ伝わります。",
+"w": "emotional"
+},
+{
+"ja": "予想外の",
+"note": "ポストの「予想外の展開」は an unexpected turn。expect（予想する）の反対の形です。",
+"w": "unexpected"
+},
+{
+"ja": "演出",
+"note": "ポストの「落ち着いた演出」は the calm direction。映画の direction は「演出・監督」の意味です。",
+"w": "direction"
+},
+{
+"ja": "公開する",
+"note": "ポストの「公開」は be released。映画のお知らせでよく使います。",
+"w": "release"
+}
+]
+},
+{
+"added": "2026-11-11T19:27",
+"addedAt": "2026-11-12T14:43",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a theater": "映画館",
+"are": "〜がある",
+"as": "同じくらい",
+"at": "〜で",
+"but": "でも",
+"but no other movie has": "でも他のどの映画も〜ない",
+"could": "〜できた",
+"cried": "泣いた（cryの過去形）",
+"deeply": "深く",
+"every": "毎〜",
+"first": "最初の",
+"for": "〜のために・〜として",
+"glad": "うれしい",
+"hard": "激しく",
+"hardly": "ほとんど〜ない",
+"has": "〜している（have）",
+"hear": "聞く",
+"heart": "心",
+"in": "〜で",
+"in a theater": "映画館で",
+"in one scene": "あるシーンで",
+"in one scene the poster cried": "あるシーンで投稿者は泣いた",
+"in one scene the poster cried so hard that they could": "あるシーンで投稿者は〜できないほど泣いた",
+"interesting": "面白い",
+"interesting movies": "面白い映画",
+"is": "〜です",
+"many": "たくさんの",
+"many movies more interesting than superman": "スーパーマンより面白い映画がたくさん",
+"more": "もっと",
+"movie": "映画",
+"movies": "映画（複数形）",
+"movies more interesting than superman": "スーパーマンより面白い映画",
+"no": "ひとつも〜ない",
+"now": "今",
+"one": "ある・1つの",
+"other": "ほかの",
+"poster": "投稿者",
+"poster's": "投稿者の",
+"really": "本当に",
+"same": "同じ",
+"saw": "見た（seeの過去形）",
+"says": "〜と言う",
+"scene": "シーン",
+"see": "見える",
+"since": "〜から",
+"since then the poster has cried at the same scene": "それ以来、投稿者は同じシーンで泣いている",
+"since then the poster has cried at the same scene every time they watch": "それ以来、見るたびに同じシーンで泣いている",
+"so": "とても",
+"superman": "スーパーマン",
+"than": "〜より",
+"that": "〜ほど（so 〜 that）",
+"the": "その",
+"the poster": "投稿者",
+"the poster is really glad": "投稿者は本当にうれしい",
+"the poster is really glad to": "投稿者は〜して本当にうれしい",
+"the poster saw": "投稿者は見た",
+"the poster saw the 2025 movie superman in a theater": "投稿者は映画館で2025年の『スーパーマン』を見た",
+"the poster says": "投稿者は〜と言う",
+"the poster says there are many": "投稿者は〜がたくさんあると言う",
+"the poster's heart": "投稿者の心",
+"the poster's heart as deeply as this one": "この映画ほど深く投稿者の心を",
+"the same scene": "同じシーン",
+"theater": "映画館",
+"then": "そのとき",
+"there": "（there are で）",
+"they": "彼らは（本人）",
+"this": "この",
+"this one": "この映画",
+"those": "それらの",
+"those words": "それらの言葉",
+"those words now": "今それらの言葉を",
+"time": "回・とき",
+"to": "〜して",
+"touched": "心に沁みた",
+"watch": "見る",
+"words": "言葉（wordの複数形）"
+},
+"grad": [
+{
+"q1": "{The poster} は、2025年の映画『スーパーマン』を、初めて {a theater} で見ました。",
+"q2": "{The poster saw} 、2025年の映画『スーパーマン』を、初めて {in a theater}。",
+"q3": "{The poster saw the 2025 movie Superman in a theater} 初めて。"
+},
+{
+"q1": "{In one scene}、{the poster} は、前がほとんど見えなくなるほど泣きました。",
+"q2": "{In one scene, the poster cried} 、前がほとんど見えなくなるほど。",
+"q3": "{In one scene, the poster cried so hard that they could} ほとんど見えなかった。"
+},
+{
+"q1": "それ以来、{the poster} は映画を見るたびに、{the same scene} で泣いています。",
+"q2": "{Since then, the poster has cried at the same scene} 、映画を見るたびに。",
+"q3": "{Since then, the poster has cried at the same scene every time they watch} 映画を。"
+},
+{
+"q1": "{The poster} は、今 {those words} を聞けて、本当によかったと思っています。",
+"q2": "{The poster is really glad} 、今 {those words} を聞けて。",
+"q3": "{The poster is really glad to} 聞けて {those words now.}"
+},
+{
+"q1": "{The poster} は、スーパーマンより {interesting movies} は他にもたくさんあると言っています。",
+"q2": "{The poster says} 、{many movies more interesting than Superman} は他にもある。",
+"q3": "{The poster says there are many} 他の {movies more interesting than Superman.}"
+},
+{
+"q1": "でも、この映画ほど {the poster's heart} に深く沁みた {movie} は、他にありません。",
+"q2": "{But no other movie has} 沁みた、{the poster's heart} に深く、{this one} ほど。",
+"q3": "{But no other movie has} 沁みた {the poster's heart as deeply as this one.}"
+}
+],
+"grammar": {
+"body": "every time のあとに文を続けると、「〜するたびに」という意味になります。ポストの「何度見ても」は、「見るたびに」と考えて every time they watch ... と言えます。",
+"ex": [
+{
+"en": "I smile every time I see my dog.",
+"ja": "私は犬を見るたびに笑顔になります。"
+},
+{
+"en": "Every time we meet, we talk about movies.",
+"ja": "会うたびに、私たちは映画の話をします。"
+}
+],
+"title": "every time ＋ 文「〜するたびに」"
+},
+"id": "20261111-superman-tears",
+"level": 3,
+"lines": [
+{
+"en": "The poster saw the 2025 movie Superman in a theater for the first time.",
+"ja": "投稿者は、2025年の映画『スーパーマン』を、初めて映画館で見ました。",
+"mix": "{poster} は、2025年の映画『スーパーマン』を、初めて {theater} で見ました。"
+},
+{
+"en": "In one scene, the poster cried so hard that they could hardly see.",
+"ja": "あるシーンで、投稿者は、前がほとんど見えなくなるほど泣きました。",
+"mix": "ある {scene} で、{poster} は、前がほとんど見えなくなるほど泣きました。"
+},
+{
+"en": "Since then, the poster has cried at the same scene every time they watch the movie.",
+"ja": "それ以来、投稿者は映画を見るたびに、同じシーンで泣いています。",
+"mix": "それ以来、{poster} は映画を見るたびに、同じ {scene} で泣いています。"
+},
+{
+"en": "The poster is really glad to hear those words now.",
+"ja": "投稿者は、今この言葉を聞けて、本当によかったと思っています。",
+"mix": "{poster} は、今この {words} を聞けて、本当によかったと思っています。"
+},
+{
+"en": "The poster says there are many other movies more interesting than Superman.",
+"ja": "投稿者は、スーパーマンより面白い映画は他にもたくさんあると言っています。",
+"mix": "{poster} は、スーパーマンより {interesting movies} は他にもたくさんあると言っています。"
+},
+{
+"en": "But no other movie has touched the poster's heart as deeply as this one.",
+"ja": "でも、この映画ほど投稿者の心に深く沁みた映画は、他にありません。",
+"mix": "でも、この映画ほど投稿者の {heart} に深く沁みた {movie} は、他にありません。"
+}
+],
+"post": {
+"account": "awxV7mrmNqBV12t",
+"date": "2026-11-11",
+"likes": 2985,
+"name": "アンキャニィマユゲ",
+"url": "https://x.com/awxV7mrmNqBV12t/status/2120463524803879182"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"途中で寝てしまった",
+"最後まで見られなかった",
+"前がほとんど見えなくなるほど泣いた"
+],
+"q": "投稿者が初めて映画館で見たとき、どうなりましたか？",
+"why": "2文目に cried so hard that they could hardly see とあります。"
+},
+{
+"a": 0,
+"choices": [
+"投稿者の心に沁みた",
+"投稿者の心配になった",
+"投稿者の心を忘れた"
+],
+"q": "touched the poster's heart の意味は？",
+"why": "touch one's heart は「心に沁みる・心を動かす」です。"
+},
+{
+"a": 1,
+"choices": [
+"any",
+"every",
+"some"
+],
+"q": "The poster cries ___ time they watch the movie.（見るたびに）",
+"why": "「〜するたびに」は every time ＋ 文です。"
+}
+],
+"summary": "『スーパーマン（2025）』を初めて映画館で見たとき、あるシーンで前が見えなくなるほど泣いたという人の感想です。今も何度見てもそのシーンで涙が出て、他に面白い映画はあっても、これほど心に沁みた作品はないと書いています。",
+"talk": {
+"hint": "___ always makes me cry because ___.",
+"ja": "どの映画を見ると、いつも泣いてしまいますか？",
+"q": "Which movie always makes you cry?"
+},
+"title": "『スーパーマン』は何度見ても泣ける、心に沁みた1本",
+"words": [
+{
+"ja": "場面・シーン",
+"note": "ポストの「このシーン」は this scene。the same scene で「同じシーン」。",
+"w": "scene"
+},
+{
+"ja": "泣く",
+"note": "ポストの「泣いてしまった」は cried（cry の過去形）。",
+"w": "cry"
+},
+{
+"ja": "深く",
+"note": "ポストの「心に深く沁みた」は touched 〜 deeply と表せます。",
+"w": "deeply"
+},
+{
+"ja": "心を動かす・触れる",
+"note": "「心に沁みる」は touch one's heart（心に触れる）と言います。",
+"w": "touch"
+},
+{
+"ja": "うれしい・よかった",
+"note": "ポストの「心から良かった」は really glad。",
+"w": "glad"
 }
 ]
 },
@@ -784,6 +1682,219 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-11T18:00",
+"addedAt": "2026-11-12T14:43",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a character pv": "キャラクターPV",
+"a character pv is": "キャラクターPVは〜だ",
+"a character pv is now": "キャラクターPVは今〜",
+"about": "〜についての",
+"again": "もう一度・再び",
+"again now": "また今",
+"airing": "放送している（airの-ing形）",
+"anime": "アニメ",
+"ayasa": "彩沙（人名）",
+"ayasa ito": "伊藤彩沙（人名）",
+"back": "後ろを・戻って",
+"by": "〜によって",
+"by ayasa ito": "伊藤彩沙によって",
+"character": "キャラクター",
+"character pv": "キャラクターPV",
+"far": "遠く（so farでこれまで）",
+"february": "2月",
+"friday": "金曜日",
+"is": "〜です",
+"it": "それは",
+"it is about suzu kamoto": "鹿本すずについての話だ",
+"ito": "伊藤（人名）",
+"kamoto": "鹿本（人名）",
+"looks": "見る（lookの三単現）",
+"movie": "映画",
+"next": "次の",
+"next year": "来年",
+"now": "今",
+"on": "〜について・〜に（日付）",
+"on friday february 19 next year": "来年2月19日（金）に",
+"open": "公開される",
+"out": "公開されて（outで公開中）",
+"please": "どうぞ・ぜひ",
+"pv": "PV（映像）",
+"so": "そう（so farで）",
+"story": "物語",
+"suzu": "すず（人名）",
+"suzu kamoto": "鹿本すず（人名）",
+"the": "その",
+"the movie": "その映画",
+"the movie will": "映画は〜するだろう",
+"the pv": "そのPV",
+"the pv looks back on the story": "PVは物語を振り返る",
+"the story": "その物語",
+"the tv anime is": "TVアニメは〜している",
+"tv": "テレビ",
+"tv anime": "TVアニメ",
+"voiced": "声を当てた（voiceの過去分詞）",
+"watch": "見る",
+"will": "〜するだろう（未来）",
+"year": "年"
+},
+"grad": [
+{
+"q1": "{A character PV} が公開されました。",
+"q2": "{A character PV is} 今公開されました。",
+"q3": "{A character PV is now} 公開されました。"
+},
+{
+"q1": "{The PV} は、これまでの {story} を振り返ります。",
+"q2": "{The PV} これまで {the story} を振り返る。",
+"q3": "{The PV looks back on the story} これまで。"
+},
+{
+"q1": "{Suzu Kamoto} 編です。声は {Ito} さんです。",
+"q2": "{It is about Suzu Kamoto} 編。声は {Ayasa Ito} さんです。",
+"q3": "{It is about Suzu Kamoto,} 声を担当 {by Ayasa Ito.}"
+},
+{
+"q1": "{The movie} は来年2月19日（{Friday}）に公開されます。",
+"q2": "{The movie will} {next year} の2月19日（{Friday}）に公開される。",
+"q3": "{The movie will} 公開される {on Friday, February 19 next year.}"
+},
+{
+"q1": "{TV anime} も {now} 再放送中です。",
+"q2": "{The TV anime is} {now} 再放送中です。",
+"q3": "{The TV anime is} 放送中 {again now.}"
+},
+{
+"q1": "ぜひ {the PV} をご覧ください。",
+"q2": "{Please} {the PV} を視聴。",
+"q3": "{Please} 見て {the PV.}"
+}
+],
+"grammar": {
+"body": "look back は「後ろを見る」から「思い出す・振り返る」という意味になります。何を振り返るかは on のあとに置きます。",
+"ex": [
+{
+"en": "I look back on my school days.",
+"ja": "私は学生時代を振り返ります。"
+},
+{
+"en": "She looked back on the year.",
+"ja": "彼女はその1年を振り返りました。"
+}
+],
+"title": "look back on 〜「〜を振り返る」"
+},
+"id": "20261111-medalist-chara-pv",
+"level": 2,
+"lines": [
+{
+"en": "A character PV is now out.",
+"ja": "キャラクターPVが公開されました。",
+"mix": "{character PV} が公開されました。"
+},
+{
+"en": "The PV looks back on the story so far.",
+"ja": "PVは、これまでの物語を振り返ります。",
+"mix": "{PV} は、これまでの {story} を振り返ります。"
+},
+{
+"en": "It is about Suzu Kamoto, voiced by Ayasa Ito.",
+"ja": "鹿本すず編です。声は伊藤彩沙さんです。",
+"mix": "{Suzu Kamoto} 編です。声は伊藤彩沙さんです。"
+},
+{
+"en": "The movie will open on Friday, February 19 next year.",
+"ja": "映画は来年2月19日（金）に公開されます。",
+"mix": "{movie} は来年2月19日（{Friday}）に公開されます。"
+},
+{
+"en": "The TV anime is airing again now.",
+"ja": "TVアニメも今、再放送中です。",
+"mix": "{TV anime} も今、再放送中です。"
+},
+{
+"en": "Please watch the PV.",
+"ja": "ぜひ映像をご覧ください。",
+"mix": "ぜひ {PV} をご覧ください。"
+}
+],
+"post": {
+"account": "medalist_PR",
+"date": "2026-11-11",
+"likes": 1362,
+"name": "劇場版『メダリスト』公式",
+"url": "https://x.com/medalist_PR/status/2120441415989862817"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"2月19日",
+"12月18日",
+"2月9日"
+],
+"q": "映画は何月何日に公開されますか？",
+"why": "4文目に February 19 next year とあります。"
+},
+{
+"a": 2,
+"choices": [
+"伊藤彩沙さんに見られる",
+"伊藤彩沙さんが作った",
+"伊藤彩沙さんが声を担当している"
+],
+"q": "voiced by Ayasa Ito の意味は？",
+"why": "voiced by 〜 は「〜が声を当てている」という意味です。"
+},
+{
+"a": 1,
+"choices": [
+"are",
+"is",
+"be"
+],
+"q": "The TV anime ___ airing again now.（TVアニメは再放送中です）",
+"why": "主語 The TV anime は1つなので、is airing（いま放送している）になります。"
+}
+],
+"series": "medalist",
+"summary": "劇場版『メダリスト』にむけて、これまでを振り返るキャラクターPVが公開されました。鹿本すず編で、声は伊藤彩沙さんです。映画は来年2月19日（金）公開で、TVアニメは再放送中です。",
+"talk": {
+"hint": "I like ___ because ___.",
+"ja": "『メダリスト』で、どのキャラクターが好きですか？",
+"q": "Which character do you like in Medalist?"
+},
+"title": "劇場版『メダリスト』キャラクターPV公開、鹿本すず編",
+"words": [
+{
+"ja": "〜を振り返る",
+"note": "ポストの「これまでを振り返る」は look back on the story so far と言えます。",
+"w": "look back on"
+},
+{
+"ja": "声を当てている",
+"note": "ポストの「CV」は voiced by 〜（〜が声を担当している）で表しました。",
+"w": "voiced"
+},
+{
+"ja": "放送する",
+"note": "ポストの「再放送中」を、airing again（また放送している）で表しました。",
+"w": "air"
+},
+{
+"ja": "キャラクター・登場人物",
+"note": "ポストの「キャラクターPV」は character PV。",
+"w": "character"
+},
+{
+"ja": "来年",
+"note": "ポストの「来年2月19日」は February 19 next year。",
+"w": "next year"
+}
+]
+},
+{
 "added": "2026-11-11T17:36",
 "addedAt": "2026-11-12T08:03",
 "cat": "movie",
@@ -966,6 +2077,212 @@ window.LESSONS = [
 "ja": "どちらも",
 "note": "1993年の2つの出来事をまとめて Both と言いました。",
 "w": "both"
+}
+]
+},
+{
+"added": "2026-11-11T15:37",
+"addedAt": "2026-11-12T14:43",
+"cat": "movie",
+"gloss": {
+"all": "すべての",
+"and": "〜と",
+"are": "〜です（beの複数形）",
+"at": "〜で（場所）",
+"at the theater": "劇場で",
+"best": "最高の",
+"comeback": "逆転・巻き返し",
+"comeback story": "逆転劇",
+"december": "12月",
+"enjoy": "楽しむ",
+"event": "イベント・会",
+"friday": "金曜日",
+"from": "〜から",
+"has": "〜がある（haveの三単現）",
+"in": "〜で",
+"in theaters all over japan": "全国の映画館で",
+"is": "〜です",
+"it": "それは",
+"it at the theater": "それを劇場で",
+"it has laughs": "笑いがある",
+"it has laughs and": "笑いと〜がある",
+"it is": "それは〜です",
+"it is the": "それは最も〜です",
+"it will": "それは〜する",
+"japan": "日本",
+"laughs": "笑い（laughの複数形）",
+"movie": "映画",
+"on": "〜に（日付）",
+"on friday december 18": "12月18日（金）に",
+"open": "公開される",
+"over": "〜じゅうで（all overで）",
+"photos": "写真（photoの複数形）",
+"please": "どうぞ・ぜひ",
+"premiere": "試写会・初公開",
+"story": "物語",
+"tears": "涙（tearの複数形）",
+"the": "その",
+"the movie": "その映画",
+"the movie will": "映画は〜するだろう",
+"the theater": "その劇場",
+"theater": "映画館・劇場",
+"theaters": "映画館（theaterの複数形）",
+"these": "これら",
+"these are": "これらは〜です",
+"these are photos from the": "これらは〜からの写真です",
+"will": "〜するだろう（未来）"
+},
+"grad": [
+{
+"q1": "完成披露 {event} の {photos} です。",
+"q2": "{These are} 完成披露 {event} の {photos}。",
+"q3": "{These are photos from the} 完成披露 {event.}"
+},
+{
+"q1": "{The movie} は12月18日（{Friday}）に公開されます。",
+"q2": "{The movie will} 12月18日（{Friday}）に公開される。",
+"q3": "{The movie will} 公開される {on Friday, December 18.}"
+},
+{
+"q1": "{It} は全国の {theaters} で公開されます。",
+"q2": "{It will} 全国の {theaters} で公開される。",
+"q3": "{It will} 公開される {in theaters all over Japan.}"
+},
+{
+"q1": "{It} は最高の {comeback story} です。",
+"q2": "{It is} 最高の {comeback story}。",
+"q3": "{It is the} 最高の {comeback story.}"
+},
+{
+"q1": "{It} は {laughs} と涙のある作品です。",
+"q2": "{It has laughs} と涙のある作品。",
+"q3": "{It has laughs and} 涙。"
+},
+{
+"q1": "ぜひ {the theater} でご覧ください。",
+"q2": "{Please} {it} を {at the theater} ご覧ください。",
+"q3": "{Please} 楽しんで {it at the theater.}"
+}
+],
+"grammar": {
+"body": "all over のあとに場所を置くと「〜じゅうで」「〜の各地で」という意味になります。all over Japan は「日本じゅうで」、つまり「全国で」です。",
+"ex": [
+{
+"en": "This anime is popular all over the world.",
+"ja": "このアニメは世界じゅうで人気です。"
+},
+{
+"en": "We have shops all over Japan.",
+"ja": "日本じゅうにお店があります。"
+}
+],
+"title": "all over 〜「〜じゅうで・〜の各地で」"
+},
+"id": "20261111-jinsei-conte-offshot",
+"level": 1,
+"lines": [
+{
+"en": "These are photos from the premiere event.",
+"ja": "完成披露試写会の写真です。",
+"mix": "完成披露試写会の {photos} です。"
+},
+{
+"en": "The movie will open on Friday, December 18.",
+"ja": "映画は12月18日（金）に公開されます。",
+"mix": "映画は12月18日（{Friday}）に公開されます。"
+},
+{
+"en": "It will open in theaters all over Japan.",
+"ja": "全国の映画館で公開されます。",
+"mix": "全国の {theaters} で公開されます。"
+},
+{
+"en": "It is the best comeback story.",
+"ja": "最高の逆転劇です。",
+"mix": "最高の {comeback story} です。"
+},
+{
+"en": "It has laughs and tears.",
+"ja": "笑いと涙のある作品です。",
+"mix": "{laughs} と涙のある作品です。"
+},
+{
+"en": "Please enjoy it at the theater.",
+"ja": "ぜひ劇場でご覧ください。",
+"mix": "ぜひ {theater} でご覧ください。"
+}
+],
+"post": {
+"account": "jinsei_conte",
+"date": "2026-11-11",
+"likes": 6188,
+"name": "映画『人生を変えたコント』公式",
+"url": "https://x.com/jinsei_conte/status/2120405512982602162"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"11月18日",
+"12月18日",
+"12月8日"
+],
+"q": "映画はいつ公開されますか？",
+"why": "2文目に will open on Friday, December 18 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"逆転・巻き返し",
+"けんか",
+"旅行"
+],
+"q": "comeback story の comeback の意味に近いのは？",
+"why": "comeback は「巻き返し」。comeback story で「逆転劇」です。"
+},
+{
+"a": 2,
+"choices": [
+"a",
+"an",
+"the"
+],
+"q": "It is ___ best comeback story.（最高の逆転劇です）",
+"why": "「いちばん」の best の前には the を置きます。"
+}
+],
+"summary": "映画『人生を変えたコント』の完成披露試写会のオフショットが公開されました。映画は12月18日（金）に全国で公開されます。笑って泣ける最高の逆転劇を、劇場でご覧くださいとのことです。",
+"talk": {
+"hint": "Yes, I do. I like ___. / No, I don't. I like ___.",
+"ja": "コメディ映画は好きですか？",
+"q": "Do you like comedy movies?"
+},
+"title": "『人生を変えたコント』試写会オフショット、12月18日公開",
+"words": [
+{
+"ja": "（映画の）初公開・試写会",
+"note": "ポストの「完成披露試写会」は premiere event と言えます。",
+"w": "premiere"
+},
+{
+"ja": "（映画が）公開される",
+"note": "ポストの「全国公開」は open in theaters all over Japan のように言います。",
+"w": "open"
+},
+{
+"ja": "逆転・巻き返し",
+"note": "ポストの「逆転劇」を comeback story で表しました。",
+"w": "comeback"
+},
+{
+"ja": "映画館・劇場",
+"note": "ポストの「劇場」。movie theater とも言います。",
+"w": "theater"
+},
+{
+"ja": "涙",
+"note": "laughs and tears ＝ 笑いと涙。",
+"w": "tear"
 }
 ]
 },
