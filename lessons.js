@@ -1,5 +1,387 @@
 window.LESSONS = [
 {
+"added": "2026-11-13T12:10",
+"addedAt": "2026-11-13T14:43",
+"cat": "movie",
+"gloss": {
+"all": "すべての",
+"at": "〜に（時刻）",
+"at nine o'clock": "9時に",
+"at nine o'clock on friday road show": "金曜ロードショーの9時に",
+"be": "〜される",
+"beyond": "ビヨンド（曲名）",
+"chance": "機会",
+"first": "最初の",
+"for": "〜のための",
+"friday": "金曜",
+"i": "私は",
+"in": "〜の中の",
+"includes": "含んでいる",
+"it": "それ",
+"it will": "それは〜する予定",
+"japanese": "日本語の",
+"japanese lyrics": "日本語の歌詞",
+"lyrics": "歌詞",
+"moana": "モアナ",
+"moana 2": "モアナ2",
+"movie": "映画",
+"new": "新しい",
+"nine": "9",
+"nine o'clock": "9時",
+"o'clock": "〜時",
+"on": "〜で・〜に",
+"on tv": "テレビで",
+"please": "どうぞ",
+"please take this chance": "どうぞこの機会に",
+"please take this chance to": "どうぞこの機会に〜して",
+"road": "ロード",
+"show": "ショー",
+"song": "歌",
+"songs": "歌（複数）",
+"start": "始まる",
+"take": "（機会を）つかむ",
+"the": "その",
+"the japanese lyrics": "その日本語の歌詞",
+"the japanese lyrics for all the new songs in moana 2": "『モアナ2』の新曲すべての日本語の歌詞",
+"the movie": "この映画",
+"the movie will be on tv for the first time": "この映画ははじめてテレビで放送される",
+"the song beyond": "「ビヨンド」という歌",
+"this": "これ",
+"this chance": "この機会",
+"time": "回・とき",
+"to": "〜するために",
+"tonight": "今夜",
+"tv": "テレビ",
+"watch": "見る",
+"will": "〜する予定",
+"wrote": "書いた・担当した（writeの過去形）"
+},
+"grad": [
+{
+"q1": "『{Moana 2}』の新曲すべての {Japanese lyrics} を担当しました。",
+"q2": "{I} 書いた {the Japanese lyrics} 、新曲すべての {Moana 2.}",
+"q3": "{I} 書いた {the Japanese lyrics for all the new songs in Moana 2.}"
+},
+{
+"q1": "{Beyond} という {song} も入っています。",
+"q2": "{This} 含む {the song Beyond.}",
+"q3": "{This} 含む {the song Beyond.}"
+},
+{
+"q1": "この {movie} は、今夜はじめて {TV} で放送されます。",
+"q2": "{The movie} 、{on TV} はじめて 今夜。",
+"q3": "{The movie will be on TV for the first time} 今夜。"
+},
+{
+"q1": "金曜ロードショーで、今夜 {nine o'clock} に始まります。",
+"q2": "{It} 始まる {at nine o'clock} 、金曜ロードショーで。",
+"q3": "{It will} 始まる {at nine o'clock on Friday Road Show.}"
+},
+{
+"q1": "{this chance} に、ぜひ見てください！",
+"q2": "{Please take this chance} 、ぜひ見て！",
+"q3": "{Please take this chance to} 見る {it!}"
+}
+],
+"grammar": {
+"body": "「はじめて〜する」は for the first time で表します。文の終わりに置くことが多いです。2回目なら for the second time です。",
+"ex": [
+{
+"en": "I saw snow for the first time.",
+"ja": "私ははじめて雪を見ました。"
+},
+{
+"en": "She sang on TV for the first time.",
+"ja": "彼女ははじめてテレビで歌いました。"
+}
+],
+"title": "for the first time「はじめて」"
+},
+"id": "20261113-moana2-lyricist",
+"level": 2,
+"lines": [
+{
+"en": "I wrote the Japanese lyrics for all the new songs in Moana 2.",
+"ja": "『モアナと伝説の海2』の新曲すべての日本語訳詞を担当しました。",
+"mix": "『モアナと伝説の海2』の新曲すべての {Japanese lyrics} を担当しました。"
+},
+{
+"en": "This includes the song Beyond.",
+"ja": "「ビヨンド 〜越えてゆこう〜」もその中に入っています。",
+"mix": "「ビヨンド 〜越えてゆこう〜」という {song} も入っています。"
+},
+{
+"en": "The movie will be on TV for the first time tonight.",
+"ja": "この映画は、今夜はじめてテレビで放送されます。",
+"mix": "この映画は、今夜はじめて {TV} で放送されます。"
+},
+{
+"en": "It will start at nine o'clock on Friday Road Show.",
+"ja": "金曜ロードショーで、今夜9時に始まります。",
+"mix": "金曜ロードショーで、今夜 {nine} 時に始まります。"
+},
+{
+"en": "Please take this chance to watch it!",
+"ja": "この機会に、ぜひ見てください！",
+"mix": "この {chance} に、ぜひ見てください！"
+}
+],
+"post": {
+"account": "diggymo04",
+"date": "2026-11-13",
+"likes": 2047,
+"name": "訳詞担当の投稿者",
+"url": "https://x.com/diggymo04/status/2121078134820962545"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"歌を歌うこと",
+"新曲の日本語訳詞",
+"映画の監督"
+],
+"q": "投稿者は何を担当しましたか？",
+"why": "1文目に wrote the Japanese lyrics for all the new songs とあります。"
+},
+{
+"a": 0,
+"choices": [
+"歌詞",
+"題名",
+"楽器"
+],
+"q": "lyrics の意味は？",
+"why": "Japanese lyrics は「日本語の歌詞」です。"
+},
+{
+"a": 1,
+"choices": [
+"to",
+"for",
+"at"
+],
+"q": "The movie will be on TV ___ the first time.（はじめて）",
+"why": "「はじめて」は for the first time です。"
+}
+],
+"summary": "『モアナと伝説の海2』の日本語訳詞を担当した人のポストです。「ビヨンド 〜越えてゆこう〜」をはじめ、新曲すべての歌詞を訳したそうです。金曜ロードショーでの初放送は、今夜9時です。",
+"talk": {
+"hint": "I like ... / I like Let It Go.",
+"ja": "どのディズニーの歌が好きですか？",
+"q": "Which Disney song do you like?"
+},
+"title": "『モアナと伝説の海2』の訳詞担当が、今夜の初放送を告知",
+"words": [
+{
+"ja": "歌詞",
+"note": "ポストの「訳詞」は Japanese lyrics。lyrics は数えない名詞のように使うことが多く、いつも s が付きます。",
+"w": "lyrics"
+},
+{
+"ja": "含む",
+"note": "ポストの「全新曲」に「ビヨンド」も入る、は This includes 〜 で言えます。",
+"w": "include"
+},
+{
+"ja": "はじめて",
+"note": "ポストの「初放送」は、英語では on TV for the first time のように言います。",
+"w": "for the first time"
+},
+{
+"ja": "今夜",
+"note": "ポストの「本日よる」は tonight。",
+"w": "tonight"
+},
+{
+"ja": "機会・チャンス",
+"note": "ポストの「この機会に」は this chance。take this chance to 〜 で「この機会に〜する」。",
+"w": "chance"
+}
+]
+},
+{
+"added": "2026-11-13T12:00",
+"addedAt": "2026-11-13T14:43",
+"cat": "movie",
+"gloss": {
+"4dx": "4DX（上映方式）",
+"also": "〜も",
+"and": "と",
+"at": "〜で（場所）",
+"at the theater": "映画館で",
+"can": "〜できる",
+"cinema": "シネマ",
+"days": "日間",
+"dolby": "ドルビー",
+"dolby cinema": "ドルビーシネマ",
+"everyone": "みなさん",
+"from": "〜から",
+"from today": "今日から",
+"from today you can also": "今日からは〜も",
+"godzilla": "ゴジラ",
+"godzilla minus zero": "ゴジラ-0.0",
+"in": "〜で・〜の間に",
+"it": "それ",
+"it in 4dx mx4d and dolby cinema": "4DX・MX4D・Dolby CINEMAでそれを",
+"japan": "日本",
+"million": "100万",
+"minus": "マイナス",
+"mx4d": "MX4D（上映方式）",
+"passed": "超えた（passの過去形）",
+"says": "言う（sayの三単現）",
+"see": "見る",
+"see you": "また会いましょう",
+"see you at the theater this": "この〜に映画館で会いましょう",
+"staff": "スタッフ",
+"ten": "10",
+"thanks": "感謝・ありがとう",
+"thanks to everyone": "みなさんへの感謝",
+"the": "その",
+"the staff": "スタッフ",
+"the theater": "映画館",
+"theater": "映画館",
+"this": "この",
+"to": "〜に",
+"today": "今日",
+"two": "2",
+"two million viewers": "200万人の観客",
+"two million viewers in japan in ten days": "日本で10日間に200万人の観客",
+"viewers": "観客",
+"weekend": "週末",
+"you": "あなたは",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "{Godzilla Minus Zero} は、日本で10日間に {viewers} 200万人を超えました。",
+"q2": "{Godzilla Minus Zero} 超えた {two million viewers} 、日本で10日間に。",
+"q3": "{Godzilla Minus Zero} 超えた {two million viewers in Japan in ten days.}"
+},
+{
+"q1": "スタッフは、{everyone} に {thanks} を伝えています。",
+"q2": "{The staff} 言う {thanks to everyone.}",
+"q3": "{The staff} 言う {thanks to everyone.}"
+},
+{
+"q1": "{4DX}、{MX4D}、{Dolby CINEMA} でも見られます。今日からは。",
+"q2": "{From today} 、{4DX}、{MX4D}、{Dolby CINEMA} でも見られます。",
+"q3": "{From today, you can also} 見る {it in 4DX, MX4D and Dolby CINEMA.}"
+},
+{
+"q1": "{the theater} でお会いしましょう！週末は。",
+"q2": "{See you} {at the theater} 、週末は。",
+"q3": "{See you at the theater this} 週末！"
+}
+],
+"grammar": {
+"body": "in ten days は「10日間で」「10日たつと」の意味です。かかった時間や、あとどれくらいかを in ＋ 期間で表します。",
+"ex": [
+{
+"en": "I finished the book in three days.",
+"ja": "私は3日でその本を読み終えました。"
+},
+{
+"en": "The shop will open in two weeks.",
+"ja": "その店は2週間後に開きます。"
+}
+],
+"title": "in ＋ 期間「〜で・〜のうちに」"
+},
+"id": "20261113-godzilla0-2million",
+"level": 1,
+"lines": [
+{
+"en": "Godzilla Minus Zero passed two million viewers in Japan in ten days.",
+"ja": "『ゴジラ-0.0』は、日本で10日間に観客200万人を超えました。",
+"mix": "『ゴジラ-0.0』は、日本で10日間に {viewers} 200万人を超えました。"
+},
+{
+"en": "The staff says thanks to everyone.",
+"ja": "スタッフは、みなさんに感謝を伝えています。",
+"mix": "スタッフは、みなさんに {thanks} を伝えています。"
+},
+{
+"en": "From today, you can also see it in 4DX, MX4D and Dolby CINEMA.",
+"ja": "今日からは、4DX、MX4D、Dolby CINEMAでも見られます。",
+"mix": "今日からは、{4DX}、MX4D、Dolby CINEMAでも見られます。"
+},
+{
+"en": "See you at the theater this weekend!",
+"ja": "週末は映画館でお会いしましょう！",
+"mix": "週末は {theater} でお会いしましょう！"
+}
+],
+"post": {
+"account": "g_minus_zero",
+"date": "2026-11-13",
+"likes": 2900,
+"name": "『ゴジラ-0.0』【公式】",
+"url": "https://x.com/g_minus_zero/status/2121075597967286341"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"3日",
+"10日",
+"30日"
+],
+"q": "何日間で200万人を超えましたか？",
+"why": "1文目に in ten days とあります。"
+},
+{
+"a": 0,
+"choices": [
+"観客・見る人",
+"作る人",
+"歌う人"
+],
+"q": "viewers の意味は？",
+"why": "two million viewers は「200万人の観客」です。"
+},
+{
+"a": 0,
+"choices": [
+"in",
+"on",
+"to"
+],
+"q": "I finished it ___ three days.（3日で）",
+"why": "かかった時間は in ＋ 期間で表します。"
+}
+],
+"summary": "『ゴジラ-0.0』の公式アカウントが、公開から10日間で国内の観客動員が200万人を超えたと伝えたポストです。みなさんへの感謝のことばもあります。今日から4DX・MX4D・Dolby CINEMAでも上映が始まりました。",
+"talk": {
+"hint": "Yes, I do. / No, I do not.",
+"ja": "週末に映画を見に行きますか？",
+"q": "Do you go to the movies on weekends?"
+},
+"title": "『ゴジラ-0.0』が10日間で観客動員200万人を突破",
+"words": [
+{
+"ja": "観客・見る人",
+"note": "ポストの「観客動員」は viewers で言えます。映画館の客なら audience も使います。",
+"w": "viewer"
+},
+{
+"ja": "超える",
+"note": "ポストの「突破」は pass。数を「超える」ときに使います。",
+"w": "pass"
+},
+{
+"ja": "感謝・ありがとう",
+"note": "ポストの「ありがとうございます」は say thanks to 〜（〜に感謝を伝える）で言えます。",
+"w": "thanks"
+},
+{
+"ja": "週末",
+"note": "ポストの「週末は」は this weekend。",
+"w": "weekend"
+}
+]
+},
+{
 "added": "2026-11-12T23:36",
 "addedAt": "2026-11-13T08:01",
 "cat": "movie",
@@ -583,6 +965,422 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-12T21:41",
+"addedAt": "2026-11-13T14:43",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a thank-you stage greeting": "御礼の舞台挨拶",
+"a thank-you stage greeting for the": "〜のための御礼の舞台挨拶",
+"also": "〜も",
+"also gave their thanks": "感謝の気持ちも伝えた",
+"and": "と・そして",
+"appeared": "登場した",
+"audience": "観客",
+"big": "大きな",
+"big hit": "大ヒット",
+"celebrated": "お祝いした",
+"celebrated the big hit": "大ヒットをお祝いした",
+"film": "映画",
+"film nanji hoshi no gotoku was held": "映画『汝、星のごとく』が開かれた",
+"for": "〜のための",
+"gave": "伝えた・与えた（giveの過去形）",
+"gotoku": "ごとく（作品名の一部）",
+"greeting": "あいさつ",
+"held": "開かれた（holdの過去分詞）",
+"hirose": "広瀬（名字）",
+"hit": "大ヒットの",
+"hoshi": "星（作品名の一部）",
+"live": "生で・ライブで",
+"mr": "〜さん",
+"mr noda also sang the theme song": "野田さんは主題歌も歌った",
+"mr noda also sang the theme song yuzutsu": "野田さんは主題歌「夕星」も歌った",
+"nanji": "汝（作品名の一部）",
+"no": "の（作品名の一部）",
+"noda": "野田（名字）",
+"on": "〜の上で",
+"on stage": "ステージに",
+"ryusei": "流星（名前）",
+"ryusei yokohama": "横浜流星さん",
+"ryusei yokohama suzu hirose": "横浜流星さんと広瀬すずさん",
+"ryusei yokohama suzu hirose and yojiro noda": "横浜流星さん、広瀬すずさん、野田洋次郎さん",
+"sang": "歌った（singの過去形）",
+"song": "歌",
+"stage": "舞台・ステージ",
+"stage greeting": "舞台挨拶",
+"suzu": "すず（名前）",
+"thank-you": "お礼の",
+"thank-you stage greeting": "御礼の舞台挨拶",
+"thanks": "感謝",
+"the": "その",
+"the audience": "観客",
+"the big hit": "その大ヒット",
+"the theme song": "主題歌",
+"their": "彼らの",
+"their thanks": "彼らの感謝",
+"theme": "主題の",
+"theme song": "主題歌",
+"they": "彼らは・3人は",
+"they also gave their thanks to the": "3人は〜に感謝も伝えた",
+"they celebrated the big hit": "3人は大ヒットをお祝いした",
+"they celebrated the big hit with the audience": "3人は観客と大ヒットを祝った",
+"to": "〜に",
+"was": "〜でした・〜された",
+"was held": "開かれた",
+"with": "〜と一緒に",
+"yojiro": "洋次郎（名前）",
+"yokohama": "横浜（名字）",
+"yuzutsu": "夕星（曲名）"
+},
+"grad": [
+{
+"q1": "大ヒット {film} 『汝、星のごとく』の {thank-you stage greeting} が開かれました。",
+"q2": "大ヒット {film} 『汝、星のごとく』の {A thank-you stage greeting} が {was held.}",
+"q3": "{A thank-you stage greeting for the} 大ヒット {film Nanji, Hoshi no Gotoku was held.}"
+},
+{
+"q1": "{Ryusei Yokohama} さん、広瀬すずさん、野田洋次郎さんが {stage} に登場しました。",
+"q2": "{Ryusei Yokohama, Suzu Hirose} さん、野田洋次郎さんが {on stage.}",
+"q3": "{Ryusei Yokohama, Suzu Hirose and Yojiro Noda} 登場 {on stage.}"
+},
+{
+"q1": "3人は観客のみなさんと {the big hit} をお祝いしました。",
+"q2": "3人は {celebrated the big hit} 、{the audience} と一緒に。",
+"q3": "{They celebrated the big hit} 一緒に {the audience.}"
+},
+{
+"q1": "3人は観客のみなさんに {their thanks} も伝えました。",
+"q2": "3人は {also gave their thanks} 、観客のみなさんに。",
+"q3": "{They also gave their thanks to the} 観客。"
+},
+{
+"q1": "野田さんは {the theme song} 「夕星」も生で歌いました。",
+"q2": "{Mr. Noda also sang the theme song,} 「夕星」を生で。",
+"q3": "{Mr. Noda also sang the theme song, Yuzutsu,} 生で。"
+}
+],
+"grammar": {
+"body": "also は「〜も」という意味で、ふつう動詞の前に置きます。前の文に足したいことがあるときに使います。be動詞のときは be動詞のあとです。",
+"ex": [
+{
+"en": "She also likes anime.",
+"ja": "彼女はアニメも好きです。"
+},
+{
+"en": "He is also a singer.",
+"ja": "彼は歌手でもあります。"
+}
+],
+"title": "also「〜も」"
+},
+"id": "20261112-nanji-thanks-greeting",
+"level": 2,
+"lines": [
+{
+"en": "A thank-you stage greeting for the hit film Nanji, Hoshi no Gotoku was held.",
+"ja": "大ヒット映画『汝、星のごとく』の御礼舞台挨拶が開かれました。",
+"mix": "大ヒット映画『汝、星のごとく』の御礼 {stage greeting} が開かれました。"
+},
+{
+"en": "Ryusei Yokohama, Suzu Hirose and Yojiro Noda appeared on stage.",
+"ja": "横浜流星さん、広瀬すずさん、野田洋次郎さんがステージに登場しました。",
+"mix": "横浜流星さん、広瀬すずさん、野田洋次郎さんが {stage} に登場しました。"
+},
+{
+"en": "They celebrated the big hit with the audience.",
+"ja": "3人は観客のみなさんと大ヒットをお祝いしました。",
+"mix": "3人は観客のみなさんと {big hit} をお祝いしました。"
+},
+{
+"en": "They also gave their thanks to the audience.",
+"ja": "3人は観客のみなさんに感謝の気持ちも伝えました。",
+"mix": "3人は観客のみなさんに {thanks} も伝えました。"
+},
+{
+"en": "Mr. Noda also sang the theme song, Yuzutsu, live.",
+"ja": "野田さんは主題歌「夕星」も生で歌いました。",
+"mix": "野田さんは {theme song} 「夕星」も生で歌いました。"
+}
+],
+"post": {
+"account": "nanji_movie",
+"date": "2026-11-12",
+"likes": 5817,
+"name": "『汝、星のごとく』映画公式アカウント",
+"url": "https://x.com/nanji_movie/status/2120859509476454745"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"主題歌を生で歌った",
+"映画の監督をした",
+"チケットを配った"
+],
+"q": "野田洋次郎さんは、舞台挨拶で何をしましたか？",
+"why": "5文目に Mr. Noda also sang the theme song, Yuzutsu, live. とあります。sang は sing の過去形です。"
+},
+{
+"a": 1,
+"choices": [
+"出演者",
+"観客",
+"監督"
+],
+"q": "audience の意味は？",
+"why": "the audience は劇場や会場に来ている人たち、つまり「観客」です。"
+},
+{
+"a": 0,
+"choices": [
+"also",
+"very",
+"then"
+],
+"q": "Mr. Noda ___ sang the theme song.（野田さんは主題歌も歌いました）",
+"why": "「〜も」は also。動詞 sang の前に置きます。"
+}
+],
+"summary": "映画『汝、星のごとく』の公式アカウントが、大ヒット御礼の舞台挨拶の様子を伝えました。横浜流星さん、広瀬すずさん、野田洋次郎さんが登壇し、観客のみなさんと大ヒットをお祝いして感謝を伝えました。野田さんは主題歌「夕星」も生で歌いました。",
+"talk": {
+"hint": "Yes, I like it because ___. / No, I ___.",
+"ja": "歌手の生歌を聞くのは好きですか？",
+"q": "Do you like to hear singers live?"
+},
+"title": "『汝、星のごとく』大ヒット御礼舞台挨拶で野田洋次郎さんが生歌唱",
+"words": [
+{
+"ja": "舞台挨拶",
+"note": "ポストの「舞台挨拶」は stage greeting。映画の公開中に出演者が劇場で話すイベントのことです。",
+"w": "stage greeting"
+},
+{
+"ja": "お祝いする",
+"note": "ポストの「お祝いし」は celebrated。the big hit（大ヒット）を目的語にします。",
+"w": "celebrate"
+},
+{
+"ja": "観客",
+"note": "ポストの「観客の皆さん」は the audience。たくさんの人をまとめて言う名詞です。",
+"w": "audience"
+},
+{
+"ja": "主題歌",
+"note": "ポストの「主題歌」は theme song。映画やドラマのためのメインの曲です。",
+"w": "theme song"
+},
+{
+"ja": "生で・ライブで",
+"note": "ポストの「生歌唱」は sang live。録音ではなく、その場で歌うことです。",
+"w": "live"
+}
+]
+},
+{
+"added": "2026-11-12T21:11",
+"addedAt": "2026-11-13T14:43",
+"cat": "anime",
+"gloss": {
+"adult": "大人",
+"an": "ひとつの",
+"an adult": "大人",
+"and": "と・そして",
+"as": "〜したとき",
+"asuka": "アスカ",
+"asuka has become an adult": "アスカが大人になった",
+"asuka is lively and": "アスカは元気で〜",
+"asuka looked very beautiful": "アスカはとても美しく見えた",
+"asuka's": "アスカの",
+"beach": "浜辺",
+"beautiful": "美しい",
+"become": "なった（becomeの過去分詞）",
+"body": "体",
+"cried": "泣いた",
+"cried in the theater": "映画館で泣いた",
+"cute": "可愛い",
+"delicate": "儚げな",
+"evangelion": "エヴァンゲリオン",
+"feels": "感じている",
+"fit": "ぴったり合う",
+"grown": "成長した",
+"has": "〜になった（has＋過去分詞）",
+"her": "彼女の",
+"in": "〜で・〜の中で",
+"in the last scene of shin evangelion": "『シン・エヴァ』のラストシーンで",
+"in the last scene of shin evangelion asuka looked very beautiful as she": "『シン・エヴァ』のラストで、アスカは〜とても美しく見えた",
+"is": "〜です",
+"last": "最後の",
+"last scene": "ラストシーン",
+"lively": "元気な",
+"longer": "（no longerで）もう",
+"looked": "〜に見えた",
+"no": "（no longerで）もう〜ない",
+"no longer fit": "もうおさまらない",
+"of": "〜の",
+"on": "〜の上で",
+"on the beach": "浜辺で",
+"plugsuit": "プラグスーツ",
+"rei": "レイ",
+"saw": "見た（seeの過去形）",
+"scene": "場面",
+"she": "彼女は",
+"shin": "シン（作品名の一部）",
+"that": "〜ということ",
+"the": "その",
+"the beach": "浜辺",
+"the theater": "映画館",
+"the writer": "投稿者",
+"the writer feels that rei is delicate and": "投稿者は、レイは儚げで〜と感じている",
+"the writer feels that rei is delicate and beautiful and that asuka is lively and": "投稿者は、レイは儚げで美しく、アスカは元気で〜と感じている",
+"the writer saw asuka's torn plugsuit": "投稿者はアスカの破れたプラグスーツを見た",
+"the writer saw asuka's torn plugsuit which no longer fit her": "投稿者は、アスカの破れたプラグスーツがもう彼女の〜におさまらないのを見た",
+"the writer thought": "投稿者は思った",
+"the writer thought asuka has become an adult": "投稿者は「アスカが大人になった」と思った",
+"theater": "映画館",
+"thought": "思った",
+"torn": "破れた",
+"torn plugsuit": "破れたプラグスーツ",
+"up": "（woke upで）目を覚ます",
+"very": "とても",
+"which": "それは（前の名詞を説明）",
+"woke": "目覚めた（wake の過去形）",
+"writer": "投稿者"
+},
+"grad": [
+{
+"q1": "{The writer} は、{Rei} は {delicate} で美しく、{Asuka} は {lively} で可愛いと感じています。",
+"q2": "{The writer feels that Rei is delicate and} 美しく、{Asuka is lively and} 可愛い。",
+"q3": "{The writer feels that Rei is delicate and beautiful, and that Asuka is lively and} 可愛い。"
+},
+{
+"q1": "『シン・エヴァ』の {last scene} で、{the beach} で目を覚ました {Asuka} は、とても美しく見えました。",
+"q2": "{In the last scene of Shin Evangelion,} {Asuka looked very beautiful} 、{the beach} で目を覚ましたとき。",
+"q3": "{In the last scene of Shin Evangelion, Asuka looked very beautiful as she} 目を覚ました {on the beach.}"
+},
+{
+"q1": "投稿者は、アスカの {torn plugsuit} が、成長した {body} にもうおさまらない様子を見ました。",
+"q2": "{The writer saw Asuka's torn plugsuit,} それは成長した {body} に {no longer fit.}",
+"q3": "{The writer saw Asuka's torn plugsuit, which no longer fit her} 成長した {body.}"
+},
+{
+"q1": "{The writer} は「アスカが {an adult} になった！」と思い、{theater} で泣きました。",
+"q2": "{The writer thought,} 「{Asuka has become an adult!}」と、{the theater} で {cried.}",
+"q3": "{The writer thought, “Asuka has become an adult!”} そして {cried in the theater.}"
+}
+],
+"grammar": {
+"body": "has / have ＋ 過去分詞で、「〜した」「〜になった」と、今の状態につながる変化を言えます。become の過去分詞は become のままです。",
+"ex": [
+{
+"en": "The boy has become a doctor.",
+"ja": "その少年は医者になりました。"
+},
+{
+"en": "The town has become famous.",
+"ja": "その町は有名になりました。"
+}
+],
+"title": "has become ～「〜になった」（現在完了）"
+},
+"id": "20261112-eva-asuka-beach",
+"level": 3,
+"lines": [
+{
+"en": "The writer feels that Rei is delicate and beautiful, and that Asuka is lively and cute.",
+"ja": "投稿者は、レイは儚げで美しく、アスカは元気で可愛いと感じています。",
+"mix": "投稿者は、レイは {delicate} で美しく、アスカは {lively} で可愛いと感じています。"
+},
+{
+"en": "In the last scene of Shin Evangelion, Asuka looked very beautiful as she woke up on the beach.",
+"ja": "『シン・エヴァ』のラストシーンで、浜辺で目を覚ましたアスカは、とても美しく見えました。",
+"mix": "『シン・エヴァ』の {last scene} で、{beach} で目を覚ましたアスカは、とても美しく見えました。"
+},
+{
+"en": "The writer saw Asuka's torn plugsuit, which no longer fit her grown body.",
+"ja": "投稿者は、アスカの破れたプラグスーツが、成長した体にもうおさまらない様子を見ました。",
+"mix": "投稿者は、アスカの {torn} プラグスーツが、成長した {body} にもうおさまらない様子を見ました。"
+},
+{
+"en": "The writer thought, “Asuka has become an adult!” and cried in the theater.",
+"ja": "投稿者は「アスカが大人になった！」と思い、映画館で泣きました。",
+"mix": "投稿者は「アスカが {adult} になった！」と思い、{theater} で泣きました。"
+}
+],
+"post": {
+"account": "mmm_mmm_hnn",
+"date": "2026-11-12",
+"likes": 4491,
+"name": "mmm_mmm_hnn",
+"url": "https://x.com/mmm_mmm_hnn/status/2120851896856649751"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"ラストシーンで、浜辺で目を覚ましたとき",
+"最初の戦いの場面",
+"学校の場面"
+],
+"q": "投稿者がアスカを美しいと感じたのは、どの場面ですか？",
+"why": "2文目に In the last scene ... as she woke up on the beach とあります。"
+},
+{
+"a": 1,
+"choices": [
+"新しい",
+"破れた",
+"大きい"
+],
+"q": "torn の意味は？",
+"why": "torn plugsuit は「破れたプラグスーツ」。torn は tear の過去分詞です。"
+},
+{
+"a": 0,
+"choices": [
+"become",
+"became",
+"becoming"
+],
+"q": "Asuka has ___ an adult.（アスカが大人になった）",
+"why": "has のあとは過去分詞。become の過去分詞は become です。"
+}
+],
+"summary": "『シン・エヴァンゲリオン』の感想です。投稿者は、レイは儚げで美しく、アスカは元気で可愛いというイメージを持っていました。でもラストで浜辺で目覚めたアスカはとても美しく、破れたプラグスーツから成長した体が見える描写に、映画館で号泣したそうです。",
+"talk": {
+"hint": "I like ___ because she / he is ___.",
+"ja": "好きなアニメで、どのキャラクターが好きですか？",
+"q": "Which character do you like in your favorite anime?"
+},
+"title": "シンエヴァのラストで浜辺で目覚めたアスカが美しくて号泣した",
+"words": [
+{
+"ja": "儚げな・繊細な",
+"note": "ポストの「儚げ」は delicate。こわれそうな、はかない感じのことです。",
+"w": "delicate"
+},
+{
+"ja": "元気な・活発な",
+"note": "ポストの「元気いっぱい」は lively。明るくエネルギーのある人に使います。",
+"w": "lively"
+},
+{
+"ja": "破れた",
+"note": "ポストの「破けて」は torn。tear（破る）の過去分詞で、名詞の前に置いて「破れた〜」になります。",
+"w": "torn"
+},
+{
+"ja": "もう〜ない",
+"note": "ポストの「おさまってない」は no longer fit と言いかえます。以前はそうだったが今は違う、という意味です。",
+"w": "no longer"
+},
+{
+"ja": "成長した",
+"note": "ポストの「成長した身体」は her grown body。grow（成長する）の過去分詞です。",
+"w": "grown"
+}
+]
+},
+{
 "added": "2026-11-12T20:51",
 "addedAt": "2026-11-13T08:01",
 "cat": "movie",
@@ -833,6 +1631,529 @@ window.LESSONS = [
 "ja": "いいね・親指を立てたサイン",
 "note": "ポストの 👍 は a thumbs-up（親指を立てるサイン）。",
 "w": "thumbs-up"
+}
+]
+},
+{
+"added": "2026-11-12T18:45",
+"addedAt": "2026-11-13T14:43",
+"cat": "anime",
+"gloss": {
+"18 5 billion yen": "185億円",
+"18 5 billion yen in effects": "185億円の効果",
+"a": "ひとつの",
+"about": "約",
+"across": "〜じゅうに",
+"an": "ひとつの",
+"and": "と・そして",
+"anime": "アニメ",
+"areas": "地域",
+"back": "戻って",
+"billion": "10億",
+"billions": "数十億",
+"brought": "もたらした",
+"clear": "はっきりした",
+"clear rules": "はっきりしたルール",
+"come": "来る",
+"drew": "引きつけた（drawの過去形）",
+"effect": "効果",
+"effects": "効果（複数）",
+"fans": "ファン",
+"festival": "お祭り",
+"festivals": "お祭り（複数）",
+"festivals and goods": "お祭りとグッズ",
+"festivals and goods have kept": "お祭りとグッズが保ってきた",
+"five": "5",
+"for": "〜の間",
+"four": "4つの",
+"four towns": "4つの町",
+"four towns have succeeded in": "4つの町は〜することに成功した",
+"girls": "ガールズ（作品名の一部）",
+"goods": "グッズ",
+"have": "〜した（have＋過去分詞）",
+"hida": "飛騨",
+"higher": "より高く",
+"higher for a long time": "長い間、より高く",
+"home": "本拠地・ふるさと",
+"in": "〜で・〜の中で",
+"in hida a quick map and clear rules": "飛騨では、すばやい地図とはっきりしたルール",
+"in kuki": "久喜では",
+"in kuki festivals and goods have kept new year shrine visits about": "久喜では、お祭りとグッズが初詣を約〜に保った",
+"in numazu a show across the whole town drew": "沼津では、街全体の演出が〜を引きつけた",
+"in numazu a show across the whole town drew many young people and brought an effect of": "沼津では、街全体の演出が若い人を引きつけ、〜の効果をもたらした",
+"its": "その",
+"its festival": "そのお祭り",
+"join": "参加する",
+"kept": "保った（keepの過去形）",
+"kuki": "久喜",
+"long": "長い",
+"many": "たくさんの",
+"many fans": "たくさんのファン",
+"many young people": "たくさんの若い人",
+"map": "地図",
+"new": "新しい",
+"new year shrine visits": "初詣の参拝",
+"numazu": "沼津",
+"oarai": "大洗",
+"oarai home of girls und panzer": "『ガルパン』の町、大洗",
+"oarai home of girls und panzer welcomed fans with shop panels and tax payments": "『ガルパン』の町、大洗は、店のパネルでファンを迎え、納税額が〜",
+"of": "〜の",
+"panels": "パネル",
+"panzer": "パンツァー（作品名の一部）",
+"payments": "支払い",
+"people": "人々",
+"quick": "すばやい",
+"reviving": "元気にすること",
+"rose": "増えた（riseの過去形）",
+"rules": "ルール",
+"shop": "店",
+"shop panels": "店のパネル",
+"show": "演出・ショー",
+"shrine": "神社",
+"succeeded": "成功した",
+"tax": "税",
+"tax payments": "納税額",
+"tens": "〜十",
+"tens of thousands of people join its festival": "数万人がお祭りに参加する",
+"tens of thousands of people join its festival and many fans": "数万人がお祭りに参加し、ファンも多い〜",
+"the": "その",
+"the whole town": "街全体",
+"their": "それらの",
+"their areas": "彼らの地域",
+"their areas with anime": "アニメで地域を",
+"thousands": "千・数万",
+"time": "時間",
+"times": "〜倍",
+"town": "町",
+"towns": "町",
+"und": "ウント（作品名の一部）",
+"visits": "参拝",
+"welcomed": "迎えた",
+"welcomed fans with shop panels": "店のパネルでファンを迎えた",
+"whole": "全体の",
+"whole town": "街全体",
+"with": "〜を使って・〜で",
+"year": "年",
+"yen": "円",
+"young": "若い",
+"young people": "若い人"
+},
+"grad": [
+{
+"q1": "{Four towns} が、{anime} で {areas} を元気にすることに成功しました。",
+"q2": "{Four towns have succeeded in} 、{anime} で {their areas} を元気にすること。",
+"q3": "{Four towns have succeeded in} 元気にする {their areas with anime.}"
+},
+{
+"q1": "{Oarai} は、{shop panels} で {fans} を迎え、納税額が増えました。",
+"q2": "{Oarai, home of Girls und Panzer,} {welcomed fans with shop panels,} 、そして {tax payments} が増えました。",
+"q3": "{Oarai, home of Girls und Panzer, welcomed fans with shop panels, and tax payments} 増えました。"
+},
+{
+"q1": "{its festival} には数万人が参加し、何度も来る {fans} も多いです。",
+"q2": "{Tens of thousands of people join its festival,} 、{many fans} が何度も来ます。",
+"q3": "{Tens of thousands of people join its festival, and many fans} 戻ってきます。"
+},
+{
+"q1": "久喜では、{festivals and goods} で、{New Year shrine visits} が約5倍のまま長く続いています。",
+"q2": "{In Kuki,} {festivals and goods have kept} {New Year shrine visits} 、約5倍のまま、長く。",
+"q3": "{In Kuki, festivals and goods have kept New Year shrine visits about} 5倍 {higher for a long time.}"
+},
+{
+"q1": "沼津では、{the whole town} の {show} で {many young people} が急に増え、数十億円の効果がありました。",
+"q2": "{In Numazu, a show across the whole town drew} {many young people} 、数十億円の効果がありました。",
+"q3": "{In Numazu, a show across the whole town drew many young people and brought an effect of} 数十億円。"
+},
+{
+"q1": "{Hida} では、すばやい {map} と {clear rules} の整備で、185億円の効果がありました。",
+"q2": "{In Hida, a quick map and clear rules} が、{18.5 billion yen} の波及効果を生みました。",
+"q3": "{In Hida, a quick map and clear rules} 生んだ {18.5 billion yen in effects.}"
+}
+],
+"grammar": {
+"body": "succeed in ＋ 動詞のing形で「〜することに成功する」。have succeeded は現在完了で、成功したことが今にもつながっています。in のあとは動詞をそのまま使わず、必ず -ing の形にします。",
+"ex": [
+{
+"en": "They have succeeded in finding the cat.",
+"ja": "彼らはそのネコを見つけることに成功しました。"
+},
+{
+"en": "The shop has succeeded in attracting many fans.",
+"ja": "その店はたくさんのファンを集めることに成功しました。"
+}
+],
+"title": "have succeeded in -ing「〜することに成功した」"
+},
+"id": "20261112-anime-machiokoshi",
+"level": 3,
+"lines": [
+{
+"en": "Four towns have succeeded in reviving their areas with anime.",
+"ja": "4つの町が、アニメで地域を元気にすることに成功しました。",
+"mix": "4つの {towns} が、{anime} で地域を元気にすることに成功しました。"
+},
+{
+"en": "Oarai, home of Girls und Panzer, welcomed fans with shop panels, and tax payments rose.",
+"ja": "『ガルパン』の町、大洗は、店のパネルでファンを迎え、納税額が増えました。",
+"mix": "『ガルパン』の町、大洗は、{shop panels} でファンを迎え、納税額が増えました。"
+},
+{
+"en": "Tens of thousands of people join its festival, and many fans come back.",
+"ja": "お祭りには数万人が参加し、何度も来るファンも多いです。",
+"mix": "{festival} には数万人が参加し、何度も来る {fans} も多いです。"
+},
+{
+"en": "In Kuki, festivals and goods have kept New Year shrine visits about five times higher for a long time.",
+"ja": "久喜（『らき☆すた』）では、祭りとグッズで、初詣の神社参拝が約5倍のまま長く続いています。",
+"mix": "久喜では、{festivals} と {goods} で、初詣の神社参拝が約5倍のまま長く続いています。"
+},
+{
+"en": "In Numazu, a show across the whole town drew many young people and brought an effect of billions of yen.",
+"ja": "沼津（『ラブライブ！サンシャイン!!』）では、街全体を使った演出で若い人が急に増え、数十億円の効果がありました。",
+"mix": "沼津では、{whole town} を使った演出で {young people} が急に増え、数十億円の効果がありました。"
+},
+{
+"en": "In Hida, a quick map and clear rules brought 18.5 billion yen in effects.",
+"ja": "飛騨（『君の名は。』）では、すばやい地図づくりとルール整備で、185億円の波及効果がありました。",
+"mix": "飛騨では、すばやい {map} と {rules} の整備で、185億円の波及効果がありました。"
+}
+],
+"post": {
+"account": "yo0811tk",
+"date": "2026-11-12",
+"likes": 2407,
+"name": "よーTK",
+"url": "https://x.com/yo0811tk/status/2120815143479095322"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"祭りとグッズ",
+"新しい電車",
+"大きな駐車場"
+],
+"q": "久喜では、何のおかげで初詣の参拝が約5倍になりましたか？",
+"why": "4文目に festivals and goods have kept New Year shrine visits about five times higher とあります。"
+},
+{
+"a": 0,
+"choices": [
+"納税が増えた",
+"税金が安くなった",
+"店が閉まった"
+],
+"q": "tax payments rose の意味は？",
+"why": "tax payments は「納税（額）」、rose は rise（上がる）の過去形です。"
+},
+{
+"a": 0,
+"choices": [
+"reviving",
+"revive",
+"revived"
+],
+"q": "They have succeeded in ___ the town.（町を元気にすることに成功した）",
+"why": "succeed in のあとは -ing の形。reviving が正解です。"
+}
+],
+"summary": "アニメを使った町おこしの成功例をまとめたポストです。大洗（『ガルパン』）は店のパネルと歓迎で納税が増え、久喜（『らき☆すた』）は祭りとグッズで初詣が約5倍に、沼津（『ラブライブ！サンシャイン!!』）は街全体の演出で若い人が増え、飛騨（『君の名は。』）は地図とルール整備で185億円の効果があったと書かれています。",
+"talk": {
+"hint": "Yes, I want to visit ___. / No, ___.",
+"ja": "アニメが理由で行ってみたい町はありますか？",
+"q": "Is there a town you want to visit because of anime?"
+},
+"title": "アニメで町おこしに成功した4つの町（大洗・久喜・沼津・飛騨）",
+"words": [
+{
+"ja": "よみがえらせる・元気にする",
+"note": "ポストの「町おこし」は reviving their areas と言いかえます。町に元気を取りもどすことです。",
+"w": "revive"
+},
+{
+"ja": "納税（額）",
+"note": "ポストの「納税増」は tax payments rose。tax は数えない名詞なので、payments を複数形にします。",
+"w": "tax payments"
+},
+{
+"ja": "お祭り",
+"note": "ポストの「祭」は festival。町のイベントにも使えます。",
+"w": "festival"
+},
+{
+"ja": "初詣",
+"note": "ポストの「初詣」は New Year shrine visits。初詣にぴったりの短い英語はないので、このように言いかえます。",
+"w": "New Year shrine visit"
+},
+{
+"ja": "効果・影響",
+"note": "ポストの「波及」は in effects と言いかえます。お金などの広がる影響のことです。",
+"w": "effect"
+}
+]
+},
+{
+"added": "2026-11-12T18:25",
+"addedAt": "2026-11-13T14:43",
+"cat": "art",
+"gloss": {
+"a": "ひとつの",
+"a limited-edition tin full of puppies": "子犬だらけの限定缶",
+"a limited-edition tin full of puppies will": "子犬だらけの限定缶が〜する予定",
+"a puppy charm": "子犬のチャーム",
+"a puppy charm as a bonus": "おまけの子犬のチャーム",
+"a special exhibition on maruyama okyo": "円山応挙の特別展",
+"a special exhibition on maruyama okyo will be": "円山応挙の特別展が〜される",
+"all": "すべて",
+"also": "〜も",
+"and": "と",
+"around": "まわりに",
+"as": "〜として",
+"at": "〜で",
+"at the edo-tokyo museum": "江戸東京博物館で",
+"at the edo-tokyo museum from november 28": "11月28日から江戸東京博物館で",
+"at the exhibition": "その展覧会で",
+"be": "〜される",
+"black": "黒",
+"bonus": "おまけ",
+"buyers": "買った人",
+"buyers also": "買った人は〜も",
+"charm": "チャーム（小さな飾り）",
+"city": "市",
+"comes": "来る",
+"curve": "弧を描く",
+"design": "デザイン",
+"drawn": "描かれた",
+"ears": "耳",
+"edo-tokyo": "江戸東京",
+"edo-tokyo museum": "江戸東京博物館",
+"exhibition": "展覧会",
+"fine": "細かい",
+"fold": "折れる・たれる",
+"forward": "前に",
+"from": "〜から",
+"full": "いっぱいの",
+"get": "もらう",
+"glass": "ガラス",
+"glass painting": "ガラス絵",
+"go": "行く（go on saleで発売される）",
+"gold": "金の",
+"have": "持っている",
+"held": "開かれた（holdの過去分詞）",
+"in": "〜の中で",
+"in fine glass painting": "細かいガラス絵で",
+"lid": "ふた",
+"limited-edition": "限定版の",
+"limited-edition tin": "限定の缶",
+"made": "作られた・描かれた",
+"many": "たくさんの",
+"many puppies": "たくさんの子犬",
+"maruyama": "円山",
+"museum": "博物館",
+"november": "11月",
+"of": "〜の",
+"okyo": "応挙",
+"on": "〜についての",
+"owns": "所有している",
+"painting": "絵・絵画",
+"patterns": "文様",
+"puppies": "子犬たち",
+"puppy": "子犬",
+"puppy charm": "子犬のチャーム",
+"sale": "販売",
+"short": "短い",
+"short tails": "短いしっぽ",
+"show": "見せる・描く",
+"shows": "見せている・描いている",
+"sides": "側面",
+"snow": "雪",
+"snuggling": "寄り添って",
+"special": "特別な",
+"special exhibition": "特別展",
+"tails": "しっぽ",
+"that": "〜という（関係代名詞）",
+"the": "その",
+"the design comes from a painting": "このデザインは絵から来ている",
+"the design comes from a painting made in 1778 that the tsuruga city museum": "1778年に描かれ敦賀市立博物館が（持つ）絵から来たデザイン",
+"the exhibition": "その展覧会",
+"the lid shows three puppies": "ふたには3匹の子犬が描かれている",
+"the lid shows three puppies snuggling together in the snow": "ふたには雪の中で寄り添う3匹の子犬",
+"the puppies": "子犬たち",
+"the puppies have short ears": "子犬たちは短い耳を持つ",
+"the puppies have short ears that fold forward and short tails": "子犬たちは前にたれた短い耳と短いしっぽを持つ",
+"the sides": "側面",
+"the sides show gold patterns on black": "側面には黒地に金の文様",
+"the sides show gold patterns on black and many puppies": "側面には黒地に金の文様とたくさんの子犬",
+"the tsuruga city museum": "敦賀市立博物館",
+"three": "3つの",
+"three puppies": "3匹の子犬",
+"tin": "缶",
+"together": "いっしょに",
+"tsuruga": "敦賀",
+"tsuruga city museum": "敦賀市立博物館",
+"will": "〜する予定"
+},
+"grad": [
+{
+"q1": "円山応挙の {special exhibition} が、{Edo-Tokyo Museum} で開かれます。",
+"q2": "{A special exhibition on Maruyama Okyo} 、{at the Edo-Tokyo Museum} 11月28日から開かれます。",
+"q3": "{A special exhibition on Maruyama Okyo will be} 開かれる {at the Edo-Tokyo Museum from November 28.}"
+},
+{
+"q1": "{puppies} だらけの {limited-edition tin} が、{exhibition} で発売されます。",
+"q2": "{A limited-edition tin full of puppies} が、{the exhibition} で発売。",
+"q3": "{A limited-edition tin full of puppies will} 発売される {at the exhibition.}"
+},
+{
+"q1": "ふたには、雪の中で寄り添う {three puppies} が、細かい {glass painting} で描かれています。",
+"q2": "{The lid shows three puppies} 、雪の中で寄り添う、描かれた {in fine glass painting.}",
+"q3": "{The lid shows three puppies snuggling together in the snow,} 描かれた {in fine glass painting.}"
+},
+{
+"q1": "このデザインは、1778年に描かれ、{Tsuruga City Museum} が持っている {painting} から来ています。",
+"q2": "{The design comes from a painting} 、1778年に描かれた、{the Tsuruga City Museum} 持っている。",
+"q3": "{The design comes from a painting made in 1778 that the Tsuruga City Museum} 持っている。"
+},
+{
+"q1": "{The puppies} は、前にたれた短い {ears} と、弧を描く短い {tails} を持っています。",
+"q2": "{The puppies have short ears} 、前にたれた、{short tails} 弧を描く。",
+"q3": "{The puppies have short ears that fold forward and short tails} 弧を描く。"
+},
+{
+"q1": "{The sides} には、黒地に金の {patterns} と、ぐるりとたくさんの {puppies} が描かれています。",
+"q2": "{The sides show gold patterns on black} と、{many puppies} ぐるりと。",
+"q3": "{The sides show gold patterns on black and many puppies} ぐるりと描かれています。"
+},
+{
+"q1": "買った人には、おまけに {puppy charm} もつきます。",
+"q2": "{Buyers also} 、{a puppy charm} おまけに。",
+"q3": "{Buyers also} 得る {a puppy charm as a bonus.}"
+}
+],
+"grammar": {
+"body": "名詞のすぐ後ろに that ＋ 文を置くと、その名詞を説明できます。a painting that the museum owns は「その美術館が持っている絵」。made in 1778（過去分詞）でも、後ろから「1778年に描かれた」と説明できます。",
+"ex": [
+{
+"en": "I like the song that she sings.",
+"ja": "私は彼女が歌う歌が好きです。"
+},
+{
+"en": "This is a picture drawn in 1990.",
+"ja": "これは1990年に描かれた絵です。"
+}
+],
+"title": "後ろから説明する that「〜する…・〜が…する」"
+},
+"id": "20261113-art-maruyama-okyo-tin",
+"level": 3,
+"lines": [
+{
+"en": "A special exhibition on Maruyama Okyo will be held at the Edo-Tokyo Museum from November 28.",
+"ja": "円山応挙の特別展が、11月28日から江戸東京博物館で開かれます。",
+"mix": "円山応挙の {special exhibition} が、11月28日から江戸東京博物館で開かれます。"
+},
+{
+"en": "A limited-edition tin full of puppies will go on sale at the exhibition.",
+"ja": "子犬だらけの限定缶が、その展覧会で発売されます。",
+"mix": "子犬だらけの {limited-edition} {tin} が、その展覧会で発売されます。"
+},
+{
+"en": "The lid shows three puppies snuggling together in the snow, drawn in fine glass painting.",
+"ja": "ふたには、雪の中で寄り添う3匹の子犬が、細かいガラス絵で描かれています。",
+"mix": "ふたには、雪の中で寄り添う3匹の子犬が、細かい {glass painting} で描かれています。"
+},
+{
+"en": "The design comes from a painting made in 1778 that the Tsuruga City Museum owns.",
+"ja": "このデザインは、1778年に描かれ、敦賀市立博物館が持っている絵から来ています。",
+"mix": "このデザインは、1778年に描かれ、敦賀市立博物館が持っている {painting} から来ています。"
+},
+{
+"en": "The puppies have short ears that fold forward and short tails that curve.",
+"ja": "子犬たちは、前にたれた短い耳と、弧を描く短いしっぽを持っています。",
+"mix": "子犬たちは、前にたれた短い {ears} と、弧を描く短い {tails} を持っています。"
+},
+{
+"en": "The sides show gold patterns on black and many puppies all around.",
+"ja": "側面には、黒地に金の文様と、ぐるりとたくさんの子犬が描かれています。",
+"mix": "側面には、黒地に金の {patterns} と、ぐるりとたくさんの子犬が描かれています。"
+},
+{
+"en": "Buyers also get a puppy charm as a bonus.",
+"ja": "買った人には、おまけに子犬のチャームもつきます。",
+"mix": "買った人には、おまけに子犬の {charm} もつきます。"
+}
+],
+"post": {
+"account": "aoyama_decarbo",
+"date": "2026-11-12",
+"likes": 2510,
+"name": "青山デカーボ【公式】",
+"url": "https://x.com/aoyama_decarbo/status/2120810113070166154"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"11月13日",
+"11月28日",
+"12月28日"
+],
+"q": "特別展はいつから始まりますか？",
+"why": "1文目に from November 28 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"缶",
+"本",
+"切符"
+],
+"q": "tin の意味は？",
+"why": "A limited-edition tin は「限定の缶」です。"
+},
+{
+"a": 0,
+"choices": [
+"that",
+"what",
+"who"
+],
+"q": "A painting ___ the museum owns（美術館が持っている絵）",
+"why": "物（painting）を後ろから説明するので that を使います。"
+}
+],
+"summary": "青山デカーボ（公式）が、11月28日から江戸東京博物館で開かれる特別展「円山応挙 リアルの先へ 空間革命」で、「円山応挙 子犬だらけ缶」を限定発売すると伝えたポストです。ふたは「狗子図」をもとにした子犬のガラス絵で、おまけに子犬のチャームがつきます。",
+"talk": {
+"hint": "Yes, I do. / No, I do not.",
+"ja": "美術館でグッズを買うのは好きですか？",
+"q": "Do you like to buy goods at museums?"
+},
+"title": "円山応挙展で「子犬だらけ缶」を限定発売",
+"words": [
+{
+"ja": "展覧会",
+"note": "ポストの「特別展」は special exhibition。",
+"w": "exhibition"
+},
+{
+"ja": "限定の",
+"note": "ポストの「限定発売」は、限定の商品なら limited-edition と言えます。",
+"w": "limited-edition"
+},
+{
+"ja": "ふた",
+"note": "ポストの「蓋」は lid。",
+"w": "lid"
+},
+{
+"ja": "寄り添う",
+"note": "ポストの「寄り添う」は snuggle together で言えます。",
+"w": "snuggle"
+},
+{
+"ja": "弧を描く・曲がる",
+"note": "ポストの「弧を描いた」尻尾は tails that curve。",
+"w": "curve"
 }
 ]
 },
