@@ -1,5 +1,1331 @@
 window.LESSONS = [
 {
+"added": "2026-11-15T12:00",
+"addedAt": "2026-11-15T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a gray character": "灰色のキャラクター",
+"a gray character is": "灰色のキャラクターは〜している",
+"and": "そして",
+"chair": "いす",
+"character": "キャラクター",
+"chibi": "ちび（小さくてかわいい）",
+"chibi ghidorah has three heads": "ちびギドラは頭が3つある",
+"chibi ghidorah has three heads and": "ちびギドラは頭が3つあって",
+"chibi godzilla": "ちびゴジラ",
+"chibi godzilla is the": "ちびゴジラは〜です",
+"directions": "指示・演出",
+"director": "監督",
+"filming": "撮影している",
+"ghidorah": "ギドラ",
+"gives": "出す（giveの三単現）",
+"gives directions": "演出をつける",
+"gives directions to chibi ghidorah": "ちびギドラに演出をつける",
+"godzilla": "ゴジラ",
+"godzilla minus zero": "ゴジラ-0.0（作品名）",
+"gray": "灰色の",
+"has": "持っている（haveの三単現）",
+"he": "彼は",
+"heads": "頭（headの複数形）",
+"illustration": "イラスト",
+"in": "〜に（中に）",
+"in a chair": "いすに",
+"is": "〜です",
+"megaphone": "メガホン",
+"minus": "マイナス",
+"scene": "場面・シーン",
+"sits": "すわる（sitの三単現）",
+"sits in a chair with a megaphone": "メガホンを持っていすにすわる",
+"supports": "応援している（supportの三単現）",
+"sweating": "汗をかいている",
+"the": "その",
+"the scene": "その場面",
+"this": "この",
+"this illustration": "このイラスト",
+"three": "3つの",
+"three heads": "3つの頭",
+"to": "〜に",
+"with": "〜を持って",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "この {illustration} は『ゴジラ-0.0』を応援しています。",
+"q2": "{This illustration} は {Godzilla Minus Zero} を応援しています。",
+"q3": "{This illustration} 応援する {Godzilla Minus Zero.}"
+},
+{
+"q1": "ちび {Godzilla} が監督です。",
+"q2": "{Chibi Godzilla} が監督です。",
+"q3": "{Chibi Godzilla is the} 監督{.}"
+},
+{
+"q1": "彼は {megaphone} を持って、{chair} にすわっています。",
+"q2": "彼は {in a chair} にすわって、{megaphone} を持っています。",
+"q3": "彼は {sits in a chair with a megaphone.}"
+},
+{
+"q1": "彼はちびギドラに {directions} を出しています。",
+"q2": "彼は ちびギドラに {gives directions}。",
+"q3": "彼は {gives directions to Chibi Ghidorah.}"
+},
+{
+"q1": "ちびギドラは {three heads} があって、汗をかいています。",
+"q2": "{Chibi Ghidorah has three heads} 、汗をかいています。",
+"q3": "{Chibi Ghidorah has three heads and} 汗をかいている{.}"
+},
+{
+"q1": "灰色の {character} が {scene} を撮影しています。",
+"q2": "{A gray character} が {the scene} を撮影しています。",
+"q3": "{A gray character is} 撮影する {the scene.}"
+}
+],
+"grammar": {
+"body": "with には「〜といっしょに」のほかに、「〜を持って」「〜を使って」という意味もあります。with のあとに、持っているものや使う道具を置きます。",
+"ex": [
+{
+"en": "She writes with a red pen.",
+"ja": "彼女は赤いペンで書きます。"
+},
+{
+"en": "He comes with a big bag.",
+"ja": "彼は大きなかばんを持ってきます。"
+}
+],
+"title": "with 〜「〜を持って・〜を使って」"
+},
+"id": "20261115-chibigodzi-director",
+"level": 1,
+"lines": [
+{
+"en": "This illustration supports Godzilla Minus Zero.",
+"ja": "このイラストは『ゴジラ-0.0』を応援しています。",
+"mix": "この {illustration} は『ゴジラ-0.0』を応援しています。"
+},
+{
+"en": "Chibi Godzilla is the director.",
+"ja": "ちびゴジラが監督です。",
+"mix": "ちび {Godzilla} が監督です。"
+},
+{
+"en": "He sits in a chair with a megaphone.",
+"ja": "彼はメガホンを持って、いすにすわっています。",
+"mix": "彼は {megaphone} を持って、いすにすわっています。"
+},
+{
+"en": "He gives directions to Chibi Ghidorah.",
+"ja": "彼はちびギドラに演出をつけています。",
+"mix": "彼はちびギドラに {directions} を出しています。"
+},
+{
+"en": "Chibi Ghidorah has three heads and is sweating.",
+"ja": "ちびギドラは頭が3つあって、汗をかいています。",
+"mix": "ちびギドラは {heads} が3つあって、汗をかいています。"
+},
+{
+"en": "A gray character is filming the scene.",
+"ja": "灰色のキャラクターが場面を撮影しています。",
+"mix": "灰色のキャラクターが {scene} を撮影しています。"
+}
+],
+"post": {
+"account": "chibigodzi",
+"date": "2026-11-15",
+"likes": 2000,
+"name": "@chibigodzi",
+"url": "https://x.com/chibigodzi/status/2121800360897794477"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"監督として、ちびギドラに演出をつけている",
+"ちびギドラと料理している",
+"ちびギドラと歌っている"
+],
+"q": "絵の中で、ちびゴジラは何をしている？",
+"why": "2文目と4文目に、ちびゴジラが監督で、ちびギドラに directions を出しているとあります。"
+},
+{
+"a": 1,
+"choices": [
+"カメラ",
+"メガホン",
+"いす"
+],
+"q": "megaphone の意味は？",
+"why": "megaphone は「メガホン」。3文目で、ちびゴジラが持っています。"
+},
+{
+"a": 2,
+"choices": [
+"to",
+"at",
+"with"
+],
+"q": "He sits in a chair ___ a megaphone.（メガホンを持って）",
+"why": "「〜を持って」は with を使います。"
+}
+],
+"summary": "映画『ゴジラ-0.0』の応援イラストです。ちびゴジラが監督になって、ちびギドラに演出をつけています。絵には、メガホンを持っていすにすわる緑のちびゴジラ、三つの頭に汗をかいた黄色いちびギドラ、カメラをかまえる灰色のキャラクターが描かれています。",
+"talk": {
+"hint": "Yes, I do. / No, I do not. I want to be ___.",
+"ja": "映画監督になりたいですか？",
+"q": "Do you want to be a movie director?"
+},
+"title": "監督になったちびゴジラが、ちびギドラに演出",
+"words": [
+{
+"ja": "イラスト",
+"note": "ポストの「応援イラスト」は illustration です。",
+"w": "illustration"
+},
+{
+"ja": "監督",
+"note": "ポストの「監督」。映画をまとめる人のことです。",
+"w": "director"
+},
+{
+"ja": "メガホン",
+"note": "絵のちびゴジラが手に持っています。",
+"w": "megaphone"
+},
+{
+"ja": "指示・演出",
+"note": "ポストの「演出をつける」は give directions（指示を出す）と言いかえました。いつも s がつきます。",
+"w": "directions"
+},
+{
+"ja": "撮影する",
+"note": "名詞では「フィルム・映画」。ここでは動詞です。",
+"w": "film"
+}
+]
+},
+{
+"added": "2026-11-15T12:00",
+"addedAt": "2026-11-15T14:49",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"are": "〜です",
+"at": "〜に・〜で",
+"at kawagoeshi station on the tobu tojo line": "東武東上線の川越市駅に",
+"big": "大きい",
+"eyes": "目",
+"face": "顔",
+"frieren": "フリーレン（人名）",
+"frieren plush": "フリーレンのぬいぐるみ",
+"her": "彼女の",
+"her eyes": "彼女の目",
+"her eyes are": "彼女の目は〜です",
+"is": "〜です",
+"it": "それは（ぬいぐるみ）",
+"kawagoeshi": "川越市（地名）",
+"kawagoeshi station": "川越市駅",
+"line": "（鉄道の）線",
+"look": "見る",
+"look at": "〜を見て",
+"name": "名前・名称",
+"narrow": "細い",
+"no": "の（「東上のフリーレン」のの）",
+"of": "〜の",
+"on": "〜の（路線の上）",
+"on the name of the tojo line": "東上線という名前にかけた",
+"play": "言葉遊び（play on で）",
+"plush": "ぬいぐるみ",
+"post": "ポスト（投稿）",
+"says": "〜と書いてある",
+"station": "駅",
+"the": "その",
+"the name of the tojo line": "東上線という名前",
+"the post": "そのポスト",
+"this": "これ",
+"this is": "これは〜です",
+"this is a": "これはひとつの〜です",
+"tobu": "東武（鉄道会社名）",
+"tojo": "東上（路線名）",
+"tojo is a": "『東上』は〜です",
+"tojo line": "東上線",
+"tojo no frieren": "東上のフリーレン"
+},
+"grad": [
+{
+"q1": "これは大きな {Frieren} の {plush} です。",
+"q2": "{This is} 大きな {Frieren plush}。",
+"q3": "{This is a} 大きな {Frieren plush.}"
+},
+{
+"q1": "東武東上線の {Kawagoeshi Station} にいます。",
+"q2": "{at Kawagoeshi Station on the Tobu Tojo Line} にいます。",
+"q3": "{It} いる {at Kawagoeshi Station on the Tobu Tojo Line.}"
+},
+{
+"q1": "彼女の {face} を見てください。",
+"q2": "{Look at} 彼女の {face}。",
+"q3": "{Look at} 彼女の {face.}"
+},
+{
+"q1": "彼女の {eyes} は細いです。",
+"q2": "{Her eyes} は細いです。",
+"q3": "{Her eyes are} 細い{.}"
+},
+{
+"q1": "{The post} には「東上のフリーレン」とあります。",
+"q2": "{The post} には {\"Tojo no Frieren\"} とあります。",
+"q3": "{The post} とある {\"Tojo no Frieren.\"}"
+},
+{
+"q1": "{Tojo} は、路線名の {Tojo Line} にかけた言葉遊びです。",
+"q2": "{Tojo is a} 言葉遊び、{the name of the Tojo Line} にかけた。",
+"q3": "{Tojo is a} 言葉遊び {on the name of the Tojo Line.}"
+}
+],
+"grammar": {
+"body": "Look at ＋ もの で「〜を見てください」という命令文になります。動詞の原形（look）から文を始め、主語は書きません。見るものの前に at をつけます。",
+"ex": [
+{
+"en": "Look at this picture.",
+"ja": "この絵を見てください。"
+},
+{
+"en": "Look at the big station.",
+"ja": "あの大きな駅を見て。"
+}
+],
+"title": "Look at ～「〜を見て」"
+},
+"id": "20261115-frieren-tojo-plush",
+"level": 1,
+"lines": [
+{
+"en": "This is a big Frieren plush.",
+"ja": "これは大きなフリーレンのぬいぐるみです。",
+"mix": "これは大きなフリーレンの {plush} です。"
+},
+{
+"en": "It is at Kawagoeshi Station on the Tobu Tojo Line.",
+"ja": "東武東上線の川越市駅にいます。",
+"mix": "東武東上線の {station} にいます。"
+},
+{
+"en": "Look at her face.",
+"ja": "彼女の顔を見てください。",
+"mix": "彼女の {face} を見てください。"
+},
+{
+"en": "Her eyes are narrow.",
+"ja": "彼女の目は細いです。",
+"mix": "彼女の {eyes} は細いです。"
+},
+{
+"en": "The post says, \"Tojo no Frieren.\"",
+"ja": "ポストには「東上のフリーレン」とあります。",
+"mix": "{post} には「東上のフリーレン」とあります。"
+},
+{
+"en": "Tojo is a play on the name of the Tojo Line.",
+"ja": "『東上』は、路線名の東上線にかけた言葉遊びです。",
+"mix": "『東上』は、路線名の {Tojo Line} にかけた言葉遊びです。"
+}
+],
+"post": {
+"account": "FRIEREN_PR",
+"date": "2026-11-15",
+"likes": 10000,
+"name": "『葬送のフリーレン』公式",
+"url": "https://x.com/FRIEREN_PR/status/2121800364588683495"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"東京駅",
+"池袋駅",
+"川越市駅"
+],
+"q": "フリーレンのぬいぐるみが写っている駅は？",
+"why": "2文目に Kawagoeshi Station とあります。"
+},
+{
+"a": 0,
+"choices": [
+"細い",
+"大きい",
+"長い"
+],
+"q": "narrow の意味は？",
+"why": "narrow は「細い・せまい」。Her eyes are narrow. で「目が細い」です。"
+},
+{
+"a": 1,
+"choices": [
+"Looks",
+"Look",
+"Looking"
+],
+"q": "___ at her face.（彼女の顔を見て）",
+"why": "命令文は動詞の原形 Look から始めます。"
+}
+],
+"series": "frieren",
+"summary": "フリーレン公式が「東上のフリーレン」と一言そえて、写真を投稿しました。東武東上線の川越市駅（埼玉県川越市）のホームの駅名標の前に、白い服で目を細めた、大きなフリーレンのぬいぐるみが写っています。「東上」は路線名の東上線にかけた題です。",
+"talk": {
+"hint": "Yes, I do. I want a big ___.",
+"ja": "大きなぬいぐるみがほしいですか？",
+"q": "Do you want a big plush?"
+},
+"title": "東武東上線の川越市駅に、大きなフリーレン",
+"words": [
+{
+"ja": "ぬいぐるみ（ふわふわした素材のもの）",
+"note": "ポストの写真の「大きなぬいぐるみ」は a big plush と言えます。",
+"w": "plush"
+},
+{
+"ja": "駅",
+"note": "川越市駅は Kawagoeshi Station。",
+"w": "station"
+},
+{
+"ja": "細い・せまい",
+"note": "目を細めた顔は narrow eyes と言えます。",
+"w": "narrow"
+},
+{
+"ja": "〜にかけた言葉遊び",
+"note": "ポストの題「東上のフリーレン」は、路線名「東上」にかけた言葉遊び＝ a play on the name です。",
+"w": "play on"
+}
+]
+},
+{
+"added": "2026-11-15T12:00",
+"addedAt": "2026-11-15T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"aloha": "アロハ（人名）",
+"aloha takamatsu of chotokkyu": "超特急の髙松アロハ",
+"attention": "注意・注目",
+"chotokkyu": "超特急（グループ名）",
+"dance": "ダンス",
+"dance log": "ダンスの記録",
+"dancing": "ダンス（踊ること）",
+"feel": "感じる",
+"feel his strength in a movie theater": "映画館で彼の強さを感じる",
+"for": "〜の",
+"friday": "金曜日",
+"friday november 27": "11月27日(金)",
+"he": "彼は",
+"here": "ここに",
+"here is the dance log for the": "これが〜のダンスの記録です",
+"his": "彼の",
+"his dancing": "彼のダンス",
+"how": "どのように",
+"how aloha takamatsu of chotokkyu practiced dancing": "超特急の髙松アロハがどう練習したか",
+"in": "〜で",
+"in a movie theater": "映画館で",
+"is": "〜です",
+"it": "それは",
+"log": "記録",
+"movie": "映画",
+"november": "11月",
+"of": "〜の",
+"on": "〜に（日付）",
+"on friday november 27": "11月27日(金)に",
+"opens": "公開される",
+"own": "自分らしい",
+"pay": "向ける（pay attentionで）",
+"pay attention to his dancing": "彼のダンスに注目する",
+"plays": "演じる",
+"please": "どうぞ・〜してください",
+"practiced": "練習した",
+"searched": "探した（searchの過去形）",
+"shows": "見せる",
+"strength": "強さ",
+"takamatsu": "髙松（人名）",
+"the": "その",
+"the dance log": "そのダンスの記録",
+"the movie": "その映画",
+"theater": "映画館",
+"to": "〜に",
+"usen": "ウセン（役名）",
+"usen in the movie": "映画でのウセン",
+"usen's": "ウセンの",
+"usen's own": "ウセンらしい",
+"usen's own way of dancing": "ウセンらしいダンスのしかた",
+"wandance": "ワンダンス（作品名）",
+"way": "やり方"
+},
+"grad": [
+{
+"q1": "映画 {Wandance} の「{DANCE LOG}」をお届けします。",
+"q2": "映画 {Wandance} の {the DANCE LOG} をお届けします。",
+"q3": "{Here is the DANCE LOG for the} 映画 {Wandance.}"
+},
+{
+"q1": "{Chotokkyu} の髙松アロハさんが、どのように {dancing} を練習したかを紹介します。",
+"q2": "{Aloha Takamatsu of Chotokkyu} が、どのように {dancing} を練習したかを紹介します。",
+"q3": "{It} 紹介する {how Aloha Takamatsu of Chotokkyu practiced dancing.}"
+},
+{
+"q1": "彼は {the movie} でウセンを演じています。",
+"q2": "{He} は {the movie} で {Usen} を演じています。",
+"q3": "{He} 演じる {Usen in the movie.}"
+},
+{
+"q1": "彼は {Usen's} {dancing} を探し求めました。",
+"q2": "彼は {Usen's own} {dancing} を探し求めました。",
+"q3": "{He} 探し求めた {Usen's own way of dancing.}"
+},
+{
+"q1": "{His dancing} に注目してください。",
+"q2": "{pay attention to his dancing} してください。",
+"q3": "ぜひ {pay attention to his dancing.}"
+},
+{
+"q1": "彼の「{strength}」をぜひ {theater} で感じてください。",
+"q2": "彼の {strength} をぜひ {in a movie theater} 感じてください。",
+"q3": "ぜひ {feel his strength in a movie theater.}"
+},
+{
+"q1": "{The movie} は11月27日(金)に公開されます。",
+"q2": "{The movie} は {Friday, November 27} に公開されます。",
+"q3": "{The movie} 公開 {on Friday, November 27.}"
+}
+],
+"grammar": {
+"body": "「〜を探す」は search for 〜 と言います。look for 〜 とほぼ同じ意味です。for をつけるのを忘れないようにしましょう。過去形は searched for 〜 です。",
+"ex": [
+{
+"en": "I searched for my bag.",
+"ja": "私はバッグを探しました。"
+},
+{
+"en": "He is searching for a new song.",
+"ja": "彼は新しい曲を探しています。"
+}
+],
+"title": "search for 〜「〜を探す」"
+},
+"id": "20261115-wandance-aloha-dance-log",
+"level": 2,
+"lines": [
+{
+"en": "Here is the DANCE LOG for the movie Wandance.",
+"ja": "映画『ワンダンス』の「DANCE LOG」をお届けします。",
+"mix": "映画『ワンダンス』の「{DANCE LOG}」をお届けします。"
+},
+{
+"en": "It shows how Aloha Takamatsu of Chotokkyu practiced dancing.",
+"ja": "超特急の髙松アロハさんが、どのようにダンスを練習したかを紹介します。",
+"mix": "超特急の髙松アロハさんが、どのように {dancing} を練習したかを紹介します。"
+},
+{
+"en": "He plays Usen in the movie.",
+"ja": "彼は映画でウセンを演じています。",
+"mix": "彼は {movie} でウセンを演じています。"
+},
+{
+"en": "He searched for Usen's own way of dancing.",
+"ja": "彼はウセンらしいダンスのしかたを探し求めました。",
+"mix": "彼はウセンらしい {dancing} を探し求めました。"
+},
+{
+"en": "Please pay attention to his dancing.",
+"ja": "彼のダンスに注目してください。",
+"mix": "彼の {dancing} に注目してください。"
+},
+{
+"en": "Please feel his strength in a movie theater.",
+"ja": "彼の「強者感」をぜひ映画館で感じてください。",
+"mix": "彼の「{strength}」をぜひ映画館で感じてください。"
+},
+{
+"en": "The movie opens on Friday, November 27.",
+"ja": "映画は11月27日(金)に公開されます。",
+"mix": "{movie} は11月27日(金)に公開されます。"
+}
+],
+"post": {
+"account": "wandance_movie",
+"date": "2026-11-15",
+"likes": 3549,
+"name": "映画『ワンダンス』公式",
+"url": "https://x.com/wandance_movie/status/2121800366622986308"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"ウセン",
+"ダンスの先生",
+"映画の監督"
+],
+"q": "髙松アロハさんが演じる役は？",
+"why": "3文目に He plays Usen in the movie. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"〜を忘れる",
+"〜を教える",
+"〜を探す"
+],
+"q": "search for の意味は？",
+"why": "search for 〜 は「〜を探す」。ポストの「探求した」にあたります。"
+},
+{
+"a": 1,
+"choices": [
+"searching",
+"searched",
+"searches"
+],
+"q": "I ___ for my bag.（バッグを探しました）",
+"why": "過去のことなので searched for 〜 にします。"
+}
+],
+"summary": "映画『ワンダンス』の「DANCE LOG」で、巧宇千（ウセン）役の髙松アロハさん（超特急）のダンス練習の軌跡が紹介されました。ウセンらしさを探求したダンスと、その「強者感」に注目です。公開は11月27日（金）です。",
+"talk": {
+"hint": "Yes, I do. I like ___. / No, I don't.",
+"ja": "ダンスの映画は好きですか？",
+"q": "Do you like dance movies?"
+},
+"title": "『ワンダンス』DANCE LOG：髙松アロハさんのダンス練習",
+"words": [
+{
+"ja": "練習する・練習",
+"note": "ポストの「ダンス練習の軌跡」は、how he practiced dancing（どう練習したか）で表しました。",
+"w": "practice"
+},
+{
+"ja": "〜を探す・探し求める",
+"note": "ポストの「探求した」を searched for で表しました。",
+"w": "search for"
+},
+{
+"ja": "〜に注目する",
+"note": "ポストの「注目」は pay attention to。",
+"w": "pay attention to"
+},
+{
+"ja": "強さ",
+"note": "ポストの「強者感」は his strength（彼の強さ）と言うと自然です。",
+"w": "strength"
+},
+{
+"ja": "映画館・劇場",
+"note": "ポストの「映画館で」は in a movie theater。",
+"w": "theater"
+}
+]
+},
+{
+"added": "2026-11-14T23:34",
+"addedAt": "2026-11-15T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとりの・ひとつの",
+"a customer": "ひとりの客",
+"a king ghidorah line": "キングギドラのセリフ",
+"about": "〜についての",
+"again": "また",
+"asks": "頼む（askの三単現）",
+"at": "〜で",
+"at the theater": "映画館で",
+"clerk": "店員",
+"could": "〜していただけますか（ていねい）",
+"could you say": "言っていただけますか",
+"could you say a king ghidorah line": "キングギドラのセリフを言っていただけますか",
+"customer": "客",
+"for": "〜を（頼む）・〜に対して",
+"for king ghidorah goods": "キングギドラのグッズを",
+"funny": "笑える・おもしろい",
+"ghidorah": "ギドラ",
+"godzilla": "ゴジラ",
+"godzilla minus zero": "ゴジラ-0.0（作品名）",
+"goods": "グッズ・商品",
+"have": "〜している（現在完了）",
+"is": "〜です",
+"its": "その",
+"its release": "その公開",
+"king": "キング・王",
+"king ghidorah goods": "キングギドラのグッズ",
+"line": "セリフ",
+"many": "たくさんの",
+"many people have watched": "たくさんの人が見ている",
+"many people have watched this movie since its release": "公開以来、たくさんの人がこの映画を見ている",
+"minus": "マイナス",
+"movie": "映画",
+"much": "とても",
+"people": "人々",
+"release": "公開",
+"resale": "転売",
+"say": "言う",
+"says": "言う（sayの三単現）",
+"see": "会う・見る",
+"see you at the theater": "映画館でお会いしましょう",
+"since": "〜以来",
+"since its release": "公開以来",
+"skit": "コント・短い寸劇",
+"skit is about godzilla minus zero": "コントは『ゴジラ-0.0』が題材",
+"so": "そこで・だから",
+"so the clerk": "そこで店員は",
+"stop": "止める・ふせぐ",
+"thank": "感謝する",
+"thank you": "ありがとう",
+"thank you so much": "本当にありがとう",
+"thank you so much for": "〜を本当にありがとう",
+"the": "その",
+"the clerk": "店員は",
+"the customer": "客は",
+"theater": "映画館",
+"this": "この",
+"this skit": "このコント",
+"this weekend": "今週末",
+"to": "〜すること",
+"to stop resale": "転売をふせぐこと",
+"wants": "〜したい（wantの三単現）",
+"watched": "見た（watchの過去分詞）",
+"watching": "見ること",
+"weekend": "週末",
+"you": "あなた",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "{This skit} は笑える、『ゴジラ-0.0』が題材です。",
+"q2": "{This} 笑える {skit} は、{Godzilla Minus Zero} が題材です。",
+"q3": "{This} 笑える {skit is about Godzilla Minus Zero.}"
+},
+{
+"q1": "{A customer} がキングギドラの {goods} を頼みます。",
+"q2": "{A customer} が {King Ghidorah goods} を頼みます。",
+"q3": "{A customer} 頼む {for King Ghidorah goods.}"
+},
+{
+"q1": "{The clerk} は {resale} をふせぎたいと考えています。",
+"q2": "{The clerk} は {to stop resale} したいと考えています。",
+"q3": "{The clerk} 望む {to stop resale.}"
+},
+{
+"q1": "そこで {the clerk} は「キングギドラの {line} を言っていただけますか」と頼みます。",
+"q2": "そこで {the clerk} は「{Could you say} {a King Ghidorah line}」と頼みます。",
+"q3": "{So the clerk} 頼む {\"Could you say a King Ghidorah line?\"}"
+},
+{
+"q1": "{The customer} は「{its release} 以来、たくさんの人がこの映画を見ています」と言います。",
+"q2": "{The customer} は「{Many people have watched} この {movie} {since its release}」と言います。",
+"q3": "{The customer} 言う {\"Many people have watched this movie since its release.\"}"
+},
+{
+"q1": "見てくださって、本当に {thank you}！",
+"q2": "{Thank you so much} 、見てくださって！",
+"q3": "{Thank you so much for} 見てくれて！"
+},
+{
+"q1": "{this weekend} も、{theater} でまたお会いしましょう！",
+"q2": "{this weekend} も、{at the theater} でまたお会いしましょう！",
+"q3": "{See you at the theater} また {this weekend!}"
+}
+],
+"grammar": {
+"body": "Could you ＋ 動詞の原形 〜? は、ていねいに人にお願いする言い方です。Can you 〜? よりも、ていねいな感じがします。お店の人やはじめて会う人に使うと安心です。",
+"ex": [
+{
+"en": "Could you open the door?",
+"ja": "ドアを開けていただけますか。"
+},
+{
+"en": "Could you help me, please?",
+"ja": "手伝っていただけますか。"
+}
+],
+"title": "Could you 〜?「〜していただけますか」"
+},
+"id": "20261114-godzilla0-gidorah-goods",
+"level": 2,
+"lines": [
+{
+"en": "This funny skit is about Godzilla Minus Zero.",
+"ja": "この笑えるコントは、『ゴジラ-0.0』が題材です。",
+"mix": "この笑える {skit} は、『ゴジラ-0.0』が題材です。"
+},
+{
+"en": "A customer asks for King Ghidorah goods.",
+"ja": "客がキングギドラのグッズを頼みます。",
+"mix": "{customer} がキングギドラのグッズを頼みます。"
+},
+{
+"en": "The clerk wants to stop resale.",
+"ja": "店員は転売をふせぎたいと考えています。",
+"mix": "{clerk} は {resale} をふせぎたいと考えています。"
+},
+{
+"en": "So the clerk asks, \"Could you say a King Ghidorah line?\"",
+"ja": "そこで店員は「キングギドラのセリフを言っていただけますか」と頼みます。",
+"mix": "そこで店員は「キングギドラの {line} を言っていただけますか」と頼みます。"
+},
+{
+"en": "The customer says, \"Many people have watched this movie since its release.\"",
+"ja": "客は「公開以来、たくさんの人がこの映画を見ています」と言います。",
+"mix": "客は「{release} 以来、たくさんの人がこの映画を見ています」と言います。"
+},
+{
+"en": "Thank you so much for watching!",
+"ja": "見てくださって、本当にありがとうございます！",
+"mix": "見てくださって、本当に {thank you}！"
+},
+{
+"en": "See you at the theater again this weekend!",
+"ja": "今週末も、映画館でまたお会いしましょう！",
+"mix": "今週末も、{theater} でまたお会いしましょう！"
+}
+],
+"post": {
+"account": "1blsNV7Jq6dL2uC",
+"date": "2026-11-14",
+"likes": 7200,
+"name": "@1blsNV7Jq6dL2uC",
+"url": "https://x.com/1blsNV7Jq6dL2uC/status/2121612708747645313"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"お金を先に払うこと",
+"キングギドラのセリフを言うこと",
+"名前を書くこと"
+],
+"q": "店員が客に頼んだことは？",
+"why": "4文目に Could you say a King Ghidorah line? とあります。"
+},
+{
+"a": 2,
+"choices": [
+"予約",
+"新発売",
+"転売"
+],
+"q": "resale の意味は？",
+"why": "resale は「転売」。sale（売ること）にre（もう一度）がついた形です。"
+},
+{
+"a": 0,
+"choices": [
+"Could",
+"Do",
+"Are"
+],
+"q": "___ you say a line?（言っていただけますか）",
+"why": "ていねいに頼むときは Could you ＋ 動詞の原形 の形にします。"
+}
+],
+"summary": "『ゴジラ-0.0』を題材にした、笑えるコントです。客がキングギドラのグッズを頼むと、店員は転売対策のためにキングギドラのセリフを言うよう求めます。客が返したのは、映画をたくさんの人が見ていることへのお礼と、今週末も映画館で会いましょうという言葉でした。画像は劇中のキングギドラ（三つ首の怪獣）の写真です。",
+"talk": {
+"hint": "I want to buy ___ because ___.",
+"ja": "どの映画のグッズを買いたいですか？",
+"q": "Which movie goods do you want to buy?"
+},
+"title": "キングギドラのグッズを買うには？ゴジラ-0.0のコント",
+"words": [
+{
+"ja": "コント・短い寸劇",
+"note": "ポストの「コント形式」の「コント」は skit です。",
+"w": "skit"
+},
+{
+"ja": "グッズ（商品）",
+"note": "「グッズ」は英語では goods。「商品・品物」の意味で、いつも s がつきます。",
+"w": "goods"
+},
+{
+"ja": "転売",
+"note": "ポストの「転売対策」は、転売をやめさせたい → want to stop resale と言いかえました。",
+"w": "resale"
+},
+{
+"ja": "店員",
+"note": "お店で働く人。ポストの「店員」です。",
+"w": "clerk"
+},
+{
+"ja": "（映画の）セリフ",
+"note": "ポストの「セリフ」は line。a King Ghidorah line で「キングギドラのセリフ」。",
+"w": "line"
+}
+]
+},
+{
+"added": "2026-11-14T23:22",
+"addedAt": "2026-11-15T14:49",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a cute touch": "かわいらしさ",
+"a successful anime adaptation": "アニメ化大成功",
+"about": "〜について",
+"absolute": "完全な",
+"adaptation": "アニメ化・映像化",
+"also": "〜も",
+"an": "ひとつの",
+"an absolute masterpiece": "完璧な傑作",
+"an opinion": "ひとつの意見",
+"an opinion about kaito joker": "『怪盗ジョーカー』についての意見",
+"an opinion about kaito joker on x": "Xでの『怪盗ジョーカー』への意見",
+"and": "そして",
+"anime": "アニメ",
+"artwork": "作画・絵",
+"beautiful": "綺麗な",
+"calls": "〜と呼ぶ",
+"cast": "出演者たち",
+"cute": "かわいい",
+"even": "〜でも",
+"feels": "感じる",
+"god": "神",
+"god anime": "神アニメ",
+"gorgeous": "豪華な",
+"has": "持っている",
+"is": "〜です",
+"it": "それは",
+"it a god anime which means an absolute masterpiece": "それを「神アニメ」、つまり完璧な傑作と",
+"joker": "ジョーカー（作品名の一部）",
+"just": "ただの",
+"kaito": "怪盗（作品名の一部）",
+"kaito joker": "怪盗ジョーカー",
+"looks": "〜に見える",
+"masterpiece": "傑作",
+"means": "〜という意味だ",
+"more": "それ以上",
+"on": "〜で・〜の上で",
+"opinion": "意見",
+"pomiru": "ぽっみる（投稿者名）",
+"pomiru also": "ぽっみるは〜も",
+"pomiru thinks that kaito joker is": "ぽっみるは『怪盗ジョーカー』は〜だと考える",
+"pomiru thinks the artwork looks beautiful even today": "ぽっみるは作画が今見ても綺麗だと考える",
+"pomiru thinks the artwork looks beautiful even today and it also": "作画が今も綺麗で、さらに〜と考える",
+"shared": "共有した・投稿した",
+"successful": "成功した",
+"successful anime": "成功したアニメ",
+"than": "〜より",
+"that": "〜ということ",
+"that the voice cast is gorgeous": "声優陣が豪華だということ",
+"the": "その",
+"the artwork": "作画",
+"the voice cast": "声優陣",
+"thinks": "考える",
+"today": "今日・今",
+"touch": "味わい・ひと工夫",
+"voice": "声",
+"voice cast": "声優陣",
+"which": "それは",
+"x": "X（SNS）"
+},
+"grad": [
+{
+"q1": "{Pomiru} さんは、X で『怪盗ジョーカー』について {an opinion} を投稿しました。",
+"q2": "{Pomiru} は、{an opinion about Kaito Joker} を投稿しました。",
+"q3": "{Pomiru} 投稿した {an opinion about Kaito Joker on X.}"
+},
+{
+"q1": "ぽっみるさんは、{Kaito Joker} は「{successful anime} 化」どころではない作品だと考えています。",
+"q2": "{Pomiru} さんは、{Kaito Joker} は「{a successful anime adaptation}」どころではない作品だと考えています。",
+"q3": "{Pomiru thinks that Kaito Joker is} どころではない {a successful anime adaptation.}"
+},
+{
+"q1": "{Pomiru} さんは、{voice cast} も豪華だと感じています。",
+"q2": "{Pomiru} は、{the voice cast} が {gorgeous} だと感じています。",
+"q3": "{Pomiru also} 感じる {that the voice cast is gorgeous.}"
+},
+{
+"q1": "{Pomiru} さんは、{the artwork} は今見ても {beautiful} で、かわいらしさもあると考えています。",
+"q2": "{Pomiru thinks the artwork looks beautiful even today,} そして {a cute touch} もあると。",
+"q3": "{Pomiru thinks the artwork looks beautiful even today, and it also} 持つ {a cute touch.}"
+},
+{
+"q1": "{Pomiru} さんは、この作品を「神 {anime}」、つまり完璧な {masterpiece} と呼んでいます。",
+"q2": "{Pomiru} は、この作品を「{god anime}」、つまり {an absolute masterpiece} と呼んでいます。",
+"q3": "{Pomiru} 呼ぶ {it a \"god anime,\" which means an absolute masterpiece.}"
+}
+],
+"grammar": {
+"body": "more than just ＋ 名詞 は「ただの〜ではない（それ以上のもの）」という意味です。just があると「ただの」の強調になります。数字といっしょに使う more than（〜より多い）とは別の使い方です。",
+"ex": [
+{
+"en": "This is more than just a game.",
+"ja": "これはただのゲームではありません。"
+},
+{
+"en": "She is more than just a friend.",
+"ja": "彼女はただの友だちではありません。"
+}
+],
+"title": "more than just 〜「ただの〜どころではない」"
+},
+"id": "20261114-joker-critique",
+"level": 3,
+"lines": [
+{
+"en": "Pomiru shared an opinion about Kaito Joker on X.",
+"ja": "ぽっみるさんは、X で『怪盗ジョーカー』について意見を投稿しました。",
+"mix": "ぽっみるさんは、X で『怪盗ジョーカー』について {opinion} を投稿しました。"
+},
+{
+"en": "Pomiru thinks that Kaito Joker is more than just a successful anime adaptation.",
+"ja": "ぽっみるさんは、『怪盗ジョーカー』は「アニメ化大成功」どころではない作品だと考えています。",
+"mix": "ぽっみるさんは、『怪盗ジョーカー』は「{successful} アニメ化」どころではない作品だと考えています。"
+},
+{
+"en": "Pomiru also feels that the voice cast is gorgeous.",
+"ja": "ぽっみるさんは、声優陣も豪華だと感じています。",
+"mix": "ぽっみるさんは、{voice cast} も豪華だと感じています。"
+},
+{
+"en": "Pomiru thinks the artwork looks beautiful even today, and it also has a cute touch.",
+"ja": "ぽっみるさんは、作画は今見ても綺麗で、かわいらしさもあると考えています。",
+"mix": "ぽっみるさんは、{artwork} は今見ても {beautiful} で、かわいらしさもあると考えています。"
+},
+{
+"en": "Pomiru calls it a \"god anime,\" which means an absolute masterpiece.",
+"ja": "ぽっみるさんは、この作品を「神アニメ」、つまり完璧な傑作と呼んでいます。",
+"mix": "ぽっみるさんは、この作品を「神 {anime}」、つまり完璧な {masterpiece} と呼んでいます。"
+}
+],
+"post": {
+"account": "ppomiru",
+"date": "2026-11-14",
+"likes": 1291,
+"name": "ぽっみる",
+"url": "https://x.com/ppomiru/status/2121609823309681107"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"作画",
+"声優陣",
+"主題歌"
+],
+"q": "ぽっみるさんが「豪華」と感じているものは？",
+"why": "3文目に the voice cast is gorgeous とあります。"
+},
+{
+"a": 2,
+"choices": [
+"音楽",
+"物語",
+"作画・絵"
+],
+"q": "artwork の意味は？",
+"why": "artwork は絵やイラスト。ポストの「作画」にあたります。"
+},
+{
+"a": 0,
+"choices": [
+"more than",
+"more",
+"most"
+],
+"q": "This is ___ just a game.（これはただのゲームではない）",
+"why": "「ただの〜ではない」は more than just 〜 です。"
+}
+],
+"summary": "ぽっみるさんは、『怪盗ジョーカー』は「アニメ化大成功」どころではない作品だと考えています。声優陣が豪華なこと、今見ても綺麗でかわいらしさもある作画をあげて、「神アニメ」とほめています。",
+"talk": {
+"hint": "I think ___ is a masterpiece because ___.",
+"ja": "どのアニメが傑作だと思いますか？",
+"q": "Which anime do you think is a masterpiece?"
+},
+"title": "『怪盗ジョーカー』はアニメ化大成功どころじゃない",
+"words": [
+{
+"ja": "（作品の）アニメ化・映画化",
+"note": "ポストの「アニメ化」は anime adaptation。",
+"w": "adaptation"
+},
+{
+"ja": "声優陣",
+"note": "ポストの「声優さんも豪華」は the voice cast is gorgeous。",
+"w": "voice cast"
+},
+{
+"ja": "豪華な・すばらしい",
+"note": "ポストの「豪華」を gorgeous で表しました。",
+"w": "gorgeous"
+},
+{
+"ja": "作画・絵",
+"note": "ポストの「作画」は artwork。数えない名詞なので a や -s をつけません。",
+"w": "artwork"
+},
+{
+"ja": "傑作",
+"note": "ポストの「神アニメ」は a masterpiece（傑作）の意味です。",
+"w": "masterpiece"
+}
+]
+},
+{
+"added": "2026-11-14T21:52",
+"addedAt": "2026-11-15T14:49",
+"cat": "art",
+"gloss": {
+"a": "ひとつの",
+"a curved wall": "曲がった壁",
+"a dark blue wall": "濃い青の壁",
+"a large starry night": "大きな《星月夜》",
+"a large starry night over the rhone on a curved wall": "曲がった壁の大きな《星月夜》",
+"and": "〜と",
+"art": "美術・アート",
+"as": "〜と（同じ…）",
+"at": "〜で",
+"at the tokyo metropolitan art museum": "東京都美術館で",
+"blue": "青い",
+"cafe": "カフェ",
+"cafe terrace at night": "《夜のカフェテラス》",
+"cafe terrace at night in a wooden frame on a dark blue wall": "濃い青の壁の、木の額縁に入った《夜のカフェテラス》",
+"curved": "曲がった",
+"curved wall": "曲がった壁",
+"dark": "濃い",
+"day": "日",
+"exhibition": "展覧会",
+"frame": "額縁",
+"in": "〜の中で・〜に",
+"in a wooden frame": "木の額縁に入った",
+"in the same year": "同じ年に",
+"is": "〜です",
+"it": "それ（展覧会）",
+"it is": "〜と言われている（it is said で）",
+"joy": "歓び・喜び",
+"large": "大きな",
+"learn": "知る",
+"living": "生きること",
+"metropolitan": "都の（東京都美術館の）",
+"moment": "いま・瞬間",
+"month": "月",
+"museum": "美術館",
+"nice": "素敵な",
+"night": "夜",
+"of": "〜の",
+"on": "〜に（日・壁の上）",
+"on opening day": "開幕日に",
+"one": "1つの",
+"one photo": "1枚の写真",
+"opened": "開幕した（openの過去形）",
+"opening": "開幕の",
+"opening day": "開幕日",
+"orsay": "オルセー",
+"other": "もう1つの",
+"over": "〜の上の",
+"painted": "描かれた（paintの過去分詞）",
+"photo": "写真",
+"rhone": "ローヌ川（河の名）",
+"said": "言われている（sayの過去分詞）",
+"same": "同じ",
+"see": "見る",
+"see it": "それを見る",
+"shows": "写している（showの三単現）",
+"starry": "星の多い",
+"starry night over the rhone": "ローヌ川の《星月夜》",
+"surprised": "驚いた",
+"terrace": "テラス",
+"that": "〜ということ",
+"that starry night over the rhone was painted in the same year and month as cafe terrace at night": "《星月夜》は《夜のカフェテラス》と同じ年月に描かれた",
+"the": "その",
+"the orsay museum exhibition": "オルセー美術館の展覧会",
+"the orsay museum exhibition joy of living in the moment": "オルセー美術館展「いまを生きる歓び」",
+"the other": "もう1枚",
+"the same year": "同じ年",
+"the writer": "投稿者",
+"the writer was surprised": "投稿者は驚いた",
+"the writer was surprised to": "投稿者は〜して驚いた",
+"this": "これ",
+"those": "あれらの",
+"to": "〜しに・〜すること",
+"to see": "見ること",
+"to see it on opening day": "開幕日にそれを見に",
+"to see those two works in the same year": "その2作品を同じ年に見ること",
+"today": "今日",
+"today at the tokyo metropolitan art museum": "今日、東京都美術館で",
+"tokyo": "東京",
+"two": "2つの",
+"wall": "壁",
+"was": "〜だった",
+"went": "行った（goの過去形）",
+"wooden": "木の",
+"wooden frame": "木の額縁",
+"works": "作品（workの複数形）",
+"writer": "投稿者",
+"year": "年"
+},
+"grad": [
+{
+"q1": "{The Orsay Museum exhibition}「いまを生きる歓び」が、今日、東京都美術館で開幕しました。",
+"q2": "{The Orsay Museum exhibition \"Joy of Living in the Moment\"} が、今日、{at the Tokyo Metropolitan Art Museum} で開幕しました。",
+"q3": "{The Orsay Museum exhibition \"Joy of Living in the Moment\"} 開幕 {today at the Tokyo Metropolitan Art Museum.}"
+},
+{
+"q1": "投稿者は、{opening day} に見に行きました。",
+"q2": "{The writer} は、{on opening day} に、{see it} に行きました。",
+"q3": "{The writer} 行った {to see it on opening day.}"
+},
+{
+"q1": "{Starry Night Over the Rhone} は、《夜のカフェテラス》と同じ {year} の同じ {month} に描かれたそうです。",
+"q2": "{Starry Night Over the Rhone} は、{Cafe Terrace at Night} と {the same year} の同じ {month} に描かれたそうです。",
+"q3": "{It is} 言われる {that Starry Night Over the Rhone was painted in the same year and month as Cafe Terrace at Night.}"
+},
+{
+"q1": "{The writer} は、これを知って驚きました。",
+"q2": "{The writer was surprised} 、これを知って。",
+"q3": "{The writer was surprised to} 知る {this.}"
+},
+{
+"q1": "その2つの {works} を {the same year} に見られるなんて、素敵ですね。",
+"q2": "{to see} その2つの {works} を {in the same year}、素敵ですね。",
+"q3": "{It is} 素敵 {to see those two works in the same year.}"
+},
+{
+"q1": "{One photo} には、{curved wall} に大きな《星月夜》が写っています。",
+"q2": "{One photo} には、{a curved wall} に {a large Starry Night} が写っています。",
+"q3": "{One photo} 写す {a large Starry Night Over the Rhone on a curved wall.}"
+},
+{
+"q1": "{The other} には、濃い青の {wall} に、{wooden frame} に入った《夜のカフェテラス》が写っています。",
+"q2": "{The other} には、{a dark blue wall} に、{in a wooden frame} の {Cafe Terrace at Night} が写っています。",
+"q3": "{The other} 写す {Cafe Terrace at Night in a wooden frame on a dark blue wall.}"
+}
+],
+"grammar": {
+"body": "It is said that ＋ 文 で、「〜だそうだ」「〜と言われている」と、人から聞いた話や広く知られていることを伝えます。ポストの「描かれたそうです」のような言い方にぴったりです。that のあとは、ふつうの文（主語＋動詞）です。",
+"ex": [
+{
+"en": "It is said that this tea is good for your health.",
+"ja": "このお茶は健康によいと言われています。"
+},
+{
+"en": "It is said that the museum will open next spring.",
+"ja": "その美術館は来年の春に開館するそうです。"
+}
+],
+"title": "It is said that ～「〜だそうだ・〜と言われている」"
+},
+"id": "20261114-art-orsay-starry-cafe",
+"level": 3,
+"lines": [
+{
+"en": "The Orsay Museum exhibition \"Joy of Living in the Moment\" opened today at the Tokyo Metropolitan Art Museum.",
+"ja": "オルセー美術館の展覧会「いまを生きる歓び」が、今日、東京都美術館で開幕しました。",
+"mix": "オルセー美術館の {exhibition}「いまを生きる歓び」が、今日、東京都美術館で開幕しました。"
+},
+{
+"en": "The writer went to see it on opening day.",
+"ja": "投稿者は、開幕日に見に行きました。",
+"mix": "投稿者は、開幕 {day} に見に行きました。"
+},
+{
+"en": "It is said that Starry Night Over the Rhone was painted in the same year and month as Cafe Terrace at Night.",
+"ja": "ローヌ川の《星月夜》は、《夜のカフェテラス》と同じ年の同じ月に描かれたそうです。",
+"mix": "ローヌ川の《星月夜》は、《夜のカフェテラス》と同じ {year} の同じ {month} に描かれたそうです。"
+},
+{
+"en": "The writer was surprised to learn this.",
+"ja": "投稿者は、これを知って驚きました。",
+"mix": "{writer} は、これを知って驚きました。"
+},
+{
+"en": "It is nice to see those two works in the same year.",
+"ja": "その2つの作品を同じ年に見られるなんて、素敵ですね。",
+"mix": "その2つの {works} を同じ {year} に見られるなんて、素敵ですね。"
+},
+{
+"en": "One photo shows a large Starry Night Over the Rhone on a curved wall.",
+"ja": "1枚目の写真には、曲がった壁に大きな《星月夜》が写っています。",
+"mix": "1枚目の {photo} には、曲がった {wall} に大きな《星月夜》が写っています。"
+},
+{
+"en": "The other shows Cafe Terrace at Night in a wooden frame on a dark blue wall.",
+"ja": "もう1枚には、濃い青の壁にかかる、木の額縁に入った《夜のカフェテラス》が写っています。",
+"mix": "もう1枚には、濃い青の壁にかかる、{wooden frame} に入った《夜のカフェテラス》が写っています。"
+}
+],
+"post": {
+"account": "HANDS_OF_ROCK",
+"date": "2026-11-14",
+"likes": 390,
+"name": "@HANDS_OF_ROCK",
+"url": "https://x.com/HANDS_OF_ROCK/status/2121587134599667944"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"美術館で無料で見られること",
+"色がまったく同じこと",
+"同じ年の同じ月に描かれたこと"
+],
+"q": "《星月夜》と《夜のカフェテラス》について、ポストの人が驚いたことは？",
+"why": "3文目に、in the same year and month とあります。"
+},
+{
+"a": 1,
+"choices": [
+"壁",
+"額縁",
+"いす"
+],
+"q": "frame の意味は？",
+"why": "frame は「額縁・枠」。7文目の wooden frame は「木の額縁」です。"
+},
+{
+"a": 0,
+"choices": [
+"said",
+"say",
+"saying"
+],
+"q": "It is ___ that the two works were painted in the same year.",
+"why": "「〜だそうだ」は It is said that ＋ 文 の形です。"
+}
+],
+"summary": "今日開幕した東京都美術館の「オルセー美術館所蔵 いまを生きる歓び」に、さっそく行ってきた人の投稿です。《ローヌ川の星月夜》は《夜のカフェテラス》と同じ年の同じ月に描かれたそうで、この2作品を同じ年に見られるなんて素敵だと感じています。写真には、曲がった壁に大きく展示された《星月夜》と、木の額縁に入って濃い青の壁にかかる《夜のカフェテラス》が写っています。",
+"talk": {
+"hint": "I want to see ___ because ___.",
+"ja": "美術館で、どの絵を見たいですか？",
+"q": "Which painting do you want to see in a museum?"
+},
+"title": "《星月夜》と《夜のカフェテラス》は同じ年の同じ月の作品",
+"words": [
+{
+"ja": "展覧会",
+"note": "ポストの「展覧会」。ポストの「本日開幕」は opened today と表せます。",
+"w": "exhibition"
+},
+{
+"ja": "初日・開幕日",
+"note": "ポストの「早速行ってきた」は、ここでは went to see it on opening day と言いかえました。",
+"w": "opening day"
+},
+{
+"ja": "描かれた（paintの過去分詞）",
+"note": "ポストの「描かれた」は was painted。paint は絵の具で描く、という意味です。",
+"w": "painted"
+},
+{
+"ja": "額縁・枠",
+"note": "絵を入れる木の縁のこと。写真の《夜のカフェテラス》は wooden frame に入っています。",
+"w": "frame"
+},
+{
+"ja": "曲がった・曲面の",
+"note": "写真の《星月夜》がかかっている壁は curved wall（曲がった壁）です。",
+"w": "curved"
+}
+]
+},
+{
 "added": "2026-11-14T20:53",
 "addedAt": "2026-11-15T08:00",
 "cat": "anime",
@@ -432,6 +1758,215 @@ window.LESSONS = [
 "ja": "驚いた",
 "note": "ポストの「驚いたよ」は surprised。人が主語なら be surprised、ものが主語なら surprise。",
 "w": "surprised"
+}
+]
+},
+{
+"added": "2026-11-14T20:00",
+"addedAt": "2026-11-15T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"above": "〜の上に",
+"above the town": "町の上に",
+"account": "アカウント",
+"art": "アート・美術",
+"castle": "城",
+"castle rises above the town": "城が町の上にそびえる",
+"concept": "コンセプト",
+"concept art": "コンセプトアート",
+"creatures": "生き物（creatureの複数形）",
+"creatures seem to fly in the sky": "生き物が空を飛んでいるようだ",
+"enjoy": "楽しむ",
+"fly": "飛ぶ",
+"fly in the sky": "空を飛ぶ",
+"friday": "金曜日",
+"in": "〜の中で・〜で",
+"in theaters": "映画館で",
+"in theaters on friday march 19 2027": "2027年3月19日（金）に映画館で",
+"magical": "魔法の",
+"march": "3月",
+"march 19 2027": "2027年3月19日",
+"mashle": "マッシュル（作品名）",
+"movie": "映画",
+"of": "〜の",
+"official": "公式の",
+"on": "〜に（日付）",
+"opens": "公開される（openの三単現）",
+"released": "公開した（releaseの過去形）",
+"rises": "そびえる（riseの三単現）",
+"seem": "〜のようだ",
+"sky": "空",
+"tall": "高い",
+"the": "その",
+"the concept art": "そのコンセプトアート",
+"the movie": "その映画",
+"the official account": "公式アカウント",
+"theaters": "映画館（theaterの複数形）",
+"they": "製作側は（彼らは）",
+"this": "この",
+"this world": "この世界",
+"to": "〜へ・〜すること",
+"town": "町",
+"want": "〜してほしい",
+"welcome": "ようこそ",
+"welcome to the world of": "〜の世界へようこそ",
+"welcome to the world of the mashle": "『マッシュル』の世界へようこそ",
+"world": "世界",
+"you": "あなた",
+"you to enjoy this world in theaters": "映画館でこの世界を楽しむこと"
+},
+"grad": [
+{
+"q1": "映画 {Mashle} の {world} へようこそ！",
+"q2": "{Welcome to the world of} 映画 {Mashle}！",
+"q3": "{Welcome to the world of the Mashle} 映画{!}"
+},
+{
+"q1": "高い {castle} が {town} の上にそびえています。",
+"q2": "高い {castle} が {above the town} にそびえています。",
+"q3": "{A} 高い {castle rises above the town.}"
+},
+{
+"q1": "魔法の {creatures} が {sky} を舞っているようです。",
+"q2": "魔法の {creatures} は、{fly in the sky} ようです。",
+"q3": "魔法の {creatures seem to fly in the sky.}"
+},
+{
+"q1": "公式アカウントが、{concept art} を公開しました。",
+"q2": "公式 {account} が、{the concept art} を公開しました。",
+"q3": "{The official account} 公開 {the concept art.}"
+},
+{
+"q1": "{theaters} で、この {world} を楽しんでほしいとのことです。",
+"q2": "{They} は、{in theaters} で {this world} を楽しんでほしいとのことです。",
+"q3": "{They} 望む {you to enjoy this world in theaters.}"
+},
+{
+"q1": "{The movie} は2027年3月19日（金）に {theaters} で公開されます。",
+"q2": "{The movie} は {March 19, 2027} に、{theaters} で公開されます。",
+"q3": "{The movie} 公開 {in theaters on Friday, March 19, 2027.}"
+}
+],
+"grammar": {
+"body": "Welcome to ＋ 場所・ものごと で「〜へようこそ」という歓迎のあいさつになります。to のあとには名詞を置きます。お店・学校・イベントなどの入口でよく見かけます。",
+"ex": [
+{
+"en": "Welcome to our school.",
+"ja": "私たちの学校へようこそ。"
+},
+{
+"en": "Welcome to the world of magic!",
+"ja": "魔法の世界へようこそ！"
+}
+],
+"title": "Welcome to 〜「〜へようこそ」"
+},
+"id": "20261114-mashle-concept-art",
+"level": 2,
+"lines": [
+{
+"en": "Welcome to the world of the Mashle movie!",
+"ja": "映画『マッシュル』の世界へようこそ！",
+"mix": "映画『マッシュル』の {world} へようこそ！"
+},
+{
+"en": "A tall castle rises above the town.",
+"ja": "高い城が町の上にそびえています。",
+"mix": "高い {castle} が町の上にそびえています。"
+},
+{
+"en": "Magical creatures seem to fly in the sky.",
+"ja": "魔法の生き物が空を舞っているようです。",
+"mix": "魔法の {creatures} が空を舞っているようです。"
+},
+{
+"en": "The official account released the concept art.",
+"ja": "公式アカウントが、美術コンセプトアートを公開しました。",
+"mix": "公式アカウントが、美術コンセプト {art} を公開しました。"
+},
+{
+"en": "They want you to enjoy this world in theaters.",
+"ja": "映画館で、この世界を楽しんでほしいとのことです。",
+"mix": "{theaters} で、この世界を楽しんでほしいとのことです。"
+},
+{
+"en": "The movie opens in theaters on Friday, March 19, 2027.",
+"ja": "映画は2027年3月19日（金）に劇場公開されます。",
+"mix": "映画は2027年3月19日（金）に {theaters} で公開されます。"
+}
+],
+"post": {
+"account": "mashlemovie",
+"date": "2026-11-14",
+"likes": 2000,
+"name": "映画『マッシュル』公式",
+"url": "https://x.com/mashlemovie/status/2121558772678037696"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"2026年3月19日",
+"2027年3月19日",
+"2027年9月19日"
+],
+"q": "映画『マッシュル』の公開日は？",
+"why": "6文目に on Friday, March 19, 2027 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"生き物",
+"城",
+"空"
+],
+"q": "creature の意味は？",
+"why": "creature は「生き物」。magical creatures で「魔法の生き物」です。"
+},
+{
+"a": 2,
+"choices": [
+"Welcomes",
+"Welcoming",
+"Welcome"
+],
+"q": "___ to the world of Mashle!（ようこそ）",
+"why": "歓迎のあいさつは Welcome to 〜 の形です。"
+}
+],
+"summary": "映画『マッシュル』の公式アカウントが、「映画『マッシュル』の世界へようこそ」と美術コンセプトアートを公開しました。そびえる城と、空を舞う魔法生物（？）が描かれています。絵には、石畳の道と白い家々が並ぶ町の向こうにそびえる城と、空を飛ぶ翼のある生き物が見えます。映画館でこの世界観を楽しんでほしいとのことで、公開は2027年3月19日（金）です。",
+"talk": {
+"hint": "I want to visit ___ because ___.",
+"ja": "どのファンタジーの世界に行ってみたいですか？",
+"q": "Which fantasy world do you want to visit?"
+},
+"title": "映画『マッシュル』美術コンセプトアートを公開",
+"words": [
+{
+"ja": "コンセプトアート（作品の世界を示す絵）",
+"note": "ポストの【美術コンセプトアート】は the concept art。映画の世界を絵で見せるものです。",
+"w": "concept art"
+},
+{
+"ja": "城",
+"note": "ポストの「そびえる城」は A tall castle rises ... と言えます。",
+"w": "castle"
+},
+{
+"ja": "生き物",
+"note": "ポストの「魔法生物」は magical creatures。",
+"w": "creature"
+},
+{
+"ja": "そびえる・のぼる",
+"note": "建物が高くそびえるときにも使います。三単現は rises。",
+"w": "rise"
+},
+{
+"ja": "世界・世界観",
+"note": "ポストの「世界観」は、ここでは this world と言いかえました。",
+"w": "world"
 }
 ]
 },
@@ -7762,6 +9297,301 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-13T10:11",
+"addedAt": "2026-11-15T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a college student": "ひとりの大学生",
+"a part-time job": "アルバイト",
+"a woman with blue hair": "青い髪の女性",
+"an": "ひとつの",
+"an original love story": "オリジナルのラブストーリー",
+"and": "〜と",
+"away": "離れて",
+"be": "〜される",
+"been": "〜された",
+"black": "黒",
+"black cat": "黒猫",
+"blue": "青い",
+"blue hair": "青い髪",
+"but": "しかし",
+"calling": "呼ぶこと",
+"cat": "猫",
+"close": "近く",
+"college": "大学",
+"college student": "大学生",
+"comfortably": "不自由なく・快適に",
+"confirmed": "正式に決まった",
+"does": "〜しない（does notで）",
+"drawn": "惹かれた",
+"drawn to her": "彼女に惹かれて",
+"drawn to her but he does not yet know the harsh world she lives in": "彼女に惹かれるが、彼女の過酷な世界をまだ知らない",
+"dressed": "〜を着た",
+"dressed in black she slips away when he gets close": "黒ずくめの彼女は近づくとすり抜ける",
+"dressed in black she slips away when he gets close so he starts": "近づくとすり抜けるので、彼は〜し始める",
+"family": "家族・家計",
+"feels": "感じる",
+"fell": "落ちた（fallの過去形）",
+"film": "映画",
+"friday": "金曜日",
+"front": "前",
+"gets": "〜になる",
+"grew": "育った（growの過去形）",
+"hair": "髪",
+"harsh": "過酷な",
+"harsh world": "過酷な世界",
+"has": "〜した（has beenで）",
+"he": "彼は",
+"he is": "彼は〜です",
+"her": "彼女を・彼女の",
+"her kuroneko": "彼女を「くろねこ」と",
+"his": "彼の",
+"i": "私は",
+"ikuta": "幾田（人名）",
+"in": "〜で・〜に",
+"in front of a street piano near his workplace": "バイト先の近くのストリートピアノの前で",
+"in front of a street piano near his workplace he": "バイト先近くのピアノの前で、彼は",
+"is": "〜です",
+"it": "それは",
+"it is an original love story": "それはオリジナルのラブストーリーだ",
+"it is an original love story and": "オリジナルのラブストーリーで、そして",
+"job": "仕事",
+"job-hunting": "就職活動の",
+"know": "知る",
+"knowing": "知らずに（knowing neither）",
+"koji": "恒司（人名）",
+"kuroneko": "くろねこ（作品名・あだ名）",
+"like": "〜のような",
+"lives": "生きる・暮らす",
+"love": "愛・恋",
+"love story": "ラブストーリー",
+"may": "5月",
+"meets": "出会う",
+"mizukami": "水上（人名）",
+"name": "名前",
+"near": "〜の近くに",
+"neither": "どちらも〜ない",
+"nor": "〜も〜ない",
+"not": "〜ない",
+"now": "今は",
+"of": "〜の",
+"on": "〜に（日付）",
+"on friday may 14 2027": "2027年5月14日(金)に",
+"original": "オリジナルの",
+"part-time": "アルバイトの",
+"part-time job": "アルバイト",
+"past": "過去",
+"piano": "ピアノ",
+"pressure": "プレッシャー",
+"production": "製作",
+"released": "公開される",
+"rira": "りら（人名）",
+"ryo": "涼（人名）",
+"ryo a college student grew up comfortably": "大学生の涼は不自由なく育った",
+"ryo a college student grew up comfortably but now supports his family with a part-time job and feels job-hunting": "育ったが今はバイトで家計を支え就活の〜を感じる",
+"says": "言う",
+"she": "彼女は",
+"slips": "すり抜ける",
+"so": "だから",
+"starring": "〜が主演の",
+"starring koji mizukami and rira ikuta": "水上恒司と幾田りらが主演の",
+"starts": "〜し始める",
+"story": "物語",
+"street": "路上の・ストリート",
+"street piano": "ストリートピアノ",
+"strongly": "強く",
+"student": "学生",
+"supports": "支える",
+"supports his family with a part-time job": "アルバイトで家計を支える",
+"tagline": "キャッチコピー",
+"the": "その",
+"the film kuroneko": "映画『くろねこ』",
+"the harsh world": "その過酷な世界",
+"the harsh world she lives in": "彼女が生きる過酷な世界",
+"the production of the film kuroneko": "映画『くろねこ』の製作",
+"the production of the film kuroneko starring koji mizukami and rira ikuta has been": "水上恒司と幾田りら主演の映画の製作が〜された",
+"the tagline": "そのキャッチコピー",
+"the tagline says i fell in love with you like a black cat": "キャッチコピーは「黒猫のような君に恋をした」",
+"to": "〜に",
+"up": "（grew upで）育つ",
+"when": "〜とき",
+"will": "〜だろう（未来）",
+"with": "〜で・〜といっしょに",
+"woman": "女性",
+"workplace": "バイト先",
+"world": "世界",
+"yet": "まだ",
+"you": "あなた・君",
+"your": "君の",
+"your name your past": "君の名前、君の過去",
+"your name your past nor your world": "君の名前も過去も世界も"
+},
+"grad": [
+{
+"q1": "水上恒司さんと幾田りらさんが主演する {the film Kuroneko} の {production} が決定しました。",
+"q2": "{The production of the film Kuroneko}、{starring Koji Mizukami and Rira Ikuta} が決定しました。",
+"q3": "{The production of the film Kuroneko, starring Koji Mizukami and Rira Ikuta, has been} 決定しました。"
+},
+{
+"q1": "{An original love story} で、2027年5月14日(金)に公開されます。",
+"q2": "{It is an original love story} で、{on Friday, May 14, 2027} 公開されます。",
+"q3": "{It is an original love story and} 公開される {on Friday, May 14, 2027.}"
+},
+{
+"q1": "{A college student} の涼は、何不自由なく育ちましたが、今は {a part-time job} で {family} を支え、就活のプレッシャーを感じています。",
+"q2": "{Ryo, a college student, grew up comfortably} が、今は {supports his family with a part-time job}、就活のプレッシャーを感じています。",
+"q3": "{Ryo, a college student, grew up comfortably but now supports his family with a part-time job and feels job-hunting} プレッシャー。"
+},
+{
+"q1": "アルバイト先の近くの {street piano} の前で、涼は {blue hair} の女性に出会います。",
+"q2": "{In front of a street piano near his workplace}、涼は {a woman with blue hair} に出会います。",
+"q3": "{In front of a street piano near his workplace, he} 出会う {a woman with blue hair.}"
+},
+{
+"q1": "{Black} ずくめの彼女は、近づくとすり抜けていくので、涼は彼女を「{Kuroneko}」と呼ぶようになります。",
+"q2": "{Dressed in black, she slips away when he gets close,} それで涼は彼女を {Kuroneko} と呼び始めます。",
+"q3": "{Dressed in black, she slips away when he gets close, so he starts} 呼ぶ {her Kuroneko.}"
+},
+{
+"q1": "彼は彼女に強く惹かれていきますが、彼女が生きる {the harsh world} のことをまだ知りません。",
+"q2": "{He is} 強く {drawn to her}、けれど {the harsh world she lives in} のことをまだ知りません。",
+"q3": "{He is} 強く {drawn to her, but he does not yet know the harsh world she lives in.}"
+},
+{
+"q1": "{The tagline} は「{black cat} のような君に恋をした。{name} も、{past} も、生きる世界も知らずに。」です。",
+"q2": "{The tagline says, \"I fell in love with you, like a black cat,} {your name, your past} も、生きる世界も知らずに。\"",
+"q3": "{The tagline says, \"I fell in love with you, like a black cat,} 知らずに {your name, your past nor your world.\"}"
+}
+],
+"grammar": {
+"body": "「〜に恋をする」は fall in love with ＋ 人・もの で言います。「恋をした」と過去にするときは fall を fell に変えます（fall → fell → fallen の不規則動詞）。前置詞は in と with の2つを使うのがポイントです。",
+"ex": [
+{
+"en": "I fell in love with this song.",
+"ja": "私はこの曲に恋をしました。"
+},
+{
+"en": "She fell in love with the story of the movie.",
+"ja": "彼女はその映画の物語に夢中になりました。"
+}
+],
+"title": "fall in love with 〜「〜に恋をする」"
+},
+"id": "20261113-kuroneko-movie",
+"level": 3,
+"lines": [
+{
+"en": "The production of the film Kuroneko, starring Koji Mizukami and Rira Ikuta, has been confirmed.",
+"ja": "水上恒司さんと幾田りらさんが主演する映画『くろねこ』の製作が決定しました。",
+"mix": "水上恒司さんと幾田りらさんが主演する {film} 『くろねこ』の {production} が決定しました。"
+},
+{
+"en": "It is an original love story and will be released on Friday, May 14, 2027.",
+"ja": "オリジナルのラブストーリーで、2027年5月14日(金)に公開されます。",
+"mix": "オリジナルの {love story} で、2027年5月14日(金)に公開されます。"
+},
+{
+"en": "Ryo, a college student, grew up comfortably but now supports his family with a part-time job and feels job-hunting pressure.",
+"ja": "大学生の涼は、何不自由なく育ちましたが、今はアルバイトで家計を支え、就活のプレッシャーも感じています。",
+"mix": "{college student} の涼は、何不自由なく育ちましたが、今は {part-time job} で家計を支え、就活のプレッシャーも感じています。"
+},
+{
+"en": "In front of a street piano near his workplace, he meets a woman with blue hair.",
+"ja": "アルバイト先の近くのストリートピアノの前で、涼は青い髪の女性に出会います。",
+"mix": "アルバイト先の近くの {street piano} の前で、涼は青い髪の女性に出会います。"
+},
+{
+"en": "Dressed in black, she slips away when he gets close, so he starts calling her Kuroneko.",
+"ja": "黒ずくめの彼女は、近づくとすり抜けていくので、涼は彼女を「くろねこ」と呼ぶようになります。",
+"mix": "{black} ずくめの彼女は、近づくとすり抜けていくので、涼は彼女を「くろねこ」と呼ぶようになります。"
+},
+{
+"en": "He is strongly drawn to her, but he does not yet know the harsh world she lives in.",
+"ja": "彼は彼女に強く惹かれていきますが、彼女が生きる過酷な世界のことをまだ知りません。",
+"mix": "彼は彼女に強く惹かれていきますが、彼女が生きる {harsh world} のことをまだ知りません。"
+},
+{
+"en": "The tagline says, \"I fell in love with you, like a black cat, knowing neither your name, your past nor your world.\"",
+"ja": "キャッチコピーは「黒猫のような君に恋をした。名前も、過去も、生きる世界も知らずに。」です。",
+"mix": "{tagline} は「{black cat} のような君に恋をした。名前も、過去も、生きる世界も知らずに。」です。"
+}
+],
+"post": {
+"account": "toho_movie",
+"date": "2026-11-13",
+"likes": 749,
+"name": "東宝映画情報【公式】",
+"url": "https://x.com/toho_movie/status/2121049758727024992"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"アルバイト先の店",
+"大学の教室",
+"ストリートピアノの前"
+],
+"q": "涼が青い髪の女性に出会うのはどこ？",
+"why": "4文目に In front of a street piano near his workplace, he meets a woman with blue hair. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"追いかける",
+"すり抜けていく",
+"振り向く"
+],
+"q": "slips away の意味は？",
+"why": "slip away は「そっと離れる・すり抜ける」。近づくと彼女が slips away する、という場面です。"
+},
+{
+"a": 0,
+"choices": [
+"in",
+"on",
+"at"
+],
+"q": "He fell ___ love with her.（彼は彼女に恋をした）",
+"why": "「〜に恋をする」は fall in love with 〜 です。"
+}
+],
+"summary": "水上恒司さんと幾田りらさんがW主演するオリジナルのラブストーリー『くろねこ』の製作が決まりました。公開は2027年5月14日(金)です。ストリートピアノの前で青い髪の女性と出会った大学生の涼が、名前も過去も知らない彼女に惹かれていく物語です。",
+"talk": {
+"hint": "I like love stories because ___.",
+"ja": "ラブストーリーは好きですか？ それはなぜですか？",
+"q": "Do you like love stories? Why or why not?"
+},
+"title": "水上恒司×幾田りらW主演『くろねこ』製作決定",
+"words": [
+{
+"ja": "確定する・正式に決める",
+"note": "ポストの「製作決定」は production has been confirmed。decided とは言いません。",
+"w": "confirm"
+},
+{
+"ja": "すり抜ける・そっと逃げる",
+"note": "ポストの「近づくとすり抜けていく」を slips away when he gets close で表しました。",
+"w": "slip away"
+},
+{
+"ja": "〜に惹かれる",
+"note": "ポストの「強く惹かれていく」は strongly drawn to her。",
+"w": "be drawn to"
+},
+{
+"ja": "過酷な・きびしい",
+"note": "ポストの「あまりにも過酷な世界」は the harsh world。",
+"w": "harsh"
+},
+{
+"ja": "キャッチコピー",
+"note": "映画の宣伝に使う短い決めぜりふ。",
+"w": "tagline"
+}
+]
+},
+{
 "added": "2026-11-13T09:09",
 "addedAt": "2026-11-14T07:59",
 "cat": "movie",
@@ -9721,6 +11551,238 @@ window.LESSONS = [
 "ja": "効果・影響",
 "note": "ポストの「波及」は in effects と言いかえます。お金などの広がる影響のことです。",
 "w": "effect"
+}
+]
+},
+{
+"added": "2026-11-12T18:30",
+"addedAt": "2026-11-15T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"an": "ひとつの",
+"an ecosystem of evil": "悪の生態系",
+"and": "〜と",
+"announced": "発表された",
+"be": "〜である",
+"been": "〜された（be の過去分詞）",
+"calls": "〜と呼ぶ",
+"corrupt": "悪徳の",
+"corrupt lawyer": "悪徳弁護士",
+"each": "それぞれ",
+"each other": "お互い",
+"ecosystem": "生態系",
+"end": "終わり・最後",
+"evil": "悪",
+"for": "〜のための",
+"gang": "ギャング・集団",
+"gang member": "半グレ（ギャングの一員）",
+"has": "〜がある",
+"have": "〜された（have beenで）",
+"hokuto": "北斗（人名）",
+"in": "〜で・〜に",
+"in the end": "最後に",
+"in theaters": "劇場で",
+"in theaters on january 8 2027": "2027年1月8日に劇場で",
+"january": "1月",
+"january 8 2027": "2027年1月8日",
+"kujo": "九条（人名）",
+"lawyer": "弁護士",
+"matsumura": "松村（人名）",
+"member": "メンバー",
+"movie": "映画",
+"of": "〜の",
+"on": "〜に（日付）",
+"other": "ほかの人",
+"prey": "食いものにする",
+"prey on each other": "お互いを食いものにする",
+"sins": "罪（作品名の一部）",
+"sins of kujo": "九条の大罪",
+"stars": "主演する（starの三単現）",
+"tagline": "キャッチコピー",
+"the": "その",
+"the end": "最後",
+"the movie": "その映画",
+"the movie has a corrupt lawyer a gang member": "映画には悪徳弁護士と半グレ",
+"the movie has a corrupt lawyer a gang member and a": "映画には悪徳弁護士、半グレ、そして",
+"the tagline": "そのキャッチコピー",
+"the tagline calls": "キャッチコピーは〜と呼ぶ",
+"the tagline calls the": "キャッチコピーは〜と呼ぶ",
+"the theaters for the movie sins of kujo": "『九条の大罪』を上映する劇場",
+"the theaters for the movie sins of kujo have been": "『九条の大罪』の劇場が〜された",
+"theaters": "劇場・映画館（theaterの複数形）",
+"they": "彼らは",
+"who": "だれが",
+"who will": "だれが〜するか",
+"will": "〜だろう（未来）",
+"win": "勝つ",
+"yagira": "柳楽（人名）",
+"yakuza": "ヤクザ",
+"yuya": "優弥（人名）",
+"yuya yagira": "柳楽優弥",
+"yuya yagira and hokuto matsumura": "柳楽優弥と松村北斗"
+},
+"grad": [
+{
+"q1": "『映画 {Sins of Kujo}』を上映する {theaters} が発表されました。",
+"q2": "{The theaters for the movie Sins of Kujo} が発表されました。",
+"q3": "{The theaters for the movie Sins of Kujo have been} 発表されました。"
+},
+{
+"q1": "{The movie} は2027年1月8日に {theaters} で公開されます。",
+"q2": "{The movie} は {January 8, 2027} に {in theaters} で公開されます。",
+"q3": "{The movie} 公開される {in theaters on January 8, 2027.}"
+},
+{
+"q1": "{The movie} の主演は、柳楽優弥さんと松村北斗さんです。",
+"q2": "{The movie} は、{Yuya Yagira} さんと松村北斗さんが主演です。",
+"q3": "{The movie} 主演 {Yuya Yagira and Hokuto Matsumura.}"
+},
+{
+"q1": "{The tagline} は、この映画を「悪の {ecosystem}」と呼んでいます。",
+"q2": "{The tagline calls} この映画を「{an ecosystem of evil}」と。",
+"q3": "{The tagline calls the} 映画 {an ecosystem of evil.}"
+},
+{
+"q1": "映画には、{corrupt lawyer}、{gang member}、ヤクザが出てきます。",
+"q2": "{The movie has a corrupt lawyer, a gang member} と ヤクザ。",
+"q3": "{The movie has a corrupt lawyer, a gang member and a} ヤクザ。"
+},
+{
+"q1": "彼らは {each other} を食いものにします。",
+"q2": "彼らは {prey on each other}。",
+"q3": "彼ら {prey on each other.}"
+},
+{
+"q1": "{the end} に勝つのは誰でしょうか。",
+"q2": "{Who} が勝つのか、{in the end}？",
+"q3": "{Who will} 勝つ {in the end?}"
+}
+],
+"grammar": {
+"body": "「発表されました」のように、いまの時点で終わったことを受け身で言うときは have been ＋ 過去分詞を使います。主語が1つなら has been です。",
+"ex": [
+{
+"en": "The tickets have been sold.",
+"ja": "チケットが売られました。"
+},
+{
+"en": "The new poster has been shown.",
+"ja": "新しいポスターが公開されました。"
+}
+],
+"title": "現在完了の受け身 have been ＋ 過去分詞「〜された」"
+},
+"id": "20261112-kujo-theaters",
+"level": 2,
+"lines": [
+{
+"en": "The theaters for the movie Sins of Kujo have been announced.",
+"ja": "『映画 九条の大罪』を上映する劇場が発表されました。",
+"mix": "『映画 九条の大罪』を上映する {theaters} が発表されました。"
+},
+{
+"en": "The movie will be in theaters on January 8, 2027.",
+"ja": "映画は2027年1月8日に劇場で公開されます。",
+"mix": "映画は2027年1月8日に {theaters} で公開されます。"
+},
+{
+"en": "The movie stars Yuya Yagira and Hokuto Matsumura.",
+"ja": "映画の主演は、柳楽優弥さんと松村北斗さんです。",
+"mix": "{movie} の主演は、柳楽優弥さんと松村北斗さんです。"
+},
+{
+"en": "The tagline calls the movie an ecosystem of evil.",
+"ja": "キャッチコピーは、この映画を「悪の生態系」と呼んでいます。",
+"mix": "キャッチコピーは、この映画を「悪の {ecosystem}」と呼んでいます。"
+},
+{
+"en": "The movie has a corrupt lawyer, a gang member and a yakuza.",
+"ja": "映画には、悪徳弁護士、半グレ、ヤクザが出てきます。",
+"mix": "映画には、悪徳 {lawyer}、{gang member}、ヤクザが出てきます。"
+},
+{
+"en": "They prey on each other.",
+"ja": "彼らは互いを食いものにします。",
+"mix": "彼らは {each other} を食いものにします。"
+},
+{
+"en": "Who will win in the end?",
+"ja": "最後に勝つのは誰でしょうか。",
+"mix": "{the end} に勝つのは誰でしょうか。"
+}
+],
+"post": {
+"account": "toho_movie",
+"date": "2026-11-12",
+"likes": 21738,
+"name": "東宝映画情報【公式】",
+"url": "https://x.com/toho_movie/status/2120811340579459118"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"2026年11月12日",
+"2027年1月8日",
+"2027年5月14日"
+],
+"q": "この映画の公開日は？",
+"why": "2文目に on January 8, 2027 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"キャッチコピー",
+"あらすじ",
+"主題歌"
+],
+"q": "tagline の意味は？",
+"why": "tagline は映画の宣伝に使う短い決めぜりふです。"
+},
+{
+"a": 2,
+"choices": [
+"has been",
+"have",
+"have been"
+],
+"q": "The theaters ___ announced.（劇場が発表されました）",
+"why": "theaters は複数なので have been ＋ 過去分詞（announced）です。"
+}
+],
+"summary": "『映画 九条の大罪』を上映する劇場が発表されました。公開は2027年1月8日(金)で、主演は柳楽優弥さんと松村北斗さんです。「これが悪の生態系」というキャッチコピーも話題です。",
+"talk": {
+"hint": "Yes, I do. I want to see ___.",
+"ja": "『九条の大罪』を映画館で見たいですか？",
+"q": "Do you want to see Sins of Kujo in a theater?"
+},
+"title": "『映画 九条の大罪』上映劇場が決定",
+"words": [
+{
+"ja": "劇場・映画館",
+"note": "ポストの「上映劇場」は the theaters。アメリカ式のつづりです。",
+"w": "theater"
+},
+{
+"ja": "発表する",
+"note": "ポストの「決定」は、劇場が have been announced（発表された）と言うと自然です。",
+"w": "announce"
+},
+{
+"ja": "キャッチコピー",
+"note": "映画の宣伝に使う短い決めぜりふ。",
+"w": "tagline"
+},
+{
+"ja": "生態系",
+"note": "ポストの「悪の生態系」は an ecosystem of evil。",
+"w": "ecosystem"
+},
+{
+"ja": "〜を食いものにする",
+"note": "ポストの「共喰い」を prey on each other（互いを食いものにする）で表しました。",
+"w": "prey on"
 }
 ]
 },
