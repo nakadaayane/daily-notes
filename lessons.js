@@ -1,5 +1,1271 @@
 window.LESSONS = [
 {
+"added": "2026-11-16T14:00",
+"addedAt": "2026-11-16T14:50",
+"cat": "movie",
+"gloss": {
+"2 5 million": "250万",
+"4 billion yen in japan": "日本で40億円",
+"a": "ひとつの",
+"according": "〜によると",
+"according to kogyo tsushinsha": "興行通信社調べでは",
+"all": "すべての",
+"also": "〜も",
+"among": "〜の中で",
+"among live-action films in japan for imax box office": "IMAXの興行収入で、日本の実写映画の中で",
+"and": "そして",
+"at": "〜で",
+"at today's dollar rate": "今日のドルレートで",
+"based": "もとにした",
+"billion": "10億",
+"box": "ボックス",
+"box office": "興行収入",
+"converted": "換算された",
+"data": "データ",
+"days": "日間",
+"dollar": "ドル",
+"dollar rate": "ドルのレート",
+"drew": "集めた（drawの過去形）",
+"ends": "終わる",
+"films": "映画",
+"first": "1位・最初の",
+"for": "〜について",
+"godzilla": "ゴジラ",
+"grossed": "興行収入を上げた",
+"has": "持っている（現在完了のhas）",
+"imax": "IMAX（大型スクリーン方式）",
+"imax box office": "IMAXの興行収入",
+"imax data": "IMAX社のデータ",
+"in": "〜で・〜の中で",
+"in its first 13 days through november 15 it drew 2 5 million viewers": "公開後13日間、11月15日まで、250万人を集めた",
+"in its first 13 days through november 15 it drew 2 5 million viewers and": "公開後13日間、11月15日まで、250万人を集めて",
+"is": "〜です",
+"it": "それ",
+"it also topped the weekend box office ranking for two weeks": "週末興行ランキングで2週1位にもなった",
+"its": "その",
+"its worldwide total has passed 15 billion yen": "世界累計は150億円を超えた",
+"its worldwide total has passed 15 billion yen according to toho": "世界累計は東宝調べで150億円を超えた",
+"japan": "日本",
+"kogyo": "興行（こうぎょう）",
+"kogyo tsushinsha": "興行通信社",
+"live-action": "実写の",
+"live-action films in japan": "日本の実写映画",
+"million": "100万",
+"minus": "マイナス",
+"november": "11月",
+"of": "〜の",
+"office": "オフィス",
+"on": "〜に",
+"on imax data": "IMAX社のデータに（基づいて）",
+"passed": "超えた",
+"post": "ポスト",
+"ranked": "順位がついた",
+"ranking": "ランキング",
+"rate": "レート",
+"row": "列",
+"seven": "7",
+"seven days": "7日間",
+"thanks": "感謝",
+"the": "その",
+"the post": "このポスト",
+"this": "これ",
+"this is": "これは〜です",
+"through": "〜まで",
+"time": "時代・期間",
+"to": "〜に",
+"today's": "今日の",
+"toho": "東宝",
+"topped": "1位になった",
+"total": "累計・合計",
+"tsushinsha": "通信社",
+"two": "2つの",
+"two weeks": "2週間",
+"viewers": "観客",
+"weekend": "週末",
+"weekend box office ranking": "週末興行ランキング",
+"weeks": "週間",
+"with": "〜で",
+"with thanks": "感謝のことばで",
+"within": "〜以内に",
+"within seven days godzilla minus zero ranked first": "7日間で『ゴジラ-0.0』が1位になった",
+"worldwide": "世界中の",
+"worldwide total": "世界累計",
+"yen": "円",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "公開 {seven days} で、『ゴジラ-0.0』は、{Japan} の実写 {films} の {IMAX box office} で歴代1位になりました。",
+"q2": "{Within seven days, Godzilla Minus Zero ranked first} 歴代 {live-action films in Japan} の {IMAX box office} で。",
+"q3": "{Within seven days, Godzilla Minus Zero ranked first} 歴代 {among live-action films in Japan for IMAX box office.}"
+},
+{
+"q1": "これは {IMAX data} に基づいています。",
+"q2": "{This} は {IMAX data} に基づいています。",
+"q3": "{This is} 基づいて {on IMAX data.}"
+},
+{
+"q1": "{weekend box office ranking} でも、{two weeks} 連続で1位になりました（興行通信社調べ）。",
+"q2": "{It also topped the weekend box office ranking for two weeks} 連続で、{Kogyo Tsushinsha} 調べ。",
+"q3": "{It also topped the weekend box office ranking for two weeks} 連続で {according to Kogyo Tsushinsha.}"
+},
+{
+"q1": "公開後13日間で、{Japan} の {viewers} は {2.5 million}、興行収入は40億 {yen} でした。",
+"q2": "{In its first 13 days, through November 15, it drew 2.5 million viewers} 、興行収入は {4 billion yen in Japan} でした。",
+"q3": "{In its first 13 days, through November 15, it drew 2.5 million viewers and} 稼いだ {4 billion yen in Japan.}"
+},
+{
+"q1": "{worldwide total} は150億円を突破しました（{Toho} 調べ、本日の {dollar rate} で換算）。",
+"q2": "{Its worldwide total has passed 15 billion yen} 、{Toho} 調べ、本日の {dollar rate} で換算。",
+"q3": "{Its worldwide total has passed 15 billion yen, according to Toho,} 換算 {at today's dollar rate.}"
+},
+{
+"q1": "{The post} は {thanks} のことばで終わっています。",
+"q2": "{The post} は {with thanks} で終わっています。",
+"q3": "{The post} 終わる {with thanks.}"
+}
+],
+"grammar": {
+"body": "〈has ＋ 過去分詞〉は「〜した（いまその結果になっている）」を表します。pass は「通りすぎる」から「（数字を）超える」の意味でも使えます。",
+"ex": [
+{
+"en": "The movie has passed 100 million yen.",
+"ja": "その映画は1億円を超えました。"
+},
+{
+"en": "The number of viewers has passed one million.",
+"ja": "観客の数は100万人を超えました。"
+}
+],
+"title": "has passed 〜「〜を超えた」（現在完了）"
+},
+"id": "20261116-godzilla0-imax-record",
+"level": 3,
+"lines": [
+{
+"en": "Within seven days, Godzilla Minus Zero ranked first of all time among live-action films in Japan for IMAX box office.",
+"ja": "公開7日間で、『ゴジラ-0.0』は、国内の実写映画のIMAX累計興収で歴代1位になりました。",
+"mix": "公開7日間で、『ゴジラ-0.0』は、国内の実写 {films} のIMAX累計 {box office} で歴代1位になりました。"
+},
+{
+"en": "This is based on IMAX data.",
+"ja": "これはIMAX社の調べによるものです。",
+"mix": "これは {IMAX} 社の {data} に基づいています。"
+},
+{
+"en": "It also topped the weekend box office ranking for two weeks in a row, according to Kogyo Tsushinsha.",
+"ja": "週末興行ランキングでも、2週連続で1位になりました（興行通信社調べ）。",
+"mix": "{weekend} の {box office} ランキングでも、2週連続で1位になりました（興行通信社調べ）。"
+},
+{
+"en": "In its first 13 days, through November 15, it drew 2.5 million viewers and grossed 4 billion yen in Japan.",
+"ja": "公開後13日間（11月15日まで）で、国内の観客動員は250万人、興行収入は40億円でした。",
+"mix": "公開後13日間で、国内の {viewers} は250万人、興行収入は40億 {yen} でした。"
+},
+{
+"en": "Its worldwide total has passed 15 billion yen, according to Toho, converted at today's dollar rate.",
+"ja": "世界累計興収は150億円を突破しました（東宝調べ、本日のドルレートで換算）。",
+"mix": "{worldwide total} は150億円を突破しました（東宝調べ、本日のドルレートで換算）。"
+},
+{
+"en": "The post ends with thanks.",
+"ja": "ポストは、感謝のことばで終わっています。",
+"mix": "ポストは {thanks} のことばで終わっています。"
+}
+],
+"post": {
+"account": "g_minus_zero",
+"date": "2026-11-16",
+"likes": 1623,
+"name": "『ゴジラ-0.0』【公式】",
+"url": "https://x.com/g_minus_zero/status/2122192941141660058"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"7日間",
+"13日間",
+"2週間"
+],
+"q": "『ゴジラ-0.0』は、公開何日間でIMAX累計興収の歴代1位になりましたか？",
+"why": "1文目に Within seven days とあります。"
+},
+{
+"a": 2,
+"choices": [
+"興行収入",
+"監督",
+"観客"
+],
+"q": "viewers の意味は？",
+"why": "viewers は「見る人・観客」です。"
+},
+{
+"a": 1,
+"choices": [
+"pass",
+"passed",
+"passing"
+],
+"q": "Its worldwide total has ___ 15 billion yen.",
+"why": "has のあとは過去分詞 passed を使います。"
+}
+],
+"summary": "『ゴジラ-0.0』が、公開7日間で国内全実写映画のIMAX累計興収歴代1位になりました。週末興行ランキングも2週連続1位で、公開後13日間の国内観客動員は250万人、興収は40億円、世界累計興収は150億円を突破したそうです。",
+"talk": {
+"hint": "I want to see ___ because ___.",
+"ja": "IMAXの大きなスクリーンで、どの映画を見たいですか？",
+"q": "Which movie do you want to see on the big IMAX screen?"
+},
+"title": "『ゴジラ-0.0』IMAX累計興収が歴代1位に",
+"words": [
+{
+"ja": "興行収入",
+"note": "ポストの「興収」は box office。人数ではなく、お金の合計です。",
+"w": "box office"
+},
+{
+"ja": "合計・累計",
+"note": "ポストの「累計」。total は「合計の」という意味でも使えます。",
+"w": "total"
+},
+{
+"ja": "観客・見た人",
+"note": "ポストの「観客動員」は、ここでは viewers で言いかえています。",
+"w": "viewers"
+},
+{
+"ja": "世界中の・世界での",
+"note": "ポストの「世界累計」の「世界」。",
+"w": "worldwide"
+},
+{
+"ja": "公開",
+"note": "ポストの「公開後」の「公開」。映画が出ることです。",
+"w": "release"
+}
+]
+},
+{
+"added": "2026-11-16T12:18",
+"addedAt": "2026-11-16T14:50",
+"cat": "manga",
+"gloss": {
+"a": "ひとつの",
+"a chance": "ひとつの機会",
+"a chapter from the middle": "途中の1話",
+"a chapter from the middle published": "掲載された途中の1話",
+"a complete story": "完結したひとつの話",
+"a manga like it": "それのような漫画",
+"and": "そして",
+"at": "〜で",
+"be": "〜である",
+"both": "両方",
+"casually": "さりげなく",
+"challenge": "挑戦",
+"chance": "機会",
+"chapter": "（漫画の）1話",
+"complete": "完結した",
+"could": "〜できる（canの過去形）",
+"creator": "作者",
+"dance": "ダンス",
+"drawing": "描くこと（drawの-ing形）",
+"each": "それぞれの",
+"each chapter": "1話ごと",
+"end": "終わらせる",
+"feel": "感じる",
+"forever": "ずっと",
+"from": "〜から",
+"happy": "うれしい",
+"honestly": "正直",
+"if": "もし〜なら",
+"if there is a chance": "機会があれば",
+"if there is a chance they would be happy to": "機会があればうれしい",
+"if they wanted to": "もしそうしたいなら",
+"in": "〜の中で",
+"is": "〜です",
+"it": "それ",
+"keep": "〜し続ける",
+"like": "〜のような",
+"manga": "漫画",
+"middle": "途中・真ん中",
+"move": "動く・進む",
+"must": "〜しなければならない",
+"next": "次の",
+"of": "〜の",
+"on": "先へ（move onで「進む」）",
+"point": "時点",
+"published": "掲載された",
+"says": "言っている（sayの三単現）",
+"see": "見る",
+"sket": "スケット（作品名）",
+"some": "ある",
+"some point": "どこかの時点",
+"story": "話・物語",
+"tell": "語る・描く",
+"that": "〜ということ",
+"that is why they feel they must end it at some point and": "だからこそ、どこかで終わらせなければと感じて",
+"the": "その",
+"the creator of witch watch": "『ウィッチウォッチ』の作者",
+"the creator of witch watch says that honestly": "『ウィッチウォッチ』の作者は、正直…と言う",
+"the creator of witch watch says that honestly they could keep drawing a manga like it": "作者は、正直、それのような漫画を描き続けられると言う",
+"the middle": "途中",
+"there": "そこに（There isの形）",
+"they": "（作者を指して）その人",
+"they would be happy": "うれしいです",
+"to": "〜する（不定詞）",
+"to the next challenge": "次の挑戦へ",
+"wanted": "望んだ（wantの過去形）",
+"watch": "見守る・ウォッチ",
+"why": "理由",
+"witch": "魔女（ウィッチ）",
+"witch watch and sket dance": "『ウィッチウォッチ』と『スケットダンス』",
+"witch watch and sket dance tell a complete story in each chapter": "両作品は1話ごとに完結した話を描く",
+"would": "〜だろう"
+},
+"grad": [
+{
+"q1": "{The creator of Witch Watch} は、正直、描こうと思えばこのような {manga} はずっと描いていられると言っています。",
+"q2": "{The creator of Witch Watch says that, honestly,} 描こうと思えば {a manga like it} ずっと描いていられる。",
+"q3": "{The creator of Witch Watch says that, honestly, they could keep drawing a manga like it} ずっと {if they wanted to.}"
+},
+{
+"q1": "だからこそ、{some point} で区切りをつけて、次の {challenge} に進まなければと思っています。",
+"q2": "{That is why they feel they must end it at some point and} 次の {challenge} に進む。",
+"q3": "{That is why they feel they must end it at some point and} 進む {to the next challenge.}"
+},
+{
+"q1": "『ウィッチウォッチ』も『スケットダンス』も、{each chapter} で {a complete story} を描いています。",
+"q2": "{Witch Watch and Sket Dance} は {each chapter} で {a complete story} を {tell} 。",
+"q3": "両方の {Witch Watch and Sket Dance tell a complete story in each chapter.}"
+},
+{
+"q1": "{a chance} があれば、{the middle} の1{chapter} をしれっと載せていただけたら嬉しいです。",
+"q2": "{If there is a chance} 、{a chapter from the middle} をしれっと載せていただけたら {they would be happy.}",
+"q3": "{If there is a chance, they would be happy to} 見る {a chapter from the middle published} しれっと。"
+}
+],
+"grammar": {
+"body": "move on to ～ は「次のことに進む」という意味です。to のあとには名詞（the next challenge など）を置きます。",
+"ex": [
+{
+"en": "Let's move on to the next question.",
+"ja": "次の質問に進みましょう。"
+},
+{
+"en": "She wants to move on to a new job.",
+"ja": "彼女は新しい仕事に進みたいと思っています。"
+}
+],
+"title": "move on to 〜「〜に進む」"
+},
+"id": "20261116-witchwatch-next",
+"level": 3,
+"lines": [
+{
+"en": "The creator of Witch Watch says that, honestly, they could keep drawing a manga like it forever if they wanted to.",
+"ja": "『ウィッチウォッチ』の作者は、正直、描こうと思えばこのような漫画はずっと描いていられると言っています。",
+"mix": "『ウィッチウォッチ』の {creator} は、正直、描こうと思えばこのような {manga} はずっと描いていられると言っています。"
+},
+{
+"en": "That is why they feel they must end it at some point and move on to the next challenge.",
+"ja": "だからこそ、どこかで区切りをつけて、次の挑戦に進まなければと思っています。",
+"mix": "だからこそ、どこかで区切りをつけて、次の {challenge} に進まなければと思っています。"
+},
+{
+"en": "Both Witch Watch and Sket Dance tell a complete story in each chapter.",
+"ja": "『ウィッチウォッチ』も『スケットダンス』も、1話ごとに話が完結しています。",
+"mix": "『ウィッチウォッチ』も『スケットダンス』も、{each chapter} で完結する {story} を描いています。"
+},
+{
+"en": "If there is a chance, they would be happy to see a chapter from the middle published casually.",
+"ja": "機会があれば、途中の一話をしれっと載せていただけたら嬉しいです。",
+"mix": "{chance} があれば、{middle} の1話をしれっと載せていただけたら嬉しいです。"
+}
+],
+"post": {
+"account": "WITCHWATCH_off",
+"date": "2026-11-16",
+"likes": 4119,
+"name": "ウィッチウォッチ【公式】",
+"url": "https://x.com/WITCHWATCH_off/status/2122167324111491092"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"すぐに描けなくなる",
+"描こうと思えばずっと描いていられる",
+"1年だけなら描ける"
+],
+"q": "作者は『ウィッチウォッチ』のような漫画について、何と言っていますか？",
+"why": "1文目に could keep drawing a manga like it forever とあります。"
+},
+{
+"a": 0,
+"choices": [
+"（漫画の）1話・章",
+"作者",
+"挑戦"
+],
+"q": "chapter の意味は？",
+"why": "chapter は漫画の「1話」や本の「章」です。"
+},
+{
+"a": 2,
+"choices": [
+"in",
+"at",
+"on"
+],
+"q": "They want to move ___ to the next challenge.",
+"why": "「次に進む」は move on to 〜。"
+}
+],
+"summary": "『ウィッチウォッチ』の作者のコメントです。描こうと思えばずっと描ける漫画だからこそ、どこかで区切りをつけて次の挑戦に進みたいと考えています。一話完結型なので、機会があれば途中の一話をさりげなく載せてもらえたら嬉しいとのことです。",
+"talk": {
+"hint": "I like ___ because ___.",
+"ja": "1話ごとに話が完結する漫画は好きですか？",
+"q": "Do you like manga that tell a complete story in each chapter?"
+},
+"title": "『ウィッチウォッチ』作者「いつか区切りをつけて次の挑戦へ」",
+"words": [
+{
+"ja": "作者・つくった人",
+"note": "ポストの「作者」。人気作品を生み出した人に使えます。",
+"w": "creator"
+},
+{
+"ja": "ずっと・永遠に",
+"note": "ポストの「ずっと描いていられる」の「ずっと」が forever です。",
+"w": "forever"
+},
+{
+"ja": "挑戦",
+"note": "ポストの「次の挑戦」は the next challenge。",
+"w": "challenge"
+},
+{
+"ja": "（漫画の）1話・章",
+"note": "ポストの「一話」は one chapter。漫画の1話は chapter と言います。",
+"w": "chapter"
+},
+{
+"ja": "さりげなく・気軽に",
+"note": "ポストの「しれっと」に近い言い方です。",
+"w": "casually"
+}
+]
+},
+{
+"added": "2026-11-16T12:00",
+"addedAt": "2026-11-16T14:50",
+"cat": "movie",
+"gloss": {
+"a": "1つの",
+"a new": "新しい",
+"a new tokusatsu movie": "新しい特撮映画",
+"a new tokusatsu movie jikuu keisatsu vecker": "新しい特撮映画『時空警察ヴェッカー』",
+"actor": "俳優",
+"and": "と・そして",
+"black": "ブラック（作品名の一部）",
+"black sun": "BLACK SUN（作品名）",
+"cinema": "映画（媒体名の一部）",
+"cinema today": "シネマトゥデイ",
+"co-stars": "共演者たち",
+"from": "〜から・〜の出身の",
+"gotchard": "ガッチャード（作品名）",
+"include": "〜をふくむ",
+"is": "〜です・ある",
+"jikuu": "時空（題名の一部）",
+"kabuto": "カブト（作品名）",
+"keisatsu": "警察（題名の一部）",
+"lead": "主役",
+"movie": "映画",
+"new": "新しい",
+"news": "ニュース",
+"november": "11月",
+"november 16": "11月16日",
+"on": "〜に（日付の前）",
+"people": "人たち",
+"people from black sun": "「BLACK SUN」の出演者",
+"people from black sun and kabuto": "「BLACK SUN」と『カブト』の出演者",
+"play": "演じる",
+"shared": "伝えた・共有した",
+"sun": "サン（作品名の一部）",
+"the": "その",
+"the actor from gotchard": "「ガッチャード」の俳優",
+"the actor from gotchard will": "「ガッチャード」の俳優が〜する",
+"the co-stars": "共演者たち",
+"the lead": "主役",
+"there": "（There is で）〜がある",
+"this": "この",
+"this news": "このニュース",
+"this news on november 16": "11月16日にこのニュース",
+"today": "今日（媒体名の一部）",
+"tokusatsu": "特撮",
+"vecker": "ヴェッカー（題名の一部）",
+"will": "〜するだろう（未来）"
+},
+"grad": [
+{
+"q1": "シネマトゥデイが、{November 16} にこの {news} を伝えました。",
+"q2": "{Cinema Today} が、{this news} を {November 16} に伝えました。",
+"q3": "{Cinema Today} 伝えた {this news on November 16.}"
+},
+{
+"q1": "特撮 {movie} 『時空警察ヴェッカー』の {a new} 作があります。",
+"q2": "『時空警察ヴェッカー』の {a new tokusatsu movie} があります。",
+"q3": "ある {a new tokusatsu movie, Jikuu Keisatsu Vecker.}"
+},
+{
+"q1": "「{Gotchard}」に出ていた {actor} が {lead} を演じます。",
+"q2": "{The actor from Gotchard} が {the lead} を演じます。",
+"q3": "{The actor from Gotchard will} 演じる {the lead.}"
+},
+{
+"q1": "共演には、{BLACK SUN} や『カブト』の {people} がいます。",
+"q2": "{The co-stars} {people from BLACK SUN} や『カブト』がいます。",
+"q3": "{The co-stars} 含む {people from BLACK SUN and Kabuto.}"
+}
+],
+"grammar": {
+"body": "ものを3つ以上ならべるときは、A, B, and C のように、前をコンマで切って、最後の前に and を置きます。2つのときは A and B です。",
+"ex": [
+{
+"en": "I like movies, anime, and manga.",
+"ja": "私は映画とアニメとマンガが好きです。"
+},
+{
+"en": "She has a cat, a dog, and a bird.",
+"ja": "彼女はねこと犬と鳥を飼っています。"
+}
+],
+"title": "A, B, and C「3つ以上をならべる」"
+},
+"id": "20261116-vecker-new",
+"level": 2,
+"lines": [
+{
+"en": "Cinema Today shared this news on November 16.",
+"ja": "シネマトゥデイが、11月16日にこのニュースを伝えました。",
+"mix": "シネマトゥデイが、{November 16} にこのニュースを伝えました。"
+},
+{
+"en": "There is a new tokusatsu movie, Jikuu Keisatsu Vecker.",
+"ja": "特撮映画『時空警察ヴェッカー』の新作があります。",
+"mix": "特撮 {movie} 『時空警察ヴェッカー』の {new} 作があります。"
+},
+{
+"en": "The actor from Gotchard will play the lead.",
+"ja": "「ガッチャード」に出ていた俳優が主演します。",
+"mix": "「ガッチャード」に出ていた {actor} が {lead} を演じます。"
+},
+{
+"en": "The co-stars include people from BLACK SUN and Kabuto.",
+"ja": "共演には、「BLACK SUN」や『カブト』の出演者がいます。",
+"mix": "共演には、{BLACK SUN} や『カブト』の出演者がいます。"
+}
+],
+"post": {
+"account": "cinematoday",
+"date": "2026-11-16",
+"likes": 622,
+"name": "シネマトゥデイ",
+"url": "https://x.com/cinematoday/status/2122162745714070013"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"時空警察ヴェッカー",
+"ガッチャード",
+"BLACK SUN"
+],
+"q": "この映画の題名は？",
+"why": "2文目に Jikuu Keisatsu Vecker とあります。"
+},
+{
+"a": 1,
+"choices": [
+"共演者",
+"主役",
+"新作"
+],
+"q": "play the lead の lead の意味は？",
+"why": "the lead は「主役」。play the lead ＝ 主役を演じる。"
+},
+{
+"a": 2,
+"choices": [
+"but",
+"so",
+"and"
+],
+"q": "I like movies, anime, ___ manga.（映画とアニメとマンガ）",
+"why": "3つならべるときは、最後の前に and を置きます。"
+}
+],
+"summary": "シネマトゥデイの記事の見出しによると、「ガッチャード」の本島純政さんが、特撮映画『時空警察ヴェッカー』の新作に主演します。共演には「BLACK SUN」の平澤宏々路さん、『カブト』の小寺結花さんたちが入っています。",
+"talk": {
+"hint": "Yes, I like ___. / No, but I like ___.",
+"ja": "特撮映画は好きですか？",
+"q": "Do you like tokusatsu movies?"
+},
+"title": "『時空警察ヴェッカー』新作に本島純政が主演",
+"words": [
+{
+"ja": "特撮",
+"note": "ポストの「特撮映画」。日本語のまま英語でも使われます。",
+"w": "tokusatsu"
+},
+{
+"ja": "主役",
+"note": "ポストの「主演」は play the lead（主役を演じる）。",
+"w": "lead"
+},
+{
+"ja": "共演者",
+"note": "ポストの「共演」。co-stars ＝ いっしょに出る俳優たち。",
+"w": "co-star"
+},
+{
+"ja": "〜をふくむ",
+"note": "ポストの「共演に〜ら」。include は全員ではなく一部をあげるときに使います。",
+"w": "include"
+},
+{
+"ja": "新しい",
+"note": "ポストの「新作」は a new movie。",
+"w": "new"
+}
+]
+},
+{
+"added": "2026-11-16T12:00",
+"addedAt": "2026-11-16T14:50",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a new touken ranbu anime called wanpaku touken ranbu will air": "『わんぱく！刀剣乱舞』という新作TVアニメが放送される",
+"a new touken ranbu anime called wanpaku touken ranbu will air in january": "…という新作TVアニメが1月に放送される",
+"a new touken ranbu tv anime called wanpaku touken ranbu will air": "『わんぱく！刀剣乱舞』という新作TVアニメが放送される",
+"a new touken ranbu tv anime called wanpaku touken ranbu will air in january": "…という新作TVアニメが1月に放送される",
+"air": "放送する",
+"also": "〜も",
+"anime": "アニメ",
+"are": "〜がある",
+"called": "〜という名前の",
+"design": "デザイン",
+"directed": "監督した",
+"directed sumikko gurashi": "『すみっコぐらし』を監督した",
+"director": "監督",
+"ebisu": "戎（えびす）",
+"fans": "ファン",
+"gaku": "がく",
+"gaku kinoshita": "きのしたがく",
+"grin": "ニヤリと笑う",
+"gurashi": "ぐらし",
+"in": "〜に（月の前）",
+"is": "〜です",
+"january": "1月",
+"kinoshita": "きのした",
+"little": "ちょっとした",
+"little touches": "ちょっとした仕掛け",
+"make": "〜にさせる",
+"new": "新しい",
+"new anime": "新作アニメ",
+"new tv anime": "新作テレビアニメ",
+"next": "次の",
+"of": "〜の",
+"produces": "プロデュースする",
+"ranbu": "乱舞",
+"rieko": "リエコ",
+"rieko ebisu": "戎リエコ",
+"sanrio": "サンリオ",
+"sanrio produces": "サンリオがプロデュースする",
+"sanrio produces the design of this": "サンリオがこの…のデザインをプロデュースする",
+"script": "脚本",
+"sumikko": "すみっコ",
+"that": "〜するところの",
+"the": "その",
+"the director is gaku kinoshita": "監督はきのしたがく氏",
+"the script": "その脚本",
+"there": "そこに（There areの形）",
+"there are also little touches": "ちょっとした仕掛けもある",
+"there are also little touches that make fans": "ファンを…させる仕掛けもある",
+"this": "この",
+"touches": "仕掛け・ひと工夫",
+"touken": "刀剣",
+"tv": "テレビ",
+"tv anime": "テレビアニメ",
+"wanpaku": "わんぱく",
+"who": "〜した人",
+"will": "〜するだろう",
+"wrote": "書いた（writeの過去形）",
+"year": "年"
+},
+"grad": [
+{
+"q1": "『刀剣乱舞』の {new anime}『わんぱく！刀剣乱舞』が、来年の {January} に放送されます。",
+"q2": "{A new Touken Ranbu anime called Wanpaku! Touken Ranbu will air} 来年の {January} に。",
+"q3": "{A new Touken Ranbu anime called Wanpaku! Touken Ranbu will air in January} 来年。"
+},
+{
+"q1": "このアニメの {design} は、{Sanrio} がプロデュースします。",
+"q2": "{Sanrio produces} このアニメの {design} 。",
+"q3": "{Sanrio produces the design of this} アニメ。"
+},
+{
+"q1": "{director} は、『すみっコぐらし』を手がけた {Gaku Kinoshita} 氏です。",
+"q2": "{The director is Gaku Kinoshita,} 『すみっコぐらし』を手がけた人です。",
+"q3": "{The director is Gaku Kinoshita,} 彼が {directed Sumikko Gurashi.}"
+},
+{
+"q1": "{Rieko Ebisu} 氏が {script} を書きました。",
+"q2": "{Rieko Ebisu} 氏が {the script} を書きました。",
+"q3": "{Rieko Ebisu} 書いた {the script.}"
+},
+{
+"q1": "{fans} が思わずニヤリとする {little touches} もあります。",
+"q2": "{There are also little touches} 、{fans} が思わずニヤリとする。",
+"q3": "{There are also little touches that make fans} ニヤリとする。"
+}
+],
+"grammar": {
+"body": "名詞のあとに that ＋ 動詞を置くと、その名詞をくわしく説明できます。touches that make fans grin で「ファンをニヤリとさせる仕掛け」です。",
+"ex": [
+{
+"en": "This is a movie that makes me happy.",
+"ja": "これは私をうれしくする映画です。"
+},
+{
+"en": "I have a bag that is very small.",
+"ja": "私はとても小さいかばんを持っています。"
+}
+],
+"title": "that で「どんな〜か」を説明する（物）"
+},
+"id": "20261116-wanpaku-touken",
+"level": 2,
+"lines": [
+{
+"en": "A new Touken Ranbu anime called Wanpaku! Touken Ranbu will air in January next year.",
+"ja": "『刀剣乱舞』の新作TVアニメ『わんぱく！刀剣乱舞』が、来年1月に放送されます。",
+"mix": "『刀剣乱舞』の新作TV {anime}『わんぱく！刀剣乱舞』が、来年 {January} に放送されます。"
+},
+{
+"en": "Sanrio produces the design of this anime.",
+"ja": "このアニメのデザインは、サンリオがプロデュースします。",
+"mix": "このアニメの {design} は、サンリオがプロデュースします。"
+},
+{
+"en": "The director is Gaku Kinoshita, who directed Sumikko Gurashi.",
+"ja": "監督は、『すみっコぐらし』を手がけたきのしたがく氏です。",
+"mix": "{director} は、『すみっコぐらし』を手がけたきのしたがく氏です。"
+},
+{
+"en": "Rieko Ebisu wrote the script.",
+"ja": "脚本は戎リエコ氏が書きました。",
+"mix": "戎リエコ氏が {script} を書きました。"
+},
+{
+"en": "There are also little touches that make fans grin.",
+"ja": "ファンが思わずニヤリとする仕掛けもあります。",
+"mix": "{fans} が思わずニヤリとする {touches} もあります。"
+}
+],
+"post": {
+"account": "oricon_anime_",
+"date": "2026-11-16",
+"likes": 2404,
+"name": "オリコンニュース【アニメ】",
+"url": "https://x.com/oricon_anime_/status/2122162756455710844"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"来年の7月",
+"今年の12月",
+"来年の1月"
+],
+"q": "このアニメはいつ放送されますか？",
+"why": "1文目に will air in January next year とあります。"
+},
+{
+"a": 1,
+"choices": [
+"脚本",
+"監督",
+"原作"
+],
+"q": "director の意味は？",
+"why": "director は「監督」。脚本は script です。"
+},
+{
+"a": 0,
+"choices": [
+"produces",
+"produce",
+"producing"
+],
+"q": "Sanrio ___ the design of this anime.",
+"why": "主語 Sanrio は三人称・単数なので、動詞に s がつきます。"
+}
+],
+"summary": "『刀剣乱舞』の新作TVアニメ『わんぱく！刀剣乱舞』が、来年1月に放送されます。サンリオデザインプロデュースの作品で、監督はきのしたがく氏、脚本は戎リエコ氏です。ファンが思わずニヤリとする仕掛けもあるそうです。",
+"talk": {
+"hint": "I want to watch it because ___.",
+"ja": "『わんぱく！刀剣乱舞』を見たいですか？ なぜですか？",
+"q": "Do you want to watch Wanpaku! Touken Ranbu? Why?"
+},
+"title": "新作TVアニメ『わんぱく！刀剣乱舞』来年1月放送",
+"words": [
+{
+"ja": "放送する",
+"note": "ポストの「放送」。テレビで流れることを air と言います。",
+"w": "air"
+},
+{
+"ja": "デザイン",
+"note": "ポストの「サンリオデザインプロデュース」の「デザイン」。",
+"w": "design"
+},
+{
+"ja": "監督",
+"note": "ポストの「監督」。アニメや映画をまとめる人です。",
+"w": "director"
+},
+{
+"ja": "脚本",
+"note": "ポストの「脚本」。せりふや話の流れを書いたものです。",
+"w": "script"
+},
+{
+"ja": "ニヤリと笑う",
+"note": "ポストの「思わずニヤリとする」に近い言い方です。",
+"w": "grin"
+}
+]
+},
+{
+"added": "2026-11-16T08:35",
+"addedAt": "2026-11-16T14:50",
+"cat": "movie",
+"gloss": {
+"a": "1つの",
+"a monster movie": "怪獣映画",
+"about": "〜について",
+"added": "加えられた",
+"and": "と・そして",
+"are": "〜です（beの複数形）",
+"article": "記事",
+"article about godzilla minus zero and shirogumi": "『ゴジラ-0.0』と白組の記事",
+"as": "〜として",
+"as a monster movie": "怪獣映画として",
+"battle": "戦い・死闘",
+"before": "〜の前に",
+"biggest": "最大の",
+"calls": "呼ぶ（callの三単現）",
+"cinema": "映画（シネマトゥデイの名前の一部）",
+"cinema today": "シネマトゥデイ",
+"cinema today has": "シネマトゥデイが持っている",
+"cinema today has a": "シネマトゥデイが持つ",
+"deadline": "締め切り",
+"details": "くわしい内容",
+"even": "〜でさえ",
+"even so": "それでも",
+"everything": "すべて",
+"full": "全部の・完全な",
+"full article": "記事の全文",
+"gave": "与えた（giveの過去形）",
+"godzilla": "ゴジラ",
+"godzilla minus zero": "ゴジラ-0.0",
+"has": "持っている（haveの三単現）",
+"headline": "見出し",
+"here": "ここでは",
+"in": "〜の中に",
+"it": "それ",
+"it calls their work a battle": "彼らの仕事を戦いと呼ぶ",
+"it calls their work a battle of the biggest": "彼らの仕事を最大級の戦いと呼ぶ",
+"just": "ちょうど",
+"just before the deadline": "締め切りの直前に",
+"kind": "種類",
+"know": "知っている",
+"minus": "マイナス",
+"monster": "怪獣・怪物",
+"monster movie": "怪獣映画",
+"movie": "映画",
+"new": "新しい",
+"of": "〜の",
+"only": "〜だけ",
+"says": "言っている（sayの三単現）",
+"shirogumi": "白組（VFXを手がける会社名）",
+"shirogumi gave it everything as a monster movie": "白組は怪獣映画としてやりきった",
+"so": "それで・だから",
+"the": "その",
+"the deadline": "締め切り",
+"the details are in the full article": "くわしくは記事の全文にある",
+"the details are in the full article so we only know the headline": "くわしくは本文にあり、見出ししかわからない",
+"the full article": "記事の全文",
+"the headline": "見出し",
+"the headline says": "見出しによると",
+"the headline says vfx work was": "見出しによるとVFXの作業が〜された",
+"their": "彼らの",
+"their work": "彼らの仕事",
+"today": "今日（媒体名の一部）",
+"vfx": "VFX（視覚効果）",
+"vfx work": "VFXの作業",
+"was": "〜された（beの過去形）",
+"we": "私たちは",
+"we only know the headline": "見出ししかわからない",
+"work": "作業・仕事",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "{Cinema Today} が、『ゴジラ-0.0』と白組についての新しい {article} を出しました。",
+"q2": "{Cinema Today has} 新しい {article} 、{Godzilla Minus Zero} と白組について。",
+"q3": "{Cinema Today has a} 新しい {article about Godzilla Minus Zero and Shirogumi.}"
+},
+{
+"q1": "見出しによると、{the deadline} の直前に {VFX work} が加わりました。",
+"q2": "{The headline says} {VFX work} が、{just before the deadline} 加わりました。",
+"q3": "{The headline says VFX work was} 追加 {just before the deadline.}"
+},
+{
+"q1": "{Even so,} 見出しには、白組は {a monster movie} としてやりきった、とあります。",
+"q2": "{Even so,} 見出しには、{Shirogumi} は {as a monster movie} やりきった、とあります。",
+"q3": "{Even so,} 見出しには {Shirogumi gave it everything as a monster movie.}"
+},
+{
+"q1": "{Their work} を、最大級の {battle} と呼んでいます。",
+"q2": "{It calls their work a battle} 、最大級の。",
+"q3": "{It calls their work a battle of the biggest} 種類。"
+},
+{
+"q1": "くわしくは {the full article} にあるので、ここでは {the headline} しかわかりません。",
+"q2": "{The details are in the full article,} ので、ここでは {we only know the headline}。",
+"q3": "{The details are in the full article, so we only know the headline} ここでは。"
+}
+],
+"grammar": {
+"body": "before は「〜の前に」。just をつけると「ちょうど直前に」になります。just before the deadline ＝ 締め切りの直前に。時間をあらわす名詞のまえに置きます。",
+"ex": [
+{
+"en": "She came home just before dinner.",
+"ja": "彼女は夕食の直前に帰ってきました。"
+},
+{
+"en": "The show started just before noon.",
+"ja": "番組は正午の直前に始まりました。"
+}
+],
+"title": "just before ＋ 名詞「〜の直前に」"
+},
+"id": "20261116-godzilla0-shirogumi",
+"level": 3,
+"lines": [
+{
+"en": "Cinema Today has a new article about Godzilla Minus Zero and Shirogumi.",
+"ja": "シネマトゥデイが、『ゴジラ-0.0』と白組についての新しい記事を出しました。",
+"mix": "シネマトゥデイが、『ゴジラ-0.0』と白組についての新しい {article} を出しました。"
+},
+{
+"en": "The headline says VFX work was added just before the deadline.",
+"ja": "見出しによると、締め切りの直前にVFXの作業が加わりました。",
+"mix": "見出しによると、{deadline} の直前にVFXの作業が加わりました。"
+},
+{
+"en": "Even so, the headline says Shirogumi gave it everything as a monster movie.",
+"ja": "それでも見出しには、白組は怪獣映画としてやりきった、とあります。",
+"mix": "それでも見出しには、白組は {monster movie} としてやりきった、とあります。"
+},
+{
+"en": "It calls their work a battle of the biggest kind.",
+"ja": "彼らの仕事を、最大級の死闘と呼んでいます。",
+"mix": "彼らの {work} を、最大級の {battle} と呼んでいます。"
+},
+{
+"en": "The details are in the full article, so we only know the headline here.",
+"ja": "くわしくは記事の本文にあるので、ここでは見出しの内容しかわかりません。",
+"mix": "くわしくは {full article} にあるので、ここでは {headline} の内容しかわかりません。"
+}
+],
+"post": {
+"account": "cinematoday",
+"date": "2026-11-16",
+"likes": 663,
+"name": "シネマトゥデイ",
+"url": "https://x.com/cinematoday/status/2122111153505710467"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"新しい音楽",
+"VFXの作業",
+"新しい予告編"
+],
+"q": "見出しによると、締め切りの直前に加わったのは？",
+"why": "2文目に VFX work was added just before the deadline. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"締め切り",
+"公開日",
+"開始日"
+],
+"q": "deadline の意味は？",
+"why": "dead（死んだ）ではなく、「それ以上は過ぎてはいけない線」＝締め切りです。"
+},
+{
+"a": 2,
+"choices": [
+"just after",
+"just like",
+"just before"
+],
+"q": "VFX work was added ___ the deadline.（締め切りの直前に）",
+"why": "「直前に」は just before。after は「あとに」です。"
+}
+],
+"summary": "シネマトゥデイの記事の見出しによると、『ゴジラ-0.0』は締め切りの直前にVFXが追加されました。それでも白組は「怪獣映画としてやりきった」とのことです。わかるのは見出しの内容だけです。",
+"talk": {
+"hint": "I like ___ the best because ___.",
+"ja": "どのゴジラ映画がいちばん好きですか？",
+"q": "Which Godzilla movie do you like the best?"
+},
+"title": "『ゴジラ-0.0』白組の「最大級の死闘」",
+"words": [
+{
+"ja": "締め切り",
+"note": "ポストの「締切り直前」は just before the deadline。",
+"w": "deadline"
+},
+{
+"ja": "視覚効果（ブイエフエックス）",
+"note": "映像に合成する特殊効果のこと。ポストの「VFX追加」は VFX work was added。",
+"w": "VFX"
+},
+{
+"ja": "怪獣映画",
+"note": "ポストの「怪獣映画」。monster は「怪物・怪獣」。",
+"w": "monster movie"
+},
+{
+"ja": "全力を出す・やりきる",
+"note": "ポストの「やりきった」を gave it everything で表しました。",
+"w": "give it everything"
+},
+{
+"ja": "戦い・死闘",
+"note": "ポストの「死闘」。a battle of the biggest kind ＝ 最大級の戦い。",
+"w": "battle"
+}
+]
+},
+{
+"added": "2026-11-16T07:00",
+"addedAt": "2026-11-16T14:50",
+"cat": "movie",
+"gloss": {
+"a": "1つの",
+"a new movie": "新しい映画",
+"acees": "ACEes（グループ名）",
+"and": "と",
+"both": "両方・2人とも",
+"don't": "〜しない",
+"even": "〜でさえ",
+"even if prayers don't reach you": "たとえ祈りが届かなくても",
+"first": "初めての",
+"for": "〜にとって",
+"hana": "花（人名）",
+"hana toyoshima and yuto nasu of acees": "ACEesの那須雄登さんと豊嶋花さん",
+"hana toyoshima and yuto nasu of acees will": "ACEesの那須雄登さんと豊嶋花さんが〜する",
+"have": "持っている",
+"i": "私は",
+"if": "もし〜でも",
+"in": "〜に・〜の中で",
+"in a new movie": "新しい映画で",
+"in spring 2027": "2027年の春に",
+"is": "〜です",
+"it": "それ",
+"it is": "それは〜だ",
+"it is the": "それは〜の",
+"it will": "それは〜する",
+"its": "その",
+"its title means even if prayers don't reach you": "題名は「たとえ祈りが届かなくても」という意味",
+"lead": "主役の",
+"lead role": "主役",
+"lead role for both of them": "2人にとっての主役",
+"means": "〜という意味だ",
+"movie": "映画",
+"nasu": "那須（人名）",
+"new": "新しい",
+"of": "〜の",
+"open": "公開される",
+"prayers": "祈り（複数形）",
+"reach": "届く",
+"role": "役",
+"something": "何か・伝えたいこと",
+"something to tell you": "君に伝えたいこと",
+"spring": "春",
+"spring 2027": "2027年の春",
+"star": "主演する",
+"tell": "伝える",
+"the": "その",
+"them": "彼ら",
+"title": "題名",
+"to": "〜する（to＋動詞）",
+"toyoshima": "豊嶋（人名）",
+"will": "〜するだろう（未来）",
+"you": "あなた・君",
+"yuto": "雄登（人名）"
+},
+"grad": [
+{
+"q1": "豊嶋花さんと、{ACEes} の那須雄登さんが、{a new movie} に主演します。",
+"q2": "{Hana Toyoshima and Yuto Nasu of ACEes} が、{a new movie} に主演します。",
+"q3": "{Hana Toyoshima and Yuto Nasu of ACEes will} 主演 {in a new movie.}"
+},
+{
+"q1": "{It} は2人にとって、初めての {lead role} です。",
+"q2": "{It is} 2人にとって初めての {lead role}。",
+"q3": "{It is the} 初めての {lead role for both of them.}"
+},
+{
+"q1": "題名は「たとえ {prayers} が届かなくても、君に {something to tell you}」という意味です。",
+"q2": "題名は「{Even if prayers don't reach you,} 君に {something to tell you}」という意味です。",
+"q3": "{Its title means, Even if prayers don't reach you,} ある {something to tell you.}"
+},
+{
+"q1": "{It} は {spring 2027} に公開されます。",
+"q2": "{It} は {in spring 2027} 公開されます。",
+"q3": "{It will} 公開 {in spring 2027.}"
+}
+],
+"grammar": {
+"body": "something のあとに to ＋ 動詞を置くと「〜するためのこと」になります。something to tell you ＝ あなたに伝えたいこと。something to eat なら「食べるもの」です。",
+"ex": [
+{
+"en": "I have something to show you.",
+"ja": "あなたに見せたいものがあります。"
+},
+{
+"en": "She wants something to drink.",
+"ja": "彼女は何か飲むものがほしいです。"
+}
+],
+"title": "something to 〜「〜すること（もの）」"
+},
+"id": "20261116-tatoe-inori-movie",
+"level": 2,
+"lines": [
+{
+"en": "Hana Toyoshima and Yuto Nasu of ACEes will star in a new movie.",
+"ja": "豊嶋花さんと、ACEesの那須雄登さんが、新しい映画に主演します。",
+"mix": "豊嶋花さんと、ACEesの那須雄登さんが、新しい {movie} に主演します。"
+},
+{
+"en": "It is the first lead role for both of them.",
+"ja": "2人にとって、初めての主演です。",
+"mix": "2人にとって、初めての {lead role} です。"
+},
+{
+"en": "Its title means, \"Even if prayers don't reach you, I have something to tell you.\"",
+"ja": "題名は「たとえ祈りが届かなくても、君に伝えたいことがある」という意味です。",
+"mix": "題名は「たとえ {prayers} が届かなくても、君に {something} 伝えたい」という意味です。"
+},
+{
+"en": "It will open in spring 2027.",
+"ja": "2027年の春に公開されます。",
+"mix": "2027年の {spring} に公開されます。"
+}
+],
+"post": {
+"account": "cinematoday",
+"date": "2026-11-16",
+"likes": 374,
+"name": "シネマトゥデイ",
+"url": "https://x.com/cinematoday/status/2122087246648226215"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"2026年の冬",
+"2027年の夏",
+"2027年の春"
+],
+"q": "映画はいつ公開されますか？",
+"why": "最後の文に It will open in spring 2027. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"那須さん",
+"豊嶋さん",
+"監督"
+],
+"q": "ACEes と書かれているのは誰のこと？",
+"why": "2文目に Nasu is a member of ACEes. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"something",
+"anything to",
+"nothing is"
+],
+"q": "I have ___ to tell you.（伝えたいことがある）",
+"why": "something ＋ to ＋ 動詞で「〜すること」。I have something to tell you. です。"
+}
+],
+"summary": "シネマトゥデイの記事の見出しによると、豊嶋花さんとACEesの那須雄登さんが、映画『たとえ祈りが届かなくても君に伝えたいことがあるんだ』でW初主演します。公開は2027年春です。",
+"talk": {
+"hint": "I have something to tell ___. It is about ___.",
+"ja": "だれかに伝えたいことはありますか？",
+"q": "Do you have something to tell someone?"
+},
+"title": "豊嶋花と那須雄登がW初主演、2027年春公開",
+"words": [
+{
+"ja": "〜に主演する",
+"note": "ポストの「主演」。star in a movie ＝ 映画に主演する。",
+"w": "star in"
+},
+{
+"ja": "主役",
+"note": "ポストの「初主演」は the first lead role。",
+"w": "lead role"
+},
+{
+"ja": "祈り",
+"note": "ポストの題名の「祈り」。prayers は複数形。",
+"w": "prayer"
+},
+{
+"ja": "届く・とどく",
+"note": "ポストの「届かなくても」は don't reach you。",
+"w": "reach"
+},
+{
+"ja": "公開される・始まる",
+"note": "映画が「公開される」は open（ポストの「公開」）。",
+"w": "open"
+},
+{
+"ja": "両方・2人とも",
+"note": "both of them ＝ 2人とも。ポストの「W初主演」は、2人がどちらも初めての主演ということ。",
+"w": "both"
+}
+]
+},
+{
 "added": "2026-11-16T00:00",
 "addedAt": "2026-11-16T08:02",
 "cat": "movie",
@@ -415,6 +1681,224 @@ window.LESSONS = [
 "ja": "それでもまだ",
 "note": "ポストの「回を重ねても」のあとの「まだ裏話が」は、there were still ～ の still で表せます。",
 "w": "still"
+}
+]
+},
+{
+"added": "2026-11-15T21:06",
+"addedAt": "2026-11-16T14:50",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a celebration illustration for penguinbox": "ペンギンボックスさんへのお祝いイラスト",
+"a celebration illustration for penguinbox is also": "ペンギンボックスさんへのお祝いイラストも〜",
+"a second movie of odekake kozame": "『おでかけ子ザメ』の映画2作目",
+"a second movie of odekake kozame will be": "『おでかけ子ザメ』の映画2作目が〜される",
+"a teaser trailer and a teaser visual": "特報映像とティザービジュアル",
+"a teaser trailer and a teaser visual are": "特報映像とティザービジュアルが〜",
+"again": "また",
+"also": "〜も",
+"and": "そして",
+"are": "〜です（複数）",
+"at": "〜で",
+"be": "〜される・〜になる",
+"can": "〜できる",
+"celebration": "お祝い",
+"celebration illustration": "お祝いイラスト",
+"feature-length": "長編の",
+"film": "映画作品",
+"first": "最初の",
+"first movie": "第1弾の映画",
+"for": "〜への",
+"happy": "うれしい",
+"illustration": "イラスト",
+"is": "〜です",
+"it": "それ",
+"kozame": "子ザメ",
+"made": "作られた（makeの過去分詞）",
+"meet": "会う",
+"movie": "映画",
+"movie theater": "映画館",
+"now": "今",
+"odekake": "おでかけ",
+"of": "〜の",
+"out": "公開されて",
+"penguinbox": "ペンギンボックス",
+"penguinbox is very happy that we can meet": "ペンギンボックスさんは、私たちが会えてとてもうれしい",
+"penguinbox is very happy that we can meet at the movie theater": "ペンギンボックスさんは、映画館で会えてとてもうれしい",
+"second": "2番目の",
+"second movie": "2作目の映画",
+"streaming": "配信中",
+"teaser": "ティザー（予告）",
+"teaser trailer": "特報映像",
+"that": "〜ということ",
+"the": "その",
+"the first movie": "第1弾の映画",
+"the first movie is": "第1弾の映画は〜",
+"the movie theater": "映画館",
+"theater": "映画館",
+"this": "この",
+"this time": "今回",
+"this time it will be": "今回は〜になる",
+"this time it will be the first": "今回は初めての〜になる",
+"time": "回・とき",
+"trailer": "予告・特報映像",
+"very": "とても",
+"visual": "ビジュアル",
+"we": "私たち",
+"will": "〜するだろう"
+},
+"grad": [
+{
+"q1": "『おでかけ子ザメ』の {second movie} が制作されることになりました。",
+"q2": "{A second movie of Odekake Kozame} が制作されることになりました。",
+"q3": "{A second movie of Odekake Kozame will be} 作られます。"
+},
+{
+"q1": "{This time}、初めての長編 {film} になります。",
+"q2": "{This time, it will be} 初めての長編 {film.}",
+"q3": "{This time, it will be the first} 長編 {film.}"
+},
+{
+"q1": "{Penguinbox} さんは、また {the movie theater} で出会えるのがとてもうれしいです。",
+"q2": "{Penguinbox is very happy that we can meet} また {the movie theater} で。",
+"q3": "{Penguinbox is very happy that we can meet at the movie theater} また。"
+},
+{
+"q1": "{teaser trailer} とティザー {visual} が公開されています。",
+"q2": "{A teaser trailer and a teaser visual} が公開されています。",
+"q3": "{A teaser trailer and a teaser visual are} 公開中。"
+},
+{
+"q1": "{Penguinbox} 先生への {celebration illustration} も公開されています。",
+"q2": "{A celebration illustration for Penguinbox} も公開されています。",
+"q3": "{A celebration illustration for Penguinbox is also} 公開中。"
+},
+{
+"q1": "{The first movie} の配信が始まっています。",
+"q2": "{The first movie} は 今 {streaming} です。",
+"q3": "{The first movie is} 今 {streaming.}"
+}
+],
+"grammar": {
+"body": "〈be動詞 ＋ now ＋ 〜ing〉で「今〜している最中」を表します。「配信中」は is now streaming と言えます。",
+"ex": [
+{
+"en": "The movie is now playing in theaters.",
+"ja": "その映画は今、映画館で上映中です。"
+},
+{
+"en": "The anime is now showing on TV.",
+"ja": "そのアニメは今、テレビで放送中です。"
+}
+],
+"title": "is now ～ing「今〜しています」"
+},
+"id": "20261115-kozame-movie2",
+"level": 1,
+"lines": [
+{
+"en": "A second movie of Odekake Kozame will be made.",
+"ja": "『おでかけ子ザメ』の映画の2作目が制作されることになりました。",
+"mix": "『おでかけ子ザメ』の {movie} の2作目が制作されることになりました。"
+},
+{
+"en": "This time, it will be the first feature-length film.",
+"ja": "今回は、初めての長編作品になります。",
+"mix": "今回は、初めての長編 {film} になります。"
+},
+{
+"en": "Penguinbox is very happy that we can meet at the movie theater again.",
+"ja": "ペンギンボックスさんは、また映画館で出会えるのがとてもうれしいです。",
+"mix": "ペンギンボックスさんは、また {movie theater} で出会えるのがとてもうれしいです。"
+},
+{
+"en": "A teaser trailer and a teaser visual are out.",
+"ja": "特報映像とティザービジュアルが公開されています。",
+"mix": "{teaser trailer} とティザービジュアルが公開されています。"
+},
+{
+"en": "A celebration illustration for Penguinbox is also out.",
+"ja": "ペンギンボックス先生へのお祝いイラストも公開されています。",
+"mix": "ペンギンボックス先生への {celebration} イラストも公開されています。"
+},
+{
+"en": "The first movie is now streaming.",
+"ja": "映画の第1弾の配信が始まっています。",
+"mix": "{first movie} の配信が始まっています。"
+}
+],
+"post": {
+"account": "Penguinbox1",
+"date": "2026-11-15",
+"likes": 1250,
+"name": "ペンギンボックス@映画2弾🍿長編コミック発売",
+"url": "https://x.com/Penguinbox1/status/2121937816330571874"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"短い作品",
+"実写の作品",
+"初めての長編作品"
+],
+"q": "2作目の映画は、どんな作品ですか？",
+"why": "2文目に the first feature-length film とあります。"
+},
+{
+"a": 0,
+"choices": [
+"特報映像",
+"配信",
+"お祝い"
+],
+"q": "teaser trailer の意味は？",
+"why": "teaser trailer は公開前に出す短い宣伝映像です。"
+},
+{
+"a": 1,
+"choices": [
+"stream",
+"streaming",
+"streamed"
+],
+"q": "The first movie is now ___.",
+"why": "is now のあとは 〜ing の形にします。"
+}
+],
+"summary": "『おでかけ子ザメ』の映画2作目の制作が決まりました。今回は初めての長編作品です。特報映像とティザービジュアルが公開され、映画第1弾の配信も始まっています。",
+"talk": {
+"hint": "I want to see ___.",
+"ja": "映画館に行くのは好きですか？ 何を見たいですか？",
+"q": "Do you like going to the movie theater? What do you want to see?"
+},
+"title": "『おでかけ子ザメ』映画2作目が制作決定、初の長編",
+"words": [
+{
+"ja": "特報・予告のような短い宣伝",
+"note": "ポストの「特報映像」は teaser trailer、「ティザービジュアル」は teaser visual。",
+"w": "teaser"
+},
+{
+"ja": "長編の",
+"note": "ポストの「長編作品」は feature-length film。",
+"w": "feature-length"
+},
+{
+"ja": "映画館",
+"note": "ポストの「映画館」。アメリカ英語では movie theater と言います。",
+"w": "theater"
+},
+{
+"ja": "お祝い",
+"note": "ポストの「お祝いイラスト」の「お祝い」。",
+"w": "celebration"
+},
+{
+"ja": "配信（ストリーミング）",
+"note": "ポストの「配信開始」は started streaming とも言えます。",
+"w": "streaming"
 }
 ]
 },
@@ -1301,6 +2785,210 @@ window.LESSONS = [
 "ja": "弟",
 "note": "ポストの「弟」は a younger brother。",
 "w": "younger brother"
+}
+]
+},
+{
+"added": "2026-11-15T16:10",
+"addedAt": "2026-11-16T14:50",
+"cat": "anime",
+"gloss": {
+"1 000 times": "1,000倍",
+"8 gb": "8GB",
+"a": "1つの",
+"a gb": "1GB",
+"a gb is about 1 000 times": "1GBはだいたい1,000倍",
+"a main memory of 8 mb": "8MBのメインメモリ",
+"about": "〜について",
+"about 1 000 times": "だいたい1,000倍",
+"about a main memory of 8 mb": "8MBのメインメモリについて",
+"an": "1つの",
+"an mb": "1MB",
+"big": "大きい",
+"big but it is enough": "大きくないが十分だ",
+"bigger": "もっと大きい",
+"but": "でも",
+"but it is enough": "でも十分だ",
+"different": "ちがう",
+"enough": "十分な",
+"fan": "ファン",
+"fern": "フェルン（人名）",
+"fern says 8 gb": "フェルンは8GBについて言う",
+"fern says 8 gb is not": "フェルンは8GBは〜ない",
+"fern the unit": "フェルン、単位",
+"frieren": "フリーレン",
+"gb": "GB（ギガバイト）",
+"is": "〜です",
+"it": "それ",
+"joke": "ジョーク・ネタ",
+"joke about frieren": "フリーレンについてのネタ",
+"kvaal": "クヴァール（人名）",
+"main": "主な",
+"main memory": "メインメモリ",
+"mb": "MB（メガバイト）",
+"memory": "メモリ・記憶",
+"not": "〜ない",
+"of": "〜の",
+"says": "言う",
+"short": "短い",
+"short joke": "短いネタ",
+"talks": "話す",
+"than": "〜より",
+"than an mb": "1MBより",
+"the": "その",
+"the unit": "単位",
+"then": "そのあと",
+"then frieren": "そのあとフリーレンが",
+"then frieren says fern the unit is": "そのあとフリーレンが「フェルン、単位は」と言う",
+"this": "これ",
+"this is a short": "これは短い",
+"this is a short joke": "これは短いネタです",
+"times": "〜倍",
+"unit": "単位",
+"very": "とても"
+},
+"grad": [
+{
+"q1": "これは、{Frieren} についてのファンの {short joke} です。",
+"q2": "{This is a short joke} about {Frieren}、ファンの。",
+"q3": "{This is a short} ファン {joke about Frieren.}"
+},
+{
+"q1": "{Kvaal} は、8MBの {main memory} の話をします。",
+"q2": "{Kvaal} は {a main memory of 8 MB} の話をします。",
+"q3": "{Kvaal} 話す {about a main memory of 8 MB.}"
+},
+{
+"q1": "フェルンは、{8 GB} はあまり大きくないけれど {enough} だ、と言います。",
+"q2": "{Fern says 8 GB} は大きくない、{but it is enough}。",
+"q3": "{Fern says 8 GB is not} あまり {big, but it is enough.}"
+},
+{
+"q1": "そのあとフリーレンが「{Fern}、{the unit} が違うよ」と言います。",
+"q2": "{Then Frieren} が「{Fern, the unit} が違うよ」と言います。",
+"q3": "{Then Frieren says, Fern, the unit is} 違う。"
+},
+{
+"q1": "1GBは、{an MB} のだいたい {1,000 times} の大きさです。",
+"q2": "{A GB} は {about 1,000 times} {than an MB} 大きい。",
+"q3": "{A GB is about 1,000 times} 大きい {than an MB.}"
+}
+],
+"grammar": {
+"body": "not very ＋ 形容詞で「あまり〜ない」「それほど〜ではない」になります。not が入るので、完全に否定するのではなく、少しやわらげた言い方です。",
+"ex": [
+{
+"en": "This bag is not very heavy.",
+"ja": "このかばんはあまり重くありません。"
+},
+{
+"en": "The movie was not very long.",
+"ja": "その映画はあまり長くありませんでした。"
+}
+],
+"title": "not very ～「あまり〜ない」"
+},
+"id": "20261115-frieren-unit-joke",
+"level": 2,
+"lines": [
+{
+"en": "This is a short fan joke about Frieren.",
+"ja": "これは、フリーレンについてのファンの短いネタです。",
+"mix": "これは、フリーレンについてのファンの {short} {joke} です。"
+},
+{
+"en": "Kvaal talks about a main memory of 8 MB.",
+"ja": "クヴァールは、8MBのメインメモリの話をします。",
+"mix": "クヴァールは、8MBの {main memory} の話をします。"
+},
+{
+"en": "Fern says 8 GB is not very big, but it is enough.",
+"ja": "フェルンは、8GBはあまり大きくないけれど十分だ、と言います。",
+"mix": "フェルンは、8GBはあまり大きくないけれど {enough} だ、と言います。"
+},
+{
+"en": "Then Frieren says, \"Fern, the unit is different.\"",
+"ja": "そのあとフリーレンが「フェルン、単位が違うよ」と言います。",
+"mix": "そのあとフリーレンが「フェルン、{unit} が違うよ」と言います。"
+},
+{
+"en": "A GB is about 1,000 times bigger than an MB.",
+"ja": "1GBは、1MBのだいたい1,000倍の大きさです。",
+"mix": "1GBは、1MBのだいたい {1,000 times} の大きさです。"
+}
+],
+"post": {
+"account": "nagise",
+"date": "2026-11-15",
+"likes": 1201,
+"name": "なぎせ ゆうき",
+"url": "https://x.com/nagise/status/2121863329530712126"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"メモリが足りない",
+"単位が違う",
+"もう寝よう"
+],
+"q": "最後にフリーレンは何と言いますか？",
+"why": "4文目に the unit is different とあります。"
+},
+{
+"a": 0,
+"choices": [
+"単位",
+"記憶",
+"速さ"
+],
+"q": "unit の意味は？",
+"why": "MB や GB のような大きさの「単位」のことです。"
+},
+{
+"a": 1,
+"choices": [
+"no",
+"not",
+"don't"
+],
+"q": "This bag is ___ very heavy.（あまり重くない）",
+"why": "be動詞のあとは not。not very ＋ 形容詞で「あまり〜ない」です。"
+}
+],
+"series": "frieren",
+"summary": "『葬送のフリーレン』のファンが作った、短い会話のパロディです。クヴァールは8MB、フェルンは8GBのメモリの話をして、最後にフリーレンが「単位が違うよ」と言います。ネタ（ジョーク）として楽しむポストです。",
+"talk": {
+"hint": "Yes, I like ___. / I want to make ___.",
+"ja": "アニメのファンのネタは好きですか？",
+"q": "Do you like fan jokes about anime?"
+},
+"title": "フリーレンのファンのネタ「単位が違うよ」",
+"words": [
+{
+"ja": "ジョーク・ネタ",
+"note": "ポストの「ネタ」。ファンが笑うために作った短い話です。",
+"w": "joke"
+},
+{
+"ja": "メインメモリ",
+"note": "コンピューターが作業中のデータを置く場所。ポストの「メインメモリ」。",
+"w": "main memory"
+},
+{
+"ja": "単位",
+"note": "ポストの「単位が違う」は the unit is different。MB や GB が単位です。",
+"w": "unit"
+},
+{
+"ja": "十分な",
+"note": "ポストの「十分です」。it is enough ＝ それで足りる。",
+"w": "enough"
+},
+{
+"ja": "ちがう",
+"note": "ポストの「違うよ」は is different。",
+"w": "different"
 }
 ]
 },
