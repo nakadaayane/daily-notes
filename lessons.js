@@ -1,5 +1,644 @@
 window.LESSONS = [
 {
+"added": "2026-11-17T14:00",
+"addedAt": "2026-11-17T14:43",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a collab campaign between joyfull and": "ジョイフルと〜のコラボキャンペーン",
+"a collab campaign between joyfull and haikyu has": "ジョイフルとハイキューのコラボキャンペーンが〜している",
+"a free gift": "景品",
+"a free gift will be": "景品が〜される",
+"a social media campaign": "SNS企画",
+"a social media campaign will also be held and people can": "SNS企画も開催され、人々は〜できる",
+"also": "〜も",
+"an": "ひとつの",
+"an order of the selected menu items": "対象メニューの注文",
+"and": "と・そして",
+"appear": "登場する",
+"be": "〜される（be＋過去分詞）",
+"been": "〜された（beの過去分詞）",
+"between": "〜のあいだの",
+"campaign": "キャンペーン",
+"can": "〜できる",
+"collab": "コラボ",
+"collab campaign": "コラボキャンペーン",
+"collab-only": "コラボ限定の",
+"collab-only menu items": "コラボ限定のメニュー",
+"collab-only menu items will": "コラボ限定のメニューが〜する",
+"confirmed": "決定した",
+"free": "無料の",
+"gift": "贈り物・景品",
+"given": "与えられる（giveの過去分詞）",
+"goods": "グッズ・品物",
+"haikyu": "ハイキュー",
+"has": "〜している（現在完了）",
+"held": "開催される（holdの過去分詞）",
+"items": "品（複数）",
+"joyfull": "ジョイフル",
+"limited": "限定の",
+"limited goods": "限定グッズ",
+"media": "メディア",
+"menu": "メニュー",
+"menu items": "メニューの品",
+"of": "〜の",
+"order": "注文",
+"people": "人々",
+"selected": "選ばれた・対象の",
+"social": "社会的な",
+"social media": "SNS",
+"the": "その",
+"will": "〜する予定だ",
+"win": "当てる・勝ち取る",
+"with": "〜で・〜とともに",
+"with an order of the selected menu items": "対象メニューの注文で"
+},
+"grad": [
+{
+"q1": "{Joyfull} と『ハイキュー!!』の {collab campaign} の開催が決定しました。",
+"q2": "{A collab campaign between Joyfull and} 『ハイキュー!!』の開催が決定しました。",
+"q3": "{A collab campaign between Joyfull and Haikyu!! has} 決定されました。"
+},
+{
+"q1": "コラボ限定の {menu items} が登場します。",
+"q2": "{Collab-only menu items} が登場します。",
+"q3": "{Collab-only menu items will} 登場する。"
+},
+{
+"q1": "対象 {menu items} の {order} で、{gift} がプレゼントされます。",
+"q2": "{A free gift} が、{an order of the selected menu items} で、プレゼントされます。",
+"q3": "{A free gift will be} プレゼントされる {with an order of the selected menu items.}"
+},
+{
+"q1": "{social media} 企画も開催され、{limited goods} が当たります。",
+"q2": "{A social media campaign} も開催され、{limited goods} が当たります。",
+"q3": "{A social media campaign will also be held, and people can} 当たる {limited goods.}"
+}
+],
+"grammar": {
+"body": "これから「〜される」と言うときは、will be ＋ 過去分詞 を使います。「だれが」するかより、「何が」されるかを言いたいときに便利です。",
+"ex": [
+{
+"en": "The movie will be shown next week.",
+"ja": "その映画は来週上映されます。"
+},
+{
+"en": "A new menu will be sold in December.",
+"ja": "新しいメニューが12月に販売されます。"
+}
+],
+"title": "will be ＋ 過去分詞「〜される予定だ」"
+},
+"id": "20261117-haikyu-joyful-collab",
+"level": 2,
+"lines": [
+{
+"en": "A collab campaign between Joyfull and Haikyu!! has been confirmed.",
+"ja": "ジョイフルと『ハイキュー!!』のコラボキャンペーンの開催が決定しました。",
+"mix": "ジョイフルと『ハイキュー!!』の {collab campaign} の開催が決定しました。"
+},
+{
+"en": "Collab-only menu items will appear.",
+"ja": "コラボ限定のメニューが登場します。",
+"mix": "コラボ限定の {menu items} が登場します。"
+},
+{
+"en": "A free gift will be given with an order of the selected menu items.",
+"ja": "対象メニューの注文で、ノベルティがプレゼントされます。",
+"mix": "対象メニューの {order} で、{gift} がプレゼントされます。"
+},
+{
+"en": "A social media campaign will also be held, and people can win limited goods.",
+"ja": "SNS企画も開催され、限定グッズが当たります。",
+"mix": "SNS企画も開催され、{limited goods} が当たります。"
+}
+],
+"post": {
+"account": "animehaikyu_com",
+"date": "2026-11-17",
+"likes": 2854,
+"name": "ハイキュー!!公式",
+"url": "https://x.com/animehaikyu_com/status/2122555330815316330"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"ノベルティ",
+"映画のチケット",
+"ジョイフルの店"
+],
+"q": "対象のメニューを注文すると、何がもらえますか？",
+"why": "3文目に A free gift will be given with an order とあります。"
+},
+{
+"a": 1,
+"choices": [
+"無料の",
+"限定の",
+"大きい"
+],
+"q": "limited goods の limited の意味は？",
+"why": "limited は「限定の」。limited goods で「限定グッズ」です。"
+},
+{
+"a": 2,
+"choices": [
+"is",
+"been",
+"be"
+],
+"q": "A free gift will ___ given.（プレゼントされます）",
+"why": "will のあとは動詞の元の形なので、will be ＋ 過去分詞 になります。"
+}
+],
+"series": "haikyu",
+"summary": "ジョイフルと『ハイキュー!!』のコラボキャンペーンの開催が決まったという公式のお知らせです。コラボ限定メニューが登場し、対象メニューを注文するとノベルティがもらえます。限定グッズが当たるSNS企画もあり、ハッシュタグは #繋げジョイフル飯 です。",
+"talk": {
+"hint": "I want to eat ___.",
+"ja": "ジョイフルで何を食べたいですか？",
+"q": "What do you want to eat at Joyfull?"
+},
+"title": "ジョイフル×ハイキュー!!コラボキャンペーン開催決定",
+"words": [
+{
+"ja": "コラボ",
+"note": "ポストの「コラボ」は collab（collaboration の短い形）。",
+"w": "collab"
+},
+{
+"ja": "景品・プレゼント",
+"note": "ポストの「ノベルティ」は free gift。英語の novelty は「めずらしい物」の意味もあります。",
+"w": "free gift"
+},
+{
+"ja": "開催する",
+"note": "ポストの「開催」は、イベントが主語なら will be held（開催される）。",
+"w": "hold"
+},
+{
+"ja": "限定の",
+"note": "ポストの「限定グッズ」は limited goods。",
+"w": "limited"
+},
+{
+"ja": "ハッシュタグ",
+"note": "ポストの #繋げジョイフル飯 が the hashtag。",
+"w": "hashtag"
+}
+]
+},
+{
+"added": "2026-11-17T08:00",
+"addedAt": "2026-11-17T14:43",
+"cat": "movie",
+"gloss": {
+"2027 with spider-man": "2027年をスパイダーマンから",
+"account": "アカウント",
+"again": "もう一度",
+"again in theaters": "もう一度映画館で",
+"also": "さらに",
+"and": "と",
+"back": "戻って",
+"be": "〜される",
+"before": "以前",
+"brand": "ブランド（作品名）",
+"coming": "来る",
+"day": "日（作品名）",
+"excitement": "熱狂",
+"footage": "映像",
+"from": "〜の",
+"in": "〜で",
+"include": "含む・加わる",
+"is": "〜している",
+"it": "それ（映画）",
+"it also suggests": "さらに〜と呼びかける",
+"it will open on january 1": "1月1日に公開される",
+"it will open on january 1 new year's day in theaters": "元日の1月1日に映画館で公開される",
+"january": "1月",
+"january 1": "1月1日",
+"japanese": "日本の",
+"nationwide": "全国で",
+"new": "新しい",
+"new footage": "新規映像",
+"new footage and some surprises": "新規映像といくつかのサプライズ",
+"official": "公式の",
+"on": "〜に（日付）",
+"open": "公開される",
+"post": "ポスト",
+"says": "伝えている",
+"shown": "上映される",
+"some": "いくつかの",
+"special": "特別な",
+"special version": "スペシャル・バージョン",
+"spider-man": "スパイダーマン",
+"spider-man brand new day": "スパイダーマン：ブランド・ニュー・デイ",
+"starting": "始めること",
+"suggests": "呼びかける",
+"surprises": "サプライズ",
+"that": "〜ということ",
+"the": "その",
+"the official japanese account says that": "日本の公式アカウントは〜と伝える",
+"the official japanese account says that spider-man brand new day will be": "日本の公式は、『ブランド・ニュー・デイ』が〜されると伝える",
+"the post": "そのポスト",
+"the post says that the excitement": "ポストは、熱狂が〜と言う",
+"the post says that the excitement from before is": "ポストは、あの熱狂が〜と言う",
+"theaters": "映画館",
+"this": "この",
+"this special version": "このスペシャル・バージョン",
+"this special version will": "このスペシャル版は〜する",
+"version": "版・バージョン",
+"will": "〜する予定",
+"with": "〜から・〜と",
+"year's": "年の"
+},
+"grad": [
+{
+"q1": "日本の公式 {account} は、{Spider-Man: Brand New Day} がもう一度 {theaters} で上映されると伝えています。",
+"q2": "{The official Japanese account says that} {Spider-Man: Brand New Day} がもう一度 {theaters} で上映される。",
+"q3": "{The official Japanese account says that Spider-Man: Brand New Day will be} 上映される {again in theaters.}"
+},
+{
+"q1": "{January 1} の元日に、全国の {theaters} で公開されます。",
+"q2": "{It will open on January 1,} 元日に、全国の {theaters} で。",
+"q3": "{It will open on January 1, New Year's Day, in theaters} 全国。"
+},
+{
+"q1": "この {special version} には、新しい {footage} と {surprises} が加わります。",
+"q2": "{This special version} には、{new footage} と {surprises} が加わります。",
+"q3": "{This special version will} 加わる {new footage and some surprises.}"
+},
+{
+"q1": "{The post} は、あの {excitement} がまた戻ってくると言っています。",
+"q2": "{The post says that the excitement} が、また戻ってくる。",
+"q3": "{The post says that the excitement from before is} 戻ってくる。"
+},
+{
+"q1": "さらに、{2027}年は {Spider-Man} から始めようと呼びかけています。",
+"q2": "{It also suggests} {2027}年は {Spider-Man} から始める。",
+"q3": "{It also suggests} 始める {2027 with Spider-Man.}"
+}
+],
+"grammar": {
+"body": "suggest のあとには、動詞の ing 形（動名詞）を置きます。to 〜 は使いません。「〜から始めよう」のような呼びかけを言うときに便利です。",
+"ex": [
+{
+"en": "I suggest going early.",
+"ja": "早めに行くのはどうかな。"
+},
+{
+"en": "She suggests watching the movie together.",
+"ja": "彼女は、いっしょに映画を見ようと言っています。"
+}
+],
+"title": "suggest ＋ ～ing「〜してはどうかと提案する」"
+},
+"id": "20261117-spiderman-bnd-newyear",
+"level": 3,
+"lines": [
+{
+"en": "The official Japanese account says that Spider-Man: Brand New Day will be shown again in theaters.",
+"ja": "日本の公式アカウントは、『スパイダーマン：ブランド・ニュー・デイ』がもう一度映画館で上映されると伝えています。",
+"mix": "日本の公式アカウントは、『スパイダーマン：ブランド・ニュー・デイ』がもう一度 {theaters} で上映されると伝えています。"
+},
+{
+"en": "It will open on January 1, New Year's Day, in theaters nationwide.",
+"ja": "1月1日の元日に、全国の映画館で公開されます。",
+"mix": "1月1日の元日に、全国の {theaters} で公開されます。"
+},
+{
+"en": "This special version will include new footage and some surprises.",
+"ja": "このスペシャル・バージョンには、新規映像といくつかのサプライズが加わります。",
+"mix": "このスペシャル・バージョンには、新規 {footage} といくつかのサプライズが加わります。"
+},
+{
+"en": "The post says that the excitement from before is coming back.",
+"ja": "ポストは、あの熱狂がまた戻ってくると言っています。",
+"mix": "ポストは、あの {excitement} がまた戻ってくると言っています。"
+},
+{
+"en": "It also suggests starting 2027 with Spider-Man.",
+"ja": "さらに、2027年はスパイダーマンから始めようと呼びかけています。",
+"mix": "さらに、2027年は {Spider-Man} から始めようと呼びかけています。"
+}
+],
+"post": {
+"account": "SpidermanMovieJ",
+"date": "2026-11-17",
+"likes": 19628,
+"name": "SpidermanMovieJ",
+"url": "https://x.com/SpidermanMovieJ/status/2122464869031223781"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"12月25日",
+"11月27日",
+"1月1日"
+],
+"q": "この映画の公開日は？",
+"why": "2文目に on January 1, New Year's Day とあります。"
+},
+{
+"a": 0,
+"choices": [
+"映像",
+"脚本",
+"衣装"
+],
+"q": "footage の意味は？",
+"why": "new footage は「新規映像」です。"
+},
+{
+"a": 1,
+"choices": [
+"start",
+"starting",
+"to starting"
+],
+"q": "The post suggests ___ 2027 with Spider-Man.（始めよう）",
+"why": "suggest のあとは ～ing 形です。"
+}
+],
+"summary": "日本の公式が、映画『スパイダーマン：ブランド・ニュー・デイ』が新規映像といくつかのサプライズを加えたスペシャル・バージョンで、1月1日＜新年＞から全国の映画館で公開されると伝えたポストです。2027年はスパイダーマンから始めようと呼びかけています。",
+"talk": {
+"hint": "I want to see ___ again because ___.",
+"ja": "大きなスクリーンでもう一度見たいスパイダーマンの映画は？",
+"q": "Which Spider-Man movie do you want to see again on the big screen?"
+},
+"title": "『スパイダーマン：ブランド・ニュー・デイ』元日にスペシャル版で再上映",
+"words": [
+{
+"ja": "映像",
+"note": "ポストの「新規映像」は new footage。footage は数えない名詞なので a や -s をつけません。",
+"w": "footage"
+},
+{
+"ja": "サプライズ・驚き",
+"note": "ポストの「サプライズ」は surprise。いくつかなら some surprises。",
+"w": "surprise"
+},
+{
+"ja": "版・バージョン",
+"note": "ポストの「スペシャル・バージョン」は special version。",
+"w": "version"
+},
+{
+"ja": "全国で",
+"note": "ポストの「全国の映画館」は theaters nationwide。",
+"w": "nationwide"
+},
+{
+"ja": "熱狂・わくわく",
+"note": "ポストの「あの熱狂」は the excitement。",
+"w": "excitement"
+}
+]
+},
+{
+"added": "2026-11-17T07:00",
+"addedAt": "2026-11-17T14:43",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a special talk between takumi kitamura and motoki ohmori": "北村匠海さんと大森元貴さんのスペシャル対談",
+"about": "〜について",
+"according": "〜によると",
+"according to another official post": "別の公式ポストによると",
+"according to another official post the movie will": "別の公式ポストによると映画は〜する",
+"account": "アカウント",
+"also": "さらに",
+"and": "と",
+"another": "別の",
+"before": "前",
+"behind": "裏の",
+"between": "〜の間の",
+"birth": "誕生",
+"connection": "つながり",
+"deep": "深い",
+"deep connection": "深いつながり",
+"feelings": "想い・気持ち",
+"film": "映画",
+"from": "〜から",
+"hanashi": "話（作品名）",
+"have": "持っている",
+"hon": "本（曲名）",
+"hon to suisei": "本と彗星（曲名）",
+"into": "〜の中へ",
+"into the work": "作品の中へ",
+"kimi": "君（作品名）",
+"kitamura": "北村（人名）",
+"motoki": "元貴（人名）",
+"motoki ohmori": "大森元貴",
+"movie": "映画",
+"no": "の（作品名）",
+"november": "11月",
+"of": "〜の",
+"of the film": "その映画について",
+"of the theme song hon to suisei": "主題歌「本と彗星」の",
+"official": "公式の",
+"official post": "公式ポスト",
+"ohmori": "大森（人名）",
+"on": "〜に（日付）",
+"on november 27": "11月27日に",
+"open": "公開される",
+"post": "ポスト",
+"put": "込めた",
+"shared": "公開した",
+"shows": "見せている",
+"song": "歌",
+"special": "特別な",
+"special talk": "スペシャル対談",
+"story": "話・秘話",
+"suisei": "彗星（曲名）",
+"takumi": "匠海（人名）",
+"takumi kitamura": "北村匠海",
+"talk": "対談・話",
+"talked": "話した",
+"that": "〜という（関係詞）",
+"the": "その",
+"the film": "その映画",
+"the movie will": "映画は〜する予定",
+"the official account of the movie kimi no hanashi": "映画『君の話』の公式アカウント",
+"the talk": "その対談",
+"the talk shows the feelings": "対談は想いを見せる",
+"the talk shows the feelings that they": "対談は2人が〜した想いを見せる",
+"the theme song hon to suisei": "主題歌「本と彗星」",
+"the two have a deep connection": "2人には深いつながりがある",
+"the two have a deep connection from": "2人には〜からの深いつながりがある",
+"theme": "テーマ",
+"theme song": "主題歌",
+"they": "2人は",
+"they also told the story behind": "2人は〜の裏話も語った",
+"they also told the story behind the": "2人は〜の裏話も語った",
+"they talked about": "2人は〜について話した",
+"they talked about what they": "2人は自分たちが〜と話した",
+"this": "この",
+"this film": "この映画",
+"thought": "思った",
+"to": "と（曲名）",
+"told": "語った",
+"two": "2人",
+"what": "〜こと",
+"will": "〜する予定",
+"work": "作品"
+},
+"grad": [
+{
+"q1": "映画『君の話』の公式が、{Takumi Kitamura} さんと {Motoki Ohmori} さんの {special talk} を公開しました。",
+"q2": "{The official account of the movie Kimi no Hanashi} が、{Takumi Kitamura} さんと {Motoki Ohmori} さんの {special talk} を公開。",
+"q3": "{The official account of the movie Kimi no Hanashi} 公開した {a special talk between Takumi Kitamura and Motoki Ohmori.}"
+},
+{
+"q1": "2人は、この {film} の前から {deep connection} があります。",
+"q2": "{The two have a deep connection} 、この {film} の前から。",
+"q3": "{The two have a deep connection from} 前 {this film.}"
+},
+{
+"q1": "2人は、{the film} の感想を語り合いました。",
+"q2": "{They talked about} {the film} の感想。",
+"q3": "{They talked about what they} 思った {of the film.}"
+},
+{
+"q1": "2人は、{theme song} {Hon to Suisei} の誕生秘話も語りました。",
+"q2": "{They also told the story behind} 誕生、{the theme song, Hon to Suisei.}",
+"q3": "{They also told the story behind the} 誕生 {of the theme song, Hon to Suisei.}"
+},
+{
+"q1": "{The talk} では、作品に込めた {feelings} が語られています。",
+"q2": "{The talk shows the feelings} 作品に込めた。",
+"q3": "{The talk shows the feelings that they} 込めた {into the work.}"
+},
+{
+"q1": "別の {official post} によると、{movie} は11月27日に公開されます。",
+"q2": "{According to another official post,} {the movie will} 公開される。",
+"q3": "{According to another official post, the movie will} 公開される {on November 27.}"
+}
+],
+"grammar": {
+"body": "put A into B は「AをBの中に入れる」という意味です。「想いを作品に込める」のように、気持ちを入れるときにも使います。",
+"ex": [
+{
+"en": "Put the milk into the cup.",
+"ja": "牛乳をカップに入れてください。"
+},
+{
+"en": "She puts her love into her songs.",
+"ja": "彼女は歌に愛を込めています。"
+}
+],
+"title": "put A into B「AをBに込める・入れる」"
+},
+"id": "20261117-kimi-no-hanashi-talk",
+"level": 3,
+"lines": [
+{
+"en": "The official account of the movie Kimi no Hanashi shared a special talk between Takumi Kitamura and Motoki Ohmori.",
+"ja": "映画『君の話』の公式が、北村匠海さんと大森元貴さんのスペシャル対談を公開しました。",
+"mix": "映画『君の話』の公式が、北村匠海さんと大森元貴さんの {special talk} を公開しました。"
+},
+{
+"en": "The two have a deep connection from before this film.",
+"ja": "2人は、この映画の前から深いつながりがあります。",
+"mix": "2人は、この映画の前から {deep connection} があります。"
+},
+{
+"en": "They talked about what they thought of the film.",
+"ja": "2人は、映画の感想を語り合いました。",
+"mix": "2人は、{film} の感想を語り合いました。"
+},
+{
+"en": "They also told the story behind the birth of the theme song, Hon to Suisei.",
+"ja": "2人は、主題歌『本と彗星』の誕生秘話も語りました。",
+"mix": "2人は、{theme song} 『本と彗星』の誕生秘話も語りました。"
+},
+{
+"en": "The talk shows the feelings that they put into the work.",
+"ja": "対談では、作品に込めた想いが語られています。",
+"mix": "対談では、作品に込めた {feelings} が語られています。"
+},
+{
+"en": "According to another official post, the movie will open on November 27.",
+"ja": "別の公式ポストによると、映画は11月27日に公開されます。",
+"mix": "別の {official post} によると、映画は11月27日に公開されます。"
+}
+],
+"post": {
+"account": "kimino__hanashi",
+"date": "2026-11-17",
+"likes": 8017,
+"name": "映画『君の話』公式",
+"url": "https://x.com/kimino__hanashi/status/2122449636493545624"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"11月20日",
+"11月27日",
+"12月5日"
+],
+"q": "映画『君の話』の公開日は？",
+"why": "最後の文に on November 27 とあります。"
+},
+{
+"a": 2,
+"choices": [
+"予告編",
+"登場人物",
+"主題歌"
+],
+"q": "theme song の意味は？",
+"why": "theme song は「主題歌」。『本と彗星』のことです。"
+},
+{
+"a": 0,
+"choices": [
+"into",
+"from",
+"at"
+],
+"q": "They put their feelings ___ the work.（作品に込める）",
+"why": "put A into B「AをBに込める」です。"
+}
+],
+"summary": "映画『君の話』の公式が、北村匠海さんと大森元貴さんのスペシャル対談を公開したと伝えたポストです。本作の前から深いつながりのある2人が、映画の感想から主題歌「本と彗星」の誕生秘話まで、作品に込めた想いを語り合いました。公開は11月27日です（別の公式ポストより）。",
+"talk": {
+"hint": "I want to talk about ___ because ___.",
+"ja": "友だちと話したい映画はどれですか？",
+"q": "Which movie do you want to talk about with a friend?"
+},
+"title": "映画『君の話』北村匠海さん×大森元貴さんのスペシャル対談",
+"words": [
+{
+"ja": "つながり",
+"note": "ポストの「深いつながり」は a deep connection。",
+"w": "connection"
+},
+{
+"ja": "対談・話",
+"note": "ポストの「スペシャル対談」は special talk。動詞なら「話す」。",
+"w": "talk"
+},
+{
+"ja": "主題歌",
+"note": "ポストの「主題歌」は theme song。",
+"w": "theme song"
+},
+{
+"ja": "誕生",
+"note": "ポストの「誕生秘話」は the story behind the birth of 〜。",
+"w": "birth"
+},
+{
+"ja": "想い・気持ち",
+"note": "ポストの「作品に込めた想い」は the feelings they put into the work。",
+"w": "feelings"
+}
+]
+},
+{
 "added": "2026-11-17T00:06",
 "addedAt": "2026-11-17T07:59",
 "cat": "movie",
@@ -517,6 +1156,229 @@ window.LESSONS = [
 "ja": "脚本",
 "note": "ポストの「脚本」は script。複数あれば scripts。",
 "w": "script"
+}
+]
+},
+{
+"added": "2026-11-16T22:39",
+"addedAt": "2026-11-17T14:43",
+"cat": "movie",
+"gloss": {
+"412 theaters": "412館",
+"a": "ひとつの",
+"a mystery": "謎",
+"a post says": "あるポストは〜と言う",
+"a post says witch on the holy night is a": "あるポストは『魔法使いの夜』は〜だと言う",
+"action": "アクション",
+"action movie": "アクション映画",
+"all": "すべての",
+"all otaku": "オタクみんな",
+"are": "〜だ",
+"but": "でも",
+"but the story details are": "でも、あらすじの詳細は〜",
+"but the story details are completely": "でも、あらすじの詳細は完全に〜",
+"completely": "完全に",
+"definitely": "絶対に",
+"details": "詳細",
+"explain": "説明する・伝える",
+"fun": "面白い・楽しい",
+"fun action movie": "面白いアクション映画",
+"fun in a theater": "映画館で面白い",
+"hidden": "隠された",
+"holy": "聖なる",
+"in": "〜で",
+"in a theater": "映画館で",
+"is": "〜だ",
+"it": "それ（映画）",
+"it without spoilers": "ネタバレなしでそれを",
+"like": "〜のような",
+"movie": "映画",
+"mystery": "謎",
+"night": "夜",
+"november": "11月",
+"november 20": "11月20日",
+"on": "〜の（作品名の一部）",
+"on november 20 in 412 theaters": "11月20日に412館で",
+"opens": "公開される・開く",
+"otaku": "オタク",
+"post": "ポスト",
+"really": "とても",
+"says": "言っている",
+"see": "見る",
+"so": "だから",
+"so it is a mystery": "だから謎だ",
+"spoilers": "ネタバレ",
+"story": "あらすじ・物語",
+"story details": "あらすじの詳細",
+"the": "その",
+"the movie": "映画",
+"the writer": "書いた人",
+"the writer says": "書いた人は〜と言う",
+"the writer says it is": "書いた人は、それは〜だと言う",
+"the writer tried to": "書いた人は〜しようとした",
+"the writer wants all otaku": "書いた人はオタクみんなに〜してほしい",
+"the writer wants all otaku to": "書いた人はオタクみんなに〜してほしい",
+"theater": "映画館",
+"theaters": "映画館（複数）",
+"this": "これ",
+"to": "〜するように",
+"tried": "〜しようとした",
+"wants": "ほしがっている",
+"witch": "魔女・魔法使い",
+"without": "〜なしで",
+"writer": "書いた人"
+},
+"grad": [
+{
+"q1": "あるポストは、『魔法使いの夜』はとても {fun} {action movie} だと言っています。",
+"q2": "{A post says} 『魔法使いの夜』は、とても {fun action movie.}",
+"q3": "{A post says Witch on the Holy Night is a} とても {fun action movie.}"
+},
+{
+"q1": "{The writer} は、{theater} で観たら絶対に面白いと言っています。",
+"q2": "{The writer says} {in a theater} で観たら絶対に面白い。",
+"q3": "{The writer says it is} 絶対に {fun in a theater.}"
+},
+{
+"q1": "書いた人は、{all otaku} に見てほしいと思っています。",
+"q2": "{The writer wants all otaku} に、見てほしい。",
+"q3": "{The writer wants all otaku to} 見る {it.}"
+},
+{
+"q1": "でも、{story details} が一切隠されていて、{mystery} だそうです。",
+"q2": "{But the story details are} 一切隠されていて、{a mystery.}",
+"q3": "{But the story details are completely} 隠されて {so it is a mystery.}"
+},
+{
+"q1": "{The writer} は、{spoilers} なしで、こんな感じで伝えようとしています。",
+"q2": "{The writer tried to} 伝える、{spoilers} なしで、こんな感じで。",
+"q3": "{The writer tried to} 伝える {it without spoilers} こんな感じで。"
+},
+{
+"q1": "{The movie} は、11月20日に412 {theaters} で公開されます。",
+"q2": "{The movie} は、{November 20} に、{412 theaters} で公開されます。",
+"q3": "{The movie} 公開される {on November 20 in 412 theaters.}"
+}
+],
+"grammar": {
+"body": "but は、前に言ったこととちがう内容をつなぐことばです。文の途中にも、But として文の頭にも置けます。",
+"ex": [
+{
+"en": "I like action movies, but I do not like horror movies.",
+"ja": "私はアクション映画が好きですが、ホラー映画は好きではありません。"
+},
+{
+"en": "It is a good movie. But it is very long.",
+"ja": "いい映画です。でも、とても長いです。"
+}
+],
+"title": "but「でも・しかし」"
+},
+"id": "20261116-mahoyo-recommend",
+"level": 2,
+"lines": [
+{
+"en": "A post says Witch on the Holy Night is a really fun action movie.",
+"ja": "あるポストは、『魔法使いの夜』はとても面白いアクション映画だと言っています。",
+"mix": "あるポストは、『魔法使いの夜』はとても {fun} アクション映画だと言っています。"
+},
+{
+"en": "The writer says it is definitely fun in a theater.",
+"ja": "書いた人は、映画館で観たら絶対に面白いと言っています。",
+"mix": "書いた人は、{theater} で観たら絶対に面白いと言っています。"
+},
+{
+"en": "The writer wants all otaku to see it.",
+"ja": "書いた人は、オタクのみんなに見てほしいと思っています。",
+"mix": "書いた人は、{otaku} のみんなに見てほしいと思っています。"
+},
+{
+"en": "But the story details are completely hidden, so it is a mystery.",
+"ja": "でも、あらすじの詳細が一切隠されていて、謎だそうです。",
+"mix": "でも、あらすじの {details} が一切隠されていて、謎だそうです。"
+},
+{
+"en": "The writer tried to explain it without spoilers like this.",
+"ja": "書いた人は、ネタバレなしで、こんな感じで伝えようとしています。",
+"mix": "書いた人は、{spoilers} なしで、こんな感じで伝えようとしています。"
+},
+{
+"en": "The movie opens on November 20 in 412 theaters.",
+"ja": "映画は、11月20日に412館で公開されます。",
+"mix": "映画は、11月20日に412 {theaters} で公開されます。"
+}
+],
+"post": {
+"account": "unichuY",
+"date": "2026-11-16",
+"likes": 3595,
+"name": "unichuY",
+"url": "https://x.com/unichuY/status/2122323567375483100"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"11月13日",
+"11月20日",
+"11月27日"
+],
+"q": "映画の公開日はいつですか？",
+"why": "最後の文に November 20 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"隠された",
+"開かれた",
+"忘れた"
+],
+"q": "hidden の意味は？",
+"why": "hidden は「隠された」。the story details are hidden で「あらすじが隠されている」です。"
+},
+{
+"a": 2,
+"choices": [
+"with",
+"for",
+"without"
+],
+"q": "The writer tried to explain it ___ spoilers.（ネタバレなしで）",
+"why": "「〜なしで」は without です。"
+}
+],
+"summary": "『魔法使いの夜』を、映画館で観たら絶対に面白いアクション映画だとすすめるポストです。あらすじの詳細が隠されているのが不思議だとしたうえで、ネタバレなしで魅力を伝えようとしています。公開は11月20日で、412館で上映されます。",
+"talk": {
+"hint": "Yes, I do because ___.",
+"ja": "『魔法使いの夜』を映画館で観たいですか？",
+"q": "Do you want to watch Witch on the Holy Night in a theater?"
+},
+"title": "ネタバレなしで伝える『魔法使いの夜』のおすすめ",
+"words": [
+{
+"ja": "ネタバレ",
+"note": "ポストの「ネタバレしないで」は without spoilers。",
+"w": "spoiler"
+},
+{
+"ja": "隠された",
+"note": "ポストの「隠してて」は、映画の側から見て hidden（隠されている）。",
+"w": "hidden"
+},
+{
+"ja": "謎・不思議なこと",
+"note": "ポストの「謎すぎる」は a mystery で表しました。",
+"w": "mystery"
+},
+{
+"ja": "絶対に・間違いなく",
+"note": "ポストの「絶対に」は definitely。",
+"w": "definitely"
+},
+{
+"ja": "オタク",
+"note": "ポストの「ヲタク」は otaku。英語でもそのまま使われます。",
+"w": "otaku"
 }
 ]
 },
@@ -1042,6 +1904,247 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-16T20:33",
+"addedAt": "2026-11-17T14:43",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a fan": "ファンが",
+"a four-panel comic about movie theater manners": "映画館のマナーについての4コマ",
+"about": "〜についての",
+"and": "そして",
+"are": "〜です",
+"be": "〜でいる",
+"be quiet during the movie": "上映中は静かに",
+"be quiet during the movie that means": "上映中は静かに。それは〜という意味",
+"bought": "買った（buyの過去形）",
+"bright": "明るい",
+"bring": "持ってくる",
+"characters": "キャラクター",
+"comic": "マンガ",
+"detective": "探偵（名探偵の）",
+"detective precure": "名探偵プリキュア",
+"device": "機器",
+"don't": "〜しないで",
+"don't bring a device": "機器を持ち込まないで",
+"don't bring a device with a": "〜のある機器を持ち込まないで",
+"don't bring in things you bought outside": "外で買った物を持ち込まないで",
+"don't bring in things you bought outside stolen things are": "外で買った物を持ち込まないで。盗んだ物は",
+"drew": "描いた（drawの過去形）",
+"during": "〜のあいだ",
+"either": "〜もまた（否定文で）",
+"elegant": "華麗な",
+"enjoy": "楽しむ",
+"fan": "ファン",
+"four-panel": "4コマの",
+"front": "前",
+"good": "よい",
+"good manners": "よいマナー",
+"in": "〜の中へ",
+"is": "〜です",
+"it": "それ",
+"it is not elegant to": "〜するのは華麗ではない",
+"keep": "守る・保つ",
+"kick": "蹴る",
+"last": "最後の",
+"light": "光",
+"manners": "マナー",
+"means": "という意味だ",
+"movie": "映画",
+"movie theater manners": "映画館のマナー",
+"not": "〜ない",
+"not elegant": "華麗ではない",
+"of": "〜の",
+"ok": "OK・よい",
+"outside": "外で",
+"panel": "コマ",
+"precure": "プリキュア",
+"quiet": "静かな",
+"says": "言っている・書いてある",
+"seat": "座席",
+"shows": "描いている・見せる",
+"stolen": "盗まれた",
+"stolen things": "盗んだ物",
+"that": "それ",
+"the": "その",
+"the characters of detective precure": "『名探偵プリキュア!!』のキャラクター",
+"the comic": "このマンガ",
+"the last panel says to keep good manners": "最後のコマは、マナーを守ってと言っている",
+"the last panel says to keep good manners and": "最後のコマは、マナーを守って〜と言っている",
+"the movie": "映画",
+"the seat in front of you": "前の座席",
+"theater": "映画館",
+"things": "物（複数）",
+"to": "〜するのは・〜すること",
+"too": "〜も",
+"with": "〜のある・〜をもった",
+"you": "あなた"
+},
+"grad": [
+{
+"q1": "ファンが、{movie theater manners} についての4コマ漫画を描きました。",
+"q2": "{A fan} が、{movie theater manners} についての4コマ漫画を描きました。",
+"q3": "{A fan} 描いた {a four-panel comic about movie theater manners.}"
+},
+{
+"q1": "この {comic} は、『名探偵プリキュア!!』の {characters} を描いています。",
+"q2": "{The comic} は、{Detective Precure!!} の {characters} を描いています。",
+"q3": "{The comic} 描いています {the characters of Detective Precure!!}"
+},
+{
+"q1": "外で買った {things} を持ち込まないで。{Stolen things} もダメです。",
+"q2": "{Don't bring in things you bought outside.} {Stolen things} もダメです。",
+"q3": "{Don't bring in things you bought outside. Stolen things are} ダメ {either.}"
+},
+{
+"q1": "前の {seat} を蹴るのは、{elegant} ではありません。",
+"q2": "{The seat in front of you} を蹴るのは、{not elegant.}",
+"q3": "{It is not elegant to} 蹴る {the seat in front of you.}"
+},
+{
+"q1": "{The movie} 中は {quiet} にしてください。あなたもですよ。",
+"q2": "{Be quiet during the movie.} あなたもですよ。",
+"q3": "{Be quiet during the movie. That means} あなた {too.}"
+},
+{
+"q1": "明るい {light} を出す {device} を持ち込まないで。",
+"q2": "{Don't bring a device} 、明るい {light} を出す。",
+"q3": "{Don't bring a device with a} 明るい {light.}"
+},
+{
+"q1": "最後の {panel} は、{good manners} を守って楽しく {movie} を観ようと言っています。",
+"q2": "{The last panel says to keep good manners} 、楽しく {the movie} を観よう。",
+"q3": "{The last panel says to keep good manners and} 楽しむ {the movie.}"
+}
+],
+"grammar": {
+"body": "「〜するのは…だ」と言うとき、It is ＋ 形容詞 ＋ to ＋ 動詞 の形を使います。It が前に来て、したいことは to のあとに置きます。",
+"ex": [
+{
+"en": "It is fun to watch movies.",
+"ja": "映画を観るのは楽しいです。"
+},
+{
+"en": "It is important to be quiet.",
+"ja": "静かにするのは大切です。"
+}
+],
+"title": "It is ＋ 形容詞 ＋ to 〜「〜するのは…だ」"
+},
+"id": "20261116-precure-theater-manners",
+"level": 1,
+"lines": [
+{
+"en": "A fan drew a four-panel comic about movie theater manners.",
+"ja": "ファンが、映画館のマナーについての4コマ漫画を描きました。",
+"mix": "ファンが、映画館の {manners} についての4コマ漫画を描きました。"
+},
+{
+"en": "The comic shows the characters of Detective Precure!!",
+"ja": "このマンガは、『名探偵プリキュア!!』のキャラクターを描いています。",
+"mix": "このマンガは、『名探偵プリキュア!!』の {characters} を描いています。"
+},
+{
+"en": "Don't bring in things you bought outside. Stolen things are not OK, either.",
+"ja": "外で買った物を持ち込まないで。盗んだ物もダメです。",
+"mix": "外で買った {things} を持ち込まないで。盗んだ物もダメです。"
+},
+{
+"en": "It is not elegant to kick the seat in front of you.",
+"ja": "前の座席を蹴るのは、華麗ではありません。",
+"mix": "前の {seat} を蹴るのは、華麗ではありません。"
+},
+{
+"en": "Be quiet during the movie. That means you, too.",
+"ja": "上映中は静かにしてください。あなたもですよ。",
+"mix": "上映中は {quiet} にしてください。あなたもですよ。"
+},
+{
+"en": "Don't bring a device with a bright light.",
+"ja": "明るい光を出す機器を持ち込まないで。",
+"mix": "明るい {light} を出す機器を持ち込まないで。"
+},
+{
+"en": "The last panel says to keep good manners and enjoy the movie.",
+"ja": "最後のコマは、マナーを守って楽しく観ようと言っています。",
+"mix": "最後の {panel} は、{manners} を守って楽しく観ようと言っています。"
+}
+],
+"post": {
+"account": "ayumuyou_",
+"date": "2026-11-16",
+"likes": 3698,
+"name": "ayumuyou_",
+"url": "https://x.com/ayumuyou_/status/2122292083457446124"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"映画館で買った物を食べよう",
+"マナーを守って楽しく観よう",
+"席を蹴って楽しく観よう"
+],
+"q": "このマンガの最後のコマは、何と言っていますか？",
+"why": "最後の文に keep good manners and enjoy the movie とあります。"
+},
+{
+"a": 2,
+"choices": [
+"明るい",
+"うるさい",
+"静かな"
+],
+"q": "quiet の意味は？",
+"why": "quiet は「静かな」。Be quiet で「お静かに」です。"
+},
+{
+"a": 0,
+"choices": [
+"to",
+"for",
+"of"
+],
+"q": "It is not elegant ___ kick the seat.（蹴るのは華麗ではない）",
+"why": "「〜するのは…だ」は It is ＋ 形容詞 ＋ to ＋ 動詞 です。"
+}
+],
+"summary": "『名探偵プリキュア!!』のキャラクターを描いたファンの4コマ漫画です。外で買った物を持ち込まない、前の席を蹴らない、静かにする、光る機器を持ち込まない、という映画館のマナーを紹介し、最後は「マナーを守って楽しく観よう」と呼びかけています。",
+"talk": {
+"hint": "I want to see ___ in a theater.",
+"ja": "映画館でどんな映画を観たいですか？",
+"q": "What movie do you want to see in a theater?"
+},
+"title": "『名探偵プリキュア!!』キャラが教える映画館のおやくそく",
+"words": [
+{
+"ja": "マナー・行儀",
+"note": "ポストの「マナー」は manners。いつも s をつけた形で使います。",
+"w": "manners"
+},
+{
+"ja": "持ち込む",
+"note": "ポストの「持ち込むな」は Don't bring in。",
+"w": "bring in"
+},
+{
+"ja": "蹴る",
+"note": "ポストの「蹴る」は kick。",
+"w": "kick"
+},
+{
+"ja": "静かな",
+"note": "ポストの「お静かに」は Be quiet。",
+"w": "quiet"
+},
+{
+"ja": "優雅な・華麗な",
+"note": "ポストの「華麗ではない」は not elegant。",
+"w": "elegant"
+}
+]
+},
+{
 "added": "2026-11-16T19:00",
 "addedAt": "2026-11-17T08:02",
 "cat": "movie",
@@ -1260,6 +2363,241 @@ window.LESSONS = [
 "ja": "監督",
 "note": "ポストの「監督・脚本」は the director and writer。",
 "w": "director"
+}
+]
+},
+{
+"added": "2026-11-16T19:00",
+"addedAt": "2026-11-17T14:43",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a black-haired student": "黒髪の生徒",
+"a boy": "男の子",
+"a girl": "女の子",
+"a scene from 2010": "2010年の場面",
+"a scene from 2010 and one from 2026": "2010年と2026年の場面",
+"a student council anime": "生徒会のアニメ",
+"about": "〜について",
+"and": "と",
+"anime": "アニメ",
+"are": "〜にいる",
+"arrangement": "並び・配置",
+"back": "後ろ姿・背中",
+"black-haired": "黒髪の",
+"both": "どちらの〜も",
+"both scenes": "どちらの場面も",
+"boy": "男の子",
+"by": "〜のとなり",
+"can": "〜できる",
+"council": "会・評議会",
+"from": "〜の（時期の）",
+"front": "手前",
+"girl": "女の子",
+"has": "持っている",
+"in": "〜に・〜で",
+"in 2010 three student council members": "2010年の生徒会の役員3人",
+"in 2026 a girl and a boy": "2026年の女の子と男の子",
+"in 2026 a girl and a boy are in a": "2026年、女の子と男の子が〜にいる",
+"is": "〜です",
+"is about a student council anime": "生徒会アニメについてだ",
+"it": "それ（ポスト）",
+"it says the anime has a traditional way": "そのアニメには伝統のやり方がある",
+"it says the anime has a traditional way of showing": "そのアニメには見せる伝統のやり方がある",
+"members": "メンバー・役員",
+"of": "〜の",
+"one": "ひとつ",
+"picture": "画像・絵",
+"post": "ポスト",
+"room": "部屋",
+"same": "同じ",
+"same arrangement": "同じ並び",
+"says": "言っている",
+"says both scenes use the same arrangement": "どちらの場面も同じ並びだと言う",
+"scene": "場面",
+"scenes": "場面（複数）",
+"see": "見える",
+"showing": "見せること",
+"shows": "見せている",
+"side": "横・そば",
+"side by side": "横にならんで",
+"stand": "立つ・並ぶ",
+"student": "生徒の",
+"student council": "生徒会",
+"the": "その",
+"the back of a black-haired student": "黒髪の生徒の後ろ姿",
+"the picture": "その画像",
+"the same arrangement": "同じ並び",
+"three": "3人の",
+"three student council members": "生徒会の役員3人",
+"traditional": "伝統的な",
+"traditional way": "伝統のやり方",
+"use": "使う",
+"way": "やり方",
+"we": "私たち",
+"we can see the back of a black-haired student": "黒髪の生徒の後ろ姿が見える"
+},
+"grad": [
+{
+"q1": "ポストは、{student council} が出てくる {anime} についてです。",
+"q2": "ポストは、{a student council anime} についてです。",
+"q3": "{The} ポスト {is about a student council anime.}"
+},
+{
+"q1": "その {anime} には、場面を見せる {traditional way} がある、と言っています。",
+"q2": "{It says the anime has a traditional way} 場面を見せる。",
+"q3": "{It says the anime has a traditional way of showing} 場面。"
+},
+{
+"q1": "{The picture} には、2010年と2026年の {scene} が1つずつ載っています。",
+"q2": "{The picture} には、{a scene from 2010} と、もう1つ2026年のものが載っています。",
+"q3": "{The picture} 見せる {a scene from 2010 and one from 2026.}"
+},
+{
+"q1": "2010年の場面では、{three student council members} が並んでいます。",
+"q2": "{In 2010, three student council members} が並んでいる。",
+"q3": "{In 2010, three student council members} 立つ {side by side.}"
+},
+{
+"q1": "2026年の場面では、{a girl} と {a boy} が部屋にいます。",
+"q2": "{In 2026, a girl and a boy} が部屋にいる。",
+"q3": "{In 2026, a girl and a boy are in a} 部屋。"
+},
+{
+"q1": "手前には、{a black-haired student} の後ろ姿が見えます。",
+"q2": "手前には、{the back of a black-haired student} が見えます。",
+"q3": "{We can see the back of a black-haired student} 手前。"
+},
+{
+"q1": "ポストは、どちらの {scenes} も {same arrangement} を使っていると言っています。",
+"q2": "ポストは、{both scenes} が {the same arrangement} を使っている。",
+"q3": "{The} ポスト {says both scenes use the same arrangement.}"
+}
+],
+"grammar": {
+"body": "same の前には the をつけて、the same ＋ 名詞 の形にします。「どちらも同じ〜を使う」のように言うときに使います。",
+"ex": [
+{
+"en": "We have the same teacher.",
+"ja": "私たちは同じ先生です。"
+},
+{
+"en": "They wear the same hat.",
+"ja": "彼らは同じ帽子をかぶっています。"
+}
+],
+"title": "the same 〜「同じ〜」"
+},
+"id": "20261116-seitokai-2010-vs-2026",
+"level": 2,
+"lines": [
+{
+"en": "The post is about a student council anime.",
+"ja": "ポストは、生徒会が出てくるアニメについてです。",
+"mix": "ポストは、生徒会が出てくる {anime} についてです。"
+},
+{
+"en": "It says the anime has a traditional way of showing scenes.",
+"ja": "そのアニメには、場面を見せる伝統のやり方がある、と言っています。",
+"mix": "そのアニメには、場面を見せる {traditional way} がある、と言っています。"
+},
+{
+"en": "The picture shows a scene from 2010 and one from 2026.",
+"ja": "画像には、2010年と2026年の場面が1つずつ載っています。",
+"mix": "{picture} には、2010年と2026年の場面が1つずつ載っています。"
+},
+{
+"en": "In 2010, three student council members stand side by side.",
+"ja": "2010年の場面では、生徒会の役員3人が並んでいます。",
+"mix": "2010年の場面では、{student council} の役員3人が並んでいます。"
+},
+{
+"en": "In 2026, a girl and a boy are in a room.",
+"ja": "2026年の場面では、女子生徒と男子生徒が部屋にいます。",
+"mix": "2026年の場面では、{girl} と {boy} が部屋にいます。"
+},
+{
+"en": "We can see the back of a black-haired student in front.",
+"ja": "手前には、黒髪の生徒の後ろ姿が見えます。",
+"mix": "手前には、{black-haired} 生徒の後ろ姿が見えます。"
+},
+{
+"en": "The post says both scenes use the same arrangement.",
+"ja": "ポストは、どちらの場面も同じキャラクターの並びを使っていると言っています。",
+"mix": "ポストは、どちらの場面も {same arrangement} を使っていると言っています。"
+}
+],
+"post": {
+"account": "anime_nanashi",
+"date": "2026-11-16",
+"likes": 19708,
+"name": "anime_nanashi",
+"url": "https://x.com/anime_nanashi/status/2122268441356775871"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"先生2人",
+"生徒会の役員3人",
+"女子生徒と男子生徒"
+],
+"q": "2010年の場面に並んでいるのは？",
+"why": "4文目に three student council members とあります。"
+},
+{
+"a": 0,
+"choices": [
+"伝統的な",
+"新しい",
+"おもしろい"
+],
+"q": "traditional の意味は？",
+"why": "traditional は「伝統的な」。ポストの「伝統の演出」にあたります。"
+},
+{
+"a": 2,
+"choices": [
+"same",
+"a same",
+"the same"
+],
+"q": "The post says both scenes use ___ arrangement.（同じ並び）",
+"why": "「同じ」は the same です。"
+}
+],
+"summary": "生徒会が出てくるアニメについてのポストです。2010年と2026年の場面を上下に並べて、同じキャラクターの並びを再現する“伝統の演出”だと紹介しています。",
+"talk": {
+"hint": "I like the ___ one because ___.",
+"ja": "2010年と2026年の場面では、どちらが好きですか？",
+"q": "Which scene do you like better, the 2010 one or the 2026 one?"
+},
+"title": "生徒会アニメの“伝統の演出”、2010年と2026年を比べる",
+"words": [
+{
+"ja": "評議会・会",
+"note": "ポストの「生徒会」は student council。",
+"w": "council"
+},
+{
+"ja": "場面・シーン",
+"note": "ポストの「演出」で見せる場面は scene。",
+"w": "scene"
+},
+{
+"ja": "伝統的な",
+"note": "ポストの「伝統の演出」は a traditional way of showing scenes のように言えます。",
+"w": "traditional"
+},
+{
+"ja": "並び・配置",
+"note": "ポストの「並びの構図」は、人の並べ方なので arrangement。",
+"w": "arrangement"
+},
+{
+"ja": "横にならんで",
+"note": "「並んで」は side by side。",
+"w": "side by side"
 }
 ]
 },
@@ -5618,6 +6956,245 @@ window.LESSONS = [
 "ja": "それでもまだ",
 "note": "ポストの「回を重ねても」のあとの「まだ裏話が」は、there were still ～ の still で表せます。",
 "w": "still"
+}
+]
+},
+{
+"added": "2026-11-15T22:34",
+"addedAt": "2026-11-17T14:43",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a very fun monster movie": "とても面白い怪獣映画",
+"about": "〜について",
+"all": "すべて",
+"and": "そして",
+"any": "どんな〜も",
+"any spoilers": "どんなネタバレも",
+"are": "〜である（複数）",
+"asks": "問いかける",
+"at": "〜に",
+"but": "しかし",
+"cannot": "〜できない",
+"childhood": "子どもの頃",
+"criticism": "批判・酷評",
+"did": "〜したか（過去の疑問）",
+"divided": "分かれている",
+"expect": "期待する",
+"felt": "感じた（feelの過去形）",
+"fun": "楽しい・面白い",
+"fun monster movie": "面白い怪獣映画",
+"godzilla": "ゴジラ",
+"godzilla movies": "ゴジラ映画",
+"godzilla movies since childhood": "子どもの頃からのゴジラ映画",
+"godzilla movies since childhood and has never stopped": "子どもの頃からゴジラ映画を（観て）一度もやめていない",
+"harsh": "厳しい",
+"harsh criticism": "厳しい批判",
+"has": "〜してきた（haveの三単現）",
+"hours": "時間（複数）",
+"is": "〜だ",
+"it": "それ（この映画）",
+"it felt": "それは感じた",
+"it is a thrilling monster movie": "それはワクワクする怪獣映画だ",
+"like": "〜のように",
+"little": "少し",
+"monster": "怪獣",
+"monster movie": "怪獣映画",
+"movie": "映画",
+"movies": "映画（複数）",
+"never": "一度も〜ない",
+"no": "〜がない",
+"opinions": "意見（複数）",
+"opinions about this movie": "この映画についての意見",
+"opinions about this movie are divided but the poster": "この映画の意見は分かれているが、投稿者は",
+"over": "〜を超えて",
+"poster": "投稿者",
+"review": "感想・レビュー",
+"runs": "（時間が）続く",
+"says": "言う",
+"simply": "単に・ただ",
+"since": "〜以来",
+"spoilers": "ネタバレ（複数）",
+"stopped": "やめた（stopの過去分詞）",
+"the": "その",
+"the harsh criticism": "その厳しい批判",
+"the movie": "その映画",
+"the movie runs a little over two hours": "その映画は2時間強だ",
+"the movie runs a little over two hours but it felt like": "その映画は2時間強だが、〜のように感じた",
+"the poster": "投稿者",
+"the poster asks what did they expect": "投稿者は「何を期待していたのか」と問いかける",
+"the poster asks what did they expect and": "投稿者は「何を期待していたのか」と問いかけ、そして",
+"the poster has": "投稿者は〜してきた",
+"the poster wrote": "投稿者は書いた",
+"they": "彼ら（酷評した人）",
+"this": "この",
+"thrilling": "ワクワクさせる",
+"thrilling monster movie": "ワクワクする怪獣映画",
+"time": "時間",
+"to": "〜にとって",
+"to the poster": "投稿者にとっては",
+"to the poster it is": "投稿者にとって、それは",
+"two": "2",
+"two hours": "2時間",
+"understand": "理解する",
+"very": "とても",
+"watched": "観てきた（watchの過去分詞）",
+"what": "何を",
+"without": "〜なしで",
+"without any spoilers": "ネタバレなしで",
+"wrote": "書いた（writeの過去形）"
+},
+"grad": [
+{
+"q1": "投稿者は、{childhood} からずっと {Godzilla movies} を観てきて、一度もやめたことがありません。",
+"q2": "{The poster has} 観てきた {Godzilla movies since childhood} 、一度もやめたことがありません。",
+"q3": "{The poster has} 観てきた {Godzilla movies since childhood and has never stopped.}"
+},
+{
+"q1": "{poster} は、{spoilers} なしでこの感想を書いています。",
+"q2": "{The poster wrote} この感想を、{any spoilers} なしで。",
+"q3": "{The poster wrote} この感想 {without any spoilers.}"
+},
+{
+"q1": "この {movie} は賛否両論ですが、{the poster} は {harsh criticism} が理解できません。",
+"q2": "{Opinions about this movie} は賛否両論ですが、{the poster} は {harsh criticism} が理解できません。",
+"q3": "{Opinions about this movie are divided, but the poster} 理解できません {the harsh criticism.}"
+},
+{
+"q1": "投稿者にとっては、とても {fun} な {monster movie} にほかなりません。",
+"q2": "{To the poster} 、とても {fun monster movie} にほかなりません。",
+"q3": "{To the poster, it is} 単に {a very fun monster movie.}"
+},
+{
+"q1": "{The poster} は「何を期待していたのかな？」と問いかけ、{thrilling monster movie} だと言っています。",
+"q2": "{The poster asks, \"What did they expect?\"} と問いかけ、{thrilling monster movie} だと言っています。",
+"q3": "{The poster asks, \"What did they expect?\" and} 言う {it is a thrilling monster movie.}"
+},
+{
+"q1": "{The movie} は {two hours} 強ですが、あっという間に感じました。",
+"q2": "{The movie runs a little over two hours,} が、{it felt} あっという間に。",
+"q3": "{The movie runs a little over two hours, but it felt like} あっという間 。"
+}
+],
+"grammar": {
+"body": "過去のことを聞くときは、疑問詞 What のあとに did を置き、主語と動詞の原形を続けます。did があるので、動詞は expected ではなく expect です。",
+"ex": [
+{
+"en": "What did you eat for lunch?",
+"ja": "お昼に何を食べましたか？"
+},
+{
+"en": "What did she say to him?",
+"ja": "彼女は彼に何と言いましたか？"
+}
+],
+"title": "What did ＋ 主語 ＋ 動詞の原形？「何を〜したか」"
+},
+"id": "20261115-godzilla0-defense",
+"level": 3,
+"lines": [
+{
+"en": "The poster has watched Godzilla movies since childhood and has never stopped.",
+"ja": "投稿者は、子どもの頃からずっとゴジラ映画を観てきて、一度もやめたことがありません。",
+"mix": "投稿者は、子どもの頃からずっと {Godzilla movies} を観てきて、一度もやめたことがありません。"
+},
+{
+"en": "The poster wrote this review without any spoilers.",
+"ja": "投稿者は、ネタバレなしでこの感想を書いています。",
+"mix": "投稿者は、{spoilers} なしでこの感想を書いています。"
+},
+{
+"en": "Opinions about this movie are divided, but the poster cannot understand the harsh criticism.",
+"ja": "この映画は賛否両論ですが、投稿者は厳しい批判が理解できません。",
+"mix": "この映画は賛否両論ですが、投稿者は {harsh criticism} が理解できません。"
+},
+{
+"en": "To the poster, it is simply a very fun monster movie.",
+"ja": "投稿者にとっては、とても面白い怪獣映画にほかなりません。",
+"mix": "投稿者にとっては、とても面白い {monster movie} にほかなりません。"
+},
+{
+"en": "The poster asks, \"What did they expect?\" and says it is a thrilling monster movie.",
+"ja": "投稿者は「何を期待していたのかな？」と問いかけ、ワクワクドキドキの怪獣映画だと言っています。",
+"mix": "投稿者は「何を期待していたのかな？」と問いかけ、ワクワクドキドキの {monster movie} だと言っています。"
+},
+{
+"en": "The movie runs a little over two hours, but it felt like no time at all.",
+"ja": "映画は2時間強ですが、あっという間に感じました。",
+"mix": "映画は {two hours} 強ですが、あっという間に感じました。"
+}
+],
+"post": {
+"account": "aiyasasa",
+"date": "2026-11-15",
+"likes": 1040,
+"name": "介護士ンガーアトム",
+"url": "https://x.com/aiyasasa/status/2121960053695799332"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"とても短いと感じた",
+"面白い怪獣映画だと感じた",
+"ネタバレが多いと感じた"
+],
+"q": "投稿者は、この映画をどう感じましたか？",
+"why": "4文目に a very fun monster movie とあります。"
+},
+{
+"a": 1,
+"choices": [
+"温かい応援",
+"厳しい批判",
+"新しい宣伝"
+],
+"q": "harsh criticism の意味は？",
+"why": "harsh は「厳しい」、criticism は「批判」です。"
+},
+{
+"a": 2,
+"choices": [
+"do",
+"does",
+"did"
+],
+"q": "\"What ___ they expect?\"（彼らは何を期待していたの？）",
+"why": "過去のことなので What did ＋ 主語 ＋ 動詞の原形 です。"
+}
+],
+"summary": "ゴジラを子どもの頃からずっと観てきた投稿者が、ネタバレなしで『ゴジラ-0.0』の感想を書いたポストです。賛否両論の映画ですが、酷評の意見は理解できず、とても面白い怪獣映画だと言っています。2時間強があっという間だったそうです。",
+"talk": {
+"hint": "I like monster movies because ___.",
+"ja": "怪獣映画は好きですか？",
+"q": "Do you like monster movies?"
+},
+"title": "『ゴジラ-0.0』酷評が分からない、面白い怪獣映画",
+"words": [
+{
+"ja": "批判・酷評",
+"note": "ポストの「酷評」は harsh criticism（厳しい批判）。数えない名詞なので a や -s は付けません。",
+"w": "criticism"
+},
+{
+"ja": "意見が分かれた",
+"note": "「賛否両論」は opinions are divided（意見が分かれている）と言えます。",
+"w": "divided"
+},
+{
+"ja": "期待する",
+"note": "ポストの「何を期待していたのかな？」は What did they expect? です。",
+"w": "expect"
+},
+{
+"ja": "ワクワクする",
+"note": "「ワクワクドキドキ」は thrilling（ハラハラ・ワクワクさせる）。",
+"w": "thrilling"
+},
+{
+"ja": "ネタバレ",
+"note": "「ネタバレなし」は without any spoilers。spoiler は数えられる名詞です。",
+"w": "spoiler"
 }
 ]
 },
