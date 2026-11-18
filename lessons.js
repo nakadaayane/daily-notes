@@ -1,5 +1,634 @@
 window.LESSONS = [
 {
+"added": "2026-11-18T11:00",
+"addedAt": "2026-11-18T14:49",
+"cat": "movie",
+"gloss": {
+"aichi": "愛知",
+"and": "〜と",
+"are": "〜にある",
+"are in tokyo aichi hiroshima and osaka": "東京・愛知・広島・大阪にある",
+"be": "〜である・ある",
+"cast": "キャスト・出演者",
+"come": "来る",
+"december": "12月",
+"director": "監督",
+"for": "〜のための",
+"for the movie onee-chan no midori-kun": "映画『お姉ちゃんの翠くん』のための",
+"greetings": "あいさつ（greetingの複数形）",
+"held": "開かれる（holdの過去分詞）",
+"hiroshima": "広島",
+"in": "〜に（場所）",
+"midori-kun": "翠くん",
+"movie": "映画",
+"movie onee-chan no midori-kun": "映画『お姉ちゃんの翠くん』",
+"no": "の（作品名の一部）",
+"on": "〜に（日付）",
+"on december 3 4 and 5": "12月3日、4日、5日に",
+"on december 4": "12月4日に",
+"onee-chan": "お姉ちゃん",
+"open": "公開される",
+"osaka": "大阪",
+"six": "6つの",
+"stage": "舞台",
+"the": "その",
+"the cast and the director will": "キャストと監督は〜する予定だ",
+"the cast and the director will come on": "キャストと監督が〜に登壇する予定だ",
+"the movie": "その映画",
+"the movie onee-chan no midori-kun": "映画『お姉ちゃんの翠くん』",
+"the movie will": "映画は〜する予定だ",
+"the six": "その6つの",
+"theaters": "劇場（theaterの複数形）",
+"there": "（There will beで）〜がある",
+"there will be": "〜がある予定だ",
+"they": "それらは（舞台挨拶をさす）",
+"they will be": "それらは〜される予定だ",
+"tokyo": "東京",
+"will": "〜する予定だ"
+},
+"grad": [
+{
+"q1": "{movie Onee-chan no Midori-kun} の舞台挨拶があります。",
+"q2": "{There will be} 舞台挨拶が、{the movie Onee-chan no Midori-kun} に。",
+"q3": "{There will be} 舞台挨拶 {for the movie Onee-chan no Midori-kun.}"
+},
+{
+"q1": "{They} は、{December} 3日、4日、5日に開かれます。",
+"q2": "{They will be} 、{December} 3日、4日、5日に開かれます。",
+"q3": "{They will be} 開かれる {on December 3, 4, and 5.}"
+},
+{
+"q1": "6つの劇場は、{Tokyo} ・{Aichi} ・{Hiroshima} ・大阪にあります。",
+"q2": "6つの劇場は、{are in Tokyo, Aichi, Hiroshima, and Osaka.}",
+"q3": "{The six} 劇場 {are in Tokyo, Aichi, Hiroshima, and Osaka.}"
+},
+{
+"q1": "{cast} と {director} が登壇する予定です。",
+"q2": "{The cast and the director will} 登壇する予定です。",
+"q3": "{The cast and the director will come on} ステージ。"
+},
+{
+"q1": "{The movie} は、{December} 4日に公開されます。",
+"q2": "{The movie will} 公開 {December} 4日。",
+"q3": "{The movie will} 公開 {on December 4.}"
+}
+],
+"grammar": {
+"body": "There will be のあとに名詞を置くと、「〜があります（これからある）」という意味です。名詞が複数のときも will be の形は同じです。",
+"ex": [
+{
+"en": "There will be a test tomorrow.",
+"ja": "明日、テストがあります。"
+},
+{
+"en": "There will be many people at the event.",
+"ja": "そのイベントには、たくさんの人が来ます。"
+}
+],
+"title": "There will be 〜「〜があります（ある予定です）」"
+},
+"id": "20261118-midorikun-stage-greetings",
+"level": 1,
+"lines": [
+{
+"en": "There will be stage greetings for the movie Onee-chan no Midori-kun.",
+"ja": "映画『お姉ちゃんの翠くん』の舞台挨拶があります。",
+"mix": "{movie} 『お姉ちゃんの翠くん』の舞台挨拶があります。"
+},
+{
+"en": "They will be held on December 3, 4, and 5.",
+"ja": "12月3日、4日、5日に開かれます。",
+"mix": "{December} 3日、4日、5日に開かれます。"
+},
+{
+"en": "The six theaters are in Tokyo, Aichi, Hiroshima, and Osaka.",
+"ja": "6つの劇場は、東京・愛知・広島・大阪にあります。",
+"mix": "6つの劇場は、{Tokyo} ・愛知・広島・大阪にあります。"
+},
+{
+"en": "The cast and the director will come on stage.",
+"ja": "キャストと監督が登壇する予定です。",
+"mix": "{cast} と監督が登壇する予定です。"
+},
+{
+"en": "The movie will open on December 4.",
+"ja": "映画は、12月4日に公開されます。",
+"mix": "{movie} は、12月4日に公開されます。"
+}
+],
+"post": {
+"account": "midorikunmovie",
+"date": "2026-11-18T11:00",
+"likes": 4628,
+"name": "映画『お姉ちゃんの翠くん』公式",
+"url": "https://x.com/midorikunmovie/status/2122872418209533997"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"12月1日・2日・3日",
+"12月3日・4日・5日",
+"12月4日・5日・6日"
+],
+"q": "舞台挨拶が開かれるのはいつですか？",
+"why": "2文目に on December 3, 4, and 5 とあります。"
+},
+{
+"a": 2,
+"choices": [
+"俳優",
+"観客",
+"監督"
+],
+"q": "director の意味は？",
+"why": "director は「監督」。4文目に the cast and the director とあります。"
+},
+{
+"a": 0,
+"choices": [
+"There",
+"They",
+"Here"
+],
+"q": "___ will be stage greetings in Osaka.（大阪で舞台挨拶があります）",
+"why": "「〜があります」は There will be 〜 の形です。"
+}
+],
+"summary": "映画『お姉ちゃんの翠くん』の舞台挨拶が、12月3日・4日・5日に開かれることが決まりました。東京・愛知・広島・大阪の6つの劇場で行われ、キャストと監督が登壇する予定です。映画は12月4日に公開されます。",
+"talk": {
+"hint": "I go to the theater ___ times a month.",
+"ja": "映画館によく行きますか？",
+"q": "Do you go to the theater often?"
+},
+"title": "『お姉ちゃんの翠くん』舞台挨拶が12月3・4・5日に開催決定",
+"words": [
+{
+"ja": "舞台挨拶",
+"note": "ポストの「舞台挨拶」。上映の前や後に、出演者が舞台であいさつします。",
+"w": "stage greeting"
+},
+{
+"ja": "出演者・キャスト",
+"note": "ポストの「キャスト」。the cast で出演者みんなをさします。",
+"w": "cast"
+},
+{
+"ja": "監督",
+"note": "ポストの「監督」。映画をまとめる人です。",
+"w": "director"
+},
+{
+"ja": "劇場・映画館",
+"note": "ポストの「6劇場」は six theaters。",
+"w": "theater"
+},
+{
+"ja": "公開される",
+"note": "映画が「公開」されるときは open を使います（ドアを開ける open と同じ語）。",
+"w": "open"
+}
+]
+},
+{
+"added": "2026-11-18T05:00",
+"addedAt": "2026-11-18T14:49",
+"cat": "manga",
+"gloss": {
+"a": "ひとつの",
+"a-masso": "Aマッソ（芸人コンビ名）",
+"about": "約",
+"after": "〜のあと",
+"after about seven years": "約7年ぶりに",
+"again": "また",
+"aiko": "愛子（人名）",
+"aiko kano": "加納愛子",
+"aiko kano of a-masso will": "Aマッソの加納愛子さんは〜する予定だ",
+"aiko kano will": "加納愛子さんは〜する予定だ",
+"be": "出演する・いる",
+"become": "〜になる",
+"compares": "くらべる・たとえる",
+"cuts": "部位（cutの複数形）",
+"drama": "ドラマ",
+"drama series": "連続ドラマ",
+"first": "初めての",
+"fuka": "風花（人名）",
+"fuka koshiba": "小芝風花",
+"fuka koshiba will play": "小芝風花さんは演じる予定だ",
+"fuka koshiba will play the main role in her": "小芝風花さんは〜で主役を演じる予定だ",
+"fukushi": "福士（人名）",
+"her": "彼女の",
+"in": "〜で",
+"kano": "加納（人名）",
+"koshiba": "小芝（人名）",
+"live-action": "実写の",
+"loves": "大好きだ",
+"main": "主な",
+"manga": "漫画",
+"meat": "肉",
+"men": "男性（manの複数形）",
+"no": "の（作品名の一部）",
+"of": "〜の",
+"onna": "女（作品名の一部）",
+"play": "演じる",
+"popular": "人気の",
+"popular manga": "人気漫画",
+"role": "役",
+"script": "脚本",
+"series": "連続もの・シリーズ",
+"seven": "7つの",
+"she": "彼女は",
+"she compares men to": "彼女は男性を〜にたとえる",
+"she compares men to cuts of": "彼女は男性を〜の部位にたとえる",
+"she will play the role of a woman": "彼女は女性の役を演じる予定だ",
+"she will play the role of a woman who": "彼女は〜する女性の役を演じる予定だ",
+"sota": "蒼汰（人名）",
+"sota fukushi": "福士蒼汰",
+"sota fukushi will be in a tbs drama": "福士蒼汰さんはTBSドラマに出演する予定だ",
+"tbs": "TBS（テレビ局）",
+"tbs drama": "TBSドラマ",
+"tbs drama series": "TBSの連続ドラマ",
+"the": "その",
+"the popular manga": "人気漫画",
+"the popular manga yakiniku no onna will become a": "人気漫画『焼肉の女』は〜になる予定だ",
+"the script": "その脚本",
+"to": "〜に",
+"who": "〜する（人）",
+"will": "〜する予定だ",
+"will become": "〜になる予定だ",
+"woman": "女性",
+"write": "書く",
+"yakiniku": "焼肉",
+"years": "年（yearの複数形）"
+},
+"grad": [
+{
+"q1": "{popular manga} 『焼肉の女 綾門寺赤奈』が、{TBS} で実写の {drama series} になります。",
+"q2": "{The popular manga} 『焼肉の女 綾門寺赤奈』が、{will become} 実写の {TBS drama series.}",
+"q3": "{The popular manga Yakiniku no Onna will become a} 実写 {TBS drama series.}"
+},
+{
+"q1": "{Fuka Koshiba} さんは、初めての {TBS drama} で主役を務めます。",
+"q2": "{Fuka Koshiba will play} 主役を、初めての {TBS drama.}",
+"q3": "{Fuka Koshiba will play the main role in her} 最初の {TBS drama.}"
+},
+{
+"q1": "彼女は、{yakiniku} が大好きな {woman} の役を演じます。",
+"q2": "{She will play the role of a woman} 、{yakiniku} が大好きな。",
+"q3": "{She will play the role of a woman who} 大好き {yakiniku.}"
+},
+{
+"q1": "彼女は、{men} を肉の {cuts} にたとえます。",
+"q2": "{She compares men to} 肉の {cuts} 。",
+"q3": "{She compares men to cuts of} 肉。"
+},
+{
+"q1": "{Sota Fukushi} さんは、約7年ぶりに {TBS drama} に出演します。",
+"q2": "{Sota Fukushi will be in a TBS drama} また、約7年ぶり。",
+"q3": "{Sota Fukushi will be in a TBS drama} また {after about seven years.}"
+},
+{
+"q1": "{script} は、Aマッソの {Aiko Kano} さんが担当します。",
+"q2": "Aマッソの {Aiko Kano will} 担当する {the script.}",
+"q3": "{Aiko Kano of A-Masso will} 書く {the script.}"
+}
+],
+"grammar": {
+"body": "「〜の役を演じる」は play the role of 〜 と言います。of のあとに役の人物を置きます。",
+"ex": [
+{
+"en": "He plays the role of a teacher.",
+"ja": "彼は先生の役を演じます。"
+},
+{
+"en": "She played the role of a princess.",
+"ja": "彼女はお姫さまの役を演じました。"
+}
+],
+"title": "play the role of 〜「〜の役を演じる」"
+},
+"id": "20261118-yakiniku-no-onna-drama",
+"level": 2,
+"lines": [
+{
+"en": "The popular manga Yakiniku no Onna will become a live-action TBS drama series.",
+"ja": "人気漫画『焼肉の女 綾門寺赤奈』が、TBSで実写の連続ドラマになります。",
+"mix": "{popular manga} 『焼肉の女 綾門寺赤奈』が、TBSで実写の連続ドラマになります。"
+},
+{
+"en": "Fuka Koshiba will play the main role in her first TBS drama.",
+"ja": "小芝風花さんは、初めてのTBSドラマで主役を務めます。",
+"mix": "小芝風花さんは、初めての {TBS drama} で主役を務めます。"
+},
+{
+"en": "She will play the role of a woman who loves yakiniku.",
+"ja": "彼女は、焼肉が大好きな女性の役を演じます。",
+"mix": "彼女は、{yakiniku} が大好きな女性の役を演じます。"
+},
+{
+"en": "She compares men to cuts of meat.",
+"ja": "彼女は、男性を肉の部位にたとえます。",
+"mix": "彼女は、{men} を肉の部位にたとえます。"
+},
+{
+"en": "Sota Fukushi will be in a TBS drama again after about seven years.",
+"ja": "福士蒼汰さんは、約7年ぶりにTBSのドラマに出演します。",
+"mix": "福士蒼汰さんは、約7年ぶりに {TBS drama} に出演します。"
+},
+{
+"en": "Aiko Kano of A-Masso will write the script.",
+"ja": "脚本は、Aマッソの加納愛子さんが担当します。",
+"mix": "{script} は、Aマッソの加納愛子さんが担当します。"
+}
+],
+"post": {
+"account": "modelpress",
+"date": "2026-11-18T05:00",
+"likes": 4122,
+"name": "モデルプレス",
+"url": "https://x.com/modelpress/status/2122781843103887639"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"小芝風花さん",
+"加納愛子さん",
+"福士蒼汰さん"
+],
+"q": "脚本を担当するのはだれですか？",
+"why": "6文目に Aiko Kano of A-Masso will write the script とあります。"
+},
+{
+"a": 2,
+"choices": [
+"予告",
+"役",
+"脚本"
+],
+"q": "script の意味は？",
+"why": "script は「脚本」です。"
+},
+{
+"a": 0,
+"choices": [
+"role",
+"roll",
+"rule"
+],
+"q": "She plays the ___ of a teacher.（先生の役）",
+"why": "「役」は role。「〜の役を演じる」は play the role of 〜 です。"
+}
+],
+"summary": "人気漫画『焼肉の女 綾門寺赤奈』が、TBSの連続ドラマとして実写化されます。小芝風花さんがTBS連ドラ初主演で、男性を肉の部位にたとえる焼肉好きの女性を演じます。福士蒼汰さんは約7年ぶりのTBSドラマ出演で、脚本はAマッソの加納愛子さんが担当します。",
+"talk": {
+"hint": "I like ___ dramas.",
+"ja": "どんなドラマが好きですか？",
+"q": "What kind of drama do you like?"
+},
+"title": "人気漫画『焼肉の女 綾門寺赤奈』がドラマ化、小芝風花さん初主演",
+"words": [
+{
+"ja": "脚本",
+"note": "ポストの「脚本はAマッソ加納愛子」は the script。",
+"w": "script"
+},
+{
+"ja": "連続もの（シリーズ）",
+"note": "ポストの「連ドラ」は drama series。単数も複数も series です。",
+"w": "series"
+},
+{
+"ja": "主役",
+"note": "ポストの「初主演」は play the main role（first は her first TBS drama で表しました）。",
+"w": "main role"
+},
+{
+"ja": "くらべる・たとえる",
+"note": "ポストの「肉の部位に例える」は compare men to cuts of meat。",
+"w": "compare"
+},
+{
+"ja": "実写の",
+"note": "ポストの「実写化」。漫画やアニメを人が演じるときに使います。",
+"w": "live-action"
+}
+]
+},
+{
+"added": "2026-11-17T22:15",
+"addedAt": "2026-11-18T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a curry shop called nasu oyaji was": "「茄子おやじ」というカレー店は〜だった",
+"a curry shop called nasu oyaji was the": "「茄子おやじ」というカレー店は〜だった",
+"able": "できる",
+"at": "〜で",
+"at last": "ついに・ようやく",
+"called": "〜と呼ばれる",
+"curry": "カレー",
+"curry shop": "カレー店",
+"delicious": "とてもおいしい",
+"for": "〜の",
+"for it": "それの",
+"fujiki": "藤木（人名）",
+"fujiki was able to": "藤木さんは〜できた",
+"go": "行く",
+"he": "彼は",
+"he left his mark": "彼は足跡を残した",
+"he said the curry was": "彼はカレーは〜だったと言った",
+"his": "彼の",
+"in": "〜で",
+"it": "それ",
+"last": "最後",
+"left": "残した（leaveの過去形）",
+"mark": "跡・しるし",
+"model": "モデル",
+"movie": "映画",
+"naoto": "直人（人名）",
+"naoto fujiki": "藤木直人",
+"naoto fujiki plays seiichi takiguchi": "藤木直人さんは滝口誠一を演じる",
+"naoto fujiki plays seiichi takiguchi in the": "藤木直人さんは〜の滝口誠一を演じる",
+"nasu": "茄子",
+"nasu oyaji": "茄子おやじ（店名）",
+"no": "の（作品名の一部）",
+"oyaji": "おやじ",
+"plays": "演じる（playの三単現）",
+"really": "本当に",
+"runs": "営む（runの三単現）",
+"said": "言った（sayの過去形）",
+"seiichi": "誠一（人名）",
+"seiichi takiguchi": "滝口誠一",
+"shop": "店",
+"takiguchi": "滝口（人名）",
+"takiguchi runs": "滝口は営んでいる",
+"takiguchi runs a": "滝口はひとつ営んでいる",
+"the": "その",
+"there": "そこへ",
+"there at last": "ようやくそこへ",
+"to": "〜すること",
+"too": "〜も",
+"uruwashi": "うるわし（作品名の一部）",
+"uruwashi no yoizuki": "うるわしの宵の月（作品名）",
+"was": "〜だった",
+"yoizuki": "宵の月（作品名の一部）"
+},
+"grad": [
+{
+"q1": "映画『うるわしの宵の月』で、{Naoto Fujiki} さんは {Seiichi Takiguchi} を演じています。",
+"q2": "{Naoto Fujiki plays Seiichi Takiguchi} 映画『うるわしの宵の月』で。",
+"q3": "{Naoto Fujiki plays Seiichi Takiguchi in the} 映画 {Uruwashi no Yoizuki.}"
+},
+{
+"q1": "{Takiguchi} は、カレー {shop} を営んでいます。",
+"q2": "{Takiguchi runs} カレー {shop.}",
+"q3": "{Takiguchi runs a} カレー {shop.}"
+},
+{
+"q1": "{Nasu Oyaji} という {curry shop} が、そのモデルでした。",
+"q2": "{A curry shop called Nasu Oyaji was} そのモデル。",
+"q3": "{A curry shop called Nasu Oyaji was the} モデル {for it.}"
+},
+{
+"q1": "{Fujiki} は、念願かなって、{at last} 行くことができました。",
+"q2": "{Fujiki was able to} そこに行く {at last.}",
+"q3": "{Fujiki was able to} 行く {there at last.}"
+},
+{
+"q1": "{He} は、{curry} は最高においしかったと言いました。",
+"q2": "{He said the curry was} 最高においしかった。",
+"q3": "{He said the curry was} 本当に {delicious.}"
+},
+{
+"q1": "{He} は、そこにしっかり {mark} も残してきました。",
+"q2": "{He left his mark} そこにも。",
+"q3": "{He left his mark} そこに {too.}"
+}
+],
+"grammar": {
+"body": "過去に「〜できた」と言うときは was / were able to ＋ 動詞の原形を使います。can の過去形 could とほぼ同じ意味で使えます。",
+"ex": [
+{
+"en": "I was able to see the movie yesterday.",
+"ja": "私は昨日、その映画を見ることができました。"
+},
+{
+"en": "She was able to buy the ticket.",
+"ja": "彼女はそのチケットを買うことができました。"
+}
+],
+"title": "was able to 〜「〜することができた」"
+},
+"id": "20261117-uruwashi-fujiki-curry",
+"level": 2,
+"lines": [
+{
+"en": "Naoto Fujiki plays Seiichi Takiguchi in the movie Uruwashi no Yoizuki.",
+"ja": "映画『うるわしの宵の月』で、藤木直人さんは滝口誠一を演じています。",
+"mix": "映画『うるわしの宵の月』で、藤木直人さんは {Seiichi Takiguchi} を演じています。"
+},
+{
+"en": "Takiguchi runs a curry shop.",
+"ja": "滝口は、カレー店を営んでいます。",
+"mix": "滝口は、カレー {shop} を営んでいます。"
+},
+{
+"en": "A curry shop called Nasu Oyaji was the model for it.",
+"ja": "「茄子おやじ」というカレー店が、そのモデルでした。",
+"mix": "「茄子おやじ」という {curry shop} が、そのモデルでした。"
+},
+{
+"en": "Fujiki was able to go there at last.",
+"ja": "藤木さんは、念願かなって、ようやく行くことができました。",
+"mix": "藤木さんは、念願かなって、{at last} 行くことができました。"
+},
+{
+"en": "He said the curry was really delicious.",
+"ja": "彼は、カレーは最高においしかったと言いました。",
+"mix": "彼は、{curry} は最高においしかったと言いました。"
+},
+{
+"en": "He left his mark there too.",
+"ja": "彼は、そこにしっかり足跡も残してきました。",
+"mix": "彼は、そこにしっかり {mark} も残してきました。"
+}
+],
+"post": {
+"account": "fujiki_official",
+"date": "2026-11-17T22:15",
+"likes": 4488,
+"name": "藤木直人 OFFICIAL STAFF",
+"url": "https://x.com/fujiki_official/status/2122680111740940789"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"映画のカレー店",
+"映画の駅",
+"映画の学校"
+],
+"q": "「茄子おやじ」は、何のモデルですか？",
+"why": "3文目に A curry shop called Nasu Oyaji was the model for it とあります（it は2文目の the curry shop）。"
+},
+{
+"a": 2,
+"choices": [
+"いつも",
+"すぐに",
+"ついに・やっと"
+],
+"q": "at last の意味は？",
+"why": "at last は長く待ったあとの「ついに・やっと」です。"
+},
+{
+"a": 1,
+"choices": [
+"can",
+"was able",
+"able"
+],
+"q": "I ___ to see the movie last week.（見ることができた）",
+"why": "過去の「できた」は was able to ＋ 動詞です。"
+}
+],
+"summary": "映画『うるわしの宵の月』で藤木直人さんが演じた滝口誠一は、カレー店を営む役です。そのお店のモデルになったカレー店「茄子おやじ」に、念願かなってようやく行けたと投稿しました。最高においしいカレーだったそうです。",
+"talk": {
+"hint": "I like ___ curry. / I do not like curry.",
+"ja": "カレーは好きですか？",
+"q": "Do you like curry?"
+},
+"title": "藤木直人さん、映画のお店のモデル「茄子おやじ」でカレーを満喫",
+"words": [
+{
+"ja": "モデル（手本になったもの）",
+"note": "ポストの「カレー店のモデルにもなった」は was the model for 〜。",
+"w": "model"
+},
+{
+"ja": "営む・経営する",
+"note": "ポストの「営む」。runs a curry shop で「カレー店を営んでいる」。",
+"w": "run"
+},
+{
+"ja": "ついに・やっと",
+"note": "ポストの「念願叶って、ようやく」の気持ちを at last で表しました。",
+"w": "at last"
+},
+{
+"ja": "とてもおいしい",
+"note": "ポストの「美味しい」。really をつけて「最高に」の強さを出しました。",
+"w": "delicious"
+},
+{
+"ja": "跡・しるし",
+"note": "ポストの「足跡を残してきました」は left his mark（自分のしるしを残した）としました。",
+"w": "mark"
+}
+]
+},
+{
 "added": "2026-11-17T21:04",
 "addedAt": "2026-11-18T08:00",
 "cat": "art",
@@ -1105,6 +1734,614 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-17T18:57",
+"addedAt": "2026-11-18T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"an": "ひとつの",
+"at": "〜で（場所）",
+"at jr shinjuku station": "JR新宿駅で",
+"at toho cinemas shinjuku": "TOHOシネマズ新宿で",
+"at toho studios": "東宝スタジオで",
+"azusa": "あずさ（列車名）",
+"azusa at jr shinjuku station": "JR新宿駅のあずさ",
+"big": "大きな",
+"celebrate": "祝う・記念する",
+"ceremony": "式",
+"cinemas": "シネマズ（映画館名）",
+"departure": "出発",
+"departure ceremony": "出発式",
+"events": "イベント（eventの複数形）",
+"express": "急行（limited expressで特急）",
+"first": "最初の",
+"for": "〜のための",
+"ghidorah": "ギドラ",
+"godzilla": "ゴジラ",
+"godzilla minus zero": "ゴジラ-0.0（作品名）",
+"greeting": "あいさつ",
+"hit": "ヒット",
+"joined": "参加した（joinの過去形）",
+"jr": "JR（鉄道会社）",
+"jr shinjuku station": "JR新宿駅",
+"kamiki": "神木（人名）",
+"king": "キング",
+"limited": "限定の（limited expressで特急）",
+"minus": "マイナス",
+"mural": "壁画",
+"of": "〜の",
+"of godzilla minus zero": "『ゴジラ-0.0』の",
+"ryunosuke": "隆之介（人名）",
+"ryunosuke kamiki": "神木隆之介",
+"ryunosuke kamiki joined": "神木隆之介さんが参加した",
+"ryunosuke kamiki joined three": "神木隆之介さんが3つ参加した",
+"second": "2番目の",
+"shinjuku": "新宿",
+"stage": "舞台",
+"stage greeting": "舞台挨拶",
+"stage greeting for the big hit at toho cinemas shinjuku": "TOHOシネマズ新宿での大ヒットへの舞台挨拶",
+"station": "駅",
+"studios": "スタジオ",
+"thank-you": "お礼の",
+"the": "その",
+"the events were to celebrate": "イベントは記念するためのものだった",
+"the events were to celebrate the": "イベントは〜を記念するものだった",
+"the first was a departure ceremony": "1つ目は出発式だった",
+"the first was a departure ceremony for the": "1つ目は〜の出発式だった",
+"the second was an unveiling ceremony": "2つ目は除幕式だった",
+"the second was an unveiling ceremony for a king ghidorah": "2つ目はキングギドラの除幕式だった",
+"the third was a": "3つ目は〜だった",
+"third": "3番目の",
+"three": "3つの",
+"to": "〜するために",
+"today": "今日",
+"toho": "東宝",
+"toho cinemas shinjuku": "TOHOシネマズ新宿",
+"toho studios": "東宝スタジオ",
+"unveiling": "除幕（おおいを取ること）",
+"unveiling ceremony": "除幕式",
+"was": "〜だった",
+"were": "〜だった（areの過去形）",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "{Ryunosuke Kamiki} さんは、{today} 3つのイベントに参加しました。",
+"q2": "{Ryunosuke Kamiki joined} 3つのイベント {today.}",
+"q3": "{Ryunosuke Kamiki joined three} イベント {today.}"
+},
+{
+"q1": "{events} は、{Godzilla Minus Zero} の大ヒットを記念したものでした。",
+"q2": "{The events were to celebrate} {Godzilla Minus Zero} の大ヒット。",
+"q3": "{The events were to celebrate the} 大ヒット {of Godzilla Minus Zero.}"
+},
+{
+"q1": "1つ目は、{JR Shinjuku Station} での、特急あずさの {departure ceremony} でした。",
+"q2": "{The first was a departure ceremony} 特急あずさの {at JR Shinjuku Station.}",
+"q3": "{The first was a departure ceremony for the} 特急 {Azusa at JR Shinjuku Station.}"
+},
+{
+"q1": "2つ目は、{Toho Studios} での、キングギドラ壁画の {unveiling ceremony} でした。",
+"q2": "{The second was an unveiling ceremony} キングギドラ壁画の {at Toho Studios.}",
+"q3": "{The second was an unveiling ceremony for a King Ghidorah} 壁画 {at Toho Studios.}"
+},
+{
+"q1": "3つ目は、{TOHO Cinemas Shinjuku} での、大ヒットへの御礼の {stage greeting} でした。",
+"q2": "{The third was a} 御礼の {stage greeting} 、大ヒットへの {at TOHO Cinemas Shinjuku.}",
+"q3": "{The third was a} 御礼の {stage greeting for the big hit at TOHO Cinemas Shinjuku.}"
+}
+],
+"grammar": {
+"body": "to ＋ 動詞の原形で「〜するために」と目的を表します。「〜を記念して（祝って）」と言いたいときは to celebrate 〜 を使います。",
+"ex": [
+{
+"en": "We made a cake to celebrate her birthday.",
+"ja": "私たちは、彼女の誕生日を祝うためにケーキを作りました。"
+},
+{
+"en": "They held a party to celebrate the new year.",
+"ja": "彼らは新年を祝うためにパーティーを開きました。"
+}
+],
+"title": "to celebrate 〜「〜を記念して」"
+},
+"id": "20261117-godzilla0-three-events",
+"level": 2,
+"lines": [
+{
+"en": "Ryunosuke Kamiki joined three events today.",
+"ja": "神木隆之介さんは、今日、3つのイベントに参加しました。",
+"mix": "神木隆之介さんは、{today} 3つのイベントに参加しました。"
+},
+{
+"en": "The events were to celebrate the big hit of Godzilla Minus Zero.",
+"ja": "イベントは、『ゴジラ-0.0』の大ヒットを記念したものでした。",
+"mix": "{events} は、『ゴジラ-0.0』の大ヒットを記念したものでした。"
+},
+{
+"en": "The first was a departure ceremony for the limited express Azusa at JR Shinjuku Station.",
+"ja": "1つ目は、JR新宿駅での、特急あずさの出発式でした。",
+"mix": "1つ目は、JR新宿駅での、特急あずさの {departure ceremony} でした。"
+},
+{
+"en": "The second was an unveiling ceremony for a King Ghidorah mural at Toho Studios.",
+"ja": "2つ目は、東宝スタジオでの、キングギドラ壁画の除幕式でした。",
+"mix": "2つ目は、{Toho Studios} での、キングギドラ壁画の除幕式でした。"
+},
+{
+"en": "The third was a thank-you stage greeting for the big hit at TOHO Cinemas Shinjuku.",
+"ja": "3つ目は、TOHOシネマズ新宿での、大ヒットへの御礼の舞台挨拶でした。",
+"mix": "3つ目は、TOHOシネマズ新宿での、大ヒットへの御礼の {stage greeting} でした。"
+}
+],
+"post": {
+"account": "kamiki_official",
+"date": "2026-11-17T18:57",
+"likes": 9597,
+"name": "神木隆之介",
+"url": "https://x.com/kamiki_official/status/2122630174936355036"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"特急あずさの出発式",
+"キングギドラ壁画の除幕式",
+"大ヒット御礼舞台挨拶"
+],
+"q": "2つ目のイベントは何でしたか？",
+"why": "4文目に The second was an unveiling ceremony for a King Ghidorah mural とあります。"
+},
+{
+"a": 2,
+"choices": [
+"切符",
+"写真",
+"壁画"
+],
+"q": "mural の意味は？",
+"why": "mural は「壁画」。3文目の ceremony は「式」です。"
+},
+{
+"a": 0,
+"choices": [
+"to",
+"for",
+"at"
+],
+"q": "We held a party ___ celebrate his birthday.",
+"why": "「祝うために」は to ＋ 動詞の原形で to celebrate です。"
+}
+],
+"summary": "神木隆之介さんが、映画『ゴジラ-0.0』の大ヒットを記念した3つのイベントに参加したと投稿しました。JR新宿駅での特急あずさの出発式、東宝スタジオでのキングギドラ壁画の除幕式、TOHOシネマズ新宿での大ヒット御礼舞台挨拶です。",
+"talk": {
+"hint": "I want to join ___ because ___.",
+"ja": "3つのイベントのうち、どれに参加したいですか？",
+"q": "Which event do you want to join?"
+},
+"title": "神木隆之介さん、『ゴジラ-0.0』ヒット記念の3つのイベントに参加",
+"words": [
+{
+"ja": "出発",
+"note": "ポストの「出発式」は departure ceremony。depart は動詞「出発する」。",
+"w": "departure"
+},
+{
+"ja": "式・儀式",
+"note": "「出発式」「除幕式」の「式」にあたる語です。",
+"w": "ceremony"
+},
+{
+"ja": "壁画",
+"note": "ポストの「キングギドラ壁画」は a King Ghidorah mural。",
+"w": "mural"
+},
+{
+"ja": "除幕（おおいをとって見せること）",
+"note": "ポストの「除幕式」は unveiling ceremony。",
+"w": "unveiling"
+},
+{
+"ja": "舞台挨拶",
+"note": "ポストの「舞台挨拶」。映画館のステージであいさつするイベントです。",
+"w": "stage greeting"
+}
+]
+},
+{
+"added": "2026-11-17T18:15",
+"addedAt": "2026-11-18T14:49",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"acting": "演技",
+"an": "ひとつの",
+"an anime of this work": "この作品のアニメ",
+"an anime of this work would be impossible": "この作品のアニメ化は無理だろう",
+"and": "〜と",
+"anime": "アニメ",
+"are": "〜です",
+"be": "〜である",
+"before": "これまで・以前に",
+"direction": "演出",
+"effort": "努力・力を入れること",
+"from": "〜から",
+"had": "〜していた（過去完了）",
+"impossible": "無理な・不可能な",
+"into": "〜の中へ",
+"is": "〜です",
+"judging": "判断すると",
+"judging from this scene a lot of effort is put": "このシーンを見るかぎり、たくさんの力が注がれている",
+"judging from this scene a lot of effort is put into the": "このシーンを見るかぎり、〜にはたくさんの力が注がれている",
+"lot": "たくさん（a lot of）",
+"not": "〜ない",
+"of": "〜の",
+"one": "ひとつの・ある",
+"perfect": "完璧な",
+"poster": "投稿者",
+"put": "注がれる（putの過去分詞）",
+"saw": "見た（seeの過去形）",
+"says": "言っている",
+"scene": "シーン",
+"so": "そのため",
+"so the poster had not watched the anime": "そのため投稿者はアニメを見ていなかった",
+"storyboards": "コンテ（絵コンテ）",
+"the": "その",
+"the poster": "投稿者",
+"the poster had not watched the anime": "投稿者はアニメを見ていなかった",
+"the poster saw one scene": "投稿者はあるシーンを見た",
+"the poster says": "投稿者は言っている",
+"the poster says the storyboards direction and acting direction are": "投稿者はコンテ・演出・演技指導が〜と言う",
+"the storyboards direction and acting direction": "コンテ・演出・演技指導",
+"then": "そして",
+"then the poster saw one scene from the": "そして投稿者は〜のあるシーンを見た",
+"this": "この",
+"this scene": "このシーン",
+"thought": "思っていた（thinkの過去形）",
+"watched": "見た（watchの過去分詞）",
+"work": "作品",
+"would": "〜だろう"
+},
+"grad": [
+{
+"q1": "{The poster} は、この作品のアニメ化は {impossible} だと思っていました。",
+"q2": "{The poster} は、{an anime of this work} は {impossible} だと思っていました。",
+"q3": "{The poster} 思っていた {an anime of this work would be impossible.}"
+},
+{
+"q1": "そのため、{the poster} はこれまで {anime} を見ていませんでした。",
+"q2": "そのため、{the poster had not watched the anime} これまで。",
+"q3": "{So the poster had not watched the anime} 以前に。"
+},
+{
+"q1": "そして、{the poster} はアニメの {scene} を見ました。",
+"q2": "そして、{the poster saw one scene} アニメの。",
+"q3": "{Then the poster saw one scene from the} アニメ。"
+},
+{
+"q1": "{this scene} を見るかぎり、アニメにはかなり {effort} が入っています。",
+"q2": "{Judging from this scene, a lot of effort is put} アニメに。",
+"q3": "{Judging from this scene, a lot of effort is put into the} アニメ。"
+},
+{
+"q1": "{The poster} は、{storyboards}・{direction}・演技指導が完璧だと言っています。",
+"q2": "{The poster says} 、{the storyboards, direction, and acting direction} が完璧です。",
+"q3": "{The poster says the storyboards, direction, and acting direction are} 完璧。"
+}
+],
+"grammar": {
+"body": "Judging from 〜 は「〜を見るかぎり・〜から考えると」という言い方です。あとに、そこから言えることを続けます。",
+"ex": [
+{
+"en": "Judging from the trailer, this movie looks fun.",
+"ja": "予告編を見るかぎり、この映画はおもしろそうです。"
+},
+{
+"en": "Judging from his voice, he is tired.",
+"ja": "声から判断すると、彼は疲れています。"
+}
+],
+"title": "Judging from 〜「〜から判断すると」"
+},
+"id": "20261118-chifuyo-anime-direction",
+"level": 3,
+"lines": [
+{
+"en": "The poster thought an anime of this work would be impossible.",
+"ja": "投稿者は、この作品のアニメ化は無理だと思っていました。",
+"mix": "投稿者は、この作品のアニメ化は {impossible} だと思っていました。"
+},
+{
+"en": "So the poster had not watched the anime before.",
+"ja": "そのため、投稿者はこれまでアニメを見ていませんでした。",
+"mix": "そのため、投稿者はこれまで {anime} を見ていませんでした。"
+},
+{
+"en": "Then the poster saw one scene from the anime.",
+"ja": "そして、投稿者はそのアニメのあるシーンを見ました。",
+"mix": "そして、投稿者はアニメの {scene} を見ました。"
+},
+{
+"en": "Judging from this scene, a lot of effort is put into the anime.",
+"ja": "このシーンを見るかぎり、アニメにはかなり力が入っています。",
+"mix": "このシーンを見るかぎり、アニメにはかなり {effort} が入っています。"
+},
+{
+"en": "The poster says the storyboards, direction, and acting direction are perfect.",
+"ja": "投稿者は、コンテ・演出・演技指導が完璧だと言っています。",
+"mix": "投稿者は、{storyboards}・{direction}・演技指導が完璧だと言っています。"
+}
+],
+"post": {
+"account": "shn0214",
+"date": "2026-11-17T18:15",
+"likes": 1042,
+"name": "野乃のん♒",
+"url": "https://x.com/shn0214/status/2122619691365814322"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"原作より良くなると思っていた",
+"すぐ見たいと思っていた",
+"無理だと思っていた"
+],
+"q": "投稿者は、アニメ化についてどう思っていましたか？",
+"why": "1文目に would be impossible とあります。"
+},
+{
+"a": 0,
+"choices": [
+"コンテ（絵コンテ）",
+"音楽",
+"脚本"
+],
+"q": "storyboard の意味は？",
+"why": "storyboard はアニメの設計図になる絵コンテのことです。"
+},
+{
+"a": 1,
+"choices": [
+"Judge for",
+"Judging from",
+"Judged by"
+],
+"q": "___ this scene, a lot of effort is put into the anime.",
+"why": "「〜を見るかぎり」は Judging from 〜 です。"
+}
+],
+"summary": "『チー付与』のアニメ化は無理だと思って見ていなかった投稿者が、あるシーンを見て、かなり力が入っていると感じたそうです。コンテ・演出・演技指導が完璧だと書いています。",
+"talk": {
+"hint": "My favorite is ___.",
+"ja": "マンガが原作のお気に入りのアニメはありますか？",
+"q": "Do you have a favorite anime made from a manga?"
+},
+"title": "『チー付与』アニメ、あるシーンから力の入れようを感じた",
+"words": [
+{
+"ja": "不可能な・無理な",
+"note": "ポストの「無理だろ」を impossible で表しました。",
+"w": "impossible"
+},
+{
+"ja": "努力・力を入れること",
+"note": "ポストの「力入ってる」。a lot of effort is put into 〜 で「〜に力が入っている」。",
+"w": "effort"
+},
+{
+"ja": "コンテ（絵コンテ）",
+"note": "ポストの「コンテ」。アニメの設計図になる絵です。",
+"w": "storyboard"
+},
+{
+"ja": "演出",
+"note": "ポストの「演出」。acting direction で「演技指導」。",
+"w": "direction"
+},
+{
+"ja": "完璧な",
+"note": "ポストの「完璧だわ」。",
+"w": "perfect"
+}
+]
+},
+{
+"added": "2026-11-17T17:55",
+"addedAt": "2026-11-18T14:49",
+"cat": "art",
+"gloss": {
+"art": "美術",
+"at": "〜で",
+"but": "でも",
+"but the poster": "でも投稿者は",
+"cute": "かわいい",
+"decorated": "飾られた",
+"did": "〜した（didn't用）",
+"exhibition": "展覧会",
+"exhibition at the": "〜の展覧会（会場は）",
+"flowers": "お花",
+"go": "行く・入る",
+"hills": "ヒルズ",
+"in": "中に",
+"into": "〜の中へ",
+"into the spaceship": "宇宙船の中へ",
+"it": "それ",
+"it was cute": "それはかわいかった",
+"mariko": "万里子（人名）",
+"mori": "森（人名・美術館名）",
+"museum": "美術館",
+"not": "〜ない",
+"poster": "投稿者",
+"roppongi": "六本木",
+"someone": "だれか",
+"spaceship": "宇宙船",
+"the": "その",
+"the poster": "投稿者",
+"the poster did not": "投稿者は〜しなかった",
+"the poster did not go": "投稿者は入らなかった",
+"the poster went to the": "投稿者は〜へ行った",
+"the poster went to the mariko mori exhibition at the mori art": "投稿者は森美術館の森万里子展に行った",
+"the spaceship": "その宇宙船",
+"the tree": "そのツリー",
+"the tree at roppongi hills": "六本木ヒルズのツリー",
+"the tree at roppongi hills was": "六本木ヒルズのツリーは〜だった",
+"thought": "思った（thinkの過去形）",
+"to": "〜へ",
+"to go in with someone": "だれかと一緒に入ること",
+"tree": "ツリー・木",
+"wanted": "〜したかった",
+"was": "〜でした",
+"went": "行った（goの過去形）",
+"with": "〜と一緒に",
+"with flowers": "お花で",
+"with someone": "だれかと一緒に"
+},
+"grad": [
+{
+"q1": "{The poster} は、森美術館の「森万里子」{exhibition} に行きました。",
+"q2": "{The poster went to the} 「森万里子」{exhibition at the} 森美術館。",
+"q3": "{The poster went to the Mariko Mori exhibition at the Mori Art} 美術館。"
+},
+{
+"q1": "{The poster} は、{spaceship} の中には入りませんでした。",
+"q2": "{The poster did not} 入る {the spaceship} の中に。",
+"q3": "{The poster did not go} 入る {into the spaceship.}"
+},
+{
+"q1": "でも、{the poster} は {someone} と一緒に入りたかったそうです。",
+"q2": "{But the poster} は入りたかった、{with someone}。",
+"q3": "{But the poster} 入りたかった {to go in with someone.}"
+},
+{
+"q1": "{The tree} は、{flowers} で飾られていました。",
+"q2": "{The tree at Roppongi Hills} は、{with flowers} 飾られていました。",
+"q3": "{The tree at Roppongi Hills was} 飾られた {with flowers.}"
+},
+{
+"q1": "{The poster} は、それを {cute} と思いました。",
+"q2": "{The poster} は、{it was cute} と思いました。",
+"q3": "{The poster} 思った {it was cute.}"
+}
+],
+"grammar": {
+"body": "someone は「だれか」という意味です。with someone で「だれかと一緒に」。「だれも〜ない」「だれか〜？」の疑問文では anyone を使います。",
+"ex": [
+{
+"en": "I want to talk with someone.",
+"ja": "私はだれかと話したいです。"
+},
+{
+"en": "Is there anyone here?",
+"ja": "ここにだれかいますか？"
+}
+],
+"title": "someone「だれか」"
+},
+"id": "20261117-art-mori-mariko-visit",
+"level": 1,
+"lines": [
+{
+"en": "The poster went to the Mariko Mori exhibition at the Mori Art Museum.",
+"ja": "投稿者は、森美術館の「森万里子」展に行きました。",
+"mix": "投稿者は、森美術館の「森万里子」{exhibition} に行きました。"
+},
+{
+"en": "The poster did not go into the spaceship.",
+"ja": "投稿者は、宇宙船の中には入りませんでした。",
+"mix": "投稿者は、{spaceship} の中には入りませんでした。"
+},
+{
+"en": "But the poster wanted to go in with someone.",
+"ja": "でも、だれかと一緒に入りたかったそうです。",
+"mix": "でも、{someone} と一緒に入りたかったそうです。"
+},
+{
+"en": "The tree at Roppongi Hills was decorated with flowers.",
+"ja": "六本木ヒルズのツリーは、お花で飾られていました。",
+"mix": "六本木ヒルズの {tree} は、{flowers} で飾られていました。"
+},
+{
+"en": "The poster thought it was cute.",
+"ja": "投稿者は、それをかわいいと思いました。",
+"mix": "投稿者は、それを {cute} と思いました。"
+}
+],
+"post": {
+"account": "akhk_adm",
+"date": "2026-11-17T17:55",
+"likes": 463,
+"name": "れい🐰",
+"url": "https://x.com/akhk_adm/status/2122614652572258388"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"入った",
+"入らなかった",
+"まだ見ていない"
+],
+"q": "投稿者は、宇宙船の中に入りましたか？",
+"why": "2文目に did not go into the spaceship とあります。"
+},
+{
+"a": 2,
+"choices": [
+"売られた",
+"消された",
+"飾られた"
+],
+"q": "decorated の意味は？",
+"why": "decorated with flowers は「お花で飾られた」です。"
+},
+{
+"a": 0,
+"choices": [
+"someone",
+"some",
+"somewhere"
+],
+"q": "I want to go with ___.（だれかと）",
+"why": "「だれか」は someone です。"
+}
+],
+"summary": "森美術館の「森万里子」展に行った人の感想です。宇宙船の中には入らなかったけれど、だれかと一緒なら入りたかったそうです。六本木ヒルズのツリーがお花で飾られていて、かわいかったとも書いています。",
+"talk": {
+"hint": "Yes, I do. / No, I like to go ___.",
+"ja": "友だちと美術館に行くのは好きですか？",
+"q": "Do you like going to museums with friends?"
+},
+"title": "森万里子展へ。宇宙船とヒルズのツリーの感想",
+"words": [
+{
+"ja": "展覧会",
+"note": "ポストの「森万里子」展は the Mariko Mori exhibition。",
+"w": "exhibition"
+},
+{
+"ja": "宇宙船",
+"note": "ポストの「宇宙船」。space（宇宙）＋ ship（船）です。",
+"w": "spaceship"
+},
+{
+"ja": "だれか",
+"note": "ポストの「誰かと一緒だったら」は with someone。",
+"w": "someone"
+},
+{
+"ja": "飾られた",
+"note": "ポストの「お花で可愛かった」ツリーは decorated with flowers。",
+"w": "decorated"
+},
+{
+"ja": "かわいい",
+"note": "ポストの「可愛かった」。",
+"w": "cute"
+}
+]
+},
+{
 "added": "2026-11-17T17:23",
 "addedAt": "2026-11-18T08:00",
 "cat": "movie",
@@ -1614,6 +2851,454 @@ window.LESSONS = [
 "ja": "発表する",
 "note": "ポストの「発表」は announce。受け身で be announced（発表される）。",
 "w": "announce"
+}
+]
+},
+{
+"added": "2026-11-17T17:03",
+"addedAt": "2026-11-18T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a robot battle": "ロボットバトル",
+"advanced": "進んだ・最先端の",
+"and": "〜と・そして",
+"at": "〜のとき（at that time）",
+"at that time its cg was the most advanced": "当時、そのCGは最先端だった",
+"at that time its cg was the most advanced in japanese": "当時、そのCGは日本の〜で最先端だった",
+"battle": "戦い・バトル",
+"best": "最高の",
+"can": "〜できる",
+"cg": "CG",
+"even": "〜でさえ・〜でも",
+"excited": "ワクワクして",
+"film": "映画",
+"first": "最初の・初の",
+"grandgear": "グランギア（作品名）",
+"grandgear is his first hollywood movie": "『グランギア』は彼のハリウッド初作品だ",
+"grandgear is his first hollywood movie and it is a mecha": "『グランギア』は彼のハリウッド初作品でメカ〜だ",
+"his": "彼の",
+"hollywood": "ハリウッド",
+"hollywood movie": "ハリウッド映画",
+"in": "〜で・〜の中で",
+"is": "〜です",
+"it": "それ",
+"it is a mecha": "それはメカ〜だ",
+"its": "その（それの）",
+"its cg": "そのCG",
+"japanese": "日本の",
+"juvenile": "ジュブナイル（作品名）",
+"mecha": "メカ（ロボットもの）",
+"most": "いちばん",
+"movie": "映画",
+"movies": "映画（movieの複数形）",
+"poster": "投稿者",
+"robot": "ロボット",
+"robot battle": "ロボットバトル",
+"see": "見る",
+"showed": "見せた（showの過去形）",
+"story": "物語",
+"takashi": "貴（人名）",
+"takashi yamazaki": "山崎貴（監督）",
+"takashi yamazaki showed a robot battle": "山崎貴監督はロボットバトルを見せた",
+"takashi yamazaki showed a robot battle even in his": "山崎貴監督は自身のデビュー作でもロボットバトルを見せた",
+"that": "その",
+"the": "その",
+"the poster": "投稿者",
+"the poster is very excited": "投稿者はとてもワクワクしている",
+"the poster is very excited to": "投稿者は〜するのがとてもワクワクしている",
+"the poster thinks we can see a robot battle with": "投稿者はロボットバトルが〜で観られると考えている",
+"the poster thinks we can see a robot battle with the best visuals in the": "投稿者は世界最高の映像でロボットバトルが観られると考えている",
+"thinks": "考えている",
+"time": "時・時代",
+"to": "〜するのが",
+"very": "とても",
+"very excited": "とてもワクワクして",
+"visuals": "映像",
+"was": "〜でした",
+"we": "私たち",
+"with": "〜で・〜をもった",
+"world": "世界",
+"yamazaki": "山崎（人名）"
+},
+"grad": [
+{
+"q1": "{Takashi Yamazaki} 監督は、デビュー作『ジュブナイル』でも {robot battle} を見せてくれました。",
+"q2": "{Takashi Yamazaki showed a robot battle} 、デビュー作の {Juvenile} でも。",
+"q3": "{Takashi Yamazaki showed a robot battle even in his} デビュー作 {Juvenile.}"
+},
+{
+"q1": "当時、{its CG} は邦画で最先端のものでした。",
+"q2": "{At that time, its CG was the most advanced} 邦画で。",
+"q3": "{At that time, its CG was the most advanced in Japanese} 映画。"
+},
+{
+"q1": "{Grandgear} は彼の {Hollywood movie} 初作品で、{mecha} ものです。",
+"q2": "{Grandgear is his first Hollywood movie} 、そして {it is a mecha} ものです。",
+"q3": "{Grandgear is his first Hollywood movie, and it is a mecha} 物語。"
+},
+{
+"q1": "{The poster} は、世界最高峰の {visuals} で {a robot battle} が観られると考えています。",
+"q2": "{The poster thinks we can see a robot battle with} 世界最高峰の {visuals}。",
+"q3": "{The poster thinks we can see a robot battle with the best visuals in the} 世界。"
+},
+{
+"q1": "投稿者は、{it} を見るのが {very excited} です。",
+"q2": "{The poster is very excited} 、{it} を見る。",
+"q3": "{The poster is very excited to} 見る {it.}"
+}
+],
+"grammar": {
+"body": "even は「〜でさえ・〜でも」と、意外なことを強調することばです。名詞や前置詞のかたまりの前に置きます。",
+"ex": [
+{
+"en": "Even kids can enjoy this movie.",
+"ja": "子どもでさえ、この映画を楽しめます。"
+},
+{
+"en": "She smiled even in the rain.",
+"ja": "彼女は雨の中でも笑っていました。"
+}
+],
+"title": "even「〜でさえ・〜でも」"
+},
+"id": "20261117-yamazaki-grandgear-critique",
+"level": 3,
+"lines": [
+{
+"en": "Takashi Yamazaki showed a robot battle even in his first film, Juvenile.",
+"ja": "山崎貴監督は、デビュー作『ジュブナイル』でもロボットバトルを見せてくれました。",
+"mix": "山崎貴監督は、デビュー作『ジュブナイル』でも {robot battle} を見せてくれました。"
+},
+{
+"en": "At that time, its CG was the most advanced in Japanese movies.",
+"ja": "当時、そのCGは邦画で最先端のものでした。",
+"mix": "当時、その {CG} は邦画で最先端のものでした。"
+},
+{
+"en": "Grandgear is his first Hollywood movie, and it is a mecha story.",
+"ja": "『グランギア』は彼のハリウッド初作品で、メカものです。",
+"mix": "『グランギア』は彼の {Hollywood} 初作品で、{mecha} ものです。"
+},
+{
+"en": "The poster thinks we can see a robot battle with the best visuals in the world.",
+"ja": "投稿者は、世界最高峰の映像でロボットバトルが観られると考えています。",
+"mix": "投稿者は、世界最高峰の {visuals} で {robot battle} が観られると考えています。"
+},
+{
+"en": "The poster is very excited to see it.",
+"ja": "投稿者は、それを見るのがとてもワクワクしています。",
+"mix": "投稿者は、それを見るのが {very excited} です。"
+}
+],
+"post": {
+"account": "bu_columbo",
+"date": "2026-11-17T17:03",
+"likes": 1674,
+"name": "地球刑事コロンボ（闘病中）",
+"url": "https://x.com/bu_columbo/status/2122601580147139023"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"『ジュブナイル』の続編",
+"『グランギア』のロボットバトル",
+"新しいアニメ作品"
+],
+"q": "投稿者が楽しみにしているのは？",
+"why": "4文目に a robot battle with the best visuals in the world とあります。"
+},
+{
+"a": 2,
+"choices": [
+"古い",
+"安い",
+"最先端の"
+],
+"q": "advanced の意味は？",
+"why": "the most advanced は「いちばん進んだ・最先端の」です。"
+},
+{
+"a": 0,
+"choices": [
+"even",
+"very",
+"only"
+],
+"q": "He showed a robot battle ___ in his first film.（デビュー作でも）",
+"why": "「〜でさえ・〜でも」は even です。"
+}
+],
+"summary": "投稿者の地球刑事コロンボさんは、山崎貴監督がデビュー作『ジュブナイル』でも当時の邦画として最先端のCGでロボットバトルを見せたので、ハリウッド初作品『グランギア』では世界最高峰の映像でロボットバトルが観られると考えています。とてもワクワクしているそうです。",
+"talk": {
+"hint": "I want to see ___ because ___.",
+"ja": "映画館で、どんな映画を見たいですか？",
+"q": "What kind of movie do you want to see in a theater?"
+},
+"title": "山崎貴監督のハリウッド初作品『グランギア』への期待",
+"words": [
+{
+"ja": "戦い・バトル",
+"note": "ポストの「ロボットバトル」は robot battle です。",
+"w": "battle"
+},
+{
+"ja": "進んだ・最先端の",
+"note": "ポストの「最先端の」。the most advanced で「いちばん進んでいる」。",
+"w": "advanced"
+},
+{
+"ja": "映像・ビジュアル",
+"note": "ポストの「映像クオリティ」を the best visuals と表しました。",
+"w": "visuals"
+},
+{
+"ja": "メカ（ロボットもの）",
+"note": "ポストの「メカもの」。日本語から英語になったことばです。",
+"w": "mecha"
+},
+{
+"ja": "ワクワクしている",
+"note": "ポストの「ワクワクしますね」を be excited で表しました。",
+"w": "excited"
+}
+]
+},
+{
+"added": "2026-11-17T16:01",
+"addedAt": "2026-11-18T14:49",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a stage greeting": "舞台挨拶",
+"a stage greeting will be": "舞台挨拶が〜される",
+"again": "もう一度",
+"also": "〜も",
+"and": "〜と",
+"applications": "応募（applicationの複数形）",
+"applications for the early ticket lottery": "チケット先行抽選の応募受付",
+"applications for the early ticket lottery have": "チケット先行抽選の応募受付が〜した",
+"be": "〜される",
+"be on stage": "ステージに立つ",
+"be there": "そこにいる・登場する",
+"come": "来る・登場する",
+"come too": "登場する",
+"december": "12月",
+"director": "監督",
+"director shuko murase and producer keisuke kasai": "村瀬修功監督と笠井圭介プロデューサー",
+"director shuko murase and producer keisuke kasai will also": "村瀬修功監督と笠井圭介プロデューサーも〜する予定",
+"early": "先行の",
+"for": "〜のあいだ",
+"for a limited time": "期間限定で",
+"gigi": "ギギ（役名）",
+"greeting": "あいさつ",
+"hathaway": "ハサウェイ（作品名・役名）",
+"hathaway will be": "ハサウェイは〜される",
+"hathaway will be shown": "ハサウェイが上映される",
+"have": "〜した（現在完了）",
+"held": "開かれる（holdの過去分詞）",
+"is": "〜です",
+"is shinjuku piccadilly": "新宿ピカデリーです",
+"kasai": "笠井（人名）",
+"keisuke": "圭介（人名）",
+"kensho": "賢章（人名）",
+"kensho ono": "小野賢章（人名）",
+"kensho ono the voice of hathaway will": "ハサウェイ役の小野賢章さんが〜する予定",
+"kensho ono the voice of hathaway will be": "ハサウェイ役の小野賢章さんが〜する",
+"limited": "限られた",
+"limited time": "期間限定",
+"lottery": "抽選",
+"murase": "村瀬（人名）",
+"of": "〜の",
+"on": "〜に（日付）",
+"on december 12": "12月12日に",
+"ono": "小野（人名）",
+"piccadilly": "ピカデリー",
+"place": "場所",
+"producer": "プロデューサー",
+"rei": "麗奈（人名）",
+"rei ueda": "上田麗奈（人名）",
+"rei ueda the voice of gigi": "ギギ役の上田麗奈さん",
+"rei ueda the voice of gigi will": "ギギ役の上田麗奈さんが〜する予定",
+"shinjuku": "新宿",
+"shinjuku piccadilly": "新宿ピカデリー",
+"shown": "上映される（showの過去分詞）",
+"shuko": "修功（人名）",
+"shuko murase": "村瀬修功（人名）",
+"stage": "舞台・ステージ",
+"stage greeting": "舞台挨拶",
+"started": "始まった",
+"the": "その",
+"there": "そこに",
+"ticket": "チケット",
+"time": "期間・時間",
+"too": "〜も",
+"ueda": "上田（人名）",
+"voice": "声・声の役",
+"will": "〜される予定だ（未来）"
+},
+"grad": [
+{
+"q1": "『{Hathaway}』が、期間限定の {limited time} で再上映されます。",
+"q2": "{Hathaway will be} 再上映 {for a limited time}。",
+"q3": "{Hathaway will be shown} もう一度 {for a limited time.}"
+},
+{
+"q1": "12月12日に、{a stage greeting} が開かれます。",
+"q2": "{A stage greeting} が、{on December 12} に開かれます。",
+"q3": "{A stage greeting will be} 開催される {on December 12.}"
+},
+{
+"q1": "場所は {Shinjuku Piccadilly} です。",
+"q2": "場所 {is Shinjuku Piccadilly}。",
+"q3": "{The} 場所 {is Shinjuku Piccadilly.}"
+},
+{
+"q1": "{Hathaway} 役の {Kensho Ono} さんが、ステージに登場します。",
+"q2": "{Kensho Ono, the voice of Hathaway, will be} ステージに登場します。",
+"q3": "{Kensho Ono, the voice of Hathaway, will} 登場する {be on stage.}"
+},
+{
+"q1": "{Gigi} 役の {Rei Ueda} さんも登場します。",
+"q2": "{Rei Ueda, the voice of Gigi,} も登場します。",
+"q3": "{Rei Ueda, the voice of Gigi, will} 登場する {come too.}"
+},
+{
+"q1": "{director} の {Shuko Murase} さんと、{producer} の笠井圭介さんも登場します。",
+"q2": "{Director Shuko Murase and producer Keisuke Kasai} も登場します。",
+"q3": "{Director Shuko Murase and producer Keisuke Kasai will also} 登場する {be there.}"
+},
+{
+"q1": "チケット先行 {lottery} の {applications} が始まりました。",
+"q2": "{Applications for the early ticket lottery} が始まりました。",
+"q3": "{Applications for the early ticket lottery have} 始まった。"
+}
+],
+"grammar": {
+"body": "人の名前のあとに「、」でくぎって、その人がだれか（「〜役」など）を説明できます。Kensho Ono, the voice of Hathaway は「ハサウェイ役の小野賢章さん」です。",
+"ex": [
+{
+"en": "Mr. Sato, our teacher, is kind.",
+"ja": "私たちの先生の佐藤先生は親切です。"
+},
+{
+"en": "I met Rin, the captain of the team.",
+"ja": "私はチームのキャプテンのリンに会いました。"
+}
+],
+"title": "名前のあとに説明を足す「A, the B of C」"
+},
+"id": "20261117-hathaway-rerun-greeting",
+"level": 1,
+"lines": [
+{
+"en": "Hathaway will be shown again for a limited time.",
+"ja": "『閃光のハサウェイ』が、期間限定で再上映されます。",
+"mix": "『閃光のハサウェイ』が、{limited time} で再上映されます。"
+},
+{
+"en": "A stage greeting will be held on December 12.",
+"ja": "12月12日に、舞台挨拶が開かれます。",
+"mix": "12月12日に、{stage greeting} が開かれます。"
+},
+{
+"en": "The place is Shinjuku Piccadilly.",
+"ja": "場所は新宿ピカデリーです。",
+"mix": "場所は {Shinjuku Piccadilly} です。"
+},
+{
+"en": "Kensho Ono, the voice of Hathaway, will be on stage.",
+"ja": "ハサウェイ役の小野賢章さんが、ステージに登場します。",
+"mix": "{Hathaway} 役の小野賢章さんが、ステージに登場します。"
+},
+{
+"en": "Rei Ueda, the voice of Gigi, will come too.",
+"ja": "ギギ役の上田麗奈さんも登場します。",
+"mix": "{Gigi} 役の上田麗奈さんも登場します。"
+},
+{
+"en": "Director Shuko Murase and producer Keisuke Kasai will also be there.",
+"ja": "監督の村瀬修功さんと、プロデューサーの笠井圭介さんも登場します。",
+"mix": "{director} の村瀬修功さんと、{producer} の笠井圭介さんも登場します。"
+},
+{
+"en": "Applications for the early ticket lottery have started.",
+"ja": "チケット先行抽選の応募受付が始まりました。",
+"mix": "チケット先行 {lottery} の応募受付が始まりました。"
+}
+],
+"post": {
+"account": "gundam_hathaway",
+"date": "2026-11-17T16:01",
+"likes": 1135,
+"name": "機動戦士ガンダム 閃光のハサウェイ",
+"url": "https://x.com/gundam_hathaway/status/2122585817118113938"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"11月17日",
+"12月21日",
+"12月12日"
+],
+"q": "舞台挨拶が開かれるのはいつ？",
+"why": "2文目に on December 12 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"抽選",
+"割引",
+"席"
+],
+"q": "lottery の意味は？",
+"why": "early ticket lottery は「チケット先行抽選」です。"
+},
+{
+"a": 1,
+"choices": [
+"at",
+"of",
+"to"
+],
+"q": "Rei Ueda, the voice ___ Gigi, will come too.",
+"why": "「ギギ役」は the voice of Gigi です。"
+}
+],
+"summary": "『閃光のハサウェイ』の期間限定再上映を記念して、12月12日に新宿ピカデリーで舞台挨拶が開かれます。小野賢章さん、上田麗奈さん、村瀬修功監督、笠井圭介プロデューサーが登壇し、チケット先行抽選の受付が始まりました。",
+"talk": {
+"hint": "I want to see ___ again.",
+"ja": "もう一度映画館で見たい映画は何ですか？",
+"q": "Which movie do you want to see again in a theater?"
+},
+"title": "『閃光のハサウェイ』再上映記念の舞台挨拶が決定",
+"words": [
+{
+"ja": "限られた",
+"note": "ポストの「期間限定」は for a limited time と言います。",
+"w": "limited"
+},
+{
+"ja": "あいさつ",
+"note": "ポストの「舞台挨拶」は stage greeting。",
+"w": "greeting"
+},
+{
+"ja": "プロデューサー",
+"note": "ポストの「笠井圭介プロデューサー」。director は「監督」。",
+"w": "producer"
+},
+{
+"ja": "抽選",
+"note": "ポストの「チケット先行抽選」は early ticket lottery。",
+"w": "lottery"
+},
+{
+"ja": "応募・申し込み",
+"note": "ポストの「応募受付」。applications は複数形です。",
+"w": "application"
 }
 ]
 },
