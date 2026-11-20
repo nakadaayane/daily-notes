@@ -1,5 +1,1225 @@
 window.LESSONS = [
 {
+"added": "2026-11-20T12:00",
+"addedAt": "2026-11-20T13:00",
+"cat": "art",
+"gloss": {
+"a": "ひとつの",
+"and": "〜と",
+"at": "〜で",
+"be": "〜される（受け身で）",
+"belongs": "属する（belongの三単現）",
+"but": "でも",
+"but by": "でも〜では",
+"by": "〜では・〜によれば",
+"classification": "分類",
+"crocodile": "ワニ",
+"dinosaur": "恐竜",
+"dinosaur expo": "恐竜博",
+"dinosaur expo 2027 will show": "恐竜博2027は〜を展示する",
+"dinosaur expo 2027 will show a": "恐竜博2027は〜を展示する",
+"expo": "博覧会・展覧会",
+"first": "最初の",
+"for": "〜として",
+"from": "〜から",
+"from march 13 to": "3月13日から〜まで",
+"from march 13 to june 13 2027": "2027年3月13日から6月13日まで",
+"full": "全身の・まるごとの",
+"group": "グループ・仲間",
+"in": "〜で",
+"in ueno park tokyo": "東京の上野公園にある",
+"is": "〜です",
+"it": "それは",
+"it belongs to the crocodile group": "それはワニの仲間に入る",
+"it will": "それは〜する予定だ",
+"it will be shown in japan": "それは日本で公開される",
+"it will be shown in japan for the": "それは日本で〜として公開される",
+"japan": "日本",
+"june": "6月",
+"march": "3月",
+"march 13": "3月13日",
+"museum": "博物館",
+"national": "国立の",
+"nature": "自然",
+"of": "〜の",
+"of nature and science in ueno park tokyo": "自然科学の〜、東京の上野公園にある",
+"park": "公園",
+"poposaurus": "ポポサウルス（恐竜に似た動物の名前）",
+"poposaurus is similar to": "ポポサウルスは〜に似ている",
+"poposaurus is similar to a": "ポポサウルスは〜に似ている",
+"reconstructed": "復元された",
+"reconstructed skeleton": "復元骨格",
+"run": "続く・開催される",
+"science": "科学",
+"show": "見せる・展示する",
+"shown": "見せられる（showの過去分詞）",
+"similar": "似ている",
+"skeleton": "骨格",
+"the": "その",
+"the crocodile group": "ワニのグループ",
+"the expo is at": "会場は〜だ",
+"the expo is at the national": "会場は国立〜だ",
+"time": "回・とき",
+"to": "〜に",
+"tokyo": "東京",
+"ueno": "上野",
+"ueno park": "上野公園",
+"will": "〜する予定だ"
+},
+"grad": [
+{
+"q1": "{Poposaurus} は恐竜に似ています。",
+"q2": "{Poposaurus is similar to} 恐竜。",
+"q3": "{Poposaurus is similar to a} 恐竜。"
+},
+{
+"q1": "でも、分類上は {the crocodile group} に入ります。",
+"q2": "{But} 分類上は、{it belongs to the crocodile group}。",
+"q3": "{But by} 分類 {it belongs to the crocodile group.}"
+},
+{
+"q1": "{Dinosaur Expo} 2027では、全身の復元 {skeleton} を展示します。",
+"q2": "{Dinosaur Expo 2027 will show} 全身の復元 {skeleton}。",
+"q3": "{Dinosaur Expo 2027 will show a} 全身 {reconstructed skeleton.}"
+},
+{
+"q1": "{It} は {Japan} で初めて公開されます。",
+"q2": "{It will be shown in Japan} 初めて。",
+"q3": "{It will be shown in Japan for the} 初めて。"
+},
+{
+"q1": "会場は、{Tokyo}・{Ueno Park} の国立科学博物館です。",
+"q2": "{The expo is at} 国立科学博物館 {in Ueno Park, Tokyo.}",
+"q3": "{The expo is at the National} 博物館 {of Nature and Science in Ueno Park, Tokyo.}"
+},
+{
+"q1": "会期は2027年、{March 13} から6月13日までです。",
+"q2": "{It will} 開催 {from March 13 to} 6月13日、2027年。",
+"q3": "{It will} 開催 {from March 13 to June 13, 2027.}"
+}
+],
+"grammar": {
+"body": "similar は「似ている」という形容詞です。「Aは Bに似ている」は A is similar to B と言います。to のあとに、似ているものを置きます。",
+"ex": [
+{
+"en": "This cake is similar to that one.",
+"ja": "このケーキはあれに似ています。"
+},
+{
+"en": "My bag is similar to yours.",
+"ja": "私のかばんはあなたのに似ています。"
+}
+],
+"title": "be similar to 〜「〜に似ている」"
+},
+"id": "20261120-art-dinoexpo-popo",
+"level": 2,
+"lines": [
+{
+"en": "Poposaurus is similar to a dinosaur.",
+"ja": "ポポサウルスは恐竜に似ています。",
+"mix": "{Poposaurus} は恐竜に似ています。"
+},
+{
+"en": "But by classification, it belongs to the crocodile group.",
+"ja": "でも、分類上はワニのグループに入ります。",
+"mix": "でも、分類上は {crocodile} のグループに入ります。"
+},
+{
+"en": "Dinosaur Expo 2027 will show a full reconstructed skeleton.",
+"ja": "恐竜博2027では、全身の復元骨格を展示します。",
+"mix": "恐竜博2027では、全身の復元 {skeleton} を展示します。"
+},
+{
+"en": "It will be shown in Japan for the first time.",
+"ja": "それは日本で初めて公開されます。",
+"mix": "{Japan} で初めて公開されます。"
+},
+{
+"en": "The expo is at the National Museum of Nature and Science in Ueno Park, Tokyo.",
+"ja": "会場は、東京・上野公園の国立科学博物館です。",
+"mix": "会場は、東京・{Ueno Park} の国立科学博物館です。"
+},
+{
+"en": "It will run from March 13 to June 13, 2027.",
+"ja": "会期は2027年3月13日から6月13日までです。",
+"mix": "会期は2027年 {March} 13日から6月13日までです。"
+}
+],
+"post": {
+"account": "dinoexpo2027",
+"date": "2026-11-20",
+"likes": 1188,
+"name": "恐竜博2027",
+"url": "https://x.com/dinoexpo2027/status/2123612300963991722"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"恐竜",
+"ワニ",
+"トカゲ"
+],
+"q": "ポポサウルスは、分類上は何の仲間？",
+"why": "2文目に it belongs to the crocodile group（ワニのグループ）とあります。"
+},
+{
+"a": 2,
+"choices": [
+"化石の発掘",
+"展示ケース",
+"骨格・全身の骨"
+],
+"q": "skeleton の意味は？",
+"why": "skeleton は体の骨組みのことです。"
+},
+{
+"a": 0,
+"choices": [
+"to",
+"for",
+"at"
+],
+"q": "Poposaurus is similar ___ a dinosaur.（恐竜に似ている）",
+"why": "「〜に似ている」は be similar to 〜 です。"
+}
+],
+"summary": "ポポサウルスは恐竜に似ていますが、分類上はワニの仲間です。恐竜博2027では、全身の復元骨格が日本で初めて公開されます。会場は上野公園の国立科学博物館で、2027年3月13日から6月13日までです。",
+"talk": {
+"hint": "I want to see ___.",
+"ja": "恐竜の骨格を見てみたいですか？",
+"q": "Do you want to see a dinosaur skeleton?"
+},
+"title": "恐竜博2027、ワニの仲間ポポサウルス",
+"words": [
+{
+"ja": "似ている",
+"note": "ポストの「恐竜に似ている」は similar to a dinosaur。",
+"w": "similar"
+},
+{
+"ja": "ワニ",
+"note": "「ワニの仲間」は the crocodile group と言いかえました。",
+"w": "crocodile"
+},
+{
+"ja": "骨格・全身の骨",
+"note": "「復元骨格」は reconstructed skeleton です。",
+"w": "skeleton"
+},
+{
+"ja": "〜に属する・〜の仲間に入る",
+"note": "「分類上はワニの仲間」は、分類のグループに入る、と考えて belongs to。",
+"w": "belong to"
+},
+{
+"ja": "（期間が）続く・開催される",
+"note": "「会期は〜まで」は It will run from A to B。",
+"w": "run"
+}
+]
+},
+{
+"added": "2026-11-20T12:00",
+"addedAt": "2026-11-20T14:44",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"about": "〜について",
+"anno": "庵野（人名）",
+"appearance": "出演",
+"appears": "出ている（appearの三単現）",
+"cameo": "カメオ出演",
+"commented": "コメントした",
+"credits": "クレジット（名前の一覧）",
+"eiga": "映画",
+"eiga natalie": "映画ナタリー（媒体名）",
+"end": "終わりの",
+"end credits": "エンドロール",
+"godzilla": "ゴジラ",
+"happy": "うれしい",
+"has": "〜した（現在完了）",
+"he": "彼は",
+"hideaki": "秀明（人名）",
+"hideaki anno": "庵野秀明（人名）",
+"hideaki anno has made a cameo": "庵野秀明さんはカメオ出演した",
+"his": "彼の",
+"his name": "彼の名前",
+"in": "〜に（出ている）",
+"in the end credits of the movie": "その映画のエンドロールに",
+"in the movie godzilla minus zero": "映画『ゴジラ-0.0』に",
+"it": "それ",
+"made": "した（makeの過去分詞）",
+"minus": "マイナス",
+"movie": "映画",
+"mr": "〜さん",
+"mr anno": "庵野さん",
+"mr anno commented that he was happy": "庵野さんはうれしかったとコメントした",
+"mr anno commented that he was happy about": "庵野さんは〜がうれしかったとコメントした",
+"name": "名前",
+"natalie": "ナタリー",
+"news": "ニュース",
+"of": "〜の",
+"reported": "伝えた（reportの過去形）",
+"that": "〜ということ",
+"the": "その",
+"the movie": "その映画",
+"the news": "そのニュース",
+"was": "〜だった",
+"zero": "ゼロ"
+},
+"grad": [
+{
+"q1": "{Hideaki Anno} さんが、{movie}『ゴジラ-0.0』に {cameo} として出演しました。",
+"q2": "{Hideaki Anno has made a cameo}、{the movie}『ゴジラ-0.0』に出演しました。",
+"q3": "{Hideaki Anno has made a cameo} 出演 {in the movie Godzilla Minus Zero.}"
+},
+{
+"q1": "その {movie} の {end credits} に、彼の {name} が出ています。",
+"q2": "{His name} が、その {movie} の {end credits} に出ています。",
+"q3": "{His name} 出ている {in the end credits of the movie.}"
+},
+{
+"q1": "{Mr. Anno} は、それが {happy} だったとコメントしました。",
+"q2": "{Mr. Anno commented that he was happy}、それについて。",
+"q3": "{Mr. Anno commented that he was happy about} それ。"
+},
+{
+"q1": "{Eiga Natalie} が、この {news} を伝えました。",
+"q2": "{Eiga Natalie} が、{the news} を伝えました。",
+"q3": "{Eiga Natalie} 伝えた {the news.}"
+}
+],
+"grammar": {
+"body": "コメントの中身は that のあとに文を続けて言います。that は省略することもできます。said that ... や wrote that ... も同じ形です。",
+"ex": [
+{
+"en": "He commented that the movie was great.",
+"ja": "彼はその映画はすばらしかったとコメントしました。"
+},
+{
+"en": "She said that she was happy.",
+"ja": "彼女はうれしいと言いました。"
+}
+],
+"title": "comment that ＋ 文「〜とコメントした」"
+},
+"id": "20261120-godzilla0-anno-cameo",
+"level": 3,
+"lines": [
+{
+"en": "Hideaki Anno has made a cameo appearance in the movie Godzilla Minus Zero.",
+"ja": "庵野秀明さんが、映画『ゴジラ-0.0』にカメオとして出演しました。",
+"mix": "庵野秀明さんが、映画『ゴジラ-0.0』に {cameo} として出演しました。"
+},
+{
+"en": "His name appears in the end credits of the movie.",
+"ja": "その映画のエンドロールに、彼の名前が出ています。",
+"mix": "その映画の {end credits} に、彼の名前が出ています。"
+},
+{
+"en": "Mr. Anno commented that he was happy about it.",
+"ja": "庵野さんは、それがうれしかったとコメントしました。",
+"mix": "庵野さんは、それが {happy} だったとコメントしました。"
+},
+{
+"en": "Eiga Natalie reported the news.",
+"ja": "映画ナタリーが、このニュースを伝えました。",
+"mix": "映画ナタリーが、この {news} を伝えました。"
+}
+],
+"post": {
+"account": "eiga_natalie",
+"date": "2026-11-20",
+"likes": 129,
+"name": "映画ナタリー",
+"url": "https://x.com/eiga_natalie/status/2123612415879524380"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"テレビ番組",
+"舞台",
+"映画『ゴジラ-0.0』"
+],
+"q": "庵野秀明さんが出演したのは？",
+"why": "1文目に in the movie Godzilla Minus Zero とあります。"
+},
+{
+"a": 1,
+"choices": [
+"映画の予告",
+"映画の最後に出る名前の一覧",
+"映画のチケット"
+],
+"q": "end credits の意味は？",
+"why": "end credits は、映画の最後に流れるスタッフや出演者の名前の一覧（エンドロール）です。"
+},
+{
+"a": 0,
+"choices": [
+"commented",
+"comment",
+"comments"
+],
+"q": "Mr. Anno ___ that he was happy about it.",
+"why": "過去のことなので commented（過去形）を使います。"
+}
+],
+"summary": "映画ナタリーが、庵野秀明さんが映画『ゴジラ-0.0』にカメオ出演したと伝えました。庵野さんはエンドロールに名前が出ていることを「嬉しかった」とコメントしています。",
+"talk": {
+"hint": "Yes, I do. / No, I do not. I like ___.",
+"ja": "映画のエンドロールを最後まで見ますか？",
+"q": "Do you watch the end credits of a movie?"
+},
+"title": "庵野秀明さん、『ゴジラ-0.0』にカメオ出演",
+"words": [
+{
+"ja": "カメオ出演（ちょい役の出演）",
+"note": "ポストの「カメオ出演」は a cameo appearance。",
+"w": "cameo"
+},
+{
+"ja": "エンドロール",
+"note": "ポストの「エンドロール」は end credits（映画の最後に流れる名前の一覧）。",
+"w": "end credits"
+},
+{
+"ja": "出る・現れる",
+"note": "エンドロールに名前が「出ている」は appears in the end credits。",
+"w": "appear"
+},
+{
+"ja": "コメントする・意見を言う",
+"note": "ポストの「コメント」は commented that ...（〜とコメントした）。",
+"w": "comment"
+},
+{
+"ja": "報じる・伝える",
+"note": "記事が「伝えた」ことは reported the news。",
+"w": "report"
+}
+]
+},
+{
+"added": "2026-11-20T12:00",
+"addedAt": "2026-11-20T13:00",
+"cat": "anime",
+"gloss": {
+"birthday": "誕生日",
+"celebrate": "お祝いする",
+"february": "2月",
+"february 19": "2月19日",
+"is": "〜です",
+"is november 20": "〜は11月20日です",
+"is rioh's birthday": "〜は理凰の誕生日です",
+"it": "それは",
+"koichi": "小市（名字）",
+"let's": "〜しましょう",
+"makoto": "眞琴（名前）",
+"makoto koichi": "小市眞琴（さん）",
+"makoto koichi is": "小市眞琴さんは〜です",
+"makoto koichi is the": "小市眞琴さんは〜です",
+"medalist": "メダリスト（作品名）",
+"movie": "映画",
+"november": "11月",
+"november 20": "11月20日",
+"of": "〜の",
+"of rioh": "理凰の",
+"on": "〜に（日付）",
+"on february 19 2027": "2027年2月19日に",
+"open": "公開される・始まる",
+"rioh": "理凰（キャラクター名）",
+"rioh's": "理凰の",
+"rioh's birthday": "理凰の誕生日",
+"the": "その",
+"the medalist movie": "劇場版『メダリスト』",
+"the medalist movie will": "劇場版『メダリスト』は〜する予定だ",
+"today": "今日",
+"together": "いっしょに",
+"voice": "声",
+"will": "〜する予定だ"
+},
+"grad": [
+{
+"q1": "今日は {November 20} です。",
+"q2": "今日は {November 20} です。",
+"q3": "今日 {is November 20.}"
+},
+{
+"q1": "今日は、{Rioh's} {birthday} です。",
+"q2": "今日は、{Rioh's birthday} です。",
+"q3": "今日 {is Rioh's birthday.}"
+},
+{
+"q1": "{Rioh} の声は、{Makoto Koichi} さんです。",
+"q2": "{Makoto Koichi is} 声 {of Rioh}。",
+"q3": "{Makoto Koichi is the} 声 {of Rioh.}"
+},
+{
+"q1": "{together} お祝いしましょう。",
+"q2": "{Let's} お祝い {together}。",
+"q3": "{Let's} お祝い {together.}"
+},
+{
+"q1": "劇場版『メダリスト』は、2027年 {February 19} に公開されます。",
+"q2": "{The Medalist movie} は、{February 19,} 2027年に公開されます。",
+"q3": "{The Medalist movie will} 公開 {on February 19, 2027.}"
+}
+],
+"grammar": {
+"body": "Let's のあとに動詞を置くと、「いっしょに〜しましょう」とさそう文になります。Let's は Let us を短くした形です。",
+"ex": [
+{
+"en": "Let's watch the movie.",
+"ja": "その映画を見ましょう。"
+},
+{
+"en": "Let's eat lunch together.",
+"ja": "いっしょにお昼を食べましょう。"
+}
+],
+"title": "Let's 〜「〜しましょう」"
+},
+"id": "20261120-medalist-rioh-birthday",
+"level": 1,
+"lines": [
+{
+"en": "Today is November 20.",
+"ja": "今日は11月20日です。",
+"mix": "今日は {November} 20日です。"
+},
+{
+"en": "It is Rioh's birthday.",
+"ja": "今日は、鴗鳥理凰の誕生日です。",
+"mix": "今日は、{Rioh's} 誕生日です。"
+},
+{
+"en": "Makoto Koichi is the voice of Rioh.",
+"ja": "理凰の声は、小市眞琴さんです。",
+"mix": "{Rioh} の声は、小市眞琴さんです。"
+},
+{
+"en": "Let's celebrate together.",
+"ja": "いっしょにお祝いしましょう。",
+"mix": "{together} お祝いしましょう。"
+},
+{
+"en": "The Medalist movie will open on February 19, 2027.",
+"ja": "劇場版『メダリスト』は、2027年2月19日に公開されます。",
+"mix": "劇場版『メダリスト』は、2027年 {February} 19日に公開されます。"
+}
+],
+"post": {
+"account": "medalist_PR",
+"date": "2026-11-20",
+"likes": 1073,
+"name": "『メダリスト』公式",
+"url": "https://x.com/medalist_PR/status/2123612296173986013"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"公開日",
+"理凰の誕生日",
+"放送の最終回"
+],
+"q": "11月20日は何の日？",
+"why": "2文目に It is Rioh's birthday とあります。"
+},
+{
+"a": 0,
+"choices": [
+"2027年2月19日",
+"2026年11月20日",
+"2027年11月20日"
+],
+"q": "劇場版『メダリスト』の公開日は？",
+"why": "最後の文に February 19, 2027 とあります。"
+},
+{
+"a": 2,
+"choices": [
+"Do",
+"Is",
+"Let's"
+],
+"q": "___ celebrate together.（お祝いしましょう）",
+"why": "「〜しましょう」は Let's ＋ 動詞です。"
+}
+],
+"series": "medalist",
+"summary": "11月20日は、劇場版『メダリスト』に出てくる鴗鳥理凰の誕生日です。声は小市眞琴さんが担当しています。劇場版は2027年2月19日に公開です。",
+"talk": {
+"hint": "My birthday is ___.",
+"ja": "あなたの誕生日はいつですか？",
+"q": "When is your birthday?"
+},
+"title": "『メダリスト』理凰の誕生日をお祝い",
+"words": [
+{
+"ja": "誕生日",
+"note": "ポストの「誕生日」は birthday。",
+"w": "birthday"
+},
+{
+"ja": "声",
+"note": "「声：〜さん」は the voice of 〜 と言えます。",
+"w": "voice"
+},
+{
+"ja": "お祝いする",
+"note": "「お祝いしましょう」は Let's celebrate。",
+"w": "celebrate"
+},
+{
+"ja": "いっしょに",
+"note": "「いっしょに」は together です。",
+"w": "together"
+},
+{
+"ja": "（映画が）公開される",
+"note": "ポストの「公開」は、映画のときは will open でも言えます。",
+"w": "open"
+}
+]
+},
+{
+"added": "2026-11-20T12:00",
+"addedAt": "2026-11-20T14:44",
+"cat": "movie",
+"gloss": {
+"4k": "4K（高画質）",
+"a": "ひとつの",
+"all": "すべて",
+"also": "〜も",
+"american": "アメリカの",
+"and": "〜と",
+"at": "〜で",
+"be": "〜される",
+"called": "〜と呼ばれる",
+"discount": "割引",
+"for": "〜のあいだ・〜の",
+"for stanley kubrick": "スタンリー・キューブリックの",
+"for stanley kubrick and stephen king": "スタンリー・キューブリックとスティーヴン・キングの",
+"has": "ついている",
+"in": "〜で（4Kで）",
+"in 4k": "4Kで",
+"it": "それは",
+"it will be shown": "それは上映される予定だ",
+"it will be shown at theaters": "それは劇場で上映される予定だ",
+"it will be shown for two weeks": "それは2週間上映される予定だ",
+"japan": "日本",
+"king": "キング（人名）",
+"kubrick": "キューブリック（人名）",
+"michizure-wari": "道連れ割（割引の名前）",
+"north": "北の",
+"north american": "北米の",
+"of": "〜の",
+"only": "〜だけ・限定",
+"over": "〜じゅう",
+"post": "ポスト",
+"shining": "シャイニング（作品名）",
+"shown": "上映される（showの過去分詞）",
+"stanley": "スタンリー（人名）",
+"stanley kubrick": "スタンリー・キューブリック（人名）",
+"stephen": "スティーヴン（人名）",
+"tags": "タグ（tagの複数形）",
+"the": "その",
+"the north american version of the shining": "北米公開版の『シャイニング』",
+"the north american version of the shining will be": "北米公開版の『シャイニング』は〜される予定だ",
+"the post": "そのポスト",
+"the post also has": "そのポストには〜もついている",
+"theaters": "映画館（theaterの複数形）",
+"there": "（there will beで）〜がある",
+"there will also be a discount": "割引もある予定だ",
+"there will be a discount": "割引がある予定だ",
+"two": "2つの",
+"two weeks": "2週間",
+"version": "版",
+"weeks": "週間（weekの複数形）",
+"will": "〜する予定だ"
+},
+"grad": [
+{
+"q1": "{North American} 公開版の『シャイニング』が、{4K} で上映されます。",
+"q2": "{The North American version of The Shining} が、{4K} で上映されます。",
+"q3": "{The North American version of The Shining will be} 上映 {in 4K.}"
+},
+{
+"q1": "{It} は、全国の {theaters} で上映されます。",
+"q2": "{It will be shown}、全国の {theaters} で。",
+"q3": "{It will be shown at theaters} 全国。"
+},
+{
+"q1": "{It} は、{two weeks} 限定で上映されます。",
+"q2": "{It will be shown}、{two weeks} 限定で。",
+"q3": "{It will be shown for two weeks} 限定。"
+},
+{
+"q1": "{Michizure-wari} という {discount} もあります。",
+"q2": "{There will be a discount}、{Michizure-wari} と呼ばれる。",
+"q3": "{There will also be a discount} 呼ばれる {Michizure-wari.}"
+},
+{
+"q1": "{The post} には、{Stanley Kubrick} とスティーヴン・キングのタグもついています。",
+"q2": "{The post also has} タグ {for Stanley Kubrick} とスティーヴン・キング。",
+"q3": "{The post also has} タグ {for Stanley Kubrick and Stephen King.}"
+}
+],
+"grammar": {
+"body": "どれくらいの期間かを言うときは for ＋ 期間を使います。「2週間」は for two weeks。「〜だけ（限定）」は only をつけます。",
+"ex": [
+{
+"en": "I studied English for three hours.",
+"ja": "私は3時間英語を勉強しました。"
+},
+{
+"en": "The shop will be closed for a week.",
+"ja": "その店は1週間閉まります。"
+}
+],
+"title": "for ＋ 期間「〜のあいだ」"
+},
+"id": "20261120-shining-4k-limited",
+"level": 2,
+"lines": [
+{
+"en": "The North American version of The Shining will be shown in 4K.",
+"ja": "北米公開版の『シャイニング』が、4Kで上映されます。",
+"mix": "{North American} 公開版の『シャイニング』が、4Kで上映されます。"
+},
+{
+"en": "It will be shown at theaters all over Japan.",
+"ja": "全国の劇場で上映されます。",
+"mix": "全国の {theaters} で上映されます。"
+},
+{
+"en": "It will be shown for two weeks only.",
+"ja": "2週間限定で上映されます。",
+"mix": "{two weeks} 限定で上映されます。"
+},
+{
+"en": "There will also be a discount called Michizure-wari.",
+"ja": "「道連れ割」という割引もあります。",
+"mix": "「道連れ割」という {discount} もあります。"
+},
+{
+"en": "The post also has tags for Stanley Kubrick and Stephen King.",
+"ja": "ポストには、スタンリー・キューブリックとスティーヴン・キングのタグもついています。",
+"mix": "{post} には、スタンリー・キューブリックとスティーヴン・キングのタグもついています。"
+}
+],
+"post": {
+"account": "eiga_natalie",
+"date": "2026-11-20",
+"likes": 163,
+"name": "映画ナタリー",
+"url": "https://x.com/eiga_natalie/status/2123612442894950469"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"1週間",
+"2週間",
+"3週間"
+],
+"q": "『シャイニング』は何週間上映される？",
+"why": "3文目に for two weeks only とあります。"
+},
+{
+"a": 2,
+"choices": [
+"予約",
+"追加",
+"割引"
+],
+"q": "discount の意味は？",
+"why": "discount は「割引」。"
+},
+{
+"a": 0,
+"choices": [
+"for",
+"in",
+"on"
+],
+"q": "It will be shown ___ two weeks only.",
+"why": "期間（2週間）は for ＋ 期間で言います。"
+}
+],
+"summary": "映画ナタリーが、北米公開版の『シャイニング』4Kが全国の劇場で2週間限定で上映されると伝えました。「道連れ割」という割引もあります。ポストにはスタンリー・キューブリックとスティーヴン・キングのタグがついています。",
+"talk": {
+"hint": "Yes, I do. / No, I do not. I want to see ___.",
+"ja": "昔の映画を映画館で見るのは好きですか？",
+"q": "Do you like to watch old movies in a theater?"
+},
+"title": "『シャイニング』北米公開版4Kが2週間限定上映",
+"words": [
+{
+"ja": "版・バージョン",
+"note": "ポストの「北米公開版」は the North American version。",
+"w": "version"
+},
+{
+"ja": "日本じゅうで・全国で",
+"note": "ポストの「全国」は all over Japan。",
+"w": "all over Japan"
+},
+{
+"ja": "〜だけ・〜限定",
+"note": "ポストの「2週間限定」は for two weeks only。",
+"w": "only"
+},
+{
+"ja": "割引",
+"note": "ポストの「道連れ割」の「割」は discount（割引）の意味です。",
+"w": "discount"
+},
+{
+"ja": "タグ",
+"note": "ポストの人名のタグは tags for ... と書きました。",
+"w": "tag"
+}
+]
+},
+{
+"added": "2026-11-20T11:00",
+"addedAt": "2026-11-20T13:00",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a comment": "コメントを",
+"a comment about the movie": "この映画についてのコメント",
+"a movie version of": "〜の劇場版が",
+"a movie version of shinpai muyo no suke tenka gomen will be": "『心配無用ノ介 天下御免』の劇場版が〜される",
+"about": "〜について",
+"at": "〜で",
+"at last": "ついに・満を持して",
+"at last we bring it to movie fans": "ついに映画ファンの元へ届ける",
+"be": "〜される（受け身で）",
+"beating": "打ち負かすこと",
+"born": "生まれた",
+"bring": "届ける・持っていく",
+"comment": "コメント",
+"december": "12月",
+"december 5": "12月5日",
+"drama": "ドラマ",
+"evil": "悪",
+"fans": "ファン",
+"from": "〜から",
+"from samurai time slipper": "『侍タイムスリッパー』から",
+"gomen": "御免（作品名の一部）",
+"good": "善・良いこと",
+"he": "彼は",
+"is": "〜です",
+"it": "それは",
+"it is a period drama": "それは時代劇だ",
+"it is a story of good": "それは善の物語だ",
+"it is a story of good beating": "それは善が打ち負かす物語だ",
+"last": "最後",
+"movie": "映画",
+"movie fans": "映画ファン",
+"movie version": "劇場版",
+"muyo": "無用（作品名の一部）",
+"no": "の（作品名の一部）",
+"of": "〜の",
+"on": "〜に（日付）",
+"on december 5": "12月5日に",
+"period": "時代・時期",
+"period drama": "時代劇",
+"released": "公開される（releaseの過去分詞）",
+"said": "言った",
+"samurai": "侍",
+"shared": "寄せた・伝えた",
+"shinpai": "心配（作品名の一部）",
+"slipper": "スリッパー（時をすべる人）",
+"story": "物語",
+"suke": "ノ介の「介」（作品名の一部）",
+"tamura": "田村（名字）",
+"tenka": "天下（作品名の一部）",
+"the": "その",
+"the movie": "この映画",
+"time": "時間",
+"to": "〜へ",
+"tsutomu": "ツトム（名前）",
+"tsutomu tamura": "田村ツトム（さん）",
+"version": "版",
+"we": "私たちは",
+"will": "〜する予定だ"
+},
+"grad": [
+{
+"q1": "「心配無用ノ介 天下御免」の {movie version} が、{December 5} に公開されます。",
+"q2": "{A movie version of} 「心配無用ノ介 天下御免」が、{December 5} に公開されます。",
+"q3": "{A movie version of Shinpai Muyo no Suke: Tenka Gomen will be} 公開 {on December 5.}"
+},
+{
+"q1": "{It} は、『侍タイムスリッパー』から生まれた {period drama} です。",
+"q2": "{It is a period drama}、『侍タイムスリッパー』から生まれた。",
+"q3": "{It is a period drama} 生まれた {from Samurai Time Slipper.}"
+},
+{
+"q1": "それは、{good} が悪を打ち負かす {story} です。",
+"q2": "{It is a story of good} が悪を打ち負かす。",
+"q3": "{It is a story of good beating} 悪。"
+},
+{
+"q1": "{Tsutomu Tamura} さんが、この映画について {comment} を寄せています。",
+"q2": "{Tsutomu Tamura} さんが、{the movie} について {a comment} を寄せています。",
+"q3": "{Tsutomu Tamura} 寄せた {a comment about the movie.}"
+},
+{
+"q1": "{He} は、「満を持して {movie fans} の皆さまの元へ」と語っています。",
+"q2": "{He} は、「{At last} {movie fans} の元へ」と語っています。",
+"q3": "{He} 語った {At last, we bring it to movie fans.}"
+}
+],
+"grammar": {
+"body": "名詞のあとに過去分詞（born, made, written など）を置くと、「〜された…」と説明できます。a drama born from a film は「映画から生まれたドラマ」です。",
+"ex": [
+{
+"en": "This is a song loved by many people.",
+"ja": "これは多くの人に愛されている歌です。"
+},
+{
+"en": "I like the movie made in 2020.",
+"ja": "私は2020年に作られた映画が好きです。"
+}
+],
+"title": "過去分詞が名詞を後ろから説明「〜された…」"
+},
+"id": "20261120-shinpai-munosuke-movie",
+"level": 3,
+"lines": [
+{
+"en": "A movie version of Shinpai Muyo no Suke: Tenka Gomen will be released on December 5.",
+"ja": "「心配無用ノ介 天下御免」の劇場版が、12月5日に公開されます。",
+"mix": "「心配無用ノ介 天下御免」の劇場版が、{December} 5日に公開されます。"
+},
+{
+"en": "It is a period drama born from Samurai Time Slipper.",
+"ja": "それは、『侍タイムスリッパー』から生まれた時代劇です。",
+"mix": "それは、『侍タイムスリッパー』から生まれた {period drama} です。"
+},
+{
+"en": "It is a story of good beating evil.",
+"ja": "それは、善が悪を打ち負かす物語です。",
+"mix": "それは、善が悪を打ち負かす {story} です。"
+},
+{
+"en": "Tsutomu Tamura shared a comment about the movie.",
+"ja": "田村ツトムさんが、この映画についてコメントを寄せています。",
+"mix": "田村ツトムさんが、この映画について {comment} を寄せています。"
+},
+{
+"en": "He said, \"At last, we bring it to movie fans.\"",
+"ja": "彼は、「満を持して映画ファンの皆さまの元へ」と語っています。",
+"mix": "彼は、「満を持して {movie fans} の皆さまの元へ」と語っています。"
+}
+],
+"post": {
+"account": "eiga_natalie",
+"date": "2026-11-20",
+"likes": 106,
+"name": "映画ナタリー",
+"url": "https://x.com/eiga_natalie/status/2123597240304534010"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"11月5日",
+"12月15日",
+"12月5日"
+],
+"q": "劇場版の公開日は？",
+"why": "1文目に will be released on December 5 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"時代劇",
+"恋愛ドラマ",
+"ドキュメンタリー"
+],
+"q": "period drama の意味は？",
+"why": "period drama は昔の時代を舞台にしたドラマです。"
+},
+{
+"a": 1,
+"choices": [
+"bearing",
+"born",
+"bore"
+],
+"q": "It is a period drama ___ from the film.（映画から生まれた）",
+"why": "名詞のあとの「生まれた」は過去分詞 born で説明します。"
+}
+],
+"summary": "時代劇「心配無用ノ介 天下御免」の劇場版が、12月5日に公開されます。『侍タイムスリッパー』から生まれた、善が悪に勝つ物語です。田村ツトムさんは「満を持して映画ファンの皆さまの元へ」とコメントしています。",
+"talk": {
+"hint": "I like ___.",
+"ja": "時代劇は好きですか？",
+"q": "Do you like period dramas?"
+},
+"title": "「心配無用ノ介 天下御免」劇場版が12月5日公開",
+"words": [
+{
+"ja": "公開する・発売する",
+"note": "ポストの「公開決定」は、will be released の形で書きました。",
+"w": "release"
+},
+{
+"ja": "時代劇",
+"note": "「時代劇」は period drama がふつうの言い方です。",
+"w": "period drama"
+},
+{
+"ja": "打ち負かす・勝つ",
+"note": "「善が悪に勝つ（勧善懲悪）」は good beating evil と言いかえました。",
+"w": "beat"
+},
+{
+"ja": "コメント・意見",
+"note": "「コメントを寄せる」は share a comment。",
+"w": "comment"
+},
+{
+"ja": "ついに・やっと",
+"note": "「満を持して」の気持ちを At last で表しました。",
+"w": "at last"
+}
+]
+},
+{
+"added": "2026-11-20T09:00",
+"addedAt": "2026-11-20T14:44",
+"cat": "movie",
+"gloss": {
+"about": "〜について",
+"about the flyer": "チラシについて",
+"and": "〜と",
+"are": "〜にいる",
+"asked": "たずねた（askの過去形）",
+"be": "〜される",
+"by": "〜ずつ",
+"check": "確認する",
+"chotokkyu": "超特急（グループ名）",
+"december": "12月",
+"december 11": "12月11日",
+"each": "それぞれの",
+"flyer": "チラシ",
+"from": "〜の（所属）・〜から",
+"from today": "今日から",
+"giving": "配ること（giveの-ing形）",
+"giving out the flyer from today": "今日からチラシを配ること",
+"hitsuji": "羊（作品名の一部）",
+"how": "どのように",
+"in": "〜に（出ている）",
+"in the movie": "映画に（出ている）",
+"information": "案内・情報",
+"kashiwagi": "柏木（人名）",
+"kawa": "皮（作品名の一部）",
+"kemono": "ケモノ（作品名の一部）",
+"kita": "着た（作品名の一部）",
+"many": "たくさんの",
+"many people": "たくさんの人",
+"movie": "映画",
+"no": "の（作品名の一部）",
+"nobuyuki": "伸之（人名）",
+"nobuyuki suzuki and yu kashiwagi from chotokkyu": "鈴木伸之さんと超特急の柏木悠さん",
+"nobuyuki suzuki and yu kashiwagi from chotokkyu are": "鈴木伸之さんと超特急の柏木悠さんは〜にいる",
+"on": "〜に（日付）",
+"on december 11": "12月11日に",
+"one": "ひとつ",
+"one by one": "順番に・順次",
+"out": "（配り）出す",
+"people": "人々",
+"please": "どうぞ〜してください",
+"please check each theater's information": "各映画館の案内を確認してください",
+"please check each theater's information about when and": "各映画館の案内で、いつと〜を確認してください",
+"released": "公開される（releaseの過去分詞）",
+"show": "上映する",
+"start": "始める",
+"suzuki": "鈴木（人名）",
+"that": "〜するところの",
+"the": "その",
+"the flyer": "そのチラシ",
+"the movie": "その映画",
+"the movie hitsuji no kawa wo kita kemono will be": "映画『羊の皮を着たケモノ』は〜される予定だ",
+"the theaters": "その劇場",
+"the theaters that will show the movie": "その映画を公開する劇場",
+"the theaters that will show the movie will": "その映画を公開する劇場は〜する予定だ",
+"the theaters will": "劇場は〜する予定だ",
+"theater's": "映画館の",
+"theater's information": "映画館の案内",
+"theaters": "映画館（theaterの複数形）",
+"today": "今日",
+"when": "いつ",
+"will": "〜する予定だ",
+"wo": "を（作品名の一部）",
+"yu": "悠（人名）"
+},
+"grad": [
+{
+"q1": "{The movie}『羊の皮を着たケモノ』は、{December 11} に公開されます。",
+"q2": "{The movie Hitsuji no Kawa wo Kita Kemono will be}、{December 11} に公開。",
+"q3": "{The movie Hitsuji no Kawa wo Kita Kemono will be} 公開 {on December 11.}"
+},
+{
+"q1": "鈴木伸之さんと、{Chotokkyu} の柏木悠さんが、{the movie} に出演しています。",
+"q2": "{Nobuyuki Suzuki and Yu Kashiwagi from Chotokkyu} が、{the movie} に出演しています。",
+"q3": "{Nobuyuki Suzuki and Yu Kashiwagi from Chotokkyu are} 出演 {in the movie.}"
+},
+{
+"q1": "{flyer} について、{many people} から問い合わせがありました。",
+"q2": "{about the flyer}、{Many people} から問い合わせがありました。",
+"q3": "{Many people} 問い合わせた {about the flyer.}"
+},
+{
+"q1": "この {movie} を公開する {theaters} で、{today} から {the flyer} の配布が始まります。",
+"q2": "{The theaters that will show the movie} は、{from today}、{the flyer} の配布が始まります。",
+"q3": "{The theaters that will show the movie will} 始める {giving out the flyer from today.}"
+},
+{
+"q1": "{The theaters} は、順番に始めます。",
+"q2": "{The theaters will} 順番に始めます。",
+"q3": "{The theaters will} 始める {one by one.}"
+},
+{
+"q1": "配布の時期や方法は、各 {theater's information} でご確認ください。",
+"q2": "{Please check each theater's information}、配布の時期や方法を。",
+"q3": "{Please check each theater's information about when and} 方法。"
+}
+],
+"grammar": {
+"body": "いつから始まるかは from ＋ 日や時で言います。「今日から」は from today、「あしたから」は from tomorrow です。",
+"ex": [
+{
+"en": "The shop opens from 9 a.m.",
+"ja": "その店は午前9時から開きます。"
+},
+{
+"en": "I will study English from tomorrow.",
+"ja": "私はあしたから英語を勉強します。"
+}
+],
+"title": "from ＋ 日・時「〜から」"
+},
+"id": "20261120-hitsuji-flyer",
+"level": 2,
+"lines": [
+{
+"en": "The movie Hitsuji no Kawa wo Kita Kemono will be released on December 11.",
+"ja": "映画『羊の皮を着たケモノ』は、12月11日に公開されます。",
+"mix": "映画『羊の皮を着たケモノ』は、{December 11} に公開されます。"
+},
+{
+"en": "Nobuyuki Suzuki and Yu Kashiwagi from Chotokkyu are in the movie.",
+"ja": "鈴木伸之さんと、超特急の柏木悠さんが、映画に出演しています。",
+"mix": "鈴木伸之さんと、{Chotokkyu} の柏木悠さんが、映画に出演しています。"
+},
+{
+"en": "Many people asked about the flyer.",
+"ja": "チラシについて、たくさんの人から問い合わせがありました。",
+"mix": "{flyer} について、たくさんの人から問い合わせがありました。"
+},
+{
+"en": "The theaters that will show the movie will start giving out the flyer from today.",
+"ja": "この映画を公開する劇場で、今日からチラシの配布が始まります。",
+"mix": "この映画を公開する {theaters} で、今日から {flyer} の配布が始まります。"
+},
+{
+"en": "The theaters will start one by one.",
+"ja": "劇場は、順番に始めます。",
+"mix": "{theaters} は、順番に始めます。"
+},
+{
+"en": "Please check each theater's information about when and how.",
+"ja": "配布の時期や方法は、各映画館の案内でご確認ください。",
+"mix": "配布の時期や方法は、各映画館の {information} でご確認ください。"
+}
+],
+"post": {
+"account": "hitsuji_k_movie",
+"date": "2026-11-20",
+"likes": 2195,
+"name": "hitsuji_k_movie",
+"url": "https://x.com/hitsuji_k_movie/status/2123567003268948072"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"今日から",
+"12月11日から",
+"来週から"
+],
+"q": "チラシの配布は、いつから始まる？",
+"why": "4文目に from today とあります。"
+},
+{
+"a": 2,
+"choices": [
+"集める",
+"捨てる",
+"配る"
+],
+"q": "give out の意味は？",
+"why": "give out は「配る」。giving out the flyer ＝ チラシを配ること。"
+},
+{
+"a": 1,
+"choices": [
+"at",
+"from",
+"for"
+],
+"q": "The theaters will start ___ today.",
+"why": "「今日から」は from today です。"
+}
+],
+"summary": "12月11日公開の映画『羊の皮を着たケモノ』（鈴木伸之さん・柏木悠さん出演）のチラシは問い合わせが多く、今日から公開する劇場で順次配布が始まります。配布の時期や方法は、各映画館の案内で確認してください。",
+"talk": {
+"hint": "Yes, I keep ___. / No, I do not.",
+"ja": "映画のチラシをとっておきますか？",
+"q": "Do you keep movie flyers?"
+},
+"title": "『羊の皮を着たケモノ』チラシの配布がスタート",
+"words": [
+{
+"ja": "チラシ",
+"note": "ポストの「チラシ」は flyer。",
+"w": "flyer"
+},
+{
+"ja": "配る",
+"note": "ポストの「配布」は giving out（配ること）で表しました。",
+"w": "give out"
+},
+{
+"ja": "映画館・劇場",
+"note": "ポストの「公開劇場」は、これから映画を公開する劇場なので the theaters that will show the movie と書きました。",
+"w": "theater"
+},
+{
+"ja": "順番に・順次",
+"note": "ポストの「順次」は one by one。",
+"w": "one by one"
+},
+{
+"ja": "案内・情報",
+"note": "ポストの「各映画館の案内」は each theater's information。information は数えない名詞です。",
+"w": "information"
+}
+]
+},
+{
 "added": "2026-11-20T06:56",
 "addedAt": "2026-11-20T08:08",
 "cat": "manga",
@@ -465,6 +1685,219 @@ window.LESSONS = [
 "ja": "不動産",
 "note": "ポストの「不動産詐欺師」は real estate swindlers。",
 "w": "real estate"
+}
+]
+},
+{
+"added": "2026-11-20T00:20",
+"addedAt": "2026-11-20T14:44",
+"cat": "movie",
+"gloss": {
+"20th": "20周年（作品名の一部）",
+"a": "ひとつの",
+"again": "また",
+"and": "〜と",
+"anywhere": "どこでも",
+"anywhere else": "ほかのどこでも",
+"could": "〜できた（canの過去形）",
+"dream": "夢",
+"else": "ほかの",
+"for": "〜への・〜のための",
+"for the stage greeting": "舞台挨拶に対して",
+"from": "〜からの",
+"greeting": "挨拶",
+"has": "持っている",
+"he": "彼は",
+"he has a dream of": "彼には〜という夢がある",
+"he wrote that these were stories": "これらは〜話だったと書いた",
+"he wrote that these were stories you": "これらはあなたが〜話だったと書いた",
+"hear": "聞く",
+"it": "それを",
+"it again": "それをまた",
+"kabuto": "カブト（作品名の一部）",
+"kamen": "仮面（作品名の一部）",
+"kamen rider kabuto 20th": "仮面ライダーカブト20th（作品名）",
+"kato": "加藤（人名）",
+"kazuki": "和樹（人名）",
+"kazuki kato": "加藤和樹（人名）",
+"kazuki kato posted a message": "加藤和樹さんはメッセージを投稿した",
+"kazuki kato posted a message to say": "加藤和樹さんは〜と言うメッセージを投稿した",
+"message": "メッセージ",
+"movie": "映画",
+"mr": "〜さん",
+"nakano": "中野（人名）",
+"not": "〜ない",
+"of": "〜の",
+"posted": "投稿した（postの過去形）",
+"producers": "プロデューサーたち",
+"rider": "ライダー（作品名の一部）",
+"say": "言う",
+"shirakura": "白倉（人名）",
+"stage": "舞台",
+"stage greeting": "舞台挨拶",
+"starting": "始めること（startの-ing形）",
+"stories": "話（storyの複数形）",
+"takebe": "武部（人名）",
+"talks": "お話・トーク",
+"thank": "感謝する",
+"that": "〜ということ",
+"the": "その",
+"the stage greeting": "その舞台挨拶",
+"the stage greeting was for": "舞台挨拶は〜のためのものだった",
+"the talks from the producers": "プロデューサーたちのお話",
+"the talks from the producers mr shirakura mr takebe and mr nakano and the writer mr yonemura were": "白倉さん、武部さん、中野さんと米村さんのお話は〜だった",
+"the writer": "脚本家",
+"these": "これらは",
+"to": "〜するために",
+"valuable": "貴重な",
+"was": "〜だった",
+"were": "〜だった",
+"writer": "脚本家",
+"wrote": "書いた",
+"yonemura": "米村（人名）",
+"you": "あなたに"
+},
+"grad": [
+{
+"q1": "{Kazuki Kato} さんは、{stage greeting} へのお礼の {message} を投稿しました。",
+"q2": "{Kazuki Kato posted a message}、{the stage greeting} へのお礼として。",
+"q3": "{Kazuki Kato posted a message to say} お礼 {for the stage greeting.}"
+},
+{
+"q1": "{The stage greeting} は、映画『仮面ライダーカブト20th』のものでした。",
+"q2": "{The stage greeting was for} 映画『仮面ライダーカブト20th』のもの。",
+"q3": "{The stage greeting was for} 映画 {Kamen Rider Kabuto 20th.}"
+},
+{
+"q1": "{producers} の白倉さん、武部さん、中野さんと、{writer} の米村さんの {talks} は貴重でした。",
+"q2": "{The talks from the producers}、白倉さん、武部さん、中野さんと、{the writer}、米村さんは貴重でした。",
+"q3": "{The talks from the producers, Mr. Shirakura, Mr. Takebe and Mr. Nakano, and the writer, Mr. Yonemura, were} 貴重でした。"
+},
+{
+"q1": "{He} は、ほかでは聞けない {stories} だったと書いています。",
+"q2": "{He wrote that these were stories}、ほかでは聞けない。",
+"q3": "{He wrote that these were stories you} 聞けなかった {anywhere else.}"
+},
+{
+"q1": "{He} には、また再開できるという {dream} があります。",
+"q2": "{He has a dream of} また 再開できる。",
+"q3": "{He has a dream of} 再開する {it again.}"
+}
+],
+"grammar": {
+"body": "「〜することを夢見る・〜したいという夢」は dream of ＋ 〜ing で言います。of のあとは動詞の ing 形（starting など）を置きます。",
+"ex": [
+{
+"en": "I have a dream of becoming a singer.",
+"ja": "私には歌手になるという夢があります。"
+},
+{
+"en": "She dreams of visiting Japan.",
+"ja": "彼女は日本を訪れることを夢見ています。"
+}
+],
+"title": "a dream of ～ing「〜するという夢」"
+},
+"id": "20261120-kabuto-20th-stage",
+"level": 3,
+"lines": [
+{
+"en": "Kazuki Kato posted a message to say thank you for the stage greeting.",
+"ja": "加藤和樹さんは、舞台挨拶へのお礼のメッセージを投稿しました。",
+"mix": "加藤和樹さんは、舞台挨拶へのお礼の {message} を投稿しました。"
+},
+{
+"en": "The stage greeting was for the movie Kamen Rider Kabuto 20th.",
+"ja": "舞台挨拶は、映画『仮面ライダーカブト20th』のものでした。",
+"mix": "{stage greeting} は、映画『仮面ライダーカブト20th』のものでした。"
+},
+{
+"en": "The talks from the producers, Mr. Shirakura, Mr. Takebe and Mr. Nakano, and the writer, Mr. Yonemura, were valuable.",
+"ja": "プロデューサーの白倉さん、武部さん、中野さんと、脚本の米村さんのお話は貴重でした。",
+"mix": "{producers} の白倉さん、武部さん、中野さんと、脚本の米村さんの {talks} は貴重でした。"
+},
+{
+"en": "He wrote that these were stories you could not hear anywhere else.",
+"ja": "彼は、ほかでは聞けない話だったと書いています。",
+"mix": "彼は、ほかでは聞けない {stories} だったと書いています。"
+},
+{
+"en": "He has a dream of starting it again.",
+"ja": "彼には、また再開できるという夢があります。",
+"mix": "彼には、また再開できるという {dream} があります。"
+}
+],
+"post": {
+"account": "kazuki_kato1007",
+"date": "2026-11-20",
+"likes": 2140,
+"name": "加藤和樹",
+"url": "https://x.com/kazuki_kato1007/status/2123436320852938761"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"出演者どうしのお話",
+"プロデューサーと脚本家のお話",
+"観客のお話"
+],
+"q": "加藤さんが「貴重」と書いたお話は、だれのもの？",
+"why": "3文目に、プロデューサーと脚本家の talks が valuable だったとあります。"
+},
+{
+"a": 0,
+"choices": [
+"貴重な",
+"高い",
+"むずかしい"
+],
+"q": "valuable の意味は？",
+"why": "valuable は「貴重な・大切な」。"
+},
+{
+"a": 2,
+"choices": [
+"to",
+"for",
+"of"
+],
+"q": "He has a dream ___ starting it again.",
+"why": "「〜するという夢」は a dream of ＋ 〜ing です。"
+}
+],
+"summary": "『仮面ライダーカブト20th 天を継ぐもの』の舞台挨拶について、加藤和樹さんが感謝を投稿しました。プロデューサーの白倉さん・武部さん・中野さんと脚本の米村さんのお話は貴重で、ここでしか聞けない話だったそうです。また再開できることを夢見ている、とも書いています。",
+"talk": {
+"hint": "Yes, I have. / No, I have not. I want to go to ___.",
+"ja": "舞台挨拶に行ったことがありますか？",
+"q": "Have you ever been to a stage greeting?"
+},
+"title": "『仮面ライダーカブト20th』舞台挨拶への感謝",
+"words": [
+{
+"ja": "舞台挨拶",
+"note": "ポストの「舞台挨拶」は stage greeting で通じます。",
+"w": "stage greeting"
+},
+{
+"ja": "プロデューサー",
+"note": "ポストの「プロデューサーの白倉さん…」は the producers, Mr. Shirakura … と書きました。",
+"w": "producer"
+},
+{
+"ja": "貴重な・大切な",
+"note": "ポストの「貴重なお話」は valuable talks。",
+"w": "valuable"
+},
+{
+"ja": "脚本家・書く人",
+"note": "ポストの「脚本の米村さん」は the writer, Mr. Yonemura としました。",
+"w": "writer"
+},
+{
+"ja": "〜することを夢見る",
+"note": "ポストの「再開できることを夢見て」は a dream of starting it again で表しました。",
+"w": "dream of ~ing"
 }
 ]
 },
