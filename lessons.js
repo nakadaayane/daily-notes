@@ -1,5 +1,369 @@
 window.LESSONS = [
 {
+"added": "2026-11-24T09:58",
+"addedAt": "2026-11-24T14:46",
+"cat": "movie",
+"gloss": {
+"appear": "出演する",
+"cinema": "シネマ（サイト名の一部）",
+"cinema today": "シネマトゥデイ（サイト名）",
+"cinema today shared": "シネマトゥデイが伝えた",
+"cinema today shared the": "シネマトゥデイが〜を伝えた",
+"he": "彼は",
+"he will play": "彼は〜を演じる",
+"he will play the": "彼は〜を演じる",
+"hiroyuki": "広之（人名）",
+"hiroyuki sanada": "真田広之（人名）",
+"hiroyuki sanada will appear in": "真田広之が〜に出演する",
+"hiroyuki sanada will appear in the": "真田広之が〜に出演する",
+"hiruzen": "ヒルゼン（人名）",
+"hiruzen sarutobi": "猿飛ヒルゼン（役名）",
+"hokage": "火影（NARUTOの里の長）",
+"in": "〜に・〜の中で",
+"is": "〜です",
+"is hiruzen sarutobi": "猿飛ヒルゼンです",
+"live-action": "実写の",
+"name": "名前",
+"naruto": "NARUTO（作品名）",
+"news": "ニュース",
+"of": "〜の",
+"of the role is hiruzen sarutobi": "その役の（名前は）猿飛ヒルゼンです",
+"on": "〜で（Xの上で）",
+"on x": "Xで",
+"play": "演じる",
+"role": "役",
+"sanada": "真田（人名）",
+"sarutobi": "猿飛（人名）",
+"shared": "伝えた・共有した（shareの過去形）",
+"the": "その",
+"third": "3番目の（三代目）",
+"today": "トゥデイ（サイト名の一部）",
+"will": "〜するだろう（未来）",
+"x": "X（SNSの名前）"
+},
+"grad": [
+{
+"q1": "{Hiroyuki Sanada} さんが、実写版『{NARUTO}』に出演します。",
+"q2": "{Hiroyuki Sanada will appear in} 実写版『{NARUTO}』。",
+"q3": "{Hiroyuki Sanada will appear in the} 実写版 {NARUTO.}"
+},
+{
+"q1": "{He} は三代目 {Hokage} を演じます。",
+"q2": "{He will play} 三代目 {Hokage}。",
+"q3": "{He will play the} 三代目 {Hokage.}"
+},
+{
+"q1": "その {role} の名前は {Hiruzen Sarutobi} です。",
+"q2": "その {role} の名前 {is Hiruzen Sarutobi}。",
+"q3": "{The} 名前 {of the role is Hiruzen Sarutobi.}"
+},
+{
+"q1": "{Cinema Today} が、{X} でこのニュースを伝えました。",
+"q2": "{Cinema Today shared} このニュースを {on X}。",
+"q3": "{Cinema Today shared the} ニュース {on X.}"
+}
+],
+"grammar": {
+"body": "ことばを2つ以上ハイフン（-）でつなぐと、ひとつの形容詞として名詞の前に置けます。live-action NARUTO は「実写版のNARUTO」。数がつくときは、ハイフンの後ろの名詞は s をつけません（a ten-minute video）。",
+"ex": [
+{
+"en": "This is a live-action movie.",
+"ja": "これは実写映画です。"
+},
+{
+"en": "I watched a ten-minute video.",
+"ja": "私は10分の動画を見ました。"
+}
+],
+"title": "live-action のように、ハイフンでつなぐ形容詞"
+},
+"id": "20261124-naruto-sanada",
+"level": 2,
+"lines": [
+{
+"en": "Hiroyuki Sanada will appear in the live-action NARUTO.",
+"ja": "真田広之さんが、実写版『NARUTO』に出演します。",
+"mix": "{Hiroyuki Sanada} さんが、実写版『NARUTO』に出演します。"
+},
+{
+"en": "He will play the Third Hokage.",
+"ja": "彼は三代目火影を演じます。",
+"mix": "彼は三代目 {Hokage} を演じます。"
+},
+{
+"en": "The name of the role is Hiruzen Sarutobi.",
+"ja": "その役の名前は猿飛ヒルゼンです。",
+"mix": "その役の名前は {Hiruzen Sarutobi} です。"
+},
+{
+"en": "Cinema Today shared the news on X.",
+"ja": "シネマトゥデイが、Xでこのニュースを伝えました。",
+"mix": "{Cinema Today} が、Xでこのニュースを伝えました。"
+}
+],
+"post": {
+"account": "cinematoday",
+"date": "2026-11-24",
+"likes": 10087,
+"name": "シネマトゥデイ",
+"url": "https://x.com/cinematoday/status/2125031144827896166"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"三代目火影",
+"初代火影",
+"主人公のナルト"
+],
+"q": "真田広之さんが演じるのは？",
+"why": "2文目に He will play the Third Hokage. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"〜に出演する",
+"〜を探す",
+"〜に住む"
+],
+"q": "appear in の意味は？",
+"why": "appear は「姿を見せる・出演する」。"
+},
+{
+"a": 2,
+"choices": [
+"minutes",
+"minutely",
+"minute"
+],
+"q": "I watched a ten-___ video.（10分の動画）",
+"why": "ハイフンでつなぐ形容詞では、数のあとの名詞は単数形（minute）にします。"
+}
+],
+"summary": "真田広之さんが、実写版『NARUTO』に三代目火影・猿飛ヒルゼン役で出演することになった、とシネマトゥデイが伝えました。",
+"talk": {
+"hint": "I want to see ___ as ___.",
+"ja": "実写映画で、だれを見たいですか？",
+"q": "Who do you want to see in a live-action movie?"
+},
+"title": "真田広之さん、実写版『NARUTO』で三代目火影役",
+"words": [
+{
+"ja": "実写の",
+"note": "ポストの「実写版」は the live-action NARUTO。ハイフンでつなぐ形容詞です。",
+"w": "live-action"
+},
+{
+"ja": "出演する・姿を見せる",
+"note": "ポストの「出演へ」を will appear in で表しました。",
+"w": "appear"
+},
+{
+"ja": "（役を）演じる",
+"note": "「火影役」は play the Third Hokage。",
+"w": "play"
+},
+{
+"ja": "役",
+"note": "「猿飛ヒルゼン役」の「役」。the name of the role で「役の名前」。",
+"w": "role"
+},
+{
+"ja": "ニュース",
+"note": "数えない名詞なので a や -s をつけません。",
+"w": "news"
+}
+]
+},
+{
+"added": "2026-11-24T07:25",
+"addedAt": "2026-11-24T14:46",
+"cat": "art",
+"gloss": {
+"an": "ひとつの",
+"burton's": "バートンの",
+"burton's great works": "バートンの名作",
+"can": "〜できる",
+"come": "来る",
+"exhibition": "展覧会",
+"fashion": "ファッション",
+"fashion press": "ファッションプレス（媒体名）",
+"first": "最初の",
+"first time": "初めて",
+"get": "〜になる",
+"great": "すばらしい",
+"great works": "名作",
+"has": "〜した（現在完了）",
+"immersive": "没入型の",
+"immersive exhibition": "没入型の展示",
+"in": "〜で・〜の中で",
+"is": "〜です",
+"it": "それ",
+"it is": "それは〜だ",
+"it is an immersive exhibition": "それは没入型の展示だ",
+"japan": "日本",
+"labyrinth": "ラビリンス（迷路）",
+"lost": "迷った",
+"of": "〜の",
+"of burton's great works": "バートンの名作の",
+"opens": "始まる（openの三単現）",
+"press": "プレス（Fashion Pressの名前）",
+"says": "伝える・言う",
+"show": "展覧会・ショー",
+"the": "その",
+"the exhibition tim burton's labyrinth": "展覧会「ティム・バートンのラビリンス」",
+"this": "これ",
+"this is the first time": "これは初めてだ",
+"this is the first time the show has": "この展覧会が〜するのは初めてだ",
+"tim": "ティム（人名）",
+"time": "回・とき",
+"to": "〜へ",
+"to japan": "日本へ",
+"tokyo": "東京",
+"tomorrow": "明日",
+"tomorrow in toyosu tokyo": "明日、東京の豊洲で",
+"toyosu": "豊洲（地名）",
+"visitors": "来場者",
+"visitors can get lost in": "来場者は〜に迷い込める",
+"visitors can get lost in the": "来場者は〜に迷い込める",
+"works": "作品（workの複数形）",
+"worlds": "世界（worldの複数形）"
+},
+"grad": [
+{
+"q1": "展覧会「ティム・バートンの {Labyrinth}」が、明日から {Tokyo} の {Toyosu} で始まります。",
+"q2": "{The exhibition Tim Burton's Labyrinth} が、明日から {Tokyo} の {Toyosu} で始まります。",
+"q3": "{The exhibition Tim Burton's Labyrinth} 始まる {tomorrow in Toyosu, Tokyo.}"
+},
+{
+"q1": "この {show} が {Japan} に来るのは、今回が {first time} です。",
+"q2": "{This is the first time}、この {show} が {Japan} に来る。",
+"q3": "{This is the first time the show has} 来る {to Japan.}"
+},
+{
+"q1": "{Visitors} は、{Burton's great works} の世界に迷い込むことができます。",
+"q2": "{Visitors can get lost in} {Burton's great works} の世界。",
+"q3": "{Visitors can get lost in the} 世界 {of Burton's great works.}"
+},
+{
+"q1": "{Fashion Press} は、これは {immersive} 展示だと伝えています。",
+"q2": "{Fashion Press} は、{it is} {immersive exhibition} だと伝えています。",
+"q3": "{Fashion Press} 伝える {it is an immersive exhibition.}"
+}
+],
+"grammar": {
+"body": "get lost は「迷子になる」で、in のあとに場所を置くと「〜の中で迷う・迷い込む」になります。can をつけると「〜に迷い込める」と言えます。",
+"ex": [
+{
+"en": "I got lost in the big station.",
+"ja": "私は大きな駅で迷子になりました。"
+},
+{
+"en": "You can get lost in this book.",
+"ja": "この本の世界に入りこめます。"
+}
+],
+"title": "get lost in ～「〜に迷い込む・〜に入りこむ」"
+},
+"id": "20261124-art-burton-labyrinth",
+"level": 2,
+"lines": [
+{
+"en": "The exhibition Tim Burton's Labyrinth opens tomorrow in Toyosu, Tokyo.",
+"ja": "展覧会「ティム・バートンのラビリンス」が、明日から東京・豊洲で始まります。",
+"mix": "展覧会「ティム・バートンの {Labyrinth}」が、明日から東京・{Toyosu} で始まります。"
+},
+{
+"en": "This is the first time the show has come to Japan.",
+"ja": "この展覧会が日本に来るのは、今回が初めてです。",
+"mix": "この {show} が {Japan} に来るのは、今回が初めてです。"
+},
+{
+"en": "Visitors can get lost in the worlds of Burton's great works.",
+"ja": "来場者は、バートンの名作の世界に迷い込むことができます。",
+"mix": "来場者は、バートンの {great works} の世界に迷い込むことができます。"
+},
+{
+"en": "Fashion Press says it is an immersive exhibition.",
+"ja": "ファッションプレスは、これは没入型の展示だと伝えています。",
+"mix": "ファッションプレスは、これは {immersive} 展示だと伝えています。"
+}
+],
+"post": {
+"account": "fashionpressnet",
+"date": "2026-11-24",
+"likes": 407,
+"name": "Fashion Press",
+"url": "https://x.com/fashionpressnet/status/2124992660012511567"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"上野",
+"渋谷",
+"豊洲"
+],
+"q": "展覧会はどこで開かれますか？",
+"why": "1文目に in Toyosu, Tokyo とあります。"
+},
+{
+"a": 0,
+"choices": [
+"没入型の",
+"退屈な",
+"小さい"
+],
+"q": "immersive の意味は？",
+"why": "immersive exhibition は「没入型の展示」です。"
+},
+{
+"a": 1,
+"choices": [
+"lose",
+"lost",
+"losing"
+],
+"q": "Visitors can get ___ in the world.（迷い込む）",
+"why": "get lost で「迷う・迷い込む」。can のあとなので get lost の形です。"
+}
+],
+"summary": "展覧会「ティム・バートンのラビリンス」が、明日から東京・豊洲で開かれます。日本初上陸で、名作の世界に迷い込むような没入型の展示だと Fashion Press が伝えています。",
+"talk": {
+"hint": "I like ___ because ___.",
+"ja": "ティム・バートンの映画は好きですか？",
+"q": "Do you like Tim Burton's movies?"
+},
+"title": "ティム・バートンのラビリンス、豊洲に日本初上陸",
+"words": [
+{
+"ja": "展覧会・展示",
+"note": "ポストの「展覧会」は exhibition。show も同じように使えます。",
+"w": "exhibition"
+},
+{
+"ja": "迷路・ラビリンス",
+"note": "展覧会の名前に入っている「ラビリンス」のこと。",
+"w": "labyrinth"
+},
+{
+"ja": "没入型の",
+"note": "ポストの「没入型展示」は immersive exhibition。",
+"w": "immersive"
+},
+{
+"ja": "〜に迷い込む",
+"note": "ポストの「迷い込む」を get lost in で表しました。",
+"w": "get lost in"
+},
+{
+"ja": "始まる・開く",
+"note": "ポストの「明日から開催」は opens tomorrow。",
+"w": "open"
+}
+]
+},
+{
 "added": "2026-11-24T00:01",
 "addedAt": "2026-11-24T08:01",
 "cat": "anime",
@@ -222,6 +586,924 @@ window.LESSONS = [
 "ja": "人気のある",
 "note": "ポストの「人気キャラクター」は popular characters。",
 "w": "popular"
+}
+]
+},
+{
+"added": "2026-11-23T21:49",
+"addedAt": "2026-11-24T14:46",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a book because the original is a book": "原作が本だから、本（を読む）",
+"a film": "映画",
+"a film then must start": "だから映画は始まらなければならない",
+"a film then must start with": "だから映画は〜から始まらなければならない",
+"a movie theater": "映画館",
+"a movie theater in the film": "映画では映画館",
+"about": "〜について",
+"about the author": "原作者について",
+"about the author of the neverending story": "『ネバーエンディング・ストーリー』の原作者について",
+"according": "〜によると（according to）",
+"according to the claim": "その主張によると",
+"according to the claim the story starts with": "その主張によると、物語は〜から始まる",
+"also": "〜も・さらに",
+"and": "そして",
+"angry": "腹を立てた",
+"author": "原作者・作者",
+"because": "〜なので",
+"because the original is": "原作が〜だから",
+"book": "本",
+"claim": "主張",
+"claimed": "主張した（claimの過去形）",
+"film": "映画",
+"got": "〜になった（getの過去形）",
+"has": "〜したことがある（have）",
+"have": "〜したことがある（現在完了）",
+"he": "その人は",
+"heard": "聞いた（hearの過去分詞）",
+"hero": "主人公",
+"idea": "案・考え",
+"in": "〜では・〜の中で",
+"into": "〜の中へ",
+"is": "〜です",
+"movie": "映画",
+"movie theater": "映画館",
+"must": "〜しなければならない",
+"neverending": "終わりのない（作品名の一部）",
+"of": "〜の",
+"original": "原作",
+"poster": "投稿者",
+"reading": "読むこと",
+"rejected": "却下された（rejectの過去分詞）",
+"run": "走る",
+"says": "言っている（sayの三単現）",
+"start": "始まる",
+"starts": "始まる（startの三単現）",
+"story": "話・物語",
+"that": "〜ということ",
+"the": "その",
+"the author": "原作者",
+"the original": "原作",
+"the poster": "投稿者は",
+"the poster says they have heard": "投稿者は聞いたことがあると言う",
+"the poster says they have heard a": "投稿者は〜を聞いたことがあると言う",
+"the story": "物語",
+"the story starts": "物語は始まる",
+"theater": "映画館",
+"then": "だから・それなら",
+"they": "その人は",
+"they also heard that the idea was rejected": "その案は却下されたとも聞いた",
+"they also heard that the idea was rejected and the author got": "案は却下され、原作者は〜になったとも聞いた",
+"they heard that the author claimed the hero must": "原作者は主人公が〜しなければと主張したと聞いた",
+"to": "〜に",
+"very": "とても",
+"was": "〜だった・〜された",
+"watching": "見ること",
+"with": "〜から・〜とともに"
+},
+"grad": [
+{
+"q1": "{The poster} は、『ネバーエンディング・ストーリー』の {author} について、ある話を聞いたことがあるそうです。",
+"q2": "{The poster says they have heard} ある話、{about the author} 『ネバーエンディング・ストーリー』の。",
+"q3": "{The poster says they have heard a} 話 {about the author of The NeverEnding Story.}"
+},
+{
+"q1": "{The author} は、映画では主人公が {a movie theater} に逃げ込まなければならないと主張した、と聞いたそうです。",
+"q2": "{They heard that the author claimed the hero must} 、{a movie theater} に逃げ込む、映画では。",
+"q3": "{They heard that the author claimed the hero must} 逃げ込む {a movie theater in the film.}"
+},
+{
+"q1": "その {claim} によると、{the story} が本を読むところから始まるのは、{the original} が本だからです。",
+"q2": "{According to the claim} 、{the story starts} 本を読むところから、{because the original is} 本。",
+"q3": "{According to the claim, the story starts with} 読む {a book because the original is a book.}"
+},
+{
+"q1": "だから {a film} なら、映画を見るところから始まらなければならない、という主張です。",
+"q2": "{A film, then, must start} 、{a film} を見るところから。",
+"q3": "{A film, then, must start with} 見る {a film.}"
+},
+{
+"q1": "{They} は、その {idea} が却下されて、{the author} がとても腹を立てた、とも聞いたそうです。",
+"q2": "{They also heard that the idea was rejected} 、{the author} がとても腹を立てた。",
+"q3": "{They also heard that the idea was rejected and the author got} とても {angry.}"
+}
+],
+"grammar": {
+"body": "have heard ＋ that ＋ 文 で「〜という話を聞いたことがある」。現在完了（経験）の形です。聞いた話をはっきり断定しないで伝えるときに便利です。that は省けます。",
+"ex": [
+{
+"en": "I have heard that the movie is very long.",
+"ja": "その映画はとても長いと聞いたことがあります。"
+},
+{
+"en": "She has heard that the shop will close.",
+"ja": "彼女は、その店が閉まると聞いたことがあります。"
+}
+],
+"title": "I have heard (that) ~「〜と聞いたことがある」"
+},
+"id": "20261123-neverending-theater",
+"level": 3,
+"lines": [
+{
+"en": "The poster says they have heard a story about the author of The NeverEnding Story.",
+"ja": "投稿者は、『ネバーエンディング・ストーリー』の原作者について、ある話を聞いたことがあるそうです。",
+"mix": "投稿者は、『ネバーエンディング・ストーリー』の {author} について、ある話を聞いたことがあるそうです。"
+},
+{
+"en": "They heard that the author claimed the hero must run into a movie theater in the film.",
+"ja": "原作者は、映画では主人公が映画館に逃げ込まなければならないと主張した、と聞いたそうです。",
+"mix": "原作者は、映画では主人公が {movie theater} に逃げ込まなければならないと主張した、と聞いたそうです。"
+},
+{
+"en": "According to the claim, the story starts with reading a book because the original is a book.",
+"ja": "その主張によると、物語が本を読むところから始まるのは、原作が本だからです。",
+"mix": "その {claim} によると、物語が本を読むところから始まるのは、原作が本だからです。"
+},
+{
+"en": "A film, then, must start with watching a film.",
+"ja": "だから映画なら、映画を見るところから始まらなければならない、という主張です。",
+"mix": "だから {film} なら、映画を見るところから始まらなければならない、という主張です。"
+},
+{
+"en": "They also heard that the idea was rejected and the author got very angry.",
+"ja": "その案は却下されて、原作者はとても腹を立てた、とも聞いたそうです。",
+"mix": "その {idea} は却下されて、原作者はとても腹を立てた、とも聞いたそうです。"
+}
+],
+"post": {
+"account": "amenokg",
+"date": "2026-11-23",
+"likes": 3278,
+"name": "雨野慶司with玄青武龍",
+"url": "https://x.com/amenokg/status/2124847876874625519"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"図書館",
+"映画館",
+"本屋"
+],
+"q": "投稿者が聞いた話では、原作者は映画なら主人公はどこに逃げ込むべきだと主張した？",
+"why": "2文目に a movie theater in the film とあります。"
+},
+{
+"a": 2,
+"choices": [
+"受け入れる",
+"主張する",
+"却下する"
+],
+"q": "reject（was rejected）の意味は？",
+"why": "reject は「却下する・断る」。was rejected で「却下された」。"
+},
+{
+"a": 0,
+"choices": [
+"heard",
+"hear",
+"hearing"
+],
+"q": "I have ___ that he is a good actor.（〜と聞いたことがある）",
+"why": "have のあとは過去分詞 heard。"
+}
+],
+"summary": "『ネバーエンディング・ストーリー』の原作者が映画化について、映画なら主人公が逃げ込むのは映画館でなければならないと主張した、と伝え聞いたという投稿です。",
+"talk": {
+"hint": "I think ___ because ___.",
+"ja": "映画は原作の本と同じであるべきだと思いますか？",
+"q": "Do you think a film should be the same as the book?"
+},
+"title": "『ネバーエンディング・ストーリー』原作者と映画館の話",
+"words": [
+{
+"ja": "主張する",
+"note": "ポストの「主張した」。claimed that ... の形で使います。",
+"w": "claim"
+},
+{
+"ja": "原作・もとの",
+"note": "ポストの「原作」。the original で「原作（もとの作品）」。",
+"w": "original"
+},
+{
+"ja": "却下する・断る",
+"note": "ポストの「却下され」は was rejected（受け身）。",
+"w": "reject"
+},
+{
+"ja": "〜によると",
+"note": "ポストの「主張によると」を According to the claim で表しました。",
+"w": "according to"
+},
+{
+"ja": "（ある場所に）逃げ込む・走って入る",
+"note": "ポストの「逃げ込む」を run into で表しました。",
+"w": "run into"
+}
+]
+},
+{
+"added": "2026-11-23T21:26",
+"addedAt": "2026-11-24T14:46",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a place connected to the dead": "死者とつながる場所",
+"again": "もう一度",
+"all": "すべて",
+"already": "もう・すでに",
+"and": "そして・〜と",
+"appeared": "出てきた",
+"asked": "頼んだ",
+"at": "〜に（場所）",
+"at a place connected to the dead": "死者とつながる場所に",
+"because": "なぜなら",
+"built": "建てた",
+"castle": "城",
+"clues": "手がかり（clueの複数形）",
+"connected": "つながった",
+"dead": "死んだ人たち",
+"death": "死",
+"defeat": "倒す",
+"defeated": "倒した（defeatの過去分詞）",
+"demon": "魔（魔王のdemon）",
+"demon king": "魔王",
+"does": "〜しない（doesはnotと使う）",
+"eisen": "アイゼン（人名）",
+"eisen asked frieren to go there": "アイゼンがフリーレンにそこへ行くよう頼んだ",
+"end": "終わり",
+"ende": "エンデ（地名）",
+"fan": "ファン",
+"flamme": "フランメ（人名）",
+"flamme knew all this": "フランメはこれをすべて知っていた",
+"flamme knew all this and": "フランメはこれをすべて知っていて",
+"frieren": "フリーレン",
+"frieren has already defeated": "フリーレンはもう倒した",
+"frieren has already defeated the demon king": "フリーレンはもう魔王を倒した",
+"frieren remembers it": "フリーレンはそれを覚えている",
+"frieren remembers it and flamme and others": "フリーレンは覚えていて、フランメたちも",
+"frieren to go to ende again": "フリーレンがエンデにもう一度行く",
+"frieren would defeat him": "フリーレンに倒される",
+"frieren would defeat him so he probably made his death part of his plan": "フリーレンに倒されるので、おそらく死も計画の一部にした",
+"frieren's": "フリーレンの",
+"frieren's role": "フリーレンの役割",
+"go": "行く",
+"has": "〜した（現在完了）",
+"have": "〜した（現在完了）",
+"he": "彼は",
+"he built his castle": "彼は城を建てた",
+"he probably made his death": "おそらく自分の死を〜にした",
+"him": "彼を",
+"himmel's": "ヒンメルの",
+"himmel's party": "ヒンメルの一行",
+"himmel's party seems to have learned something": "ヒンメルの一行は何かを知ったようだ",
+"himmel's party seems to have learned something and": "ヒンメルの一行は何かを知ったようで",
+"his": "彼の",
+"his death": "自分の死",
+"in": "〜に・〜で",
+"it": "それ",
+"king": "王",
+"knew": "知っていた（knowの過去形）",
+"know": "知っている",
+"learned": "知った（learnの過去分詞）",
+"made": "した・つくった",
+"not": "〜ない",
+"of": "〜の",
+"on": "〜で（on purposeで）",
+"others": "ほかの人たち",
+"part": "一部",
+"party": "一行・パーティ",
+"place": "場所",
+"plan": "計画",
+"predicted": "予言した",
+"probably": "おそらく",
+"purpose": "目的",
+"remembers": "覚えている",
+"role": "役割",
+"seems": "〜のようだ",
+"so": "だから",
+"something": "何か",
+"the": "その",
+"the clues": "手がかり",
+"the dead": "死者",
+"the demon king": "魔王",
+"the fan does not know frieren's role yet": "ファンはフリーレンの役割をまだ知らない",
+"the fan does not know frieren's role yet because not all the clues": "ファンは、手がかりが全部は〜ないのでまだわからない",
+"there": "そこへ",
+"thinks": "考える（thinkの三単現）",
+"this": "この",
+"this fan": "このファン",
+"to": "〜へ・〜と",
+"told": "指示した・言った",
+"would": "〜することになる",
+"yet": "まだ"
+},
+"grad": [
+{
+"q1": "このファンは、{Frieren} はもう {the Demon King} を倒したと考えています。",
+"q2": "このファンは、{Frieren has already defeated} {the Demon King} と考えています。",
+"q3": "{This fan} 考えている {Frieren has already defeated the Demon King.}"
+},
+{
+"q1": "{Frieren} はそれを覚えていて、{Flamme} たちもそれを予言していました。",
+"q2": "{Frieren remembers it}、{Flamme} たちもそれを予言しました。",
+"q3": "{Frieren remembers it, and Flamme and others} 予言した {it.}"
+},
+{
+"q1": "{The Demon King} は、{Frieren} に倒される未来を知っていたので、{his death} も計画の一部にしたのでしょう。",
+"q2": "{The Demon King} は、{Frieren would defeat him} と知っていたので、{he probably made his death} も計画の一部にしたのでしょう。",
+"q3": "{The Demon King} 知っていた {Frieren would defeat him, so he probably made his death part of his plan.}"
+},
+{
+"q1": "魔王は、{the dead} とつながる {place} に、わざわざ自分の {castle} を建てました。",
+"q2": "魔王は、{a place connected to the dead} に、わざわざ自分の {castle} を建てました。",
+"q3": "{He built his castle} わざわざ {at a place connected to the dead.}"
+},
+{
+"q1": "{Flamme} は、これらをすべて知ったうえで、{Frieren} にもう一度 {Ende} へ向かうよう指示しました。",
+"q2": "{Flamme knew all this} うえで、{Frieren} に {Ende} へもう一度向かうよう指示しました。",
+"q3": "{Flamme knew all this and} 指示した {Frieren to go to Ende again.}"
+},
+{
+"q1": "{Himmel's party} は何かを知ったようで、最終的に {Eisen} が {Frieren} にそこへ行くよう頼みました。",
+"q2": "{Himmel's party seems to have learned something}、最終的に {Eisen} が {Frieren} にそこへ行くよう頼みました。",
+"q3": "{Himmel's party seems to have learned something, and} 最終的に {Eisen asked Frieren to go there.}"
+},
+{
+"q1": "このファンは、{the clues} がまだ出きっていないので、{Frieren's role} はまだわからないと言っています。",
+"q2": "{The fan does not know Frieren's role yet}、{the clues} がまだ出きっていないからと言っています。",
+"q3": "{The fan does not know Frieren's role yet, because not all the clues} 出た。"
+}
+],
+"grammar": {
+"body": "seem to ＋ 動詞で「〜のようだ」と、見た感じや様子からの推測を言えます。主語が he / she / 名前ひとりのときは seems になります。「〜したようだ」は seem to have ＋ 過去分詞です。",
+"ex": [
+{
+"en": "She seems to be tired.",
+"ja": "彼女は疲れているようです。"
+},
+{
+"en": "The movie seems to have become popular.",
+"ja": "その映画は人気になったようです。"
+}
+],
+"title": "seem to 〜「〜のようだ・〜らしい」"
+},
+"id": "20261123-frieren-ende-theory",
+"level": 3,
+"lines": [
+{
+"en": "This fan thinks Frieren has already defeated the Demon King.",
+"ja": "このファンは、フリーレンはもう魔王を倒したと考えています。",
+"mix": "このファンは、フリーレンはもう {Demon King} を倒したと考えています。"
+},
+{
+"en": "Frieren remembers it, and Flamme and others predicted it.",
+"ja": "フリーレンはそれを覚えていて、フランメたちもそれを予言していました。",
+"mix": "フリーレンはそれを覚えていて、{Flamme} たちもそれを予言していました。"
+},
+{
+"en": "The Demon King knew Frieren would defeat him, so he probably made his death part of his plan.",
+"ja": "魔王は、フリーレンに倒される未来を知っていたので、おそらく自分の死も計画の一部にしたのでしょう。",
+"mix": "{Demon King} は、フリーレンに倒される未来を知っていたので、自分の {death} も計画の一部にしたのでしょう。"
+},
+{
+"en": "He built his castle on purpose at a place connected to the dead.",
+"ja": "魔王は、死者とつながる場所に、わざわざ自分の城を建てました。",
+"mix": "魔王は、死者とつながる場所に、わざわざ自分の {castle} を建てました。"
+},
+{
+"en": "Flamme knew all this and told Frieren to go to Ende again.",
+"ja": "フランメは、これらをすべて知ったうえで、フリーレンにもう一度エンデへ向かうよう指示しました。",
+"mix": "フランメは、これらをすべて知ったうえで、フリーレンにもう一度 {Ende} へ向かうよう指示しました。"
+},
+{
+"en": "Himmel's party seems to have learned something, and in the end Eisen asked Frieren to go there.",
+"ja": "ヒンメルの一行は何かを知ったようで、最終的にアイゼンがフリーレンにそこへ行くよう頼みました。",
+"mix": "ヒンメルの一行は何かを知ったようで、最終的に {Eisen} がフリーレンにそこへ行くよう頼みました。"
+},
+{
+"en": "The fan does not know Frieren's role yet, because not all the clues have appeared.",
+"ja": "このファンは、材料がまだ出きっていないので、フリーレンの役割はまだわからないと言っています。",
+"mix": "このファンは、{clues} がまだ出きっていないので、フリーレンの {role} はまだわからないと言っています。"
+}
+],
+"post": {
+"account": "kabugorikun",
+"date": "2026-11-23",
+"likes": 2262,
+"name": "限界フリーレンオタク",
+"url": "https://x.com/kabugorikun/status/2124841981742620874"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"ハイター",
+"アイゼン",
+"ヒンメル"
+],
+"q": "ヒンメル一行のうち、最終的にフリーレンにエンデ（オレオール）へ行くよう頼んだのは？",
+"why": "6文目に Eisen asked Frieren to go there. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"おぼえる",
+"作る",
+"予言する"
+],
+"q": "predict の意味は？",
+"why": "Flamme and others predicted it は「フランメたちがそれを予言した」。"
+},
+{
+"a": 0,
+"choices": [
+"seems",
+"seem",
+"seeming"
+],
+"q": "Himmel's party ___ to have learned something.（学んだようだ）",
+"why": "主語 party はひとつのまとまりなので、seems ＋ to have 過去分詞 の形です。"
+}
+],
+"series": "frieren",
+"summary": "限界フリーレンオタクさんは、フリーレンは魔王を倒したが、エンデでの役割はまだ残っていると考えています。魔王・フランメ・ヒンメル一行・アイゼンの動きから、フリーレンが何かを頼まれているのではと読んでいます。ネタバレを含みます。",
+"talk": {
+"hint": "I think Frieren will ___.",
+"ja": "フリーレンはエンデで何をすると思いますか？",
+"q": "What do you think Frieren will do in Ende?"
+},
+"title": "フリーレンはエンデで何をする？魔王の仕掛けを読む考察",
+"words": [
+{
+"ja": "倒す・打ち負かす",
+"note": "ポストの「討伐」「倒した」は defeat で表せます。",
+"w": "defeat"
+},
+{
+"ja": "予言する・予測する",
+"note": "ポストの「予言されていた」は、受け身にすると was predicted。",
+"w": "predict"
+},
+{
+"ja": "わざと・わざわざ",
+"note": "ポストの「わざわざ魔王城を建てた」を on purpose で表しました。",
+"w": "on purpose"
+},
+{
+"ja": "役割",
+"note": "ポストの「フリーレンの役割」は Frieren's role。",
+"w": "role"
+},
+{
+"ja": "手がかり・材料",
+"note": "ポストの「材料もまだ出切っていない」は、clues have not all appeared と言いかえました。",
+"w": "clue"
+}
+]
+},
+{
+"added": "2026-11-23T21:01",
+"addedAt": "2026-11-24T14:46",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a fun anime": "おもしろいアニメ",
+"about": "〜について",
+"again": "もう一度",
+"and": "〜と・そして",
+"anime": "アニメ",
+"are": "〜です",
+"did": "〜した（didn'tの形）",
+"do": "〜する（否定文で使う）",
+"excited": "興奮した",
+"few": "少しの",
+"fun": "おもしろい",
+"fun anime": "おもしろいアニメ",
+"ghibli": "ジブリ",
+"ghibli anime": "ジブリのアニメ",
+"go": "行く",
+"he": "その人は",
+"him": "彼に",
+"imax": "IMAX（大きなスクリーンの上映方式）",
+"in": "〜で",
+"in imax": "IMAXで",
+"it": "それ",
+"know": "知る",
+"last": "昨〜・この前の",
+"last year": "去年",
+"mononoke": "もののけ",
+"not": "〜ない",
+"of": "〜のうち",
+"of them went": "そのうち〜が行った",
+"of them went to the theater": "そのうち（数名）が映画館に行った",
+"poster": "投稿者",
+"princess": "姫",
+"princess mononoke": "もののけ姫（作品名）",
+"said": "言った（sayの過去形）",
+"says": "言っている",
+"see": "観る",
+"see it": "それを観る",
+"shown": "上映された（showの過去分詞）",
+"students": "学生たち",
+"such": "こんな",
+"the": "その",
+"the poster": "投稿者は",
+"the poster says students today": "投稿者は今の学生は〜と言う",
+"the poster says students today do not": "投稿者は今の学生は〜しないと言う",
+"the theater": "映画館",
+"theater": "映画館",
+"them": "その人たちに",
+"there": "（there was で）〜があった",
+"they": "その人は",
+"they said we did not know there was": "彼らは「〜があるなんて知らなかった」と言った",
+"they think it was last year when": "その人は、それは去年のことだと思う、〜のとき",
+"they think it was last year when princess mononoke was": "その人は、それは『もののけ姫』が〜された去年のことだと思う",
+"they thinks it was last year when": "その人はそれは去年〜のときだと思う",
+"they thinks it was last year when princess mononoke was": "その人は去年『もののけ姫』が〜されたときだと思う",
+"they told students again and again": "その人は学生に何度も言った",
+"they told students again and again to": "その人は学生に何度も〜するよう言った",
+"they were very excited and told them": "みんなとても興奮して彼に伝えた",
+"they were very excited and told them about": "みんなとても興奮して彼に〜を伝えた",
+"think": "思う",
+"thinks": "思っている",
+"to": "〜するように",
+"today": "今の・今日",
+"told": "言った（tellの過去形）",
+"very": "とても",
+"was": "〜だった・〜された",
+"watch": "観る",
+"we": "私たちは",
+"we did not know there was": "〜があるなんて知らなかった",
+"went": "行った（goの過去形）",
+"were": "〜だった",
+"when": "〜のとき",
+"year": "年"
+},
+"grad": [
+{
+"q1": "{The poster} は、今の {students} は、ジブリのアニメを観ていない、と言っています。",
+"q2": "{The poster says students today} は、{Ghibli anime} を観ていない。",
+"q3": "{The poster says students today do not} 観る {Ghibli anime.}"
+},
+{
+"q1": "彼は、それは {last year}、『{Princess Mononoke}』が {IMAX} で上映されたときだと思っています。",
+"q2": "{They think it was last year, when} 『{Princess Mononoke}』が {IMAX} で上映された。",
+"q3": "{They think it was last year, when Princess Mononoke was} 上映された {in IMAX.}"
+},
+{
+"q1": "{They} は {students} に、何度も、行って観るように言いました。",
+"q2": "{They told students again and again} 、行って観るように。",
+"q3": "{They told students again and again to} 行って {see it.}"
+},
+{
+"q1": "{them} のうち数名が、{the theater} に行きました。",
+"q2": "数名 {of them went} 、{the theater} に。",
+"q3": "数名 {of them went to the theater.}"
+},
+{
+"q1": "{They} は、とても {excited} で、{them} に報告してくれました。",
+"q2": "{They were very excited and told them} 、そのことを。",
+"q3": "{They were very excited and told them about} そのこと{.}"
+},
+{
+"q1": "{They} は「こんな {fun anime} があったなんて、知らなかった！」と言いました。",
+"q2": "{They} は「{We did not know there was} こんな {fun anime}！」と言いました。",
+"q3": "{They said, We did not know there was} こんな {a fun anime!}"
+}
+],
+"grammar": {
+"body": "such a ＋ 形容詞 ＋ 名詞 で「こんな（そんな）〜な…」と、おどろきや強い気持ちを表します。such a のあとに形容詞と名詞が続く順番です。名詞が数えられないときや複数のときは a を使いません（such good news）。",
+"ex": [
+{
+"en": "It is such a nice day.",
+"ja": "なんていい日でしょう。"
+},
+{
+"en": "They are such a kind teacher.",
+"ja": "彼はとても優しい先生です。"
+}
+],
+"title": "such a ＋ 形容詞 ＋ 名詞「こんな〜」"
+},
+"id": "20261123-ghibli-students",
+"level": 2,
+"lines": [
+{
+"en": "The poster says students today do not watch Ghibli anime.",
+"ja": "投稿者は、今の学生はジブリのアニメを観ていない、と言っています。",
+"mix": "投稿者は、今の {students} はジブリのアニメを観ていない、と言っています。"
+},
+{
+"en": "They think it was last year, when Princess Mononoke was shown in IMAX.",
+"ja": "彼は、それは去年、『もののけ姫』がIMAXで上映されたときだと思っています。",
+"mix": "彼は、それは {last year}、『もののけ姫』がIMAXで上映されたときだと思っています。"
+},
+{
+"en": "They told students again and again to go and see it.",
+"ja": "彼は学生たちに、何度も、行って観るように言いました。",
+"mix": "彼は {students} に、何度も、行って観るように言いました。"
+},
+{
+"en": "A few of them went to the theater.",
+"ja": "そのうち数名が、映画館に行きました。",
+"mix": "そのうち数名が、{theater} に行きました。"
+},
+{
+"en": "They were very excited and told them about it.",
+"ja": "みんなとても興奮して、そのことを彼に報告してくれました。",
+"mix": "みんなとても {excited} で、そのことを彼に報告してくれました。"
+},
+{
+"en": "They said, \"We did not know there was such a fun anime!\"",
+"ja": "「世の中にこんなにおもしろいアニメがあったなんて、知らなかった！」と言いました。",
+"mix": "「こんなおもしろい {anime} があったなんて、知らなかった！」と言いました。"
+}
+],
+"post": {
+"account": "pinetree1981",
+"date": "2026-11-23",
+"likes": 2185,
+"name": "松下哲也",
+"url": "https://x.com/pinetree1981/status/2124835755612832239"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"おこった",
+"とても興奮して報告した",
+"何も言わなかった"
+],
+"q": "学生たちは映画館に行ったあと、どうした？",
+"why": "5文目に They were very excited and told them about it. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"興奮した",
+"つかれた",
+"おこった"
+],
+"q": "excited の意味は？",
+"why": "excited は「わくわくした・興奮した」。"
+},
+{
+"a": 2,
+"choices": [
+"so",
+"very",
+"such"
+],
+"q": "It is ___ a fun movie.（なんておもしろい映画！）",
+"why": "「such a ＋ 形容詞 ＋ 名詞」の形。so や very は a の前には入りません。"
+}
+],
+"summary": "今の学生はジブリのアニメを観ていない、という体験談です。『もののけ姫』のIMAX上映のときに強く勧めたら、映画館に行った数名がとても興奮して報告してくれたそうです。",
+"talk": {
+"hint": "I like ___ because ___.",
+"ja": "どのジブリ映画が好きですか？",
+"q": "Which Ghibli movie do you like?"
+},
+"title": "今の学生はジブリを観ていない？",
+"words": [
+{
+"ja": "映画館",
+"note": "ポストの「映画館」。アメリカ英語のつづりです。",
+"w": "theater"
+},
+{
+"ja": "興奮した・わくわくした",
+"note": "ポストの「めちゃくちゃ興奮して」を very excited で表しました。",
+"w": "excited"
+},
+{
+"ja": "報告する",
+"note": "ポストの「レポートしてくれる」を told them about it で表しました。",
+"w": "report"
+},
+{
+"ja": "何度も何度も",
+"note": "ポストの「口を酸っぱくして言う」を told ... again and again で表しました。",
+"w": "again and again"
+},
+{
+"ja": "おもしろい・楽しい",
+"note": "ポストの「おもしろい」を fun で表しました。",
+"w": "fun"
+}
+]
+},
+{
+"added": "2026-11-23T20:48",
+"addedAt": "2026-11-24T14:46",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a screening of kimi no hanashi was": "『君の話』の試写会は〜だった",
+"a surprise": "サプライズ",
+"about": "〜について",
+"about their school memories": "学生時代の思い出について",
+"also": "〜も",
+"and": "〜と",
+"as": "〜として・〜で",
+"as a surprise": "サプライズで",
+"asked": "聞いた（askの過去形）",
+"back": "もどって",
+"back then": "当時",
+"came": "来た・登場した",
+"closely": "ぴったりと",
+"deguchi": "出口（人名）",
+"do": "〜しますか",
+"follow": "追う・密着する",
+"for": "〜のための",
+"for students": "学生のための",
+"hanashi": "話（作品名の一部）",
+"it": "それは（番組は）",
+"it also asked": "番組はさらに聞いた",
+"it also asked what do you want to": "番組は「何を〜したい？」とも聞いた",
+"kimi": "君（作品名の一部）",
+"masaya": "晶哉（人名）",
+"memories": "思い出（memoryの複数形）",
+"mezamashi": "めざまし（番組名の一部）",
+"mezamashi tv": "めざましテレビ（番組名）",
+"natsuki": "夏希（人名）",
+"natsuki deguchi": "出口夏希（人名）",
+"natsuki deguchi and masaya sano": "出口夏希さんと佐野晶哉さん",
+"no": "の（作品名の一部）",
+"of": "〜の",
+"only": "〜だけ",
+"sano": "佐野（人名）",
+"say": "言う",
+"school": "学校・学生時代の",
+"screening": "試写会",
+"show": "番組",
+"students": "学生たち",
+"surprise": "サプライズ",
+"the": "その",
+"the show": "番組",
+"the show asked": "番組は聞いた",
+"their": "彼らの",
+"them": "彼ら（二人）を",
+"then": "そのとき",
+"to": "〜に・〜すること",
+"to yourself back then": "当時の自分に",
+"tomorrow": "あした",
+"tomorrow mezamashi tv will follow": "あしたのめざましテレビが追う",
+"tv": "テレビ（番組名の一部）",
+"want": "〜したい",
+"was": "〜だった",
+"what": "何を",
+"will": "〜するだろう（未来）",
+"you": "あなたは",
+"yourself": "自分自身"
+},
+"grad": [
+{
+"q1": "『君の話』の {screening} は、{students} 限定でした。",
+"q2": "{A screening of Kimi no Hanashi was} 、{students} 限定。",
+"q3": "{A screening of Kimi no Hanashi was} 限定 {for students.}"
+},
+{
+"q1": "{Natsuki Deguchi} さんと佐野晶哉さんが、{surprise} で登場しました。",
+"q2": "{Natsuki Deguchi and Masaya Sano} が、{a surprise} で登場しました。",
+"q3": "{Natsuki Deguchi and Masaya Sano} 来た {as a surprise.}"
+},
+{
+"q1": "{Tomorrow}、『{Mezamashi TV}』が、二人に密着します。",
+"q2": "{Tomorrow, Mezamashi TV will follow} 二人に密着します。",
+"q3": "{Tomorrow, Mezamashi TV will follow} 二人 {closely.}"
+},
+{
+"q1": "{The show} は、二人に学生時代の {memories} を聞きました。",
+"q2": "{The show asked} 二人に、学生時代の {memories}。",
+"q3": "{The show asked} 二人 {about their school memories.}"
+},
+{
+"q1": "「{back then} の {yourself} に、何て伝えたい？」とも聞きました。",
+"q2": "{It also asked} 、「{back then} の {yourself} に、何て伝えたい？」と。",
+"q3": "{It also asked, What do you want to} 言う {to yourself back then?}"
+}
+],
+"grammar": {
+"body": "「だれに」言うかは to ＋ 人 で表します。say のあとに「何を」、そのあとに to ＋ 人 の順です。say you（×）ではなく say to you（○）。",
+"ex": [
+{
+"en": "I want to say thank you to my friend.",
+"ja": "友だちにありがとうと言いたいです。"
+},
+{
+"en": "What did he say to you?",
+"ja": "彼はあなたに何と言いましたか？"
+}
+],
+"title": "say ～ to ＋ 人「人に〜と言う」"
+},
+"id": "20261123-kimi-no-hanashi-mezamashi",
+"level": 1,
+"lines": [
+{
+"en": "A screening of Kimi no Hanashi was only for students.",
+"ja": "『君の話』の試写会は、学生限定でした。",
+"mix": "『君の話』の {screening} は、学生限定でした。"
+},
+{
+"en": "Natsuki Deguchi and Masaya Sano came as a surprise.",
+"ja": "出口夏希さんと佐野晶哉さんが、サプライズで登場しました。",
+"mix": "出口夏希さんと佐野晶哉さんが、{surprise} で登場しました。"
+},
+{
+"en": "Tomorrow, Mezamashi TV will follow them closely.",
+"ja": "あしたの『めざましテレビ』が、二人に密着します。",
+"mix": "{Tomorrow}、『めざましテレビ』が二人に密着します。"
+},
+{
+"en": "The show asked them about their school memories.",
+"ja": "番組は、二人に学生時代の思い出を聞きました。",
+"mix": "番組は、二人に学生時代の {memories} を聞きました。"
+},
+{
+"en": "It also asked, \"What do you want to say to yourself back then?\"",
+"ja": "「当時の自分に、何て伝えたい？」とも聞きました。",
+"mix": "「{back then} の自分に、何て伝えたい？」とも聞きました。"
+}
+],
+"post": {
+"account": "cx_mezamashi",
+"date": "2026-11-23",
+"likes": 6137,
+"name": "めざましテレビ",
+"url": "https://x.com/cx_mezamashi/status/2124832412886782044"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"映画の監督と声優",
+"学生だけ",
+"出口夏希さんと佐野晶哉さん"
+],
+"q": "あしたのめざましテレビが密着するのはだれ？",
+"why": "3文目と2文目に二人の名前があります。"
+},
+{
+"a": 0,
+"choices": [
+"試写会",
+"食事会",
+"運動会"
+],
+"q": "screening の意味は？",
+"why": "screening は映画の「試写会・上映」。"
+},
+{
+"a": 1,
+"choices": [
+"for",
+"to",
+"at"
+],
+"q": "I want to say thank you ___ my friend.",
+"why": "「人に言う」は say to ＋ 人 です。"
+}
+],
+"summary": "映画『君の話』の学生限定試写会にサプライズ登場した出口夏希さんと佐野晶哉さんに、明日のめざましテレビが密着します。学生時代の思い出や、当時の自分にかけたい言葉を聞いたそうです。",
+"talk": {
+"hint": "I remember ___.",
+"ja": "学生時代のよい思い出は何ですか？",
+"q": "What is a good memory from your school days?"
+},
+"title": "『君の話』試写会に出口夏希さん・佐野晶哉さん",
+"words": [
+{
+"ja": "試写会・上映",
+"note": "ポストの「試写会」は screening。",
+"w": "screening"
+},
+{
+"ja": "サプライズ・おどろき",
+"note": "ポストの「サプライズ登場」は came as a surprise。",
+"w": "surprise"
+},
+{
+"ja": "ぴったりと・くわしく",
+"note": "「密着」は follow them closely（ぴったり追う）で表しました。",
+"w": "closely"
+},
+{
+"ja": "思い出",
+"note": "「思い出話」は memories（複数形）で表せます。",
+"w": "memory"
+},
+{
+"ja": "学生時代",
+"note": "ポストの「学生時代」。",
+"w": "school days"
 }
 ]
 },
@@ -1458,6 +2740,286 @@ window.LESSONS = [
 "ja": "衣装",
 "note": "ポストの「衣装」は costumes と複数形でよく使います。",
 "w": "costume"
+}
+]
+},
+{
+"added": "2026-11-23T15:27",
+"addedAt": "2026-11-24T14:46",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a year": "1年",
+"a year on the dancing tea leaves": "踊る茶葉に1年",
+"about": "〜について",
+"after": "〜のあとで",
+"also": "〜も",
+"and": "そして",
+"app": "アプリ",
+"as": "〜のような",
+"because": "なぜなら",
+"books": "冊（bookの複数形）",
+"but": "しかし・でも",
+"calls": "〜と呼ぶ",
+"calm": "落ち着いた",
+"comfortable": "心地よい",
+"daily": "日常の",
+"dancing": "踊る",
+"days": "日（dayの複数形）",
+"doubts": "疑問（doubtの複数形）",
+"enter": "入る",
+"entrance": "入口",
+"entrance to type-moon": "TYPE-MOONへの入口",
+"faithful": "忠実な",
+"feels": "感じる",
+"few": "少しの",
+"film": "映画",
+"fully": "完全に",
+"game": "ゲーム",
+"great": "すばらしい",
+"had": "持った（haveの過去形）",
+"hallway": "通路",
+"high": "高い",
+"high quality": "高いクオリティ",
+"in": "〜で",
+"is": "〜です",
+"it": "それ",
+"junichi": "ジュンイチ（人名）",
+"junichi wrote about the mahoyo movie": "ジュンイチは魔法使いの夜の映画について書いた",
+"junichi wrote about the mahoyo movie a few days after seeing it to stay": "見て数日後に、落ち着くために書いた",
+"leaves": "葉（leafの複数形）",
+"liked": "気に入った",
+"long": "長い",
+"made": "作った",
+"mahoyo": "魔法使いの夜（Mahoyo）",
+"mahoyo movie": "魔法使いの夜の映画",
+"making": "作ること",
+"mirror-house": "ミラーハウス",
+"more": "より多く",
+"movie": "映画",
+"new": "新しい",
+"new viewers": "新しい観客",
+"not": "〜ない",
+"not fully faithful to the original": "原作に完全には忠実ではない",
+"now": "いま",
+"number": "番号・順位",
+"number one in the app game ranking": "アプリゲームのランキング1位",
+"on": "〜に（時間をかける）",
+"one": "1",
+"only": "〜だけ",
+"original": "原作",
+"over": "〜を超える",
+"plan": "狙い・計画",
+"quality": "クオリティ・質",
+"ranking": "ランキング",
+"says": "言う",
+"scenes": "シーン（sceneの複数形）",
+"seeing": "見ること（seeの-ing形）",
+"six": "6",
+"six years": "6年",
+"spent": "かけた（spendの過去形）",
+"staff": "スタッフ",
+"stay": "〜のままでいる",
+"storyboard": "絵コンテ",
+"storyboard books": "絵コンテ（の冊子）",
+"such": "そのような",
+"tea": "紅茶",
+"than": "〜より",
+"the": "その",
+"the app game ranking": "アプリゲームのランキング",
+"the comfortable daily scenes": "心地よい日常シーン",
+"the dancing tea leaves": "踊る紅茶の茶葉",
+"the film": "その映画",
+"the high quality": "高いクオリティ",
+"the long mirror-house hallway": "長いミラーハウスの通路",
+"the mahoyo game": "魔法使いの夜のゲーム",
+"the mahoyo movie": "魔法使いの夜の映画",
+"the original": "原作",
+"the plan": "その狙い",
+"the staff made over thirty storyboard books": "スタッフは絵コンテを30冊以上作った",
+"the staff made over thirty storyboard books and": "スタッフは絵コンテを30冊以上作り、そして",
+"the writer feels": "書き手は感じる",
+"the writer feels the film is not fully faithful to the original because it wants new viewers to": "書き手は、新しい観客に〜してほしいので原作に完全には忠実でないと感じる",
+"the writer had a few doubts such as the long mirror-house hallway": "書き手は、長いミラーハウスの通路などに疑問があった",
+"the writer had a few doubts such as the long mirror-house hallway but calls it a": "書き手は疑問もあるが、これを〜と呼ぶ",
+"the writer liked not only the high quality": "書き手は高いクオリティだけでなく気に入った",
+"the writer liked not only the high quality but": "書き手は高いクオリティだけでなく〜も気に入った",
+"the writer says the plan worked": "書き手は狙いが当たったと言う",
+"the writer says the plan worked because the mahoyo game is": "書き手は、魔法使いの夜のゲームが〜なので狙いが当たったと言う",
+"thirty": "30",
+"to": "〜するために・〜へ",
+"type-moon": "TYPE-MOON（制作・原作の会社名）",
+"ufotable": "ufotable（制作会社）",
+"ufotable spent more than six years": "ufotableは6年以上かけた",
+"viewers": "観客（viewerの複数形）",
+"wants": "〜してほしい（wantの三単現）",
+"worked": "うまくいった",
+"writer": "書き手",
+"wrote": "書いた",
+"year": "1年",
+"years": "年（yearの複数形）"
+},
+"grad": [
+{
+"q1": "ジュンイチさんは、落ち着くために、{the Mahoyo movie} の感想を、見た数日後に書きました。",
+"q2": "{Junichi wrote about the Mahoyo movie}、見た数日後に、落ち着くために。",
+"q3": "{Junichi wrote about the Mahoyo movie a few days after seeing it, to stay} 冷静に。"
+},
+{
+"q1": "ufotable は、{film} を作るのに {six years} 以上かけました。",
+"q2": "{Ufotable spent more than six years} この {film} を作るのに。",
+"q3": "{Ufotable spent more than six years} 作る {the film.}"
+},
+{
+"q1": "スタッフは {storyboard books} を30冊以上描き、{the dancing tea leaves} に1年をかけました。",
+"q2": "{The staff made over thirty storyboard books}、{the dancing tea leaves} に {a year} をかけました。",
+"q3": "{The staff made over thirty storyboard books and} かけた {a year on the dancing tea leaves.}"
+},
+{
+"q1": "書き手は、{new viewers} に {TYPE-MOON} の世界に入ってほしいので、この映画は {the original} に完全には忠実ではないのだと感じています。",
+"q2": "{The writer feels} この映画は {not fully faithful to the original}、{new viewers} に {TYPE-MOON} の世界に入ってほしいから。",
+"q3": "{The writer feels the film is not fully faithful to the original, because it wants new viewers to} 入る {TYPE-MOON.}"
+},
+{
+"q1": "書き手は、{the app game ranking} で『魔法使いの夜』が1位になったので、{the plan} は当たったと言っています。",
+"q2": "{The writer says the plan worked}、{the Mahoyo game} が {the app game ranking} で1位になったからと。",
+"q3": "{The writer says the plan worked, because the Mahoyo game is} いま {number one in the app game ranking.}"
+},
+{
+"q1": "書き手は、{the high quality} だけでなく、{comfortable} 日常シーンも気に入りました。",
+"q2": "{The writer liked not only the high quality}、{the comfortable daily scenes} も。",
+"q3": "{The writer liked not only the high quality but} さらに {the comfortable daily scenes.}"
+},
+{
+"q1": "書き手は、{the long mirror-house hallway} などに疑問も感じましたが、TYPE-MOONへのすばらしい {entrance} だと言っています。",
+"q2": "{The writer had a few doubts such as the long mirror-house hallway}、でもTYPE-MOONへのすばらしい {entrance} だと言っています。",
+"q3": "{The writer had a few doubts, such as the long mirror-house hallway, but calls it a} すばらしい {entrance to TYPE-MOON.}"
+}
+],
+"grammar": {
+"body": "spend のあとに時間（six years / a year）を置き、そのあとに ～ing を続けると「〜するのに…かける」という意味になります。過去のことは spent（spend の過去形）を使います。",
+"ex": [
+{
+"en": "She spent two hours cleaning her room.",
+"ja": "彼女は部屋をそうじするのに2時間かけました。"
+},
+{
+"en": "They spent a month making this movie.",
+"ja": "彼らはこの映画を作るのに1か月かけました。"
+}
+],
+"title": "spend ＋ 時間 ＋ ～ing「〜するのに時間をかける」"
+},
+"id": "20261123-mahoyo-flat-review",
+"level": 3,
+"lines": [
+{
+"en": "Junichi wrote about the Mahoyo movie a few days after seeing it, to stay calm.",
+"ja": "ジュンイチさんは、落ち着くために、『魔法使いの夜』の映画の感想を、見た数日後に書きました。",
+"mix": "ジュンイチさんは、落ち着くために、{Mahoyo movie} の感想を、見た数日後に書きました。"
+},
+{
+"en": "Ufotable spent more than six years making the film.",
+"ja": "ufotable は、この映画を作るのに6年以上かけました。",
+"mix": "ufotable は、この映画を作るのに {six years} 以上かけました。"
+},
+{
+"en": "The staff made over thirty storyboard books and spent a year on the dancing tea leaves.",
+"ja": "スタッフは絵コンテを30冊以上描き、踊る紅茶の茶葉に1年をかけました。",
+"mix": "スタッフは {storyboard books} を30冊以上描き、踊る紅茶の茶葉に1年をかけました。"
+},
+{
+"en": "The writer feels the film is not fully faithful to the original, because it wants new viewers to enter TYPE-MOON.",
+"ja": "書き手は、新しい観客にTYPE-MOONの世界に入ってほしいので、この映画は原作に完全には忠実ではないのだと感じています。",
+"mix": "書き手は、{new viewers} にTYPE-MOONの世界に入ってほしいので、この映画は {original} に完全には忠実ではないのだと感じています。"
+},
+{
+"en": "The writer says the plan worked, because the Mahoyo game is now number one in the app game ranking.",
+"ja": "書き手は、アプリゲームのランキングで『魔法使いの夜』が1位になったので、この狙いは当たったと言っています。",
+"mix": "書き手は、アプリゲームの {ranking} で『魔法使いの夜』が1位になったので、この {plan} は当たったと言っています。"
+},
+{
+"en": "The writer liked not only the high quality but also the comfortable daily scenes.",
+"ja": "書き手は、高いクオリティだけでなく、心地よい日常シーンも気に入りました。",
+"mix": "書き手は、{high quality} だけでなく、{comfortable} 日常シーンも気に入りました。"
+},
+{
+"en": "The writer had a few doubts, such as the long mirror-house hallway, but calls it a great entrance to TYPE-MOON.",
+"ja": "書き手は、長いミラーハウスの通路などに疑問も感じましたが、TYPE-MOONへのすばらしい入口だと言っています。",
+"mix": "書き手は、長い {mirror-house} の通路などに疑問も感じましたが、TYPE-MOONへのすばらしい {entrance} だと言っています。"
+}
+],
+"post": {
+"account": "JunichiAlter",
+"date": "2026-11-23",
+"likes": 1753,
+"name": "ジュンイチ【オルタ】",
+"url": "https://x.com/JunichiAlter/status/2124751747260555374"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"30冊以上",
+"3冊",
+"300冊以上"
+],
+"q": "絵コンテは、何冊以上あったと書かれていますか？",
+"why": "3文目に over thirty storyboard books とあります。"
+},
+{
+"a": 1,
+"choices": [
+"新しい",
+"忠実な",
+"おもしろい"
+],
+"q": "faithful to the original の faithful の意味は？",
+"why": "not fully faithful to the original は「原作に完全には忠実ではない」。"
+},
+{
+"a": 2,
+"choices": [
+"so as",
+"such to",
+"such as"
+],
+"q": "I have a few doubts, ___ the long hallway.（長い通路など）",
+"why": "such as 〜 で「〜など・たとえば〜」。"
+}
+],
+"summary": "ジュンイチさんは、鑑賞の数日後に劇場版『魔法使いの夜』の感想を書いています。ufotable が6年以上かけて作ったこと、原作に完全には忠実ではない理由の推測、良かった点と気になった点、そして新しい人への入口になる映画だという総評をまとめています。ネタバレを含みます。",
+"talk": {
+"hint": "I want to watch it because ___.",
+"ja": "『魔法使いの夜』の映画を観たいですか？",
+"q": "Do you want to watch the Mahoyo movie?"
+},
+"title": "劇場版『魔法使いの夜』感想：ufotable の6年と新規への入口",
+"words": [
+{
+"ja": "絵コンテ",
+"note": "ポストの「絵コンテ」は storyboard。映画やアニメの設計図のようなものです。",
+"w": "storyboard"
+},
+{
+"ja": "忠実な",
+"note": "ポストの「原作に完全忠実」は fully faithful to the original。",
+"w": "faithful"
+},
+{
+"ja": "入口",
+"note": "ポストの「入口」は entrance。新しい人が入っていく入口のことです。",
+"w": "entrance"
+},
+{
+"ja": "ランキング・順位",
+"note": "ポストの「ゲームランキング1位」は number one in the game ranking。",
+"w": "ranking"
+},
+{
+"ja": "疑問・気になること",
+"note": "ポストの「ん？となったところ」を a few doubts と言いかえました。",
+"w": "doubt"
 }
 ]
 },
