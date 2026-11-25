@@ -1,5 +1,690 @@
 window.LESSONS = [
 {
+"added": "2026-11-25T12:00",
+"addedAt": "2026-11-25T14:46",
+"cat": "art",
+"gloss": {
+"a": "ひとつの",
+"a partial real specimen": "部分的な実物標本",
+"a partial real specimen with that": "それを含む部分的な実物標本",
+"an": "ひとつの",
+"and": "と",
+"at": "〜で",
+"bone": "骨",
+"comes": "由来する（comeの三単現）",
+"early": "初期の",
+"expo": "博覧会・恐竜博",
+"first": "最初の",
+"for": "〜のあいだ・〜として",
+"from": "〜から",
+"heart-shaped": "ハート形の",
+"highlight": "見どころ",
+"in": "〜に・〜で",
+"in ueno park": "上野公園の",
+"is": "〜です",
+"its": "その",
+"its species name comes from a heart-shaped": "種小名はハート形の〜に由来する",
+"its species name comes from a heart-shaped tail": "種小名はハート形の尾〜に由来する",
+"japan": "日本",
+"june": "6月",
+"june 13": "6月13日",
+"lived": "すんでいた（liveの過去形）",
+"march": "3月",
+"march 13": "3月13日",
+"munyamawamtuka": "ムニャマワムトゥカ（恐竜の名前）",
+"museum": "博物館",
+"museum of nature and science in ueno park": "上野公園にある自然科学の博物館",
+"name": "名前",
+"national": "国立の",
+"nature": "自然",
+"of": "〜の",
+"one": "ひとつの",
+"one highlight": "見どころのひとつ",
+"one highlight is": "見どころのひとつは〜",
+"one highlight is munyamawamtuka an": "見どころのひとつは、ムニャマワムトゥカという〜",
+"park": "公園",
+"partial": "部分的な",
+"real": "本物の",
+"real specimen": "実物標本",
+"runs": "（会期が）続く",
+"runs from march 13": "3月13日から続く",
+"runs from march 13 to june 13 2027": "2027年3月13日から6月13日まで続く",
+"science": "科学",
+"species": "種",
+"species name": "種小名",
+"specimen": "標本",
+"tail": "尾・しっぽ",
+"tanzania": "タンザニア",
+"that": "その",
+"the": "その",
+"the expo": "恐竜博（この博覧会）",
+"the expo is at": "恐竜博は〜で開かれる",
+"the expo is at the": "恐竜博は〜で開かれる",
+"this": "この",
+"time": "回",
+"titanosaur": "ティタノサウルス類",
+"titanosaur lived in tanzania": "ティタノサウルス類はタンザニアにすんでいた",
+"to": "〜まで",
+"ueno": "上野",
+"ueno park": "上野公園",
+"visit": "訪れる",
+"will": "〜するだろう",
+"will visit japan": "日本を訪れる",
+"will visit japan for the first time": "初めて日本を訪れる",
+"with": "〜を含む・〜のある"
+},
+"grad": [
+{
+"q1": "{One highlight} は、初期の {titanosaur} のムニャマワムトゥカです。",
+"q2": "{One highlight is} 初期の {titanosaur} の {Munyamawamtuka}。",
+"q3": "{One highlight is Munyamawamtuka, an} 初期の {titanosaur.}"
+},
+{
+"q1": "この初期の {titanosaur} は、{Tanzania} にすんでいました。",
+"q2": "この初期の {titanosaur lived in Tanzania}。",
+"q3": "{This} 初期の {titanosaur lived in Tanzania.}"
+},
+{
+"q1": "{species name} は、{heart-shaped} 尾椎に由来します。",
+"q2": "{Its species name comes from a heart-shaped} 尾椎。",
+"q3": "{Its species name comes from a heart-shaped tail} 骨{.}"
+},
+{
+"q1": "その尾椎を含む、{a partial real specimen} が、初めて {Japan} に来ます。",
+"q2": "その尾椎を含む、{a partial real specimen} が、{will visit Japan} 初めて。",
+"q3": "{A partial real specimen with that} 骨 {will visit Japan for the first time.}"
+},
+{
+"q1": "{The expo} の会場は、{Ueno Park} の国立科学博物館です。",
+"q2": "{The expo is at} 国立科学博物館 {in Ueno Park.}",
+"q3": "{The expo is at the} 国立 {Museum of Nature and Science in Ueno Park.}"
+},
+{
+"q1": "会期は、2027年 {March 13} から {June 13} までです。",
+"q2": "{The} 博覧会 {runs from March 13} から {June 13} まで。",
+"q3": "{The} 博覧会 {runs from March 13 to June 13, 2027.}"
+}
+],
+"grammar": {
+"body": "「〜に由来する・〜から来ている」は come from で表します。主語が三人称単数（it など）のときは comes from です。",
+"ex": [
+{
+"en": "The word comes from French.",
+"ja": "その単語はフランス語に由来します。"
+},
+{
+"en": "This name comes from a famous story.",
+"ja": "この名前は有名な物語に由来します。"
+}
+],
+"title": "come from ～「〜に由来する」"
+},
+"id": "20261125-art-dinoexpo-titanosaur",
+"level": 2,
+"lines": [
+{
+"en": "One highlight is Munyamawamtuka, an early titanosaur.",
+"ja": "見どころのひとつは、初期のティタノサウルス類、ムニャマワムトゥカです。",
+"mix": "見どころのひとつは、初期の {titanosaur} のムニャマワムトゥカです。"
+},
+{
+"en": "This early titanosaur lived in Tanzania.",
+"ja": "この初期のティタノサウルス類は、タンザニアにすんでいました。",
+"mix": "この初期のティタノサウルス類は、{Tanzania} にすんでいました。"
+},
+{
+"en": "Its species name comes from a heart-shaped tail bone.",
+"ja": "種小名は、ハート形の尾椎に由来します。",
+"mix": "{species name} は、ハート形の尾椎に由来します。"
+},
+{
+"en": "A partial real specimen with that bone will visit Japan for the first time.",
+"ja": "その尾椎を含む、部分的な実物標本が、初めて日本に来ます。",
+"mix": "その尾椎を含む、部分的な {real specimen} が、初めて日本に来ます。"
+},
+{
+"en": "The expo is at the National Museum of Nature and Science in Ueno Park.",
+"ja": "会場は、上野公園の国立科学博物館です。",
+"mix": "会場は、{Ueno Park} の国立科学博物館です。"
+},
+{
+"en": "The expo runs from March 13 to June 13, 2027.",
+"ja": "会期は、2027年3月13日から6月13日までです。",
+"mix": "会期は、2027年3月13日から {June 13} までです。"
+}
+],
+"post": {
+"account": "dinoexpo2027",
+"date": "2026-11-25",
+"likes": 418,
+"name": "特別展「恐竜博2027」",
+"url": "https://x.com/dinoexpo2027/status/2125424245614203108"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"タンザニアの地名",
+"標本の大きさ",
+"ハート形の尾椎"
+],
+"q": "ムニャマワムトゥカの種小名は、何に由来しますか？",
+"why": "3文目に Its species name comes from a heart-shaped tail bone. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"全部の",
+"部分的な",
+"本物の"
+],
+"q": "a partial real specimen の partial の意味は？",
+"why": "partial は「部分的な」。real が「本物の」です。"
+},
+{
+"a": 0,
+"choices": [
+"comes",
+"come",
+"coming"
+],
+"q": "Its species name ___ from a heart-shaped tail bone.",
+"why": "主語 Its species name は三人称単数なので comes from になります。"
+}
+],
+"summary": "「恐竜博2027」の見どころとして、タンザニアにすんでいた初期のティタノサウルス類「ムニャマワムトゥカ」が紹介されました。種小名の由来になったハート形の尾椎を含む部分的な実物標本が初来日し、会期は国立科学博物館（東京・上野公園）で2027年3月13日（土）〜6月13日（日）です。",
+"talk": {
+"hint": "I want to see ___ because ___.",
+"ja": "博物館で、どの恐竜を見てみたいですか？",
+"q": "Which dinosaur do you want to see at the museum?"
+},
+"title": "恐竜博2027、初来日のムニャマワムトゥカ",
+"words": [
+{
+"ja": "ティタノサウルス類（首と尾が長い大型の恐竜の仲間）",
+"note": "ポストの「ティタノサウルス類」は titanosaur です。",
+"w": "titanosaur"
+},
+{
+"ja": "種小名",
+"note": "ポストの「種小名」。",
+"w": "species name"
+},
+{
+"ja": "ハート形の",
+"note": "ポストの「ハート形」は heart-shaped と書きます。",
+"w": "heart-shaped"
+},
+{
+"ja": "尾椎（しっぽの骨）",
+"note": "ポストの「尾椎」を tail bone と言いかえました。",
+"w": "tail bone"
+},
+{
+"ja": "標本",
+"note": "ポストの「実物標本」は real specimen。",
+"w": "specimen"
+}
+]
+},
+{
+"added": "2026-11-25T10:18",
+"addedAt": "2026-11-25T14:46",
+"cat": "movie",
+"gloss": {
+"a": "ひとりの",
+"aiba": "相葉（人名）",
+"an": "ひとつの",
+"an indie film that small companies made": "小さな会社が作ったインディーズ映画",
+"and": "や・そして",
+"appear": "出演する",
+"are": "〜です",
+"asked": "希望した・頼んだ",
+"but": "〜以外は",
+"companies": "会社（companyの複数形）",
+"film": "映画",
+"have": "持っている",
+"he": "彼は",
+"he asked to appear": "彼は出演したいと希望した",
+"he asked to appear in the movie": "彼はその映画に出たいと希望した",
+"heard": "聞いた",
+"himself": "自分で",
+"i": "私は",
+"i have nothing but thanks": "私には感謝しかない",
+"in": "〜に",
+"indie": "インディーズの",
+"indie film": "インディーズ映画",
+"is": "〜です",
+"it": "それ・この映画",
+"like": "〜のような",
+"made": "作った",
+"major": "大手の",
+"major companies": "大手企業",
+"major companies like toho toei and tv stations": "東宝・東映・テレビ局などの大手企業",
+"major companies like toho toei and tv stations are not": "東宝・東映・テレビ局などの大手企業は〜ではない",
+"masaki": "雅紀（人名）",
+"masaki aiba": "相葉雅紀さん",
+"masaki aiba a superstar is in": "スーパースターの相葉雅紀さんが〜に出ている",
+"masaki aiba a superstar is in the": "スーパースターの相葉雅紀さんがその〜に出ている",
+"movie": "映画",
+"not": "〜ではない",
+"nothing": "何もない",
+"nothing but thanks": "感謝しかない",
+"of": "〜の",
+"of it": "この映画の",
+"out": "アウト（作品名『4 Out』）",
+"part": "一部",
+"poster": "投稿者",
+"read": "読んだ（readの過去形）",
+"says": "書いている",
+"script": "脚本",
+"small": "小さな",
+"small companies": "小さな会社",
+"stations": "局（stationの複数形）",
+"superstar": "スーパースター",
+"thanks": "感謝",
+"that": "〜した（関係代名詞）",
+"the": "その",
+"the movie": "その映画",
+"the movie 4 out is an indie film that small companies made": "『4アウト』は小さな会社が作ったインディーズ映画だ",
+"the poster": "投稿者",
+"the poster heard": "投稿者は聞いた",
+"the poster heard that aiba": "投稿者は、相葉さんが〜と聞いた",
+"the script": "その脚本",
+"to": "〜することを",
+"toei": "東映",
+"together": "いっしょに",
+"toho": "東宝",
+"tv": "テレビ",
+"tv stations": "テレビ局"
+},
+"grad": [
+{
+"q1": "映画『4アウト』は、{small companies} が集まって作った {indie film} です。",
+"q2": "映画『4アウト』は、{an indie film that small companies made} ものです。",
+"q3": "{The movie 4 Out is an indie film that small companies made} 一緒に。"
+},
+{
+"q1": "東宝や東映、{TV stations} などの {major companies} は、この映画に入っていません。",
+"q2": "{Major companies like Toho, Toei, and TV stations} は、この映画に入っていません。",
+"q3": "{Major companies like Toho, Toei, and TV stations are not} 一部 {of it.}"
+},
+{
+"q1": "「{superstar}」の {Masaki Aiba} さんが、この映画に出ています。",
+"q2": "{Masaki Aiba, a \"superstar,\" is in} この映画に。",
+"q3": "{Masaki Aiba, a \"superstar,\" is in the} 映画。"
+},
+{
+"q1": "投稿者さんは、{Aiba} さんが {the script} を読んでくれたと聞いています。",
+"q2": "{The poster heard}、{Aiba} さんが {the script} を読んだと。",
+"q3": "{The poster heard that Aiba} 読んだ {the script.}"
+},
+{
+"q1": "{He} は自分から、{the movie} に出たいと希望してくれたそうです。",
+"q2": "{He asked to appear} 自分から、{the movie} に出たいと。",
+"q3": "{He asked to appear in the movie} 自分で。"
+},
+{
+"q1": "{The poster} は、「{thanks} しかありません」と書いています。",
+"q2": "{The poster} は、「{nothing but thanks}」と書いています。",
+"q3": "{The poster} 書いている {\"I have nothing but thanks.\"}"
+}
+],
+"grammar": {
+"body": "nothing but ～ は「〜のほかには何もない」、つまり「〜しかない」という意味です。「感謝しかない」のように、ひとつの気持ちだけが強いときに使えます。",
+"ex": [
+{
+"en": "I have nothing but love for this movie.",
+"ja": "私はこの映画への愛しかありません。"
+},
+{
+"en": "He ate nothing but rice.",
+"ja": "彼はご飯しか食べませんでした。"
+}
+],
+"title": "nothing but ～「〜しかない・〜だけ」"
+},
+"id": "20261125-4out-indie",
+"level": 2,
+"lines": [
+{
+"en": "The movie 4 Out is an indie film that small companies made together.",
+"ja": "映画『4アウト』は、小さな会社が集まって作ったインディーズ映画です。",
+"mix": "映画『4アウト』は、小さな {companies} が集まって作った {indie film} です。"
+},
+{
+"en": "Major companies like Toho, Toei, and TV stations are not part of it.",
+"ja": "東宝や東映、テレビ局などの大手企業は、この映画に入っていません。",
+"mix": "東宝や東映、テレビ局などの {major companies} は、この映画に入っていません。"
+},
+{
+"en": "Masaki Aiba, a \"superstar,\" is in the movie.",
+"ja": "「スーパースター」の相葉雅紀さんが、この映画に出ています。",
+"mix": "「スーパースター」の {Masaki Aiba} さんが、この映画に出ています。"
+},
+{
+"en": "The poster heard that Aiba read the script.",
+"ja": "投稿者さんは、相葉さんが脚本を読んでくれたと聞いています。",
+"mix": "投稿者さんは、{Aiba} さんが {script} を読んでくれたと聞いています。"
+},
+{
+"en": "He asked to appear in the movie himself.",
+"ja": "相葉さんは、自分から映画に出たいと希望してくれたそうです。",
+"mix": "相葉さんは、自分から {the movie} に出たいと希望してくれたそうです。"
+},
+{
+"en": "The poster says, \"I have nothing but thanks.\"",
+"ja": "投稿者さんは、「感謝しかありません」と書いています。",
+"mix": "投稿者さんは、「{thanks} しかありません」と書いています。"
+}
+],
+"post": {
+"account": "seiji_y_",
+"date": "2026-11-25",
+"likes": 1482,
+"name": "山内誠治",
+"url": "https://x.com/seiji_y_/status/2125398584367751280"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"東宝が作った映画",
+"テレビ局が作った映画",
+"小さな会社が集まって作った映画"
+],
+"q": "この映画は、どんな映画？",
+"why": "1文目に an indie film that small companies made together とあります。"
+},
+{
+"a": 0,
+"choices": [
+"脚本",
+"予告編",
+"衣装"
+],
+"q": "script の意味は？",
+"why": "Aiba read the script は「相葉さんが脚本を読んだ」です。"
+},
+{
+"a": 1,
+"choices": [
+"anything",
+"nothing",
+"something"
+],
+"q": "I have ___ but thanks.（感謝しかありません）",
+"why": "「〜しかない」は nothing but ～ の形です。"
+}
+],
+"summary": "映画『4アウト』は、小さな会社が集まって作ったインディーズ映画で、東宝・東映・テレビ局などの大手企業は入っていないと伝えるポストです。相葉雅紀さんは脚本を読んで自分から出演を希望してくれたと聞いていて、「感謝しかありません」と書いています。",
+"talk": {
+"hint": "Yes, I do. / No, I do not. I like ___ movies.",
+"ja": "インディーズ映画は好きですか？",
+"q": "Do you like indie films?"
+},
+"title": "『4アウト』は小さな会社が作ったインディーズ映画、相葉さん出演に感謝",
+"words": [
+{
+"ja": "インディーズ映画",
+"note": "ポストの「インディーズ映画」は indie film。大きな会社に頼らず作る映画のことです。",
+"w": "indie film"
+},
+{
+"ja": "大手の・主要な",
+"note": "ポストの「メジャー企業」は major companies。",
+"w": "major"
+},
+{
+"ja": "脚本",
+"note": "ポストの「脚本」は script。",
+"w": "script"
+},
+{
+"ja": "スーパースター",
+"note": "ポストの「スーパースター」は、そのまま superstar。",
+"w": "superstar"
+},
+{
+"ja": "〜しかない・〜だけ",
+"note": "ポストの「感謝しかありません」は I have nothing but thanks.",
+"w": "nothing but"
+}
+]
+},
+{
+"added": "2026-11-25T10:09",
+"addedAt": "2026-11-25T14:46",
+"cat": "manga",
+"gloss": {
+"a": "ひとつの",
+"a manga": "ひとつの漫画",
+"abe": "アベ（人名）",
+"account": "アカウント",
+"an": "ひとつの",
+"and": "そして",
+"artist": "作画担当",
+"authentic": "正統な",
+"by": "〜によって",
+"by meme yatsume": "八目迷さんによる",
+"calls": "呼ぶ・紹介する",
+"confirmed": "決定した",
+"december": "12月",
+"december 2": "12月2日",
+"december 2 issue": "12月2日号",
+"fantasy": "ファンタジー",
+"frieren": "フリーレン",
+"frieren prelude into a manga": "『フリーレン ～前奏～』を漫画に",
+"in": "〜に",
+"into": "〜に（変化）",
+"into a manga": "漫画に",
+"is": "〜です",
+"issue": "（雑誌の）号",
+"it": "これは",
+"it turns the story": "それは物語を変える",
+"it turns the story of the": "これは〜の物語を変える",
+"it will start": "連載が始まる",
+"it will start in the december 2 issue of": "〜の12月2日発売号から始まる",
+"kanehito": "鐘人（人名）",
+"kanehito yamada is the supervisor": "山田鐘人先生が監修",
+"manga": "漫画",
+"manga series": "漫画の連載",
+"meme": "迷（人名の一部）",
+"meme yatsume": "八目迷（人名）",
+"novel": "小説",
+"of": "〜の",
+"official": "公式の",
+"post": "ポスト",
+"prelude": "前奏",
+"says": "伝えている",
+"series": "連載・シリーズ",
+"shonen": "少年",
+"short": "短い",
+"side": "わき・別の",
+"side-story": "別譚の",
+"side-story fantasy": "別譚ファンタジー",
+"start": "始まる",
+"story": "物語",
+"sunday": "サンデー（雑誌名）",
+"supervisor": "監修者",
+"the": "その",
+"the artist": "作画担当",
+"the december 2 issue": "12月2日発売号",
+"the novel": "その小説",
+"the novel was": "その小説は〜された",
+"the official account": "公式アカウント",
+"the official account says a short manga series": "公式アカウントは短期の漫画連載を伝えている",
+"the official account says a short manga series frieren side story is": "公式は、短期の漫画連載『フリーレン 別譚』が〜と伝えている",
+"the post calls it": "ポストはこれを〜と紹介する",
+"the post calls it an": "ポストはこれをひとつの〜と紹介する",
+"the story": "その物語",
+"the supervisor": "監修者",
+"tsukasa": "ツカサ（人名）",
+"tsukasa abe is the artist": "アベツカサ先生が作画",
+"turns": "変える（turnの三単現）",
+"was": "〜された",
+"weekly": "週刊の",
+"will": "〜するだろう",
+"written": "書かれた（writeの過去分詞）",
+"yamada": "山田（人名）",
+"yatsume": "八目（人名）"
+},
+"grad": [
+{
+"q1": "{The official account} は、{manga series}『葬送のフリーレン 別譚』の短期集中連載が決定したと伝えています。",
+"q2": "{The official account says a short manga series}、『葬送のフリーレン 別譚』が決定したと。",
+"q3": "{The official account says a short manga series, Frieren: Side Story, is} 決定。"
+},
+{
+"q1": "小説『葬送のフリーレン ～前奏～』の {the story} を {a manga} にします。",
+"q2": "{It turns the story} 小説『葬送のフリーレン ～前奏～』を {into a manga.}",
+"q3": "{It turns the story of the} 小説 {Frieren: Prelude into a manga.}"
+},
+{
+"q1": "{novel} は、{Meme Yatsume} さんが書いたものです。",
+"q2": "{The novel} は、{by Meme Yatsume} さんが書いたものです。",
+"q3": "{The novel was} 書かれた {by Meme Yatsume.}"
+},
+{
+"q1": "{the supervisor} は山田鐘人先生、{the artist} はアベツカサ先生です。",
+"q2": "{Kanehito Yamada is the supervisor}、アベツカサ先生は {the artist} です。",
+"q3": "{Kanehito Yamada is the supervisor,} そして {Tsukasa Abe is the artist.}"
+},
+{
+"q1": "ポストは、これを正統 {side-story fantasy} と紹介しています。",
+"q2": "{The post calls it} 正統 {side-story fantasy}。",
+"q3": "{The post calls it an} 正統 {side-story fantasy.}"
+},
+{
+"q1": "「週刊少年サンデー」の {December 2 issue} から始まります。",
+"q2": "{It will start} 「週刊少年サンデー」の {the December 2 issue} から。",
+"q3": "{It will start in the December 2 issue of} 週刊少年 {Sunday.}"
+}
+],
+"grammar": {
+"body": "「AをBに変える・作り変える」は turn A into B の形です。小説を漫画にする、のように、形を変えるときに使います。A は変わるもと、B は変わったあとの形です。",
+"ex": [
+{
+"en": "The studio turned the book into a movie.",
+"ja": "そのスタジオは本を映画にしました。"
+},
+{
+"en": "She turned her idea into a song.",
+"ja": "彼女は自分のアイデアを歌にしました。"
+}
+],
+"title": "turn A into B「AをBにする」"
+},
+"id": "20261125-frieren-bettan-manga",
+"level": 2,
+"lines": [
+{
+"en": "The official account says a short manga series, Frieren: Side Story, is confirmed.",
+"ja": "公式アカウントは、漫画『葬送のフリーレン 別譚』の短期集中連載が決定したと伝えています。",
+"mix": "公式 {account} は、{manga} 『葬送のフリーレン 別譚』の短期集中連載が決定したと伝えています。"
+},
+{
+"en": "It turns the story of the novel Frieren: Prelude into a manga.",
+"ja": "小説『葬送のフリーレン ～前奏～』の物語を漫画にします。",
+"mix": "小説『葬送のフリーレン ～前奏～』の {story} を {manga} にします。"
+},
+{
+"en": "The novel was written by Meme Yatsume.",
+"ja": "小説は、八目迷さんが書いたものです。",
+"mix": "{novel} は、八目迷さんが書いたものです。"
+},
+{
+"en": "Kanehito Yamada is the supervisor, and Tsukasa Abe is the artist.",
+"ja": "監修は山田鐘人先生、作画はアベツカサ先生です。",
+"mix": "{supervisor} は山田鐘人先生、{artist} はアベツカサ先生です。"
+},
+{
+"en": "The post calls it an authentic side-story fantasy.",
+"ja": "ポストは、これを正統別譚ファンタジーと紹介しています。",
+"mix": "ポストは、これを正統別譚 {fantasy} と紹介しています。"
+},
+{
+"en": "It will start in the December 2 issue of Weekly Shonen Sunday.",
+"ja": "「週刊少年サンデー」の12月2日発売号から始まります。",
+"mix": "「週刊少年サンデー」の {December 2} 発売号から始まります。"
+}
+],
+"post": {
+"account": "Anime_Frieren",
+"date": "2026-11-25",
+"likes": 1415,
+"name": "『葬送のフリーレン』アニメ公式",
+"url": "https://x.com/Anime_Frieren/status/2125396335855849507"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"アベツカサ先生",
+"山田鐘人先生",
+"八目迷さん"
+],
+"q": "漫画の作画を担当するのは？",
+"why": "4文目に Tsukasa Abe is the artist. とあります。山田鐘人先生は supervisor（監修）、八目迷さんは小説を書いた人です。"
+},
+{
+"a": 1,
+"choices": [
+"問題だけ",
+"（雑誌の）号",
+"値段"
+],
+"q": "December 2 issue の issue の意味は？",
+"why": "issue は雑誌の「号」の意味でも使います。the December 2 issue は12月2日発売号です。"
+},
+{
+"a": 2,
+"choices": [
+"turns",
+"turning",
+"turn"
+],
+"q": "They will ___ the story into a manga.（物語を漫画にします）",
+"why": "will のあとは動詞の原形 turn を使います。"
+}
+],
+"series": "frieren",
+"summary": "『葬送のフリーレン』アニメ公式が、漫画『葬送のフリーレン 別譚』の短期集中連載決定を伝えたポストです。八目迷さんの小説『葬送のフリーレン ～前奏～』を、監修・山田鐘人先生、作画・アベツカサ先生で漫画化します。「週刊少年サンデー」12月2日発売号から始まります。",
+"talk": {
+"hint": "Yes, I want to read it because ___.",
+"ja": "『葬送のフリーレン 別譚』を読みたいですか？",
+"q": "Do you want to read the Frieren side story?"
+},
+"title": "漫画『葬送のフリーレン 別譚』短期集中連載が決定",
+"words": [
+{
+"ja": "連載・シリーズ",
+"note": "ポストの「短期集中連載」は、ここでは a short manga series で表しました。",
+"w": "series"
+},
+{
+"ja": "別譚（外伝）",
+"note": "ポストの「別譚」は side story。本編とは別の物語のことです。",
+"w": "side story"
+},
+{
+"ja": "監修者",
+"note": "ポストの「監修」は supervise（動詞）、supervisor は監修する人。",
+"w": "supervisor"
+},
+{
+"ja": "作画担当・絵を描く人",
+"note": "ポストの「作画」を、絵を描く人という意味の artist で表しました。",
+"w": "artist"
+},
+{
+"ja": "（雑誌の）号",
+"note": "ポストの「12/2発売号」は the December 2 issue。issue には「問題」の意味もあります。",
+"w": "issue"
+}
+]
+},
+{
 "added": "2026-11-25T00:05",
 "addedAt": "2026-11-25T08:00",
 "cat": "manga",
@@ -1240,6 +1925,295 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-24T20:53",
+"addedAt": "2026-11-25T14:46",
+"cat": "manga",
+"gloss": {
+"about": "〜について",
+"advice": "アドバイス",
+"after": "〜のあとに",
+"almost": "ほとんど・〜級",
+"almost unfair": "反則級の",
+"also": "〜も",
+"and": "そして・〜と",
+"and kuroo's connect banner after hinata's fly is almost unfair": "日向の「飛べ」のあとの黒尾の「繋げ」の横断幕は反則級",
+"and the future of volleyball": "そしてバレーの未来",
+"answers": "答え（answerの複数形）",
+"appear": "現れる・出てくる",
+"bad": "よくない・申し訳ない",
+"balls": "ボール（ballの複数形）",
+"banner": "横断幕",
+"banners": "横断幕（bannerの複数形）",
+"banners from players' old schools": "選手の母校の横断幕",
+"but": "しかし",
+"coach": "監督・コーチ",
+"coach nekomata": "猫又監督",
+"connect": "繋ぐ（作中の「繋げ」）",
+"connects": "繋ぐ",
+"die": "死ぬ",
+"don't": "〜しない",
+"even": "〜でさえ",
+"favorite": "いちばん好きな",
+"favorite thing": "好きなもの",
+"feel": "感じる",
+"felt": "感じた（feelの過去形）",
+"felt bad about pushing his favorite thing on them": "好きなものを押し付けて申し訳なく感じた",
+"fly": "飛ぶ（作中の「飛べ」）",
+"for": "〜のために",
+"from": "〜の・〜から",
+"fukunaga's": "福永の",
+"future": "未来",
+"game": "試合",
+"gave": "あげた・与えた",
+"happy": "うれしい",
+"have": "（have＋過去分詞）",
+"he": "彼は",
+"him": "彼に",
+"hinata's": "日向の",
+"his": "彼の",
+"in": "〜で（場所）",
+"is": "〜です",
+"joy": "楽しさ・喜び",
+"kenma": "研磨（人名）",
+"kuroo": "黒尾（人名）",
+"kuroo gave advice": "黒尾がアドバイスをした",
+"kuroo learned the joy": "黒尾は楽しさを知った",
+"kuroo wanted others to feel that joy": "黒尾はほかの人にもその楽しさを感じてほしかった",
+"kuroo wanted others to feel that joy but he": "黒尾はほかの人にその楽しさを感じてほしかったが、彼は",
+"kuroo's": "黒尾の",
+"learned": "知った・学んだ",
+"likes": "好きだ",
+"lowered": "下げた",
+"made": "させた（makeの過去形）",
+"may": "〜かもしれない",
+"might": "〜かもしれない",
+"much": "あまり・たくさん",
+"nekoma's": "音駒の",
+"nekoma's connect connects balls": "音駒の「繋げ」はボールを繋ぐ",
+"nekomata": "猫又（人名）",
+"net": "ネット",
+"not": "〜ではない",
+"of": "〜の",
+"old": "昔の・母校の",
+"old schools": "母校",
+"on": "〜に（向けて）",
+"only": "〜だけ",
+"others": "ほかの人たち",
+"people": "人々",
+"players": "選手たち",
+"poster": "投稿者",
+"pro": "プロの",
+"pushing": "押し付けること",
+"pushing his favorite thing on them": "自分の好きなものを相手に押し付けること",
+"rivals": "ライバル（rivalの複数形）",
+"says": "言っている",
+"schools": "学校（schoolの複数形）",
+"so": "だから",
+"so the answers from kenma and tsukishima might have made him": "だから研磨と月島の答えは彼を〜にしたかもしれない",
+"spiking": "スパイクを打つこと",
+"spreading": "広めること・普及",
+"talks": "話す",
+"that": "その・〜ということ",
+"the": "その",
+"the answers from kenma and tsukishima": "研磨と月島からの答え",
+"the future": "その未来",
+"the future of volleyball": "バレーの未来",
+"the joy": "その楽しさ",
+"the net": "そのネット",
+"the poster also likes that kuroo uses fukunaga's words": "投稿者は、黒尾が福永の言葉を使うことも好きだ",
+"the poster also likes that kuroo uses fukunaga's words you don't die much when he talks about": "投稿者は、黒尾が〜を語るとき福永の「あんまり死なない」を使うのも好きだ",
+"the poster says nekoma's connect connects not only balls but also": "投稿者は、音駒の「繋げ」はボールだけでなく〜も繋ぐと言っている",
+"the poster thinks kuroo learned the joy of": "投稿者は、黒尾が〜の楽しさを知ったと考えている",
+"them": "彼らに",
+"they": "彼ら",
+"they were rivals": "彼らは敵同士だった",
+"thing": "もの",
+"thinks": "考えている",
+"though": "〜だけれど",
+"to": "〜することを",
+"tsukishima": "月島（人名）",
+"tsukishima wondered": "月島は疑問に思った",
+"tsukishima wondered why kuroo gave advice": "月島はなぜ黒尾がアドバイスをしたのか疑問に思った",
+"unfair": "ずるい・反則の",
+"uses": "使う",
+"very": "とても",
+"volleyball": "バレー",
+"wanted": "〜してほしかった",
+"were": "〜だった",
+"when": "〜とき",
+"when coach nekomata lowered the net": "猫又監督がネットを下げたとき",
+"when coach nekomata lowered the net for him": "猫又監督が彼のためにネットを下げたとき",
+"why": "なぜ",
+"wondered": "不思議に思った",
+"words": "言葉",
+"you": "あなたは"
+},
+"grad": [
+{
+"q1": "プロの試合では選手の {old schools} の {banners} が出てきて、日向の「飛べ」のあとに出る黒尾の「繋げ」の横断幕は {almost unfair} です。",
+"q2": "プロの試合では、{banners from players' old schools} 出てきて、日向の「飛べ」のあとに出る黒尾の「繋げ」の横断幕は {almost unfair}。",
+"q3": "プロの試合では、{banners from players' old schools} 出てくる {and Kuroo's \"Connect\" banner after Hinata's \"Fly\" is almost unfair.}"
+},
+{
+"q1": "月島は、{rivals} なのにどうして {Kuroo} が {advice} までしてくれるのかと疑問に思いました。",
+"q2": "{Tsukishima wondered}、{rivals} なのにどうして {Kuroo gave advice} のかと。",
+"q3": "{Tsukishima wondered why Kuroo gave advice} にもかかわらず {they were rivals.}"
+},
+{
+"q1": "投稿者さんは、黒尾は {Coach Nekomata} が {the net} を下げてくれたとき、スパイクを打つ {the joy} を知ったと考えています。",
+"q2": "投稿者さんは、{Kuroo learned the joy} スパイクを打つ {when Coach Nekomata lowered the net} と考えています。",
+"q3": "{The poster thinks Kuroo learned the joy of} スパイクを打つ {when Coach Nekomata lowered the net for him.}"
+},
+{
+"q1": "黒尾は、{others} にもその {joy} を感じてほしかったけれど、自分の {favorite thing} を押し付けているだけではと負い目も感じていたかもしれません。",
+"q2": "{Kuroo wanted others to feel that joy}、けれど {pushing his favorite thing on them} だけではと負い目も感じていたかもしれません。",
+"q3": "{Kuroo wanted others to feel that joy, but he} かもしれない {felt bad about pushing his favorite thing on them.}"
+},
+{
+"q1": "だから、{Kenma} と {Tsukishima} からもらった {answers} は、黒尾にとってとても嬉しかったのかもしれません。",
+"q2": "だから、{the answers from Kenma and Tsukishima} は、黒尾にとってとても {happy} だったのかもしれません。",
+"q3": "{So the answers from Kenma and Tsukishima might have made him} とても {happy.}"
+},
+{
+"q1": "投稿者さんは、{Kuroo} が {volleyball} の普及を語るとき、{Fukunaga's} 「あんまり死なない」という {words} を使っているところも好きだと言っています。",
+"q2": "{The poster also likes that Kuroo uses Fukunaga's words} 「あんまり死なない」、{volleyball} の普及を語るとき。",
+"q3": "{The poster also likes that Kuroo uses Fukunaga's words, \"You don't die much,\" when he talks about} 普及する {volleyball.}"
+},
+{
+"q1": "投稿者さんは、{Nekoma's} 「繋げ」は {balls} だけでなく、人と人、そしてバレーの {the future} まで繋ぐ言葉だったと言っています。",
+"q2": "投稿者さんは、{Nekoma's \"Connect\" connects balls} だけでなく、人と人、そして {the future of volleyball}。",
+"q3": "{The poster says Nekoma's \"Connect\" connects not only balls but also} 人と人 {and the future of volleyball.}"
+}
+],
+"grammar": {
+"body": "過去のことを「〜だったかもしれない」と推測するときは、might have や may have のあとに過去分詞を置きます。ポストの「嬉しかったんじゃないだろうか」のように、はっきり分からない気持ちを話すときに使えます。",
+"ex": [
+{
+"en": "She may have seen the movie.",
+"ja": "彼女はその映画を見たかもしれません。"
+},
+{
+"en": "He might have cried at the end.",
+"ja": "彼は最後に泣いたかもしれません。"
+}
+],
+"title": "might / may have ＋ 過去分詞「〜だったかもしれない」"
+},
+"id": "20261124-haikyu-kuroo-diary",
+"level": 3,
+"lines": [
+{
+"en": "In the pro game, banners from players' old schools appear, and Kuroo's \"Connect\" banner after Hinata's \"Fly\" is almost unfair.",
+"ja": "プロの試合では選手の母校の横断幕が出てきて、日向の「飛べ」のあとに出る黒尾の「繋げ」の横断幕は反則級です。",
+"mix": "プロの試合では選手の母校の {banners} が出てきて、日向の「飛べ」のあとに出る黒尾の「繋げ」の横断幕は {almost unfair} です。"
+},
+{
+"en": "Tsukishima wondered why Kuroo gave advice even though they were rivals.",
+"ja": "月島は、敵同士なのにどうして黒尾がアドバイスまでしてくれるのかと疑問に思いました。",
+"mix": "月島は、{rivals} なのにどうして黒尾が {advice} までしてくれるのかと疑問に思いました。"
+},
+{
+"en": "The poster thinks Kuroo learned the joy of spiking when Coach Nekomata lowered the net for him.",
+"ja": "投稿者さんは、黒尾は猫又監督がネットを下げてくれたとき、スパイクを打つ楽しさを知ったと考えています。",
+"mix": "投稿者さんは、黒尾は {Coach Nekomata} がネットを下げてくれたとき、スパイクを打つ {joy} を知ったと考えています。"
+},
+{
+"en": "Kuroo wanted others to feel that joy, but he may have felt bad about pushing his favorite thing on them.",
+"ja": "黒尾は、ほかの人にもその楽しさを感じてほしかったけれど、自分の好きなものを押し付けているだけではと負い目も感じていたかもしれません。",
+"mix": "黒尾は、ほかの人にもその {joy} を感じてほしかったけれど、自分の {favorite thing} を押し付けているだけではと負い目も感じていたかもしれません。"
+},
+{
+"en": "So the answers from Kenma and Tsukishima might have made him very happy.",
+"ja": "だから、研磨と月島からもらった答えは、黒尾にとってとても嬉しかったのかもしれません。",
+"mix": "だから、{Kenma} と {Tsukishima} からもらった答えは、黒尾にとってとても嬉しかったのかもしれません。"
+},
+{
+"en": "The poster also likes that Kuroo uses Fukunaga's words, \"You don't die much,\" when he talks about spreading volleyball.",
+"ja": "投稿者さんは、黒尾がバレーの普及を語るとき、福永の「あんまり死なない」という言葉を使っているところも好きだと言っています。",
+"mix": "投稿者さんは、黒尾が {volleyball} の普及を語るとき、福永の「あんまり死なない」という {words} を使っているところも好きだと言っています。"
+},
+{
+"en": "The poster says Nekoma's \"Connect\" connects not only balls but also people and the future of volleyball.",
+"ja": "投稿者さんは、音駒の「繋げ」はボールだけでなく、人と人、そしてバレーの未来まで繋ぐ言葉だったと言っています。",
+"mix": "投稿者さんは、音駒の「繋げ」は {balls} だけでなく、人と人、そしてバレーの {future} まで繋ぐ言葉だったと言っています。"
+}
+],
+"post": {
+"account": "no_shachiku_no",
+"date": "2026-11-24",
+"likes": 2460,
+"name": "社畜のよーだ",
+"url": "https://x.com/no_shachiku_no/status/2125196007529189448"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"なぜ試合の前に練習するのか",
+"なぜ敵同士の黒尾がアドバイスまでしてくれるのか",
+"なぜ監督が来ないのか"
+],
+"q": "月島が不思議に思ったことは？",
+"why": "2文目に Tsukishima wondered why Kuroo gave advice even though they were rivals. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"仲間",
+"先生",
+"ライバル・敵同士"
+],
+"q": "rivals の意味は？",
+"why": "rival は「ライバル」。even though they were rivals は「敵同士なのに」です。"
+},
+{
+"a": 0,
+"choices": [
+"might",
+"are",
+"did"
+],
+"q": "The answers ___ have made him happy.（嬉しかったかもしれない）",
+"why": "「〜だったかもしれない」は might have ＋ 過去分詞。might のあとに have made が続きます。"
+}
+],
+"series": "haikyu",
+"summary": "『ハイキュー!!』を読んだ投稿者が、黒尾鉄朗について考えたことを書いた読了日記です。プロの試合での「繋げ」の横断幕、月島に答えをもらった黒尾の気持ち、音駒の「繋げ」の意味を取り上げ、スーツ姿の黒尾を「イケメン詐欺師感がすごい」と書いています。ネタバレを含みます。",
+"talk": {
+"hint": "I want to talk about ___ because ___.",
+"ja": "『ハイキュー!!』で、どのキャラクターについて話したいですか？ それはなぜですか？",
+"q": "Which Haikyu character do you want to talk about, and why?"
+},
+"title": "『ハイキュー!!』読了日記「黒尾鉄朗という男」",
+"words": [
+{
+"ja": "横断幕",
+"note": "ポストの「横断幕」は banner。応援の大きな布や旗のことです。",
+"w": "banner"
+},
+{
+"ja": "ライバル・敵同士",
+"note": "ポストの「敵同士」は、ここでは rivals（ライバル）で表しました。",
+"w": "rival"
+},
+{
+"ja": "スパイクを打つ",
+"note": "バレーの「スパイクを打つ」は spike。spiking は「スパイクを打つこと」。",
+"w": "spike"
+},
+{
+"ja": "アドバイス（助言）",
+"note": "数えない名詞。a advice や advices とは言わず、some advice と言います。",
+"w": "advice"
+},
+{
+"ja": "繋ぐ・つなげる",
+"note": "音駒の「繋げ」は Connect。connect は人や物をつなぐ動詞です。",
+"w": "connect"
+}
+]
+},
+{
 "added": "2026-11-24T20:00",
 "addedAt": "2026-11-25T08:00",
 "cat": "movie",
@@ -1654,6 +2628,210 @@ window.LESSONS = [
 "ja": "看板・標識",
 "note": "ホームの「駅名標」は station sign（ここでは JR platform sign）。",
 "w": "sign"
+}
+]
+},
+{
+"added": "2026-11-24T18:00",
+"addedAt": "2026-11-25T14:46",
+"cat": "anime",
+"gloss": {
+"again": "また・もう一度",
+"also": "〜も",
+"and": "と",
+"anime": "アニメ",
+"are": "〜している（現在進行形）",
+"asahi": "朝日（局名の一部）",
+"at": "〜を",
+"back": "後ろへ",
+"before": "〜の前に",
+"bs": "BS（局名の一部）",
+"bs asahi": "BS朝日（放送局）",
+"but": "でも・〜のに",
+"february": "2月",
+"february 19": "2月19日",
+"friday": "金曜日",
+"from": "〜から",
+"is": "〜です",
+"it": "それ",
+"line": "せりふ",
+"looks": "ふり返る（lookの三単現）",
+"looks back at the tv anime": "テレビアニメをふり返る",
+"medalist": "メダリスト（作品名）",
+"movie": "映画",
+"mx": "MX（局名の一部）",
+"now": "いま",
+"of": "〜の",
+"of the west part 1": "西の（前編）",
+"on": "〜に",
+"on friday february 19": "2月19日（金）に",
+"on friday february 19 2027": "2027年2月19日（金）に",
+"opens": "公開される",
+"part": "（前編・後編の）部",
+"playback": "プレイバック（ふり返り）",
+"playback medalist": "プレイバックメダリスト",
+"playback medalist looks back at the tv anime before the": "プレイバックメダリストは、〜の前にテレビアニメをふり返る",
+"rival": "ライバル",
+"score": "スコア（話数）",
+"score 8": "スコア8（第8話）",
+"showing": "放送している",
+"small": "小さい",
+"so": "とても",
+"so small": "とても小さい",
+"so small but so": "とても小さいのに、とても〜",
+"strong": "強い",
+"the": "その",
+"the line is": "せりふは〜",
+"the medalist movie": "劇場版『メダリスト』",
+"the video": "その動画",
+"the video is from score 8": "動画はスコア8のもの",
+"the video is from score 8 the": "動画はスコア8の〜",
+"tokyo": "東京（局名の一部）",
+"tokyo mx": "TOKYO MX（放送局）",
+"tokyo mx and bs asahi are also showing it": "TOKYO MXとBS朝日も放送している",
+"tokyo mx and bs asahi are showing it": "TOKYO MXとBS朝日が放送している",
+"tv": "テレビ",
+"tv anime": "テレビアニメ",
+"video": "動画",
+"west": "西"
+},
+"grad": [
+{
+"q1": "劇場版『メダリスト』は、2027年 {February 19}（{Friday}）に公開されます。",
+"q2": "{The Medalist movie} は {on Friday, February 19,} 2027年に公開されます。",
+"q3": "{The Medalist movie} 公開 {on Friday, February 19, 2027.}"
+},
+{
+"q1": "{Playback Medalist} が、映画の前に {TV anime} をふり返ります。",
+"q2": "{Playback Medalist} が、{looks back at the TV anime} 映画の前に。",
+"q3": "{Playback Medalist looks back at the TV anime before the} 映画。"
+},
+{
+"q1": "いま、{TOKYO MX} と {BS Asahi} でも、再放送しています。",
+"q2": "いま、{TOKYO MX and BS Asahi are showing it} 再び。",
+"q3": "{TOKYO MX and BS Asahi are also showing it} 再び {now.}"
+},
+{
+"q1": "{The video} は、{Score 8}「西の強豪（前）」のものです。",
+"q2": "{The video is from Score 8,} 「西の強豪（前）」。",
+"q3": "{The video is from Score 8, The} 強い ライバル {of the West (Part 1).}"
+},
+{
+"q1": "せりふは「{So small} のに怪力だ」です。",
+"q2": "{The line is} 「{So small} のに怪力だ」。",
+"q3": "{The line is} 「{So small but so} 怪力だ！」"
+}
+],
+"grammar": {
+"body": "again は「また・もう一度」という意味です。ふつう、文の終わりのほうに置きます。",
+"ex": [
+{
+"en": "Please say it again.",
+"ja": "もう一度言ってください。"
+},
+{
+"en": "I want to see this movie again.",
+"ja": "この映画をまた見たいです。"
+}
+],
+"title": "again「また・もう一度」"
+},
+"id": "20261124-medalist-playback",
+"level": 1,
+"lines": [
+{
+"en": "The Medalist movie opens on Friday, February 19, 2027.",
+"ja": "劇場版『メダリスト』は、2027年2月19日（金）に公開されます。",
+"mix": "劇場版『メダリスト』は、2027年2月19日（{Friday}）に公開されます。"
+},
+{
+"en": "Playback Medalist looks back at the TV anime before the movie.",
+"ja": "「プレイバックメダリスト」が、映画の前にテレビアニメをふり返ります。",
+"mix": "「プレイバックメダリスト」が、映画の前に {TV anime} をふり返ります。"
+},
+{
+"en": "TOKYO MX and BS Asahi are also showing it again now.",
+"ja": "いま、TOKYO MXとBS朝日でも、再放送しています。",
+"mix": "いま、{TOKYO MX} とBS朝日でも、再放送しています。"
+},
+{
+"en": "The video is from Score 8, The Strong Rival of the West (Part 1).",
+"ja": "動画は、score08「西の強豪（前）」のものです。",
+"mix": "動画は、{Score 8}「西の強豪（前）」のものです。"
+},
+{
+"en": "The line is \"So small but so strong!\"",
+"ja": "せりふは「小さいのに怪力だ」です。",
+"mix": "せりふは「{small} のに怪力だ」です。"
+}
+],
+"post": {
+"account": "medalist_PR",
+"date": "2026-11-24",
+"likes": 15612,
+"name": "劇場版『メダリスト』公式",
+"url": "https://x.com/medalist_PR/status/2125152443675865205"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"2027年2月19日",
+"2027年3月19日",
+"2026年2月19日"
+],
+"q": "劇場版『メダリスト』の公開日は？",
+"why": "1文目に The Medalist movie opens on Friday, February 19, 2027. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"まず",
+"また・もう一度",
+"まだ"
+],
+"q": "showing it again の again の意味は？",
+"why": "again は「また・もう一度」です。"
+},
+{
+"a": 2,
+"choices": [
+"look",
+"looking",
+"looks"
+],
+"q": "Playback Medalist ___ back at the TV anime.（ふり返ります）",
+"why": "主語 Playback Medalist は1つなので、動詞に s がついて looks になります。"
+}
+],
+"series": "medalist",
+"summary": "劇場版『メダリスト』は2027年2月19日（金）に公開されます。公開前にTVアニメをおさらいする「プレイバックメダリスト」が投稿され、いまTOKYO MX・BS朝日でも再放送中です。動画は score08「西の強豪（前）」の、「小さいのに怪力だ」というせりふの場面です。",
+"talk": {
+"hint": "Yes, I do because ___.",
+"ja": "劇場版『メダリスト』を見たいですか？",
+"q": "Do you want to watch the Medalist movie?"
+},
+"title": "「プレイバックメダリスト」映画の前にTVアニメをおさらい",
+"words": [
+{
+"ja": "プレイバック・ふり返り（再生）",
+"note": "ポストの「プレイバックメダリスト」の playback は「あとから見返す」という意味です。",
+"w": "playback"
+},
+{
+"ja": "〜をふり返る",
+"note": "ポストの「おさらい」を、ここでは looks back at で表しました。",
+"w": "look back at"
+},
+{
+"ja": "また・もう一度",
+"note": "ポストの「再放送」は、showing it again（もう一度放送する）と言えます。",
+"w": "again"
+},
+{
+"ja": "ライバル",
+"note": "ポストの「強豪」は strong rival と書きました。",
+"w": "rival"
 }
 ]
 },
@@ -2075,6 +3253,248 @@ window.LESSONS = [
 ]
 },
 {
+"added": "2026-11-24T15:37",
+"addedAt": "2026-11-25T14:46",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"among": "〜のあいだの",
+"and": "と・そして",
+"are": "〜です",
+"artistic": "芸術的な",
+"artistic films like those of nolan or villeneuve": "ノーランやヴィルヌーヴのような芸術性の高い映画",
+"at": "〜に",
+"away": "離れて",
+"big": "大きな",
+"big success": "大盛況",
+"box-office": "興行収入の",
+"box-office forecast": "興収予測",
+"chiikawa": "ちいかわ（作品名）",
+"entertainment": "娯楽",
+"films": "映画（filmの複数形）",
+"for": "〜についての",
+"forecast": "予測",
+"foreign": "外国の",
+"foreign movies": "洋画・外国映画",
+"from": "〜から",
+"from movies": "映画から",
+"general": "一般の",
+"general public": "一般大衆",
+"have": "〜してきた（現在完了）",
+"highly": "高度に",
+"in": "〜では",
+"in the poster's view japanese people have": "投稿者の考えでは、日本人は〜してきた",
+"is": "〜です",
+"it": "それ（引用された投稿）",
+"it says": "それは〜と言っている",
+"it says poverty among young people is only a secondary reason why people": "若者の貧困は、人びとが〜する副次的な理由にすぎない",
+"it says the general public wants popular entertainment": "一般大衆は大衆娯楽を求めていると言っている",
+"it says the general public wants popular entertainment not": "一般大衆が求めるのは大衆娯楽で、〜ではない",
+"japanese": "日本の",
+"japanese people": "日本人",
+"japanese people have stopped watching foreign movies": "日本人は洋画を観なくなった",
+"like": "〜のような",
+"like those of nolan or villeneuve": "ノーランやヴィルヌーヴの映画のような",
+"looks": "（目を）向ける（lookの三単現）",
+"mainstream": "大衆向けの",
+"mainstream too": "大衆向けでもある",
+"movie": "映画",
+"movies": "映画（movieの複数形）",
+"nolan": "ノーラン（監督名）",
+"nolan's": "ノーランの",
+"nolan's movies": "ノーランの映画",
+"not": "〜ではない",
+"of": "〜の",
+"only": "〜にすぎない",
+"only a secondary reason": "副次的な理由にすぎない",
+"or": "または",
+"people": "人びと",
+"popular": "人気の・大衆の",
+"popular entertainment": "大衆娯楽",
+"post": "投稿",
+"post looks at": "投稿は〜に注目する",
+"post looks at the big success of the chiikawa movie and the box-office forecast for the vivant movie": "投稿は、ちいかわ映画の大盛況とVIVANT映画の興収予測に注目している",
+"poster": "投稿者",
+"poster's": "投稿者の",
+"poverty": "貧困",
+"poverty among young people": "若者の貧困",
+"public": "大衆・市民",
+"quite": "かなり",
+"quoted": "引用された",
+"reason": "理由",
+"says": "言っている",
+"secondary": "副次的な",
+"secondary reason": "副次的な理由",
+"simply": "単に",
+"skilled": "技巧のある",
+"stay": "とどまる",
+"stopped": "やめた（stopの過去分詞）",
+"stopped watching foreign movies": "洋画を観なくなった",
+"success": "成功・大盛況",
+"that": "〜ということ",
+"the": "その",
+"the chiikawa movie": "『劇場版ちいかわ』",
+"the general public": "一般大衆",
+"the poster thinks that nolan's movies": "投稿者は、ノーランの映画も〜と考えている",
+"the poster thinks that nolan's movies are": "投稿者は、ノーランの映画は〜だと考えている",
+"the vivant movie": "『劇場版VIVANT』",
+"thinks": "考えている",
+"those": "それら（films）",
+"too": "〜も",
+"view": "考え・見方",
+"villeneuve": "ヴィルヌーヴ（監督名）",
+"vivant": "VIVANT（作品名）",
+"wants": "求めている",
+"watching": "観ること",
+"why": "なぜ〜か",
+"young": "若い",
+"young people": "若者"
+},
+"grad": [
+{
+"q1": "引用された {post} は、『劇場版ちいかわ』の {big success} と、『劇場版VIVANT』の {box-office forecast} に注目しています。",
+"q2": "{The} 引用された {post looks at} {the Chiikawa movie} の {big success} と、{the VIVANT movie} の {box-office forecast}。",
+"q3": "{The} 引用された {post looks at the big success of the Chiikawa movie and the box-office forecast for the VIVANT movie.}"
+},
+{
+"q1": "それは、{young people} の {poverty} は人びとが映画から離れる {secondary reason} にすぎない、と言っています。",
+"q2": "{It says} {poverty among young people} は、映画から離れる {only a secondary reason}。",
+"q3": "{It says poverty among young people is only a secondary reason why people} 離れる {from movies.}"
+},
+{
+"q1": "それは、{the general public} が求めているのは {popular entertainment} であり、{Nolan} や {Villeneuve} のような技巧派で芸術性の高い映画ではない、と言っています。",
+"q2": "{It says the general public wants popular entertainment,} 技巧派で芸術性の高い映画 {like those of Nolan or Villeneuve} ではない。",
+"q3": "{It says the general public wants popular entertainment, not} 技巧派の {artistic films like those of Nolan or Villeneuve.}"
+},
+{
+"q1": "{poster} の奇跡さんは、{Nolan's movies} もかなり {mainstream} だと考えています。",
+"q2": "{The poster thinks that Nolan's movies} もかなり {mainstream} だ。",
+"q3": "{The poster thinks that Nolan's movies are} かなり {mainstream too.}"
+},
+{
+"q1": "投稿者の考えでは、{Japanese people} は {foreign movies} を観なくなっただけです。",
+"q2": "投稿者の考えでは、{Japanese people have stopped watching foreign movies} だけです。",
+"q3": "{In the poster's view, Japanese people have} 単に {stopped watching foreign movies.}"
+}
+],
+"grammar": {
+"body": "have ＋ stopped ＋ 動詞の ing 形で、「（それまでしていたことを）しなくなった」という意味です。いまの状態につながる変化を言います。",
+"ex": [
+{
+"en": "I have stopped drinking coffee.",
+"ja": "私はコーヒーを飲まなくなりました。"
+},
+{
+"en": "She has stopped watching the news.",
+"ja": "彼女はニュースを見なくなりました。"
+}
+],
+"title": "have stopped ～ing「〜しなくなった」"
+},
+"id": "20261124-nolan-youga",
+"level": 3,
+"lines": [
+{
+"en": "The quoted post looks at the big success of the Chiikawa movie and the box-office forecast for the VIVANT movie.",
+"ja": "引用された投稿は、『劇場版ちいかわ』の大盛況と、『劇場版VIVANT』の興収予測に注目しています。",
+"mix": "引用された投稿は、『劇場版ちいかわ』の {big success} と、『劇場版VIVANT』の {box-office forecast} に注目しています。"
+},
+{
+"en": "It says poverty among young people is only a secondary reason why people stay away from movies.",
+"ja": "それは、若者の貧困は人びとが映画から離れる副次的な理由にすぎない、と言っています。",
+"mix": "それは、若者の {poverty} は人びとが映画から離れる {secondary reason} にすぎない、と言っています。"
+},
+{
+"en": "It says the general public wants popular entertainment, not highly skilled artistic films like those of Nolan or Villeneuve.",
+"ja": "それは、一般大衆が求めているのは大衆娯楽であり、ノーランやヴィルヌーヴのような技巧派で芸術性の高い映画ではない、と言っています。",
+"mix": "それは、{general public} が求めているのは {popular entertainment} であり、ノーランやヴィルヌーヴのような技巧派で芸術性の高い映画ではない、と言っています。"
+},
+{
+"en": "The poster thinks that Nolan's movies are quite mainstream too.",
+"ja": "投稿者の奇跡さんは、ノーランの映画もかなり大衆向けだと考えています。",
+"mix": "{poster} の奇跡さんは、ノーランの映画もかなり {mainstream} だと考えています。"
+},
+{
+"en": "In the poster's view, Japanese people have simply stopped watching foreign movies.",
+"ja": "投稿者の考えでは、日本人は外国映画を観なくなっただけです。",
+"mix": "投稿者の考えでは、日本人は {foreign movies} を観なくなっただけです。"
+}
+],
+"post": {
+"account": "X44219",
+"date": "2026-11-24",
+"likes": 3131,
+"name": "奇跡",
+"url": "https://x.com/X44219/status/2125116520691052624"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"洋画の値段が高いと感じている",
+"洋画を観なくなっただけだ",
+"ノーランの映画が好きではない"
+],
+"q": "投稿者の奇跡さんは、日本人について何と考えていますか？",
+"why": "5文目に Japanese people have simply stopped watching foreign movies. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"結果",
+"感想",
+"予測"
+],
+"q": "box-office forecast の forecast の意味は？",
+"why": "forecast は「予測」。興収予測が box-office forecast です。"
+},
+{
+"a": 0,
+"choices": [
+"stopped",
+"stop",
+"stops"
+],
+"q": "Japanese people have ___ watching foreign movies.（観なくなった）",
+"why": "have の後ろは過去分詞 stopped。have stopped ～ing で「〜しなくなった」です。"
+}
+],
+"summary": "『劇場版ちいかわ』の大盛況や『劇場版VIVANT』の興収予測から、映画離れは若者の貧困が主な理由ではなく、大衆が求めているのは大衆娯楽性だと書く投稿が引用されています。投稿者の奇跡さんは、ノーランもかなり大衆向けで、日本人が洋画を観なくなっただけだと考えています。",
+"talk": {
+"hint": "I like ___ because ___.",
+"ja": "大衆娯楽と、芸術性の高い映画では、どちらが好きですか？",
+"q": "Do you like popular entertainment or artistic films?"
+},
+"title": "ノーランも大衆向け？洋画離れをめぐる考え",
+"words": [
+{
+"ja": "予測",
+"note": "ポストの「興収予測」は box-office forecast です。",
+"w": "forecast"
+},
+{
+"ja": "一般大衆",
+"note": "ポストの「一般大衆」はこのように言います。",
+"w": "general public"
+},
+{
+"ja": "副次的な・二番目の",
+"note": "「副次的なものでしかない」は only a secondary reason と言い換えました。",
+"w": "secondary"
+},
+{
+"ja": "大衆向けの・主流の",
+"note": "ポストの「大衆向け」を mainstream で表しました。",
+"w": "mainstream"
+},
+{
+"ja": "洋画・外国映画",
+"note": "ポストの「洋画」は foreign movies と言えます。",
+"w": "foreign movies"
+}
+]
+},
+{
 "added": "2026-11-24T15:23",
 "addedAt": "2026-11-25T08:00",
 "cat": "movie",
@@ -2342,6 +3762,226 @@ window.LESSONS = [
 "ja": "記事",
 "note": "ポストのリンク先の「記事」は article。",
 "w": "article"
+}
+]
+},
+{
+"added": "2026-11-24T15:05",
+"addedAt": "2026-11-25T14:46",
+"cat": "movie",
+"gloss": {
+"256 305": "25万6305",
+"256 305 people": "25万6305人",
+"256 305 people saw": "25万6305人が観た",
+"301 630": "30万1630",
+"301 630 people": "30万1630人",
+"450 million yen": "4億5千万円",
+"530 million yen": "5億3千万円",
+"a": "ひとつの",
+"a holiday": "ひとつの祝日",
+"about": "約",
+"account": "アカウント",
+"also": "〜も",
+"and": "〜と",
+"box": "箱（box officeの一部）",
+"box office": "興行収入",
+"coming": "来ること",
+"days": "日（dayの複数形）",
+"enjoying": "楽しむこと",
+"everyone": "みなさん",
+"first": "最初の",
+"for": "〜の",
+"for coming to the theaters": "映画館に来てくれたことについて",
+"four": "4つの",
+"four days": "4日間",
+"holiday": "祝日",
+"in": "〜のあいだに",
+"in four days": "4日間で",
+"in its first three days": "公開から最初の3日間で",
+"in its first three days 256 305 people saw the mahoyo": "最初の3日間で25万6305人が『魔法使いの夜』を観た",
+"including": "〜を含めて",
+"it": "それを",
+"it also": "公式は〜とも",
+"its": "その（映画の）",
+"keep": "〜し続ける",
+"keep enjoying it": "それを楽しみ続ける",
+"mahoyo": "魔法使いの夜（略称）",
+"million": "100万",
+"monday": "月曜日",
+"monday and a holiday 301 630 people saw it": "月曜と祝日を含めて30万1630人が観た",
+"movie": "映画",
+"office": "事務所・窓口（box officeの一部）",
+"official": "公式の",
+"people": "人々",
+"please": "どうか〜してください",
+"please keep enjoying it in theaters": "引き続き劇場でお楽しみください",
+"said": "言った",
+"saw": "観た（seeの過去形）",
+"thanked": "お礼を言った",
+"the": "その",
+"the box office for the four days was": "4日間の興行収入は",
+"the box office for the three days was": "3日間の興行収入は",
+"the official account": "公式アカウント",
+"the official account thanked": "公式アカウントはお礼を言った",
+"the theaters": "その映画館",
+"theaters": "映画館（theaterの複数形）",
+"three": "3つの",
+"three days": "3日間",
+"to": "〜に",
+"was": "〜だった",
+"yen": "円"
+},
+"grad": [
+{
+"q1": "映画『魔法使いの夜』は、公開から {three days} で {256,305 people} が観ました。",
+"q2": "{In its first three days}、{256,305 people saw} 映画『魔法使いの夜』。",
+"q3": "{In its first three days, 256,305 people saw the Mahoyo} 映画。"
+},
+{
+"q1": "{three days} の {box office} は、約4.5億円でした。",
+"q2": "{The box office for the three days was} 約4.5億円。",
+"q3": "{The box office for the three days was} 約 {450 million yen.}"
+},
+{
+"q1": "月曜と {holiday} を含む {four days} では、{301,630} 人が観ました。",
+"q2": "{In four days}、月曜と {a holiday} を含む {301,630 people} が観ました。",
+"q3": "{In four days,} 含めて {Monday and a holiday, 301,630 people saw it.}"
+},
+{
+"q1": "{four days} の {box office} は、約5.3億円でした。",
+"q2": "{The box office for the four days was} 約5.3億円。",
+"q3": "{The box office for the four days was} 約 {530 million yen.}"
+},
+{
+"q1": "{The official account} は、{theaters} に来てくれたみなさんに感謝を伝えました。",
+"q2": "{The official account thanked} みなさんに、{the theaters} に来てくれたことを。",
+"q3": "{The official account thanked} みなさん {for coming to the theaters.}"
+},
+{
+"q1": "{It} も「引き続き {theaters} でお楽しみください」と伝えました。",
+"q2": "{It also}、「引き続き {theaters} で {keep enjoying it}」と伝えました。",
+"q3": "{It also} 伝えた {\"Please keep enjoying it in theaters.\"}"
+}
+],
+"grammar": {
+"body": "「だれかに〜のことでお礼を言う」は thank ＋ 人 ＋ for ～ の形です。for のあとには名詞か、〜ing の形を置きます。",
+"ex": [
+{
+"en": "She thanked the staff for the nice food.",
+"ja": "彼女はおいしい料理のことでスタッフにお礼を言いました。"
+},
+{
+"en": "I thanked my friend for coming.",
+"ja": "私は来てくれた友だちにお礼を言いました。"
+}
+],
+"title": "thank ＋ 人 ＋ for ～「人に〜のお礼を言う」"
+},
+"id": "20261124-mahoyo-3days-256k",
+"level": 1,
+"lines": [
+{
+"en": "In its first three days, 256,305 people saw the Mahoyo movie.",
+"ja": "映画『魔法使いの夜』は、公開から3日間で25万6305人が観ました。",
+"mix": "映画『魔法使いの夜』は、公開から {three days} で、{256,305} 人が観ました。"
+},
+{
+"en": "The box office for the three days was about 450 million yen.",
+"ja": "3日間の興行収入は、約4.5億円でした。",
+"mix": "3日間の {box office} は、約4.5億円でした。"
+},
+{
+"en": "In four days, including Monday and a holiday, 301,630 people saw it.",
+"ja": "月曜と祝日を含む4日間では、30万1630人が観ました。",
+"mix": "月曜と {holiday} を含む4日間では、{301,630} 人が観ました。"
+},
+{
+"en": "The box office for the four days was about 530 million yen.",
+"ja": "4日間の興行収入は、約5.3億円でした。",
+"mix": "4日間の {box office} は、約5.3億円でした。"
+},
+{
+"en": "The official account thanked everyone for coming to the theaters.",
+"ja": "公式アカウントは、劇場に来てくれたみなさんに感謝を伝えました。",
+"mix": "公式 {account} は、{theaters} に来てくれたみなさんに感謝を伝えました。"
+},
+{
+"en": "It also said, \"Please keep enjoying it in theaters.\"",
+"ja": "公式は「引き続き劇場でお楽しみください」とも伝えました。",
+"mix": "公式は「引き続き {theaters} でお楽しみください」とも伝えました。"
+}
+],
+"post": {
+"account": "mahoyo_movie",
+"date": "2026-11-24",
+"likes": 21500,
+"name": "映画『魔法使いの夜』公式",
+"url": "https://x.com/mahoyo_movie/status/2125108402053636194"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"256,305人",
+"約450万人",
+"301,630人"
+],
+"q": "4日間（月曜と祝日を含む）の観客動員は？",
+"why": "3文目に In four days, including Monday and a holiday, 301,630 people saw it. とあります。256,305人は最初の3日間です。"
+},
+{
+"a": 0,
+"choices": [
+"興行収入",
+"映画館の席",
+"観客の数"
+],
+"q": "box office の意味は？",
+"why": "box office は映画館の売り上げ、つまり「興行収入」です。"
+},
+{
+"a": 1,
+"choices": [
+"thanking",
+"thanked",
+"thanks"
+],
+"q": "The official account ___ everyone for coming.（みなさんにお礼を言いました）",
+"why": "過去のことなので thank の過去形 thanked を使います。"
+}
+],
+"summary": "劇場アニメ『魔法使いの夜』の公式アカウントが、成績と御礼を伝えたポストです。公開3日間の観客動員は256,305人、興行収入は約4.5億円。月曜・祝日を含む4日間では、観客動員301,630人、興行収入約5.3億円でした。",
+"talk": {
+"hint": "Yes, I did. / No, I did not. I want to ___.",
+"ja": "『魔法使いの夜』を映画館で観ましたか？",
+"q": "Did you see the Mahoyo movie in the theater?"
+},
+"title": "『魔法使いの夜』公開3日間で観客動員25万人突破",
+"words": [
+{
+"ja": "興行収入",
+"note": "ポストの「興行収入」は box office。映画館での売り上げのことです。",
+"w": "box office"
+},
+{
+"ja": "祝日・休日",
+"note": "ポストの「祝日」は holiday。",
+"w": "holiday"
+},
+{
+"ja": "公式の",
+"note": "ポストの「公式」は official。the official account ＝ 公式アカウント。",
+"w": "official"
+},
+{
+"ja": "感謝する・お礼を言う",
+"note": "ポストの「御礼」は、動詞の thank で表しました。",
+"w": "thank"
+},
+{
+"ja": "映画館・劇場",
+"note": "ポストの「劇場」は theaters。in theaters は「映画館で上映中」。",
+"w": "theater"
 }
 ]
 },
