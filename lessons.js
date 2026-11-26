@@ -1,5 +1,1406 @@
 window.LESSONS = [
 {
+"added": "2026-11-26T12:14",
+"addedAt": "2026-11-26T14:48",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a frieren theme cafe": "フリーレンのテーマカフェ",
+"a frieren theme cafe will": "フリーレンのテーマカフェが〜する",
+"and": "〜と",
+"cafe": "カフェ",
+"called": "呼ばれている",
+"can": "〜できる",
+"cold": "寒い",
+"concept": "コンセプト",
+"crystal": "クリスタル",
+"days": "日（dayの複数形）",
+"december": "12月",
+"december 17": "12月17日",
+"drawn": "描かれた（drawの過去分詞）",
+"enjoy": "楽しむ",
+"for": "〜にぴったりの（for）",
+"frieren": "フリーレン（作品名）",
+"frieren cafe winter journey": "葬送のフリーレンカフェ ～Winter Journey～",
+"goods": "グッズ",
+"in": "〜で",
+"in tokyo and osaka": "東京と大阪で",
+"is": "〜です",
+"it": "それは",
+"it will": "それは〜する",
+"journey": "旅（カフェ名の一部）",
+"key": "キー（key visualで）",
+"key visual": "キービジュアル",
+"key visual and goods": "キービジュアルとグッズ",
+"like": "〜のように",
+"like crystal": "クリスタルのように",
+"menu": "メニュー",
+"newly": "新しく",
+"on": "〜に（日付・曜日）",
+"on thursday december 17": "12月17日の木曜日に",
+"open": "オープンする",
+"osaka": "大阪",
+"perfect": "ぴったりの",
+"shines": "輝く（shineの三単現）",
+"that": "〜する（関係代名詞）",
+"the": "その",
+"the concept": "コンセプト",
+"the concept is a winter": "コンセプトは冬",
+"the concept is a winter that": "コンセプトは〜する冬",
+"the menu": "メニュー",
+"the menu is": "メニューは〜",
+"the menu is perfect for": "メニューは〜にぴったり",
+"theme": "テーマ",
+"theme cafe": "テーマカフェ",
+"this": "この",
+"this cafe": "このカフェ",
+"this cafe is": "このカフェは〜",
+"thursday": "木曜日",
+"thursday december 17": "12月17日の木曜日",
+"tokyo": "東京",
+"tokyo and osaka": "東京と大阪",
+"visual": "ビジュアル",
+"will": "〜するだろう（未来）",
+"winter": "冬",
+"winter days": "冬の日",
+"you": "あなたは",
+"you can enjoy": "あなたは楽しめる",
+"you can enjoy a": "〜を楽しめる"
+},
+"grad": [
+{
+"q1": "{Frieren} の {theme cafe} が、{Tokyo} と大阪でオープンします。",
+"q2": "{A Frieren theme cafe} が、{Tokyo and Osaka} でオープンします。",
+"q3": "{A Frieren theme cafe will} オープンする {in Tokyo and Osaka.}"
+},
+{
+"q1": "{December 17} の {Thursday} にオープンします。",
+"q2": "{It} は {Thursday, December 17} にオープンします。",
+"q3": "{It will} オープン {on Thursday, December 17.}"
+},
+{
+"q1": "{This cafe} は『葬送のフリーレンカフェ ～Winter Journey～』と呼ばれています。",
+"q2": "{This cafe} は『{Frieren Cafe: Winter Journey}』と呼ばれています。",
+"q3": "{This cafe is} 呼ばれる {Frieren Cafe: Winter Journey.}"
+},
+{
+"q1": "{The concept} は、{crystal} のように輝く冬です。",
+"q2": "{The concept is a winter} {crystal} のように輝く。",
+"q3": "{The concept is a winter that} 輝く {like crystal.}"
+},
+{
+"q1": "{You} は、描き下ろしの {key visual} と {goods} を楽しめます。",
+"q2": "{You can enjoy} 描き下ろしの {key visual} と {goods}。",
+"q3": "{You can enjoy a} 描き下ろしの {key visual and goods.}"
+},
+{
+"q1": "{The menu} は、寒い {winter} の日にぴったりです。",
+"q2": "{The menu is} 寒い {winter days} に {perfect}。",
+"q3": "{The menu is perfect for} 寒い {winter days.}"
+}
+],
+"grammar": {
+"body": "like は「〜のように」という意味で、あとに名詞を置きます。shine like crystal ＝ クリスタルのように輝く。",
+"ex": [
+{
+"en": "She sings like a bird.",
+"ja": "彼女は鳥のように歌います。"
+},
+{
+"en": "This cake looks like a flower.",
+"ja": "このケーキは花のように見えます。"
+}
+],
+"title": "like 〜「〜のように・〜みたいに」"
+},
+"id": "20261126-frieren-cafe",
+"level": 1,
+"lines": [
+{
+"en": "A Frieren theme cafe will open in Tokyo and Osaka.",
+"ja": "フリーレンのテーマカフェが、東京と大阪でオープンします。",
+"mix": "フリーレンの {theme cafe} が、東京と大阪でオープンします。"
+},
+{
+"en": "It will open on Thursday, December 17.",
+"ja": "12月17日の木曜日にオープンします。",
+"mix": "12月17日の {Thursday} にオープンします。"
+},
+{
+"en": "This cafe is called Frieren Cafe: Winter Journey.",
+"ja": "このカフェは『葬送のフリーレンカフェ ～Winter Journey～』と呼ばれています。",
+"mix": "この {cafe} は『葬送のフリーレンカフェ ～Winter Journey～』と呼ばれています。"
+},
+{
+"en": "The concept is a winter that shines like crystal.",
+"ja": "コンセプトは、クリスタルのように輝く冬です。",
+"mix": "{concept} は、{crystal} のように輝く冬です。"
+},
+{
+"en": "You can enjoy a newly drawn key visual and goods.",
+"ja": "描き下ろしのキービジュアルとグッズを楽しめます。",
+"mix": "描き下ろしの {key visual} と {goods} を楽しめます。"
+},
+{
+"en": "The menu is perfect for cold winter days.",
+"ja": "メニューは、寒い冬の日にぴったりです。",
+"mix": "{menu} は、寒い冬の日にぴったりです。"
+}
+],
+"post": {
+"account": "Anime_Frieren",
+"date": "2026-11-26",
+"likes": 1668,
+"name": "TVアニメ『葬送のフリーレン』公式",
+"url": "https://x.com/Anime_Frieren/status/2125790325524533424"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"12月7日",
+"12月17日",
+"12月27日"
+],
+"q": "カフェが始まる日は？",
+"why": "2文目に It will open on Thursday, December 17. とあります。"
+},
+{
+"a": 2,
+"choices": [
+"値段",
+"場所",
+"コンセプト・基本の考え"
+],
+"q": "concept の意味は？",
+"why": "The concept is 〜 は「コンセプトは〜」です。"
+},
+{
+"a": 0,
+"choices": [
+"like",
+"likes",
+"liking"
+],
+"q": "It shines ___ crystal.（クリスタルのように輝く）",
+"why": "「〜のように」は like ＋ 名詞です。"
+}
+],
+"series": "frieren",
+"summary": "アニメ『葬送のフリーレン』のテーマカフェ「葬送のフリーレンカフェ ～Winter Journey～」が、12月17日（木）から東京と大阪で開催されます。コンセプトは「クリスタルのように輝く冬」で、描き下ろしのキービジュアルとグッズ、寒い冬にぴったりのメニューが楽しめます。",
+"talk": {
+"hint": "I want to try ___ because ___.",
+"ja": "カフェで、どんなメニューを試したいですか？",
+"q": "Which menu do you want to try at the cafe?"
+},
+"title": "『葬送のフリーレン』冬のテーマカフェが東京・大阪で開催",
+"words": [
+{
+"ja": "テーマカフェ",
+"note": "ポストの「テーマカフェ」は theme cafe です。",
+"w": "theme cafe"
+},
+{
+"ja": "コンセプト・基本の考え",
+"note": "ポストの「コンセプトは〜」は The concept is 〜 と言えます。",
+"w": "concept"
+},
+{
+"ja": "クリスタル・水晶",
+"note": "ポストの「クリスタルのように輝く」は shines like crystal。",
+"w": "crystal"
+},
+{
+"ja": "キービジュアル",
+"note": "ポストの「描き下ろしキービジュアル」は a newly drawn key visual。",
+"w": "key visual"
+},
+{
+"ja": "ぴったりの",
+"note": "ポストの「〜にぴったり」は perfect for 〜 です。",
+"w": "perfect"
+}
+]
+},
+{
+"added": "2026-11-26T08:20",
+"addedAt": "2026-11-26T14:48",
+"cat": "anime",
+"gloss": {
+"a": "ひとつの",
+"a reply": "ひとつの返信",
+"aizo": "AIZO（曲名）",
+"aizo by king gnu": "King Gnuの「AIZO」",
+"aizo by king gnu from jujutsu kaisen": "『呪術廻戦』の曲、King Gnuの「AIZO」",
+"anime": "アニメ",
+"anime song": "アニメソング",
+"anime songs": "アニメソング",
+"apple": "APPLE（バンド名の一部）",
+"by": "〜による",
+"first": "1番目の",
+"first place": "1位",
+"frieren": "フリーレン（作品名）",
+"from": "〜（作品）の",
+"gnu": "Gnu（バンド名の一部）",
+"green": "GREEN（バンド名の一部）",
+"in": "〜に・〜で",
+"in 2026": "2026年に",
+"its": "その〜の",
+"joysound": "JOYSOUND（カラオケ会社）",
+"joysound shared its karaoke ranking of songs": "JOYSOUNDが曲のカラオケランキングを発表した",
+"jujutsu": "呪術（作品名の一部）",
+"jujutsu kaisen": "呪術廻戦（作品名）",
+"kaisen": "廻戦（作品名の一部）",
+"karaoke": "カラオケ",
+"karaoke ranking": "カラオケランキング",
+"king": "King（バンド名の一部）",
+"ko": "子（作品名の一部）",
+"lulu": "lulu.（曲名）",
+"lulu by mrs green apple": "Mrs. GREEN APPLEの「lulu.」",
+"lulu by mrs green apple from frieren": "『フリーレン』の曲、Mrs. GREEN APPLEの「lulu.」",
+"most": "いちばん",
+"mrs": "Mrs.（バンド名の一部）",
+"natori": "なとり（歌手名）",
+"no": "の（作品名の一部）",
+"of": "〜の",
+"oshi": "推し（作品名の一部）",
+"oshi no ko": "【推しの子】（作品名）",
+"people": "人々",
+"place": "〜位",
+"ranked": "〜位になった（rankの過去形）",
+"ranking": "ランキング",
+"released": "発売された（releaseの過去分詞）",
+"reply": "返信",
+"sang": "歌った（singの過去形）",
+"second": "2番目の",
+"serenade": "セレナーデ（曲名）",
+"serenade by natori": "なとりの「セレナーデ」",
+"serenade by natori from oshi no ko": "『【推しの子】』の曲、なとりの「セレナーデ」",
+"shared": "共有した・発表した",
+"song": "曲",
+"songs": "曲（songの複数形）",
+"tell": "教える",
+"tell us in a reply": "返信で私たちに教えて",
+"tell us in a reply which anime song you": "あなたがどのアニメソングを〜か、返信で教えて",
+"the": "その",
+"the most": "いちばん",
+"these": "これらの",
+"these three anime songs": "この3曲のアニメソング",
+"these three anime songs the most this year": "今年いちばん〜のこの3曲のアニメソング",
+"third": "3番目の",
+"this": "この",
+"this year": "今年",
+"three": "3つの",
+"took": "手に入れた（takeの過去形）",
+"us": "私たちに",
+"which": "どの",
+"which anime song you": "どのアニメソングをあなたが",
+"year": "年",
+"you": "あなたが"
+},
+"grad": [
+{
+"q1": "{JOYSOUND} が、2026年に出た {songs} の {karaoke ranking} を発表しました。",
+"q2": "{JOYSOUND shared its karaoke ranking of songs} 、2026年に出た。",
+"q3": "{JOYSOUND shared its karaoke ranking of songs} 発売された {in 2026.}"
+},
+{
+"q1": "{This year}、この3曲の {anime songs} がいちばん歌われました。",
+"q2": "{This year}、{these three anime songs} を {people} が歌いました。",
+"q3": "{People} 歌った {these three anime songs the most this year.}"
+},
+{
+"q1": "アニメ『{Frieren}』の曲、Mrs. GREEN APPLEの『lulu.』が {first place} でした。",
+"q2": "『{Frieren}』の曲、{lulu. by Mrs. GREEN APPLE} が {first place} でした。",
+"q3": "{lulu. by Mrs. GREEN APPLE, from Frieren,} 獲得した {first place.}"
+},
+{
+"q1": "アニメ『{Jujutsu Kaisen}』の曲、King Gnuの『AIZO』が {second} でした。",
+"q2": "『{Jujutsu Kaisen}』の曲、{AIZO by King Gnu} が {second} でした。",
+"q3": "{AIZO by King Gnu, from Jujutsu Kaisen,} ランクインした {second.}"
+},
+{
+"q1": "アニメ『【推しの子】』の曲、{Natori} の『セレナーデ』が {third} でした。",
+"q2": "『{Oshi no Ko}』の曲、{Serenade by Natori} が {third} でした。",
+"q3": "{Serenade by Natori, from Oshi no Ko,} ランクインした {third.}"
+},
+{
+"q1": "{a reply} で、いちばん歌った {anime song} を教えてください。",
+"q2": "{Tell us in a reply} 、{which anime song you} 歌ったか。",
+"q3": "{Tell us in a reply which anime song you} 歌った {the most.}"
+}
+],
+"grammar": {
+"body": "動詞のあとに the most を置くと「いちばんよく〜する」になります。sing the most ＝ いちばん歌う。",
+"ex": [
+{
+"en": "I watch this anime the most.",
+"ja": "私はこのアニメをいちばんよく見ます。"
+},
+{
+"en": "She reads manga the most in my family.",
+"ja": "彼女は家族の中でいちばんマンガを読みます。"
+}
+],
+"title": "sing the most「いちばんよく歌う」（副詞の最上級）"
+},
+"id": "20261126-joysound-anisong",
+"level": 2,
+"lines": [
+{
+"en": "JOYSOUND shared its karaoke ranking of songs released in 2026.",
+"ja": "JOYSOUNDが、2026年に出た曲のカラオケランキングを発表しました。",
+"mix": "JOYSOUNDが、2026年に出た曲の {karaoke ranking} を発表しました。"
+},
+{
+"en": "People sang these three anime songs the most this year.",
+"ja": "今年は、この3曲のアニメソングがいちばん歌われました。",
+"mix": "今年は、この3曲の {anime songs} がいちばん歌われました。"
+},
+{
+"en": "lulu. by Mrs. GREEN APPLE, from Frieren, took first place.",
+"ja": "アニメ『葬送のフリーレン』の曲、Mrs. GREEN APPLEの『lulu.』が1位でした。",
+"mix": "アニメ『葬送のフリーレン』の曲、Mrs. GREEN APPLEの『lulu.』が {first place} でした。"
+},
+{
+"en": "AIZO by King Gnu, from Jujutsu Kaisen, ranked second.",
+"ja": "アニメ『呪術廻戦』の曲、King Gnuの『AIZO』が2位でした。",
+"mix": "アニメ『呪術廻戦』の曲、King Gnuの『AIZO』が {second} でした。"
+},
+{
+"en": "Serenade by Natori, from Oshi no Ko, ranked third.",
+"ja": "アニメ『【推しの子】』の曲、なとりの『セレナーデ』が3位でした。",
+"mix": "アニメ『【推しの子】』の曲、なとりの『セレナーデ』が {third} でした。"
+},
+{
+"en": "Tell us in a reply which anime song you sang the most.",
+"ja": "リプライで、いちばん歌ったアニメソングを教えてください。",
+"mix": "{reply} で、いちばん歌った {anime song} を教えてください。"
+}
+],
+"post": {
+"account": "JOYSOUND_PR",
+"date": "2026-11-26",
+"likes": 5246,
+"name": "JOYSOUND",
+"url": "https://x.com/JOYSOUND_PR/status/2125731287860379950"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"AIZO",
+"lulu.",
+"セレナーデ"
+],
+"q": "1位の曲は？",
+"why": "3文目に lulu. by Mrs. GREEN APPLE took first place とあります。"
+},
+{
+"a": 2,
+"choices": [
+"放送",
+"応募",
+"返信"
+],
+"q": "reply の意味は？",
+"why": "reply は「返信（する）」。ポストの「リプ」です。"
+},
+{
+"a": 0,
+"choices": [
+"sang",
+"sing",
+"sings"
+],
+"q": "People ___ these three songs the most.（みんながこの3曲をいちばん歌った）",
+"why": "過去のことなので、sing の過去形 sang を使います。"
+}
+],
+"summary": "JOYSOUNDが、2026年に発売された曲のカラオケランキングを発表しました。今年いちばん歌われたアニメソングは、1位がMrs. GREEN APPLEの「lulu.」（『葬送のフリーレン』）、2位がKing Gnuの「AIZO」（『呪術廻戦 死滅回游 前編』）、3位がなとりの「セレナーデ」（『【推しの子】』）です。",
+"talk": {
+"hint": "I sang ___ the most.",
+"ja": "今年いちばん歌ったアニメソングは何ですか？",
+"q": "Which anime song did you sing the most this year?"
+},
+"title": "JOYSOUND、2026年発売曲のアニソン歌唱ランキング",
+"words": [
+{
+"ja": "ランキング・順位",
+"note": "ポストの「ランキング」はそのまま ranking。",
+"w": "ranking"
+},
+{
+"ja": "歌う（過去形 sang）",
+"note": "「歌われた」は People sang 〜（みんなが歌った）と言いかえました。",
+"w": "sing (sang)"
+},
+{
+"ja": "〜位・場所",
+"note": "「1位」は first place。",
+"w": "place"
+},
+{
+"ja": "順位がつく・ランクインする",
+"note": "「2位」は ranked second（2位になった）。",
+"w": "rank"
+},
+{
+"ja": "返信",
+"note": "ポストの「リプで教えて」は Tell us in a reply。",
+"w": "reply"
+}
+]
+},
+{
+"added": "2026-11-26T08:00",
+"addedAt": "2026-11-26T14:48",
+"cat": "movie",
+"gloss": {
+"a": "ひとつの",
+"a movie": "ひとつの映画",
+"across": "〜じゅうで",
+"after": "〜のあとで",
+"again": "また",
+"and": "〜と・そして",
+"ando": "安藤（人名）",
+"as": "〜として",
+"as yonosuke": "世之介として",
+"author": "作者",
+"become": "〜になる",
+"become a movie": "映画になる",
+"by": "〜による",
+"by shuichi yoshida": "吉田修一による",
+"by shuichi yoshida the author of kokuho": "『国宝』の作者の吉田修一による",
+"can": "〜できる",
+"directs": "監督する（directの三単現）",
+"eien": "永遠（作品名の一部）",
+"eien to yokomichi yonosuke": "永遠と横道世之介（作品名）",
+"fans": "ファン（fanの複数形）",
+"fans can meet yonosuke again": "ファンは世之介にまた会える",
+"fifteen": "15",
+"in": "〜で・〜に",
+"in 2028": "2028年に",
+"in theaters across japan in 2028": "2028年に日本じゅうの映画館で",
+"in this story": "今回の物語では",
+"in this story yonosuke is 39 fifteen years": "今回の物語で世之介は39歳、15年",
+"is": "〜です",
+"it": "それは",
+"it will": "それは〜する予定だ",
+"japan": "日本",
+"kei": "奎（人名）",
+"kei ando": "安藤奎（人名）",
+"kengo": "健吾（人名）",
+"kengo takara": "高良健吾（人名）",
+"kokuho": "国宝（作品名）",
+"meet": "会う",
+"movie": "映画",
+"novel": "小説",
+"of": "〜の",
+"okita": "沖田（人名）",
+"open": "公開される・開く",
+"previous": "前の",
+"script": "脚本",
+"shuichi": "修一（人名）",
+"shuichi okita directs it": "沖田修一が監督する",
+"shuichi okita directs it and": "沖田修一が監督し、そして",
+"shuichi yoshida": "吉田修一（人名）",
+"so": "だから",
+"stars": "主演する（starの三単現）",
+"stay": "〜のままでいる",
+"stay tuned": "続報を待つ",
+"story": "物語",
+"takara": "高良（人名）",
+"the": "その",
+"the novel": "その小説・原作",
+"the previous movie": "前作の映画",
+"the script": "その脚本",
+"the script with kei ando": "安藤奎といっしょに書く脚本",
+"theaters": "映画館（theaterの複数形）",
+"this": "この",
+"to": "と（作品名の一部）",
+"tuned": "チャンネルを合わせた（stay tunedで続報を待つ）",
+"will": "〜するだろう（未来）",
+"with": "〜といっしょに",
+"writes": "書く（writeの三単現）",
+"years": "年（yearの複数形）",
+"yokomichi": "横道（人名）",
+"yonosuke": "世之介（人名）",
+"yoshida": "吉田（人名）"
+},
+"grad": [
+{
+"q1": "『永遠と横道世之介』が {a movie} になります。",
+"q2": "『永遠と横道世之介』が {become a movie}。",
+"q3": "{Eien to Yokomichi Yonosuke} これから {become a movie.}"
+},
+{
+"q1": "{In 2028}、全国の {theaters} で公開されます。",
+"q2": "{In 2028}、{it will} 全国の {theaters} で公開。",
+"q3": "{It will} 公開する {in theaters across Japan in 2028.}"
+},
+{
+"q1": "主演は {Kengo Takara} さんで、{Yonosuke} を演じます。",
+"q2": "{Kengo Takara} さんが {as Yonosuke} 主演します。",
+"q3": "{Kengo Takara} 主演する {as Yonosuke.}"
+},
+{
+"q1": "原作の {novel} は、『国宝』の {author} の {Shuichi Yoshida} さんです。",
+"q2": "{The novel} は {by Shuichi Yoshida}、『国宝』の {author}。",
+"q3": "{The novel} である {by Shuichi Yoshida, the author of Kokuho.}"
+},
+{
+"q1": "沖田修一さんが監督し、{Kei Ando} さんと {the script} を書きます。",
+"q2": "{Shuichi Okita directs it} し、{Kei Ando} さんと {the script} も書きます。",
+"q3": "{Shuichi Okita directs it and} 書く {the script with Kei Ando.}"
+},
+{
+"q1": "今回の {story} の世之介は、{the previous movie} から15年後の39歳です。",
+"q2": "{In this story}、世之介は {39}、{the previous movie} から15年後。",
+"q3": "{In this story, Yonosuke is 39, fifteen years} 後 {the previous movie.}"
+},
+{
+"q1": "{Fans} はまた {Yonosuke} に会えます。続報をお楽しみに！",
+"q2": "{Fans can meet Yonosuke again}、続報をお楽しみに！",
+"q3": "{Fans can meet Yonosuke again,} なので {stay tuned!}"
+}
+],
+"grammar": {
+"body": "数 ＋ years ＋ after ＋ できごと で「…から〜年後」。after のあとに、できごとや前の作品を置きます。fifteen years after the previous movie ＝ 前作から15年後。",
+"ex": [
+{
+"en": "We met again five years after the school trip.",
+"ja": "修学旅行の5年後に、私たちはまた会いました。"
+},
+{
+"en": "The story starts three years after the war.",
+"ja": "その話は戦争の3年後に始まります。"
+}
+],
+"title": "〜 years after ...「…の〜年後」"
+},
+"id": "20261126-yonosuke-movie",
+"level": 2,
+"lines": [
+{
+"en": "Eien to Yokomichi Yonosuke will become a movie.",
+"ja": "『永遠と横道世之介』が映画になります。",
+"mix": "『永遠と横道世之介』が {movie} になります。"
+},
+{
+"en": "It will open in theaters across Japan in 2028.",
+"ja": "2028年に、全国の映画館で公開されます。",
+"mix": "2028年に、全国の {theaters} で公開されます。"
+},
+{
+"en": "Kengo Takara stars as Yonosuke.",
+"ja": "主演は高良健吾さんで、世之介を演じます。",
+"mix": "主演は高良健吾さんで、{Yonosuke} を演じます。"
+},
+{
+"en": "The novel is by Shuichi Yoshida, the author of Kokuho.",
+"ja": "原作の小説は、『国宝』の作者の吉田修一さんです。",
+"mix": "原作の {novel} は、『国宝』の {author} の吉田修一さんです。"
+},
+{
+"en": "Shuichi Okita directs it and writes the script with Kei Ando.",
+"ja": "沖田修一さんが監督し、安藤奎さんと脚本も書きます。",
+"mix": "沖田修一さんが監督し、安藤奎さんと {script} も書きます。"
+},
+{
+"en": "In this story, Yonosuke is 39, fifteen years after the previous movie.",
+"ja": "今回の物語の世之介は、前作から15年後の39歳です。",
+"mix": "今回の {story} の世之介は、前作から15年後の39歳です。"
+},
+{
+"en": "Fans can meet Yonosuke again, so stay tuned!",
+"ja": "ファンはまた世之介に会えます。続報をお楽しみに！",
+"mix": "{Fans} はまた世之介に会えます。続報をお楽しみに！"
+}
+],
+"post": {
+"account": "eien_yonosuke",
+"date": "2026-11-26",
+"likes": 1857,
+"name": "『永遠と横道世之介』公式",
+"url": "https://x.com/eien_yonosuke/status/2125726225813344736"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"2026年",
+"2027年",
+"2028年"
+],
+"q": "映画が公開されるのは何年？",
+"why": "2文目に It will open in theaters across Japan in 2028. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"脚本",
+"原作",
+"監督"
+],
+"q": "script の意味は？",
+"why": "script は「脚本」。「原作」は novel、「監督」は director です。"
+},
+{
+"a": 1,
+"choices": [
+"before",
+"after",
+"ago"
+],
+"q": "Yonosuke is 39, fifteen years ___ the previous movie.（前作の15年後）",
+"why": "「〜の15年後」は fifteen years after 〜 です。"
+}
+],
+"summary": "『永遠と横道世之介』の映画化が決まり、2028年に全国で公開されます。主演は高良健吾さん、原作は吉田修一さん、監督は沖田修一さんです。「世之介に、また会える！」と公式が発表しました。前作から15年後の39歳の世之介を描く、という情報はoriconの別ポスト（https://x.com/oricon/status/2125726224853180653）によります。",
+"talk": {
+"hint": "Yes, I do because ___.",
+"ja": "世之介にまた会いたいですか？",
+"q": "Do you want to see Yonosuke again?"
+},
+"title": "『永遠と横道世之介』映画化、2028年に公開",
+"words": [
+{
+"ja": "〜役で主演する",
+"note": "ポストの「主演」は stars as 〜（〜の役で主演する）で表せます。",
+"w": "star as"
+},
+{
+"ja": "小説",
+"note": "「原作」は the original novel。ここでは The novel is by 〜 と短く言いました。",
+"w": "novel"
+},
+{
+"ja": "監督する",
+"note": "「監督は沖田修一」は Shuichi Okita directs it。名詞は director。",
+"w": "direct"
+},
+{
+"ja": "脚本",
+"note": "ポストの「脚本」。script を write（書く）します。",
+"w": "script"
+},
+{
+"ja": "続報を待つ",
+"note": "ポストの「続報をお楽しみに」は stay tuned がよく使われます。",
+"w": "stay tuned"
+}
+]
+},
+{
+"added": "2026-11-26T07:11",
+"addedAt": "2026-11-26T14:48",
+"cat": "movie",
+"gloss": {
+"about": "〜について",
+"adaptation": "映画化・脚色",
+"after": "〜のあとで",
+"after watching it nakano hopes viewers": "観たあと、中野は観客に〜と願う",
+"after watching it nakano hopes viewers will": "観たあと、中野は観客が〜してほしいと願う",
+"again": "また",
+"also": "〜も",
+"asada": "浅田（作品名の一部）",
+"august": "8月",
+"be": "〜される",
+"by": "〜による",
+"directed": "監督した（directの過去形）",
+"end": "終わり・最後",
+"family": "家族",
+"film": "映画",
+"film adaptation": "映画化",
+"hopes": "願っている（hopeの三単現）",
+"in": "〜で・〜の中で",
+"is": "〜です",
+"it": "それ（映画）",
+"kamisama": "神様（作品名の一部）",
+"kamisama no karte": "神様のカルテ（作品名）",
+"karte": "カルテ（作品名の一部）",
+"kazunari": "和也（人名）",
+"kazunari ninomiya": "二宮和也（人名）",
+"kazunari ninomiya will": "二宮和也が〜する",
+"lead": "主役",
+"living": "生きること",
+"movie": "映画",
+"nakano": "中野（人名）",
+"nakano will": "中野が〜する",
+"natsukawa": "夏川（人名）",
+"ninomiya": "二宮（人名）",
+"no": "の（作品名の一部）",
+"novel": "小説",
+"of": "〜の",
+"on": "〜に（日付）",
+"on august 27 2027": "2027年8月27日に",
+"original": "もとの・原作の",
+"original novel": "原作小説",
+"play": "演じる",
+"released": "公開される（releaseの過去分詞）",
+"ryota": "量太（人名）",
+"ryota nakano": "中野量太（人名）",
+"ryota nakano who directed asada family": "『浅田家！』を監督した中野量太",
+"ryota nakano who directed asada family will team up with ninomiya": "『浅田家！』を撮った中野量太が二宮とタッグを組む",
+"script": "脚本",
+"shinsatsushitsu": "診察室（作品名の一部）",
+"sosuke": "草介（人名）",
+"sosuke natsukawa": "夏川草介（人名）",
+"spinoza": "スピノザ",
+"team": "チーム",
+"team up": "タッグを組む",
+"the": "その",
+"the end": "最後・終わり",
+"the lead": "主役",
+"the lead in the film adaptation of": "〜の映画化での主役",
+"the lead in the film adaptation of spinoza no shinsatsushitsu": "『スピノザの診察室』の映画化での主役",
+"the movie": "その映画",
+"the movie will be": "映画は〜される予定だ",
+"the original novel": "その原作小説",
+"the original novel is by sosuke natsukawa": "原作小説は夏川草介によるもの",
+"the original novel is by sosuke natsukawa who": "原作小説は夏川草介によるもので、その人は",
+"the script": "その脚本",
+"the value of": "〜の価値・とうとさ",
+"the value of living until the end": "最後まで生きることのとうとさ",
+"think": "考える",
+"until": "〜まで",
+"up": "（team upで）組む",
+"value": "価値・とうとさ",
+"viewers": "観客（viewerの複数形）",
+"watching": "観ること",
+"who": "〜した人",
+"will": "〜するだろう（未来）",
+"with": "〜といっしょに",
+"write": "書く",
+"write the script": "脚本を書く",
+"wrote": "書いた（writeの過去形）"
+},
+"grad": [
+{
+"q1": "二宮和也さんが、『スピノザの診察室』の {film adaptation} で {the lead} を務めます。",
+"q2": "{Kazunari Ninomiya} さんが {the lead in the film adaptation of} 『スピノザの診察室』を演じます。",
+"q3": "{Kazunari Ninomiya will} 演じる {the lead in the film adaptation of Spinoza no Shinsatsushitsu.}"
+},
+{
+"q1": "{The original novel} は、『神様のカルテ』も書いた {Sosuke Natsukawa} さんの作品です。",
+"q2": "{The original novel is by Sosuke Natsukawa} で、『神様のカルテ』も書きました。",
+"q3": "{The original novel is by Sosuke Natsukawa, who} 同じく書いた {Kamisama no Karte.}"
+},
+{
+"q1": "『浅田家！』を撮った {Ryota Nakano} 監督が、{Ninomiya} さんとふたたびタッグを組みます。",
+"q2": "{Ryota Nakano, who directed Asada Family!,} 監督が、{Ninomiya} さんとふたたび {team up}。",
+"q3": "{Ryota Nakano, who directed Asada Family!, will team up with Ninomiya} ふたたび。"
+},
+{
+"q1": "{the script} も、{Nakano} 監督が書きます。",
+"q2": "{Nakano} 監督が {the script} も {write}。",
+"q3": "{Nakano will} 同じく {write the script.}"
+},
+{
+"q1": "{The movie} は、2027年8月27日に公開されます。",
+"q2": "{The movie will be}、2027年8月27日に公開。",
+"q3": "{The movie will be} 公開される {on August 27, 2027.}"
+},
+{
+"q1": "観たあと、{the end} まで生きることの {value} を、{viewers} に思ってもらえたら嬉しいと、{Nakano} 監督は話しています。",
+"q2": "{After watching it, Nakano hopes viewers} が {the value of} 生きること、{the end} まで考える。",
+"q3": "{After watching it, Nakano hopes viewers will} 思う {the value of living until the end.}"
+}
+],
+"grammar": {
+"body": "人の名前のあとに , who ＋ 動詞 を置くと「その人は〜した人です」と説明を足せます。コンマで区切ります。",
+"ex": [
+{
+"en": "My teacher, who loves movies, goes to the theater every week.",
+"ja": "映画が大好きな私の先生は、毎週映画館に行きます。"
+},
+{
+"en": "Aki, who lives in Tokyo, wrote this book.",
+"ja": "東京に住むアキが、この本を書きました。"
+}
+],
+"title": "人 ＋ , who ～,「〜した（人）」とあとから説明を足す"
+},
+"id": "20261126-spinoza-ninomiya",
+"level": 3,
+"lines": [
+{
+"en": "Kazunari Ninomiya will play the lead in the film adaptation of Spinoza no Shinsatsushitsu.",
+"ja": "二宮和也さんが、『スピノザの診察室』の映画化で主演を務めます。",
+"mix": "二宮和也さんが、『スピノザの診察室』の {film adaptation} で主演を務めます。"
+},
+{
+"en": "The original novel is by Sosuke Natsukawa, who also wrote Kamisama no Karte.",
+"ja": "原作小説は、『神様のカルテ』も書いた夏川草介さんの作品です。",
+"mix": "{original novel} は、『神様のカルテ』も書いた夏川草介さんの作品です。"
+},
+{
+"en": "Ryota Nakano, who directed Asada Family!, will team up with Ninomiya again.",
+"ja": "『浅田家！』を撮った中野量太監督が、二宮さんとふたたびタッグを組みます。",
+"mix": "『浅田家！』を撮った中野量太監督が、{Ninomiya} さんとふたたびタッグを組みます。"
+},
+{
+"en": "Nakano will also write the script.",
+"ja": "脚本も、中野監督が書きます。",
+"mix": "{script} も、中野監督が書きます。"
+},
+{
+"en": "The movie will be released on August 27, 2027.",
+"ja": "映画は、2027年8月27日に公開されます。",
+"mix": "{movie} は、2027年8月27日に公開されます。"
+},
+{
+"en": "After watching it, Nakano hopes viewers will think about the value of living until the end.",
+"ja": "観たあと、最後まで生きることの尊さを思ってもらえたら嬉しいと、中野監督は話しています。",
+"mix": "観たあと、最後まで生きることの {value} を思ってもらえたら嬉しいと、中野監督は話しています。"
+}
+],
+"post": {
+"account": "cinematoday",
+"date": "2026-11-26",
+"likes": 572,
+"name": "シネマトゥデイ",
+"url": "https://x.com/cinematoday/status/2125713893595246994"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"2026年8月27日",
+"2027年8月27日",
+"2028年8月27日"
+],
+"q": "映画の公開日はいつ？",
+"why": "5文目に released on August 27, 2027 とあります。"
+},
+{
+"a": 0,
+"choices": [
+"映画化",
+"予告編",
+"撮影"
+],
+"q": "film adaptation の意味は？",
+"why": "adaptation は、原作を別の形に作りかえたもの。film adaptation は「映画化」です。"
+},
+{
+"a": 2,
+"choices": [
+"which",
+"what",
+"who"
+],
+"q": "Sosuke Natsukawa, ___ wrote Kamisama no Karte, is the author.（『神様のカルテ』を書いた夏川草介）",
+"why": "人のあとに説明を足すときは who を使います。"
+}
+],
+"summary": "二宮和也さんが、夏川草介さん原作『スピノザの診察室』の映画化で主演します。監督・脚本は『浅田家！』の中野量太さんで、二宮さんとは再タッグです。公開は2027年8月27日。監督は「観たあと、人は死ぬまで生きるという当たり前の尊さを思ってもらえたら嬉しい」とコメントしています（公式ポストより）。",
+"talk": {
+"hint": "I want to watch it because ___.",
+"ja": "この映画を観たいですか？ それはなぜですか？",
+"q": "Do you want to watch this movie? Why?"
+},
+"title": "二宮和也主演『スピノザの診察室』映画化",
+"words": [
+{
+"ja": "映画化・脚色",
+"note": "ポストの「映画化」は film adaptation（原作を映画にしたもの）。",
+"w": "adaptation"
+},
+{
+"ja": "もとの・原作の",
+"note": "「原作」は the original novel のように言います。",
+"w": "original"
+},
+{
+"ja": "タッグを組む",
+"note": "ポストの「再タッグ」は team up again。",
+"w": "team up"
+},
+{
+"ja": "脚本",
+"note": "「脚本」＝ script。「脚本を書く」は write the script。",
+"w": "script"
+},
+{
+"ja": "価値・とうとさ",
+"note": "コメントの「尊さ」は the value of living（生きることの価値）で表しました。",
+"w": "value"
+}
+]
+},
+{
+"added": "2026-11-26T06:10",
+"addedAt": "2026-11-26T14:48",
+"cat": "anime",
+"gloss": {
+"24th": "24番目の",
+"a": "ひとつの",
+"also": "〜もまた",
+"also has party poppers and garlands": "クラッカーやガーランドもある",
+"and": "〜と",
+"confirmed": "決定した",
+"everyone's": "みんなの",
+"everyone's smiles": "みんなの笑顔",
+"funtasic": "ファンたじっく（FUNtasic）",
+"funtasic party": "ファンたじっくなパーティー",
+"funtasic precure": "FUNtasic Precure!（ロゴの文字）",
+"garlands": "ガーランド（かざり）",
+"has": "持っている",
+"is": "〜です",
+"it": "それは",
+"it also": "それには〜もある",
+"let": "〜させる",
+"logo": "ロゴ",
+"of": "〜の",
+"party": "パーティー",
+"party poppers": "クラッカー",
+"poppers": "クラッカー（popperの複数形）",
+"precure": "プリキュア",
+"says": "と書いてある（sayの三単現）",
+"series": "シリーズ",
+"shine": "かがやく",
+"smiles": "笑顔（smileの複数形）",
+"tagline": "キャッチコピー",
+"the": "その",
+"the logo": "ロゴ",
+"the logo has": "ロゴには〜がある",
+"the logo has the": "ロゴには〜がある",
+"the tagline": "キャッチコピー",
+"the tagline says": "キャッチコピーは〜",
+"the tagline says let everyone's smiles": "キャッチコピーは「みんなの笑顔を〜」",
+"the title of the 24th precure series": "プリキュア第24弾のタイトル",
+"the title of the 24th precure series is": "プリキュア第24弾のタイトルは〜",
+"title": "タイトル",
+"to": "〜へ",
+"welcome": "ようこそ",
+"welcome to a funtasic party": "ファンたじっくなパーティーへようこそ",
+"words": "文字・ことば"
+},
+"grad": [
+{
+"q1": "{Precure} 第24弾の {title} が決まりました。",
+"q2": "{The title of the 24th Precure series} が決まりました。",
+"q3": "{The title of the 24th Precure series is} 決定しました。"
+},
+{
+"q1": "{The logo} には「FUNtasic Precure!」という文字があります。",
+"q2": "{The logo has} 「{FUNtasic Precure!}」という文字があります。",
+"q3": "{The logo has the} 文字 {FUNtasic Precure!}"
+},
+{
+"q1": "ロゴには {party poppers} や {garlands} もあります。",
+"q2": "ロゴには {also has party poppers and garlands}。",
+"q3": "{The} ロゴ {also has party poppers and garlands.}"
+},
+{
+"q1": "{The tagline} は「かがやけ！みんなの {smiles}！」です。",
+"q2": "{The tagline says,} 「かがやけ！{everyone's smiles}！」",
+"q3": "{The tagline says, \"Let everyone's smiles} かがやく」"
+},
+{
+"q1": "「{FUNtasic} な {party} へようこそ！」とも書かれています。",
+"q2": "{It also} 「{FUNtasic party} へようこそ！」と書かれています。",
+"q3": "{It also} 書かれている {\"Welcome to a FUNtasic party!\"}"
+}
+],
+"grammar": {
+"body": "「〜へようこそ」は Welcome to ＋ 場所・行事 で言います。to のあとに名詞を置きます。",
+"ex": [
+{
+"en": "Welcome to our school!",
+"ja": "私たちの学校へようこそ！"
+},
+{
+"en": "Welcome to the party!",
+"ja": "パーティーへようこそ！"
+}
+],
+"title": "Welcome to 〜「〜へようこそ」"
+},
+"id": "20261126-precure-fun",
+"level": 2,
+"lines": [
+{
+"en": "The title of the 24th Precure series is confirmed.",
+"ja": "プリキュア第24弾のタイトルが決まりました。",
+"mix": "プリキュア第24弾の {title} が決まりました。"
+},
+{
+"en": "The logo has the words FUNtasic Precure!",
+"ja": "ロゴには「FUNtasic Precure!」という文字があります。",
+"mix": "{logo} には「FUNtasic Precure!」という文字があります。"
+},
+{
+"en": "The logo also has party poppers and garlands.",
+"ja": "ロゴにはクラッカーやガーランドもあります。",
+"mix": "ロゴにはクラッカーや {garlands} もあります。"
+},
+{
+"en": "The tagline says, \"Let everyone's smiles shine!\"",
+"ja": "キャッチコピーは「かがやけ！みんなの笑顔！」です。",
+"mix": "{tagline} は「かがやけ！みんなの笑顔！」です。"
+},
+{
+"en": "It also says, \"Welcome to a FUNtasic party!\"",
+"ja": "「ファンたじっくなパーティーへようこそ！」とも書かれています。",
+"mix": "「{FUNtasic} なパーティーへようこそ！」とも書かれています。"
+}
+],
+"post": {
+"account": "cinematoday",
+"date": "2026-11-26",
+"likes": 335,
+"name": "シネマトゥデイ",
+"url": "https://x.com/cinematoday/status/2125698541964382307"
+},
+"quiz": [
+{
+"a": 0,
+"choices": [
+"クラッカーとガーランド",
+"ケーキとろうそく",
+"風船とリボン"
+],
+"q": "ロゴにあるものは？",
+"why": "3文目に The logo also has party poppers and garlands. とあります。"
+},
+{
+"a": 1,
+"choices": [
+"題名",
+"キャッチコピー",
+"せりふ"
+],
+"q": "tagline の意味は？",
+"why": "tagline は「キャッチコピー」です。"
+},
+{
+"a": 2,
+"choices": [
+"Welcomes",
+"Welcoming",
+"Welcome"
+],
+"q": "___ to a FUNtasic party!（ようこそ）",
+"why": "「〜へようこそ」は Welcome to 〜 です。"
+}
+],
+"summary": "プリキュア第24弾のタイトルが「ファンたじっくプリキュア！」に決まりました。キャッチコピーは「かがやけ！みんなの笑顔！ファンたじっくなパーティーへようこそ！」で、ロゴにはクラッカーやガーランド、“FUNtasic Precure!”の文字があります。",
+"talk": {
+"hint": "I want to see ___.",
+"ja": "新しいプリキュアで、何を見たいですか？",
+"q": "What do you want to see in the new Precure series?"
+},
+"title": "プリキュア第24弾は『ファンたじっくプリキュア！』",
+"words": [
+{
+"ja": "タイトル・題名",
+"note": "ポストの「タイトルが決定」は The title is confirmed。",
+"w": "title"
+},
+{
+"ja": "キャッチコピー",
+"note": "ポストの「キャッチコピー」は tagline と言います。",
+"w": "tagline"
+},
+{
+"ja": "ロゴ",
+"note": "ポストの「ロゴには〜」は The logo has 〜。",
+"w": "logo"
+},
+{
+"ja": "笑顔",
+"note": "ポストの「みんなの笑顔」は everyone's smiles。",
+"w": "smile"
+},
+{
+"ja": "ようこそ・歓迎する",
+"note": "ポストの「〜へようこそ」は Welcome to 〜。",
+"w": "welcome"
+}
+]
+},
+{
+"added": "2026-11-26T05:27",
+"addedAt": "2026-11-26T14:48",
+"cat": "manga",
+"gloss": {
+"a": "ひとつの",
+"a ceo": "CEO",
+"a diary": "ひとつの日記",
+"a diary about kenma kozume": "孤爪研磨についての日記",
+"a stock trader": "株式トレーダー",
+"a youtuber": "YouTuber",
+"about": "〜について",
+"adds": "加える（addの三単現）",
+"adult": "大人の",
+"adult kenma": "大人の研磨",
+"alone": "ひとりで",
+"also": "〜でもある",
+"and": "〜と・そして",
+"as": "〜として",
+"ball": "ボール（会社名の一部）",
+"beating": "打ち負かすこと・乗りこえること",
+"becoming": "〜になること",
+"bouncing": "跳ねる（会社名の一部）",
+"bouncing ball": "Bouncing Ball（会社名）",
+"called": "〜という名前の",
+"ceo": "CEO（最高経営責任者）",
+"company": "会社",
+"connect": "つながる",
+"deeply": "深く",
+"diary": "日記",
+"does": "する（doの三単現）",
+"enjoyed": "楽しんだ",
+"feel": "感じる",
+"finished": "終えた",
+"for": "〜のための",
+"fun": "楽しみ",
+"gamer": "ゲーマー",
+"had": "〜していた（過去完了の助動詞）",
+"haikyu": "ハイキュー（作品名）",
+"he": "彼は",
+"he adds new ways to connect with the world": "彼は世界とつながる新しい方法を増やす",
+"him": "彼を",
+"hinata": "日向（人名）",
+"his": "彼の",
+"his weak points and becoming sociable": "彼の苦手を乗りこえて社交的になること",
+"idea": "考え・想像",
+"imagination": "想像",
+"imagining": "想像すること",
+"in": "〜で・〜の中で",
+"in the writer's imagination": "投稿者の想像では",
+"in the writer's imagination adult kenma is the president of a company": "投稿者の想像では、大人の研磨はある会社の代表だ",
+"in this idea he is also a stock trader a pro gamer": "この想像では、彼は株式トレーダーでありプロゲーマーでもある",
+"is": "〜です",
+"kenma": "研磨（人名）",
+"kenma stays lazy": "研磨は面倒くさがりのままだ",
+"kenma stays lazy and does what he likes": "研磨は面倒くさがりのまま、好きなことをする",
+"kenma's": "研磨の",
+"kenma's story": "研磨の物語",
+"kozume": "孤爪（人名）",
+"kuroo": "黒尾（人名）",
+"kuroo and hinata": "黒尾と日向",
+"lazy": "面倒くさがりの",
+"likes": "好む（likeの三単現）",
+"made": "つくった（makeの過去形）",
+"makes": "〜させる（makeの三単現）",
+"meeting": "出会うこと",
+"meeting kuroo and hinata made room for other people": "黒尾と日向との出会いが、ほかの人の入る余地をつくった",
+"meeting kuroo and hinata made room for other people in the fun kenma": "黒尾と日向との出会いが、研磨の楽しみの中にほかの人の余地をつくった",
+"moved": "感動した",
+"new": "新しい",
+"new ways": "新しい方法",
+"new ways to connect with the world": "世界とつながる新しい方法",
+"not": "〜ではない",
+"of": "〜の",
+"other": "ほかの",
+"people": "人々",
+"points": "点（pointの複数形）",
+"president": "代表・社長",
+"pro": "プロの",
+"pro gamer": "プロゲーマー",
+"reading": "読むこと",
+"room": "余地・スペース",
+"says": "言う（sayの三単現）",
+"so": "だから",
+"so imagining him as a ceo and a youtuber": "だから彼をCEOやYouTuberと想像すると",
+"so imagining him as a ceo and a youtuber makes the writer feel": "彼をCEOやYouTuberと想像すると、投稿者は〜と感じる",
+"sociable": "社交的な",
+"stays": "〜のままでいる",
+"stock": "株",
+"stock trader": "株式トレーダー",
+"story": "物語",
+"the": "その",
+"the president of a company": "ある会社の代表",
+"the world": "世界",
+"the writer": "その投稿者",
+"the writer finished reading": "投稿者は読み終えた",
+"the writer finished reading haikyu and": "投稿者は『ハイキュー!!』を読み終えて",
+"the writer says kenma's story is not about": "投稿者は、研磨の物語は〜の話ではないと言う",
+"this": "この",
+"to": "〜する（不定詞）",
+"trader": "トレーダー",
+"ways": "方法（wayの複数形）",
+"weak": "弱い",
+"weak points": "苦手なところ・弱点",
+"what": "〜するもの・こと",
+"while": "〜する一方で",
+"with": "〜と",
+"world": "世界",
+"writer": "書いた人・投稿者",
+"writer's": "投稿者の",
+"wrote": "書いた（writeの過去形）",
+"youtuber": "YouTuber"
+},
+"grad": [
+{
+"q1": "{The writer} は『ハイキュー!!』を読み終えて、孤爪研磨についての {a diary} を書きました。",
+"q2": "{The writer finished reading} 『ハイキュー!!』、{a diary about Kenma Kozume} を書きました。",
+"q3": "{The writer finished reading Haikyu!! and} 書いた {a diary about Kenma Kozume.}"
+},
+{
+"q1": "投稿者さんの {imagination} では、{adult Kenma} は『Bouncing Ball』という会社の {president} です。",
+"q2": "{In the writer's imagination}、{adult Kenma} は {the president of a company} 『Bouncing Ball』。",
+"q3": "{In the writer's imagination, adult Kenma is the president of a company} 呼ばれる {Bouncing Ball.}"
+},
+{
+"q1": "この想像では、{a stock trader} でもあり、{pro gamer} で、YouTuberでもあります。",
+"q2": "{In this idea, he is also a stock trader, a pro gamer} で、YouTuberでもあります。",
+"q3": "{In this idea, he is also a stock trader, a pro gamer} そして {a YouTuber.}"
+},
+{
+"q1": "投稿者さんは、{Kenma's story} は、{weak points} を乗りこえて社交的になる話ではないと言っています。",
+"q2": "{The writer says Kenma's story is not about} {weak points} を乗りこえて、{sociable} になること。",
+"q3": "{The writer says Kenma's story is not about} 乗りこえる {his weak points and becoming sociable.}"
+},
+{
+"q1": "{Kuroo and Hinata} に出会って、研磨がひとりで楽しんでいた {fun} に、ほかの人が入る {room} が生まれました。",
+"q2": "{Meeting Kuroo and Hinata made room for other people} 、研磨がひとりで楽しんでいた {fun} に。",
+"q3": "{Meeting Kuroo and Hinata made room for other people in the fun Kenma} 楽しんでいた {alone.}"
+},
+{
+"q1": "研磨は面倒くさがりのまま好きなことをして、{the world} との関わりの {new ways} を増やしています。",
+"q2": "{Kenma stays lazy}、好きなことをして、{new ways to connect with the world} を増やす。",
+"q3": "{Kenma stays lazy and does what he likes} 一方で {he adds new ways to connect with the world.}"
+},
+{
+"q1": "だから、研磨を {a CEO} や {a YouTuber} として想像すると、投稿者さんは感慨深い気持ちになります。",
+"q2": "{So imagining him as a CEO and a YouTuber}、{the writer} は感慨深く。",
+"q3": "{So imagining him as a CEO and a YouTuber makes the writer feel} 深く {moved.}"
+}
+],
+"grammar": {
+"body": "while は「〜する一方で」「〜しながら」と、2つのことが同時にあることを表します。while ＋ 主語 ＋ 動詞 の形です。",
+"ex": [
+{
+"en": "She sings while she cooks.",
+"ja": "彼女は料理しながら歌います。"
+},
+{
+"en": "I like tea, while my brother likes coffee.",
+"ja": "私は紅茶が好きで、弟はコーヒーが好きです。"
+}
+],
+"title": "while 〜「〜する一方で・〜しながら」"
+},
+"id": "20261126-haikyu-kenma-diary",
+"level": 3,
+"lines": [
+{
+"en": "The writer finished reading Haikyu!! and wrote a diary about Kenma Kozume.",
+"ja": "投稿者さんは『ハイキュー!!』を読み終えて、孤爪研磨についての日記を書きました。",
+"mix": "投稿者さんは『ハイキュー!!』を読み終えて、孤爪研磨についての {diary} を書きました。"
+},
+{
+"en": "In the writer's imagination, adult Kenma is the president of a company called Bouncing Ball.",
+"ja": "投稿者さんの想像では、大人の研磨は『Bouncing Ball』という会社の代表です。",
+"mix": "投稿者さんの {imagination} では、大人の研磨は『Bouncing Ball』という会社の {president} です。"
+},
+{
+"en": "In this idea, he is also a stock trader, a pro gamer and a YouTuber.",
+"ja": "この想像では、株式トレーダーでもあり、プロゲーマーで、YouTuberでもあります。",
+"mix": "この想像では、{stock trader} でもあり、プロゲーマーで、YouTuberでもあります。"
+},
+{
+"en": "The writer says Kenma's story is not about beating his weak points and becoming sociable.",
+"ja": "投稿者さんは、研磨の物語は、苦手を乗りこえて社交的になる話ではないと言っています。",
+"mix": "投稿者さんは、研磨の {story} は、{weak points} を乗りこえて社交的になる話ではないと言っています。"
+},
+{
+"en": "Meeting Kuroo and Hinata made room for other people in the fun Kenma had enjoyed alone.",
+"ja": "黒尾と日向に出会って、研磨がひとりで楽しんでいた世界に、ほかの人が入る余地が生まれました。",
+"mix": "黒尾と日向に出会って、研磨がひとりで楽しんでいた {fun} に、ほかの人が入る {room} が生まれました。"
+},
+{
+"en": "Kenma stays lazy and does what he likes while he adds new ways to connect with the world.",
+"ja": "研磨は面倒くさがりのまま好きなことをして、世界との関わり方を増やしています。",
+"mix": "研磨は面倒くさがりのまま好きなことをして、{world} との関わり方を増やしています。"
+},
+{
+"en": "So imagining him as a CEO and a YouTuber makes the writer feel deeply moved.",
+"ja": "だから、研磨をCEOやYouTuberとして想像すると、投稿者さんは感慨深い気持ちになります。",
+"mix": "だから、研磨を {CEO} や {YouTuber} として想像すると、投稿者さんは感慨深い気持ちになります。"
+}
+],
+"post": {
+"account": "no_shachiku_no",
+"date": "2026-11-26",
+"likes": 1365,
+"name": "一般の人（ハイキュー読了日記）",
+"url": "https://x.com/no_shachiku_no/status/2125552074104713615"
+},
+"quiz": [
+{
+"a": 1,
+"choices": [
+"苦手を克服して社交的になった成長物語",
+"性格はそのままで、世界との関わり方が増えた話",
+"研磨が別の人のように変わった話"
+],
+"q": "投稿者さんは、研磨の物語をどう見ていますか？",
+"why": "4〜6文目に、苦手を乗りこえる話ではなく、性格のまま関わり方を増やした、とあります。"
+},
+{
+"a": 2,
+"choices": [
+"強み",
+"チーム",
+"苦手なところ・弱点"
+],
+"q": "weak point の意味は？",
+"why": "weak は「弱い」、point は「点」。weak point は「弱点」です。"
+},
+{
+"a": 0,
+"choices": [
+"while",
+"because",
+"or"
+],
+"q": "Kenma stays lazy ___ he adds new ways to connect with the world.",
+"why": "「〜する一方で」と同時のことを言うときは while を使います。"
+}
+],
+"series": "haikyu",
+"summary": "『ハイキュー!!』を読み終えた投稿者さんが、孤爪研磨について描いたイラストエッセイです。大人になった研磨が株式会社Bouncing Ballの代表やYouTuberになっていたら、と想像し、「苦手を克服した成長物語ではなく、性格のまま世界との関わり方が増えたのでは」と考えています。公式の設定ではなく、ファンの想像・考察です。",
+"talk": {
+"hint": "I think it is a company that ___.",
+"ja": "Bouncing Ball は、どんな会社だと思いますか？",
+"q": "What kind of company do you think Bouncing Ball is?"
+},
+"title": "「孤爪研磨という男」読了日記の考察",
+"words": [
+{
+"ja": "想像（力）",
+"note": "ポストの「想像しています」は、in the writer's imagination（投稿者の想像では）と書きました。",
+"w": "imagination"
+},
+{
+"ja": "苦手なところ・弱点",
+"note": "ポストの「苦手なもの」は weak points（苦手なところ）で表せます。",
+"w": "weak point"
+},
+{
+"ja": "社交的な",
+"note": "ポストの「社交的な人間」＝ sociable。",
+"w": "sociable"
+},
+{
+"ja": "〜の余地をつくる",
+"note": "「他人が入り込む余地が生まれた」は made room for other people。",
+"w": "make room for"
+},
+{
+"ja": "〜とつながる",
+"note": "「世界との関わり方」は ways to connect with the world。",
+"w": "connect with"
+}
+]
+},
+{
 "added": "2026-11-25T21:00",
 "addedAt": "2026-11-26T08:00",
 "cat": "anime",
@@ -1201,6 +2602,246 @@ window.LESSONS = [
 "ja": "配信する",
 "note": "ポストの「配信」は stream（名詞は streaming）。",
 "w": "stream"
+}
+]
+},
+{
+"added": "2026-11-25T18:01",
+"addedAt": "2026-11-26T14:48",
+"cat": "art",
+"gloss": {
+"40th": "40周年の",
+"a": "ひとつの",
+"a collaboration": "コラボ",
+"a masterpiece": "傑作",
+"and": "〜と",
+"anniversary": "周年",
+"appear": "登場する",
+"april": "4月",
+"by": "〜による",
+"collaboration": "コラボ",
+"exhibition": "展覧会",
+"fantasy": "ファンタジー（作品名）",
+"final": "ファイナル（作品名）",
+"final fantasy": "ファイナルファンタジー",
+"final fantasy 40th anniversary exhibition": "ファイナルファンタジー40周年展",
+"from": "〜から",
+"from january 8 to april 4 2027": "2027年1月8日から4月4日まで",
+"go": "合う・進む",
+"god": "神",
+"gods": "神（godの複数形）",
+"has": "持っている",
+"hyokeikan": "表慶館",
+"is": "〜です",
+"it": "それは",
+"january": "1月",
+"january 8": "1月8日",
+"korin": "光琳（人名）",
+"lydia": "リディア",
+"lydia and yuna two summoners": "召喚士2人のリディアとユウナ",
+"masterpiece": "傑作",
+"match": "合わせる",
+"museum": "博物館",
+"national": "国立の",
+"of": "〜の",
+"ogata": "尾形（人名）",
+"ogata korin": "尾形光琳",
+"opaque": "不透明な",
+"opaque white": "不透明な白",
+"opaque white is used": "不透明な白が使われている",
+"opaque white is used to": "不透明な白が〜に使われている",
+"original": "元の",
+"runs": "開催される（runの三単現）",
+"summoners": "召喚士（summonerの複数形）",
+"the": "その",
+"the final fantasy 40th anniversary exhibition": "ファイナルファンタジー40周年展",
+"the hyokeikan": "表慶館",
+"the original work": "元の作品",
+"the two summoners and the two gods": "召喚士2人と風神雷神",
+"the venue": "会場",
+"the venue is": "会場は〜",
+"the venue is the hyokeikan of the tokyo national": "会場は東京国立（博物館）の表慶館",
+"thunder": "雷",
+"to": "〜するために",
+"together": "いっしょに",
+"tokyo": "東京",
+"two": "2人の・2つの",
+"two gods": "風神雷神",
+"two summoners": "召喚士2人",
+"used": "使われる（useの過去分詞）",
+"venue": "会場",
+"well": "うまく",
+"well together": "よく調和して",
+"white": "白",
+"wind": "風",
+"wind god and thunder god": "風神雷神図屛風",
+"wind god and thunder god is a masterpiece": "『風神雷神図屛風』は傑作",
+"with": "〜といっしょに",
+"with wind god and thunder god": "風神雷神といっしょに",
+"work": "作品",
+"yuna": "ユウナ"
+},
+"grad": [
+{
+"q1": "{Final Fantasy} 40周年の展覧会に、{collaboration} があります。",
+"q2": "{Final Fantasy 40th anniversary exhibition} に、{a collaboration} があります。",
+"q3": "{The Final Fantasy 40th anniversary exhibition} 持つ {a collaboration.}"
+},
+{
+"q1": "『風神雷神図屛風』は、{Ogata Korin} の {masterpiece} です。",
+"q2": "{Wind God and Thunder God} は {Ogata Korin} の {a masterpiece}。",
+"q3": "{\"Wind God and Thunder God\" is a masterpiece} による {Ogata Korin.}"
+},
+{
+"q1": "{Lydia} と {Yuna} 、{two summoners} が、風神雷神といっしょに登場します。",
+"q2": "{Lydia and Yuna, two summoners,} が、{Wind God and Thunder God} といっしょに登場します。",
+"q3": "{Lydia and Yuna, two summoners,} 登場する {with Wind God and Thunder God.}"
+},
+{
+"q1": "元の {work} に合わせて、{opaque white} が使われています。",
+"q2": "{Opaque white is used} 、{the original work} に合わせて。",
+"q3": "{Opaque white is used to} 合わせる {the original work.}"
+},
+{
+"q1": "{two summoners} と {two gods} は、よく調和しています。",
+"q2": "{The two summoners and the two gods} は、よく調和しています。",
+"q3": "{The two summoners and the two gods} 調和する {well together.}"
+},
+{
+"q1": "{The venue} は、東京国立博物館の {Hyokeikan} です。",
+"q2": "{The venue is} 東京国立博物館の {the Hyokeikan}。",
+"q3": "{The venue is the Hyokeikan of the Tokyo National} 博物館。"
+},
+{
+"q1": "{January 8} から4月4日まで、{2027} に開催されます。",
+"q2": "{from January 8 to April 4, 2027} に開催されます。",
+"q3": "{It} 開催される {from January 8 to April 4, 2027.}"
+}
+],
+"grammar": {
+"body": "by は「〜による・〜の作」と作った人を表します。a masterpiece by 〜 で「〜の傑作」です。",
+"ex": [
+{
+"en": "This is a song by my favorite singer.",
+"ja": "これは私の好きな歌手の歌です。"
+},
+{
+"en": "It is a picture by a famous artist.",
+"ja": "それは有名な画家の絵です。"
+}
+],
+"title": "a masterpiece by 〜「〜による傑作」"
+},
+"id": "20261125-art-ff40-fujin",
+"level": 2,
+"lines": [
+{
+"en": "The Final Fantasy 40th anniversary exhibition has a collaboration.",
+"ja": "ファイナルファンタジー40周年の展覧会に、コラボがあります。",
+"mix": "ファイナルファンタジー40周年の展覧会に、{collaboration} があります。"
+},
+{
+"en": "\"Wind God and Thunder God\" is a masterpiece by Ogata Korin.",
+"ja": "『風神雷神図屛風』は、尾形光琳の傑作です。",
+"mix": "『風神雷神図屛風』は、{Ogata Korin} の傑作です。"
+},
+{
+"en": "Lydia and Yuna, two summoners, appear with Wind God and Thunder God.",
+"ja": "召喚士2人のリディアとユウナが、風神雷神といっしょに登場します。",
+"mix": "{two summoners} のリディアとユウナが、風神雷神といっしょに登場します。"
+},
+{
+"en": "Opaque white is used to match the original work.",
+"ja": "元の作品に合わせて、不透明な白が使われています。",
+"mix": "元の作品に合わせて、{opaque} 白が使われています。"
+},
+{
+"en": "The two summoners and the two gods go well together.",
+"ja": "召喚士2人と風神雷神は、よく調和しています。",
+"mix": "召喚士2人と {two gods} は、よく調和しています。"
+},
+{
+"en": "The venue is the Hyokeikan of the Tokyo National Museum.",
+"ja": "会場は、東京国立博物館の表慶館です。",
+"mix": "{venue} は、東京国立博物館の表慶館です。"
+},
+{
+"en": "It runs from January 8 to April 4, 2027.",
+"ja": "1月8日から4月4日まで、2027年に開催されます。",
+"mix": "{January 8} から4月4日まで、2027年に開催されます。"
+}
+],
+"post": {
+"account": "FF40th_EXHIB",
+"date": "2026-11-25",
+"likes": 384,
+"name": "FF40周年展 公式",
+"url": "https://x.com/FF40th_EXHIB/status/2125515081848922314"
+},
+"quiz": [
+{
+"a": 2,
+"choices": [
+"国立新美術館",
+"森美術館",
+"東京国立博物館 表慶館"
+],
+"q": "会場はどこ？",
+"why": "6文目に The venue is the Hyokeikan of the Tokyo National Museum. とあります。"
+},
+{
+"a": 0,
+"choices": [
+"不透明な",
+"透明な",
+"うすい"
+],
+"q": "opaque white の opaque の意味は？",
+"why": "opaque は「不透明な」。元作品に合わせた白です。"
+},
+{
+"a": 1,
+"choices": [
+"of",
+"by",
+"at"
+],
+"q": "It is a masterpiece ___ Ogata Korin.（尾形光琳の傑作）",
+"why": "作った人は by で表します。"
+}
+],
+"summary": "「FF40周年展」で、尾形光琳の傑作『風神雷神図屛風』と『ファイナルファンタジー』のリディア・ユウナのコラボが登場します。元作品に合わせて不透明な白を取り入れ、召喚士2人と風神雷神が調和しています。会場は東京国立博物館 表慶館、会期は2027年1月8日〜4月4日です。",
+"talk": {
+"hint": "I want to go because ___.",
+"ja": "この展覧会に行きたいですか？ それはなぜですか？",
+"q": "Do you want to go to this exhibition? Why?"
+},
+"title": "FF40周年展、風神雷神図屛風×リディア・ユウナ",
+"words": [
+{
+"ja": "展覧会",
+"note": "ポストの「FF40周年展」は the FF40th exhibition。",
+"w": "exhibition"
+},
+{
+"ja": "傑作",
+"note": "ポストの「傑作」は masterpiece です。",
+"w": "masterpiece"
+},
+{
+"ja": "召喚士",
+"note": "ポストの「召喚士2人」は two summoners。",
+"w": "summoner"
+},
+{
+"ja": "不透明な",
+"note": "ポストの「不透明な白色」は opaque white。",
+"w": "opaque"
+},
+{
+"ja": "元の作品",
+"note": "ポストの「元作品に合わせ」は to match the original work。",
+"w": "original work"
 }
 ]
 },
